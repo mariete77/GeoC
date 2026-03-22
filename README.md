@@ -110,8 +110,20 @@ flutter run
 - **K-factor (establecidos)**: 16 (≥30 partidas)
 - **Rango de matchmaking**: ±200 ELO
 
-## 📖 Documentación Completa
+## 📖 Documentación
 
+### Guías por Fase
+- [FASE 1: Fundamentos Backend](docs/FASE1_INSTRUCCIONES.md)
+- [FASE 2: Autenticación y Home](docs/FASE2_INSTRUCCIONES.md)
+- [FASE 3: Base de Datos de Preguntas](docs/FASE3_INSTRUCCIONES.md)
+
+### Scripts Disponibles
+- **generate_questions.dart** - Genera preguntas desde REST Countries API (4 tipos)
+- **generate_questions_with_manual.dart** - Genera TODAS las preguntas automáticas (5 tipos, incluye ríos)
+- **import_questions_firestore.dart** - Importa preguntas JSON a Firestore
+- **rivers_manual.dart** - Datos manuales de 25 ríos famosos
+
+### Guía Completa
 Consulta la [GUIA_COMPLETA.md](docs/GUIA_COMPLETA.md) para detalles detallados de:
 - Estructura de modelos de datos
 - Sistema de autenticación
@@ -156,32 +168,61 @@ firebase deploy --only storage
 ## 📊 Progreso del Desarrollo
 
 ### ✅ FASE 1: Fundamentos Backend (Completada)
-- Modelos de datos (User, Question, Match, GhostRun)
-- Repositorios del dominio
-- Implementaciones con Firebase
-- AuthRemoteDataSource (Google/Apple)
-- Manejo de errores con dartz
+- ✅ Modelos de datos (User, Question, Match, GhostRun)
+- ✅ Repositorios del dominio (5 interfaces)
+- ✅ Implementaciones con Firebase (5 repositorios)
+- ✅ AuthRemoteDataSource (Google/Apple)
+- ✅ Manejo de errores con dartz Either
+- 📄 [Instrucciones detalladas](docs/FASE1_INSTRUCCIONES.md)
 
 ### ✅ FASE 2: Autenticación y Home (Completada)
-- AuthProvider (Google/Apple sign-in)
-- UserProvider (perfil, stats, juegos diarios)
-- SplashScreen (animada)
-- LoginScreen (social login)
-- HomeScreen (dashboard completo)
-- Go Router configuration
-- Widgets comunes (Loading, Error, Button)
+- ✅ AuthProvider (Google/Apple sign-in)
+- ✅ UserProvider (perfil, stats, juegos diarios)
+- ✅ SplashScreen (animada)
+- ✅ LoginScreen (social login)
+- ✅ HomeScreen (dashboard completo)
+- ✅ Go Router configuration (routing con protección)
+- ✅ Widgets comunes (Loading, Error, Button)
+- 📄 [Instrucciones detalladas](docs/FASE2_INSTRUCCIONES.md)
 
-### ⏳ FASE 3: Base de Datos de Preguntas (Pendiente)
-- Script generador desde REST Countries
-- 7 tipos de preguntas
-- Cargar en Firestore
+### ✅ FASE 3: Base de Datos de Preguntas (Completada)
+- ✅ Script generador desde REST Countries API
+- ✅ Script de importación a Firestore
+- ✅ Datos manuales de ríos (25 ríos)
+- ✅ 5 tipos de preguntas automáticas:
+  - Banderas (~100)
+  - Capitales (~100)
+  - Población (50)
+  - Extensión (50)
+  - Ríos (25)
+- 📄 [Instrucciones detalladas](docs/FASE3_INSTRUCCIONES.md)
 
-### ⏳ Fases Pendientes
-- FASE 4: Core del Juego
-- FASE 5: Matchmaking Multiplayer
-- FASE 6: Ghost Runs (Async)
-- FASE 7: Monetización
-- FASE 8: Polish y Despliegue
+### ⏳ FASE 4: Core del Juego (Pendiente)
+- ⏳ GameProvider
+- ⏳ GameScreen
+- ⏳ Question widgets (silueta, bandera, capital, etc.)
+- ⏳ Timer circular
+- ⏳ ResultScreen
+
+### ⏳ FASE 5: Matchmaking Multiplayer (Pendiente)
+- ⏳ MatchmakingService
+- ⏳ MatchmakingScreen
+- ⏳ Cloud Functions (matchmaking, ELO, daily reset)
+
+### ⏳ FASE 6: Ghost Runs (Async) (Pendiente)
+- ⏳ AsyncMatchService
+- ⏳ Lógica de comparación con ghost runs
+
+### ⏳ FASE 7: Monetización (Pendiente)
+- ⏳ RevenueCat configuration
+- ⏳ SubscriptionScreen
+- ⏳ Daily limits enforcement
+
+### ⏳ FASE 8: Polish y Despliegue (Pendiente)
+- ⏳ LeaderboardScreen
+- ⏳ ProfileScreen
+- ⏳ Testing
+- ⏳ Deploy a stores
 
 ## 📊 Arquitectura
 
