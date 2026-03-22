@@ -1,0 +1,85 @@
+name: geoquiz_battle
+description: Geography Quiz Battle Game - Compete 1v1 in real-time geography trivia!
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # Firebase
+  firebase_core: ^2.24.2
+  firebase_auth: ^4.16.0
+  cloud_firestore: ^4.14.0
+  firebase_storage: ^11.6.0
+  firebase_database: ^10.4.0
+  firebase_analytics: ^10.8.0
+
+  # State Management
+  flutter_riverpod: ^2.4.9
+  riverpod_annotation: ^2.3.3
+
+  # Auth
+  google_sign_in: ^6.2.1
+  sign_in_with_apple: ^5.0.0
+
+  # Payments
+  purchases_flutter: ^6.17.0
+
+  # UI
+  cached_network_image: ^3.3.1
+  flutter_svg: ^2.0.9
+  shimmer: ^3.0.0
+  lottie: ^3.0.0
+  google_fonts: ^6.1.0
+
+  # Utils
+  uuid: ^4.3.1
+  intl: ^0.18.1
+  freezed_annotation: ^2.4.1
+  json_annotation: ^4.8.1
+  equatable: ^2.0.5
+  dartz: ^0.10.1
+
+  # Audio
+  audioplayers: ^5.2.1
+
+  # Storage
+  shared_preferences: ^2.2.2
+
+  # Routing
+  go_router: ^13.0.1
+
+  # Icons
+  cupertino_icons: ^1.0.6
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.1
+  build_runner: ^2.4.8
+  freezed: ^2.4.6
+  json_serializable: ^6.7.1
+  riverpod_generator: ^2.3.9
+  mockito: ^5.4.4
+  integration_test:
+    sdk: flutter
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/images/
+    - assets/silhouettes/
+    - assets/audio/
+    - assets/lottie/
+
+  # fonts:
+  #   - family: Poppins
+  #     fonts:
+  #       - asset: assets/fonts/Poppins-Regular.ttf
+  #       - asset: assets/fonts/Poppins-Bold.ttf
+  #         weight: 700
