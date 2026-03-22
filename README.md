@@ -153,6 +153,29 @@ firebase deploy --only firestore:rules
 firebase deploy --only storage
 ```
 
+## 📊 Progreso del Desarrollo
+
+### ✅ FASE 1: Fundamentos Backend (Completada)
+- Modelos de datos (User, Question, Match, GhostRun)
+- Repositorios del dominio
+- Implementaciones con Firebase
+- AuthRemoteDataSource (Google/Apple)
+- Manejo de errores con dartz
+
+### 🔄 FASE 2: Autenticación y Home (En desarrollo)
+- LoginScreen
+- HomeScreen
+- AuthProvider
+- Routing
+
+### ⏳ Fases Pendientes
+- FASE 3: Base de Datos de Preguntas
+- FASE 4: Core del Juego
+- FASE 5: Matchmaking Multiplayer
+- FASE 6: Ghost Runs (Async)
+- FASE 7: Monetización
+- FASE 8: Polish y Despliegue
+
 ## 📊 Arquitectura
 
 El proyecto sigue una **arquitectura limpia** con separación de capas:
