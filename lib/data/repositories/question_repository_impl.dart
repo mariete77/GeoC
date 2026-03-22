@@ -1,0 +1,177 @@
+import 'package:dartz/dartz.dart';
+import 'package:cloud_firestore/cloud_firestore.dart';
+import 'dart:math';
+import '../../core/errors/exceptions.dart';
+import '../../core/errors/failures.dart';
+import '../../core/constants/firebase_constants.dart';
+import '../../domain/entities/question.dart';
+import '../../domain/repositories/question_repository.dart';
+import '../models/question_model.dart';
+
+/// Question repository implementation
+class QuestionRepositoryImpl implements QuestionRepository {
+  final FirebaseFirestore _firestore;
+  final Random _random = Random();
+
+  QuestionRepositoryImpl({FirebaseFirestore? firestore})
+      : _firestore = firestore ?? FirebaseFirestore.instance;
+
+  @override
+  Future<Either<Failure, List<Question>>> getRandomQuestions({
+    int count = 10,
+    List<QuestionType>? types,
+    Difficulty? maxDifficulty,
+  }) async {
+    try {
+      // Get all eligible questions
+      Query query = _firestore.collection(FirebaseConstants.questions);
+
+      if (types != null && types.isNotEmpty) {
+        query = query.where(
+          FirebaseConstants.type,
+          whereIn: types.map((t) => t.name).toList(),
+        );
+      }
+
+      if (maxDifficulty != null) {
+        query = query.where(
+          FirebaseConstants.difficulty,
+          isLessThanOrEqualTo: maxDifficulty.name,
+        );
+      }
+
+      final snapshot = await query.get();
+      final allQuestions = snapshot.docs
+          .map((doc) => QuestionModel.fromJson({
+                'id': doc.id,
+                ...doc.data() as Map<String, dynamic>,
+              }).toDomain())
+          .toList();
+
+      if (allQuestions.isEmpty) {
+        throw const NotFoundException('No questions found');
+      }
+
+      // Shuffle and select
+      allQuestions.shuffle(_random);
+
+      // Ensure variety of types
+      return Right(_selectBalancedQuestions(allQuestions, count));
+    } on ServerException catch (e) {
+      return Left(ServerFailure(e.message));
+    } on NetworkException catch (e) {
+      return Left(NetworkFailure(e.message));
+    } on NotFoundException catch (e) {
+      return Left(NotFoundFailure(e.message));
+    } catch (e) {
+      return Left(UnknownFailure(e.toString()));
+    }
+  }
+
+  @override
+  Future<Either<Failure, Question>> getQuestionById(String id) async {
+    try {
+      final doc = await _firestore
+          .collection(FirebaseConstants.questions)
+          .doc(id)
+          .get();
+
+      if (!doc.exists) {
+        throw const NotFoundException('Question not found');
+      }
+
+      final question =
+          QuestionModel.fromJson({'id': doc.id, ...doc.data()!}).toDomain();
+      return Right(question);
+    } on ServerException catch (e) {
+      return Left(ServerFailure(e.message));
+    } on NotFoundException catch (e) {
+      return Left(NotFoundFailure(e.message));
+    } catch (e) {
+      return Left(UnknownFailure(e.toString()));
+    }
+  }
+
+  @override
+  Future<Either<Failure, List<Question>>> getQuestionsByType(
+    QuestionType type,
+  ) async {
+    try {
+      final snapshot = await _firestore
+          .collection(FirebaseConstants.questions)
+          .where(FirebaseConstants.type, isEqualTo: type.name)
+          .get();
+
+      final questions = snapshot.docs
+          .map((doc) => QuestionModel.fromJson({
+                'id': doc.id,
+                ...doc.data() as Map<String, dynamic>,
+              }).toDomain())
+          .toList();
+
+      return Right(questions);
+    } on ServerException catch (e) {
+      return Left(ServerFailure(e.message));
+    } on NetworkException catch (e) {
+      return Left(NetworkFailure(e.message));
+    } catch (e) {
+      return Left(UnknownFailure(e.toString()));
+    }
+  }
+
+  @override
+  Future<Either<Failure, List<Question>>> getQuestionsByDifficulty(
+    Difficulty difficulty,
+  ) async {
+    try {
+      final snapshot = await _firestore
+          .collection(FirebaseConstants.questions)
+          .where(FirebaseConstants.difficulty, isEqualTo: difficulty.name)
+          .get();
+
+      final questions = snapshot.docs
+          .map((doc) => QuestionModel.fromJson({
+                'id': doc.id,
+                ...doc.data() as Map<String, dynamic>,
+              }).toDomain())
+          .toList();
+
+      return Right(questions);
+    } on ServerException catch (e) {
+      return Left(ServerFailure(e.message));
+    } on NetworkException catch (e) {
+      return Left(NetworkFailure(e.message));
+    } catch (e) {
+      return Left(UnknownFailure(e.toString()));
+    }
+  }
+
+  /// Select balanced questions (variety of types)
+  List<Question> _selectBalancedQuestions(
+    List<Question> questions,
+    int count,
+  ) {
+    final selected = <Question>[];
+    final usedTypes = <QuestionType>{};
+
+    // First pass: one of each type
+    for (final q in questions) {
+      if (!usedTypes.contains(q.type) && selected.length < count) {
+        selected.add(q);
+        usedTypes.add(q.type);
+      }
+      if (selected.length >= 7) break; // 7 types max
+    }
+
+    // Second pass: fill up to count
+    for (final q in questions) {
+      if (!selected.contains(q) && selected.length < count) {
+        selected.add(q);
+      }
+      if (selected.length >= count) break;
+    }
+
+    selected.shuffle(_random);
+    return selected;
+  }
+}
