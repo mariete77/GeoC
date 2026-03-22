@@ -162,14 +162,21 @@ firebase deploy --only storage
 - AuthRemoteDataSource (Google/Apple)
 - Manejo de errores con dartz
 
-### 🔄 FASE 2: Autenticación y Home (En desarrollo)
-- LoginScreen
-- HomeScreen
-- AuthProvider
-- Routing
+### ✅ FASE 2: Autenticación y Home (Completada)
+- AuthProvider (Google/Apple sign-in)
+- UserProvider (perfil, stats, juegos diarios)
+- SplashScreen (animada)
+- LoginScreen (social login)
+- HomeScreen (dashboard completo)
+- Go Router configuration
+- Widgets comunes (Loading, Error, Button)
+
+### ⏳ FASE 3: Base de Datos de Preguntas (Pendiente)
+- Script generador desde REST Countries
+- 7 tipos de preguntas
+- Cargar en Firestore
 
 ### ⏳ Fases Pendientes
-- FASE 3: Base de Datos de Preguntas
 - FASE 4: Core del Juego
 - FASE 5: Matchmaking Multiplayer
 - FASE 6: Ghost Runs (Async)
