@@ -9,8 +9,8 @@ enum MatchMode { realtime, async }
 /// Match type
 enum MatchType { casual, ranked }
 
-/// Match entity
-class Match extends Equatable {
+/// Match entity (renamed to GameMatch to avoid conflict with SDK Match class)
+class GameMatch extends Equatable {
   final String id;
   final List<String> players;
   final MatchMode mode;
@@ -23,7 +23,7 @@ class Match extends Equatable {
   final DateTime? startedAt;
   final DateTime? finishedAt;
 
-  const Match({
+  const GameMatch({
     required this.id,
     required this.players,
     required this.mode,

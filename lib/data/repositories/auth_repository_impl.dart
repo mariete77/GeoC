@@ -15,7 +15,7 @@ class AuthRepositoryImpl implements AuthRepository {
   final firebase.FirebaseAuth _firebaseAuth;
   final GoogleSignIn _googleSignIn;
   final FirebaseFirestore _firestore;
-  final AuthRemoteDataSource _authRemoteDataSource;
+  final AuthRemoteDataSource? _authRemoteDataSource;
 
   AuthRepositoryImpl({
     firebase.FirebaseAuth? firebaseAuth,
@@ -25,8 +25,7 @@ class AuthRepositoryImpl implements AuthRepository {
   })  : _firebaseAuth = firebaseAuth ?? firebase.FirebaseAuth.instance,
         _googleSignIn = googleSignIn ?? GoogleSignIn(),
         _firestore = firestore ?? FirebaseFirestore.instance,
-        _authRemoteDataSource =
-            authRemoteDataSource ?? AuthRemoteDataSourceImpl();
+        _authRemoteDataSource = authRemoteDataSource;
 
   @override
   Stream<User?> get authStateChanges {
@@ -38,7 +37,10 @@ class AuthRepositoryImpl implements AuthRepository {
   @override
   Future<Either<Failure, User>> signInWithGoogle() async {
     try {
-      final firebaseUser = await _authRemoteDataSource.signInWithGoogle();
+      if (_authRemoteDataSource == null) {
+        return const Left(AuthFailure('AuthRemoteDataSource not initialized'));
+      }
+      final firebaseUser = await _authRemoteDataSource!.signInWithGoogle();
 
       // Create or update user in Firestore
       await _createOrUpdateUser(firebaseUser);
@@ -56,7 +58,10 @@ class AuthRepositoryImpl implements AuthRepository {
   @override
   Future<Either<Failure, User>> signInWithApple() async {
     try {
-      final firebaseUser = await _authRemoteDataSource.signInWithApple();
+      if (_authRemoteDataSource == null) {
+        return const Left(AuthFailure('AuthRemoteDataSource not initialized'));
+      }
+      final firebaseUser = await _authRemoteDataSource!.signInWithApple();
 
       // Create or update user in Firestore
       await _createOrUpdateUser(firebaseUser);

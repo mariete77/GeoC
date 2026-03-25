@@ -54,12 +54,12 @@ class LoginScreen extends ConsumerWidget {
                   ),
                 ] else ...[
                   // Google Sign-In button
-                  _buildGoogleSignInButton(context, ref),
+                  _buildGoogleSignInButton(context, ref, authState),
 
                   const SizedBox(height: 16),
 
                   // Apple Sign-In button
-                  _buildAppleSignInButton(context, ref),
+                  _buildAppleSignInButton(context, ref, authState),
 
                   const SizedBox(height: 32),
 
@@ -136,7 +136,11 @@ class LoginScreen extends ConsumerWidget {
     );
   }
 
-  Widget _buildGoogleSignInButton(BuildContext context, WidgetRef ref) {
+  Widget _buildGoogleSignInButton(
+    BuildContext context,
+    WidgetRef ref,
+    dynamic authState,
+  ) {
     return SizedBox(
       width: double.infinity,
       height: 56,
@@ -171,7 +175,11 @@ class LoginScreen extends ConsumerWidget {
     );
   }
 
-  Widget _buildAppleSignInButton(BuildContext context, WidgetRef ref) {
+  Widget _buildAppleSignInButton(
+    BuildContext context,
+    WidgetRef ref,
+    dynamic authState,
+  ) {
     return SizedBox(
       width: double.infinity,
       height: 56,

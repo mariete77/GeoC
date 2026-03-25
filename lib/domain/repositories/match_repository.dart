@@ -5,16 +5,16 @@ import '../entities/match.dart';
 /// Match repository interface
 abstract class MatchRepository {
   /// Get match by ID
-  Future<Either<Failure, Match>> getMatch(String matchId);
+  Future<Either<Failure, GameMatch>> getMatch(String matchId);
 
   /// Watch match updates (realtime)
-  Stream<Match> watchMatch(String matchId);
+  Stream<GameMatch> watchMatch(String matchId);
 
   /// Create match (for testing/admin)
-  Future<Either<Failure, String>> createMatch(Match match);
+  Future<Either<Failure, String>> createMatch(GameMatch gameMatch);
 
   /// Update match
-  Future<Either<Failure, void>> updateMatch(String matchId, Match match);
+  Future<Either<Failure, void>> updateMatch(String matchId, GameMatch gameMatch);
 
   /// Submit answer
   Future<Either<Failure, void>> submitAnswer(
@@ -23,7 +23,7 @@ abstract class MatchRepository {
   );
 
   /// Get user's matches
-  Future<Either<Failure, List<Match>>> getUserMatches(
+  Future<Either<Failure, List<GameMatch>>> getUserMatches(
     String userId, {
     int limit,
     MatchStatus? status,

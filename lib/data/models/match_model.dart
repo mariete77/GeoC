@@ -1,5 +1,6 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:freezed_annotation/freezed_annotation.dart';
+import 'json_key_converter.dart';
 import '../domain/entities/match.dart';
 
 part 'match_model.freezed.dart';
@@ -10,9 +11,9 @@ class MatchModel with _$MatchModel {
   const factory MatchModel({
     required String id,
     required List<String> players,
-    required MatchMode mode,
-    required MatchType type,
-    required MatchStatus status,
+    @MatchModeConverter() required MatchMode mode,
+    @MatchTypeConverter() required MatchType type,
+    @MatchStatusConverter() required MatchStatus status,
     required List<String> questionIds,
     @Default({}) Map<String, List<AnswerModel>> answers,
     MatchResultModel? result,
@@ -42,8 +43,8 @@ class MatchModel with _$MatchModel {
   }
 
   /// Convert to domain entity
-  Match toDomain() {
-    return Match(
+  GameMatch toDomain() {
+    return GameMatch(
       id: id,
       players: players,
       mode: mode,
@@ -60,22 +61,22 @@ class MatchModel with _$MatchModel {
   }
 
   /// Convert from domain entity
-  factory MatchModel.fromDomain(Match match) {
+  factory MatchModel.fromDomain(GameMatch gameMatch) {
     return MatchModel(
-      id: match.id,
-      players: match.players,
-      mode: match.mode,
-      type: match.type,
-      status: match.status,
-      questionIds: match.questionIds,
-      answers: match.answers.map((key, value) =>
+      id: gameMatch.id,
+      players: gameMatch.players,
+      mode: gameMatch.mode,
+      type: gameMatch.type,
+      status: gameMatch.status,
+      questionIds: gameMatch.questionIds,
+      answers: gameMatch.answers.map((key, value) =>
           MapEntry(key, value.map((a) => AnswerModel.fromDomain(a)).toList())),
-      result: match.result != null
-          ? MatchResultModel.fromDomain(match.result!)
+      result: gameMatch.result != null
+          ? MatchResultModel.fromDomain(gameMatch.result!)
           : null,
-      createdAt: match.createdAt,
-      startedAt: match.startedAt,
-      finishedAt: match.finishedAt,
+      createdAt: gameMatch.createdAt,
+      startedAt: gameMatch.startedAt,
+      finishedAt: gameMatch.finishedAt,
     );
   }
 

@@ -7,7 +7,7 @@ class FirebaseConstants {
   static const String ghostRuns = 'ghostRuns';
 
   // Firestore Fields - Users
-  static const String userId = 'oderId';
+  static const String userId = 'userId';
   static const String displayName = 'displayName';
   static const String email = 'email';
   static const String photoUrl = 'photoUrl';
@@ -21,7 +21,7 @@ class FirebaseConstants {
   // Firestore Fields - Matches
   static const String players = 'players';
   static const String mode = 'mode';
-  static const String type = 'type';
+  static const String matchType = 'type';
   static const String status = 'status';
   static const String questionIds = 'questionIds';
   static const String answers = 'answers';
@@ -30,7 +30,7 @@ class FirebaseConstants {
   static const String finishedAt = 'finishedAt';
 
   // Firestore Fields - Questions
-  static const String type = 'type';
+  static const String questionType = 'type';
   static const String difficulty = 'difficulty';
   static const String correctAnswer = 'correctAnswer';
   static const String options = 'options';
@@ -39,7 +39,7 @@ class FirebaseConstants {
   static const String extraData = 'extraData';
 
   // Firestore Fields - Ghost Runs
-  static const String oderId = 'userId'; // Note: keeping 'userId' for ghostRuns
+  static const String ghostUserId = 'userId';
   static const String ghostAnswers = 'answers';
 
   // Realtime Database Paths

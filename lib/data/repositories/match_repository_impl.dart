@@ -15,7 +15,7 @@ class MatchRepositoryImpl implements MatchRepository {
       : _firestore = firestore ?? FirebaseFirestore.instance;
 
   @override
-  Future<Either<Failure, Match>> getMatch(String matchId) async {
+  Future<Either<Failure, GameMatch>> getMatch(String matchId) async {
     try {
       final doc = await _firestore
           .collection(FirebaseConstants.matches)
@@ -26,8 +26,8 @@ class MatchRepositoryImpl implements MatchRepository {
         throw const NotFoundException('Match not found');
       }
 
-      final match = MatchModel.fromFirestore(doc).toDomain();
-      return Right(match);
+      final gameMatch = MatchModel.fromFirestore(doc).toDomain();
+      return Right(gameMatch);
     } on ServerException catch (e) {
       return Left(ServerFailure(e.message));
     } on NotFoundException catch (e) {
@@ -38,7 +38,7 @@ class MatchRepositoryImpl implements MatchRepository {
   }
 
   @override
-  Stream<Match> watchMatch(String matchId) {
+  Stream<GameMatch> watchMatch(String matchId) {
     return _firestore
         .collection(FirebaseConstants.matches)
         .doc(matchId)
@@ -52,9 +52,9 @@ class MatchRepositoryImpl implements MatchRepository {
   }
 
   @override
-  Future<Either<Failure, String>> createMatch(Match match) async {
+  Future<Either<Failure, String>> createMatch(GameMatch gameMatch) async {
     try {
-      final matchModel = MatchModel.fromDomain(match);
+      final matchModel = MatchModel.fromDomain(gameMatch);
       final docRef = await _firestore
           .collection(FirebaseConstants.matches)
           .add(matchModel.toFirestore());
@@ -69,10 +69,10 @@ class MatchRepositoryImpl implements MatchRepository {
   @override
   Future<Either<Failure, void>> updateMatch(
     String matchId,
-    Match match,
+    GameMatch gameMatch,
   ) async {
     try {
-      final matchModel = MatchModel.fromDomain(match);
+      final matchModel = MatchModel.fromDomain(gameMatch);
       await _firestore
           .collection(FirebaseConstants.matches)
           .doc(matchId)
@@ -122,7 +122,7 @@ class MatchRepositoryImpl implements MatchRepository {
   }
 
   @override
-  Future<Either<Failure, List<Match>>> getUserMatches(
+  Future<Either<Failure, List<GameMatch>>> getUserMatches(
     String userId, {
     int limit = 20,
     MatchStatus? status,

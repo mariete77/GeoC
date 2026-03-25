@@ -1,4 +1,5 @@
 import 'package:freezed_annotation/freezed_annotation.dart';
+import 'json_key_converter.dart';
 import '../domain/entities/question.dart';
 
 part 'question_model.freezed.dart';
@@ -8,8 +9,8 @@ part 'question_model.g.dart';
 class QuestionModel with _$QuestionModel {
   const factory QuestionModel({
     required String id,
-    required QuestionType type,
-    required Difficulty difficulty,
+    @QuestionTypeConverter() required QuestionType type,
+    @DifficultyConverter() required Difficulty difficulty,
     required String correctAnswer,
     required List<String> options,
     String? imageUrl,

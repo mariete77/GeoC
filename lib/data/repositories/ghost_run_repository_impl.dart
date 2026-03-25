@@ -31,7 +31,7 @@ class GhostRunRepositoryImpl implements GhostRunRepository {
           .collection(FirebaseConstants.ghostRuns)
           .where(FirebaseConstants.elo, isGreaterThanOrEqualTo: minElo)
           .where(FirebaseConstants.elo, isLessThanOrEqualTo: maxElo)
-          .where(FirebaseConstants.oderId, isNotEqualTo: userId)
+          .where(FirebaseConstants.ghostUserId, isNotEqualTo: userId)
           .orderBy(FirebaseConstants.elo)
           .orderBy(FirebaseConstants.createdAt, descending: true)
           .limit(10)
@@ -41,8 +41,8 @@ class GhostRunRepositoryImpl implements GhostRunRepository {
         // If no ghost runs in range, search for any
         final fallbackSnapshot = await _firestore
             .collection(FirebaseConstants.ghostRuns)
-            .where(FirebaseConstants.oderId, isNotEqualTo: userId)
-            .orderBy(FirebaseConstants.oderId)
+            .where(FirebaseConstants.ghostUserId, isNotEqualTo: userId)
+            .orderBy(FirebaseConstants.ghostUserId)
             .orderBy(FirebaseConstants.createdAt, descending: true)
             .limit(10)
             .get();
@@ -124,7 +124,7 @@ class GhostRunRepositoryImpl implements GhostRunRepository {
     try {
       final snapshot = await _firestore
           .collection(FirebaseConstants.ghostRuns)
-          .where(FirebaseConstants.oderId, isEqualTo: userId)
+          .where(FirebaseConstants.ghostUserId, isEqualTo: userId)
           .orderBy(FirebaseConstants.createdAt, descending: true)
           .get();
 
@@ -140,15 +140,14 @@ class GhostRunRepositoryImpl implements GhostRunRepository {
     }
   }
 
-  @override
-  Future<Either<Failure, void>> cleanupOldGhostRuns(
+  Future<Either<Failure, void>> _cleanupOldGhostRuns(
     String userId,
     int keepCount,
   ) async {
     try {
       final snapshot = await _firestore
           .collection(FirebaseConstants.ghostRuns)
-          .where(FirebaseConstants.oderId, isEqualTo: userId)
+          .where(FirebaseConstants.ghostUserId, isEqualTo: userId)
           .orderBy(FirebaseConstants.createdAt, descending: true)
           .get();
 

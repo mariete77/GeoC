@@ -22,7 +22,6 @@ class GhostRunModel with _$GhostRunModel {
   factory GhostRunModel.fromFirestore(DocumentSnapshot doc) {
     final data = doc.data() as Map<String, dynamic>;
     return GhostRunModel.fromJson({
-      'ghostRunId': doc.id,
       ...data,
       'createdAt': data['createdAt'] != null
           ? (data['createdAt'] as Timestamp).toDate().toIso8601String()
@@ -49,7 +48,9 @@ class GhostRunModel with _$GhostRunModel {
       ghostRunId: ghostRun.ghostRunId,
       elo: ghostRun.elo,
       questionIds: ghostRun.questionIds,
-      answers: ghostRun.answers.map((a) => GhostAnswerModel.fromDomain(a)).toList(),
+      answers: ghostRun.answers
+          .map((a) => GhostAnswerModel.fromDomain(a))
+          .toList(),
       createdAt: ghostRun.createdAt,
     );
   }
@@ -57,7 +58,6 @@ class GhostRunModel with _$GhostRunModel {
   /// Convert to Firestore map
   Map<String, dynamic> toFirestore() {
     final json = toJson();
-    json.remove('ghostRunId');
     return json;
   }
 }
@@ -83,11 +83,11 @@ class GhostAnswerModel with _$GhostAnswerModel {
   }
 
   /// Convert from domain entity
-  factory GhostAnswerModel.fromDomain(GhostAnswer answer) {
+  factory GhostAnswerModel.fromDomain(GhostAnswer ghostAnswer) {
     return GhostAnswerModel(
-      questionIndex: answer.questionIndex,
-      isCorrect: answer.isCorrect,
-      timeMs: answer.timeMs,
+      questionIndex: ghostAnswer.questionIndex,
+      isCorrect: ghostAnswer.isCorrect,
+      timeMs: ghostAnswer.timeMs,
     );
   }
 }
