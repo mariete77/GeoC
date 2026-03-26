@@ -1,0 +1,538 @@
+[
+  {
+    "id": "capital_30012",
+    "type": "capital",
+    "difficulty": "medium",
+    "questionText": "¿Cuál es la capital de Polonia?",
+    "correctAnswer": "Varsovia",
+    "options": [
+      "Pekín",
+      "Varsovia",
+      "Ciudad de México",
+      "Londres"
+    ],
+    "extraData": {
+      "countryCode": "pl",
+      "countryName": "Polonia"
+    }
+  },
+  {
+    "id": "population_30032",
+    "type": "population",
+    "difficulty": "medium",
+    "questionText": "¿Qué país tiene más población?",
+    "correctAnswer": "Egipto",
+    "options": [
+      "Egipto",
+      "Grecia"
+    ],
+    "extraData": {
+      "countries": [
+        "Egipto",
+        "Grecia"
+      ],
+      "population1": 109262178,
+      "population2": 10724599
+    }
+  },
+  {
+    "id": "flag_30006",
+    "type": "flag",
+    "difficulty": "medium",
+    "questionText": "¿De qué país es esta bandera?",
+    "correctAnswer": "Estados Unidos",
+    "options": [
+      "Austria",
+      "Suecia",
+      "Nigeria",
+      "Estados Unidos"
+    ],
+    "imageUrl": "https://flagcdn.com/w320/us.png",
+    "extraData": {
+      "countryCode": "us",
+      "countryName": "Estados Unidos"
+    }
+  },
+  {
+    "id": "capital_30010",
+    "type": "capital",
+    "difficulty": "medium",
+    "questionText": "¿Cuál es la capital de Argentina?",
+    "correctAnswer": "Buenos Aires",
+    "options": [
+      "Estocolmo",
+      "Buenos Aires",
+      "Lisboa",
+      "Berlín"
+    ],
+    "extraData": {
+      "countryCode": "ar",
+      "countryName": "Argentina"
+    }
+  },
+  {
+    "id": "flag_30003",
+    "type": "flag",
+    "difficulty": "medium",
+    "questionText": "¿De qué país es esta bandera?",
+    "correctAnswer": "Alemania",
+    "options": [
+      "Alemania",
+      "Noruega",
+      "Irlanda",
+      "Países Bajos"
+    ],
+    "imageUrl": "https://flagcdn.com/w320/de.png",
+    "extraData": {
+      "countryCode": "de",
+      "countryName": "Alemania"
+    }
+  },
+  {
+    "id": "capital_30015",
+    "type": "capital",
+    "difficulty": "medium",
+    "questionText": "¿Cuál es la capital de Alemania?",
+    "correctAnswer": "Berlín",
+    "options": [
+      "Nueva Delhi",
+      "Ottawa",
+      "Madrid",
+      "Berlín"
+    ],
+    "extraData": {
+      "countryCode": "de",
+      "countryName": "Alemania"
+    }
+  },
+  {
+    "id": "capital_30013",
+    "type": "capital",
+    "difficulty": "medium",
+    "questionText": "¿Cuál es la capital de Suiza?",
+    "correctAnswer": "Berna",
+    "options": [
+      "Berna",
+      "Tokio",
+      "Ottawa",
+      "Varsovia"
+    ],
+    "extraData": {
+      "countryCode": "ch",
+      "countryName": "Suiza"
+    }
+  },
+  {
+    "id": "population_30035",
+    "type": "population",
+    "difficulty": "medium",
+    "questionText": "¿Qué país tiene más población?",
+    "correctAnswer": "Turquía",
+    "options": [
+      "Turquía",
+      "Bélgica"
+    ],
+    "extraData": {
+      "countries": [
+        "Turquía",
+        "Bélgica"
+      ],
+      "population1": 85042738,
+      "population2": 11589623
+    }
+  },
+  {
+    "id": "population_30039",
+    "type": "population",
+    "difficulty": "medium",
+    "questionText": "¿Qué país tiene más población?",
+    "correctAnswer": "Italia",
+    "options": [
+      "Italia",
+      "Suecia"
+    ],
+    "extraData": {
+      "countries": [
+        "Italia",
+        "Suecia"
+      ],
+      "population1": 59554023,
+      "population2": 10416196
+    }
+  },
+  {
+    "id": "population_30038",
+    "type": "population",
+    "difficulty": "medium",
+    "questionText": "¿Qué país tiene más población?",
+    "correctAnswer": "Sudáfrica",
+    "options": [
+      "Sudáfrica",
+      "Noruega"
+    ],
+    "extraData": {
+      "countries": [
+        "Sudáfrica",
+        "Noruega"
+      ],
+      "population1": 59308690,
+      "population2": 5391369
+    }
+  },
+  {
+    "id": "population_30031",
+    "type": "population",
+    "difficulty": "medium",
+    "questionText": "¿Qué país tiene más población?",
+    "correctAnswer": "Sudáfrica",
+    "options": [
+      "Sudáfrica",
+      "España"
+    ],
+    "extraData": {
+      "countries": [
+        "Sudáfrica",
+        "España"
+      ],
+      "population1": 59308690,
+      "population2": 47450795
+    }
+  },
+  {
+    "id": "population_30033",
+    "type": "population",
+    "difficulty": "medium",
+    "questionText": "¿Qué país tiene más población?",
+    "correctAnswer": "India",
+    "options": [
+      "India",
+      "Australia"
+    ],
+    "extraData": {
+      "countries": [
+        "India",
+        "Australia"
+      ],
+      "population1": 1406631776,
+      "population2": 25687041
+    }
+  },
+  {
+    "id": "flag_30004",
+    "type": "flag",
+    "difficulty": "medium",
+    "questionText": "¿De qué país es esta bandera?",
+    "correctAnswer": "Polonia",
+    "options": [
+      "Polonia",
+      "Bélgica",
+      "Brasil",
+      "Francia"
+    ],
+    "imageUrl": "https://flagcdn.com/w320/pl.png",
+    "extraData": {
+      "countryCode": "pl",
+      "countryName": "Polonia"
+    }
+  },
+  {
+    "id": "flag_30009",
+    "type": "flag",
+    "difficulty": "medium",
+    "questionText": "¿De qué país es esta bandera?",
+    "correctAnswer": "Argentina",
+    "options": [
+      "Argentina"
+    ],
+    "imageUrl": "https://flagcdn.com/w320/ar.png",
+    "extraData": {
+      "countryCode": "ar",
+      "countryName": "Argentina"
+    }
+  },
+  {
+    "id": "flag_30001",
+    "type": "flag",
+    "difficulty": "medium",
+    "questionText": "¿De qué país es esta bandera?",
+    "correctAnswer": "Reino Unido",
+    "options": [
+      "España",
+      "Suiza",
+      "Sudáfrica",
+      "Reino Unido"
+    ],
+    "imageUrl": "https://flagcdn.com/w320/gb.png",
+    "extraData": {
+      "countryCode": "gb",
+      "countryName": "Reino Unido"
+    }
+  },
+  {
+    "id": "capital_30019",
+    "type": "capital",
+    "difficulty": "medium",
+    "questionText": "¿Cuál es la capital de Portugal?",
+    "correctAnswer": "Lisboa",
+    "options": [
+      "Seúl",
+      "Brasilia",
+      "Londres",
+      "Lisboa"
+    ],
+    "extraData": {
+      "countryCode": "pt",
+      "countryName": "Portugal"
+    }
+  },
+  {
+    "id": "population_30037",
+    "type": "population",
+    "difficulty": "medium",
+    "questionText": "¿Qué país tiene más población?",
+    "correctAnswer": "Sudáfrica",
+    "options": [
+      "Sudáfrica",
+      "Corea del Sur"
+    ],
+    "extraData": {
+      "countries": [
+        "Sudáfrica",
+        "Corea del Sur"
+      ],
+      "population1": 59308690,
+      "population2": 51844886
+    }
+  },
+  {
+    "id": "flag_30000",
+    "type": "flag",
+    "difficulty": "medium",
+    "questionText": "¿De qué país es esta bandera?",
+    "correctAnswer": "España",
+    "options": [
+      "Polonia",
+      "España",
+      "Austria",
+      "Suiza"
+    ],
+    "imageUrl": "https://flagcdn.com/w320/es.png",
+    "extraData": {
+      "countryCode": "es",
+      "countryName": "España"
+    }
+  },
+  {
+    "id": "population_30036",
+    "type": "population",
+    "difficulty": "medium",
+    "questionText": "¿Qué país tiene más población?",
+    "correctAnswer": "Japón",
+    "options": [
+      "Japón",
+      "Grecia"
+    ],
+    "extraData": {
+      "countries": [
+        "Japón",
+        "Grecia"
+      ],
+      "population1": 125681593,
+      "population2": 10724599
+    }
+  },
+  {
+    "id": "flag_30005",
+    "type": "flag",
+    "difficulty": "medium",
+    "questionText": "¿De qué país es esta bandera?",
+    "correctAnswer": "Brasil",
+    "options": [
+      "China",
+      "Japón",
+      "Brasil",
+      "India"
+    ],
+    "imageUrl": "https://flagcdn.com/w320/br.png",
+    "extraData": {
+      "countryCode": "br",
+      "countryName": "Brasil"
+    }
+  },
+  {
+    "id": "capital_30014",
+    "type": "capital",
+    "difficulty": "medium",
+    "questionText": "¿Cuál es la capital de China?",
+    "correctAnswer": "Pekín",
+    "options": [
+      "Pretoria",
+      "Ottawa",
+      "Pekín",
+      "Ámsterdam"
+    ],
+    "extraData": {
+      "countryCode": "cn",
+      "countryName": "China"
+    }
+  },
+  {
+    "id": "capital_30018",
+    "type": "capital",
+    "difficulty": "medium",
+    "questionText": "¿Cuál es la capital de Brasil?",
+    "correctAnswer": "Brasilia",
+    "options": [
+      "Brasilia",
+      "Berlín",
+      "Atenas",
+      "Abuya"
+    ],
+    "extraData": {
+      "countryCode": "br",
+      "countryName": "Brasil"
+    }
+  },
+  {
+    "id": "flag_30008",
+    "type": "flag",
+    "difficulty": "medium",
+    "questionText": "¿De qué país es esta bandera?",
+    "correctAnswer": "Austria",
+    "options": [
+      "Argentina",
+      "Austria",
+      "Italia"
+    ],
+    "imageUrl": "https://flagcdn.com/w320/at.png",
+    "extraData": {
+      "countryCode": "at",
+      "countryName": "Austria"
+    }
+  },
+  {
+    "id": "capital_30016",
+    "type": "capital",
+    "difficulty": "medium",
+    "questionText": "¿Cuál es la capital de Bélgica?",
+    "correctAnswer": "Bruselas",
+    "options": [
+      "Dublín",
+      "Ottawa",
+      "Berna",
+      "Bruselas"
+    ],
+    "extraData": {
+      "countryCode": "be",
+      "countryName": "Bélgica"
+    }
+  },
+  {
+    "id": "capital_30017",
+    "type": "capital",
+    "difficulty": "medium",
+    "questionText": "¿Cuál es la capital de Italia?",
+    "correctAnswer": "Roma",
+    "options": [
+      "Roma",
+      "Bruselas",
+      "Lisboa",
+      "Seúl"
+    ],
+    "extraData": {
+      "countryCode": "it",
+      "countryName": "Italia"
+    }
+  },
+  {
+    "id": "population_30030",
+    "type": "population",
+    "difficulty": "medium",
+    "questionText": "¿Qué país tiene más población?",
+    "correctAnswer": "Estados Unidos",
+    "options": [
+      "Estados Unidos",
+      "Suecia"
+    ],
+    "extraData": {
+      "countries": [
+        "Estados Unidos",
+        "Suecia"
+      ],
+      "population1": 331893745,
+      "population2": 10416196
+    }
+  },
+  {
+    "id": "population_30034",
+    "type": "population",
+    "difficulty": "medium",
+    "questionText": "¿Qué país tiene más población?",
+    "correctAnswer": "Francia",
+    "options": [
+      "Francia",
+      "Países Bajos"
+    ],
+    "extraData": {
+      "countries": [
+        "Francia",
+        "Países Bajos"
+      ],
+      "population1": 65273511,
+      "population2": 17534942
+    }
+  },
+  {
+    "id": "capital_30011",
+    "type": "capital",
+    "difficulty": "medium",
+    "questionText": "¿Cuál es la capital de Reino Unido?",
+    "correctAnswer": "Londres",
+    "options": [
+      "Lisboa",
+      "Berna",
+      "Londres",
+      "Canberra"
+    ],
+    "extraData": {
+      "countryCode": "gb",
+      "countryName": "Reino Unido"
+    }
+  },
+  {
+    "id": "flag_30002",
+    "type": "flag",
+    "difficulty": "medium",
+    "questionText": "¿De qué país es esta bandera?",
+    "correctAnswer": "Australia",
+    "options": [
+      "México",
+      "Australia",
+      "Egipto",
+      "Corea del Sur"
+    ],
+    "imageUrl": "https://flagcdn.com/w320/au.png",
+    "extraData": {
+      "countryCode": "au",
+      "countryName": "Australia"
+    }
+  },
+  {
+    "id": "flag_30007",
+    "type": "flag",
+    "difficulty": "medium",
+    "questionText": "¿De qué país es esta bandera?",
+    "correctAnswer": "Turquía",
+    "options": [
+      "Turquía",
+      "Canadá",
+      "Portugal",
+      "Rusia"
+    ],
+    "imageUrl": "https://flagcdn.com/w320/tr.png",
+    "extraData": {
+      "countryCode": "tr",
+      "countryName": "Turquía"
+    }
+  }
+]
