@@ -1,0 +1,15 @@
+type,question,correct,option1,option2,option3,difficulty,imageUrl,extraData
+flag,¿De qué país es esta bandera?,España,Francia,Italia,Portugal,easy,https://flagcdn.com/w320/es.png,{"countryCode": "es"}
+flag,¿De qué país es esta bandera?,Francia,España,Italia,Alemania,easy,https://flagcdn.com/w320/fr.png,{"countryCode": "fr"}
+capital,¿Cuál es la capital de Francia?,París,Londres,Berlín,Madrid,medium,,
+capital,¿Cuál es la capital de España?,Madrid,Barcelona,Valencia,Sevilla,medium,,
+population,¿Qué país tiene más población?,China,India,Estados Unidos,Brasil,hard,,
+population,¿Qué país tiene menos población?,Vaticano,Mónaco,Nauru,Tuvalu,hard,,
+area,¿Qué país es más grande?,Rusia,Canadá,China,Estados Unidos,medium,,
+area,¿Qué país es más pequeño?,Mónaco,Vaticano,Nauru,Tuvalu,medium,,
+river,¿Cuál es el río más largo de España?,Tajo,Ebro,Duero,Guadalquivir,medium,,
+river,¿Cuál es el río más largo del mundo?,Amazonas,Nilo,Yangtsé,Misisipi,easy,,
+silhouette,¿De qué país es esta silueta?,Italia,Grecia,España,Francia,medium,https://example.com/italy.png,{"countryCode": "it"}
+silhouette,¿De qué país es esta silueta?,Japón,Corea del Sur,China,Taiwán,hard,https://example.com/japan.png,{"countryCode": "jp"}
+city_photo,¿En qué ciudad se encuentra este monumento?,París,Londres,Roma,Barcelona,medium,https://example.com/eiffel.jpg,{"city": "Paris", "country": "France"}
+city_photo,¿En qué ciudad se encuentra este monumento?,Londres,París,Roma,Berlín,medium,https://example.com/bigben.jpg,{"city": "London", "country": "UK"}

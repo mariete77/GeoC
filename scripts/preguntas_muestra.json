@@ -1,0 +1,210 @@
+[
+  {
+    "id": "flag_10001",
+    "type": "flag",
+    "difficulty": "easy",
+    "questionText": "¿De qué país es esta bandera?",
+    "correctAnswer": "España",
+    "options": ["Francia", "España", "Italia", "Portugal"],
+    "imageUrl": "https://flagcdn.com/w320/es.png",
+    "extraData": {
+      "countryCode": "es",
+      "countryName": "España"
+    }
+  },
+  {
+    "id": "flag_10002",
+    "type": "flag",
+    "difficulty": "medium",
+    "questionText": "¿De qué país es esta bandera?",
+    "correctAnswer": "Japón",
+    "options": ["Corea del Sur", "Japón", "China", "Taiwán"],
+    "imageUrl": "https://flagcdn.com/w320/jp.png",
+    "extraData": {
+      "countryCode": "jp",
+      "countryName": "Japón"
+    }
+  },
+  {
+    "id": "capital_10003",
+    "type": "capital",
+    "difficulty": "easy",
+    "questionText": "¿Cuál es la capital de Francia?",
+    "correctAnswer": "París",
+    "options": ["Londres", "París", "Berlín", "Madrid"],
+    "extraData": {
+      "countryCode": "fr",
+      "countryName": "Francia"
+    }
+  },
+  {
+    "id": "capital_10004",
+    "type": "capital",
+    "difficulty": "medium",
+    "questionText": "¿Cuál es la capital de Australia?",
+    "correctAnswer": "Canberra",
+    "options": ["Sídney", "Canberra", "Melbourne", "Brisbane"],
+    "extraData": {
+      "countryCode": "au",
+      "countryName": "Australia"
+    }
+  },
+  {
+    "id": "population_10005",
+    "type": "population",
+    "difficulty": "easy",
+    "questionText": "¿Qué país tiene más población?",
+    "correctAnswer": "China",
+    "options": ["China", "India"],
+    "extraData": {
+      "countries": ["China", "India"],
+      "population1": 1444216107,
+      "population2": 1393409038
+    }
+  },
+  {
+    "id": "population_10006",
+    "type": "population",
+    "difficulty": "hard",
+    "questionText": "¿Qué país tiene más población?",
+    "correctAnswer": "Nigeria",
+    "options": ["Nigeria", "Etiopía"],
+    "extraData": {
+      "countries": ["Nigeria", "Etiopía"],
+      "population1": 218541212,
+      "population2": 123379924
+    }
+  },
+  {
+    "id": "area_10007",
+    "type": "area",
+    "difficulty": "easy",
+    "questionText": "¿Qué país es más extenso?",
+    "correctAnswer": "Rusia",
+    "options": ["Rusia", "Canadá"],
+    "extraData": {
+      "countries": ["Rusia", "Canadá"],
+      "area1": 17098242,
+      "area2": 9984670
+    }
+  },
+  {
+    "id": "area_10008",
+    "type": "area",
+    "difficulty": "medium",
+    "questionText": "¿Qué país es más extenso?",
+    "correctAnswer": "Argentina",
+    "options": ["Argentina", "Perú"],
+    "extraData": {
+      "countries": ["Argentina", "Perú"],
+      "area1": 2780400,
+      "area2": 1285216
+    }
+  },
+  {
+    "id": "language_10009",
+    "type": "language",
+    "difficulty": "easy",
+    "questionText": "¿Cuál es el idioma oficial de Japón?",
+    "correctAnswer": "Japonés",
+    "options": ["Chino", "Japonés", "Coreano", "Inglés"],
+    "extraData": {
+      "countryCode": "jp",
+      "countryName": "Japón",
+      "languageCode": "jpn"
+    }
+  },
+  {
+    "id": "language_10010",
+    "type": "language",
+    "difficulty": "medium",
+    "questionText": "¿Cuál es el idioma oficial de Brasil?",
+    "correctAnswer": "Portugués",
+    "options": ["Español", "Portugués", "Francés", "Inglés"],
+    "extraData": {
+      "countryCode": "br",
+      "countryName": "Brasil",
+      "languageCode": "por"
+    }
+  },
+  {
+    "id": "currency_10011",
+    "type": "currency",
+    "difficulty": "easy",
+    "questionText": "¿Cuál es la moneda de Estados Unidos?",
+    "correctAnswer": "Dólar estadounidense",
+    "options": ["Euro", "Dólar estadounidense", "Libra esterlina", "Yen"],
+    "extraData": {
+      "countryCode": "us",
+      "countryName": "Estados Unidos",
+      "currencyCode": "USD"
+    }
+  },
+  {
+    "id": "currency_10012",
+    "type": "currency",
+    "difficulty": "medium",
+    "questionText": "¿Cuál es la moneda de India?",
+    "correctAnswer": "Rupia india",
+    "options": ["Rupia india", "Rupia pakistaní", "Taka", "Rupia de Sri Lanka"],
+    "extraData": {
+      "countryCode": "in",
+      "countryName": "India",
+      "currencyCode": "INR"
+    }
+  },
+  {
+    "id": "border_10013",
+    "type": "border",
+    "difficulty": "easy",
+    "questionText": "¿Con qué país limita España?",
+    "correctAnswer": "Francia",
+    "options": ["Portugal", "Francia", "Italia", "Marruecos"],
+    "extraData": {
+      "countryCode": "es",
+      "countryName": "España",
+      "borderCountryCode": "fr"
+    }
+  },
+  {
+    "id": "border_10014",
+    "type": "border",
+    "difficulty": "hard",
+    "questionText": "¿Con qué país limita Austria?",
+    "correctAnswer": "Alemania",
+    "options": ["Suiza", "Alemania", "Italia", "Hungría"],
+    "extraData": {
+      "countryCode": "at",
+      "countryName": "Austria",
+      "borderCountryCode": "de"
+    }
+  },
+  {
+    "id": "region_10015",
+    "type": "region",
+    "difficulty": "easy",
+    "questionText": "¿En qué región se encuentra Brasil?",
+    "correctAnswer": "América",
+    "options": ["América", "Europa", "Asia", "África"],
+    "extraData": {
+      "countryCode": "br",
+      "countryName": "Brasil",
+      "region": "Americas",
+      "regionSpanish": "América"
+    }
+  },
+  {
+    "id": "region_10016",
+    "type": "region",
+    "difficulty": "medium",
+    "questionText": "¿En qué región se encuentra Egipto?",
+    "correctAnswer": "África",
+    "options": ["África", "Asia", "Europa", "América"],
+    "extraData": {
+      "countryCode": "eg",
+      "countryName": "Egipto",
+      "region": "Africa",
+      "regionSpanish": "África"
+    }
+  }
+]
