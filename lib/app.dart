@@ -1,102 +1,79 @@
 import 'package:flutter/material.dart';
-import 'package:go_router/go_router.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'presentation/providers/auth_provider.dart';
+import 'package:go_router/go_router.dart';
+import 'core/theme/app_theme.dart';
 import 'presentation/screens/splash/splash_screen.dart';
 import 'presentation/screens/auth/login_screen.dart';
 import 'presentation/screens/home/home_screen.dart';
-import 'core/theme/app_theme.dart';
+import 'presentation/screens/game/game_screen.dart';
+import 'domain/entities/question.dart';
 
-/// App router configuration
 final routerProvider = Provider<GoRouter>((ref) {
   final authState = ref.watch(authStateChangesProvider);
 
   return GoRouter(
     initialLocation: '/',
+    debugLogDiagnostics: true,
     redirect: (context, state) {
-      // If auth state is loading, don't redirect
-      if (authState.value == null) {
-        return null;
-      }
+      final isLoggedIn = authState.valueOrNull != null;
+      final isGoingToLogin = state.matchedLocation == '/login';
 
-      final isLoggingIn = state.matchedLocation == '/login';
-      final isLoggedIn = authState.value != null;
-
-      // If user is logged in and trying to access login, redirect to home
-      if (isLoggedIn && isLoggingIn) {
-        return '/home';
-      }
-
-      // If user is not logged in and trying to access protected route, redirect to login
-      if (!isLoggedIn && !isLoggingIn && state.matchedLocation != '/') {
+      // Redirect to login if not authenticated
+      if (!isLoggedIn && !isGoingToLogin && state.matchedLocation != '/') {
         return '/login';
+      }
+
+      // Redirect to home if authenticated and trying to access login
+      if (isLoggedIn && isGoingToLogin) {
+        return '/home';
       }
 
       return null;
     },
     routes: [
-      // Splash screen (initial)
       GoRoute(
         path: '/',
-        name: 'splash',
         builder: (context, state) => const SplashScreen(),
       ),
-
-      // Login screen
       GoRoute(
         path: '/login',
-        name: 'login',
         builder: (context, state) => const LoginScreen(),
       ),
-
-      // Home screen (protected)
       GoRoute(
         path: '/home',
-        name: 'home',
         builder: (context, state) => const HomeScreen(),
       ),
-
-      // TODO: Add more routes as we build them
-      // GoRoute(
-      //   path: '/matchmaking',
-      //   name: 'matchmaking',
-      //   builder: (context, state) => const MatchmakingScreen(),
-      // ),
-
-      // GoRoute(
-      //   path: '/game/:matchId',
-      //   name: 'game',
-      //   builder: (context, state) => GameScreen(
-      //     matchId: state.pathParameters['matchId']!,
-      //   ),
-      // ),
-
-      // GoRoute(
-      //   path: '/results/:matchId',
-      //   name: 'results',
-      //   builder: (context, state) => ResultsScreen(
-      //     matchId: state.pathParameters['matchId']!,
-      //   ),
-      // ),
+      GoRoute(
+        path: '/game/:difficulty',
+        builder: (context, state) {
+          final difficultyStr = state.pathParameters['difficulty'] ?? 'medium';
+          final difficulty = Difficulty.values.firstWhere(
+            (d) => d.name.toLowerCase() == difficultyStr.toLowerCase(),
+            orElse: () => Difficulty.medium,
+          );
+          return GameScreen(difficulty: difficulty);
+        },
+      ),
     ],
+    errorBuilder: (context, state) => Scaffold(
+      body: Center(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            const Icon(Icons.error_outline, size: 64, color: Colors.red),
+            const SizedBox(height: 16),
+            Text(
+              'Page not found: ${state.uri}',
+              style: const TextStyle(color: Colors.white),
+            ),
+            const SizedBox(height: 16),
+            ElevatedButton(
+              onPressed: () => context.go('/'),
+              child: const Text('Go Home'),
+            ),
+          ],
+        ),
+      ),
+    ),
   );
 });
-
-/// Main app widget
-class GeoQuizBattleApp extends ConsumerWidget {
-  const GeoQuizBattleApp({super.key});
-
-  @override
-  Widget build(BuildContext context, WidgetRef ref) {
-    final router = ref.watch(routerProvider);
-
-    return MaterialApp.router(
-      title: 'GeoQuiz Battle',
-      debugShowCheckedModeBanner: false,
-      theme: AppTheme.lightTheme,
-      darkTheme: AppTheme.darkTheme,
-      themeMode: ThemeMode.system,
-      routerConfig: router,
-    );
-  }
-}
