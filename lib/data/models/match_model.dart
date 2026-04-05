@@ -1,13 +1,15 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:freezed_annotation/freezed_annotation.dart';
 import 'json_key_converter.dart';
-import '../domain/entities/match.dart';
+import 'package:geoquiz_battle/domain/entities/match.dart';
 
 part 'match_model.freezed.dart';
 part 'match_model.g.dart';
 
 @freezed
 class MatchModel with _$MatchModel {
+  const MatchModel._();
+
   const factory MatchModel({
     required String id,
     required List<String> players,
@@ -90,6 +92,8 @@ class MatchModel with _$MatchModel {
 
 @freezed
 class AnswerModel with _$AnswerModel {
+  const AnswerModel._();
+
   const factory AnswerModel({
     required int questionIndex,
     required String selectedAnswer,
@@ -126,6 +130,8 @@ class AnswerModel with _$AnswerModel {
 
 @freezed
 class MatchResultModel with _$MatchResultModel {
+  const MatchResultModel._();
+
   const factory MatchResultModel({
     String? winnerId,
     required Map<String, int> scores,

@@ -1,12 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
-import 'core/theme/app_theme.dart';
-import 'presentation/screens/splash/splash_screen.dart';
-import 'presentation/screens/auth/login_screen.dart';
-import 'presentation/screens/home/home_screen.dart';
-import 'presentation/screens/game/game_screen.dart';
-import 'domain/entities/question.dart';
+import 'package:geoquiz_battle/core/theme/app_theme.dart';
+import 'package:geoquiz_battle/presentation/screens/splash/splash_screen.dart';
+import 'package:geoquiz_battle/presentation/screens/auth/login_screen.dart';
+import 'package:geoquiz_battle/presentation/screens/home/home_screen.dart';
+import 'package:geoquiz_battle/presentation/screens/game/game_screen.dart';
+import 'package:geoquiz_battle/presentation/providers/auth_provider.dart';
+import 'package:geoquiz_battle/domain/entities/question.dart';
 
 final routerProvider = Provider<GoRouter>((ref) {
   final authState = ref.watch(authStateChangesProvider);

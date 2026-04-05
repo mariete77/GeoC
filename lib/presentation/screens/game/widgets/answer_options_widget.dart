@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import '../../../../data/models/question_model.dart';
+import 'package:geoquiz_battle/data/models/question_model.dart';
 
 class AnswerOptionsWidget extends StatelessWidget {
   final QuestionModel question;
@@ -13,39 +13,38 @@ class AnswerOptionsWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final shuffledOptions = _shuffleOptions(question.options);
+    // We don't shuffle here to keep A, B, C, D consistent with the original options if needed
+    // or we shuffle and just use the new index.
+    final options = question.options;
 
     return Column(
-      children: shuffledOptions.asMap().entries.map((entry) {
+      children: options.asMap().entries.map((entry) {
         final index = entry.key;
         final option = entry.value;
 
         return Padding(
           padding: EdgeInsets.only(
-            bottom: index < shuffledOptions.length - 1 ? 12 : 0,
+            bottom: index < options.length - 1 ? 12 : 0,
           ),
           child: _AnswerOptionButton(
             option: option,
+            index: index,
             onPressed: () => onAnswerSelected(option),
           ),
         );
       }).toList(),
     );
   }
-
-  List<String> _shuffleOptions(List<String> options) {
-    final shuffled = List<String>.from(options);
-    shuffled.shuffle();
-    return shuffled;
-  }
 }
 
 class _AnswerOptionButton extends StatefulWidget {
   final String option;
+  final int index;
   final VoidCallback onPressed;
 
   const _AnswerOptionButton({
     required this.option,
+    required this.index,
     required this.onPressed,
   });
 
@@ -134,9 +133,7 @@ class _AnswerOptionButtonState extends State<_AnswerOptionButton>
                 ),
                 child: Center(
                   child: Text(
-                    ['A', 'B', 'C', 'D'].elementAt(
-                      question.options.indexOf(widget.option),
-                    ),
+                    ['A', 'B', 'C', 'D'].elementAt(widget.index),
                     style: const TextStyle(
                       color: Colors.orange,
                       fontSize: 18,

@@ -1,12 +1,12 @@
 import 'package:dartz/dartz.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'dart:math';
-import '../../core/errors/exceptions.dart';
-import '../../core/errors/failures.dart';
-import '../../core/constants/firebase_constants.dart';
-import '../../domain/entities/question.dart';
-import '../../domain/repositories/question_repository.dart';
-import '../models/question_model.dart';
+import 'package:geoquiz_battle/core/errors/exceptions.dart';
+import 'package:geoquiz_battle/core/errors/failures.dart';
+import 'package:geoquiz_battle/core/constants/firebase_constants.dart';
+import 'package:geoquiz_battle/domain/entities/question.dart';
+import 'package:geoquiz_battle/domain/repositories/question_repository.dart';
+import 'package:geoquiz_battle/data/models/question_model.dart';
 
 /// Question repository implementation
 class QuestionRepositoryImpl implements QuestionRepository {
@@ -28,7 +28,7 @@ class QuestionRepositoryImpl implements QuestionRepository {
 
       if (types != null && types.isNotEmpty) {
         query = query.where(
-          FirebaseConstants.type,
+          FirebaseConstants.questionType,
           whereIn: types.map((t) => t.name).toList(),
         );
       }
@@ -99,7 +99,7 @@ class QuestionRepositoryImpl implements QuestionRepository {
     try {
       final snapshot = await _firestore
           .collection(FirebaseConstants.questions)
-          .where(FirebaseConstants.type, isEqualTo: type.name)
+          .where(FirebaseConstants.questionType, isEqualTo: type.name)
           .get();
 
       final questions = snapshot.docs

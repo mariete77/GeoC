@@ -1,11 +1,11 @@
 import 'package:dartz/dartz.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
-import '../../core/errors/exceptions.dart';
-import '../../core/errors/failures.dart';
-import '../../core/constants/firebase_constants.dart';
-import '../../domain/entities/match.dart';
-import '../../domain/repositories/match_repository.dart';
-import '../models/match_model.dart';
+import 'package:geoquiz_battle/core/errors/exceptions.dart';
+import 'package:geoquiz_battle/core/errors/failures.dart';
+import 'package:geoquiz_battle/core/constants/firebase_constants.dart';
+import 'package:geoquiz_battle/domain/entities/match.dart';
+import 'package:geoquiz_battle/domain/repositories/match_repository.dart';
+import 'package:geoquiz_battle/data/models/match_model.dart';
 
 /// Match repository implementation
 class MatchRepositoryImpl implements MatchRepository {

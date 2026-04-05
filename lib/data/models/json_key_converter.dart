@@ -1,6 +1,6 @@
 import 'package:json_annotation/json_annotation.dart';
-import '../domain/entities/match.dart';
-import '../domain/entities/question.dart';
+import 'package:geoquiz_battle/domain/entities/match.dart';
+import 'package:geoquiz_battle/domain/entities/question.dart';
 
 /// Converter for MatchMode enum
 class MatchModeConverter implements JsonConverter<MatchMode, String> {

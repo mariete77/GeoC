@@ -1,14 +1,16 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:freezed_annotation/freezed_annotation.dart';
-import '../domain/entities/user.dart';
+import 'package:geoquiz_battle/domain/entities/user.dart';
 
 part 'user_model.freezed.dart';
 part 'user_model.g.dart';
 
 @freezed
 class UserModel with _$UserModel {
+  const UserModel._();
+
   const factory UserModel({
-    required String oderId,
+    required String userId,
     required String displayName,
     String? email,
     String? photoUrl,
@@ -62,7 +64,7 @@ class UserModel with _$UserModel {
       dailyGames: DailyGames(
         casualPlayed: dailyGames.casualPlayed,
         rankedPlayed: dailyGames.rankedPlayed,
-        date: dailyGames.date,
+        date: dailyGames.date ?? DateTime.now(),
       ),
       createdAt: createdAt,
       lastLoginAt: lastLoginAt,
@@ -104,7 +106,7 @@ class UserModel with _$UserModel {
   /// Convert to Firestore map
   Map<String, dynamic> toFirestore() {
     final json = toJson();
-    return json..remove('oderId');
+    return json..remove('userId');
   }
 }
 
@@ -141,7 +143,7 @@ class DailyGamesModel with _$DailyGamesModel {
   const factory DailyGamesModel({
     @Default(0) int casualPlayed,
     @Default(0) int rankedPlayed,
-    required DateTime date,
+    DateTime? date,
   }) = _DailyGamesModel;
 
   factory DailyGamesModel.fromJson(Map<String, dynamic> json) =>

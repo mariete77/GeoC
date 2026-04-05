@@ -1,12 +1,14 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:freezed_annotation/freezed_annotation.dart';
-import '../domain/entities/match.dart';
+import 'package:geoquiz_battle/domain/entities/match.dart';
 
 part 'ghost_run_model.freezed.dart';
 part 'ghost_run_model.g.dart';
 
 @freezed
 class GhostRunModel with _$GhostRunModel {
+  const GhostRunModel._();
+
   const factory GhostRunModel({
     required String userId,
     required String ghostRunId,
@@ -64,6 +66,8 @@ class GhostRunModel with _$GhostRunModel {
 
 @freezed
 class GhostAnswerModel with _$GhostAnswerModel {
+  const GhostAnswerModel._();
+
   const factory GhostAnswerModel({
     required int questionIndex,
     required bool isCorrect,

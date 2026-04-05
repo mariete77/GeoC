@@ -1,13 +1,13 @@
 import 'package:dartz/dartz.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'dart:math';
-import '../../core/errors/exceptions.dart';
-import '../../core/errors/failures.dart';
-import '../../core/constants/firebase_constants.dart';
-import '../../core/constants/game_constants.dart';
-import '../../domain/entities/match.dart';
-import '../../domain/repositories/ghost_run_repository.dart';
-import '../models/ghost_run_model.dart';
+import 'package:geoquiz_battle/core/errors/exceptions.dart';
+import 'package:geoquiz_battle/core/errors/failures.dart';
+import 'package:geoquiz_battle/core/constants/firebase_constants.dart';
+import 'package:geoquiz_battle/core/constants/game_constants.dart';
+import 'package:geoquiz_battle/domain/entities/match.dart';
+import 'package:geoquiz_battle/domain/repositories/ghost_run_repository.dart';
+import 'package:geoquiz_battle/data/models/ghost_run_model.dart';
 
 /// Ghost run repository implementation
 class GhostRunRepositoryImpl implements GhostRunRepository {
@@ -107,7 +107,7 @@ class GhostRunRepositoryImpl implements GhostRunRepository {
           .set(ghostRun.toFirestore());
 
       // Cleanup old ghost runs (keep last N)
-      await _cleanupOldGhostRuns(userId, GameConstants.maxGhostRunsPerUser);
+      await cleanupOldGhostRuns(userId, GameConstants.maxGhostRunsPerUser);
 
       return const Right(null);
     } on ServerException catch (e) {
@@ -140,7 +140,8 @@ class GhostRunRepositoryImpl implements GhostRunRepository {
     }
   }
 
-  Future<Either<Failure, void>> _cleanupOldGhostRuns(
+  @override
+  Future<Either<Failure, void>> cleanupOldGhostRuns(
     String userId,
     int keepCount,
   ) async {

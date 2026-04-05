@@ -1,12 +1,14 @@
 import 'package:freezed_annotation/freezed_annotation.dart';
-import 'json_key_converter.dart';
-import '../domain/entities/question.dart';
+import 'package:geoquiz_battle/data/models/json_key_converter.dart';
+import 'package:geoquiz_battle/domain/entities/question.dart';
 
 part 'question_model.freezed.dart';
 part 'question_model.g.dart';
 
 @freezed
 class QuestionModel with _$QuestionModel {
+  const QuestionModel._();
+
   const factory QuestionModel({
     required String id,
     @QuestionTypeConverter() required QuestionType type,

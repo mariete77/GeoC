@@ -3,12 +3,12 @@ import 'package:firebase_auth/firebase_auth.dart' as firebase;
 import 'package:google_sign_in/google_sign_in.dart';
 import 'package:sign_in_with_apple/sign_in_with_apple.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
-import '../../core/errors/exceptions.dart';
-import '../../core/errors/failures.dart';
-import '../../domain/entities/user.dart';
-import '../../domain/repositories/auth_repository.dart';
-import '../models/user_model.dart';
-import '../datasources/remote/auth_remote_datasource.dart';
+import 'package:geoquiz_battle/core/errors/exceptions.dart';
+import 'package:geoquiz_battle/core/errors/failures.dart';
+import 'package:geoquiz_battle/domain/entities/user.dart';
+import 'package:geoquiz_battle/domain/repositories/auth_repository.dart';
+import 'package:geoquiz_battle/data/models/user_model.dart';
+import 'package:geoquiz_battle/data/datasources/remote/auth_remote_datasource.dart';
 
 /// Authentication repository implementation
 class AuthRepositoryImpl implements AuthRepository {
