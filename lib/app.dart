@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
-import 'package:geoquiz_battle/core/theme/app_theme.dart';
 import 'package:geoquiz_battle/presentation/screens/splash/splash_screen.dart';
 import 'package:geoquiz_battle/presentation/screens/auth/login_screen.dart';
 import 'package:geoquiz_battle/presentation/screens/home/home_screen.dart';
@@ -78,3 +77,26 @@ final routerProvider = Provider<GoRouter>((ref) {
     ),
   );
 });
+
+/// Main app widget
+class GeoQuizBattleApp extends ConsumerWidget {
+  const GeoQuizBattleApp({super.key});
+
+  @override
+  Widget build(BuildContext context, WidgetRef ref) {
+    final router = ref.watch(routerProvider);
+    return MaterialApp.router(
+      title: 'GeoQuiz Battle',
+      debugShowCheckedModeBanner: false,
+      theme: ThemeData(
+        brightness: Brightness.dark,
+        scaffoldBackgroundColor: const Color(0xFF1A1A2E),
+        colorSchemeSeed: Colors.orange,
+        useMaterial3: true,
+      ),
+      routerDelegate: router.routerDelegate,
+      routeInformationProvider: router.routeInformationProvider,
+      routeInformationParser: router.routeInformationParser,
+    );
+  }
+}

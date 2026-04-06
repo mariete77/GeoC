@@ -1,13 +1,10 @@
 import 'dart:async';
 
-import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:freezed_annotation/freezed_annotation.dart';
 import 'package:riverpod_annotation/riverpod_annotation.dart';
-import '../../data/models/question_model.dart';
+import 'package:freezed_annotation/freezed_annotation.dart';
 import '../../domain/entities/question.dart';
 import '../../domain/entities/match.dart';
 import '../../domain/repositories/question_repository.dart';
-import '../../domain/repositories/match_repository.dart';
 
 part 'game_provider.freezed.dart';
 part 'game_provider.g.dart';
@@ -15,15 +12,7 @@ part 'game_provider.g.dart';
 /// Question repository provider
 @riverpod
 QuestionRepository questionRepository(QuestionRepositoryRef ref) {
-  // This will be injected from data layer
   throw UnimplementedError('QuestionRepository not implemented yet');
-}
-
-/// Match repository provider
-@riverpod
-MatchRepository matchRepository(MatchRepositoryRef ref) {
-  // This will be injected from data layer
-  throw UnimplementedError('MatchRepository not implemented yet');
 }
 
 /// Game state
@@ -32,7 +21,7 @@ class GameState with _$GameState {
   const factory GameState.initial() = _Initial;
   const factory GameState.loading() = _Loading;
   const factory GameState.playing({
-    required List<QuestionModel> questions,
+    required List<Question> questions,
     required int currentQuestionIndex,
     required int timeRemaining,
     required int score,
@@ -62,30 +51,29 @@ class GameState with _$GameState {
 @riverpod
 class GameNotifier extends _$GameNotifier {
   Timer? _timer;
-  static const int _questionTimeSeconds = 10; // 10 seconds per question
+  static const int _questionTimeSeconds = 10;
   static const int _questionsPerRound = 10;
 
   @override
   GameState build() {
+    ref.onDispose(() {
+      _timer?.cancel();
+    });
     return const GameState.initial();
   }
 
   /// Start a new game
   Future<void> startGame({
     required Difficulty difficulty,
-    MatchMode mode = MatchMode.realtime,
-    MatchType type = MatchType.casual,
-    String? matchId,
   }) async {
     state = const GameState.loading();
 
     try {
-      // Fetch random questions
       final questionsResult = await ref
           .read(questionRepositoryProvider)
           .getRandomQuestions(
             count: _questionsPerRound,
-            difficulty: difficulty,
+            maxDifficulty: difficulty,
           );
 
       questionsResult.fold(
@@ -130,7 +118,6 @@ class GameNotifier extends _$GameNotifier {
         }
 
         if (currentState.timeRemaining <= 1) {
-          // Time's up - go to next question or finish
           timer.cancel();
           submitAnswer(
             selectedAnswer: '',
@@ -159,8 +146,8 @@ class GameNotifier extends _$GameNotifier {
     final isCorrect = !isTimeout && question.isCorrect(selectedAnswer);
 
     // Calculate score based on time and streak
-    final timeBonus = currentState.timeRemaining * 10; // More time = more points
-    final streakBonus = currentState.streak * 50; // Streak bonus
+    final timeBonus = currentState.timeRemaining * 10;
+    final streakBonus = currentState.streak * 50;
     final baseScore = isCorrect ? 100 : 0;
     final questionScore = isTimeout ? 0 : (baseScore + timeBonus + streakBonus);
 
@@ -183,15 +170,13 @@ class GameNotifier extends _$GameNotifier {
     final newStreak = isCorrect ? currentState.streak + 1 : 0;
 
     if (isTimeout) {
-      // Time ran out - show correct answer then continue
       state = GameState.answered(
         isCorrect: false,
         correctAnswer: question.correctAnswer,
-        selectedAnswer: 'Time\'s up!',
+        selectedAnswer: "Time's up!",
         score: newScore,
       );
 
-      // Auto-advance after showing feedback
       Future.delayed(const Duration(milliseconds: 1500), () {
         nextQuestion(
           score: newScore,
@@ -208,8 +193,7 @@ class GameNotifier extends _$GameNotifier {
         score: newScore,
       );
 
-      // Auto-advance after showing feedback
-      Future.delayed(const Duration(milliseconds: isCorrect ? 1000 : 2000), () {
+      Future.delayed(Duration(milliseconds: isCorrect ? 1000 : 2000), () {
         nextQuestion(
           score: newScore,
           userAnswers: updatedAnswers,
@@ -233,14 +217,12 @@ class GameNotifier extends _$GameNotifier {
     final nextIndex = currentState.currentQuestionIndex + 1;
 
     if (nextIndex >= currentState.questions.length) {
-      // Game finished
       finishGame(
         score: score,
         userAnswers: userAnswers,
         correctAnswers: correctAnswers,
       );
     } else {
-      // Next question
       state = currentState.copyWith(
         currentQuestionIndex: nextIndex,
         timeRemaining: _questionTimeSeconds,
@@ -293,20 +275,14 @@ class GameNotifier extends _$GameNotifier {
       isTimeout: true,
     );
   }
-
-  @override
-  void dispose() {
-    _timer?.cancel();
-    super.dispose();
-  }
 }
 
 /// Current question provider
 @riverpod
-QuestionModel? currentQuestion(CurrentQuestionRef ref) {
+Question? currentQuestion(CurrentQuestionRef ref) {
   final gameState = ref.watch(gameNotifierProvider);
   return gameState.maybeWhen(
-    playing: (questions, currentQuestionIndex, _, _, _, _, _) {
+    playing: (questions, currentQuestionIndex, timeRemaining, score, userAnswers, correctAnswers, streak) {
       if (currentQuestionIndex < questions.length) {
         return questions[currentQuestionIndex];
       }
@@ -321,7 +297,8 @@ QuestionModel? currentQuestion(CurrentQuestionRef ref) {
 double progressPercentage(ProgressPercentageRef ref) {
   final gameState = ref.watch(gameNotifierProvider);
   return gameState.maybeWhen(
-    playing: (_, currentQuestionIndex, _, _, _, _, questions) {
+    playing: (questions, currentQuestionIndex, timeRemaining, score, userAnswers, correctAnswers, streak) {
+      if (questions.isEmpty) return 0.0;
       return (currentQuestionIndex + 1) / questions.length;
     },
     orElse: () => 0.0,
@@ -333,8 +310,8 @@ double progressPercentage(ProgressPercentageRef ref) {
 double timerProgress(TimerProgressRef ref) {
   final gameState = ref.watch(gameNotifierProvider);
   return gameState.maybeWhen(
-    playing: (_, _, timeRemaining, _, _, _, _) {
-      return timeRemaining / 10.0; // 10 seconds total
+    playing: (questions, currentQuestionIndex, timeRemaining, score, userAnswers, correctAnswers, streak) {
+      return timeRemaining / 10.0;
     },
     orElse: () => 0.0,
   );

@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import '../../../core/theme/app_text_styles.dart';
-import '../../../core/theme/app_colors.dart';
 
 /// Custom button with consistent styling
 class CustomButton extends StatelessWidget {
@@ -26,22 +25,6 @@ class CustomButton extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final buttonStyle = isOutlined
-        ? OutlinedButton.styleFrom(
-            padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 12),
-            shape: RoundedRectangleBorder(
-              borderRadius: BorderRadius.circular(12),
-            ),
-          )
-        : ElevatedButton.styleFrom(
-            padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 12),
-            backgroundColor: backgroundColor,
-            foregroundColor: foregroundColor,
-            shape: RoundedRectangleBorder(
-              borderRadius: BorderRadius.circular(12),
-            ),
-          );
-
-    final ButtonStyle button = isOutlined
         ? OutlinedButton.styleFrom(
             padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 12),
             shape: RoundedRectangleBorder(

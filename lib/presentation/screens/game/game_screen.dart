@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import '../../../domain/entities/question.dart';
 import '../../providers/game_provider.dart';
 import 'widgets/timer_widget.dart';
 import 'widgets/question_card.dart';
@@ -68,7 +69,7 @@ class GameScreen extends ConsumerWidget {
       body: gameState.when(
         initial: () => _buildInitial(context, ref),
         loading: () => _buildLoading(),
-        playing: (_, currentQuestionIndex, ___, score, _____, correctAnswers, _) =>
+        playing: (_, currentQuestionIndex, ___, score, _____, correctAnswers, ________) =>
             _buildPlaying(
           context,
           ref,
