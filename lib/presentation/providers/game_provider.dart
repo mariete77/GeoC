@@ -5,6 +5,8 @@ import 'package:freezed_annotation/freezed_annotation.dart';
 import '../../domain/entities/question.dart';
 import '../../domain/entities/match.dart';
 import '../../domain/repositories/question_repository.dart';
+import '../../core/constants/game_constants.dart';
+import '../../core/utils/score_calculator.dart';
 
 part 'game_provider.freezed.dart';
 part 'game_provider.g.dart';
@@ -51,8 +53,6 @@ class GameState with _$GameState {
 @riverpod
 class GameNotifier extends _$GameNotifier {
   Timer? _timer;
-  static const int _questionTimeSeconds = 10;
-  static const int _questionsPerRound = 10;
 
   @override
   GameState build() {
@@ -72,7 +72,7 @@ class GameNotifier extends _$GameNotifier {
       final questionsResult = await ref
           .read(questionRepositoryProvider)
           .getRandomQuestions(
-            count: _questionsPerRound,
+            count: GameConstants.questionsPerMatch,
             maxDifficulty: difficulty,
           );
 
@@ -89,7 +89,7 @@ class GameNotifier extends _$GameNotifier {
           state = GameState.playing(
             questions: questions,
             currentQuestionIndex: 0,
-            timeRemaining: _questionTimeSeconds,
+            timeRemaining: GameConstants.secondsPerQuestion,
             score: 0,
             userAnswers: [],
             correctAnswers: 0,
@@ -145,18 +145,20 @@ class GameNotifier extends _$GameNotifier {
     final question = currentState.questions[currentState.currentQuestionIndex];
     final isCorrect = !isTimeout && question.isCorrect(selectedAnswer);
 
-    // Calculate score based on time and streak
-    final timeBonus = currentState.timeRemaining * 10;
-    final streakBonus = currentState.streak * 50;
-    final baseScore = isCorrect ? 100 : 0;
-    final questionScore = isTimeout ? 0 : (baseScore + timeBonus + streakBonus);
+    // Calculate score using score_calculator
+    final questionScore = calculateQuestionScore(
+      isCorrect: isCorrect,
+      timeRemaining: currentState.timeRemaining,
+      streak: currentState.streak,
+      isTimeout: isTimeout,
+    );
 
     // Create answer record
     final answer = Answer(
       questionIndex: currentState.currentQuestionIndex,
       selectedAnswer: selectedAnswer,
       isCorrect: isCorrect,
-      timeMs: (_questionTimeSeconds - currentState.timeRemaining) * 1000,
+      timeMs: (GameConstants.secondsPerQuestion - currentState.timeRemaining) * 1000,
       answeredAt: DateTime.now(),
     );
 
@@ -169,39 +171,54 @@ class GameNotifier extends _$GameNotifier {
         isCorrect ? currentState.correctAnswers + 1 : currentState.correctAnswers;
     final newStreak = isCorrect ? currentState.streak + 1 : 0;
 
-    if (isTimeout) {
-      state = GameState.answered(
-        isCorrect: false,
-        correctAnswer: question.correctAnswer,
-        selectedAnswer: "Time's up!",
-        score: newScore,
-      );
+    // Transition to answered state with appropriate delay
+    _transitionToAnswered(
+      isCorrect: isCorrect,
+      isTimeout: isTimeout,
+      question: question,
+      selectedAnswer: selectedAnswer,
+      newScore: newScore,
+      updatedAnswers: updatedAnswers,
+      newCorrectAnswers: newCorrectAnswers,
+      newStreak: newStreak,
+    );
+  }
 
-      Future.delayed(const Duration(milliseconds: 1500), () {
-        nextQuestion(
-          score: newScore,
-          userAnswers: updatedAnswers,
-          correctAnswers: newCorrectAnswers,
-          streak: newStreak,
-        );
-      });
-    } else {
-      state = GameState.answered(
-        isCorrect: isCorrect,
-        correctAnswer: question.correctAnswer,
-        selectedAnswer: selectedAnswer,
-        score: newScore,
-      );
+  /// Transition to answered state with appropriate delay
+  void _transitionToAnswered({
+    required bool isCorrect,
+    required bool isTimeout,
+    required Question question,
+    required String selectedAnswer,
+    required int newScore,
+    required List<Answer> updatedAnswers,
+    required int newCorrectAnswers,
+    required int newStreak,
+  }) {
+    final displayAnswer = isTimeout ? "Time's up!" : selectedAnswer;
 
-      Future.delayed(Duration(milliseconds: isCorrect ? 1000 : 2000), () {
-        nextQuestion(
-          score: newScore,
-          userAnswers: updatedAnswers,
-          correctAnswers: newCorrectAnswers,
-          streak: newStreak,
-        );
-      });
-    }
+    state = GameState.answered(
+      isCorrect: isCorrect,
+      correctAnswer: question.correctAnswer,
+      selectedAnswer: displayAnswer,
+      score: newScore,
+    );
+
+    // Determine delay based on result
+    final delayMs = isTimeout
+        ? GameConstants.answeredDelayTimeoutMs
+        : isCorrect
+            ? GameConstants.answeredDelayCorrectMs
+            : GameConstants.answeredDelayIncorrectMs;
+
+    Future.delayed(Duration(milliseconds: delayMs), () {
+      nextQuestion(
+        score: newScore,
+        userAnswers: updatedAnswers,
+        correctAnswers: newCorrectAnswers,
+        streak: newStreak,
+      );
+    });
   }
 
   /// Move to next question or finish game
@@ -225,7 +242,7 @@ class GameNotifier extends _$GameNotifier {
     } else {
       state = currentState.copyWith(
         currentQuestionIndex: nextIndex,
-        timeRemaining: _questionTimeSeconds,
+        timeRemaining: GameConstants.secondsPerQuestion,
         score: score,
         userAnswers: userAnswers,
         correctAnswers: correctAnswers,
@@ -247,12 +264,11 @@ class GameNotifier extends _$GameNotifier {
       0,
       (sum, answer) => sum + answer.timeMs,
     );
-    final averageTime =
-        userAnswers.isEmpty ? 0.0 : totalTimeMs / userAnswers.length;
+    final averageTime = calculateAverageTime(totalTimeMs, userAnswers.length);
 
     state = GameState.finished(
       score: score,
-      totalQuestions: _questionsPerRound,
+      totalQuestions: GameConstants.questionsPerMatch,
       correctAnswers: correctAnswers,
       userAnswers: userAnswers,
       averageTime: averageTime,
@@ -311,7 +327,7 @@ double timerProgress(TimerProgressRef ref) {
   final gameState = ref.watch(gameNotifierProvider);
   return gameState.maybeWhen(
     playing: (questions, currentQuestionIndex, timeRemaining, score, userAnswers, correctAnswers, streak) {
-      return timeRemaining / 10.0;
+      return timeRemaining / GameConstants.secondsPerQuestion;
     },
     orElse: () => 0.0,
   );

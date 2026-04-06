@@ -32,8 +32,15 @@ class GameConstants {
   static const int optionsPerQuestion = 4;
 
   // Answer Scoring
-  static const int pointsPerCorrectAnswer = 10;
-  static const int maxPointsPerMatch = 100; // 10 questions * 10 points
+  static const int baseScorePerCorrectAnswer = 100; // Base points for correct answer
+  static const int timeBonusMultiplier = 10; // Points per second remaining
+  static const int streakBonusMultiplier = 50; // Points per streak level
+  static const int maxPointsPerMatch = 1000; // 10 questions * (100 + max time + max streak)
+
+  // Transitions
+  static const int answeredDelayCorrectMs = 1000; // Delay after correct answer
+  static const int answeredDelayIncorrectMs = 2000; // Delay after incorrect answer
+  static const int answeredDelayTimeoutMs = 1500; // Delay after timeout
 
   // Ranks (ELO ranges)
   static const int rankBronze = 0;
