@@ -1,5 +1,6 @@
 import 'package:dartz/dartz.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:firebase_auth/firebase_auth.dart' as firebase;
 import '../../core/errors/exceptions.dart';
 import '../../core/errors/failures.dart';
 import '../../domain/entities/user.dart';
@@ -19,7 +20,8 @@ class UserRepositoryImpl implements UserRepository {
       final doc = await _firestore.collection('users').doc(userId).get();
 
       if (!doc.exists) {
-        throw const NotFoundException('User not found');
+        // Auto-create user profile on first login
+        return _createUserProfile(userId);
       }
 
       final userModel = UserModel.fromFirestore(doc);
@@ -30,6 +32,30 @@ class UserRepositoryImpl implements UserRepository {
       return Left(NetworkFailure(e.message));
     } on NotFoundException catch (e) {
       return Left(NotFoundFailure(e.message));
+    } catch (e) {
+      return Left(UnknownFailure(e.toString()));
+    }
+  }
+
+  /// Create a new user profile in Firestore
+  Future<Either<Failure, User>> _createUserProfile(String userId) async {
+    try {
+      final firebaseUser = firebase.FirebaseAuth.instance.currentUser;
+      final userModel = UserModel(
+        userId: userId,
+        displayName: firebaseUser?.displayName ?? 'Player',
+        email: firebaseUser?.email,
+        photoUrl: firebaseUser?.photoURL,
+        elo: 1000,
+        stats: const UserStatsModel(),
+        subscription: const SubscriptionModel(),
+        dailyGames: DailyGamesModel.today(),
+        createdAt: DateTime.now(),
+        lastLoginAt: DateTime.now(),
+      );
+
+      await _firestore.collection('users').doc(userId).set(userModel.toFirestore());
+      return Right(userModel.toDomain());
     } catch (e) {
       return Left(UnknownFailure(e.toString()));
     }

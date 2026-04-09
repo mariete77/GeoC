@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:go_router/go_router.dart';
 import '../../providers/auth_provider.dart';
 
 /// Splash screen - handles initial auth check
@@ -49,30 +50,41 @@ class _SplashScreenState extends ConsumerState<SplashScreen>
   }
 
   Future<void> _checkAuthAndNavigate() async {
-    // Wait for animation and auth state
-    await Future.delayed(const Duration(milliseconds: 2000));
+    // Wait for animation
+    await Future.delayed(const Duration(milliseconds: 1500));
 
     if (!mounted) return;
 
-    final authState = ref.read(authNotifierProvider);
+    // Listen to auth state changes - will resolve once Firebase responds
+    ref.listenManual(authStateChangesProvider, (previous, next) {
+      if (!mounted) return;
+      next.whenData((user) {
+        if (user != null) {
+          context.go('/home');
+        } else {
+          context.go('/login');
+        }
+      });
+    });
 
+    // Also check current state after a short delay (in case stream already resolved)
+    await Future.delayed(const Duration(milliseconds: 500));
+    if (!mounted) return;
+
+    final authState = ref.read(authStateChangesProvider);
     authState.when(
       data: (user) {
         if (user != null) {
-          // User is logged in, navigate to home
-          // TODO: Use Go Router navigation
-          Navigator.of(context).pushReplacementNamed('/home');
+          context.go('/home');
         } else {
-          // User is not logged in, navigate to login
-          Navigator.of(context).pushReplacementNamed('/login');
+          context.go('/login');
         }
       },
       loading: () {
-        // Still loading, wait
+        // Still waiting for Firebase - the listener above will handle it
       },
       error: (_, __) {
-        // Error, navigate to login
-        Navigator.of(context).pushReplacementNamed('/login');
+        context.go('/login');
       },
     );
   }

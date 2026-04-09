@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:go_router/go_router.dart';
 import '../../providers/auth_provider.dart';
 import '../../providers/user_provider.dart';
 import '../../../core/theme/app_text_styles.dart';
@@ -15,45 +16,25 @@ class HomeScreen extends ConsumerWidget {
     final userState = ref.watch(userNotifierProvider);
     final dailyGames = ref.watch(dailyGamesStatusProvider);
 
-    // Load user profile if not loaded
-    if (currentUser != null && userState.valueOrNull == null) {
+    // Load user profile from Firestore in background
+    if (currentUser != null && userState.valueOrNull == null && !userState.hasError) {
       WidgetsBinding.instance.addPostFrameCallback((_) {
         ref.read(userNotifierProvider.notifier).getUserProfile(currentUser.userId);
       });
     }
 
+    // Use Firestore user if available, otherwise fall back to auth user
+    final displayUser = userState.valueOrNull ?? currentUser;
+
+    if (displayUser == null) {
+      return const Scaffold(
+        body: Center(child: Text('No user data')),
+      );
+    }
+
     return Scaffold(
       body: SafeArea(
-        child: userState.when(
-          data: (user) {
-            if (user == null) {
-              return const Center(child: Text('No user data'));
-            }
-            return _buildHomeContent(context, ref, user, dailyGames);
-          },
-          loading: () => const Center(child: CircularProgressIndicator()),
-          error: (error, stack) => Center(
-            child: Column(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: [
-                const Icon(Icons.error_outline, size: 48, color: AppColors.error),
-                const SizedBox(height: 16),
-                Text('Error loading profile', style: AppTextStyles.bodyLarge),
-                const SizedBox(height: 16),
-                ElevatedButton(
-                  onPressed: () {
-                    if (currentUser != null) {
-                      ref
-                          .read(userNotifierProvider.notifier)
-                          .getUserProfile(currentUser.userId);
-                    }
-                  },
-                  child: const Text('Retry'),
-                ),
-              ],
-            ),
-          ),
-        ),
+        child: _buildHomeContent(context, ref, displayUser, dailyGames),
       ),
     );
   }
@@ -310,7 +291,7 @@ class HomeScreen extends ConsumerWidget {
           dailyGames.canPlayCasual,
           dailyGames.casualRemaining >= 999 ? '∞' : '${dailyGames.casualRemaining}',
           () {
-            // TODO: Start casual matchmaking
+            context.go('/game/easy');
           },
         ),
         const SizedBox(height: 12),
@@ -323,7 +304,7 @@ class HomeScreen extends ConsumerWidget {
           dailyGames.canPlayRanked,
           '${dailyGames.rankedRemaining}',
           () {
-            // TODO: Start ranked matchmaking
+            context.go('/game/medium');
           },
         ),
       ],

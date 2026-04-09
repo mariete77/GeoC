@@ -21,9 +21,13 @@ class AuthRepositoryImpl implements AuthRepository {
     FirebaseFirestore? firestore,
     AuthRemoteDataSource? authRemoteDataSource,
   })  : _firebaseAuth = firebaseAuth ?? firebase.FirebaseAuth.instance,
-        _googleSignIn = googleSignIn ?? GoogleSignIn(),
+        _googleSignIn = googleSignIn ?? GoogleSignIn(scopes: ['email']),
         _firestore = firestore ?? FirebaseFirestore.instance,
-        _authRemoteDataSource = authRemoteDataSource;
+        _authRemoteDataSource = authRemoteDataSource ??
+            AuthRemoteDataSource(
+              firebaseAuth: firebaseAuth,
+              googleSignIn: googleSignIn,
+            );
 
   @override
   Stream<User?> get authStateChanges {
@@ -40,8 +44,8 @@ class AuthRepositoryImpl implements AuthRepository {
       }
       final firebaseUser = await _authRemoteDataSource!.signInWithGoogle();
 
-      // Create or update user in Firestore
-      await _createOrUpdateUser(firebaseUser);
+      // Create or update user in Firestore (non-blocking)
+      _createOrUpdateUser(firebaseUser).catchError((_) {});
 
       return Right(User.fromFirebaseUser(firebaseUser));
     } on AuthException catch (e) {
@@ -54,6 +58,61 @@ class AuthRepositoryImpl implements AuthRepository {
   }
 
   @override
+  Future<Either<Failure, User>> signInWithEmail(String email, String password) async {
+    try {
+      final userCredential = await _firebaseAuth.signInWithEmailAndPassword(
+        email: email,
+        password: password,
+      );
+      _createOrUpdateUser(userCredential.user!).catchError((_) {});
+      return Right(User.fromFirebaseUser(userCredential.user!));
+    } on firebase.FirebaseAuthException catch (e) {
+      return Left(AuthFailure(_mapFirebaseAuthError(e.code)));
+    } catch (e) {
+      return Left(UnknownFailure(e.toString()));
+    }
+  }
+
+  @override
+  Future<Either<Failure, User>> signUpWithEmail(String email, String password, String displayName) async {
+    try {
+      final userCredential = await _firebaseAuth.createUserWithEmailAndPassword(
+        email: email,
+        password: password,
+      );
+      // Update display name
+      await userCredential.user?.updateDisplayName(displayName);
+      _createOrUpdateUser(userCredential.user!).catchError((_) {});
+      return Right(User.fromFirebaseUser(userCredential.user!));
+    } on firebase.FirebaseAuthException catch (e) {
+      return Left(AuthFailure(_mapFirebaseAuthError(e.code)));
+    } catch (e) {
+      return Left(UnknownFailure(e.toString()));
+    }
+  }
+
+  String _mapFirebaseAuthError(String code) {
+    switch (code) {
+      case 'user-not-found':
+        return 'No existe una cuenta con este email';
+      case 'wrong-password':
+        return 'Contraseña incorrecta';
+      case 'email-already-in-use':
+        return 'Ya existe una cuenta con este email';
+      case 'weak-password':
+        return 'La contraseña es demasiado débil (mínimo 6 caracteres)';
+      case 'invalid-email':
+        return 'Email no válido';
+      case 'too-many-requests':
+        return 'Demasiados intentos. Intenta más tarde';
+      case 'network-request-failed':
+        return 'Error de conexión. Verifica tu internet';
+      default:
+        return 'Error de autenticación: $code';
+    }
+  }
+
+  @override
   Future<Either<Failure, User>> signInWithApple() async {
     try {
       if (_authRemoteDataSource == null) {
@@ -61,8 +120,8 @@ class AuthRepositoryImpl implements AuthRepository {
       }
       final firebaseUser = await _authRemoteDataSource!.signInWithApple();
 
-      // Create or update user in Firestore
-      await _createOrUpdateUser(firebaseUser);
+      // Create or update user in Firestore (non-blocking)
+      _createOrUpdateUser(firebaseUser).catchError((_) {});
 
       return Right(User.fromFirebaseUser(firebaseUser));
     } on AuthException catch (e) {

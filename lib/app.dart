@@ -9,13 +9,16 @@ import 'package:geoquiz_battle/presentation/providers/auth_provider.dart';
 import 'package:geoquiz_battle/domain/entities/question.dart';
 
 final routerProvider = Provider<GoRouter>((ref) {
-  final authState = ref.watch(authStateChangesProvider);
+  final authStreamState = ref.watch(authStateChangesProvider);
+  final authNotifierState = ref.watch(authNotifierProvider);
 
   return GoRouter(
     initialLocation: '/',
     debugLogDiagnostics: true,
     redirect: (context, state) {
-      final isLoggedIn = authState.valueOrNull != null;
+      // Check both: direct auth state (from sign-in methods) and stream state (from Firebase)
+      final isLoggedIn = authNotifierState.valueOrNull != null ||
+          authStreamState.valueOrNull != null;
       final isGoingToLogin = state.matchedLocation == '/login';
 
       // Redirect to login if not authenticated

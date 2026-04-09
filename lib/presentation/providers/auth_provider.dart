@@ -48,6 +48,26 @@ class AuthNotifier extends _$AuthNotifier {
     );
   }
 
+  /// Sign in with email and password
+  Future<void> signInWithEmail(String email, String password) async {
+    state = const AsyncValue.loading();
+    final result = await ref.read(authRepositoryProvider).signInWithEmail(email, password);
+    state = result.fold(
+      (failure) => AsyncValue.error(failure, StackTrace.current),
+      (user) => AsyncValue.data(user),
+    );
+  }
+
+  /// Sign up with email and password
+  Future<void> signUpWithEmail(String email, String password, String displayName) async {
+    state = const AsyncValue.loading();
+    final result = await ref.read(authRepositoryProvider).signUpWithEmail(email, password, displayName);
+    state = result.fold(
+      (failure) => AsyncValue.error(failure, StackTrace.current),
+      (user) => AsyncValue.data(user),
+    );
+  }
+
   /// Sign out
   Future<void> signOut() async {
     state = const AsyncValue.loading();

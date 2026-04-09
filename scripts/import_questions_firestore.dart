@@ -13,7 +13,7 @@ import 'dart:io';
 import 'dart:convert';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
-import 'firebase_options.dart' as options;
+import '../lib/firebase_options.dart' as options;
 
 Future<void> main() async {
   print('🔥 Importando preguntas a Firestore...\n');
@@ -21,7 +21,7 @@ Future<void> main() async {
   try {
     // Inicializar Firebase
     await Firebase.initializeApp(
-      options: options.DefaultFirebaseOptions.currentPlatform,
+      options: options.DefaultFirebaseOptions.web,
     );
     print('✅ Firebase inicializado\n');
 
@@ -42,15 +42,7 @@ Future<void> main() async {
 
     print('✅ ${questions.length} preguntas leídas\n');
 
-    // Confirmar importación
-    print('⚠️  Esto importará ${questions.length} preguntas a Firestore');
-    print('⚠️  ¿Continuar? (y/N)');
-    final input = stdin.readLineSync();
-
-    if (input?.toLowerCase() != 'y') {
-      print('❌ Importación cancelada');
-      exit(0);
-    }
+    print('⚠️  Importando ${questions.length} preguntas a Firestore...');
 
     print('\n📤 Importando preguntas...');
 

@@ -12,7 +12,7 @@ class AuthRemoteDataSource {
     firebase.FirebaseAuth? firebaseAuth,
     GoogleSignIn? googleSignIn,
   })  : _firebaseAuth = firebaseAuth ?? firebase.FirebaseAuth.instance,
-        _googleSignIn = googleSignIn ?? GoogleSignIn();
+        _googleSignIn = googleSignIn ?? GoogleSignIn(scopes: ['email']);
 
   /// Sign in with Google
   Future<firebase.User> signInWithGoogle() async {

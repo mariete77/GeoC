@@ -13,6 +13,12 @@ abstract class AuthRepository {
   /// Sign in with Apple
   Future<Either<Failure, User>> signInWithApple();
 
+  /// Sign in with email and password
+  Future<Either<Failure, User>> signInWithEmail(String email, String password);
+
+  /// Sign up with email and password
+  Future<Either<Failure, User>> signUpWithEmail(String email, String password, String displayName);
+
   /// Sign out
   Future<Either<Failure, void>> signOut();
 
