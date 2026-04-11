@@ -1,6 +1,6 @@
 # GeoQuiz Battle - Progreso Completo del Desarrollo
 
-Última actualización: FASE 3 completada
+Última actualización: FASE 4 completada
 
 ---
 
@@ -13,13 +13,13 @@
 | FASE 1: Fundamentos Backend | ✅ Completada | 16 | 1932 líneas |
 | FASE 2: Autenticación y Home | ✅ Completada | 11 | 1797 líneas |
 | FASE 3: Base de Datos de Preguntas | ✅ Completada | 5 | 1308 líneas |
-| **TOTAL** | **3/8** | **32** | **5037 líneas** |
+| FASE 4: Core del Juego | ✅ Completada | 8 | ~1200 líneas |
+| **TOTAL** | **4/8** | **40** | **~6237 líneas** |
 
 ### Fases Pendientes ⏳
 
 | Fase | Estado | Prioridad |
 |------|--------|----------|
-| FASE 4: Core del Juego | ⏳ Pendiente | 🔴 Alta |
 | FASE 5: Matchmaking Multiplayer | ⏳ Pendiente | 🔴 Alta |
 | FASE 6: Ghost Runs (Async) | ⏳ Pendiente | 🟡 Media |
 | FASE 7: Monetización | ⏳ Pendiente | 🟡 Media |
@@ -154,29 +154,68 @@
 
 ---
 
-## ⏳ FASE 4: Core del Juego (Pendiente)
+## ✅ FASE 4: Core del Juego
 
-### Archivos por Crear
-- `lib/presentation/providers/game_provider.dart`
-- `lib/presentation/screens/game/game_screen.dart`
-- `lib/presentation/screens/game/widgets/` (múltiples widgets)
+**Fecha de finalización:** FASE 4
 
-### Funcionalidades por Implementar
-- ⏳ GameProvider (state management)
-- ⏳ GameScreen (UI del juego)
-- ⏳ Timer circular (10 segundos por pregunta)
-- ⏳ Question widgets:
-  - ⏳ SilhouetteQuestion
-  - ⏳ FlagQuestion
-  - ⏳ CapitalQuestion
-  - ⏳ PopulationQuestion
-  - ⏳ RiverQuestion
-  - ⏳ CityPhotoQuestion
-  - ⏳ AreaQuestion
-- ⏳ AnswerOptions widget
-- ⏳ Lógica de respuestas (tiempo, correctitud)
-- ⏳ Transición entre preguntas
-- ⏳ ResultScreen
+### Archivos Creados (8)
+
+#### Provider (1 archivo)
+- `lib/presentation/providers/game_provider.dart` - State management completo del juego
+
+#### Screens (1 archivo)
+- `lib/presentation/screens/game/game_screen.dart` - UI principal del juego con timer
+
+#### Widgets (4 archivos)
+- `lib/presentation/screens/game/widgets/question_card.dart` - Card reutilizable para preguntas
+- `lib/presentation/screens/game/widgets/answer_options_widget.dart` - Grid de opciones de respuesta
+- `lib/presentation/screens/game/widgets/answer_feedback_widget.dart` - Feedback visual (correcto/incorrecto)
+- `lib/presentation/screens/game/widgets/game_result_widget.dart` - Pantalla de resultados con animaciones
+
+#### Utils (1 archivo)
+- `lib/core/utils/score_calculator.dart` - Cálculos de puntuación, ranks y stats
+
+#### Constants (1 archivo)
+- `lib/core/constants/game_constants.dart` - Constantes del juego (tiempos, ELO, scoring)
+
+### Funcionalidades Implementadas
+- ✅ GameProvider (ChangeNotifier state management)
+  - Estados: initial → loading → playing → answered → showingFeedback → finished
+  - Carga de preguntas desde Firestore (random, por tipo)
+  - Timer de 10 segundos por pregunta
+  - Lógica de scoring (base + tiempo + streak)
+  - Transiciones automáticas entre preguntas
+- ✅ GameScreen UI
+  - Timer circular animado
+  - Barra de progreso (pregunta X de 10)
+  - Puntuación y streak en tiempo real
+  - Transiciones suaves entre estados
+- ✅ QuestionCard widget
+  - Soporte para 7 tipos de pregunta (silhouette, flag, capital, population, river, cityPhoto, area)
+  - Imágenes con placeholder
+  - Texto de pregunta con formato
+- ✅ AnswerOptions widget
+  - Grid 2x2 de opciones
+  - Animación al seleccionar
+  - Colores de feedback (verde/rojo)
+- ✅ AnswerFeedback widget
+  - Icono correcto/incorrecto
+  - Respuesta correcta mostrada
+  - Animación de aparición
+- ✅ GameResult widget
+  - Rango calculado (ROOKIE → LEGENDARY)
+  - Stats: puntuación, correctas, tiempo medio, precisión
+  - Animaciones (fade + slide)
+  - Botones: Play Again / Back to Home
+- ✅ Score Calculator
+  - Puntuación base + bonus tiempo + bonus streak
+  - Cálculo de rank y color
+  - Validación de dificultad
+
+### Bug Fixes Aplicados
+- ✅ Corregido error 403 "People API has not been used" (eliminado scopes de GoogleSignIn)
+- ✅ Corregido mismatch de tipos QuestionModel vs Question en widgets del juego
+- ✅ Corregido scoring para usar métodos estáticos de ScoreCalculator
 
 ---
 
@@ -274,11 +313,12 @@ GeoC/
 │   │   ├── entities/         (3 archivos)
 │   │   └── repositories/     (5 interfaces)
 │   ├── presentation/
-│   │   ├── providers/        (2 archivos)
+│   │   ├── providers/        (3 archivos: auth, user, game)
 │   │   ├── screens/
 │   │   │   ├── splash/       (1 archivo)
 │   │   │   ├── auth/         (1 archivo)
-│   │   │   └── home/         (1 archivo)
+│   │   │   ├── home/         (1 archivo)
+│   │   │   └── game/         (1 archivo + 4 widgets)
 │   │   └── widgets/
 │   │       └── common/       (3 archivos)
 │   ├── app.dart              (1 archivo)
@@ -289,27 +329,26 @@ GeoC/
 └── README.md
 ```
 
-**Total:** 47 archivos creados manualmente
+**Total:** ~55 archivos creados manualmente
 
 ---
 
 ## 🎯 Próximos Pasos Recomendados
 
-1. **FASE 4 - Core del Juego** (Máxima prioridad)
-   - Implementar GameProvider
-   - Crear GameScreen básica
-   - Implementar timer
-   - Crear widgets de preguntas
+1. **Probar FASE 4 - Core del Juego** (Prioridad inmediata)
+   - Hacer hot restart y probar flujo completo: Splash → Login → Home → Game
+   - Verificar que las preguntas se cargan desde Firestore
+   - Probar timer, scoring y transiciones
 
-2. **Pruebas de integración**
-   - Probar flujo completo: Splash → Login → Home
-   - Probar generación de preguntas
-   - Probar importación a Firestore
-
-3. **FASE 5 - Matchmaking**
+2. **FASE 5 - Matchmaking Multiplayer** (Siguiente fase)
    - Implementar MatchmakingService
    - Crear Cloud Functions
    - Probar matchmaking en tiempo real
+
+3. **Bug conocido: Google Sign-In en web**
+   - Error `Future already completed` en `google_sign_in_web`
+   - Se debe a inicialización múltiple del plugin web (GSI)
+   - Solución: instanciar `GoogleSignIn` como singleton o usar `GoogleAuthProvider` directo de Firebase Auth
 
 ---
 
@@ -368,17 +407,17 @@ flutter run
 ## 📊 Métricas de Desarrollo
 
 ### Código
-- **Total líneas:** 5037
-- **Archivos:** 47
-- **Fases completadas:** 3/8 (37.5%)
-- **Tiempo estimado restante:** 5 fases
+- **Total líneas:** ~6237
+- **Archivos:** ~55
+- **Fases completadas:** 4/8 (50%)
+- **Tiempo estimado restante:** 4 fases
 
 ### Funcionalidad
 - **Backend:** 100% (modelos, repositorios, Firebase)
 - **Autenticación:** 100% (Google, Apple)
 - **UI Base:** 100% (Splash, Login, Home)
 - **Base de datos:** 37.5% (325/1000 preguntas objetivo)
-- **Core del juego:** 0%
+- **Core del juego:** 100% (provider, timer, scoring, widgets)
 - **Matchmaking:** 0%
 - **Monetización:** 0%
 
@@ -423,6 +462,6 @@ flutter run
 
 ---
 
-**Última actualización:** FASE 3 completada
-**Estado del proyecto:** 37.5% completado
-**Próxima fase:** FASE 4 - Core del Juego
+**Última actualización:** FASE 4 completada
+**Estado del proyecto:** 50% completado
+**Próxima fase:** FASE 5 - Matchmaking Multiplayer

@@ -126,11 +126,12 @@ class DailyGamesStatus {
   });
 
   factory DailyGamesStatus.unknown() {
+    // Allow play by default while profile loads
     return const DailyGamesStatus(
-      casualRemaining: 0,
-      rankedRemaining: 0,
-      canPlayCasual: false,
-      canPlayRanked: false,
+      casualRemaining: 1,
+      rankedRemaining: 1,
+      canPlayCasual: true,
+      canPlayRanked: true,
     );
   }
 }

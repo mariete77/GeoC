@@ -20,8 +20,24 @@ class QuestionModel with _$QuestionModel {
     Map<String, dynamic>? extraData,
   }) = _QuestionModel;
 
-  factory QuestionModel.fromJson(Map<String, dynamic> json) =>
-      _$QuestionModelFromJson(json);
+  factory QuestionModel.fromJson(Map<String, dynamic> json) {
+    // Safe parsing with defaults for null fields
+    return QuestionModel(
+      id: (json['id'] as String?) ?? '',
+      type: const QuestionTypeConverter()
+          .fromJson((json['type'] as String?) ?? 'flag'),
+      difficulty: const DifficultyConverter()
+          .fromJson((json['difficulty'] as String?) ?? 'medium'),
+      correctAnswer: (json['correctAnswer'] as String?) ?? '',
+      options: (json['options'] as List<dynamic>?)
+              ?.map((e) => e as String)
+              .toList() ??
+          [],
+      imageUrl: json['imageUrl'] as String?,
+      questionText: json['questionText'] as String?,
+      extraData: json['extraData'] as Map<String, dynamic>?,
+    );
+  }
 
   /// Convert to domain entity
   Question toDomain() {

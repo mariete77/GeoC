@@ -2,6 +2,7 @@ import 'dart:async';
 
 import 'package:riverpod_annotation/riverpod_annotation.dart';
 import 'package:freezed_annotation/freezed_annotation.dart';
+import '../../data/repositories/question_repository_impl.dart';
 import '../../domain/entities/question.dart';
 import '../../domain/entities/match.dart';
 import '../../domain/repositories/question_repository.dart';
@@ -14,7 +15,7 @@ part 'game_provider.g.dart';
 /// Question repository provider
 @riverpod
 QuestionRepository questionRepository(QuestionRepositoryRef ref) {
-  throw UnimplementedError('QuestionRepository not implemented yet');
+  return QuestionRepositoryImpl();
 }
 
 /// Game state

@@ -1,10 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:cached_network_image/cached_network_image.dart';
-import 'package:geoquiz_battle/data/models/question_model.dart';
 import 'package:geoquiz_battle/domain/entities/question.dart';
 
 class QuestionCard extends StatelessWidget {
-  final QuestionModel question;
+  final Question question;
 
   const QuestionCard({
     super.key,

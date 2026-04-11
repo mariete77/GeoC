@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:geoquiz_battle/data/models/question_model.dart';
+import 'package:geoquiz_battle/domain/entities/question.dart';
 
 class AnswerOptionsWidget extends StatelessWidget {
-  final QuestionModel question;
+  final Question question;
   final Function(String) onAnswerSelected;
 
   const AnswerOptionsWidget({

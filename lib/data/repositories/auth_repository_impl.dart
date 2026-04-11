@@ -21,7 +21,7 @@ class AuthRepositoryImpl implements AuthRepository {
     FirebaseFirestore? firestore,
     AuthRemoteDataSource? authRemoteDataSource,
   })  : _firebaseAuth = firebaseAuth ?? firebase.FirebaseAuth.instance,
-        _googleSignIn = googleSignIn ?? GoogleSignIn(scopes: ['email']),
+        _googleSignIn = googleSignIn ?? GoogleSignIn(),
         _firestore = firestore ?? FirebaseFirestore.instance,
         _authRemoteDataSource = authRemoteDataSource ??
             AuthRemoteDataSource(
@@ -44,8 +44,8 @@ class AuthRepositoryImpl implements AuthRepository {
       }
       final firebaseUser = await _authRemoteDataSource!.signInWithGoogle();
 
-      // Create or update user in Firestore (non-blocking)
-      _createOrUpdateUser(firebaseUser).catchError((_) {});
+      // Create or update user in Firestore (await to ensure profile exists)
+      await _createOrUpdateUser(firebaseUser);
 
       return Right(User.fromFirebaseUser(firebaseUser));
     } on AuthException catch (e) {
@@ -64,7 +64,7 @@ class AuthRepositoryImpl implements AuthRepository {
         email: email,
         password: password,
       );
-      _createOrUpdateUser(userCredential.user!).catchError((_) {});
+      await _createOrUpdateUser(userCredential.user!);
       return Right(User.fromFirebaseUser(userCredential.user!));
     } on firebase.FirebaseAuthException catch (e) {
       return Left(AuthFailure(_mapFirebaseAuthError(e.code)));

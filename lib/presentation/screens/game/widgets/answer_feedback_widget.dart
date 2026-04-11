@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:cached_network_image/cached_network_image.dart';
-import '../../../../data/models/question_model.dart';
+import '../../../../domain/entities/question.dart';
 
 class AnswerFeedbackWidget extends StatefulWidget {
   final bool isCorrect;
   final String correctAnswer;
   final String selectedAnswer;
   final int score;
-  final QuestionModel? question;
+  final Question? question;
 
   const AnswerFeedbackWidget({
     super.key,
