@@ -234,15 +234,28 @@ class GameScreen extends ConsumerWidget {
           const SizedBox(height: 30),
 
           // Answer options
-          AnswerOptionsWidget(
-            question: currentQuestion,
-            onAnswerSelected: (answer) {
-              ref.read(gameNotifierProvider.notifier).submitAnswer(
-                    selectedAnswer: answer,
-                    isTimeout: false,
-                  );
-            },
-          ),
+          if (currentQuestion.options.isEmpty)
+            Container(
+              padding: const EdgeInsets.all(16),
+              decoration: BoxDecoration(
+                color: Colors.red.withOpacity(0.2),
+                borderRadius: BorderRadius.circular(12),
+              ),
+              child: Text(
+                '⚠️ Debug: options vacías para pregunta ${currentQuestion.id}\nTipo: ${currentQuestion.type.name}\nRespuesta correcta: ${currentQuestion.correctAnswer}',
+                style: const TextStyle(color: Colors.white, fontSize: 14),
+              ),
+            )
+          else
+            AnswerOptionsWidget(
+              question: currentQuestion,
+              onAnswerSelected: (answer) {
+                ref.read(gameNotifierProvider.notifier).submitAnswer(
+                      selectedAnswer: answer,
+                      isTimeout: false,
+                    );
+              },
+            ),
         ],
       ),
     );
@@ -330,9 +343,10 @@ class GameScreen extends ConsumerWidget {
   }
 
   void _showExitDialog(BuildContext context, WidgetRef ref) {
+    final screenContext = context;
     showDialog(
-      context: context,
-      builder: (context) => AlertDialog(
+      context: screenContext,
+      builder: (dialogContext) => AlertDialog(
         backgroundColor: const Color(0xFF2D2D44),
         title: const Text(
           'Exit Game?',
@@ -344,14 +358,14 @@ class GameScreen extends ConsumerWidget {
         ),
         actions: [
           TextButton(
-            onPressed: () => Navigator.of(context).pop(),
+            onPressed: () => Navigator.of(dialogContext).pop(),
             child: const Text('Cancel', style: TextStyle(color: Colors.grey)),
           ),
           TextButton(
             onPressed: () {
-              Navigator.of(context).pop();
+              Navigator.of(dialogContext).pop(); // Close dialog
               ref.read(gameNotifierProvider.notifier).cancelGame();
-              Navigator.of(context).pop();
+              Navigator.of(screenContext).pop(); // Navigate back to home
             },
             child: const Text(
               'Exit',

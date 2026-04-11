@@ -54,6 +54,8 @@ class GameState with _$GameState {
 @riverpod
 class GameNotifier extends _$GameNotifier {
   Timer? _timer;
+  List<Question> _questions = [];
+  int _currentQuestionIndex = 0;
 
   @override
   GameState build() {
@@ -86,6 +88,9 @@ class GameNotifier extends _$GameNotifier {
             state = const GameState.error(message: 'No questions available');
             return;
           }
+
+          _questions = questions;
+          _currentQuestionIndex = 0;
 
           state = GameState.playing(
             questions: questions,
@@ -229,19 +234,19 @@ class GameNotifier extends _$GameNotifier {
     required int correctAnswers,
     required int streak,
   }) {
-    final currentState = state;
-    if (currentState is! _Playing) return;
+    // Use instance variables instead of state, since state is _Answered here
+    final nextIndex = _currentQuestionIndex + 1;
 
-    final nextIndex = currentState.currentQuestionIndex + 1;
-
-    if (nextIndex >= currentState.questions.length) {
+    if (nextIndex >= _questions.length) {
       finishGame(
         score: score,
         userAnswers: userAnswers,
         correctAnswers: correctAnswers,
       );
     } else {
-      state = currentState.copyWith(
+      _currentQuestionIndex = nextIndex;
+      state = GameState.playing(
+        questions: _questions,
         currentQuestionIndex: nextIndex,
         timeRemaining: GameConstants.secondsPerQuestion,
         score: score,

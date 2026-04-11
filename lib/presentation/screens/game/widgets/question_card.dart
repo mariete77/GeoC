@@ -48,14 +48,20 @@ class QuestionCard extends StatelessWidget {
   }
 
   Widget _buildFlagQuestion() {
+    // Build flag URL from imageUrl or countryCode
+    final flagUrl = question.imageUrl ??
+        (question.extraData?['countryCode'] != null
+            ? 'https://flagcdn.com/w320/${question.extraData!['countryCode']}.png'
+            : null);
+
     return Column(
       children: [
         // Flag image
-        if (question.imageUrl != null)
+        if (flagUrl != null)
           ClipRRect(
             borderRadius: const BorderRadius.vertical(top: Radius.circular(20)),
             child: CachedNetworkImage(
-              imageUrl: question.imageUrl!,
+              imageUrl: flagUrl,
               height: 150,
               width: double.infinity,
               fit: BoxFit.contain,
@@ -75,6 +81,17 @@ class QuestionCard extends StatelessWidget {
               ),
             ),
           ),
+        if (flagUrl == null)
+          Container(
+            height: 150,
+            decoration: BoxDecoration(
+              color: Colors.grey.withOpacity(0.2),
+              borderRadius: const BorderRadius.vertical(top: Radius.circular(20)),
+            ),
+            child: const Center(
+              child: Icon(Icons.flag, size: 60, color: Colors.grey),
+            ),
+          ),
         Padding(
           padding: const EdgeInsets.all(20),
           child: Column(
@@ -82,7 +99,7 @@ class QuestionCard extends StatelessWidget {
               _buildDifficultyBadge(),
               const SizedBox(height: 16),
               Text(
-                'Which country does this flag belong to?',
+                question.questionText ?? '¿De qué país es esta bandera?',
                 style: const TextStyle(
                   color: Colors.white,
                   fontSize: 22,
@@ -138,7 +155,7 @@ class QuestionCard extends StatelessWidget {
               _buildDifficultyBadge(),
               const SizedBox(height: 16),
               Text(
-                question.questionText ?? 'Which country is this?',
+                question.questionText ?? '¿Qué país es este?',
                 style: const TextStyle(
                   color: Colors.white,
                   fontSize: 22,
@@ -167,7 +184,7 @@ class QuestionCard extends StatelessWidget {
           ),
           const SizedBox(height: 24),
           Text(
-            '${question.questionText ?? question.correctAnswer} is the capital of which country?',
+            question.questionText ?? '¿Cuál es la capital de este país?',
             style: const TextStyle(
               color: Colors.white,
               fontSize: 22,
@@ -181,11 +198,6 @@ class QuestionCard extends StatelessWidget {
   }
 
   Widget _buildPopulationQuestion() {
-    final population = question.extraData?['population'] as int?;
-    final formattedPopulation = population != null
-        ? _formatNumber(population)
-        : question.questionText ?? '';
-
     return Padding(
       padding: const EdgeInsets.all(24),
       child: Column(
@@ -199,7 +211,7 @@ class QuestionCard extends StatelessWidget {
           ),
           const SizedBox(height: 24),
           Text(
-            'Which country has approximately $formattedPopulation people?',
+            question.questionText ?? '¿Qué país tiene más población?',
             style: const TextStyle(
               color: Colors.white,
               fontSize: 22,
@@ -226,7 +238,7 @@ class QuestionCard extends StatelessWidget {
           ),
           const SizedBox(height: 24),
           Text(
-            '${question.questionText ?? question.correctAnswer} flows through which country?',
+            question.questionText ?? '¿Por qué país pasa este río?',
             style: const TextStyle(
               color: Colors.white,
               fontSize: 22,
@@ -274,7 +286,7 @@ class QuestionCard extends StatelessWidget {
               _buildDifficultyBadge(),
               const SizedBox(height: 16),
               Text(
-                question.questionText ?? 'Which city is shown in this photo?',
+                question.questionText ?? '¿Qué ciudad se muestra en esta foto?',
                 style: const TextStyle(
                   color: Colors.white,
                   fontSize: 22,
@@ -290,11 +302,6 @@ class QuestionCard extends StatelessWidget {
   }
 
   Widget _buildAreaQuestion() {
-    final area = question.extraData?['area'] as int?;
-    final formattedArea = area != null
-        ? _formatNumber(area)
-        : question.questionText ?? '';
-
     return Padding(
       padding: const EdgeInsets.all(24),
       child: Column(
@@ -308,7 +315,7 @@ class QuestionCard extends StatelessWidget {
           ),
           const SizedBox(height: 24),
           Text(
-            'Which country has an area of approximately $formattedArea km²?',
+            question.questionText ?? '¿Qué país es más extenso?',
             style: const TextStyle(
               color: Colors.white,
               fontSize: 22,
@@ -328,15 +335,15 @@ class QuestionCard extends StatelessWidget {
     switch (question.difficulty) {
       case Difficulty.easy:
         badgeColor = Colors.green;
-        badgeText = 'EASY';
+        badgeText = 'FÁCIL';
         break;
       case Difficulty.medium:
         badgeColor = Colors.orange;
-        badgeText = 'MEDIUM';
+        badgeText = 'MEDIO';
         break;
       case Difficulty.hard:
         badgeColor = Colors.red;
-        badgeText = 'HARD';
+        badgeText = 'DIFÍCIL';
         break;
     }
 
