@@ -1,8 +1,12 @@
+/// Game mode enum
+enum GameMode { multipleChoice, typeAnswer }
+
 /// Game-specific constants
 class GameConstants {
   // Match Settings
   static const int questionsPerMatch = 10;
   static const int secondsPerQuestion = 10;
+  static const int secondsPerTypeQuestion = 15; // More time for typing
   static const int millisecondsPerQuestion = 10000;
   static const int matchDurationSeconds = 100; // 10 questions * 10 seconds
 

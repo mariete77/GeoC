@@ -7,6 +7,7 @@ import 'package:geoquiz_battle/presentation/screens/home/home_screen.dart';
 import 'package:geoquiz_battle/presentation/screens/game/game_screen.dart';
 import 'package:geoquiz_battle/presentation/providers/auth_provider.dart';
 import 'package:geoquiz_battle/domain/entities/question.dart';
+import 'package:geoquiz_battle/core/constants/game_constants.dart';
 
 final routerProvider = Provider<GoRouter>((ref) {
   final authStreamState = ref.watch(authStateChangesProvider);
@@ -55,6 +56,20 @@ final routerProvider = Provider<GoRouter>((ref) {
             orElse: () => Difficulty.medium,
           );
           return GameScreen(difficulty: difficulty);
+        },
+      ),
+      GoRoute(
+        path: '/game-type/:difficulty',
+        builder: (context, state) {
+          final difficultyStr = state.pathParameters['difficulty'] ?? 'medium';
+          final difficulty = Difficulty.values.firstWhere(
+            (d) => d.name.toLowerCase() == difficultyStr.toLowerCase(),
+            orElse: () => Difficulty.medium,
+          );
+          return GameScreen(
+            difficulty: difficulty,
+            gameMode: GameMode.typeAnswer,
+          );
         },
       ),
     ],

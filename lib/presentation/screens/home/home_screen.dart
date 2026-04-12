@@ -5,6 +5,7 @@ import '../../providers/auth_provider.dart';
 import '../../providers/user_provider.dart';
 import '../../../core/theme/app_text_styles.dart';
 import '../../../core/theme/app_colors.dart';
+import '../../../core/constants/game_constants.dart';
 
 /// Home screen
 class HomeScreen extends ConsumerWidget {
@@ -305,6 +306,19 @@ class HomeScreen extends ConsumerWidget {
           '${dailyGames.rankedRemaining}',
           () {
             context.go('/game/medium');
+          },
+        ),
+        const SizedBox(height: 12),
+        // Type Answer mode
+        _buildGameModeCard(
+          'Escribe la Respuesta',
+          'Sin opciones • Más puntos por velocidad',
+          Icons.keyboard,
+          const Color(0xFF9C27B0),
+          dailyGames.canPlayCasual,
+          dailyGames.casualRemaining >= 999 ? '∞' : '${dailyGames.casualRemaining}',
+          () {
+            context.go('/game-type/easy');
           },
         ),
       ],

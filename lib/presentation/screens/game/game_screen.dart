@@ -7,13 +7,18 @@ import 'widgets/question_card.dart';
 import 'widgets/answer_options_widget.dart';
 import 'widgets/answer_feedback_widget.dart';
 import 'widgets/game_result_widget.dart';
+import 'widgets/type_answer_widget.dart';
+import '../../../core/constants/game_constants.dart';
+import '../../../core/utils/fuzzy_matcher.dart';
 
 class GameScreen extends ConsumerWidget {
   final Difficulty difficulty;
+  final GameMode gameMode;
 
   const GameScreen({
     super.key,
     required this.difficulty,
+    this.gameMode = GameMode.multipleChoice,
   });
 
   @override
@@ -137,6 +142,7 @@ class GameScreen extends ConsumerWidget {
             onPressed: () {
               ref.read(gameNotifierProvider.notifier).startGame(
                     difficulty: difficulty,
+                    gameMode: gameMode,
                   );
             },
             style: ElevatedButton.styleFrom(
@@ -233,8 +239,8 @@ class GameScreen extends ConsumerWidget {
           QuestionCard(question: currentQuestion),
           const SizedBox(height: 30),
 
-          // Answer options
-          if (currentQuestion.options.isEmpty)
+          // Answer options - depends on game mode
+          if (currentQuestion.options.isEmpty && gameMode == GameMode.multipleChoice)
             Container(
               padding: const EdgeInsets.all(16),
               decoration: BoxDecoration(
@@ -245,6 +251,20 @@ class GameScreen extends ConsumerWidget {
                 '⚠️ Debug: options vacías para pregunta ${currentQuestion.id}\nTipo: ${currentQuestion.type.name}\nRespuesta correcta: ${currentQuestion.correctAnswer}',
                 style: const TextStyle(color: Colors.white, fontSize: 14),
               ),
+            )
+          else if (gameMode == GameMode.typeAnswer)
+            TypeAnswerWidget(
+              question: currentQuestion,
+              timeRemaining: ref.watch(timerProgressProvider) > 0
+                  ? (ref.watch(timerProgressProvider) * (gameMode == GameMode.typeAnswer
+                      ? GameConstants.secondsPerTypeQuestion
+                      : GameConstants.secondsPerQuestion)).round()
+                  : 0,
+              onAnswerSubmitted: (answer) {
+                ref.read(gameNotifierProvider.notifier).submitTypedAnswer(
+                      typedAnswer: answer,
+                    );
+              },
             )
           else
             AnswerOptionsWidget(
@@ -296,6 +316,7 @@ class GameScreen extends ConsumerWidget {
       onPlayAgain: () {
         ref.read(gameNotifierProvider.notifier).startGame(
               difficulty: difficulty,
+              gameMode: gameMode,
             );
       },
       onGoHome: () {

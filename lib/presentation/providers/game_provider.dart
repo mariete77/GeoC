@@ -8,6 +8,7 @@ import '../../domain/entities/match.dart';
 import '../../domain/repositories/question_repository.dart';
 import '../../core/constants/game_constants.dart';
 import '../../core/utils/score_calculator.dart';
+import '../../core/utils/fuzzy_matcher.dart';
 
 part 'game_provider.freezed.dart';
 part 'game_provider.g.dart';
@@ -31,6 +32,7 @@ class GameState with _$GameState {
     required List<Answer> userAnswers,
     required int correctAnswers,
     required int streak,
+    GameMode? gameMode,
   }) = _Playing;
   const factory GameState.answered({
     required bool isCorrect,
@@ -68,6 +70,7 @@ class GameNotifier extends _$GameNotifier {
   /// Start a new game
   Future<void> startGame({
     required Difficulty difficulty,
+    GameMode gameMode = GameMode.multipleChoice,
   }) async {
     state = const GameState.loading();
 
@@ -92,14 +95,19 @@ class GameNotifier extends _$GameNotifier {
           _questions = questions;
           _currentQuestionIndex = 0;
 
+          final secondsPerQuestion = gameMode == GameMode.typeAnswer
+              ? GameConstants.secondsPerTypeQuestion
+              : GameConstants.secondsPerQuestion;
+
           state = GameState.playing(
             questions: questions,
             currentQuestionIndex: 0,
-            timeRemaining: GameConstants.secondsPerQuestion,
+            timeRemaining: secondsPerQuestion,
             score: 0,
             userAnswers: [],
             correctAnswers: 0,
             streak: 0,
+            gameMode: gameMode,
           );
 
           _startTimer();
@@ -135,6 +143,55 @@ class GameNotifier extends _$GameNotifier {
           );
         }
       },
+    );
+  }
+
+  /// Submit a typed answer for type-answer mode
+  void submitTypedAnswer({
+    required String typedAnswer,
+  }) {
+    final currentState = state;
+    if (currentState is! _Playing) return;
+
+    _timer?.cancel();
+
+    final question = currentState.questions[currentState.currentQuestionIndex];
+    final similarity = answerSimilarity(typedAnswer, question.correctAnswer);
+    final isCorrect = similarity >= 0.85; // 85%+ counts as correct
+
+    final secondsPerQuestion = currentState.gameMode == GameMode.typeAnswer
+        ? GameConstants.secondsPerTypeQuestion
+        : GameConstants.secondsPerQuestion;
+
+    final questionScore = calculateTypedScore(
+      similarity: similarity,
+      timeRemaining: currentState.timeRemaining,
+      maxTime: secondsPerQuestion,
+      streak: currentState.streak,
+    );
+
+    final answer = Answer(
+      questionIndex: currentState.currentQuestionIndex,
+      selectedAnswer: typedAnswer,
+      isCorrect: isCorrect,
+      timeMs: (secondsPerQuestion - currentState.timeRemaining) * 1000,
+      answeredAt: DateTime.now(),
+    );
+
+    final updatedAnswers = [...currentState.userAnswers, answer];
+    final newScore = currentState.score + questionScore;
+    final newCorrectAnswers = isCorrect ? currentState.correctAnswers + 1 : currentState.correctAnswers;
+    final newStreak = isCorrect ? currentState.streak + 1 : 0;
+
+    _transitionToAnswered(
+      isCorrect: isCorrect,
+      isTimeout: false,
+      question: question,
+      selectedAnswer: typedAnswer,
+      newScore: newScore,
+      updatedAnswers: updatedAnswers,
+      newCorrectAnswers: newCorrectAnswers,
+      newStreak: newStreak,
     );
   }
 
@@ -245,14 +302,27 @@ class GameNotifier extends _$GameNotifier {
       );
     } else {
       _currentQuestionIndex = nextIndex;
+
+      // Get current game mode from previous state
+      GameMode? mode;
+      state.maybeWhen(
+        playing: (_, __, ___, ____, _____, ______, _______, m) => mode = m,
+        orElse: () {},
+      );
+
+      final secondsPerQuestion = mode == GameMode.typeAnswer
+          ? GameConstants.secondsPerTypeQuestion
+          : GameConstants.secondsPerQuestion;
+
       state = GameState.playing(
         questions: _questions,
         currentQuestionIndex: nextIndex,
-        timeRemaining: GameConstants.secondsPerQuestion,
+        timeRemaining: secondsPerQuestion,
         score: score,
         userAnswers: userAnswers,
         correctAnswers: correctAnswers,
         streak: streak,
+        gameMode: mode,
       );
       _startTimer();
     }
