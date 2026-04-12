@@ -1,9 +1,10 @@
 # 🤖 Guía para el Agente de Desarrollo - GeoQuiz Battle
 
 **Fecha creación:** 11/04/2026  
+**Última actualización:** 09/04/2026  
 **Proyecto:** GeoQuiz Battle - Juego de geografía multiplayer  
 **Stack:** Flutter + Firebase (Firestore, Auth, Realtime DB) + Riverpod  
-**Estado actual:** Fase 4 completada, debugging en progreso
+**Estado actual:** Fase 4 completada + modo escribir implementado, pendiente importar preguntas
 
 ---
 
@@ -28,31 +29,40 @@
 - Pantalla de juego: pregunta + timer + feedback + resultados
 - Scoring con bonus de tiempo y streak
 - Sistema de dificultad (fácil/medio/difícil)
+- **Modo "Escribe la Respuesta"** — escribir la respuesta con fuzzy matching (Levenshtein)
+- **1000 preguntas generadas** en español (7 tipos × 3 dificultades)
 
-### 🐛 Bug ACTIVO: Opciones de respuesta no aparecen
-**Síntoma:** Al jugar, la pregunta de bandera se muestra correctamente (con imagen y texto "¿De qué país es esta bandera?") pero NO aparecen los botones de opciones de respuesta.
+### 🐛 Bug PENDIENTE: Opciones de respuesta no aparecen
+**Estado:** PENDIENTE DE IMPORTAR preguntas a Firestore
+**Causa:** Las preguntas en Firestore NO tienen el campo `options` (o está vacío)
+**Solución:** Reimportar con los nuevos scripts:
+```bash
+python scripts/import_full.py scripts/questions_full.json
+python scripts/import_full.py scripts/questions_full_2.json
+```
+Una vez importado, ELIMINAR el bloque de debug en `game_screen.dart`
 
-**Diagnóstico en progreso:**
-- Se ha añadido un mensaje de debug en `game_screen.dart` (línea ~237) que muestra "⚠️ Debug: options vacías..." si `currentQuestion.options.isEmpty`
-- **Posibles causas:**
-  1. Las preguntas en Firestore NO tienen el campo `options` (o está vacío)
-  2. El parseo en `QuestionModel.fromJson` no lee correctamente el campo
+### ✅ NUEVO: Modo "Escribe la Respuesta" (09/04/2026)
+**Qué se añadió:**
+- `GameMode` enum: `multipleChoice` y `typeAnswer`
+- `TypeAnswerWidget` — campo de texto con auto-focus
+- `fuzzy_matcher.dart` — Levenshtein distance para matching de respuestas
+- Scoring por precisión: Perfecta (100%), Casi (75%), Cerca (50%), Aprobable (25%)
+- Bonus de velocidad: más rápido = más puntos (base 150 pts vs 100 del múltiple choice)
+- 15 segundos por pregunta en modo escribir (vs 10 en múltiple choice)
+- Ruta nueva: `/game-type/:difficulty`
+- Botón en Home Screen: "Escribe la Respuesta"
 
-**Pasos para diagnosticar:**
-1. Haz hot restart completo y juega una partida
-2. Si ves el mensaje rojo de debug → las opciones están vacías en Firestore
-3. Solución: reimportar preguntas usando el script Python:
-   ```bash
-   cd d:\Repos\GeoC && python scripts/import_questions_rest.py
-   ```
-4. Verificar en Firebase Console que las preguntas tienen el campo `options` como array
+**Archivos nuevos:**
+- `lib/core/utils/fuzzy_matcher.dart`
+- `lib/presentation/screens/game/widgets/type_answer_widget.dart`
 
-**Archivos involucrados:**
-- `lib/presentation/screens/game/game_screen.dart` (línea ~237: debug message)
-- `lib/data/models/question_model.dart` (fromJson, línea 32-35: parseo de options)
-- `lib/presentation/screens/game/widgets/answer_options_widget.dart` (widget de opciones)
-- `scripts/import_questions_rest.py` (script de importación)
-- `scripts/questions.json` y `scripts/questions_python_generated.json` (datos JSON con options correctos)
+**Archivos modificados:**
+- `lib/core/constants/game_constants.dart` — GameMode enum + 15s timer
+- `lib/presentation/providers/game_provider.dart` — gameMode en estado + submitTypedAnswer()
+- `lib/presentation/screens/game/game_screen.dart` — ambos modos
+- `lib/presentation/screens/home/home_screen.dart` — botón nuevo
+- `lib/app.dart` — ruta /game-type/:difficulty
 
 ### 🐛 Bug resuelto: Idiomas mezclados
 **Estado:** ✅ RESUELTO  
@@ -78,31 +88,31 @@ final flagUrl = question.imageUrl ??
 
 ## 2. Tareas Prioritarias (Inmediatas)
 
-### 🔴 PRIORIDAD 1: Fix opciones de respuesta (BUG ACTIVO)
+### 🔴 PRIORIDAD 1: Importar preguntas a Firestore
 **Orden:**
-1. Hot restart y probar → ver si aparece mensaje de debug
-2. Si options vacías → verificar datos en Firestore Console
-3. Si datos mal → reimportar con `python scripts/import_questions_rest.py`
-4. Si datos bien → investigar parseo en `QuestionModel.fromJson`
-5. Una vez fijado, ELIMINAR el mensaje de debug de `game_screen.dart`
+1. `python scripts/import_full.py scripts/questions_full.json` (500 preguntas)
+2. `python scripts/import_full.py scripts/questions_full_2.json` (otras 500)
+3. Verificar en Firebase Console que las preguntas tienen campo `options`
+4. Probar juego — las opciones deberían aparecer
 
 ### 🔴 PRIORIDAD 2: Regenerar código con build_runner
-Los archivos `.freezed.dart` y `.g.dart` pueden estar desactualizados.
+Los archivos `.freezed.dart` y `.g.dart` están desactualizados tras cambios en GameState.
 ```bash
-cd d:\Repos\GeoC
 dart run build_runner build --delete-conflicting-outputs
 ```
 
-### 🟡 PRIORIDAD 3: Generar más preguntas
-Solo hay ~30 preguntas en `questions.json`. Objetivo: 500+.
-- Ejecutar `scripts/generate_questions_python.py` para generar más
-- O crear un script mejorado que genere preguntas de todos los tipos
-- Importar a Firestore con `scripts/import_questions_rest.py`
+### 🟡 PRIORIDAD 3: Eliminar debug code
+Una vez confirmado que las opciones funcionan, eliminar:
+- El bloque de debug en `game_screen.dart` (condicional de options vacías)
 
-### 🟡 PRIORIDAD 4: Eliminar debug code
-Una vez fijado el bug de opciones, eliminar:
-- El bloque de debug en `game_screen.dart` (línea ~237-249)
-- El método `_formatNumber` no usado en `question_card.dart` (se puede dejar, no molesta)
+### 🟡 PRIORIDAD 4: Probar modo "Escribe la Respuesta"
+- Ejecutar app y seleccionar "Escribe la Respuesta" desde Home
+- Verificar que el campo de texto funciona
+- Verificar scoring fuzzy (escribir respuesta incorrecta similar, ver puntos parciales)
+- Verificar que timer de 15s funciona
+
+### 🟢 PRIORIDAD 5: Generar más preguntas (si hace falta)
+Hay 1000 preguntas pero solo cubren ~70 países. Objetivo: 2000+ para más variedad.
 
 ---
 
