@@ -308,19 +308,6 @@ class HomeScreen extends ConsumerWidget {
             context.go('/game/medium');
           },
         ),
-        const SizedBox(height: 12),
-        // Type Answer mode
-        _buildGameModeCard(
-          'Escribe la Respuesta',
-          'Sin opciones • Más puntos por velocidad',
-          Icons.keyboard,
-          const Color(0xFF9C27B0),
-          dailyGames.canPlayCasual,
-          dailyGames.casualRemaining >= 999 ? '∞' : '${dailyGames.casualRemaining}',
-          () {
-            context.go('/game-type/easy');
-          },
-        ),
       ],
     );
   }

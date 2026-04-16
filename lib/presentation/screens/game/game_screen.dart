@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:go_router/go_router.dart';
 import '../../../domain/entities/question.dart';
 import '../../providers/game_provider.dart';
 import 'widgets/timer_widget.dart';
@@ -13,12 +14,10 @@ import '../../../core/utils/fuzzy_matcher.dart';
 
 class GameScreen extends ConsumerWidget {
   final Difficulty difficulty;
-  final GameMode gameMode;
 
   const GameScreen({
     super.key,
     required this.difficulty,
-    this.gameMode = GameMode.multipleChoice,
   });
 
   @override
@@ -55,7 +54,7 @@ class GameScreen extends ConsumerWidget {
                 const SizedBox(width: 6),
                 Text(
                   gameState.maybeWhen(
-                    playing: (_, __, ___, score, _____, _______, ______) => '$score',
+                    playing: (_, __, ___, score, _____, ______, _______) => '$score',
                     answered: (_, __, ___, score) => '$score',
                     finished: (score, ___, _____, _______, ______) => '$score',
                     orElse: () => '0',
@@ -140,10 +139,9 @@ class GameScreen extends ConsumerWidget {
           const SizedBox(height: 32),
           ElevatedButton(
             onPressed: () {
-              ref.read(gameNotifierProvider.notifier).startGame(
-                    difficulty: difficulty,
-                    gameMode: gameMode,
-                  );
+            ref.read(gameNotifierProvider.notifier).startGame(
+                  difficulty: difficulty,
+                );
             },
             style: ElevatedButton.styleFrom(
               backgroundColor: Colors.orange,
@@ -239,26 +237,12 @@ class GameScreen extends ConsumerWidget {
           QuestionCard(question: currentQuestion),
           const SizedBox(height: 30),
 
-          // Answer options - depends on game mode
-          if (currentQuestion.options.isEmpty && gameMode == GameMode.multipleChoice)
-            Container(
-              padding: const EdgeInsets.all(16),
-              decoration: BoxDecoration(
-                color: Colors.red.withOpacity(0.2),
-                borderRadius: BorderRadius.circular(12),
-              ),
-              child: Text(
-                '⚠️ Debug: options vacías para pregunta ${currentQuestion.id}\nTipo: ${currentQuestion.type.name}\nRespuesta correcta: ${currentQuestion.correctAnswer}',
-                style: const TextStyle(color: Colors.white, fontSize: 14),
-              ),
-            )
-          else if (gameMode == GameMode.typeAnswer)
+          // Answer options - type answer if no options, otherwise multiple choice
+          if (currentQuestion.options.isEmpty)
             TypeAnswerWidget(
               question: currentQuestion,
               timeRemaining: ref.watch(timerProgressProvider) > 0
-                  ? (ref.watch(timerProgressProvider) * (gameMode == GameMode.typeAnswer
-                      ? GameConstants.secondsPerTypeQuestion
-                      : GameConstants.secondsPerQuestion)).round()
+                  ? (ref.watch(timerProgressProvider) * GameConstants.secondsPerTypeQuestion).round()
                   : 0,
               onAnswerSubmitted: (answer) {
                 ref.read(gameNotifierProvider.notifier).submitTypedAnswer(
@@ -316,11 +300,12 @@ class GameScreen extends ConsumerWidget {
       onPlayAgain: () {
         ref.read(gameNotifierProvider.notifier).startGame(
               difficulty: difficulty,
-              gameMode: gameMode,
             );
       },
       onGoHome: () {
-        Navigator.of(context).pop();
+        // Navigate first, then reset state to avoid context issues
+        context.go('/home');
+        Future.microtask(() => ref.read(gameNotifierProvider.notifier).resetGame());
       },
     );
   }
@@ -349,7 +334,7 @@ class GameScreen extends ConsumerWidget {
             const SizedBox(height: 24),
             ElevatedButton(
               onPressed: () {
-                Navigator.of(context).pop();
+                context.go('/home');
               },
               style: ElevatedButton.styleFrom(
                 backgroundColor: Colors.orange,
@@ -386,7 +371,7 @@ class GameScreen extends ConsumerWidget {
             onPressed: () {
               Navigator.of(dialogContext).pop(); // Close dialog
               ref.read(gameNotifierProvider.notifier).cancelGame();
-              Navigator.of(screenContext).pop(); // Navigate back to home
+              context.go('/home');
             },
             child: const Text(
               'Exit',

@@ -3,11 +3,23 @@ import json
 import urllib.request
 import sys
 import time
+import os
+import pathlib
 
 PROJECT_ID = "geoquiz-7790d"
 API_KEY = "AIzaSyCFOIzMkKStbRpsM2dtNoLJcTbWp83xe9w"
 BASE = f"projects/{PROJECT_ID}/databases/(default)/documents/questions"
 BATCH_SIZE = 100  # Firestore limit per batchWrite
+
+def get_access_token():
+    """Read access token from Firebase CLI credentials."""
+    # Try standard location
+    cred_path = pathlib.Path.home() / ".config" / "configstore" / "firebase-tools.json"
+    if cred_path.exists():
+        with open(cred_path, "r", encoding="utf-8") as f:
+            data = json.load(f)
+            return data.get("tokens", {}).get("access_token")
+    return None
 
 def field(v):
     if isinstance(v, str):
@@ -25,6 +37,13 @@ def field(v):
     elif v is None:
         return {"nullValue": "NULL_VALUE"}
     return {"stringValue": str(v)}
+
+# Get OAuth access token from Firebase CLI
+access_token = get_access_token()
+if not access_token:
+    print("❌ No Firebase access token found. Run 'firebase login' first.")
+    sys.exit(1)
+print(f"✅ Using OAuth token from Firebase CLI")
 
 # Load questions
 filename = sys.argv[1] if len(sys.argv) > 1 else "scripts/questions_full.json"
@@ -45,9 +64,13 @@ for batch_num, batch in enumerate(batches, 1):
         writes.append({"update": {"name": f"{BASE}/{doc_id}", "fields": fields}})
 
     body = json.dumps({"writes": writes}).encode("utf-8")
-    url = f"https://firestore.googleapis.com/v1/projects/{PROJECT_ID}/databases/(default)/documents:batchWrite?key={API_KEY}"
+    url = f"https://firestore.googleapis.com/v1/projects/{PROJECT_ID}/databases/(default)/documents:batchWrite"
 
-    req = urllib.request.Request(url, data=body, headers={"Content-Type": "application/json"}, method="POST")
+    headers = {
+        "Content-Type": "application/json",
+        "Authorization": f"Bearer {access_token}",
+    }
+    req = urllib.request.Request(url, data=body, headers=headers, method="POST")
 
     try:
         with urllib.request.urlopen(req, timeout=60) as resp:

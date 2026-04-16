@@ -1,4 +1,5 @@
 import 'dart:async';
+import 'dart:math';
 
 import 'package:riverpod_annotation/riverpod_annotation.dart';
 import 'package:freezed_annotation/freezed_annotation.dart';
@@ -32,7 +33,6 @@ class GameState with _$GameState {
     required List<Answer> userAnswers,
     required int correctAnswers,
     required int streak,
-    GameMode? gameMode,
   }) = _Playing;
   const factory GameState.answered({
     required bool isCorrect,
@@ -70,16 +70,15 @@ class GameNotifier extends _$GameNotifier {
   /// Start a new game
   Future<void> startGame({
     required Difficulty difficulty,
-    GameMode gameMode = GameMode.multipleChoice,
   }) async {
     state = const GameState.loading();
 
     try {
+      // Fetch all questions (no difficulty filter) to maximize pool and reduce repeats
       final questionsResult = await ref
           .read(questionRepositoryProvider)
           .getRandomQuestions(
             count: GameConstants.questionsPerMatch,
-            maxDifficulty: difficulty,
           );
 
       questionsResult.fold(
@@ -92,22 +91,21 @@ class GameNotifier extends _$GameNotifier {
             return;
           }
 
-          _questions = questions;
+          // Convert some questions to type-answer mode (strip options)
+          _questions = _convertToTypeAnswer(questions);
           _currentQuestionIndex = 0;
 
-          final secondsPerQuestion = gameMode == GameMode.typeAnswer
-              ? GameConstants.secondsPerTypeQuestion
-              : GameConstants.secondsPerQuestion;
+          // Auto-detect time based on first question type
+          final secondsPerQuestion = _getTimeForQuestion(_questions.first);
 
           state = GameState.playing(
-            questions: questions,
+            questions: _questions,
             currentQuestionIndex: 0,
             timeRemaining: secondsPerQuestion,
             score: 0,
             userAnswers: [],
             correctAnswers: 0,
             streak: 0,
-            gameMode: gameMode,
           );
 
           _startTimer();
@@ -116,6 +114,15 @@ class GameNotifier extends _$GameNotifier {
     } catch (e) {
       state = GameState.error(message: 'Failed to start game: $e');
     }
+  }
+
+  /// Get appropriate time limit based on question type
+  int _getTimeForQuestion(Question question) {
+    // Type-answer questions (no options) get more time
+    if (question.options.isEmpty) {
+      return GameConstants.secondsPerTypeQuestion;
+    }
+    return GameConstants.secondsPerQuestion;
   }
 
   /// Start timer for current question
@@ -159,14 +166,12 @@ class GameNotifier extends _$GameNotifier {
     final similarity = answerSimilarity(typedAnswer, question.correctAnswer);
     final isCorrect = similarity >= 0.85; // 85%+ counts as correct
 
-    final secondsPerQuestion = currentState.gameMode == GameMode.typeAnswer
-        ? GameConstants.secondsPerTypeQuestion
-        : GameConstants.secondsPerQuestion;
+    final maxTime = _getTimeForQuestion(question);
 
     final questionScore = calculateTypedScore(
       similarity: similarity,
       timeRemaining: currentState.timeRemaining,
-      maxTime: secondsPerQuestion,
+      maxTime: maxTime,
       streak: currentState.streak,
     );
 
@@ -174,7 +179,7 @@ class GameNotifier extends _$GameNotifier {
       questionIndex: currentState.currentQuestionIndex,
       selectedAnswer: typedAnswer,
       isCorrect: isCorrect,
-      timeMs: (secondsPerQuestion - currentState.timeRemaining) * 1000,
+      timeMs: (maxTime - currentState.timeRemaining) * 1000,
       answeredAt: DateTime.now(),
     );
 
@@ -216,12 +221,13 @@ class GameNotifier extends _$GameNotifier {
       isTimeout: isTimeout,
     );
 
-    // Create answer record
+    // Create answer record - use appropriate time for this question type
+    final maxTime = _getTimeForQuestion(question);
     final answer = Answer(
       questionIndex: currentState.currentQuestionIndex,
       selectedAnswer: selectedAnswer,
       isCorrect: isCorrect,
-      timeMs: (GameConstants.secondsPerQuestion - currentState.timeRemaining) * 1000,
+      timeMs: (maxTime - currentState.timeRemaining) * 1000,
       answeredAt: DateTime.now(),
     );
 
@@ -303,16 +309,9 @@ class GameNotifier extends _$GameNotifier {
     } else {
       _currentQuestionIndex = nextIndex;
 
-      // Get current game mode from previous state
-      GameMode? mode;
-      state.maybeWhen(
-        playing: (_, __, ___, ____, _____, ______, _______, m) => mode = m,
-        orElse: () {},
-      );
-
-      final secondsPerQuestion = mode == GameMode.typeAnswer
-          ? GameConstants.secondsPerTypeQuestion
-          : GameConstants.secondsPerQuestion;
+      // Auto-detect time based on next question type
+      final nextQuestion = _questions[nextIndex];
+      final secondsPerQuestion = _getTimeForQuestion(nextQuestion);
 
       state = GameState.playing(
         questions: _questions,
@@ -322,7 +321,6 @@ class GameNotifier extends _$GameNotifier {
         userAnswers: userAnswers,
         correctAnswers: correctAnswers,
         streak: streak,
-        gameMode: mode,
       );
       _startTimer();
     }
@@ -355,6 +353,36 @@ class GameNotifier extends _$GameNotifier {
   void cancelGame() {
     _timer?.cancel();
     state = const GameState.initial();
+  }
+
+  /// Reset game state (for navigating back home)
+  void resetGame() {
+    _timer?.cancel();
+    _questions = [];
+    _currentQuestionIndex = 0;
+    state = const GameState.initial();
+  }
+
+  /// Convert some questions to type-answer mode by stripping options
+  /// Roughly 30% of questions become type-answer
+  List<Question> _convertToTypeAnswer(List<Question> questions) {
+    final random = Random();
+    return questions.map((q) {
+      // 30% chance to convert to type-answer
+      if (random.nextDouble() < 0.3) {
+        return Question(
+          id: q.id,
+          type: q.type,
+          difficulty: q.difficulty,
+          correctAnswer: q.correctAnswer,
+          options: [], // Empty options = type-answer mode
+          imageUrl: q.imageUrl,
+          questionText: q.questionText,
+          extraData: q.extraData,
+        );
+      }
+      return q;
+    }).toList();
   }
 
   /// Skip to next question (for testing/debug)
@@ -403,7 +431,14 @@ double timerProgress(TimerProgressRef ref) {
   final gameState = ref.watch(gameNotifierProvider);
   return gameState.maybeWhen(
     playing: (questions, currentQuestionIndex, timeRemaining, score, userAnswers, correctAnswers, streak) {
-      return timeRemaining / GameConstants.secondsPerQuestion;
+      // Use the correct max time based on current question type
+      final currentQuestion = currentQuestionIndex < questions.length
+          ? questions[currentQuestionIndex]
+          : null;
+      final maxTime = currentQuestion != null && currentQuestion.options.isEmpty
+          ? GameConstants.secondsPerTypeQuestion
+          : GameConstants.secondsPerQuestion;
+      return timeRemaining / maxTime;
     },
     orElse: () => 0.0,
   );

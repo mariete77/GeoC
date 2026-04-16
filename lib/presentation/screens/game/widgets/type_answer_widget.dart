@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import '../../../domain/entities/question.dart';
+import 'package:geoquiz_battle/domain/entities/question.dart';
 
 /// Widget for typing answers in type-answer game mode
 class TypeAnswerWidget extends StatefulWidget {
@@ -29,6 +29,10 @@ class _TypeAnswerWidgetState extends State<TypeAnswerWidget> {
     // Auto-focus the text field
     WidgetsBinding.instance.addPostFrameCallback((_) {
       _focusNode.requestFocus();
+    });
+    // Listen to text changes to update button state
+    _textController.addListener(() {
+      setState(() {});
     });
   }
 
@@ -154,12 +158,16 @@ class _TypeAnswerWidgetState extends State<TypeAnswerWidget> {
         return 'Escribe el nombre de la capital';
       case QuestionType.flag:
         return 'Escribe el nombre del país';
-      case QuestionType.language:
-        return 'Escribe el nombre del idioma';
-      case QuestionType.currency:
-        return 'Escribe el nombre de la moneda';
-      case QuestionType.region:
-        return 'Escribe el nombre de la región';
+      case QuestionType.silhouette:
+        return 'Escribe el nombre del país';
+      case QuestionType.population:
+        return 'Escribe la población aproximada';
+      case QuestionType.river:
+        return 'Escribe el nombre del río';
+      case QuestionType.cityPhoto:
+        return 'Escribe el nombre de la ciudad';
+      case QuestionType.area:
+        return 'Escribe la superficie aproximada';
       default:
         return 'Escribe tu respuesta';
     }
