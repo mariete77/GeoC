@@ -4,12 +4,12 @@
     "type": "currency",
     "difficulty": "easy",
     "questionText": "¿Cuál es la divisa de China?",
-    "correctAnswer": "Chinese yuan",
+    "correctAnswer": "Yuan chino",
     "options": [
-      "United States dollar",
-      "Chinese yuan",
+      "Dólar estadounidense",
+      "Yuan chino",
       "Macanese pataca",
-      "Liberian dollar"
+      "Dólar liberiano"
     ],
     "extraData": {
       "countryCode": "cn",
@@ -41,12 +41,12 @@
     "type": "currency",
     "difficulty": "medium",
     "questionText": "¿Qué billetes y monedas circulan en Colombia?",
-    "correctAnswer": "Colombian peso",
+    "correctAnswer": "Peso colombiano",
     "options": [
-      "Kazakhstani tenge",
-      "Colombian peso",
-      "Fijian dollar",
-      "West African CFA franc"
+      "Tenge kazajo",
+      "Peso colombiano",
+      "Dólar fiyiano",
+      "Franco CFA de África Occidental"
     ],
     "extraData": {
       "countryCode": "co",
@@ -76,12 +76,12 @@
     "type": "currency",
     "difficulty": "medium",
     "questionText": "¿La moneda oficial de Anguilla es...?",
-    "correctAnswer": "Eastern Caribbean dollar",
+    "correctAnswer": "Dólar del Caribe Oriental",
     "options": [
-      "United States dollar",
-      "Eastern Caribbean dollar",
-      "euro",
-      "West African CFA franc"
+      "Dólar estadounidense",
+      "Dólar del Caribe Oriental",
+      "Euro",
+      "Franco CFA de África Occidental"
     ],
     "extraData": {
       "countryCode": "ai",
@@ -94,12 +94,12 @@
     "type": "currency",
     "difficulty": "hard",
     "questionText": "¿Cuál es la divisa de Kazakhstan?",
-    "correctAnswer": "Kazakhstani tenge",
+    "correctAnswer": "Tenge kazajo",
     "options": [
-      "Canadian dollar",
-      "Kazakhstani tenge",
-      "Turkmenistan manat",
-      "United States dollar"
+      "Dólar canadiense",
+      "Tenge kazajo",
+      "Manat turcomano",
+      "Dólar estadounidense"
     ],
     "extraData": {
       "countryCode": "kz",
@@ -183,12 +183,12 @@
     "type": "currency",
     "difficulty": "hard",
     "questionText": "¿Cuál es la divisa de Kenya?",
-    "correctAnswer": "Kenyan shilling",
+    "correctAnswer": "Chelín keniano",
     "options": [
-      "Congolese franc",
-      "Moroccan dirham",
+      "Franco congoleño",
+      "Dírham marroquí",
       "Netherlands Antillean guilder",
-      "Kenyan shilling"
+      "Chelín keniano"
     ],
     "extraData": {
       "countryCode": "ke",
@@ -481,12 +481,12 @@
     "type": "currency",
     "difficulty": "hard",
     "questionText": "¿Qué billetes y monedas circulan en Ivory Coast?",
-    "correctAnswer": "West African CFA franc",
+    "correctAnswer": "Franco CFA de África Occidental",
     "options": [
-      "Moroccan dirham",
-      "Danish krone",
-      "West African CFA franc",
-      "euro"
+      "Dírham marroquí",
+      "Corona danesa",
+      "Franco CFA de África Occidental",
+      "Euro"
     ],
     "extraData": {
       "countryCode": "ci",
@@ -609,12 +609,12 @@
     "type": "currency",
     "difficulty": "medium",
     "questionText": "¿Qué currency tienen en United States Virgin Islands?",
-    "correctAnswer": "United States dollar",
+    "correctAnswer": "Dólar estadounidense",
     "options": [
-      "Afghan afghani",
-      "United States dollar",
+      "Afgano afgano",
+      "Dólar estadounidense",
       "Maldivian rufiyaa",
-      "Australian dollar"
+      "Dólar australiano"
     ],
     "extraData": {
       "countryCode": "vi",
@@ -630,9 +630,9 @@
     "correctAnswer": "Sudanese pound",
     "options": [
       "Sudanese pound",
-      "Iraqi dinar",
-      "United States dollar",
-      "Eastern Caribbean dollar"
+      "Dinar iraquí",
+      "Dólar estadounidense",
+      "Dólar del Caribe Oriental"
     ],
     "extraData": {
       "countryCode": "sd",
@@ -754,12 +754,12 @@
     "type": "currency",
     "difficulty": "hard",
     "questionText": "¿En Cameroon se usa qué moneda?",
-    "correctAnswer": "Central African CFA franc",
+    "correctAnswer": "Franco CFA de África Central",
     "options": [
-      "British pound",
-      "Panamanian balboa",
-      "Congolese franc",
-      "Central African CFA franc"
+      "Libra esterlina",
+      "Balboa panameño",
+      "Franco congoleño",
+      "Franco CFA de África Central"
     ],
     "extraData": {
       "countryCode": "cm",
@@ -1093,7 +1093,7 @@
     "options": [
       "denar",
       "Netherlands Antillean guilder",
-      "euro",
+      "Euro",
       "Burmese kyat"
     ],
     "extraData": {
@@ -1144,12 +1144,12 @@
     "type": "currency",
     "difficulty": "hard",
     "questionText": "¿Cuál es la moneda de Norfolk Island?",
-    "correctAnswer": "Australian dollar",
+    "correctAnswer": "Dólar australiano",
     "options": [
-      "Malagasy ariary",
-      "Central African CFA franc",
-      "euro",
-      "Australian dollar"
+      "Ariary malgache",
+      "Franco CFA de África Central",
+      "Euro",
+      "Dólar australiano"
     ],
     "extraData": {
       "countryCode": "nf",
@@ -1164,10 +1164,10 @@
     "questionText": "¿En Sierra Leone se usa qué moneda?",
     "correctAnswer": "Leone",
     "options": [
-      "Jordanian dinar",
+      "Dinar jordano",
       "Leone",
-      "Danish krone",
-      "Haitian gourde"
+      "Corona danesa",
+      "Gourde haitiano"
     ],
     "extraData": {
       "countryCode": "sl",
@@ -1288,12 +1288,12 @@
     "type": "currency",
     "difficulty": "hard",
     "questionText": "¿Cuál es la divisa de Mozambique?",
-    "correctAnswer": "Mozambican metical",
+    "correctAnswer": "Metical mozambiqueño",
     "options": [
       "Tongan paʻanga",
-      "Mozambican metical",
-      "Swazi lilangeni",
-      "New Zealand dollar"
+      "Metical mozambiqueño",
+      "Lilangeni suazi",
+      "Dólar neozelandés"
     ],
     "extraData": {
       "countryCode": "mz",
@@ -1344,9 +1344,9 @@
     "questionText": "¿En Vanuatu se usa qué moneda?",
     "correctAnswer": "Vanuatu vatu",
     "options": [
-      "Moldovan leu",
+      "Leu moldavo",
       "Nicaraguan córdoba",
-      "Bahamian dollar",
+      "Dólar bahameño",
       "Vanuatu vatu"
     ],
     "extraData": {
@@ -1432,12 +1432,12 @@
     "type": "currency",
     "difficulty": "hard",
     "questionText": "¿Qué billetes y monedas circulan en Mayotte?",
-    "correctAnswer": "euro",
+    "correctAnswer": "Euro",
     "options": [
       "Leone",
-      "Eastern Caribbean dollar",
-      "euro",
-      "Indian rupee"
+      "Dólar del Caribe Oriental",
+      "Euro",
+      "Rupia india"
     ],
     "extraData": {
       "countryCode": "yt",
@@ -1692,12 +1692,12 @@
     "type": "currency",
     "difficulty": "medium",
     "questionText": "¿La moneda oficial de Peru es...?",
-    "correctAnswer": "Peruvian sol",
+    "correctAnswer": "Sol peruano",
     "options": [
-      "Central African CFA franc",
-      "Peruvian sol",
-      "Japanese yen",
-      "euro"
+      "Franco CFA de África Central",
+      "Sol peruano",
+      "Yen japonés",
+      "Euro"
     ],
     "extraData": {
       "countryCode": "pe",

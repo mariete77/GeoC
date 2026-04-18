@@ -24,7 +24,7 @@
     "questionText": "¿La moneda oficial de North Macedonia es...?",
     "correctAnswer": "denar",
     "options": [
-      "Indian rupee",
+      "Rupia india",
       "denar",
       "Eritrean nakfa",
       "Honduran lempira"
@@ -119,9 +119,9 @@
     "correctAnswer": "Macanese pataca",
     "options": [
       "Macanese pataca",
-      "Russian ruble",
-      "South Korean won",
-      "Eastern Caribbean dollar"
+      "Rublo ruso",
+      "Won surcoreano",
+      "Dólar del Caribe Oriental"
     ],
     "extraData": {
       "countryCode": "mo",
@@ -152,12 +152,12 @@
     "type": "currency",
     "difficulty": "hard",
     "questionText": "¿En Syria se usa qué moneda?",
-    "correctAnswer": "Syrian pound",
+    "correctAnswer": "Libra siria",
     "options": [
-      "Syrian pound",
-      "Brazilian real",
-      "Bangladeshi taka",
-      "Cuban convertible peso"
+      "Libra siria",
+      "Real brasileño",
+      "Taka bangladesí",
+      "Peso convertible cubano"
     ],
     "extraData": {
       "countryCode": "sy",
@@ -354,11 +354,11 @@
     "type": "currency",
     "difficulty": "hard",
     "questionText": "¿Cuál es la moneda de Vietnam?",
-    "correctAnswer": "Vietnamese đồng",
+    "correctAnswer": "Dong vietnamita",
     "options": [
-      "United States dollar",
-      "Vietnamese đồng",
-      "West African CFA franc",
+      "Dólar estadounidense",
+      "Dong vietnamita",
+      "Franco CFA de África Occidental",
       "Pound sterling"
     ],
     "extraData": {
@@ -481,12 +481,12 @@
     "type": "currency",
     "difficulty": "hard",
     "questionText": "¿Cuál es la divisa de South Africa?",
-    "correctAnswer": "South African rand",
+    "correctAnswer": "Rand sudafricano",
     "options": [
-      "South African rand",
-      "euro",
-      "Serbian dinar",
-      "Bangladeshi taka"
+      "Rand sudafricano",
+      "Euro",
+      "Dinar serbio",
+      "Taka bangladesí"
     ],
     "extraData": {
       "countryCode": "za",
@@ -610,12 +610,12 @@
     "type": "currency",
     "difficulty": "hard",
     "questionText": "¿Qué moneda se usa en Togo?",
-    "correctAnswer": "West African CFA franc",
+    "correctAnswer": "Franco CFA de África Occidental",
     "options": [
-      "West African CFA franc",
-      "Bhutanese ngultrum",
-      "Canadian dollar",
-      "Somali shilling"
+      "Franco CFA de África Occidental",
+      "Ngultrum butanés",
+      "Dólar canadiense",
+      "Chelín somalí"
     ],
     "extraData": {
       "countryCode": "tg",
@@ -753,12 +753,12 @@
     "type": "currency",
     "difficulty": "medium",
     "questionText": "¿Qué billetes y monedas circulan en Guernsey?",
-    "correctAnswer": "British pound",
+    "correctAnswer": "Libra esterlina",
     "options": [
-      "Colombian peso",
-      "United States dollar",
-      "British pound",
-      "euro"
+      "Peso colombiano",
+      "Dólar estadounidense",
+      "Libra esterlina",
+      "Euro"
     ],
     "extraData": {
       "countryCode": "gg",
@@ -790,11 +790,11 @@
     "type": "currency",
     "difficulty": "hard",
     "questionText": "¿Cuál es la moneda de Oman?",
-    "correctAnswer": "Omani rial",
+    "correctAnswer": "Rial omaní",
     "options": [
       "dalasi",
-      "Central African CFA franc",
-      "Omani rial",
+      "Franco CFA de África Central",
+      "Rial omaní",
       "Netherlands Antillean guilder"
     ],
     "extraData": {
@@ -1011,12 +1011,12 @@
     "type": "currency",
     "difficulty": "hard",
     "questionText": "¿La moneda oficial de Senegal es...?",
-    "correctAnswer": "West African CFA franc",
+    "correctAnswer": "Franco CFA de África Occidental",
     "options": [
-      "Seychellois rupee",
-      "United States dollar",
+      "Rupia seychellense",
+      "Dólar estadounidense",
       "Qatari riyal",
-      "West African CFA franc"
+      "Franco CFA de África Occidental"
     ],
     "extraData": {
       "countryCode": "sn",
@@ -1047,12 +1047,12 @@
     "type": "currency",
     "difficulty": "medium",
     "questionText": "¿La moneda oficial de Montenegro es...?",
-    "correctAnswer": "euro",
+    "correctAnswer": "Euro",
     "options": [
-      "euro",
-      "Brazilian real",
-      "United States dollar",
-      "British pound"
+      "Euro",
+      "Real brasileño",
+      "Dólar estadounidense",
+      "Libra esterlina"
     ],
     "extraData": {
       "countryCode": "me",
@@ -1191,12 +1191,12 @@
     "type": "currency",
     "difficulty": "hard",
     "questionText": "¿Qué billetes y monedas circulan en Turkmenistan?",
-    "correctAnswer": "Turkmenistan manat",
+    "correctAnswer": "Manat turcomano",
     "options": [
-      "Turkmenistan manat",
-      "Tajikistani somoni",
-      "Bahraini dinar",
-      "West African CFA franc"
+      "Manat turcomano",
+      "Somoni tayiko",
+      "Dinar bareiní",
+      "Franco CFA de África Occidental"
     ],
     "extraData": {
       "countryCode": "tm",
@@ -1247,12 +1247,12 @@
     "type": "currency",
     "difficulty": "hard",
     "questionText": "¿Qué billetes y monedas circulan en Seychelles?",
-    "correctAnswer": "Seychellois rupee",
+    "correctAnswer": "Rupia seychellense",
     "options": [
-      "euro",
-      "Seychellois rupee",
-      "Central African CFA franc",
-      "Moroccan dirham"
+      "Euro",
+      "Rupia seychellense",
+      "Franco CFA de África Central",
+      "Dírham marroquí"
     ],
     "extraData": {
       "countryCode": "sc",
@@ -1303,12 +1303,12 @@
     "type": "currency",
     "difficulty": "medium",
     "questionText": "¿Qué billetes y monedas circulan en Dominican Republic?",
-    "correctAnswer": "Dominican peso",
+    "correctAnswer": "Peso dominicano",
     "options": [
-      "Yemeni rial",
-      "Norwegian krone",
-      "Dominican peso",
-      "Canadian dollar"
+      "Rial yemení",
+      "Corona noruega",
+      "Peso dominicano",
+      "Dólar canadiense"
     ],
     "extraData": {
       "countryCode": "do",
@@ -1599,12 +1599,12 @@
     "type": "currency",
     "difficulty": "medium",
     "questionText": "¿Qué moneda se usa en Guatemala?",
-    "correctAnswer": "Guatemalan quetzal",
+    "correctAnswer": "Quetzal guatemalteco",
     "options": [
-      "Malaysian ringgit",
-      "Zambian kwacha",
-      "Guatemalan quetzal",
-      "Venezuelan bolívar soberano"
+      "Ringgit malayo",
+      "Kwacha zambiano",
+      "Quetzal guatemalteco",
+      "Bolívar soberano venezolano"
     ],
     "extraData": {
       "countryCode": "gt",
@@ -1692,12 +1692,12 @@
     "type": "currency",
     "difficulty": "hard",
     "questionText": "¿La moneda oficial de Mongolia es...?",
-    "correctAnswer": "Mongolian tögrög",
+    "correctAnswer": "Tögrög mongol",
     "options": [
-      "euro",
-      "Australian dollar",
-      "Saudi riyal",
-      "Mongolian tögrög"
+      "Euro",
+      "Dólar australiano",
+      "Riyal saudí",
+      "Tögrög mongol"
     ],
     "extraData": {
       "countryCode": "mn",
@@ -1746,11 +1746,11 @@
     "type": "currency",
     "difficulty": "hard",
     "questionText": "¿Qué billetes y monedas circulan en Solomon Islands?",
-    "correctAnswer": "Solomon Islands dollar",
+    "correctAnswer": "Dólar de las Islas Salomón",
     "options": [
-      "Turkish lira",
-      "Solomon Islands dollar",
-      "New Zealand dollar",
+      "Lira turca",
+      "Dólar de las Islas Salomón",
+      "Dólar neozelandés",
       "Bosnia and Herzegovina convertible mark"
     ],
     "extraData": {

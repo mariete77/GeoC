@@ -42,12 +42,12 @@
     "type": "currency",
     "difficulty": "hard",
     "questionText": "¿Cuál es la divisa de New Caledonia?",
-    "correctAnswer": "CFP franc",
+    "correctAnswer": "Franco CFP",
     "options": [
-      "British pound",
-      "euro",
-      "CFP franc",
-      "Eastern Caribbean dollar"
+      "Libra esterlina",
+      "Euro",
+      "Franco CFP",
+      "Dólar del Caribe Oriental"
     ],
     "extraData": {
       "countryCode": "nc",
@@ -60,12 +60,12 @@
     "type": "currency",
     "difficulty": "hard",
     "questionText": "¿Cuál es la moneda de Palau?",
-    "correctAnswer": "United States dollar",
+    "correctAnswer": "Dólar estadounidense",
     "options": [
       "Belarusian ruble",
-      "Iranian rial",
-      "United States dollar",
-      "euro"
+      "Rial iraní",
+      "Dólar estadounidense",
+      "Euro"
     ],
     "extraData": {
       "countryCode": "pw",
@@ -97,12 +97,12 @@
     "type": "currency",
     "difficulty": "medium",
     "questionText": "¿Qué moneda se usa en Guadeloupe?",
-    "correctAnswer": "euro",
+    "correctAnswer": "Euro",
     "options": [
-      "euro",
-      "Norwegian krone",
-      "Australian dollar",
-      "Indonesian rupiah"
+      "Euro",
+      "Corona noruega",
+      "Dólar australiano",
+      "Rupia indonesia"
     ],
     "extraData": {
       "countryCode": "gp",
@@ -210,12 +210,12 @@
     "type": "currency",
     "difficulty": "medium",
     "questionText": "¿Qué moneda se usa en Paraguay?",
-    "correctAnswer": "Paraguayan guaraní",
+    "correctAnswer": "Guaraní paraguayo",
     "options": [
-      "Tajikistani somoni",
-      "United States dollar",
+      "Somoni tayiko",
+      "Dólar estadounidense",
       "Netherlands Antillean guilder",
-      "Paraguayan guaraní"
+      "Guaraní paraguayo"
     ],
     "extraData": {
       "countryCode": "py",
@@ -228,12 +228,12 @@
     "type": "currency",
     "difficulty": "medium",
     "questionText": "¿Cuál es la divisa de Liechtenstein?",
-    "correctAnswer": "Swiss franc",
+    "correctAnswer": "Franco suizo",
     "options": [
-      "Swiss franc",
+      "Franco suizo",
       "Netherlands Antillean guilder",
-      "Danish krone",
-      "New Zealand dollar"
+      "Corona danesa",
+      "Dólar neozelandés"
     ],
     "extraData": {
       "countryCode": "li",
@@ -246,12 +246,12 @@
     "type": "currency",
     "difficulty": "medium",
     "questionText": "¿Cuál es la divisa de Kosovo?",
-    "correctAnswer": "euro",
+    "correctAnswer": "Euro",
     "options": [
       "Lao kip",
-      "CFP franc",
-      "Algerian dinar",
-      "euro"
+      "Franco CFP",
+      "Dinar argelino",
+      "Euro"
     ],
     "extraData": {
       "countryCode": "xk",
@@ -264,12 +264,12 @@
     "type": "currency",
     "difficulty": "medium",
     "questionText": "¿Qué moneda se usa en United States Minor Outlying Islands?",
-    "correctAnswer": "United States dollar",
+    "correctAnswer": "Dólar estadounidense",
     "options": [
       "Nicaraguan córdoba",
       "Bosnia and Herzegovina convertible mark",
-      "Philippine peso",
-      "United States dollar"
+      "Peso filipino",
+      "Dólar estadounidense"
     ],
     "extraData": {
       "countryCode": "um",
@@ -377,9 +377,9 @@
     "questionText": "¿Qué currency tienen en Saint Helena, Ascension and Tristan da Cunha?",
     "correctAnswer": "Pound sterling",
     "options": [
-      "Cook Islands dollar",
-      "Moroccan dirham",
-      "Pakistani rupee",
+      "Dólar de las Islas Cook",
+      "Dírham marroquí",
+      "Rupia paquistaní",
       "Pound sterling"
     ],
     "extraData": {
@@ -653,11 +653,11 @@
     "type": "currency",
     "difficulty": "hard",
     "questionText": "¿Cuál es la divisa de Guinea-Bissau?",
-    "correctAnswer": "West African CFA franc",
+    "correctAnswer": "Franco CFA de África Occidental",
     "options": [
-      "euro",
-      "West African CFA franc",
-      "Fijian dollar",
+      "Euro",
+      "Franco CFA de África Occidental",
+      "Dólar fiyiano",
       "Netherlands Antillean guilder"
     ],
     "extraData": {
@@ -688,12 +688,12 @@
     "type": "currency",
     "difficulty": "medium",
     "questionText": "¿En Martinique se usa qué moneda?",
-    "correctAnswer": "euro",
+    "correctAnswer": "Euro",
     "options": [
-      "Saudi riyal",
-      "euro",
-      "Bermudian dollar",
-      "Moldovan leu"
+      "Riyal saudí",
+      "Euro",
+      "Dólar bermudeño",
+      "Leu moldavo"
     ],
     "extraData": {
       "countryCode": "mq",
@@ -1057,12 +1057,12 @@
     "type": "currency",
     "difficulty": "hard",
     "questionText": "¿En Burkina Faso se usa qué moneda?",
-    "correctAnswer": "West African CFA franc",
+    "correctAnswer": "Franco CFA de África Occidental",
     "options": [
       "Icelandic króna",
-      "euro",
-      "CFP franc",
-      "West African CFA franc"
+      "Euro",
+      "Franco CFP",
+      "Franco CFA de África Occidental"
     ],
     "extraData": {
       "countryCode": "bf",
@@ -1186,12 +1186,12 @@
     "type": "currency",
     "difficulty": "hard",
     "questionText": "¿Cuál es la moneda de Mauritania?",
-    "correctAnswer": "Mauritanian ouguiya",
+    "correctAnswer": "Ouguiya mauritana",
     "options": [
-      "Hungarian forint",
-      "Indonesian rupiah",
-      "Venezuelan bolívar soberano",
-      "Mauritanian ouguiya"
+      "Florín húngaro",
+      "Rupia indonesia",
+      "Bolívar soberano venezolano",
+      "Ouguiya mauritana"
     ],
     "extraData": {
       "countryCode": "mr",
@@ -1261,12 +1261,12 @@
     "type": "currency",
     "difficulty": "hard",
     "questionText": "¿Cuál es la divisa de Tuvalu?",
-    "correctAnswer": "Australian dollar",
+    "correctAnswer": "Dólar australiano",
     "options": [
-      "Guatemalan quetzal",
-      "Czech koruna",
-      "Australian dollar",
-      "euro"
+      "Quetzal guatemalteco",
+      "Corona checa",
+      "Dólar australiano",
+      "Euro"
     ],
     "extraData": {
       "countryCode": "tv",
@@ -1600,12 +1600,12 @@
     "type": "currency",
     "difficulty": "easy",
     "questionText": "¿La moneda oficial de Italy es...?",
-    "correctAnswer": "euro",
+    "correctAnswer": "Euro",
     "options": [
-      "Hungarian forint",
-      "euro",
+      "Florín húngaro",
+      "Euro",
       "krone",
-      "Iranian rial"
+      "Rial iraní"
     ],
     "extraData": {
       "countryCode": "it",
@@ -1654,12 +1654,12 @@
     "type": "currency",
     "difficulty": "medium",
     "questionText": "¿Cuál es la divisa de Colombia?",
-    "correctAnswer": "Colombian peso",
+    "correctAnswer": "Peso colombiano",
     "options": [
-      "Indonesian rupiah",
-      "Colombian peso",
-      "CFP franc",
-      "United States dollar"
+      "Rupia indonesia",
+      "Peso colombiano",
+      "Franco CFP",
+      "Dólar estadounidense"
     ],
     "extraData": {
       "countryCode": "co",
@@ -1672,12 +1672,12 @@
     "type": "currency",
     "difficulty": "hard",
     "questionText": "¿Cuál es la divisa de Brunei?",
-    "correctAnswer": "Brunei dollar",
+    "correctAnswer": "Dólar de Brunéi",
     "options": [
       "lari",
-      "Egyptian pound",
-      "Brunei dollar",
-      "Ethiopian birr"
+      "Libra egipcia",
+      "Dólar de Brunéi",
+      "Birr etíope"
     ],
     "extraData": {
       "countryCode": "bn",
