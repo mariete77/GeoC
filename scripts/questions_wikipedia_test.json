@@ -1,0 +1,100 @@
+[
+  {
+    "id": "mountain_51001",
+    "type": "mountain",
+    "difficulty": "medium",
+    "questionText": "¿La montaña más alta de Italia es...?",
+    "correctAnswer": "Gran Premio de la montaña en el Giro de Italia",
+    "options": [
+      "Gran Premio de la montaña en el Giro de Italia",
+      "Gran Premio de la montaña en el Tour de Francia"
+    ],
+    "extraData": {
+      "country": "Italia",
+      "mountainName": "Gran Premio de la montaña en el Giro de Italia",
+      "pageid": 7787529
+    }
+  },
+  {
+    "id": "river_50000",
+    "type": "river",
+    "difficulty": "medium",
+    "questionText": "¿Qué río es el más largo de España?",
+    "correctAnswer": "Piedras (España)",
+    "options": [
+      "Severn (Reino Unido)",
+      "Piedras (España)",
+      "Ríos de Italia"
+    ],
+    "extraData": {
+      "country": "España",
+      "riverName": "Piedras (España)",
+      "pageid": 465454
+    }
+  },
+  {
+    "id": "river_50001",
+    "type": "river",
+    "difficulty": "medium",
+    "questionText": "¿Qué río es el más largo de Italia?",
+    "correctAnswer": "Ríos de Italia",
+    "options": [
+      "Ríos de Italia",
+      "Severn (Reino Unido)",
+      "Piedras (España)"
+    ],
+    "extraData": {
+      "country": "Italia",
+      "riverName": "Ríos de Italia",
+      "pageid": 1259757
+    }
+  },
+  {
+    "id": "lake_52000",
+    "type": "lake",
+    "difficulty": "medium",
+    "questionText": "¿El lago más grande de España se llama...?",
+    "correctAnswer": "Lagos de España",
+    "options": [
+      "Lagos de España"
+    ],
+    "extraData": {
+      "country": "España",
+      "lakeName": "Lagos de España",
+      "pageid": 2129385
+    }
+  },
+  {
+    "id": "river_50002",
+    "type": "river",
+    "difficulty": "medium",
+    "questionText": "¿El río más largo de Reino Unido se llama...?",
+    "correctAnswer": "Severn (Reino Unido)",
+    "options": [
+      "Piedras (España)",
+      "Ríos de Italia",
+      "Severn (Reino Unido)"
+    ],
+    "extraData": {
+      "country": "Reino Unido",
+      "riverName": "Severn (Reino Unido)",
+      "pageid": 650478
+    }
+  },
+  {
+    "id": "mountain_51000",
+    "type": "mountain",
+    "difficulty": "medium",
+    "questionText": "¿La montaña más alta de Francia es...?",
+    "correctAnswer": "Gran Premio de la montaña en el Tour de Francia",
+    "options": [
+      "Gran Premio de la montaña en el Tour de Francia",
+      "Gran Premio de la montaña en el Giro de Italia"
+    ],
+    "extraData": {
+      "country": "Francia",
+      "mountainName": "Gran Premio de la montaña en el Tour de Francia",
+      "pageid": 7781984
+    }
+  }
+]

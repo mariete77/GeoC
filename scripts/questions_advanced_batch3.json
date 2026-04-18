@@ -1,0 +1,4065 @@
+[
+  {
+    "id": "river_60037",
+    "type": "river",
+    "difficulty": "medium",
+    "questionText": "¿Qué río es el más largo de Estados Unidos?",
+    "correctAnswer": "Ohio",
+    "options": [
+      "Ganges",
+      "Ohio",
+      "Marañón",
+      "Arno"
+    ],
+    "extraData": {
+      "country": "Estados Unidos",
+      "riverName": "Ohio"
+    }
+  },
+  {
+    "id": "city_63019",
+    "type": "city",
+    "difficulty": "easy",
+    "questionText": "¿Cuál de estas ciudades pertenece a Canadá?",
+    "correctAnswer": "Calgary",
+    "options": [
+      "Calgary",
+      "Chicago",
+      "Córdoba",
+      "Valencia"
+    ],
+    "extraData": {
+      "cityName": "Calgary",
+      "country": "Canadá"
+    }
+  },
+  {
+    "id": "mountain_61003",
+    "type": "mountain",
+    "difficulty": "medium",
+    "questionText": "¿La montaña más alta de Argentina es...?",
+    "correctAnswer": "Aconcagua",
+    "options": [
+      "Monte Kita",
+      "Teide",
+      "Aconcagua",
+      "Elbrus"
+    ],
+    "extraData": {
+      "country": "Argentina",
+      "mountainName": "Aconcagua"
+    }
+  },
+  {
+    "id": "lake_62046",
+    "type": "lake",
+    "difficulty": "medium",
+    "questionText": "¿Qué lago es el más grande de Perú?",
+    "correctAnswer": "Lago Parón",
+    "options": [
+      "Lago Junín",
+      "Lago Parón",
+      "Gran Lago del Esclavo",
+      "Lago de Pátzcuaro"
+    ],
+    "extraData": {
+      "country": "Perú",
+      "lakeName": "Lago Parón"
+    }
+  },
+  {
+    "id": "river_60024",
+    "type": "river",
+    "difficulty": "medium",
+    "questionText": "¿Cuál es el río más largo de China?",
+    "correctAnswer": "Perla",
+    "options": [
+      "Nelson",
+      "Baker",
+      "Perla",
+      "Ródano"
+    ],
+    "extraData": {
+      "country": "China",
+      "riverName": "Perla"
+    }
+  },
+  {
+    "id": "city_63057",
+    "type": "city",
+    "difficulty": "easy",
+    "questionText": "¿Qué ciudad está ubicada en Japón?",
+    "correctAnswer": "Osaka",
+    "options": [
+      "Osaka",
+      "Bilbao",
+      "Frankfurt",
+      "Phoenix"
+    ],
+    "extraData": {
+      "cityName": "Osaka",
+      "country": "Japón"
+    }
+  },
+  {
+    "id": "lake_62027",
+    "type": "lake",
+    "difficulty": "medium",
+    "questionText": "¿El lago más grande de Estados Unidos se llama...?",
+    "correctAnswer": "Lago Superior",
+    "options": [
+      "Lago Superior",
+      "Lago Müritz",
+      "Lago Huron",
+      "Lago Eyre"
+    ],
+    "extraData": {
+      "country": "Estados Unidos",
+      "lakeName": "Lago Superior"
+    }
+  },
+  {
+    "id": "lake_62042",
+    "type": "lake",
+    "difficulty": "medium",
+    "questionText": "¿Cuál es el lago más grande de México?",
+    "correctAnswer": "Lago de Pátzcuaro",
+    "options": [
+      "Lago Nasser",
+      "Lago Wular",
+      "Lago de Pátzcuaro",
+      "Lago Junín"
+    ],
+    "extraData": {
+      "country": "México",
+      "lakeName": "Lago de Pátzcuaro"
+    }
+  },
+  {
+    "id": "river_60044",
+    "type": "river",
+    "difficulty": "medium",
+    "questionText": "¿Qué río es el más largo de India?",
+    "correctAnswer": "Indo",
+    "options": [
+      "Támesis",
+      "Baker",
+      "Río Bravo",
+      "Indo"
+    ],
+    "extraData": {
+      "country": "India",
+      "riverName": "Indo"
+    }
+  },
+  {
+    "id": "lake_62043",
+    "type": "lake",
+    "difficulty": "medium",
+    "questionText": "¿Cuál es el principal lago de México?",
+    "correctAnswer": "Lago de Cuitzeo",
+    "options": [
+      "Gran Lago del Esclavo",
+      "Lago Poyang",
+      "Lago de Cuitzeo",
+      "Lago Nasser"
+    ],
+    "extraData": {
+      "country": "México",
+      "lakeName": "Lago de Cuitzeo"
+    }
+  },
+  {
+    "id": "city_63068",
+    "type": "city",
+    "difficulty": "easy",
+    "questionText": "¿La ciudad de Arequipa está en qué país?",
+    "correctAnswer": "Perú",
+    "options": [
+      "Chile",
+      "México",
+      "Colombia",
+      "Perú"
+    ],
+    "extraData": {
+      "cityName": "Arequipa",
+      "country": "Perú"
+    }
+  },
+  {
+    "id": "mountain_61059",
+    "type": "mountain",
+    "difficulty": "medium",
+    "questionText": "¿Cuál es el punto más alto de Perú?",
+    "correctAnswer": "Sajama",
+    "options": [
+      "Denali",
+      "Monte Elgon",
+      "Sajama",
+      "Popocatépetl"
+    ],
+    "extraData": {
+      "country": "Perú",
+      "mountainName": "Sajama"
+    }
+  },
+  {
+    "id": "mountain_61030",
+    "type": "mountain",
+    "difficulty": "medium",
+    "questionText": "¿Qué pico es el más alto de España?",
+    "correctAnswer": "Aneto",
+    "options": [
+      "Aneto",
+      "Monte Kenia",
+      "Pico de Orizaba",
+      "Kangchenjunga"
+    ],
+    "extraData": {
+      "country": "España",
+      "mountainName": "Aneto"
+    }
+  },
+  {
+    "id": "river_60006",
+    "type": "river",
+    "difficulty": "medium",
+    "questionText": "¿Qué río es el más largo de Argentina?",
+    "correctAnswer": "Río Negro",
+    "options": [
+      "Murrumbidgee",
+      "Tajo",
+      "Río Negro",
+      "Amazonas"
+    ],
+    "extraData": {
+      "country": "Argentina",
+      "riverName": "Río Negro"
+    }
+  },
+  {
+    "id": "city_63016",
+    "type": "city",
+    "difficulty": "easy",
+    "questionText": "¿Toronto es una ciudad de qué país?",
+    "correctAnswer": "Canadá",
+    "options": [
+      "Alemania",
+      "Canadá",
+      "India",
+      "Italia"
+    ],
+    "extraData": {
+      "cityName": "Toronto",
+      "country": "Canadá"
+    }
+  },
+  {
+    "id": "city_63005",
+    "type": "city",
+    "difficulty": "easy",
+    "questionText": "¿La ciudad de Rosario está en qué país?",
+    "correctAnswer": "Argentina",
+    "options": [
+      "Colombia",
+      "Alemania",
+      "Chile",
+      "Argentina"
+    ],
+    "extraData": {
+      "cityName": "Rosario",
+      "country": "Argentina"
+    }
+  },
+  {
+    "id": "river_60031",
+    "type": "river",
+    "difficulty": "medium",
+    "questionText": "¿Qué río es el más largo de España?",
+    "correctAnswer": "Tajo",
+    "options": [
+      "Guadalquivir",
+      "Loira",
+      "Ródano",
+      "Tajo"
+    ],
+    "extraData": {
+      "country": "España",
+      "riverName": "Tajo"
+    }
+  },
+  {
+    "id": "city_63004",
+    "type": "city",
+    "difficulty": "easy",
+    "questionText": "¿Córdoba es una ciudad de qué país?",
+    "correctAnswer": "Argentina",
+    "options": [
+      "Kenia",
+      "Argentina",
+      "España",
+      "Estados Unidos"
+    ],
+    "extraData": {
+      "cityName": "Córdoba",
+      "country": "Argentina"
+    }
+  },
+  {
+    "id": "city_63031",
+    "type": "city",
+    "difficulty": "easy",
+    "questionText": "¿Qué ciudad está ubicada en Colombia?",
+    "correctAnswer": "Cartagena",
+    "options": [
+      "Delhi",
+      "Cartagena",
+      "Vancouver",
+      "Los Ángeles"
+    ],
+    "extraData": {
+      "cityName": "Cartagena",
+      "country": "Colombia"
+    }
+  },
+  {
+    "id": "mountain_61015",
+    "type": "mountain",
+    "difficulty": "medium",
+    "questionText": "¿La montaña más alta de Canadá es...?",
+    "correctAnswer": "Monte Saint Elias",
+    "options": [
+      "Monte Saint Elias",
+      "Ritacuba Blanco",
+      "Pico Townsend",
+      "Mulhacén"
+    ],
+    "extraData": {
+      "country": "Canadá",
+      "mountainName": "Monte Saint Elias"
+    }
+  },
+  {
+    "id": "river_60049",
+    "type": "river",
+    "difficulty": "medium",
+    "questionText": "¿Cuál es el río más largo de Italia?",
+    "correctAnswer": "Adigio",
+    "options": [
+      "Lena",
+      "Churchill",
+      "Adigio",
+      "Balsas"
+    ],
+    "extraData": {
+      "country": "Italia",
+      "riverName": "Adigio"
+    }
+  },
+  {
+    "id": "mountain_61034",
+    "type": "mountain",
+    "difficulty": "medium",
+    "questionText": "¿La montaña más alta de Estados Unidos es...?",
+    "correctAnswer": "Pico Whitney",
+    "options": [
+      "Monte Kita",
+      "Schneekoppe",
+      "Dom",
+      "Pico Whitney"
+    ],
+    "extraData": {
+      "country": "Estados Unidos",
+      "mountainName": "Pico Whitney"
+    }
+  },
+  {
+    "id": "city_63047",
+    "type": "city",
+    "difficulty": "easy",
+    "questionText": "¿Niza es una ciudad de qué país?",
+    "correctAnswer": "Francia",
+    "options": [
+      "México",
+      "Austria",
+      "Estados Unidos",
+      "Francia"
+    ],
+    "extraData": {
+      "cityName": "Niza",
+      "country": "Francia"
+    }
+  },
+  {
+    "id": "city_63065",
+    "type": "city",
+    "difficulty": "easy",
+    "questionText": "¿Qué ciudad está ubicada en México?",
+    "correctAnswer": "Monterrey",
+    "options": [
+      "Monterrey",
+      "Córdoba",
+      "Barranquilla",
+      "Pretoria"
+    ],
+    "extraData": {
+      "cityName": "Monterrey",
+      "country": "México"
+    }
+  },
+  {
+    "id": "city_63028",
+    "type": "city",
+    "difficulty": "easy",
+    "questionText": "¿Medellín es una ciudad de qué país?",
+    "correctAnswer": "Colombia",
+    "options": [
+      "Colombia",
+      "Austria",
+      "Argentina",
+      "Alemania"
+    ],
+    "extraData": {
+      "cityName": "Medellín",
+      "country": "Colombia"
+    }
+  },
+  {
+    "id": "river_60043",
+    "type": "river",
+    "difficulty": "medium",
+    "questionText": "¿Cuál es el río más largo de India?",
+    "correctAnswer": "Brahmaputra",
+    "options": [
+      "Lerma",
+      "Danubio",
+      "Río Grande",
+      "Brahmaputra"
+    ],
+    "extraData": {
+      "country": "India",
+      "riverName": "Brahmaputra"
+    }
+  },
+  {
+    "id": "city_63023",
+    "type": "city",
+    "difficulty": "easy",
+    "questionText": "¿Antofagasta es una ciudad de qué país?",
+    "correctAnswer": "Chile",
+    "options": [
+      "España",
+      "Brasil",
+      "Chile",
+      "Egipto"
+    ],
+    "extraData": {
+      "cityName": "Antofagasta",
+      "country": "Chile"
+    }
+  },
+  {
+    "id": "mountain_61028",
+    "type": "mountain",
+    "difficulty": "medium",
+    "questionText": "¿La montaña más alta de España es...?",
+    "correctAnswer": "Teide",
+    "options": [
+      "Pico Townsend",
+      "Koshtan-Tau",
+      "Teide",
+      "Iztaccíhuatl"
+    ],
+    "extraData": {
+      "country": "España",
+      "mountainName": "Teide"
+    }
+  },
+  {
+    "id": "river_60019",
+    "type": "river",
+    "difficulty": "medium",
+    "questionText": "¿Qué río es el más largo de Chile?",
+    "correctAnswer": "Baker",
+    "options": [
+      "Baker",
+      "Trent",
+      "Severn",
+      "Mackenzie"
+    ],
+    "extraData": {
+      "country": "Chile",
+      "riverName": "Baker"
+    }
+  },
+  {
+    "id": "lake_62013",
+    "type": "lake",
+    "difficulty": "medium",
+    "questionText": "¿Qué lago es el más grande de Canadá?",
+    "correctAnswer": "Lago Huron",
+    "options": [
+      "Lago Parón",
+      "Lago Eyre",
+      "Lago Huron",
+      "Lago Baikal"
+    ],
+    "extraData": {
+      "country": "Canadá",
+      "lakeName": "Lago Huron"
+    }
+  },
+  {
+    "id": "lake_62007",
+    "type": "lake",
+    "difficulty": "medium",
+    "questionText": "¿Cuál es el principal lago de Australia?",
+    "correctAnswer": "Lago Torrens",
+    "options": [
+      "Lago Junín",
+      "Lago Torrens",
+      "Lago Viedma",
+      "Lago Buenos Aires"
+    ],
+    "extraData": {
+      "country": "Australia",
+      "lakeName": "Lago Torrens"
+    }
+  },
+  {
+    "id": "mountain_61027",
+    "type": "mountain",
+    "difficulty": "medium",
+    "questionText": "¿Cuál es el punto más alto de Egipto?",
+    "correctAnswer": "Gebel Shayeb",
+    "options": [
+      "Gebel Shayeb",
+      "Lhotse",
+      "Matterhorn",
+      "Monte Fuji"
+    ],
+    "extraData": {
+      "country": "Egipto",
+      "mountainName": "Gebel Shayeb"
+    }
+  },
+  {
+    "id": "river_60028",
+    "type": "river",
+    "difficulty": "medium",
+    "questionText": "¿Cuál es el principal río de Colombia?",
+    "correctAnswer": "Atrato",
+    "options": [
+      "Yenisei",
+      "Atrato",
+      "Maule",
+      "Ebro"
+    ],
+    "extraData": {
+      "country": "Colombia",
+      "riverName": "Atrato"
+    }
+  },
+  {
+    "id": "mountain_61024",
+    "type": "mountain",
+    "difficulty": "medium",
+    "questionText": "¿Cuál es la montaña más alta de Colombia?",
+    "correctAnswer": "Simón Bolívar",
+    "options": [
+      "Simón Bolívar",
+      "Pico Townsend",
+      "Monte Santa Catalina",
+      "Koshtan-Tau"
+    ],
+    "extraData": {
+      "country": "Colombia",
+      "mountainName": "Simón Bolívar"
+    }
+  },
+  {
+    "id": "river_60046",
+    "type": "river",
+    "difficulty": "medium",
+    "questionText": "¿El río más largo de Italia se llama...?",
+    "correctAnswer": "Po",
+    "options": [
+      "Po",
+      "Amarillo",
+      "Duero",
+      "Shinano"
+    ],
+    "extraData": {
+      "country": "Italia",
+      "riverName": "Po"
+    }
+  },
+  {
+    "id": "lake_62021",
+    "type": "lake",
+    "difficulty": "medium",
+    "questionText": "¿Cuál es el lago más grande de China?",
+    "correctAnswer": "Lago Dongting",
+    "options": [
+      "Lago Chilka",
+      "Lago de Sobradinho",
+      "Lago Dongting",
+      "Lago Llanquihue"
+    ],
+    "extraData": {
+      "country": "China",
+      "lakeName": "Lago Dongting"
+    }
+  },
+  {
+    "id": "city_63071",
+    "type": "city",
+    "difficulty": "easy",
+    "questionText": "¿Piura es una ciudad de qué país?",
+    "correctAnswer": "Perú",
+    "options": [
+      "Egipto",
+      "India",
+      "Perú",
+      "Kenia"
+    ],
+    "extraData": {
+      "cityName": "Piura",
+      "country": "Perú"
+    }
+  },
+  {
+    "id": "city_63054",
+    "type": "city",
+    "difficulty": "easy",
+    "questionText": "¿Turín es una ciudad de qué país?",
+    "correctAnswer": "Italia",
+    "options": [
+      "Colombia",
+      "Italia",
+      "Argentina",
+      "México"
+    ],
+    "extraData": {
+      "cityName": "Turín",
+      "country": "Italia"
+    }
+  },
+  {
+    "id": "city_63066",
+    "type": "city",
+    "difficulty": "easy",
+    "questionText": "¿Qué ciudad está ubicada en México?",
+    "correctAnswer": "Puebla",
+    "options": [
+      "Puebla",
+      "Nakuru",
+      "San Petersburgo",
+      "Birmingham"
+    ],
+    "extraData": {
+      "cityName": "Puebla",
+      "country": "México"
+    }
+  },
+  {
+    "id": "city_63040",
+    "type": "city",
+    "difficulty": "easy",
+    "questionText": "¿Qué ciudad está ubicada en Estados Unidos?",
+    "correctAnswer": "Nueva York",
+    "options": [
+      "La Plata",
+      "Londres",
+      "Nueva York",
+      "Sídney"
+    ],
+    "extraData": {
+      "cityName": "Nueva York",
+      "country": "Estados Unidos"
+    }
+  },
+  {
+    "id": "river_60057",
+    "type": "river",
+    "difficulty": "medium",
+    "questionText": "¿Cuál es el principal río de Perú?",
+    "correctAnswer": "Amazonas",
+    "options": [
+      "Amazonas",
+      "Guadiana",
+      "Indo",
+      "Duero"
+    ],
+    "extraData": {
+      "country": "Perú",
+      "riverName": "Amazonas"
+    }
+  },
+  {
+    "id": "river_60016",
+    "type": "river",
+    "difficulty": "medium",
+    "questionText": "¿El río más largo de Canadá se llama...?",
+    "correctAnswer": "San Lorenzo",
+    "options": [
+      "Baker",
+      "Orange",
+      "Yenisei",
+      "San Lorenzo"
+    ],
+    "extraData": {
+      "country": "Canadá",
+      "riverName": "San Lorenzo"
+    }
+  },
+  {
+    "id": "city_63035",
+    "type": "city",
+    "difficulty": "easy",
+    "questionText": "¿Cuál de estas ciudades pertenece a Egipto?",
+    "correctAnswer": "Shubra El-Kheima",
+    "options": [
+      "Río de Janeiro",
+      "Monterrey",
+      "Shubra El-Kheima",
+      "San Petersburgo"
+    ],
+    "extraData": {
+      "cityName": "Shubra El-Kheima",
+      "country": "Egipto"
+    }
+  },
+  {
+    "id": "river_60059",
+    "type": "river",
+    "difficulty": "medium",
+    "questionText": "¿Qué río es el más largo de Perú?",
+    "correctAnswer": "Ucayali",
+    "options": [
+      "Amur",
+      "Ucayali",
+      "Uruguay",
+      "Douro"
+    ],
+    "extraData": {
+      "country": "Perú",
+      "riverName": "Ucayali"
+    }
+  },
+  {
+    "id": "lake_62016",
+    "type": "lake",
+    "difficulty": "medium",
+    "questionText": "¿Qué lago es el más grande de Chile?",
+    "correctAnswer": "Lago Llanquihue",
+    "options": [
+      "Lago Müritz",
+      "Lago General Carrera",
+      "Lago Nasser",
+      "Lago Llanquihue"
+    ],
+    "extraData": {
+      "country": "Chile",
+      "lakeName": "Lago Llanquihue"
+    }
+  },
+  {
+    "id": "mountain_61009",
+    "type": "mountain",
+    "difficulty": "medium",
+    "questionText": "¿Cuál es el punto más alto de Austria?",
+    "correctAnswer": "Grossglockner",
+    "options": [
+      "Monte Elgon",
+      "Monte Viso",
+      "Grossglockner",
+      "Everest"
+    ],
+    "extraData": {
+      "country": "Austria",
+      "mountainName": "Grossglockner"
+    }
+  },
+  {
+    "id": "lake_62032",
+    "type": "lake",
+    "difficulty": "medium",
+    "questionText": "¿El lago más grande de Francia se llama...?",
+    "correctAnswer": "Lago de Ginebra",
+    "options": [
+      "Lago Mayor",
+      "Lago Poyang",
+      "Lago de Ginebra",
+      "Lago Titicaca"
+    ],
+    "extraData": {
+      "country": "Francia",
+      "lakeName": "Lago de Ginebra"
+    }
+  },
+  {
+    "id": "lake_62003",
+    "type": "lake",
+    "difficulty": "medium",
+    "questionText": "¿Qué lago es el más grande de Argentina?",
+    "correctAnswer": "Lago Argentino",
+    "options": [
+      "Lago Wular",
+      "Lago Argentino",
+      "Lago Superior",
+      "Lago Poyang"
+    ],
+    "extraData": {
+      "country": "Argentina",
+      "lakeName": "Lago Argentino"
+    }
+  },
+  {
+    "id": "river_60056",
+    "type": "river",
+    "difficulty": "medium",
+    "questionText": "¿Cuál es el río más largo de México?",
+    "correctAnswer": "Balsas",
+    "options": [
+      "Balsas",
+      "Mackenzie",
+      "San Lorenzo",
+      "Támesis"
+    ],
+    "extraData": {
+      "country": "México",
+      "riverName": "Balsas"
+    }
+  },
+  {
+    "id": "lake_62011",
+    "type": "lake",
+    "difficulty": "medium",
+    "questionText": "¿Cuál es el lago más grande de Brasil?",
+    "correctAnswer": "Represa de Tucuruí",
+    "options": [
+      "Represa de Tucuruí",
+      "Lago Chiemsee",
+      "Lago de Como",
+      "Lago Toshka"
+    ],
+    "extraData": {
+      "country": "Brasil",
+      "lakeName": "Represa de Tucuruí"
+    }
+  },
+  {
+    "id": "city_63060",
+    "type": "city",
+    "difficulty": "easy",
+    "questionText": "¿La ciudad de Mombasa está en qué país?",
+    "correctAnswer": "Kenia",
+    "options": [
+      "Kenia",
+      "Egipto",
+      "Chile",
+      "Italia"
+    ],
+    "extraData": {
+      "cityName": "Mombasa",
+      "country": "Kenia"
+    }
+  },
+  {
+    "id": "lake_62009",
+    "type": "lake",
+    "difficulty": "medium",
+    "questionText": "¿Cuál es el principal lago de Brasil?",
+    "correctAnswer": "Lago de Itaipu",
+    "options": [
+      "Represa de Tucuruí",
+      "Lago de Itaipu",
+      "Lago de Garda",
+      "Lago Ness"
+    ],
+    "extraData": {
+      "country": "Brasil",
+      "lakeName": "Lago de Itaipu"
+    }
+  },
+  {
+    "id": "city_63058",
+    "type": "city",
+    "difficulty": "easy",
+    "questionText": "¿Kioto es una ciudad de qué país?",
+    "correctAnswer": "Japón",
+    "options": [
+      "Japón",
+      "Kenia",
+      "Chile",
+      "Estados Unidos"
+    ],
+    "extraData": {
+      "cityName": "Kioto",
+      "country": "Japón"
+    }
+  },
+  {
+    "id": "city_63011",
+    "type": "city",
+    "difficulty": "easy",
+    "questionText": "¿Cuál de estas ciudades pertenece a Australia?",
+    "correctAnswer": "Perth",
+    "options": [
+      "Melbourne",
+      "Colonia",
+      "Perth",
+      "Birmingham"
+    ],
+    "extraData": {
+      "cityName": "Perth",
+      "country": "Australia"
+    }
+  },
+  {
+    "id": "river_60027",
+    "type": "river",
+    "difficulty": "medium",
+    "questionText": "¿Cuál es el río más largo de Colombia?",
+    "correctAnswer": "Cauca",
+    "options": [
+      "Garona",
+      "Orange",
+      "Cauca",
+      "Shinano"
+    ],
+    "extraData": {
+      "country": "Colombia",
+      "riverName": "Cauca"
+    }
+  },
+  {
+    "id": "lake_62019",
+    "type": "lake",
+    "difficulty": "medium",
+    "questionText": "¿Cuál es el principal lago de China?",
+    "correctAnswer": "Lago Qinghai",
+    "options": [
+      "Lago de Pátzcuaro",
+      "Lago de Annecy",
+      "Lago Nasser",
+      "Lago Qinghai"
+    ],
+    "extraData": {
+      "country": "China",
+      "lakeName": "Lago Qinghai"
+    }
+  },
+  {
+    "id": "lake_62024",
+    "type": "lake",
+    "difficulty": "medium",
+    "questionText": "¿El lago más grande de España se llama...?",
+    "correctAnswer": "Lago de Sanabria",
+    "options": [
+      "Lago de Itaipu",
+      "Lago Chiemsee",
+      "Lago de Annecy",
+      "Lago de Sanabria"
+    ],
+    "extraData": {
+      "country": "España",
+      "lakeName": "Lago de Sanabria"
+    }
+  },
+  {
+    "id": "mountain_61026",
+    "type": "mountain",
+    "difficulty": "medium",
+    "questionText": "¿Cuál es el punto más alto de Egipto?",
+    "correctAnswer": "Monte Santa Catalina",
+    "options": [
+      "Pico de Orizaba",
+      "K2",
+      "Kilimanjaro",
+      "Monte Santa Catalina"
+    ],
+    "extraData": {
+      "country": "Egipto",
+      "mountainName": "Monte Santa Catalina"
+    }
+  },
+  {
+    "id": "river_60009",
+    "type": "river",
+    "difficulty": "medium",
+    "questionText": "¿El río más largo de Australia se llama...?",
+    "correctAnswer": "Darling",
+    "options": [
+      "São Francisco",
+      "Orange",
+      "Adigio",
+      "Darling"
+    ],
+    "extraData": {
+      "country": "Australia",
+      "riverName": "Darling"
+    }
+  },
+  {
+    "id": "city_63010",
+    "type": "city",
+    "difficulty": "easy",
+    "questionText": "¿Cuál de estas ciudades pertenece a Australia?",
+    "correctAnswer": "Brisbane",
+    "options": [
+      "Munich",
+      "Durban",
+      "Brisbane",
+      "Palermo"
+    ],
+    "extraData": {
+      "cityName": "Brisbane",
+      "country": "Australia"
+    }
+  },
+  {
+    "id": "city_63061",
+    "type": "city",
+    "difficulty": "easy",
+    "questionText": "¿Qué ciudad está ubicada en Kenia?",
+    "correctAnswer": "Kisumu",
+    "options": [
+      "Kisumu",
+      "Osaka",
+      "Giza",
+      "Londres"
+    ],
+    "extraData": {
+      "cityName": "Kisumu",
+      "country": "Kenia"
+    }
+  },
+  {
+    "id": "city_63008",
+    "type": "city",
+    "difficulty": "easy",
+    "questionText": "¿Cuál de estas ciudades pertenece a Australia?",
+    "correctAnswer": "Sídney",
+    "options": [
+      "Sídney",
+      "Pretoria",
+      "Marseille",
+      "Delhi"
+    ],
+    "extraData": {
+      "cityName": "Sídney",
+      "country": "Australia"
+    }
+  },
+  {
+    "id": "lake_62000",
+    "type": "lake",
+    "difficulty": "medium",
+    "questionText": "¿Qué lago es el más grande de Alemania?",
+    "correctAnswer": "Lago Constanza",
+    "options": [
+      "Lago Poyang",
+      "Lago Windermere",
+      "Lago Como",
+      "Lago Constanza"
+    ],
+    "extraData": {
+      "country": "Alemania",
+      "lakeName": "Lago Constanza"
+    }
+  },
+  {
+    "id": "river_60007",
+    "type": "river",
+    "difficulty": "medium",
+    "questionText": "¿Cuál es el río más largo de Argentina?",
+    "correctAnswer": "Colorado",
+    "options": [
+      "Colorado",
+      "Río Bravo",
+      "Ganges",
+      "Trent"
+    ],
+    "extraData": {
+      "country": "Argentina",
+      "riverName": "Colorado"
+    }
+  },
+  {
+    "id": "city_63045",
+    "type": "city",
+    "difficulty": "easy",
+    "questionText": "¿Lyon es una ciudad de qué país?",
+    "correctAnswer": "Francia",
+    "options": [
+      "Colombia",
+      "Australia",
+      "Argentina",
+      "Francia"
+    ],
+    "extraData": {
+      "cityName": "Lyon",
+      "country": "Francia"
+    }
+  },
+  {
+    "id": "river_60032",
+    "type": "river",
+    "difficulty": "medium",
+    "questionText": "¿Cuál es el principal río de España?",
+    "correctAnswer": "Duero",
+    "options": [
+      "Tocantins",
+      "Volga",
+      "Trent",
+      "Duero"
+    ],
+    "extraData": {
+      "country": "España",
+      "riverName": "Duero"
+    }
+  },
+  {
+    "id": "river_60055",
+    "type": "river",
+    "difficulty": "medium",
+    "questionText": "¿Qué río es el más largo de México?",
+    "correctAnswer": "Pánuco",
+    "options": [
+      "Colorado",
+      "Nilo",
+      "Pánuco",
+      "Godavari"
+    ],
+    "extraData": {
+      "country": "México",
+      "riverName": "Pánuco"
+    }
+  },
+  {
+    "id": "river_60023",
+    "type": "river",
+    "difficulty": "medium",
+    "questionText": "¿Qué río es el más largo de China?",
+    "correctAnswer": "Amarillo",
+    "options": [
+      "Paraná",
+      "Amarillo",
+      "Colorado",
+      "Perla"
+    ],
+    "extraData": {
+      "country": "China",
+      "riverName": "Amarillo"
+    }
+  },
+  {
+    "id": "city_63056",
+    "type": "city",
+    "difficulty": "easy",
+    "questionText": "¿Qué ciudad está ubicada en Japón?",
+    "correctAnswer": "Tokio",
+    "options": [
+      "Munich",
+      "Shenzhen",
+      "Tokio",
+      "Cúcuta"
+    ],
+    "extraData": {
+      "cityName": "Tokio",
+      "country": "Japón"
+    }
+  },
+  {
+    "id": "city_63013",
+    "type": "city",
+    "difficulty": "easy",
+    "questionText": "¿La ciudad de Río de Janeiro está en qué país?",
+    "correctAnswer": "Brasil",
+    "options": [
+      "Austria",
+      "Egipto",
+      "Italia",
+      "Brasil"
+    ],
+    "extraData": {
+      "cityName": "Río de Janeiro",
+      "country": "Brasil"
+    }
+  },
+  {
+    "id": "mountain_61018",
+    "type": "mountain",
+    "difficulty": "medium",
+    "questionText": "¿Qué pico es el más alto de Chile?",
+    "correctAnswer": "Nevado Tres Cruces",
+    "options": [
+      "Koshtan-Tau",
+      "Schneekoppe",
+      "Nevado Tres Cruces",
+      "Monte Hotaka"
+    ],
+    "extraData": {
+      "country": "Chile",
+      "mountainName": "Nevado Tres Cruces"
+    }
+  },
+  {
+    "id": "city_63064",
+    "type": "city",
+    "difficulty": "easy",
+    "questionText": "¿La ciudad de Guadalajara está en qué país?",
+    "correctAnswer": "México",
+    "options": [
+      "Australia",
+      "Francia",
+      "México",
+      "Alemania"
+    ],
+    "extraData": {
+      "cityName": "Guadalajara",
+      "country": "México"
+    }
+  },
+  {
+    "id": "city_63018",
+    "type": "city",
+    "difficulty": "easy",
+    "questionText": "¿Vancouver es una ciudad de qué país?",
+    "correctAnswer": "Canadá",
+    "options": [
+      "Canadá",
+      "Italia",
+      "Alemania",
+      "Brasil"
+    ],
+    "extraData": {
+      "cityName": "Vancouver",
+      "country": "Canadá"
+    }
+  },
+  {
+    "id": "lake_62005",
+    "type": "lake",
+    "difficulty": "medium",
+    "questionText": "¿Qué lago es el más grande de Argentina?",
+    "correctAnswer": "Lago Buenos Aires",
+    "options": [
+      "Lago Mayor",
+      "Lago de Ginebra",
+      "Lago Buenos Aires",
+      "Lago de Annecy"
+    ],
+    "extraData": {
+      "country": "Argentina",
+      "lakeName": "Lago Buenos Aires"
+    }
+  },
+  {
+    "id": "lake_62040",
+    "type": "lake",
+    "difficulty": "medium",
+    "questionText": "¿Qué lago es el más grande de Italia?",
+    "correctAnswer": "Lago de Como",
+    "options": [
+      "Lago de Itaipu",
+      "Lago Nasser",
+      "Lago de Como",
+      "Lago Dongting"
+    ],
+    "extraData": {
+      "country": "Italia",
+      "lakeName": "Lago de Como"
+    }
+  },
+  {
+    "id": "lake_62038",
+    "type": "lake",
+    "difficulty": "medium",
+    "questionText": "¿El lago más grande de Italia se llama...?",
+    "correctAnswer": "Lago Mayor",
+    "options": [
+      "Lago Mayor",
+      "Lago de Como",
+      "Lago Chilka",
+      "Lago Ullswater"
+    ],
+    "extraData": {
+      "country": "Italia",
+      "lakeName": "Lago Mayor"
+    }
+  },
+  {
+    "id": "river_60003",
+    "type": "river",
+    "difficulty": "medium",
+    "questionText": "¿Cuál es el principal río de Alemania?",
+    "correctAnswer": "Mosa",
+    "options": [
+      "Río Grande",
+      "Mosa",
+      "Arno",
+      "Volga"
+    ],
+    "extraData": {
+      "country": "Alemania",
+      "riverName": "Mosa"
+    }
+  },
+  {
+    "id": "river_60025",
+    "type": "river",
+    "difficulty": "medium",
+    "questionText": "¿Qué río es el más largo de China?",
+    "correctAnswer": "Amur",
+    "options": [
+      "Balsas",
+      "Amur",
+      "Ob",
+      "Nelson"
+    ],
+    "extraData": {
+      "country": "China",
+      "riverName": "Amur"
+    }
+  },
+  {
+    "id": "lake_62037",
+    "type": "lake",
+    "difficulty": "medium",
+    "questionText": "¿Cuál es el principal lago de Italia?",
+    "correctAnswer": "Lago de Garda",
+    "options": [
+      "Gran Lago del Oso",
+      "Lago Buenos Aires",
+      "Lago de Garda",
+      "Lago Todos los Santos"
+    ],
+    "extraData": {
+      "country": "Italia",
+      "lakeName": "Lago de Garda"
+    }
+  },
+  {
+    "id": "city_63051",
+    "type": "city",
+    "difficulty": "easy",
+    "questionText": "¿Cuál de estas ciudades pertenece a India?",
+    "correctAnswer": "Hyderabad",
+    "options": [
+      "Hyderabad",
+      "Shenzhen",
+      "Ciudad del Cabo",
+      "Niza"
+    ],
+    "extraData": {
+      "cityName": "Hyderabad",
+      "country": "India"
+    }
+  },
+  {
+    "id": "lake_62018",
+    "type": "lake",
+    "difficulty": "medium",
+    "questionText": "¿Qué lago es el más grande de Chile?",
+    "correctAnswer": "Lago Todos los Santos",
+    "options": [
+      "Lago Ness",
+      "Gran Lago del Esclavo",
+      "Lago de Garda",
+      "Lago Todos los Santos"
+    ],
+    "extraData": {
+      "country": "Chile",
+      "lakeName": "Lago Todos los Santos"
+    }
+  },
+  {
+    "id": "city_63067",
+    "type": "city",
+    "difficulty": "easy",
+    "questionText": "¿Cuál de estas ciudades pertenece a México?",
+    "correctAnswer": "Ciudad Juárez",
+    "options": [
+      "Manchester",
+      "Salvador",
+      "Ciudad Juárez",
+      "Kioto"
+    ],
+    "extraData": {
+      "cityName": "Ciudad Juárez",
+      "country": "México"
+    }
+  },
+  {
+    "id": "city_63048",
+    "type": "city",
+    "difficulty": "easy",
+    "questionText": "¿Cuál de estas ciudades pertenece a India?",
+    "correctAnswer": "Bombay",
+    "options": [
+      "San Petersburgo",
+      "La Plata",
+      "Bombay",
+      "Osaka"
+    ],
+    "extraData": {
+      "cityName": "Bombay",
+      "country": "India"
+    }
+  },
+  {
+    "id": "mountain_61058",
+    "type": "mountain",
+    "difficulty": "medium",
+    "questionText": "¿La montaña más alta de Perú es...?",
+    "correctAnswer": "Coropuna",
+    "options": [
+      "Ritacuba Blanco",
+      "Monte Kosciuszko",
+      "Coropuna",
+      "Ortles"
+    ],
+    "extraData": {
+      "country": "Perú",
+      "mountainName": "Coropuna"
+    }
+  },
+  {
+    "id": "city_63021",
+    "type": "city",
+    "difficulty": "easy",
+    "questionText": "¿Concepción es una ciudad de qué país?",
+    "correctAnswer": "Chile",
+    "options": [
+      "Austria",
+      "China",
+      "Chile",
+      "Francia"
+    ],
+    "extraData": {
+      "cityName": "Concepción",
+      "country": "Chile"
+    }
+  },
+  {
+    "id": "mountain_61050",
+    "type": "mountain",
+    "difficulty": "medium",
+    "questionText": "¿Cuál es la montaña más alta de México?",
+    "correctAnswer": "Pico de Orizaba",
+    "options": [
+      "Cervino",
+      "Pico de Orizaba",
+      "Dufourspitze",
+      "Wildspitze"
+    ],
+    "extraData": {
+      "country": "México",
+      "mountainName": "Pico de Orizaba"
+    }
+  },
+  {
+    "id": "river_60001",
+    "type": "river",
+    "difficulty": "medium",
+    "questionText": "¿Cuál es el río más largo de Alemania?",
+    "correctAnswer": "Danubio",
+    "options": [
+      "San Lorenzo",
+      "Ebro",
+      "Shinano",
+      "Danubio"
+    ],
+    "extraData": {
+      "country": "Alemania",
+      "riverName": "Danubio"
+    }
+  },
+  {
+    "id": "mountain_61025",
+    "type": "mountain",
+    "difficulty": "medium",
+    "questionText": "¿La montaña más alta de Colombia es...?",
+    "correctAnswer": "Ritacuba Blanco",
+    "options": [
+      "Simón Bolívar",
+      "Elbrus",
+      "Ritacuba Blanco",
+      "Ojos del Salado"
+    ],
+    "extraData": {
+      "country": "Colombia",
+      "mountainName": "Ritacuba Blanco"
+    }
+  },
+  {
+    "id": "lake_62008",
+    "type": "lake",
+    "difficulty": "medium",
+    "questionText": "¿Qué lago es el más grande de Australia?",
+    "correctAnswer": "Lago Gairdner",
+    "options": [
+      "Embalse de Almansa",
+      "Lago Ontario",
+      "Lago Gairdner",
+      "Lago Como"
+    ],
+    "extraData": {
+      "country": "Australia",
+      "lakeName": "Lago Gairdner"
+    }
+  },
+  {
+    "id": "city_63059",
+    "type": "city",
+    "difficulty": "easy",
+    "questionText": "¿La ciudad de Yokohama está en qué país?",
+    "correctAnswer": "Japón",
+    "options": [
+      "Francia",
+      "Egipto",
+      "India",
+      "Japón"
+    ],
+    "extraData": {
+      "cityName": "Yokohama",
+      "country": "Japón"
+    }
+  },
+  {
+    "id": "lake_62014",
+    "type": "lake",
+    "difficulty": "medium",
+    "questionText": "¿El lago más grande de Canadá se llama...?",
+    "correctAnswer": "Gran Lago del Oso",
+    "options": [
+      "Gran Lago del Oso",
+      "Lago Titicaca",
+      "Lago Wular",
+      "Lago Poyang"
+    ],
+    "extraData": {
+      "country": "Canadá",
+      "lakeName": "Gran Lago del Oso"
+    }
+  },
+  {
+    "id": "mountain_61047",
+    "type": "mountain",
+    "difficulty": "medium",
+    "questionText": "¿Cuál es la montaña más alta de Japón?",
+    "correctAnswer": "Monte Hotaka",
+    "options": [
+      "Simón Bolívar",
+      "Monte Hotaka",
+      "Weißkugel",
+      "Ortles"
+    ],
+    "extraData": {
+      "country": "Japón",
+      "mountainName": "Monte Hotaka"
+    }
+  },
+  {
+    "id": "city_63038",
+    "type": "city",
+    "difficulty": "easy",
+    "questionText": "¿Qué ciudad está ubicada en España?",
+    "correctAnswer": "Sevilla",
+    "options": [
+      "Tokio",
+      "Nantes",
+      "Sevilla",
+      "Kisumu"
+    ],
+    "extraData": {
+      "cityName": "Sevilla",
+      "country": "España"
+    }
+  },
+  {
+    "id": "mountain_61013",
+    "type": "mountain",
+    "difficulty": "medium",
+    "questionText": "¿Cuál es el punto más alto de Brasil?",
+    "correctAnswer": "Pico 31 de Março",
+    "options": [
+      "Pico 31 de Março",
+      "Monte Lucania",
+      "Monte Thaba Putsoa",
+      "Pic du Midi de Bigorre"
+    ],
+    "extraData": {
+      "country": "Brasil",
+      "mountainName": "Pico 31 de Março"
+    }
+  },
+  {
+    "id": "city_63000",
+    "type": "city",
+    "difficulty": "easy",
+    "questionText": "¿Berlín es una ciudad de qué país?",
+    "correctAnswer": "Alemania",
+    "options": [
+      "España",
+      "Alemania",
+      "Egipto",
+      "India"
+    ],
+    "extraData": {
+      "cityName": "Berlín",
+      "country": "Alemania"
+    }
+  },
+  {
+    "id": "city_63012",
+    "type": "city",
+    "difficulty": "easy",
+    "questionText": "¿Qué ciudad está ubicada en Brasil?",
+    "correctAnswer": "São Paulo",
+    "options": [
+      "Pretoria",
+      "Trujillo",
+      "Durban",
+      "São Paulo"
+    ],
+    "extraData": {
+      "cityName": "São Paulo",
+      "country": "Brasil"
+    }
+  },
+  {
+    "id": "mountain_61036",
+    "type": "mountain",
+    "difficulty": "medium",
+    "questionText": "¿Qué pico es el más alto de Francia?",
+    "correctAnswer": "Monte Viso",
+    "options": [
+      "Monte Viso",
+      "Monte Kita",
+      "Kilimanjaro",
+      "Mont Blanc"
+    ],
+    "extraData": {
+      "country": "Francia",
+      "mountainName": "Monte Viso"
+    }
+  },
+  {
+    "id": "city_63053",
+    "type": "city",
+    "difficulty": "easy",
+    "questionText": "¿Qué ciudad está ubicada en Italia?",
+    "correctAnswer": "Nápoles",
+    "options": [
+      "Zaragoza",
+      "Barcelona",
+      "Nápoles",
+      "Guangzhou"
+    ],
+    "extraData": {
+      "cityName": "Nápoles",
+      "country": "Italia"
+    }
+  },
+  {
+    "id": "river_60048",
+    "type": "river",
+    "difficulty": "medium",
+    "questionText": "¿Cuál es el río más largo de Italia?",
+    "correctAnswer": "Arno",
+    "options": [
+      "Ródano",
+      "Tone",
+      "Arno",
+      "Indo"
+    ],
+    "extraData": {
+      "country": "Italia",
+      "riverName": "Arno"
+    }
+  },
+  {
+    "id": "mountain_61001",
+    "type": "mountain",
+    "difficulty": "medium",
+    "questionText": "¿La montaña más alta de Alemania es...?",
+    "correctAnswer": "Watzmann",
+    "options": [
+      "Watzmann",
+      "Pico 31 de Março",
+      "Monte Kosciuszko",
+      "Veleta"
+    ],
+    "extraData": {
+      "country": "Alemania",
+      "mountainName": "Watzmann"
+    }
+  },
+  {
+    "id": "river_60045",
+    "type": "river",
+    "difficulty": "medium",
+    "questionText": "¿Qué río es el más largo de India?",
+    "correctAnswer": "Godavari",
+    "options": [
+      "Misisipi",
+      "Balsas",
+      "Adigio",
+      "Godavari"
+    ],
+    "extraData": {
+      "country": "India",
+      "riverName": "Godavari"
+    }
+  },
+  {
+    "id": "river_60022",
+    "type": "river",
+    "difficulty": "medium",
+    "questionText": "¿El río más largo de China se llama...?",
+    "correctAnswer": "Yangtsé",
+    "options": [
+      "Pánuco",
+      "Yangtsé",
+      "Amazonas",
+      "Magdalena"
+    ],
+    "extraData": {
+      "country": "China",
+      "riverName": "Yangtsé"
+    }
+  },
+  {
+    "id": "river_60041",
+    "type": "river",
+    "difficulty": "medium",
+    "questionText": "¿El río más largo de Francia se llama...?",
+    "correctAnswer": "Garona",
+    "options": [
+      "Garona",
+      "Ucayali",
+      "Volga",
+      "Godavari"
+    ],
+    "extraData": {
+      "country": "Francia",
+      "riverName": "Garona"
+    }
+  },
+  {
+    "id": "city_63044",
+    "type": "city",
+    "difficulty": "easy",
+    "questionText": "¿La ciudad de Marseille está en qué país?",
+    "correctAnswer": "Francia",
+    "options": [
+      "Perú",
+      "Francia",
+      "Brasil",
+      "Alemania"
+    ],
+    "extraData": {
+      "cityName": "Marseille",
+      "country": "Francia"
+    }
+  },
+  {
+    "id": "river_60020",
+    "type": "river",
+    "difficulty": "medium",
+    "questionText": "¿El río más largo de Chile se llama...?",
+    "correctAnswer": "Biobío",
+    "options": [
+      "Volga",
+      "Shinano",
+      "Godavari",
+      "Biobío"
+    ],
+    "extraData": {
+      "country": "Chile",
+      "riverName": "Biobío"
+    }
+  },
+  {
+    "id": "lake_62006",
+    "type": "lake",
+    "difficulty": "medium",
+    "questionText": "¿Qué lago es el más grande de Australia?",
+    "correctAnswer": "Lago Eyre",
+    "options": [
+      "Lago Baikal",
+      "Embalse de Cíjara",
+      "Lago Michigan",
+      "Lago Eyre"
+    ],
+    "extraData": {
+      "country": "Australia",
+      "lakeName": "Lago Eyre"
+    }
+  },
+  {
+    "id": "lake_62030",
+    "type": "lake",
+    "difficulty": "medium",
+    "questionText": "¿El lago más grande de Estados Unidos se llama...?",
+    "correctAnswer": "Lago Erie",
+    "options": [
+      "Lago Ness",
+      "Lago Erie",
+      "Lago General Carrera",
+      "Lago de Annecy"
+    ],
+    "extraData": {
+      "country": "Estados Unidos",
+      "lakeName": "Lago Erie"
+    }
+  },
+  {
+    "id": "city_63017",
+    "type": "city",
+    "difficulty": "easy",
+    "questionText": "¿La ciudad de Montreal está en qué país?",
+    "correctAnswer": "Canadá",
+    "options": [
+      "India",
+      "Alemania",
+      "Canadá",
+      "China"
+    ],
+    "extraData": {
+      "cityName": "Montreal",
+      "country": "Canadá"
+    }
+  },
+  {
+    "id": "lake_62026",
+    "type": "lake",
+    "difficulty": "medium",
+    "questionText": "¿Cuál es el principal lago de España?",
+    "correctAnswer": "Embalse de Cíjara",
+    "options": [
+      "Embalse de Almansa",
+      "Lago Erie",
+      "Lago Titicaca",
+      "Embalse de Cíjara"
+    ],
+    "extraData": {
+      "country": "España",
+      "lakeName": "Embalse de Cíjara"
+    }
+  },
+  {
+    "id": "lake_62001",
+    "type": "lake",
+    "difficulty": "medium",
+    "questionText": "¿Cuál es el lago más grande de Alemania?",
+    "correctAnswer": "Lago Müritz",
+    "options": [
+      "Lago Müritz",
+      "Lago de Cuitzeo",
+      "Lago Ness",
+      "Lago Lemán"
+    ],
+    "extraData": {
+      "country": "Alemania",
+      "lakeName": "Lago Müritz"
+    }
+  },
+  {
+    "id": "city_63029",
+    "type": "city",
+    "difficulty": "easy",
+    "questionText": "¿Cuál de estas ciudades pertenece a Colombia?",
+    "correctAnswer": "Cali",
+    "options": [
+      "San Petersburgo",
+      "Cali",
+      "Novosibirsk",
+      "Antofagasta"
+    ],
+    "extraData": {
+      "cityName": "Cali",
+      "country": "Colombia"
+    }
+  },
+  {
+    "id": "lake_62034",
+    "type": "lake",
+    "difficulty": "medium",
+    "questionText": "¿El lago más grande de India se llama...?",
+    "correctAnswer": "Lago Wular",
+    "options": [
+      "Lago Constanza",
+      "Lago Ontario",
+      "Lago Kolleru",
+      "Lago Wular"
+    ],
+    "extraData": {
+      "country": "India",
+      "lakeName": "Lago Wular"
+    }
+  },
+  {
+    "id": "city_63070",
+    "type": "city",
+    "difficulty": "easy",
+    "questionText": "¿Qué ciudad está ubicada en Perú?",
+    "correctAnswer": "Chiclayo",
+    "options": [
+      "Chiclayo",
+      "Mombasa",
+      "Houston",
+      "Nakuru"
+    ],
+    "extraData": {
+      "cityName": "Chiclayo",
+      "country": "Perú"
+    }
+  },
+  {
+    "id": "mountain_61046",
+    "type": "mountain",
+    "difficulty": "medium",
+    "questionText": "¿La montaña más alta de Japón es...?",
+    "correctAnswer": "Monte Kita",
+    "options": [
+      "Monte Kita",
+      "Cervino",
+      "Kangchenjunga",
+      "Monte Thaba Putsoa"
+    ],
+    "extraData": {
+      "country": "Japón",
+      "mountainName": "Monte Kita"
+    }
+  },
+  {
+    "id": "river_60026",
+    "type": "river",
+    "difficulty": "medium",
+    "questionText": "¿Cuál es el principal río de Colombia?",
+    "correctAnswer": "Magdalena",
+    "options": [
+      "Arno",
+      "Magdalena",
+      "Adigio",
+      "Ob"
+    ],
+    "extraData": {
+      "country": "Colombia",
+      "riverName": "Magdalena"
+    }
+  },
+  {
+    "id": "river_60005",
+    "type": "river",
+    "difficulty": "medium",
+    "questionText": "¿Qué río es el más largo de Argentina?",
+    "correctAnswer": "Uruguay",
+    "options": [
+      "Uruguay",
+      "Adigio",
+      "Amur",
+      "Brahmaputra"
+    ],
+    "extraData": {
+      "country": "Argentina",
+      "riverName": "Uruguay"
+    }
+  },
+  {
+    "id": "mountain_61048",
+    "type": "mountain",
+    "difficulty": "medium",
+    "questionText": "¿Cuál es el punto más alto de Kenia?",
+    "correctAnswer": "Monte Kenia",
+    "options": [
+      "Monte Meru",
+      "Wildspitze",
+      "Ben Nevis",
+      "Monte Kenia"
+    ],
+    "extraData": {
+      "country": "Kenia",
+      "mountainName": "Monte Kenia"
+    }
+  },
+  {
+    "id": "river_60014",
+    "type": "river",
+    "difficulty": "medium",
+    "questionText": "¿Cuál es el principal río de Brasil?",
+    "correctAnswer": "Tocantins",
+    "options": [
+      "São Francisco",
+      "Tocantins",
+      "Balsas",
+      "Ganges"
+    ],
+    "extraData": {
+      "country": "Brasil",
+      "riverName": "Tocantins"
+    }
+  },
+  {
+    "id": "city_63026",
+    "type": "city",
+    "difficulty": "easy",
+    "questionText": "¿Cuál de estas ciudades pertenece a China?",
+    "correctAnswer": "Guangzhou",
+    "options": [
+      "Nantes",
+      "Guangzhou",
+      "Pekín",
+      "Mombasa"
+    ],
+    "extraData": {
+      "cityName": "Guangzhou",
+      "country": "China"
+    }
+  },
+  {
+    "id": "city_63009",
+    "type": "city",
+    "difficulty": "easy",
+    "questionText": "¿Qué ciudad está ubicada en Australia?",
+    "correctAnswer": "Melbourne",
+    "options": [
+      "Puebla",
+      "Guadalajara",
+      "Sídney",
+      "Melbourne"
+    ],
+    "extraData": {
+      "cityName": "Melbourne",
+      "country": "Australia"
+    }
+  },
+  {
+    "id": "mountain_61016",
+    "type": "mountain",
+    "difficulty": "medium",
+    "questionText": "¿Qué pico es el más alto de Canadá?",
+    "correctAnswer": "Monte Lucania",
+    "options": [
+      "Monte Kenia",
+      "Coropuna",
+      "Kangchenjunga",
+      "Monte Lucania"
+    ],
+    "extraData": {
+      "country": "Canadá",
+      "mountainName": "Monte Lucania"
+    }
+  },
+  {
+    "id": "city_63036",
+    "type": "city",
+    "difficulty": "easy",
+    "questionText": "¿Barcelona es una ciudad de qué país?",
+    "correctAnswer": "España",
+    "options": [
+      "Austria",
+      "China",
+      "España",
+      "Estados Unidos"
+    ],
+    "extraData": {
+      "cityName": "Barcelona",
+      "country": "España"
+    }
+  },
+  {
+    "id": "river_60029",
+    "type": "river",
+    "difficulty": "medium",
+    "questionText": "¿Cuál es el principal río de Egipto?",
+    "correctAnswer": "Nilo",
+    "options": [
+      "Lerma",
+      "Yangtsé",
+      "Nilo",
+      "Guadiana"
+    ],
+    "extraData": {
+      "country": "Egipto",
+      "riverName": "Nilo"
+    }
+  },
+  {
+    "id": "lake_62031",
+    "type": "lake",
+    "difficulty": "medium",
+    "questionText": "¿Cuál es el lago más grande de Francia?",
+    "correctAnswer": "Lago Lemán",
+    "options": [
+      "Lago Lemán",
+      "Lago Ullswater",
+      "Embalse de Cíjara",
+      "Lago Wular"
+    ],
+    "extraData": {
+      "country": "Francia",
+      "lakeName": "Lago Lemán"
+    }
+  },
+  {
+    "id": "river_60039",
+    "type": "river",
+    "difficulty": "medium",
+    "questionText": "¿Cuál es el principal río de Francia?",
+    "correctAnswer": "Ródano",
+    "options": [
+      "Ródano",
+      "Támesis",
+      "Biobío",
+      "Tajo"
+    ],
+    "extraData": {
+      "country": "Francia",
+      "riverName": "Ródano"
+    }
+  },
+  {
+    "id": "city_63049",
+    "type": "city",
+    "difficulty": "easy",
+    "questionText": "¿Cuál de estas ciudades pertenece a India?",
+    "correctAnswer": "Delhi",
+    "options": [
+      "Delhi",
+      "Tokio",
+      "Rosario",
+      "Toulouse"
+    ],
+    "extraData": {
+      "cityName": "Delhi",
+      "country": "India"
+    }
+  },
+  {
+    "id": "lake_62033",
+    "type": "lake",
+    "difficulty": "medium",
+    "questionText": "¿Qué lago es el más grande de Francia?",
+    "correctAnswer": "Lago de Annecy",
+    "options": [
+      "Lago Viedma",
+      "Lago de Annecy",
+      "Lago Superior",
+      "Lago Torrens"
+    ],
+    "extraData": {
+      "country": "Francia",
+      "lakeName": "Lago de Annecy"
+    }
+  },
+  {
+    "id": "river_60012",
+    "type": "river",
+    "difficulty": "medium",
+    "questionText": "¿Cuál es el río más largo de Brasil?",
+    "correctAnswer": "Paraná",
+    "options": [
+      "Trent",
+      "Sena",
+      "Atrato",
+      "Paraná"
+    ],
+    "extraData": {
+      "country": "Brasil",
+      "riverName": "Paraná"
+    }
+  },
+  {
+    "id": "mountain_61014",
+    "type": "mountain",
+    "difficulty": "medium",
+    "questionText": "¿Cuál es la montaña más alta de Canadá?",
+    "correctAnswer": "Monte Logan",
+    "options": [
+      "Grossglockner",
+      "Monte Logan",
+      "Monte Saint Elias",
+      "Pico 31 de Março"
+    ],
+    "extraData": {
+      "country": "Canadá",
+      "mountainName": "Monte Logan"
+    }
+  },
+  {
+    "id": "mountain_61037",
+    "type": "mountain",
+    "difficulty": "medium",
+    "questionText": "¿Cuál es el punto más alto de Francia?",
+    "correctAnswer": "Pic du Midi de Bigorre",
+    "options": [
+      "Denali",
+      "Pic du Midi de Bigorre",
+      "Monte Lucania",
+      "Cervino"
+    ],
+    "extraData": {
+      "country": "Francia",
+      "mountainName": "Pic du Midi de Bigorre"
+    }
+  },
+  {
+    "id": "river_60050",
+    "type": "river",
+    "difficulty": "medium",
+    "questionText": "¿El río más largo de Japón se llama...?",
+    "correctAnswer": "Shinano",
+    "options": [
+      "Tíber",
+      "Magdalena",
+      "Danubio",
+      "Shinano"
+    ],
+    "extraData": {
+      "country": "Japón",
+      "riverName": "Shinano"
+    }
+  },
+  {
+    "id": "river_60042",
+    "type": "river",
+    "difficulty": "medium",
+    "questionText": "¿Cuál es el principal río de India?",
+    "correctAnswer": "Ganges",
+    "options": [
+      "Amarillo",
+      "Ganges",
+      "Yenisei",
+      "Guadiana"
+    ],
+    "extraData": {
+      "country": "India",
+      "riverName": "Ganges"
+    }
+  },
+  {
+    "id": "mountain_61023",
+    "type": "mountain",
+    "difficulty": "medium",
+    "questionText": "¿Qué pico es el más alto de Colombia?",
+    "correctAnswer": "Cristóbal Colón",
+    "options": [
+      "Monte Saint Elias",
+      "Cristóbal Colón",
+      "Ritacuba Blanco",
+      "Pico da Neblina"
+    ],
+    "extraData": {
+      "country": "Colombia",
+      "mountainName": "Cristóbal Colón"
+    }
+  },
+  {
+    "id": "river_60008",
+    "type": "river",
+    "difficulty": "medium",
+    "questionText": "¿Qué río es el más largo de Australia?",
+    "correctAnswer": "Murray",
+    "options": [
+      "Orange",
+      "Ródano",
+      "Magdalena",
+      "Murray"
+    ],
+    "extraData": {
+      "country": "Australia",
+      "riverName": "Murray"
+    }
+  },
+  {
+    "id": "mountain_61031",
+    "type": "mountain",
+    "difficulty": "medium",
+    "questionText": "¿La montaña más alta de España es...?",
+    "correctAnswer": "Veleta",
+    "options": [
+      "Kangchenjunga",
+      "Veleta",
+      "Coropuna",
+      "Kangchenjunga"
+    ],
+    "extraData": {
+      "country": "España",
+      "mountainName": "Veleta"
+    }
+  },
+  {
+    "id": "city_63063",
+    "type": "city",
+    "difficulty": "easy",
+    "questionText": "¿Eldoret es una ciudad de qué país?",
+    "correctAnswer": "Kenia",
+    "options": [
+      "Francia",
+      "Colombia",
+      "Australia",
+      "Kenia"
+    ],
+    "extraData": {
+      "cityName": "Eldoret",
+      "country": "Kenia"
+    }
+  },
+  {
+    "id": "mountain_61029",
+    "type": "mountain",
+    "difficulty": "medium",
+    "questionText": "¿Cuál es la montaña más alta de España?",
+    "correctAnswer": "Mulhacén",
+    "options": [
+      "Matterhorn",
+      "Kilimanjaro",
+      "Mulhacén",
+      "Snowdon"
+    ],
+    "extraData": {
+      "country": "España",
+      "mountainName": "Mulhacén"
+    }
+  },
+  {
+    "id": "river_60053",
+    "type": "river",
+    "difficulty": "medium",
+    "questionText": "¿Cuál es el principal río de México?",
+    "correctAnswer": "Río Bravo",
+    "options": [
+      "Colorado",
+      "Balsas",
+      "Río Bravo",
+      "Nelson"
+    ],
+    "extraData": {
+      "country": "México",
+      "riverName": "Río Bravo"
+    }
+  },
+  {
+    "id": "city_63043",
+    "type": "city",
+    "difficulty": "easy",
+    "questionText": "¿Cuál de estas ciudades pertenece a Estados Unidos?",
+    "correctAnswer": "Houston",
+    "options": [
+      "Houston",
+      "Nakuru",
+      "Liverpool",
+      "Vancouver"
+    ],
+    "extraData": {
+      "cityName": "Houston",
+      "country": "Estados Unidos"
+    }
+  },
+  {
+    "id": "mountain_61038",
+    "type": "mountain",
+    "difficulty": "medium",
+    "questionText": "¿Qué pico es el más alto de India?",
+    "correctAnswer": "Kangchenjunga",
+    "options": [
+      "Kangchenjunga",
+      "Ojos del Salado",
+      "Monte Saint Elias",
+      "Watzmann"
+    ],
+    "extraData": {
+      "country": "India",
+      "mountainName": "Kangchenjunga"
+    }
+  },
+  {
+    "id": "mountain_61042",
+    "type": "mountain",
+    "difficulty": "medium",
+    "questionText": "¿Cuál es la montaña más alta de Italia?",
+    "correctAnswer": "Cervino",
+    "options": [
+      "Cervino",
+      "Kangchenjunga",
+      "Pico 31 de Março",
+      "Schneekoppe"
+    ],
+    "extraData": {
+      "country": "Italia",
+      "mountainName": "Cervino"
+    }
+  },
+  {
+    "id": "lake_62044",
+    "type": "lake",
+    "difficulty": "medium",
+    "questionText": "¿Qué lago es el más grande de Perú?",
+    "correctAnswer": "Lago Titicaca",
+    "options": [
+      "Lago Titicaca",
+      "Lago Superior",
+      "Lago General Carrera",
+      "Lago de Pátzcuaro"
+    ],
+    "extraData": {
+      "country": "Perú",
+      "lakeName": "Lago Titicaca"
+    }
+  },
+  {
+    "id": "lake_62041",
+    "type": "lake",
+    "difficulty": "medium",
+    "questionText": "¿Cuál es el principal lago de México?",
+    "correctAnswer": "Lago de Chapala",
+    "options": [
+      "Lago Ullswater",
+      "Lago Chiemsee",
+      "Lago de Chapala",
+      "Lago de Sanabria"
+    ],
+    "extraData": {
+      "country": "México",
+      "lakeName": "Lago de Chapala"
+    }
+  },
+  {
+    "id": "lake_62017",
+    "type": "lake",
+    "difficulty": "medium",
+    "questionText": "¿El lago más grande de Chile se llama...?",
+    "correctAnswer": "Lago General Carrera",
+    "options": [
+      "Lago de Garda",
+      "Lago de Ginebra",
+      "Lago de Chapala",
+      "Lago General Carrera"
+    ],
+    "extraData": {
+      "country": "Chile",
+      "lakeName": "Lago General Carrera"
+    }
+  },
+  {
+    "id": "river_60013",
+    "type": "river",
+    "difficulty": "medium",
+    "questionText": "¿El río más largo de Brasil se llama...?",
+    "correctAnswer": "São Francisco",
+    "options": [
+      "Garona",
+      "Po",
+      "São Francisco",
+      "Guadiana"
+    ],
+    "extraData": {
+      "country": "Brasil",
+      "riverName": "São Francisco"
+    }
+  },
+  {
+    "id": "river_60010",
+    "type": "river",
+    "difficulty": "medium",
+    "questionText": "¿Cuál es el río más largo de Australia?",
+    "correctAnswer": "Murrumbidgee",
+    "options": [
+      "Shinano",
+      "Murrumbidgee",
+      "Loira",
+      "Ucayali"
+    ],
+    "extraData": {
+      "country": "Australia",
+      "riverName": "Murrumbidgee"
+    }
+  },
+  {
+    "id": "city_63030",
+    "type": "city",
+    "difficulty": "easy",
+    "questionText": "¿Qué ciudad está ubicada en Colombia?",
+    "correctAnswer": "Barranquilla",
+    "options": [
+      "Pekín",
+      "Tokio",
+      "Barranquilla",
+      "Port Said"
+    ],
+    "extraData": {
+      "cityName": "Barranquilla",
+      "country": "Colombia"
+    }
+  },
+  {
+    "id": "mountain_61008",
+    "type": "mountain",
+    "difficulty": "medium",
+    "questionText": "¿Qué pico es el más alto de Australia?",
+    "correctAnswer": "Twins Spire",
+    "options": [
+      "Nevado Tres Cruces",
+      "Twins Spire",
+      "Makalu",
+      "Kilimanjaro"
+    ],
+    "extraData": {
+      "country": "Australia",
+      "mountainName": "Twins Spire"
+    }
+  },
+  {
+    "id": "mountain_61022",
+    "type": "mountain",
+    "difficulty": "medium",
+    "questionText": "¿Qué pico es el más alto de China?",
+    "correctAnswer": "Kangchenjunga",
+    "options": [
+      "Schneekoppe",
+      "K2",
+      "Snowdon",
+      "Kangchenjunga"
+    ],
+    "extraData": {
+      "country": "China",
+      "mountainName": "Kangchenjunga"
+    }
+  },
+  {
+    "id": "lake_62015",
+    "type": "lake",
+    "difficulty": "medium",
+    "questionText": "¿El lago más grande de Canadá se llama...?",
+    "correctAnswer": "Gran Lago del Esclavo",
+    "options": [
+      "Gran Lago del Oso",
+      "Gran Lago del Esclavo",
+      "Lago Todos los Santos",
+      "Lago Lemán"
+    ],
+    "extraData": {
+      "country": "Canadá",
+      "lakeName": "Gran Lago del Esclavo"
+    }
+  },
+  {
+    "id": "city_63014",
+    "type": "city",
+    "difficulty": "easy",
+    "questionText": "¿La ciudad de Brasilia está en qué país?",
+    "correctAnswer": "Brasil",
+    "options": [
+      "Nepal",
+      "Kenia",
+      "Brasil",
+      "Australia"
+    ],
+    "extraData": {
+      "cityName": "Brasilia",
+      "country": "Brasil"
+    }
+  },
+  {
+    "id": "city_63015",
+    "type": "city",
+    "difficulty": "easy",
+    "questionText": "¿Qué ciudad está ubicada en Brasil?",
+    "correctAnswer": "Salvador",
+    "options": [
+      "Salvador",
+      "Adelaida",
+      "Monterrey",
+      "Nakuru"
+    ],
+    "extraData": {
+      "cityName": "Salvador",
+      "country": "Brasil"
+    }
+  },
+  {
+    "id": "river_60036",
+    "type": "river",
+    "difficulty": "medium",
+    "questionText": "¿El río más largo de Estados Unidos se llama...?",
+    "correctAnswer": "Río Grande",
+    "options": [
+      "Tíber",
+      "Severn",
+      "Río Grande",
+      "Arno"
+    ],
+    "extraData": {
+      "country": "Estados Unidos",
+      "riverName": "Río Grande"
+    }
+  },
+  {
+    "id": "mountain_61010",
+    "type": "mountain",
+    "difficulty": "medium",
+    "questionText": "¿La montaña más alta de Austria es...?",
+    "correctAnswer": "Wildspitze",
+    "options": [
+      "Popocatépetl",
+      "Monte Rainier",
+      "Mulhacén",
+      "Wildspitze"
+    ],
+    "extraData": {
+      "country": "Austria",
+      "mountainName": "Wildspitze"
+    }
+  },
+  {
+    "id": "mountain_61056",
+    "type": "mountain",
+    "difficulty": "medium",
+    "questionText": "¿La montaña más alta de Nepal es...?",
+    "correctAnswer": "Makalu",
+    "options": [
+      "Popocatépetl",
+      "Makalu",
+      "Grossglockner",
+      "Monte Thaba Putsoa"
+    ],
+    "extraData": {
+      "country": "Nepal",
+      "mountainName": "Makalu"
+    }
+  },
+  {
+    "id": "city_63022",
+    "type": "city",
+    "difficulty": "easy",
+    "questionText": "¿Qué ciudad está ubicada en Chile?",
+    "correctAnswer": "La Serena",
+    "options": [
+      "Glasgow",
+      "La Serena",
+      "Antofagasta",
+      "Nakuru"
+    ],
+    "extraData": {
+      "cityName": "La Serena",
+      "country": "Chile"
+    }
+  },
+  {
+    "id": "river_60018",
+    "type": "river",
+    "difficulty": "medium",
+    "questionText": "¿Cuál es el río más largo de Canadá?",
+    "correctAnswer": "Churchill",
+    "options": [
+      "Churchill",
+      "Lena",
+      "Sena",
+      "Colorado"
+    ],
+    "extraData": {
+      "country": "Canadá",
+      "riverName": "Churchill"
+    }
+  },
+  {
+    "id": "city_63041",
+    "type": "city",
+    "difficulty": "easy",
+    "questionText": "¿La ciudad de Los Ángeles está en qué país?",
+    "correctAnswer": "Estados Unidos",
+    "options": [
+      "India",
+      "Estados Unidos",
+      "China",
+      "México"
+    ],
+    "extraData": {
+      "cityName": "Los Ángeles",
+      "country": "Estados Unidos"
+    }
+  },
+  {
+    "id": "river_60058",
+    "type": "river",
+    "difficulty": "medium",
+    "questionText": "¿Qué río es el más largo de Perú?",
+    "correctAnswer": "Marañón",
+    "options": [
+      "Biobío",
+      "Orange",
+      "Marañón",
+      "Cauca"
+    ],
+    "extraData": {
+      "country": "Perú",
+      "riverName": "Marañón"
+    }
+  },
+  {
+    "id": "city_63042",
+    "type": "city",
+    "difficulty": "easy",
+    "questionText": "¿La ciudad de Chicago está en qué país?",
+    "correctAnswer": "Estados Unidos",
+    "options": [
+      "Canadá",
+      "Estados Unidos",
+      "China",
+      "Alemania"
+    ],
+    "extraData": {
+      "cityName": "Chicago",
+      "country": "Estados Unidos"
+    }
+  },
+  {
+    "id": "mountain_61007",
+    "type": "mountain",
+    "difficulty": "medium",
+    "questionText": "¿La montaña más alta de Australia es...?",
+    "correctAnswer": "Pico Townsend",
+    "options": [
+      "Njesuthi",
+      "Pico de Orizaba",
+      "Grossglockner",
+      "Pico Townsend"
+    ],
+    "extraData": {
+      "country": "Australia",
+      "mountainName": "Pico Townsend"
+    }
+  },
+  {
+    "id": "city_63037",
+    "type": "city",
+    "difficulty": "easy",
+    "questionText": "¿Cuál de estas ciudades pertenece a España?",
+    "correctAnswer": "Valencia",
+    "options": [
+      "Kioto",
+      "Milán",
+      "Valencia",
+      "Giza"
+    ],
+    "extraData": {
+      "cityName": "Valencia",
+      "country": "España"
+    }
+  },
+  {
+    "id": "city_63069",
+    "type": "city",
+    "difficulty": "easy",
+    "questionText": "¿Trujillo es una ciudad de qué país?",
+    "correctAnswer": "Perú",
+    "options": [
+      "India",
+      "Perú",
+      "Nepal",
+      "Canadá"
+    ],
+    "extraData": {
+      "cityName": "Trujillo",
+      "country": "Perú"
+    }
+  },
+  {
+    "id": "river_60034",
+    "type": "river",
+    "difficulty": "medium",
+    "questionText": "¿El río más largo de Estados Unidos se llama...?",
+    "correctAnswer": "Misisipi",
+    "options": [
+      "Misisipi",
+      "Orange",
+      "Tíber",
+      "Nilo"
+    ],
+    "extraData": {
+      "country": "Estados Unidos",
+      "riverName": "Misisipi"
+    }
+  },
+  {
+    "id": "mountain_61057",
+    "type": "mountain",
+    "difficulty": "medium",
+    "questionText": "¿Cuál es la montaña más alta de Perú?",
+    "correctAnswer": "Huascarán",
+    "options": [
+      "Aconcagua",
+      "Schneekoppe",
+      "Snowdon",
+      "Huascarán"
+    ],
+    "extraData": {
+      "country": "Perú",
+      "mountainName": "Huascarán"
+    }
+  },
+  {
+    "id": "mountain_61033",
+    "type": "mountain",
+    "difficulty": "medium",
+    "questionText": "¿La montaña más alta de Estados Unidos es...?",
+    "correctAnswer": "Monte Rainier",
+    "options": [
+      "Pic du Midi de Bigorre",
+      "Simón Bolívar",
+      "Monte Fuji",
+      "Monte Rainier"
+    ],
+    "extraData": {
+      "country": "Estados Unidos",
+      "mountainName": "Monte Rainier"
+    }
+  },
+  {
+    "id": "city_63062",
+    "type": "city",
+    "difficulty": "easy",
+    "questionText": "¿Nakuru es una ciudad de qué país?",
+    "correctAnswer": "Kenia",
+    "options": [
+      "Francia",
+      "Kenia",
+      "Austria",
+      "Estados Unidos"
+    ],
+    "extraData": {
+      "cityName": "Nakuru",
+      "country": "Kenia"
+    }
+  },
+  {
+    "id": "river_60033",
+    "type": "river",
+    "difficulty": "medium",
+    "questionText": "¿El río más largo de España se llama...?",
+    "correctAnswer": "Guadiana",
+    "options": [
+      "Guadiana",
+      "Amazonas",
+      "Tíber",
+      "Tocantins"
+    ],
+    "extraData": {
+      "country": "España",
+      "riverName": "Guadiana"
+    }
+  },
+  {
+    "id": "city_63055",
+    "type": "city",
+    "difficulty": "easy",
+    "questionText": "¿Qué ciudad está ubicada en Italia?",
+    "correctAnswer": "Palermo",
+    "options": [
+      "Melbourne",
+      "Giza",
+      "Palermo",
+      "Monterrey"
+    ],
+    "extraData": {
+      "cityName": "Palermo",
+      "country": "Italia"
+    }
+  },
+  {
+    "id": "river_60011",
+    "type": "river",
+    "difficulty": "medium",
+    "questionText": "¿Qué río es el más largo de Brasil?",
+    "correctAnswer": "Amazonas",
+    "options": [
+      "Trent",
+      "Amazonas",
+      "Tajo",
+      "Murray"
+    ],
+    "extraData": {
+      "country": "Brasil",
+      "riverName": "Amazonas"
+    }
+  },
+  {
+    "id": "city_63001",
+    "type": "city",
+    "difficulty": "easy",
+    "questionText": "¿Cuál de estas ciudades pertenece a Alemania?",
+    "correctAnswer": "Hamburgo",
+    "options": [
+      "Liverpool",
+      "Los Ángeles",
+      "Hamburgo",
+      "Lyon"
+    ],
+    "extraData": {
+      "cityName": "Hamburgo",
+      "country": "Alemania"
+    }
+  },
+  {
+    "id": "river_60051",
+    "type": "river",
+    "difficulty": "medium",
+    "questionText": "¿Cuál es el río más largo de Japón?",
+    "correctAnswer": "Tone",
+    "options": [
+      "Guadiana",
+      "Tone",
+      "Paraná",
+      "Baker"
+    ],
+    "extraData": {
+      "country": "Japón",
+      "riverName": "Tone"
+    }
+  },
+  {
+    "id": "mountain_61032",
+    "type": "mountain",
+    "difficulty": "medium",
+    "questionText": "¿Qué pico es el más alto de Estados Unidos?",
+    "correctAnswer": "Denali",
+    "options": [
+      "Pico Townsend",
+      "Cervino",
+      "Denali",
+      "Cristóbal Colón"
+    ],
+    "extraData": {
+      "country": "Estados Unidos",
+      "mountainName": "Denali"
+    }
+  },
+  {
+    "id": "city_63003",
+    "type": "city",
+    "difficulty": "easy",
+    "questionText": "¿Qué ciudad está ubicada en Alemania?",
+    "correctAnswer": "Colonia",
+    "options": [
+      "Londres",
+      "Colonia",
+      "Cúcuta",
+      "Pretoria"
+    ],
+    "extraData": {
+      "cityName": "Colonia",
+      "country": "Alemania"
+    }
+  },
+  {
+    "id": "lake_62004",
+    "type": "lake",
+    "difficulty": "medium",
+    "questionText": "¿Cuál es el lago más grande de Argentina?",
+    "correctAnswer": "Lago Viedma",
+    "options": [
+      "Lago Viedma",
+      "Lago Ladoga",
+      "Lago Poyang",
+      "Lago Müritz"
+    ],
+    "extraData": {
+      "country": "Argentina",
+      "lakeName": "Lago Viedma"
+    }
+  },
+  {
+    "id": "city_63032",
+    "type": "city",
+    "difficulty": "easy",
+    "questionText": "¿Cuál de estas ciudades pertenece a Egipto?",
+    "correctAnswer": "El Cairo",
+    "options": [
+      "Shubra El-Kheima",
+      "León",
+      "Fortaleza",
+      "El Cairo"
+    ],
+    "extraData": {
+      "cityName": "El Cairo",
+      "country": "Egipto"
+    }
+  },
+  {
+    "id": "river_60004",
+    "type": "river",
+    "difficulty": "medium",
+    "questionText": "¿Qué río es el más largo de Argentina?",
+    "correctAnswer": "Paraná",
+    "options": [
+      "Tone",
+      "Nelson",
+      "Guadalquivir",
+      "Paraná"
+    ],
+    "extraData": {
+      "country": "Argentina",
+      "riverName": "Paraná"
+    }
+  },
+  {
+    "id": "mountain_61041",
+    "type": "mountain",
+    "difficulty": "medium",
+    "questionText": "¿Cuál es la montaña más alta de Italia?",
+    "correctAnswer": "Monte Bianco",
+    "options": [
+      "Veleta",
+      "Iztaccíhuatl",
+      "Sajama",
+      "Monte Bianco"
+    ],
+    "extraData": {
+      "country": "Italia",
+      "mountainName": "Monte Bianco"
+    }
+  },
+  {
+    "id": "river_60015",
+    "type": "river",
+    "difficulty": "medium",
+    "questionText": "¿Qué río es el más largo de Canadá?",
+    "correctAnswer": "Mackenzie",
+    "options": [
+      "Pánuco",
+      "Limpopo",
+      "Amur",
+      "Mackenzie"
+    ],
+    "extraData": {
+      "country": "Canadá",
+      "riverName": "Mackenzie"
+    }
+  },
+  {
+    "id": "mountain_61020",
+    "type": "mountain",
+    "difficulty": "medium",
+    "questionText": "¿La montaña más alta de China es...?",
+    "correctAnswer": "Everest",
+    "options": [
+      "Monte Kosciuszko",
+      "Monte Lucania",
+      "Dom",
+      "Everest"
+    ],
+    "extraData": {
+      "country": "China",
+      "mountainName": "Everest"
+    }
+  },
+  {
+    "id": "river_60030",
+    "type": "river",
+    "difficulty": "medium",
+    "questionText": "¿Cuál es el río más largo de España?",
+    "correctAnswer": "Ebro",
+    "options": [
+      "Columbia",
+      "Ebro",
+      "Douro",
+      "Ob"
+    ],
+    "extraData": {
+      "country": "España",
+      "riverName": "Ebro"
+    }
+  },
+  {
+    "id": "mountain_61012",
+    "type": "mountain",
+    "difficulty": "medium",
+    "questionText": "¿La montaña más alta de Brasil es...?",
+    "correctAnswer": "Pico da Neblina",
+    "options": [
+      "Twins Spire",
+      "Pico da Neblina",
+      "Mont Blanc",
+      "Ben Nevis"
+    ],
+    "extraData": {
+      "country": "Brasil",
+      "mountainName": "Pico da Neblina"
+    }
+  },
+  {
+    "id": "city_63027",
+    "type": "city",
+    "difficulty": "easy",
+    "questionText": "¿Qué ciudad está ubicada en China?",
+    "correctAnswer": "Shenzhen",
+    "options": [
+      "Guadalajara",
+      "São Paulo",
+      "Shenzhen",
+      "Glasgow"
+    ],
+    "extraData": {
+      "cityName": "Shenzhen",
+      "country": "China"
+    }
+  },
+  {
+    "id": "river_60000",
+    "type": "river",
+    "difficulty": "medium",
+    "questionText": "¿Qué río es el más largo de Alemania?",
+    "correctAnswer": "Rin",
+    "options": [
+      "Marañón",
+      "Rin",
+      "Ob",
+      "Lerma"
+    ],
+    "extraData": {
+      "country": "Alemania",
+      "riverName": "Rin"
+    }
+  },
+  {
+    "id": "river_60002",
+    "type": "river",
+    "difficulty": "medium",
+    "questionText": "¿Cuál es el río más largo de Alemania?",
+    "correctAnswer": "Elba",
+    "options": [
+      "Nilo",
+      "Elba",
+      "Volga",
+      "Baker"
+    ],
+    "extraData": {
+      "country": "Alemania",
+      "riverName": "Elba"
+    }
+  },
+  {
+    "id": "river_60017",
+    "type": "river",
+    "difficulty": "medium",
+    "questionText": "¿El río más largo de Canadá se llama...?",
+    "correctAnswer": "Nelson",
+    "options": [
+      "Ohio",
+      "Río Bravo",
+      "Paraná",
+      "Nelson"
+    ],
+    "extraData": {
+      "country": "Canadá",
+      "riverName": "Nelson"
+    }
+  },
+  {
+    "id": "lake_62023",
+    "type": "lake",
+    "difficulty": "medium",
+    "questionText": "¿El lago más grande de Egipto se llama...?",
+    "correctAnswer": "Lago Toshka",
+    "options": [
+      "Lago Toshka",
+      "Lago de Ginebra",
+      "Lago Ness",
+      "Lago Ontario"
+    ],
+    "extraData": {
+      "country": "Egipto",
+      "lakeName": "Lago Toshka"
+    }
+  },
+  {
+    "id": "mountain_61035",
+    "type": "mountain",
+    "difficulty": "medium",
+    "questionText": "¿Cuál es el punto más alto de Francia?",
+    "correctAnswer": "Mont Blanc",
+    "options": [
+      "Matterhorn",
+      "Monte Fuji",
+      "Mont Blanc",
+      "Grossglockner"
+    ],
+    "extraData": {
+      "country": "Francia",
+      "mountainName": "Mont Blanc"
+    }
+  },
+  {
+    "id": "lake_62045",
+    "type": "lake",
+    "difficulty": "medium",
+    "questionText": "¿Cuál es el principal lago de Perú?",
+    "correctAnswer": "Lago Junín",
+    "options": [
+      "Lago Toshka",
+      "Lago Junín",
+      "Lago Superior",
+      "Lago Qinghai"
+    ],
+    "extraData": {
+      "country": "Perú",
+      "lakeName": "Lago Junín"
+    }
+  },
+  {
+    "id": "river_60038",
+    "type": "river",
+    "difficulty": "medium",
+    "questionText": "¿Qué río es el más largo de Francia?",
+    "correctAnswer": "Loira",
+    "options": [
+      "Loira",
+      "Trent",
+      "Churchill",
+      "Magdalena"
+    ],
+    "extraData": {
+      "country": "Francia",
+      "riverName": "Loira"
+    }
+  },
+  {
+    "id": "mountain_61049",
+    "type": "mountain",
+    "difficulty": "medium",
+    "questionText": "¿Cuál es la montaña más alta de Kenia?",
+    "correctAnswer": "Monte Elgon",
+    "options": [
+      "Grossglockner",
+      "Cristóbal Colón",
+      "Ortles",
+      "Monte Elgon"
+    ],
+    "extraData": {
+      "country": "Kenia",
+      "mountainName": "Monte Elgon"
+    }
+  },
+  {
+    "id": "lake_62039",
+    "type": "lake",
+    "difficulty": "medium",
+    "questionText": "¿Cuál es el principal lago de Italia?",
+    "correctAnswer": "Lago Como",
+    "options": [
+      "Lago Como",
+      "Lago Argentino",
+      "Lago Junín",
+      "Lago Lemán"
+    ],
+    "extraData": {
+      "country": "Italia",
+      "lakeName": "Lago Como"
+    }
+  },
+  {
+    "id": "mountain_61006",
+    "type": "mountain",
+    "difficulty": "medium",
+    "questionText": "¿Qué pico es el más alto de Australia?",
+    "correctAnswer": "Monte Kosciuszko",
+    "options": [
+      "Pico Townsend",
+      "Monte Hotaka",
+      "Everest",
+      "Monte Kosciuszko"
+    ],
+    "extraData": {
+      "country": "Australia",
+      "mountainName": "Monte Kosciuszko"
+    }
+  },
+  {
+    "id": "river_60021",
+    "type": "river",
+    "difficulty": "medium",
+    "questionText": "¿Qué río es el más largo de Chile?",
+    "correctAnswer": "Maule",
+    "options": [
+      "Mackenzie",
+      "Júcar",
+      "Marañón",
+      "Maule"
+    ],
+    "extraData": {
+      "country": "Chile",
+      "riverName": "Maule"
+    }
+  },
+  {
+    "id": "lake_62028",
+    "type": "lake",
+    "difficulty": "medium",
+    "questionText": "¿El lago más grande de Estados Unidos se llama...?",
+    "correctAnswer": "Lago Michigan",
+    "options": [
+      "Lago Michigan",
+      "Lago Ladoga",
+      "Lago Huron",
+      "Lago de Garda"
+    ],
+    "extraData": {
+      "country": "Estados Unidos",
+      "lakeName": "Lago Michigan"
+    }
+  },
+  {
+    "id": "river_60054",
+    "type": "river",
+    "difficulty": "medium",
+    "questionText": "¿El río más largo de México se llama...?",
+    "correctAnswer": "Lerma",
+    "options": [
+      "Douro",
+      "Lerma",
+      "Murray",
+      "Paraná"
+    ],
+    "extraData": {
+      "country": "México",
+      "riverName": "Lerma"
+    }
+  },
+  {
+    "id": "city_63002",
+    "type": "city",
+    "difficulty": "easy",
+    "questionText": "¿La ciudad de Munich está en qué país?",
+    "correctAnswer": "Alemania",
+    "options": [
+      "Australia",
+      "Alemania",
+      "Italia",
+      "Egipto"
+    ],
+    "extraData": {
+      "cityName": "Munich",
+      "country": "Alemania"
+    }
+  },
+  {
+    "id": "mountain_61053",
+    "type": "mountain",
+    "difficulty": "medium",
+    "questionText": "¿La montaña más alta de Nepal es...?",
+    "correctAnswer": "Everest",
+    "options": [
+      "Watzmann",
+      "Everest",
+      "Wildspitze",
+      "Pico da Neblina"
+    ],
+    "extraData": {
+      "country": "Nepal",
+      "mountainName": "Everest"
+    }
+  },
+  {
+    "id": "mountain_61039",
+    "type": "mountain",
+    "difficulty": "medium",
+    "questionText": "¿Qué pico es el más alto de India?",
+    "correctAnswer": "Nanda Devi",
+    "options": [
+      "Aneto",
+      "Denali",
+      "Nanda Devi",
+      "Llullaillaco"
+    ],
+    "extraData": {
+      "country": "India",
+      "mountainName": "Nanda Devi"
+    }
+  },
+  {
+    "id": "mountain_61055",
+    "type": "mountain",
+    "difficulty": "medium",
+    "questionText": "¿La montaña más alta de Nepal es...?",
+    "correctAnswer": "Lhotse",
+    "options": [
+      "Ben Nevis",
+      "Lhotse",
+      "Koshtan-Tau",
+      "Llullaillaco"
+    ],
+    "extraData": {
+      "country": "Nepal",
+      "mountainName": "Lhotse"
+    }
+  },
+  {
+    "id": "lake_62025",
+    "type": "lake",
+    "difficulty": "medium",
+    "questionText": "¿Qué lago es el más grande de España?",
+    "correctAnswer": "Embalse de Almansa",
+    "options": [
+      "Lago Constanza",
+      "Embalse de Almansa",
+      "Lago de Sobradinho",
+      "Lago de Annecy"
+    ],
+    "extraData": {
+      "country": "España",
+      "lakeName": "Embalse de Almansa"
+    }
+  },
+  {
+    "id": "city_63007",
+    "type": "city",
+    "difficulty": "easy",
+    "questionText": "¿Qué ciudad está ubicada en Argentina?",
+    "correctAnswer": "San Miguel de Tucumán",
+    "options": [
+      "Córdoba",
+      "San Miguel de Tucumán",
+      "Chicago",
+      "Johannesburgo"
+    ],
+    "extraData": {
+      "cityName": "San Miguel de Tucumán",
+      "country": "Argentina"
+    }
+  },
+  {
+    "id": "city_63006",
+    "type": "city",
+    "difficulty": "easy",
+    "questionText": "¿Cuál de estas ciudades pertenece a Argentina?",
+    "correctAnswer": "Mendoza",
+    "options": [
+      "Bangalore",
+      "Río de Janeiro",
+      "Pekín",
+      "Mendoza"
+    ],
+    "extraData": {
+      "cityName": "Mendoza",
+      "country": "Argentina"
+    }
+  },
+  {
+    "id": "city_63025",
+    "type": "city",
+    "difficulty": "easy",
+    "questionText": "¿Qué ciudad está ubicada en China?",
+    "correctAnswer": "Pekín",
+    "options": [
+      "Turín",
+      "Melbourne",
+      "Munich",
+      "Pekín"
+    ],
+    "extraData": {
+      "cityName": "Pekín",
+      "country": "China"
+    }
+  },
+  {
+    "id": "mountain_61040",
+    "type": "mountain",
+    "difficulty": "medium",
+    "questionText": "¿Cuál es el punto más alto de India?",
+    "correctAnswer": "Kamet",
+    "options": [
+      "Kamet",
+      "Monte Rainier",
+      "Monte Saint Elias",
+      "Ben Nevis"
+    ],
+    "extraData": {
+      "country": "India",
+      "mountainName": "Kamet"
+    }
+  },
+  {
+    "id": "city_63024",
+    "type": "city",
+    "difficulty": "easy",
+    "questionText": "¿Cuál de estas ciudades pertenece a China?",
+    "correctAnswer": "Shanghái",
+    "options": [
+      "Colonia",
+      "Shanghái",
+      "Nakuru",
+      "Salvador"
+    ],
+    "extraData": {
+      "cityName": "Shanghái",
+      "country": "China"
+    }
+  },
+  {
+    "id": "mountain_61019",
+    "type": "mountain",
+    "difficulty": "medium",
+    "questionText": "¿La montaña más alta de Chile es...?",
+    "correctAnswer": "Llullaillaco",
+    "options": [
+      "Llullaillaco",
+      "K2",
+      "Simón Bolívar",
+      "Twins Spire"
+    ],
+    "extraData": {
+      "country": "Chile",
+      "mountainName": "Llullaillaco"
+    }
+  },
+  {
+    "id": "city_63050",
+    "type": "city",
+    "difficulty": "easy",
+    "questionText": "¿Bangalore es una ciudad de qué país?",
+    "correctAnswer": "India",
+    "options": [
+      "India",
+      "Kenia",
+      "Chile",
+      "Francia"
+    ],
+    "extraData": {
+      "cityName": "Bangalore",
+      "country": "India"
+    }
+  },
+  {
+    "id": "city_63034",
+    "type": "city",
+    "difficulty": "easy",
+    "questionText": "¿Cuál de estas ciudades pertenece a Egipto?",
+    "correctAnswer": "Giza",
+    "options": [
+      "Bangalore",
+      "Delhi",
+      "Giza",
+      "Hamburgo"
+    ],
+    "extraData": {
+      "cityName": "Giza",
+      "country": "Egipto"
+    }
+  },
+  {
+    "id": "lake_62010",
+    "type": "lake",
+    "difficulty": "medium",
+    "questionText": "¿Cuál es el principal lago de Brasil?",
+    "correctAnswer": "Lago de Sobradinho",
+    "options": [
+      "Lago Superior",
+      "Lago de Sobradinho",
+      "Gran Lago del Oso",
+      "Lago de Sanabria"
+    ],
+    "extraData": {
+      "country": "Brasil",
+      "lakeName": "Lago de Sobradinho"
+    }
+  },
+  {
+    "id": "lake_62020",
+    "type": "lake",
+    "difficulty": "medium",
+    "questionText": "¿Qué lago es el más grande de China?",
+    "correctAnswer": "Lago Poyang",
+    "options": [
+      "Lago Dongting",
+      "Lago Poyang",
+      "Lago de Pátzcuaro",
+      "Lago Lemán"
+    ],
+    "extraData": {
+      "country": "China",
+      "lakeName": "Lago Poyang"
+    }
+  },
+  {
+    "id": "river_60047",
+    "type": "river",
+    "difficulty": "medium",
+    "questionText": "¿El río más largo de Italia se llama...?",
+    "correctAnswer": "Tíber",
+    "options": [
+      "Elba",
+      "Ródano",
+      "Tíber",
+      "Shinano"
+    ],
+    "extraData": {
+      "country": "Italia",
+      "riverName": "Tíber"
+    }
+  },
+  {
+    "id": "city_63020",
+    "type": "city",
+    "difficulty": "easy",
+    "questionText": "¿Valparaíso es una ciudad de qué país?",
+    "correctAnswer": "Chile",
+    "options": [
+      "Perú",
+      "Argentina",
+      "India",
+      "Chile"
+    ],
+    "extraData": {
+      "cityName": "Valparaíso",
+      "country": "Chile"
+    }
+  },
+  {
+    "id": "river_60052",
+    "type": "river",
+    "difficulty": "medium",
+    "questionText": "¿Cuál es el río más largo de Japón?",
+    "correctAnswer": "Ishikari",
+    "options": [
+      "Cauca",
+      "Churchill",
+      "Ishikari",
+      "Ródano"
+    ],
+    "extraData": {
+      "country": "Japón",
+      "riverName": "Ishikari"
+    }
+  },
+  {
+    "id": "mountain_61051",
+    "type": "mountain",
+    "difficulty": "medium",
+    "questionText": "¿Cuál es el punto más alto de México?",
+    "correctAnswer": "Popocatépetl",
+    "options": [
+      "Monte Kosciuszko",
+      "K2",
+      "Popocatépetl",
+      "Mafadi"
+    ],
+    "extraData": {
+      "country": "México",
+      "mountainName": "Popocatépetl"
+    }
+  },
+  {
+    "id": "lake_62035",
+    "type": "lake",
+    "difficulty": "medium",
+    "questionText": "¿El lago más grande de India se llama...?",
+    "correctAnswer": "Lago Chilka",
+    "options": [
+      "Lago Kolleru",
+      "Lago Chilka",
+      "Lago de Como",
+      "Embalse de Cíjara"
+    ],
+    "extraData": {
+      "country": "India",
+      "lakeName": "Lago Chilka"
+    }
+  },
+  {
+    "id": "lake_62029",
+    "type": "lake",
+    "difficulty": "medium",
+    "questionText": "¿El lago más grande de Estados Unidos se llama...?",
+    "correctAnswer": "Lago Huron",
+    "options": [
+      "Embalse de Almansa",
+      "Lago Ullswater",
+      "Lago Huron",
+      "Represa de Tucuruí"
+    ],
+    "extraData": {
+      "country": "Estados Unidos",
+      "lakeName": "Lago Huron"
+    }
+  },
+  {
+    "id": "mountain_61004",
+    "type": "mountain",
+    "difficulty": "medium",
+    "questionText": "¿Cuál es la montaña más alta de Argentina?",
+    "correctAnswer": "Ojos del Salado",
+    "options": [
+      "Iztaccíhuatl",
+      "Pico da Neblina",
+      "Coropuna",
+      "Ojos del Salado"
+    ],
+    "extraData": {
+      "country": "Argentina",
+      "mountainName": "Ojos del Salado"
+    }
+  },
+  {
+    "id": "lake_62002",
+    "type": "lake",
+    "difficulty": "medium",
+    "questionText": "¿Cuál es el principal lago de Alemania?",
+    "correctAnswer": "Lago Chiemsee",
+    "options": [
+      "Lago Chiemsee",
+      "Lago Constanza",
+      "Lago Titicaca",
+      "Lago Wular"
+    ],
+    "extraData": {
+      "country": "Alemania",
+      "lakeName": "Lago Chiemsee"
+    }
+  },
+  {
+    "id": "mountain_61002",
+    "type": "mountain",
+    "difficulty": "medium",
+    "questionText": "¿Cuál es la montaña más alta de Alemania?",
+    "correctAnswer": "Schneekoppe",
+    "options": [
+      "Monte Meru",
+      "Huascarán",
+      "Schneekoppe",
+      "Monte Viso"
+    ],
+    "extraData": {
+      "country": "Alemania",
+      "mountainName": "Schneekoppe"
+    }
+  },
+  {
+    "id": "lake_62022",
+    "type": "lake",
+    "difficulty": "medium",
+    "questionText": "¿Cuál es el lago más grande de Egipto?",
+    "correctAnswer": "Lago Nasser",
+    "options": [
+      "Lago de Ginebra",
+      "Lago Nasser",
+      "Lago Mayor",
+      "Lago de Cuitzeo"
+    ],
+    "extraData": {
+      "country": "Egipto",
+      "lakeName": "Lago Nasser"
+    }
+  },
+  {
+    "id": "city_63052",
+    "type": "city",
+    "difficulty": "easy",
+    "questionText": "¿Qué ciudad está ubicada en Italia?",
+    "correctAnswer": "Milán",
+    "options": [
+      "Cartagena",
+      "Nakuru",
+      "Puebla",
+      "Milán"
+    ],
+    "extraData": {
+      "cityName": "Milán",
+      "country": "Italia"
+    }
+  },
+  {
+    "id": "mountain_61017",
+    "type": "mountain",
+    "difficulty": "medium",
+    "questionText": "¿Cuál es el punto más alto de Chile?",
+    "correctAnswer": "Ojos del Salado",
+    "options": [
+      "Dufourspitze",
+      "Ojos del Salado",
+      "Monte Logan",
+      "Watzmann"
+    ],
+    "extraData": {
+      "country": "Chile",
+      "mountainName": "Ojos del Salado"
+    }
+  },
+  {
+    "id": "city_63033",
+    "type": "city",
+    "difficulty": "easy",
+    "questionText": "¿Qué ciudad está ubicada en Egipto?",
+    "correctAnswer": "Alejandría",
+    "options": [
+      "Barranquilla",
+      "Chiclayo",
+      "Perth",
+      "Alejandría"
+    ],
+    "extraData": {
+      "cityName": "Alejandría",
+      "country": "Egipto"
+    }
+  },
+  {
+    "id": "mountain_61045",
+    "type": "mountain",
+    "difficulty": "medium",
+    "questionText": "¿Cuál es el punto más alto de Japón?",
+    "correctAnswer": "Monte Fuji",
+    "options": [
+      "Ojos del Salado",
+      "Monte Fuji",
+      "Watzmann",
+      "Coropuna"
+    ],
+    "extraData": {
+      "country": "Japón",
+      "mountainName": "Monte Fuji"
+    }
+  },
+  {
+    "id": "city_63046",
+    "type": "city",
+    "difficulty": "easy",
+    "questionText": "¿Toulouse es una ciudad de qué país?",
+    "correctAnswer": "Francia",
+    "options": [
+      "Alemania",
+      "Francia",
+      "Canadá",
+      "México"
+    ],
+    "extraData": {
+      "cityName": "Toulouse",
+      "country": "Francia"
+    }
+  },
+  {
+    "id": "river_60040",
+    "type": "river",
+    "difficulty": "medium",
+    "questionText": "¿Cuál es el río más largo de Francia?",
+    "correctAnswer": "Sena",
+    "options": [
+      "Sena",
+      "Ishikari",
+      "San Lorenzo",
+      "Amur"
+    ],
+    "extraData": {
+      "country": "Francia",
+      "riverName": "Sena"
+    }
+  },
+  {
+    "id": "lake_62036",
+    "type": "lake",
+    "difficulty": "medium",
+    "questionText": "¿El lago más grande de India se llama...?",
+    "correctAnswer": "Lago Kolleru",
+    "options": [
+      "Lago Superior",
+      "Lago Kolleru",
+      "Lago Poyang",
+      "Lago Baikal"
+    ],
+    "extraData": {
+      "country": "India",
+      "lakeName": "Lago Kolleru"
+    }
+  },
+  {
+    "id": "city_63039",
+    "type": "city",
+    "difficulty": "easy",
+    "questionText": "¿Málaga es una ciudad de qué país?",
+    "correctAnswer": "España",
+    "options": [
+      "Austria",
+      "India",
+      "España",
+      "Egipto"
+    ],
+    "extraData": {
+      "cityName": "Málaga",
+      "country": "España"
+    }
+  },
+  {
+    "id": "mountain_61043",
+    "type": "mountain",
+    "difficulty": "medium",
+    "questionText": "¿Cuál es el punto más alto de Italia?",
+    "correctAnswer": "Grossglockner",
+    "options": [
+      "Aneto",
+      "Twins Spire",
+      "Grossglockner",
+      "Makalu"
+    ],
+    "extraData": {
+      "country": "Italia",
+      "mountainName": "Grossglockner"
+    }
+  },
+  {
+    "id": "lake_62012",
+    "type": "lake",
+    "difficulty": "medium",
+    "questionText": "¿Cuál es el principal lago de Canadá?",
+    "correctAnswer": "Lago Superior",
+    "options": [
+      "Lago Chiemsee",
+      "Lago Constanza",
+      "Lago Superior",
+      "Lago Dongting"
+    ],
+    "extraData": {
+      "country": "Canadá",
+      "lakeName": "Lago Superior"
+    }
+  },
+  {
+    "id": "mountain_61044",
+    "type": "mountain",
+    "difficulty": "medium",
+    "questionText": "¿Qué pico es el más alto de Italia?",
+    "correctAnswer": "Ortles",
+    "options": [
+      "Kangchenjunga",
+      "Watzmann",
+      "Pico 31 de Março",
+      "Ortles"
+    ],
+    "extraData": {
+      "country": "Italia",
+      "mountainName": "Ortles"
+    }
+  },
+  {
+    "id": "mountain_61005",
+    "type": "mountain",
+    "difficulty": "medium",
+    "questionText": "¿Cuál es la montaña más alta de Argentina?",
+    "correctAnswer": "Bonete",
+    "options": [
+      "Denali",
+      "Aneto",
+      "Bonete",
+      "Monte Kita"
+    ],
+    "extraData": {
+      "country": "Argentina",
+      "mountainName": "Bonete"
+    }
+  },
+  {
+    "id": "mountain_61052",
+    "type": "mountain",
+    "difficulty": "medium",
+    "questionText": "¿Qué pico es el más alto de México?",
+    "correctAnswer": "Iztaccíhuatl",
+    "options": [
+      "Iztaccíhuatl",
+      "Aconcagua",
+      "Monte Logan",
+      "Kangchenjunga"
+    ],
+    "extraData": {
+      "country": "México",
+      "mountainName": "Iztaccíhuatl"
+    }
+  },
+  {
+    "id": "mountain_61021",
+    "type": "mountain",
+    "difficulty": "medium",
+    "questionText": "¿La montaña más alta de China es...?",
+    "correctAnswer": "K2",
+    "options": [
+      "Huascarán",
+      "K2",
+      "Kangchenjunga",
+      "Kilimanjaro"
+    ],
+    "extraData": {
+      "country": "China",
+      "mountainName": "K2"
+    }
+  },
+  {
+    "id": "mountain_61011",
+    "type": "mountain",
+    "difficulty": "medium",
+    "questionText": "¿Qué pico es el más alto de Austria?",
+    "correctAnswer": "Weißkugel",
+    "options": [
+      "Weißkugel",
+      "Iztaccíhuatl",
+      "Kamet",
+      "Pico de Orizaba"
+    ],
+    "extraData": {
+      "country": "Austria",
+      "mountainName": "Weißkugel"
+    }
+  },
+  {
+    "id": "mountain_61054",
+    "type": "mountain",
+    "difficulty": "medium",
+    "questionText": "¿La montaña más alta de Nepal es...?",
+    "correctAnswer": "Kangchenjunga",
+    "options": [
+      "Monte Kosciuszko",
+      "Snowdon",
+      "Kangchenjunga",
+      "Monte Fuji"
+    ],
+    "extraData": {
+      "country": "Nepal",
+      "mountainName": "Kangchenjunga"
+    }
+  },
+  {
+    "id": "river_60035",
+    "type": "river",
+    "difficulty": "medium",
+    "questionText": "¿Qué río es el más largo de Estados Unidos?",
+    "correctAnswer": "Colorado",
+    "options": [
+      "Mosa",
+      "Murray",
+      "Ródano",
+      "Colorado"
+    ],
+    "extraData": {
+      "country": "Estados Unidos",
+      "riverName": "Colorado"
+    }
+  },
+  {
+    "id": "mountain_61000",
+    "type": "mountain",
+    "difficulty": "medium",
+    "questionText": "¿Cuál es el punto más alto de Alemania?",
+    "correctAnswer": "Zugspitze",
+    "options": [
+      "Zugspitze",
+      "Monte Thaba Putsoa",
+      "Pic du Midi de Bigorre",
+      "Nevado Tres Cruces"
+    ],
+    "extraData": {
+      "country": "Alemania",
+      "mountainName": "Zugspitze"
+    }
+  }
+]
