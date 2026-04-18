@@ -1,0 +1,1762 @@
+[
+  {
+    "id": "language_30037",
+    "type": "language",
+    "difficulty": "hard",
+    "questionText": "¿Cuál es la lengua oficial de Cook Islands?",
+    "correctAnswer": "English",
+    "options": [
+      "English",
+      "Macedonian",
+      "Norwegian",
+      "Arabic"
+    ],
+    "extraData": {
+      "countryCode": "ck",
+      "countryName": "Cook Islands",
+      "languageCode": "eng"
+    }
+  },
+  {
+    "id": "region_30060",
+    "type": "region",
+    "difficulty": "hard",
+    "questionText": "¿Solomon Islands está ubicado en qué región?",
+    "correctAnswer": "Oceanía",
+    "options": [
+      "Antártida",
+      "Europa",
+      "Oceanía",
+      "Asia"
+    ],
+    "extraData": {
+      "countryCode": "sb",
+      "countryName": "Solomon Islands",
+      "region": "Oceania",
+      "regionSpanish": "Oceanía"
+    }
+  },
+  {
+    "id": "area_30093",
+    "type": "area",
+    "difficulty": "medium",
+    "questionText": "¿Qué nación es más grande en extensión, Bermuda o Ivory Coast?",
+    "correctAnswer": "Ivory Coast",
+    "options": [
+      "Ivory Coast",
+      "Bermuda"
+    ],
+    "extraData": {
+      "countries": [
+        "Ivory Coast",
+        "Bermuda"
+      ],
+      "area1": 322463.0,
+      "area2": 54.0
+    }
+  },
+  {
+    "id": "language_30034",
+    "type": "language",
+    "difficulty": "hard",
+    "questionText": "¿Qué idioma se habla en Sri Lanka?",
+    "correctAnswer": "Sinhala",
+    "options": [
+      "Portuguese",
+      "Italian",
+      "English",
+      "Sinhala"
+    ],
+    "extraData": {
+      "countryCode": "lk",
+      "countryName": "Sri Lanka",
+      "languageCode": "sin"
+    }
+  },
+  {
+    "id": "population_30077",
+    "type": "population",
+    "difficulty": "medium",
+    "questionText": "¿Qué país tiene más población, Spain o French Guiana?",
+    "correctAnswer": "Spain",
+    "options": [
+      "Spain",
+      "French Guiana"
+    ],
+    "extraData": {
+      "countries": [
+        "Spain",
+        "French Guiana"
+      ],
+      "population1": 49315949,
+      "population2": 292354
+    }
+  },
+  {
+    "id": "population_30078",
+    "type": "population",
+    "difficulty": "medium",
+    "questionText": "¿Qué nación tiene mayor población, Grenada o Ivory Coast?",
+    "correctAnswer": "Ivory Coast",
+    "options": [
+      "Ivory Coast",
+      "Grenada"
+    ],
+    "extraData": {
+      "countries": [
+        "Ivory Coast",
+        "Grenada"
+      ],
+      "population1": 31719275,
+      "population2": 109021
+    }
+  },
+  {
+    "id": "region_30056",
+    "type": "region",
+    "difficulty": "hard",
+    "questionText": "¿Vanuatu está ubicado en qué región?",
+    "correctAnswer": "Oceanía",
+    "options": [
+      "Asia",
+      "Antártida",
+      "África",
+      "Oceanía"
+    ],
+    "extraData": {
+      "countryCode": "vu",
+      "countryName": "Vanuatu",
+      "region": "Oceania",
+      "regionSpanish": "Oceanía"
+    }
+  },
+  {
+    "id": "language_30036",
+    "type": "language",
+    "difficulty": "medium",
+    "questionText": "¿En Saint Pierre and Miquelon qué idioma se usa?",
+    "correctAnswer": "French",
+    "options": [
+      "English",
+      "Arabic",
+      "Spanish",
+      "French"
+    ],
+    "extraData": {
+      "countryCode": "pm",
+      "countryName": "Saint Pierre and Miquelon",
+      "languageCode": "fra"
+    }
+  },
+  {
+    "id": "population_30068",
+    "type": "population",
+    "difficulty": "medium",
+    "questionText": "¿Cuál de estos países es más poblado: Saudi Arabia o Guadeloupe?",
+    "correctAnswer": "Saudi Arabia",
+    "options": [
+      "Saudi Arabia",
+      "Guadeloupe"
+    ],
+    "extraData": {
+      "countries": [
+        "Saudi Arabia",
+        "Guadeloupe"
+      ],
+      "population1": 35300280,
+      "population2": 378561
+    }
+  },
+  {
+    "id": "language_30041",
+    "type": "language",
+    "difficulty": "hard",
+    "questionText": "¿El idioma principal de North Korea es...?",
+    "correctAnswer": "Korean",
+    "options": [
+      "Serbian",
+      "French",
+      "English",
+      "Korean"
+    ],
+    "extraData": {
+      "countryCode": "kp",
+      "countryName": "North Korea",
+      "languageCode": "kor"
+    }
+  },
+  {
+    "id": "population_30071",
+    "type": "population",
+    "difficulty": "medium",
+    "questionText": "¿Entre Montserrat y Senegal, cuál tiene más habitantes?",
+    "correctAnswer": "Senegal",
+    "options": [
+      "Senegal",
+      "Montserrat"
+    ],
+    "extraData": {
+      "countries": [
+        "Senegal",
+        "Montserrat"
+      ],
+      "population1": 18593258,
+      "population2": 4386
+    }
+  },
+  {
+    "id": "currency_30025",
+    "type": "currency",
+    "difficulty": "hard",
+    "questionText": "¿La moneda oficial de South Georgia es...?",
+    "correctAnswer": "British pound",
+    "options": [
+      "Eritrean nakfa",
+      "West African CFA franc",
+      "Pakistani rupee",
+      "British pound"
+    ],
+    "extraData": {
+      "countryCode": "gs",
+      "countryName": "South Georgia",
+      "currencyCode": "GBP"
+    }
+  },
+  {
+    "id": "area_30080",
+    "type": "area",
+    "difficulty": "medium",
+    "questionText": "¿Qué nación es más grande en extensión, Japan o Cape Verde?",
+    "correctAnswer": "Japan",
+    "options": [
+      "Japan",
+      "Cape Verde"
+    ],
+    "extraData": {
+      "countries": [
+        "Japan",
+        "Cape Verde"
+      ],
+      "area1": 377930.0,
+      "area2": 4033.0
+    }
+  },
+  {
+    "id": "population_30069",
+    "type": "population",
+    "difficulty": "medium",
+    "questionText": "¿Qué nación tiene mayor población, Eswatini o Russia?",
+    "correctAnswer": "Russia",
+    "options": [
+      "Russia",
+      "Eswatini"
+    ],
+    "extraData": {
+      "countries": [
+        "Russia",
+        "Eswatini"
+      ],
+      "population1": 146028325,
+      "population2": 1235549
+    }
+  },
+  {
+    "id": "currency_30016",
+    "type": "currency",
+    "difficulty": "medium",
+    "questionText": "¿Cuál es la divisa de Saint Lucia?",
+    "correctAnswer": "Eastern Caribbean dollar",
+    "options": [
+      "Malaysian ringgit",
+      "Saudi riyal",
+      "Eastern Caribbean dollar",
+      "South Sudanese pound"
+    ],
+    "extraData": {
+      "countryCode": "lc",
+      "countryName": "Saint Lucia",
+      "currencyCode": "XCD"
+    }
+  },
+  {
+    "id": "currency_30018",
+    "type": "currency",
+    "difficulty": "hard",
+    "questionText": "¿En Comoros se usa qué moneda?",
+    "correctAnswer": "Comorian franc",
+    "options": [
+      "Comorian franc",
+      "euro",
+      "New Taiwan dollar",
+      "Armenian dram"
+    ],
+    "extraData": {
+      "countryCode": "km",
+      "countryName": "Comoros",
+      "currencyCode": "KMF"
+    }
+  },
+  {
+    "id": "capital_30000",
+    "type": "capital",
+    "difficulty": "medium",
+    "questionText": "¿Cuál es la capital de Tanzania?",
+    "correctAnswer": "Dodoma",
+    "options": [
+      "Dodoma",
+      "Abuja",
+      "Beijing",
+      "Jerusalem"
+    ],
+    "extraData": {
+      "countryCode": "tz",
+      "countryName": "Tanzania"
+    }
+  },
+  {
+    "id": "language_30040",
+    "type": "language",
+    "difficulty": "hard",
+    "questionText": "¿Qué idioma se habla en Sierra Leone?",
+    "correctAnswer": "English",
+    "options": [
+      "Greenlandic",
+      "Serbian",
+      "Arabic",
+      "English"
+    ],
+    "extraData": {
+      "countryCode": "sl",
+      "countryName": "Sierra Leone",
+      "languageCode": "eng"
+    }
+  },
+  {
+    "id": "area_30087",
+    "type": "area",
+    "difficulty": "medium",
+    "questionText": "¿Cuál de estos países ocupa más territorio: Brunei o Zimbabwe?",
+    "correctAnswer": "Zimbabwe",
+    "options": [
+      "Zimbabwe",
+      "Brunei"
+    ],
+    "extraData": {
+      "countries": [
+        "Zimbabwe",
+        "Brunei"
+      ],
+      "area1": 390757.0,
+      "area2": 5765.0
+    }
+  },
+  {
+    "id": "region_30063",
+    "type": "region",
+    "difficulty": "hard",
+    "questionText": "¿En qué región se encuentra Bolivia?",
+    "correctAnswer": "América",
+    "options": [
+      "Asia",
+      "América",
+      "África",
+      "Europa"
+    ],
+    "extraData": {
+      "countryCode": "bo",
+      "countryName": "Bolivia",
+      "region": "Americas",
+      "regionSpanish": "América"
+    }
+  },
+  {
+    "id": "language_30045",
+    "type": "language",
+    "difficulty": "hard",
+    "questionText": "¿El idioma principal de Sudan es...?",
+    "correctAnswer": "Arabic",
+    "options": [
+      "Arabic",
+      "French",
+      "Aymara",
+      "Dzongkha"
+    ],
+    "extraData": {
+      "countryCode": "sd",
+      "countryName": "Sudan",
+      "languageCode": "ara"
+    }
+  },
+  {
+    "id": "capital_30009",
+    "type": "capital",
+    "difficulty": "hard",
+    "questionText": "¿Dónde está la capital de Vatican City?",
+    "correctAnswer": "Vatican City",
+    "options": [
+      "Egypt",
+      "Peru",
+      "Costa Rica",
+      "Vatican City"
+    ],
+    "extraData": {
+      "countryCode": "va",
+      "countryName": "Vatican City"
+    }
+  },
+  {
+    "id": "currency_30022",
+    "type": "currency",
+    "difficulty": "hard",
+    "questionText": "¿Qué billetes y monedas circulan en Myanmar?",
+    "correctAnswer": "Burmese kyat",
+    "options": [
+      "euro",
+      "Burmese kyat",
+      "Saudi riyal",
+      "South Sudanese pound"
+    ],
+    "extraData": {
+      "countryCode": "mm",
+      "countryName": "Myanmar",
+      "currencyCode": "MMK"
+    }
+  },
+  {
+    "id": "language_30033",
+    "type": "language",
+    "difficulty": "medium",
+    "questionText": "¿El idioma principal de Romania es...?",
+    "correctAnswer": "Romanian",
+    "options": [
+      "English",
+      "Georgian",
+      "French",
+      "Romanian"
+    ],
+    "extraData": {
+      "countryCode": "ro",
+      "countryName": "Romania",
+      "languageCode": "ron"
+    }
+  },
+  {
+    "id": "currency_30028",
+    "type": "currency",
+    "difficulty": "medium",
+    "questionText": "¿Cuál es la moneda de Serbia?",
+    "correctAnswer": "Serbian dinar",
+    "options": [
+      "Serbian dinar",
+      "Egyptian pound",
+      "United Arab Emirates dirham",
+      "Venezuelan bolívar soberano"
+    ],
+    "extraData": {
+      "countryCode": "rs",
+      "countryName": "Serbia",
+      "currencyCode": "RSD"
+    }
+  },
+  {
+    "id": "area_30084",
+    "type": "area",
+    "difficulty": "hard",
+    "questionText": "¿Qué nación es más grande en extensión, Seychelles o Ireland?",
+    "correctAnswer": "Ireland",
+    "options": [
+      "Ireland",
+      "Seychelles"
+    ],
+    "extraData": {
+      "countries": [
+        "Ireland",
+        "Seychelles"
+      ],
+      "area1": 70273.0,
+      "area2": 452.0
+    }
+  },
+  {
+    "id": "population_30066",
+    "type": "population",
+    "difficulty": "medium",
+    "questionText": "¿Cuál de estos países es más poblado: Bangladesh o French Polynesia?",
+    "correctAnswer": "Bangladesh",
+    "options": [
+      "Bangladesh",
+      "French Polynesia"
+    ],
+    "extraData": {
+      "countries": [
+        "Bangladesh",
+        "French Polynesia"
+      ],
+      "population1": 169828911,
+      "population2": 279500
+    }
+  },
+  {
+    "id": "region_30058",
+    "type": "region",
+    "difficulty": "hard",
+    "questionText": "¿A qué región pertenece Northern Mariana Islands?",
+    "correctAnswer": "Oceanía",
+    "options": [
+      "África",
+      "Oceanía",
+      "Europa",
+      "Antártida"
+    ],
+    "extraData": {
+      "countryCode": "mp",
+      "countryName": "Northern Mariana Islands",
+      "region": "Oceania",
+      "regionSpanish": "Oceanía"
+    }
+  },
+  {
+    "id": "area_30091",
+    "type": "area",
+    "difficulty": "medium",
+    "questionText": "¿Qué nación es más grande en extensión, Mozambique o Liechtenstein?",
+    "correctAnswer": "Mozambique",
+    "options": [
+      "Mozambique",
+      "Liechtenstein"
+    ],
+    "extraData": {
+      "countries": [
+        "Mozambique",
+        "Liechtenstein"
+      ],
+      "area1": 801590.0,
+      "area2": 160.0
+    }
+  },
+  {
+    "id": "capital_30015",
+    "type": "capital",
+    "difficulty": "hard",
+    "questionText": "¿Cuál es la capital de Luxembourg?",
+    "correctAnswer": "Luxembourg",
+    "options": [
+      "Tegucigalpa",
+      "Luxembourg",
+      "Dushanbe",
+      "Montevideo"
+    ],
+    "extraData": {
+      "countryCode": "lu",
+      "countryName": "Luxembourg"
+    }
+  },
+  {
+    "id": "area_30095",
+    "type": "area",
+    "difficulty": "medium",
+    "questionText": "¿Qué nación es más grande en extensión, Bangladesh o British Virgin Islands?",
+    "correctAnswer": "Bangladesh",
+    "options": [
+      "Bangladesh",
+      "British Virgin Islands"
+    ],
+    "extraData": {
+      "countries": [
+        "Bangladesh",
+        "British Virgin Islands"
+      ],
+      "area1": 147570.0,
+      "area2": 151.0
+    }
+  },
+  {
+    "id": "area_30083",
+    "type": "area",
+    "difficulty": "medium",
+    "questionText": "¿Cuál de estos países ocupa más territorio: Saint Martin o Nigeria?",
+    "correctAnswer": "Nigeria",
+    "options": [
+      "Nigeria",
+      "Saint Martin"
+    ],
+    "extraData": {
+      "countries": [
+        "Nigeria",
+        "Saint Martin"
+      ],
+      "area1": 923768.0,
+      "area2": 53.0
+    }
+  },
+  {
+    "id": "capital_30005",
+    "type": "capital",
+    "difficulty": "medium",
+    "questionText": "¿Cuál es la capital de Romania?",
+    "correctAnswer": "Bucharest",
+    "options": [
+      "Nassau",
+      "Helsinki",
+      "Bucharest",
+      "Maseru"
+    ],
+    "extraData": {
+      "countryCode": "ro",
+      "countryName": "Romania"
+    }
+  },
+  {
+    "id": "population_30070",
+    "type": "population",
+    "difficulty": "medium",
+    "questionText": "¿Qué nación tiene mayor población, Germany o British Indian Ocean Territory?",
+    "correctAnswer": "Germany",
+    "options": [
+      "Germany",
+      "British Indian Ocean Territory"
+    ],
+    "extraData": {
+      "countries": [
+        "Germany",
+        "British Indian Ocean Territory"
+      ],
+      "population1": 83491249,
+      "population2": 0
+    }
+  },
+  {
+    "id": "population_30076",
+    "type": "population",
+    "difficulty": "hard",
+    "questionText": "¿Cuál de estos países es más poblado: Brunei o Honduras?",
+    "correctAnswer": "Honduras",
+    "options": [
+      "Honduras",
+      "Brunei"
+    ],
+    "extraData": {
+      "countries": [
+        "Honduras",
+        "Brunei"
+      ],
+      "population1": 9892632,
+      "population2": 455500
+    }
+  },
+  {
+    "id": "language_30035",
+    "type": "language",
+    "difficulty": "hard",
+    "questionText": "¿En Réunion qué idioma se usa?",
+    "correctAnswer": "French",
+    "options": [
+      "Arabic",
+      "Danish",
+      "Portuguese",
+      "French"
+    ],
+    "extraData": {
+      "countryCode": "re",
+      "countryName": "Réunion",
+      "languageCode": "fra"
+    }
+  },
+  {
+    "id": "region_30054",
+    "type": "region",
+    "difficulty": "hard",
+    "questionText": "¿Ghana está ubicado en qué región?",
+    "correctAnswer": "África",
+    "options": [
+      "Antártida",
+      "África",
+      "Europa",
+      "Oceanía"
+    ],
+    "extraData": {
+      "countryCode": "gh",
+      "countryName": "Ghana",
+      "region": "Africa",
+      "regionSpanish": "África"
+    }
+  },
+  {
+    "id": "currency_30024",
+    "type": "currency",
+    "difficulty": "hard",
+    "questionText": "¿En Kuwait se usa qué moneda?",
+    "correctAnswer": "Kuwaiti dinar",
+    "options": [
+      "Kazakhstani tenge",
+      "Kuwaiti dinar",
+      "Lao kip",
+      "North Korean won"
+    ],
+    "extraData": {
+      "countryCode": "kw",
+      "countryName": "Kuwait",
+      "currencyCode": "KWD"
+    }
+  },
+  {
+    "id": "region_30052",
+    "type": "region",
+    "difficulty": "easy",
+    "questionText": "¿A qué región pertenece United States?",
+    "correctAnswer": "América",
+    "options": [
+      "Asia",
+      "África",
+      "América",
+      "Oceanía"
+    ],
+    "extraData": {
+      "countryCode": "us",
+      "countryName": "United States",
+      "region": "Americas",
+      "regionSpanish": "América"
+    }
+  },
+  {
+    "id": "region_30048",
+    "type": "region",
+    "difficulty": "hard",
+    "questionText": "¿En qué parte del mundo está Palau?",
+    "correctAnswer": "Oceanía",
+    "options": [
+      "Oceanía",
+      "Asia",
+      "Antártida",
+      "América"
+    ],
+    "extraData": {
+      "countryCode": "pw",
+      "countryName": "Palau",
+      "region": "Oceania",
+      "regionSpanish": "Oceanía"
+    }
+  },
+  {
+    "id": "currency_30029",
+    "type": "currency",
+    "difficulty": "medium",
+    "questionText": "¿La moneda oficial de Puerto Rico es...?",
+    "correctAnswer": "United States dollar",
+    "options": [
+      "Pound sterling",
+      "Yemeni rial",
+      "euro",
+      "United States dollar"
+    ],
+    "extraData": {
+      "countryCode": "pr",
+      "countryName": "Puerto Rico",
+      "currencyCode": "USD"
+    }
+  },
+  {
+    "id": "region_30055",
+    "type": "region",
+    "difficulty": "hard",
+    "questionText": "¿Isle of Man está ubicado en qué región?",
+    "correctAnswer": "Europa",
+    "options": [
+      "Oceanía",
+      "África",
+      "Europa",
+      "Antártida"
+    ],
+    "extraData": {
+      "countryCode": "im",
+      "countryName": "Isle of Man",
+      "region": "Europe",
+      "regionSpanish": "Europa"
+    }
+  },
+  {
+    "id": "capital_30008",
+    "type": "capital",
+    "difficulty": "medium",
+    "questionText": "¿Cuál es la ciudad principal de Nepal?",
+    "correctAnswer": "Nepal",
+    "options": [
+      "Israel",
+      "Sint Maarten",
+      "Lithuania",
+      "Nepal"
+    ],
+    "extraData": {
+      "countryCode": "np",
+      "countryName": "Nepal"
+    }
+  },
+  {
+    "id": "currency_30023",
+    "type": "currency",
+    "difficulty": "hard",
+    "questionText": "¿Qué currency tienen en United Arab Emirates?",
+    "correctAnswer": "United Arab Emirates dirham",
+    "options": [
+      "United Arab Emirates dirham",
+      "United States dollar",
+      "Seychellois rupee",
+      "euro"
+    ],
+    "extraData": {
+      "countryCode": "ae",
+      "countryName": "United Arab Emirates",
+      "currencyCode": "AED"
+    }
+  },
+  {
+    "id": "region_30061",
+    "type": "region",
+    "difficulty": "hard",
+    "questionText": "¿Western Sahara está ubicado en qué región?",
+    "correctAnswer": "África",
+    "options": [
+      "África",
+      "América",
+      "Oceanía",
+      "Asia"
+    ],
+    "extraData": {
+      "countryCode": "eh",
+      "countryName": "Western Sahara",
+      "region": "Africa",
+      "regionSpanish": "África"
+    }
+  },
+  {
+    "id": "region_30051",
+    "type": "region",
+    "difficulty": "hard",
+    "questionText": "¿En qué parte del mundo está Gibraltar?",
+    "correctAnswer": "Europa",
+    "options": [
+      "África",
+      "América",
+      "Europa",
+      "Oceanía"
+    ],
+    "extraData": {
+      "countryCode": "gi",
+      "countryName": "Gibraltar",
+      "region": "Europe",
+      "regionSpanish": "Europa"
+    }
+  },
+  {
+    "id": "capital_30011",
+    "type": "capital",
+    "difficulty": "easy",
+    "questionText": "¿Washington, D.C. es la capital de qué país?",
+    "correctAnswer": "Washington, D.C.",
+    "options": [
+      "Taipei",
+      "Port Louis",
+      "Washington, D.C.",
+      "Tegucigalpa"
+    ],
+    "extraData": {
+      "countryCode": "us",
+      "countryName": "United States"
+    }
+  },
+  {
+    "id": "region_30062",
+    "type": "region",
+    "difficulty": "hard",
+    "questionText": "¿En qué continente está Cocos (Keeling) Islands?",
+    "correctAnswer": "Oceanía",
+    "options": [
+      "Oceanía",
+      "Antártida",
+      "África",
+      "América"
+    ],
+    "extraData": {
+      "countryCode": "cc",
+      "countryName": "Cocos (Keeling) Islands",
+      "region": "Oceania",
+      "regionSpanish": "Oceanía"
+    }
+  },
+  {
+    "id": "language_30043",
+    "type": "language",
+    "difficulty": "hard",
+    "questionText": "¿Los habitantes de Armenia hablan principalmente...?",
+    "correctAnswer": "Armenian",
+    "options": [
+      "Indonesian",
+      "English",
+      "French",
+      "Armenian"
+    ],
+    "extraData": {
+      "countryCode": "am",
+      "countryName": "Armenia",
+      "languageCode": "hye"
+    }
+  },
+  {
+    "id": "area_30088",
+    "type": "area",
+    "difficulty": "hard",
+    "questionText": "¿Entre Sint Maarten y Belarus, cuál tiene mayor superficie?",
+    "correctAnswer": "Belarus",
+    "options": [
+      "Belarus",
+      "Sint Maarten"
+    ],
+    "extraData": {
+      "countries": [
+        "Belarus",
+        "Sint Maarten"
+      ],
+      "area1": 207600.0,
+      "area2": 34.0
+    }
+  },
+  {
+    "id": "capital_30013",
+    "type": "capital",
+    "difficulty": "hard",
+    "questionText": "¿Cuál es la capital de Samoa?",
+    "correctAnswer": "Apia",
+    "options": [
+      "Basseterre",
+      "Apia",
+      "Reykjavik",
+      "Roseau"
+    ],
+    "extraData": {
+      "countryCode": "ws",
+      "countryName": "Samoa"
+    }
+  },
+  {
+    "id": "currency_30026",
+    "type": "currency",
+    "difficulty": "medium",
+    "questionText": "¿Cuál es la divisa de San Marino?",
+    "correctAnswer": "euro",
+    "options": [
+      "United States dollar",
+      "Central African CFA franc",
+      "euro",
+      "Ghanaian cedi"
+    ],
+    "extraData": {
+      "countryCode": "sm",
+      "countryName": "San Marino",
+      "currencyCode": "EUR"
+    }
+  },
+  {
+    "id": "region_30049",
+    "type": "region",
+    "difficulty": "hard",
+    "questionText": "¿Norway se ubica en...?",
+    "correctAnswer": "Europa",
+    "options": [
+      "América",
+      "África",
+      "Europa",
+      "Asia"
+    ],
+    "extraData": {
+      "countryCode": "no",
+      "countryName": "Norway",
+      "region": "Europe",
+      "regionSpanish": "Europa"
+    }
+  },
+  {
+    "id": "capital_30001",
+    "type": "capital",
+    "difficulty": "hard",
+    "questionText": "¿Cuál es la capital de Trinidad and Tobago?",
+    "correctAnswer": "Trinidad and Tobago",
+    "options": [
+      "Trinidad and Tobago",
+      "Belarus",
+      "Kazakhstan",
+      "Madagascar"
+    ],
+    "extraData": {
+      "countryCode": "tt",
+      "countryName": "Trinidad and Tobago"
+    }
+  },
+  {
+    "id": "capital_30007",
+    "type": "capital",
+    "difficulty": "hard",
+    "questionText": "¿Qué ciudad es el centro político de Dominica?",
+    "correctAnswer": "Dominica",
+    "options": [
+      "Ireland",
+      "New Zealand",
+      "Latvia",
+      "Dominica"
+    ],
+    "extraData": {
+      "countryCode": "dm",
+      "countryName": "Dominica"
+    }
+  },
+  {
+    "id": "currency_30021",
+    "type": "currency",
+    "difficulty": "medium",
+    "questionText": "¿Cuál es la divisa de Lithuania?",
+    "correctAnswer": "euro",
+    "options": [
+      "euro",
+      "Mauritian rupee",
+      "CFP franc",
+      "Australian dollar"
+    ],
+    "extraData": {
+      "countryCode": "lt",
+      "countryName": "Lithuania",
+      "currencyCode": "EUR"
+    }
+  },
+  {
+    "id": "area_30081",
+    "type": "area",
+    "difficulty": "medium",
+    "questionText": "¿Entre Lesotho y Portugal, cuál tiene mayor superficie?",
+    "correctAnswer": "Portugal",
+    "options": [
+      "Portugal",
+      "Lesotho"
+    ],
+    "extraData": {
+      "countries": [
+        "Portugal",
+        "Lesotho"
+      ],
+      "area1": 92090.0,
+      "area2": 30355.0
+    }
+  },
+  {
+    "id": "area_30082",
+    "type": "area",
+    "difficulty": "medium",
+    "questionText": "¿Entre Azerbaijan y Bermuda, cuál tiene mayor superficie?",
+    "correctAnswer": "Azerbaijan",
+    "options": [
+      "Azerbaijan",
+      "Bermuda"
+    ],
+    "extraData": {
+      "countries": [
+        "Azerbaijan",
+        "Bermuda"
+      ],
+      "area1": 86600.0,
+      "area2": 54.0
+    }
+  },
+  {
+    "id": "population_30073",
+    "type": "population",
+    "difficulty": "medium",
+    "questionText": "¿Qué nación tiene mayor población, Guyana o Ukraine?",
+    "correctAnswer": "Ukraine",
+    "options": [
+      "Ukraine",
+      "Guyana"
+    ],
+    "extraData": {
+      "countries": [
+        "Ukraine",
+        "Guyana"
+      ],
+      "population1": 32862000,
+      "population2": 772975
+    }
+  },
+  {
+    "id": "area_30086",
+    "type": "area",
+    "difficulty": "medium",
+    "questionText": "¿Qué país es más extenso, North Korea o Djibouti?",
+    "correctAnswer": "North Korea",
+    "options": [
+      "North Korea",
+      "Djibouti"
+    ],
+    "extraData": {
+      "countries": [
+        "North Korea",
+        "Djibouti"
+      ],
+      "area1": 120538.0,
+      "area2": 23200.0
+    }
+  },
+  {
+    "id": "language_30047",
+    "type": "language",
+    "difficulty": "hard",
+    "questionText": "¿Qué idioma se habla en Tanzania?",
+    "correctAnswer": "English",
+    "options": [
+      "Arabic",
+      "English",
+      "Albanian",
+      "Czech"
+    ],
+    "extraData": {
+      "countryCode": "tz",
+      "countryName": "Tanzania",
+      "languageCode": "eng"
+    }
+  },
+  {
+    "id": "population_30064",
+    "type": "population",
+    "difficulty": "medium",
+    "questionText": "¿Qué nación tiene mayor población, Niger o Djibouti?",
+    "correctAnswer": "Niger",
+    "options": [
+      "Niger",
+      "Djibouti"
+    ],
+    "extraData": {
+      "countries": [
+        "Niger",
+        "Djibouti"
+      ],
+      "population1": 26312034,
+      "population2": 1066809
+    }
+  },
+  {
+    "id": "capital_30002",
+    "type": "capital",
+    "difficulty": "easy",
+    "questionText": "¿Dónde está la capital de Brazil?",
+    "correctAnswer": "Brazil",
+    "options": [
+      "Vietnam",
+      "Guinea",
+      "Brazil",
+      "Botswana"
+    ],
+    "extraData": {
+      "countryCode": "br",
+      "countryName": "Brazil"
+    }
+  },
+  {
+    "id": "population_30072",
+    "type": "population",
+    "difficulty": "medium",
+    "questionText": "¿Qué país tiene más población, Greenland o Uzbekistan?",
+    "correctAnswer": "Uzbekistan",
+    "options": [
+      "Uzbekistan",
+      "Greenland"
+    ],
+    "extraData": {
+      "countries": [
+        "Uzbekistan",
+        "Greenland"
+      ],
+      "population1": 37859698,
+      "population2": 56542
+    }
+  },
+  {
+    "id": "language_30038",
+    "type": "language",
+    "difficulty": "hard",
+    "questionText": "¿Cuál es el idioma oficial de Philippines?",
+    "correctAnswer": "English",
+    "options": [
+      "French",
+      "Icelandic",
+      "English",
+      "Portuguese"
+    ],
+    "extraData": {
+      "countryCode": "ph",
+      "countryName": "Philippines",
+      "languageCode": "eng"
+    }
+  },
+  {
+    "id": "language_30032",
+    "type": "language",
+    "difficulty": "hard",
+    "questionText": "¿Los habitantes de South Korea hablan principalmente...?",
+    "correctAnswer": "Korean",
+    "options": [
+      "Korean",
+      "French",
+      "Romanian",
+      "Georgian"
+    ],
+    "extraData": {
+      "countryCode": "kr",
+      "countryName": "South Korea",
+      "languageCode": "kor"
+    }
+  },
+  {
+    "id": "currency_30030",
+    "type": "currency",
+    "difficulty": "hard",
+    "questionText": "¿La moneda oficial de Cook Islands es...?",
+    "correctAnswer": "Cook Islands dollar",
+    "options": [
+      "Cook Islands dollar",
+      "Guyanese dollar",
+      "Thai baht",
+      "euro"
+    ],
+    "extraData": {
+      "countryCode": "ck",
+      "countryName": "Cook Islands",
+      "currencyCode": "CKD"
+    }
+  },
+  {
+    "id": "capital_30004",
+    "type": "capital",
+    "difficulty": "hard",
+    "questionText": "¿Cuál es la capital de Montenegro?",
+    "correctAnswer": "Podgorica",
+    "options": [
+      "Skopje",
+      "Podgorica",
+      "Lomé",
+      "Victoria"
+    ],
+    "extraData": {
+      "countryCode": "me",
+      "countryName": "Montenegro"
+    }
+  },
+  {
+    "id": "currency_30020",
+    "type": "currency",
+    "difficulty": "hard",
+    "questionText": "¿En Cambodia se usa qué moneda?",
+    "correctAnswer": "Cambodian riel",
+    "options": [
+      "Cambodian riel",
+      "Eastern Caribbean dollar",
+      "United States dollar",
+      "euro"
+    ],
+    "extraData": {
+      "countryCode": "kh",
+      "countryName": "Cambodia",
+      "currencyCode": "KHR"
+    }
+  },
+  {
+    "id": "capital_30006",
+    "type": "capital",
+    "difficulty": "hard",
+    "questionText": "¿Qué ciudad es la sede administrativa de Malta?",
+    "correctAnswer": "Valletta",
+    "options": [
+      "Monrovia",
+      "Valletta",
+      "Singapore",
+      "Yerevan"
+    ],
+    "extraData": {
+      "countryCode": "mt",
+      "countryName": "Malta"
+    }
+  },
+  {
+    "id": "region_30057",
+    "type": "region",
+    "difficulty": "hard",
+    "questionText": "¿Bahamas está ubicado en qué región?",
+    "correctAnswer": "América",
+    "options": [
+      "África",
+      "Europa",
+      "América",
+      "Antártida"
+    ],
+    "extraData": {
+      "countryCode": "bs",
+      "countryName": "Bahamas",
+      "region": "Americas",
+      "regionSpanish": "América"
+    }
+  },
+  {
+    "id": "capital_30010",
+    "type": "capital",
+    "difficulty": "hard",
+    "questionText": "¿Cuál es la capital de Saint Pierre and Miquelon?",
+    "correctAnswer": "Saint-Pierre",
+    "options": [
+      "Kabul",
+      "Tokyo",
+      "Saint-Pierre",
+      "Bridgetown"
+    ],
+    "extraData": {
+      "countryCode": "pm",
+      "countryName": "Saint Pierre and Miquelon"
+    }
+  },
+  {
+    "id": "region_30050",
+    "type": "region",
+    "difficulty": "hard",
+    "questionText": "¿En qué parte del mundo está Ivory Coast?",
+    "correctAnswer": "África",
+    "options": [
+      "Europa",
+      "América",
+      "África",
+      "Asia"
+    ],
+    "extraData": {
+      "countryCode": "ci",
+      "countryName": "Ivory Coast",
+      "region": "Africa",
+      "regionSpanish": "África"
+    }
+  },
+  {
+    "id": "currency_30027",
+    "type": "currency",
+    "difficulty": "hard",
+    "questionText": "¿Qué moneda se usa en French Southern and Antarctic Lands?",
+    "correctAnswer": "euro",
+    "options": [
+      "euro",
+      "Seychellois rupee",
+      "Iranian rial",
+      "South African rand"
+    ],
+    "extraData": {
+      "countryCode": "tf",
+      "countryName": "French Southern and Antarctic Lands",
+      "currencyCode": "EUR"
+    }
+  },
+  {
+    "id": "area_30094",
+    "type": "area",
+    "difficulty": "medium",
+    "questionText": "¿Cuál de estos países ocupa más territorio: Timor-Leste o Zambia?",
+    "correctAnswer": "Zambia",
+    "options": [
+      "Zambia",
+      "Timor-Leste"
+    ],
+    "extraData": {
+      "countries": [
+        "Zambia",
+        "Timor-Leste"
+      ],
+      "area1": 752612.0,
+      "area2": 14874.0
+    }
+  },
+  {
+    "id": "area_30090",
+    "type": "area",
+    "difficulty": "medium",
+    "questionText": "¿Entre Benin y Kosovo, cuál tiene mayor superficie?",
+    "correctAnswer": "Benin",
+    "options": [
+      "Benin",
+      "Kosovo"
+    ],
+    "extraData": {
+      "countries": [
+        "Benin",
+        "Kosovo"
+      ],
+      "area1": 112622.0,
+      "area2": 10908.0
+    }
+  },
+  {
+    "id": "population_30065",
+    "type": "population",
+    "difficulty": "medium",
+    "questionText": "¿Cuál de estos países es más poblado: Kosovo o North Korea?",
+    "correctAnswer": "North Korea",
+    "options": [
+      "North Korea",
+      "Kosovo"
+    ],
+    "extraData": {
+      "countries": [
+        "North Korea",
+        "Kosovo"
+      ],
+      "population1": 25950000,
+      "population2": 1585566
+    }
+  },
+  {
+    "id": "currency_30019",
+    "type": "currency",
+    "difficulty": "medium",
+    "questionText": "¿En Falkland Islands se usa qué moneda?",
+    "correctAnswer": "Falkland Islands pound",
+    "options": [
+      "Falkland Islands pound",
+      "United States dollar",
+      "Polish złoty",
+      "Japanese yen"
+    ],
+    "extraData": {
+      "countryCode": "fk",
+      "countryName": "Falkland Islands",
+      "currencyCode": "FKP"
+    }
+  },
+  {
+    "id": "population_30067",
+    "type": "population",
+    "difficulty": "medium",
+    "questionText": "¿Cuál de estos países es más poblado: Niue o Algeria?",
+    "correctAnswer": "Algeria",
+    "options": [
+      "Algeria",
+      "Niue"
+    ],
+    "extraData": {
+      "countries": [
+        "Algeria",
+        "Niue"
+      ],
+      "population1": 47400000,
+      "population2": 1681
+    }
+  },
+  {
+    "id": "language_30039",
+    "type": "language",
+    "difficulty": "medium",
+    "questionText": "¿Cuál es el idioma oficial de Svalbard and Jan Mayen?",
+    "correctAnswer": "Norwegian",
+    "options": [
+      "Spanish",
+      "Norwegian",
+      "Guaraní",
+      "English"
+    ],
+    "extraData": {
+      "countryCode": "sj",
+      "countryName": "Svalbard and Jan Mayen",
+      "languageCode": "nor"
+    }
+  },
+  {
+    "id": "capital_30003",
+    "type": "capital",
+    "difficulty": "hard",
+    "questionText": "¿Cuál es la ciudad principal de Turks and Caicos Islands?",
+    "correctAnswer": "Cockburn Town",
+    "options": [
+      "Longyearbyen",
+      "Cockburn Town",
+      "Apia",
+      "Paris"
+    ],
+    "extraData": {
+      "countryCode": "tc",
+      "countryName": "Turks and Caicos Islands"
+    }
+  },
+  {
+    "id": "region_30059",
+    "type": "region",
+    "difficulty": "easy",
+    "questionText": "¿Australia se ubica en...?",
+    "correctAnswer": "Oceanía",
+    "options": [
+      "Oceanía",
+      "Antártida",
+      "Europa",
+      "Asia"
+    ],
+    "extraData": {
+      "countryCode": "au",
+      "countryName": "Australia",
+      "region": "Oceania",
+      "regionSpanish": "Oceanía"
+    }
+  },
+  {
+    "id": "region_30053",
+    "type": "region",
+    "difficulty": "hard",
+    "questionText": "¿A qué región pertenece Azerbaijan?",
+    "correctAnswer": "Asia",
+    "options": [
+      "Europa",
+      "África",
+      "Oceanía",
+      "Asia"
+    ],
+    "extraData": {
+      "countryCode": "az",
+      "countryName": "Azerbaijan",
+      "region": "Asia",
+      "regionSpanish": "Asia"
+    }
+  },
+  {
+    "id": "population_30075",
+    "type": "population",
+    "difficulty": "medium",
+    "questionText": "¿Qué nación tiene mayor población, Greenland o Tunisia?",
+    "correctAnswer": "Tunisia",
+    "options": [
+      "Tunisia",
+      "Greenland"
+    ],
+    "extraData": {
+      "countries": [
+        "Tunisia",
+        "Greenland"
+      ],
+      "population1": 11972169,
+      "population2": 56542
+    }
+  },
+  {
+    "id": "currency_30031",
+    "type": "currency",
+    "difficulty": "medium",
+    "questionText": "¿Qué billetes y monedas circulan en Dominica?",
+    "correctAnswer": "Eastern Caribbean dollar",
+    "options": [
+      "Eastern Caribbean dollar",
+      "Lao kip",
+      "Chinese yuan",
+      "Icelandic króna"
+    ],
+    "extraData": {
+      "countryCode": "dm",
+      "countryName": "Dominica",
+      "currencyCode": "XCD"
+    }
+  },
+  {
+    "id": "currency_30017",
+    "type": "currency",
+    "difficulty": "medium",
+    "questionText": "¿Qué moneda se usa en Grenada?",
+    "correctAnswer": "Eastern Caribbean dollar",
+    "options": [
+      "euro",
+      "Solomon Islands dollar",
+      "Moldovan leu",
+      "Eastern Caribbean dollar"
+    ],
+    "extraData": {
+      "countryCode": "gd",
+      "countryName": "Grenada",
+      "currencyCode": "XCD"
+    }
+  },
+  {
+    "id": "capital_30012",
+    "type": "capital",
+    "difficulty": "medium",
+    "questionText": "¿Dónde está la capital de South Sudan?",
+    "correctAnswer": "South Sudan",
+    "options": [
+      "Turks and Caicos Islands",
+      "Ecuador",
+      "Nicaragua",
+      "South Sudan"
+    ],
+    "extraData": {
+      "countryCode": "ss",
+      "countryName": "South Sudan"
+    }
+  },
+  {
+    "id": "area_30092",
+    "type": "area",
+    "difficulty": "hard",
+    "questionText": "¿Cuál de estos países ocupa más territorio: Aruba o Guyana?",
+    "correctAnswer": "Guyana",
+    "options": [
+      "Guyana",
+      "Aruba"
+    ],
+    "extraData": {
+      "countries": [
+        "Guyana",
+        "Aruba"
+      ],
+      "area1": 214969.0,
+      "area2": 180.0
+    }
+  },
+  {
+    "id": "language_30046",
+    "type": "language",
+    "difficulty": "easy",
+    "questionText": "¿Qué idioma predomina en Argentina?",
+    "correctAnswer": "Guaraní",
+    "options": [
+      "Bengali",
+      "Czech",
+      "English",
+      "Guaraní"
+    ],
+    "extraData": {
+      "countryCode": "ar",
+      "countryName": "Argentina",
+      "languageCode": "grn"
+    }
+  },
+  {
+    "id": "area_30085",
+    "type": "area",
+    "difficulty": "hard",
+    "questionText": "¿Qué nación es más grande en extensión, Georgia o Jersey?",
+    "correctAnswer": "Georgia",
+    "options": [
+      "Georgia",
+      "Jersey"
+    ],
+    "extraData": {
+      "countries": [
+        "Georgia",
+        "Jersey"
+      ],
+      "area1": 69700.0,
+      "area2": 116.0
+    }
+  },
+  {
+    "id": "population_30074",
+    "type": "population",
+    "difficulty": "medium",
+    "questionText": "¿Qué país tiene más población, Nepal o Bouvet Island?",
+    "correctAnswer": "Nepal",
+    "options": [
+      "Nepal",
+      "Bouvet Island"
+    ],
+    "extraData": {
+      "countries": [
+        "Nepal",
+        "Bouvet Island"
+      ],
+      "population1": 29911840,
+      "population2": 0
+    }
+  },
+  {
+    "id": "capital_30014",
+    "type": "capital",
+    "difficulty": "hard",
+    "questionText": "¿Qué ciudad es la sede administrativa de Jamaica?",
+    "correctAnswer": "Jamaica",
+    "options": [
+      "Philippines",
+      "Panama",
+      "Jamaica",
+      "Denmark"
+    ],
+    "extraData": {
+      "countryCode": "jm",
+      "countryName": "Jamaica"
+    }
+  },
+  {
+    "id": "area_30089",
+    "type": "area",
+    "difficulty": "medium",
+    "questionText": "¿Qué país es más extenso, Malawi o Luxembourg?",
+    "correctAnswer": "Malawi",
+    "options": [
+      "Malawi",
+      "Luxembourg"
+    ],
+    "extraData": {
+      "countries": [
+        "Malawi",
+        "Luxembourg"
+      ],
+      "area1": 118484.0,
+      "area2": 2586.0
+    }
+  },
+  {
+    "id": "language_30042",
+    "type": "language",
+    "difficulty": "medium",
+    "questionText": "¿El idioma principal de Iceland es...?",
+    "correctAnswer": "Icelandic",
+    "options": [
+      "French",
+      "Icelandic",
+      "Arabic",
+      "Norwegian Nynorsk"
+    ],
+    "extraData": {
+      "countryCode": "is",
+      "countryName": "Iceland",
+      "languageCode": "isl"
+    }
+  },
+  {
+    "id": "population_30079",
+    "type": "population",
+    "difficulty": "medium",
+    "questionText": "¿Qué nación tiene mayor población, Burundi o Réunion?",
+    "correctAnswer": "Burundi",
+    "options": [
+      "Burundi",
+      "Réunion"
+    ],
+    "extraData": {
+      "countries": [
+        "Burundi",
+        "Réunion"
+      ],
+      "population1": 12332788,
+      "population2": 896175
+    }
+  },
+  {
+    "id": "language_30044",
+    "type": "language",
+    "difficulty": "hard",
+    "questionText": "¿Cuál es la lengua oficial de Jordan?",
+    "correctAnswer": "Arabic",
+    "options": [
+      "French",
+      "English",
+      "Arabic",
+      "Spanish"
+    ],
+    "extraData": {
+      "countryCode": "jo",
+      "countryName": "Jordan",
+      "languageCode": "ara"
+    }
+  }
+]

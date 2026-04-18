@@ -1,0 +1,1062 @@
+[
+  {
+    "id": "capital_30014",
+    "type": "capital",
+    "difficulty": "hard",
+    "questionText": "¿Cuál es la ciudad principal de Montenegro?",
+    "correctAnswer": "Podgorica",
+    "options": [
+      "Port Louis",
+      "Hagåtña",
+      "Nairobi",
+      "Podgorica"
+    ],
+    "extraData": {
+      "countryCode": "me",
+      "countryName": "Montenegro"
+    }
+  },
+  {
+    "id": "currency_30029",
+    "type": "currency",
+    "difficulty": "hard",
+    "questionText": "¿Qué currency tienen en Pakistan?",
+    "correctAnswer": "Pakistani rupee",
+    "options": [
+      "euro",
+      "Russian ruble",
+      "Afghan afghani",
+      "Pakistani rupee"
+    ],
+    "extraData": {
+      "countryCode": "pk",
+      "countryName": "Pakistan",
+      "currencyCode": "PKR"
+    }
+  },
+  {
+    "id": "language_30059",
+    "type": "language",
+    "difficulty": "hard",
+    "questionText": "¿En Brunei qué idioma se usa?",
+    "correctAnswer": "Malay",
+    "options": [
+      "Malay",
+      "English",
+      "Spanish",
+      "Guaraní"
+    ],
+    "extraData": {
+      "countryCode": "bn",
+      "countryName": "Brunei",
+      "languageCode": "msa"
+    }
+  },
+  {
+    "id": "currency_30036",
+    "type": "currency",
+    "difficulty": "hard",
+    "questionText": "¿En Gabon se usa qué moneda?",
+    "correctAnswer": "Central African CFA franc",
+    "options": [
+      "euro",
+      "Somali shilling",
+      "Armenian dram",
+      "Central African CFA franc"
+    ],
+    "extraData": {
+      "countryCode": "ga",
+      "countryName": "Gabon",
+      "currencyCode": "XAF"
+    }
+  },
+  {
+    "id": "capital_30006",
+    "type": "capital",
+    "difficulty": "medium",
+    "questionText": "¿Nairobi es la capital de qué país?",
+    "correctAnswer": "Kenya",
+    "options": [
+      "Faroe Islands",
+      "Angola",
+      "Kenya",
+      "Suriname"
+    ],
+    "extraData": {
+      "countryCode": "ke",
+      "countryName": "Kenya"
+    }
+  },
+  {
+    "id": "capital_30001",
+    "type": "capital",
+    "difficulty": "medium",
+    "questionText": "¿Dónde está la capital de Madagascar?",
+    "correctAnswer": "Madagascar",
+    "options": [
+      "Croatia",
+      "Grenada",
+      "Eswatini",
+      "Madagascar"
+    ],
+    "extraData": {
+      "countryCode": "mg",
+      "countryName": "Madagascar"
+    }
+  },
+  {
+    "id": "capital_30015",
+    "type": "capital",
+    "difficulty": "hard",
+    "questionText": "¿En qué ciudad se encuentra el gobierno de Palau?",
+    "correctAnswer": "Ngerulmud",
+    "options": [
+      "St. George's",
+      "Ngerulmud",
+      "Belmopan",
+      "Marigot"
+    ],
+    "extraData": {
+      "countryCode": "pw",
+      "countryName": "Palau"
+    }
+  },
+  {
+    "id": "language_30042",
+    "type": "language",
+    "difficulty": "hard",
+    "questionText": "¿En Vietnam qué idioma se usa?",
+    "correctAnswer": "Vietnamese",
+    "options": [
+      "English",
+      "Portuguese",
+      "Vietnamese",
+      "Arabic"
+    ],
+    "extraData": {
+      "countryCode": "vn",
+      "countryName": "Vietnam",
+      "languageCode": "vie"
+    }
+  },
+  {
+    "id": "language_30051",
+    "type": "language",
+    "difficulty": "hard",
+    "questionText": "¿Los habitantes de Pakistan hablan principalmente...?",
+    "correctAnswer": "English",
+    "options": [
+      "Albanian",
+      "Bulgarian",
+      "English",
+      "Arabic"
+    ],
+    "extraData": {
+      "countryCode": "pk",
+      "countryName": "Pakistan",
+      "languageCode": "eng"
+    }
+  },
+  {
+    "id": "language_30048",
+    "type": "language",
+    "difficulty": "medium",
+    "questionText": "¿Los habitantes de Dominica hablan principalmente...?",
+    "correctAnswer": "English",
+    "options": [
+      "English",
+      "Portuguese",
+      "Montenegrin",
+      "French"
+    ],
+    "extraData": {
+      "countryCode": "dm",
+      "countryName": "Dominica",
+      "languageCode": "eng"
+    }
+  },
+  {
+    "id": "capital_30019",
+    "type": "capital",
+    "difficulty": "hard",
+    "questionText": "¿Cuál es la capital de Svalbard and Jan Mayen?",
+    "correctAnswer": "Svalbard and Jan Mayen",
+    "options": [
+      "Saint Kitts and Nevis",
+      "United Kingdom",
+      "Svalbard and Jan Mayen",
+      "Afghanistan"
+    ],
+    "extraData": {
+      "countryCode": "sj",
+      "countryName": "Svalbard and Jan Mayen"
+    }
+  },
+  {
+    "id": "capital_30007",
+    "type": "capital",
+    "difficulty": "hard",
+    "questionText": "¿En qué ciudad se encuentra el gobierno de Eswatini?",
+    "correctAnswer": "Eswatini",
+    "options": [
+      "Caribbean Netherlands",
+      "Eswatini",
+      "Anguilla",
+      "Qatar"
+    ],
+    "extraData": {
+      "countryCode": "sz",
+      "countryName": "Eswatini"
+    }
+  },
+  {
+    "id": "language_30056",
+    "type": "language",
+    "difficulty": "hard",
+    "questionText": "¿Cuál es el idioma oficial de Lebanon?",
+    "correctAnswer": "Arabic",
+    "options": [
+      "Ukrainian",
+      "Nepali",
+      "Arabic",
+      "English"
+    ],
+    "extraData": {
+      "countryCode": "lb",
+      "countryName": "Lebanon",
+      "languageCode": "ara"
+    }
+  },
+  {
+    "id": "language_30043",
+    "type": "language",
+    "difficulty": "medium",
+    "questionText": "¿Los habitantes de Greece hablan principalmente...?",
+    "correctAnswer": "Greek",
+    "options": [
+      "Portuguese",
+      "English",
+      "Arabic",
+      "Greek"
+    ],
+    "extraData": {
+      "countryCode": "gr",
+      "countryName": "Greece",
+      "languageCode": "ell"
+    }
+  },
+  {
+    "id": "language_30053",
+    "type": "language",
+    "difficulty": "medium",
+    "questionText": "¿En Honduras qué idioma se usa?",
+    "correctAnswer": "Spanish",
+    "options": [
+      "Dari",
+      "Malay",
+      "Spanish",
+      "Portuguese"
+    ],
+    "extraData": {
+      "countryCode": "hn",
+      "countryName": "Honduras",
+      "languageCode": "spa"
+    }
+  },
+  {
+    "id": "language_30055",
+    "type": "language",
+    "difficulty": "hard",
+    "questionText": "¿El idioma principal de Senegal es...?",
+    "correctAnswer": "French",
+    "options": [
+      "Carolinian",
+      "French",
+      "Arabic",
+      "English"
+    ],
+    "extraData": {
+      "countryCode": "sn",
+      "countryName": "Senegal",
+      "languageCode": "fra"
+    }
+  },
+  {
+    "id": "capital_30000",
+    "type": "capital",
+    "difficulty": "medium",
+    "questionText": "¿En qué ciudad se encuentra el gobierno de Syria?",
+    "correctAnswer": "Syria",
+    "options": [
+      "South Africa",
+      "American Samoa",
+      "Syria",
+      "Haiti"
+    ],
+    "extraData": {
+      "countryCode": "sy",
+      "countryName": "Syria"
+    }
+  },
+  {
+    "id": "language_30046",
+    "type": "language",
+    "difficulty": "hard",
+    "questionText": "¿Los habitantes de Angola hablan principalmente...?",
+    "correctAnswer": "Portuguese",
+    "options": [
+      "Portuguese",
+      "English",
+      "French",
+      "Amharic"
+    ],
+    "extraData": {
+      "countryCode": "ao",
+      "countryName": "Angola",
+      "languageCode": "por"
+    }
+  },
+  {
+    "id": "language_30054",
+    "type": "language",
+    "difficulty": "hard",
+    "questionText": "¿El idioma principal de Zimbabwe es...?",
+    "correctAnswer": "Chibarwe",
+    "options": [
+      "Chibarwe",
+      "Arabic",
+      "English",
+      "Georgian"
+    ],
+    "extraData": {
+      "countryCode": "zw",
+      "countryName": "Zimbabwe",
+      "languageCode": "bwg"
+    }
+  },
+  {
+    "id": "currency_30021",
+    "type": "currency",
+    "difficulty": "hard",
+    "questionText": "¿Qué billetes y monedas circulan en Nepal?",
+    "correctAnswer": "Nepalese rupee",
+    "options": [
+      "Costa Rican colón",
+      "Nepalese rupee",
+      "British pound",
+      "Australian dollar"
+    ],
+    "extraData": {
+      "countryCode": "np",
+      "countryName": "Nepal",
+      "currencyCode": "NPR"
+    }
+  },
+  {
+    "id": "currency_30031",
+    "type": "currency",
+    "difficulty": "hard",
+    "questionText": "¿Qué moneda se usa en Afghanistan?",
+    "correctAnswer": "Afghan afghani",
+    "options": [
+      "Afghan afghani",
+      "United States dollar",
+      "Eastern Caribbean dollar",
+      "Bahraini dinar"
+    ],
+    "extraData": {
+      "countryCode": "af",
+      "countryName": "Afghanistan",
+      "currencyCode": "AFN"
+    }
+  },
+  {
+    "id": "currency_30032",
+    "type": "currency",
+    "difficulty": "medium",
+    "questionText": "¿Qué currency tienen en Chile?",
+    "correctAnswer": "Chilean peso",
+    "options": [
+      "South Sudanese pound",
+      "Liberian dollar",
+      "Chilean peso",
+      "West African CFA franc"
+    ],
+    "extraData": {
+      "countryCode": "cl",
+      "countryName": "Chile",
+      "currencyCode": "CLP"
+    }
+  },
+  {
+    "id": "language_30052",
+    "type": "language",
+    "difficulty": "easy",
+    "questionText": "¿Cuál es la lengua oficial de Spain?",
+    "correctAnswer": "Spanish",
+    "options": [
+      "French",
+      "Spanish",
+      "Arabic",
+      "Sinhala"
+    ],
+    "extraData": {
+      "countryCode": "es",
+      "countryName": "Spain",
+      "languageCode": "spa"
+    }
+  },
+  {
+    "id": "language_30057",
+    "type": "language",
+    "difficulty": "medium",
+    "questionText": "¿Cuál es la lengua oficial de Turks and Caicos Islands?",
+    "correctAnswer": "English",
+    "options": [
+      "English",
+      "Georgian",
+      "Arabic",
+      "Slovak"
+    ],
+    "extraData": {
+      "countryCode": "tc",
+      "countryName": "Turks and Caicos Islands",
+      "languageCode": "eng"
+    }
+  },
+  {
+    "id": "currency_30028",
+    "type": "currency",
+    "difficulty": "easy",
+    "questionText": "¿Qué billetes y monedas circulan en Netherlands?",
+    "correctAnswer": "euro",
+    "options": [
+      "United States dollar",
+      "Mozambican metical",
+      "euro",
+      "Burmese kyat"
+    ],
+    "extraData": {
+      "countryCode": "nl",
+      "countryName": "Netherlands",
+      "currencyCode": "EUR"
+    }
+  },
+  {
+    "id": "capital_30010",
+    "type": "capital",
+    "difficulty": "hard",
+    "questionText": "¿La capital de Guadeloupe se llama...?",
+    "correctAnswer": "Guadeloupe",
+    "options": [
+      "Lebanon",
+      "Russia",
+      "Guadeloupe",
+      "Tokelau"
+    ],
+    "extraData": {
+      "countryCode": "gp",
+      "countryName": "Guadeloupe"
+    }
+  },
+  {
+    "id": "capital_30018",
+    "type": "capital",
+    "difficulty": "medium",
+    "questionText": "¿Dónde está la capital de Azerbaijan?",
+    "correctAnswer": "Baku",
+    "options": [
+      "Baku",
+      "Praia",
+      "Nicosia",
+      "Helsinki"
+    ],
+    "extraData": {
+      "countryCode": "az",
+      "countryName": "Azerbaijan"
+    }
+  },
+  {
+    "id": "capital_30003",
+    "type": "capital",
+    "difficulty": "medium",
+    "questionText": "¿Guatemala City es la capital de qué país?",
+    "correctAnswer": "Guatemala",
+    "options": [
+      "Ivory Coast",
+      "Svalbard and Jan Mayen",
+      "Guatemala",
+      "Cayman Islands"
+    ],
+    "extraData": {
+      "countryCode": "gt",
+      "countryName": "Guatemala"
+    }
+  },
+  {
+    "id": "currency_30027",
+    "type": "currency",
+    "difficulty": "medium",
+    "questionText": "¿Cuál es la divisa de Serbia?",
+    "correctAnswer": "Serbian dinar",
+    "options": [
+      "Sri Lankan rupee",
+      "Serbian dinar",
+      "Bangladeshi taka",
+      "Israeli new shekel"
+    ],
+    "extraData": {
+      "countryCode": "rs",
+      "countryName": "Serbia",
+      "currencyCode": "RSD"
+    }
+  },
+  {
+    "id": "language_30049",
+    "type": "language",
+    "difficulty": "hard",
+    "questionText": "¿El idioma principal de Bhutan es...?",
+    "correctAnswer": "Dzongkha",
+    "options": [
+      "Korean",
+      "Arabic",
+      "Dzongkha",
+      "Belizean Creole"
+    ],
+    "extraData": {
+      "countryCode": "bt",
+      "countryName": "Bhutan",
+      "languageCode": "dzo"
+    }
+  },
+  {
+    "id": "capital_30016",
+    "type": "capital",
+    "difficulty": "hard",
+    "questionText": "¿Cuál es la ciudad principal de Lesotho?",
+    "correctAnswer": "Maseru",
+    "options": [
+      "Baku",
+      "Saint John's",
+      "Maseru",
+      "Doha"
+    ],
+    "extraData": {
+      "countryCode": "ls",
+      "countryName": "Lesotho"
+    }
+  },
+  {
+    "id": "capital_30005",
+    "type": "capital",
+    "difficulty": "hard",
+    "questionText": "¿En qué ciudad se encuentra el gobierno de Namibia?",
+    "correctAnswer": "Namibia",
+    "options": [
+      "Kiribati",
+      "Tuvalu",
+      "Guinea",
+      "Namibia"
+    ],
+    "extraData": {
+      "countryCode": "na",
+      "countryName": "Namibia"
+    }
+  },
+  {
+    "id": "language_30044",
+    "type": "language",
+    "difficulty": "medium",
+    "questionText": "¿En Saint Pierre and Miquelon qué idioma se usa?",
+    "correctAnswer": "French",
+    "options": [
+      "Burmese",
+      "French",
+      "Catalan",
+      "English"
+    ],
+    "extraData": {
+      "countryCode": "pm",
+      "countryName": "Saint Pierre and Miquelon",
+      "languageCode": "fra"
+    }
+  },
+  {
+    "id": "currency_30038",
+    "type": "currency",
+    "difficulty": "hard",
+    "questionText": "¿Qué billetes y monedas circulan en Fiji?",
+    "correctAnswer": "Fijian dollar",
+    "options": [
+      "Chinese yuan",
+      "Polish złoty",
+      "Fijian dollar",
+      "Chilean peso"
+    ],
+    "extraData": {
+      "countryCode": "fj",
+      "countryName": "Fiji",
+      "currencyCode": "FJD"
+    }
+  },
+  {
+    "id": "currency_30025",
+    "type": "currency",
+    "difficulty": "easy",
+    "questionText": "¿Qué moneda se usa en Brazil?",
+    "correctAnswer": "Brazilian real",
+    "options": [
+      "Panamanian balboa",
+      "Brazilian real",
+      "Tanzanian shilling",
+      "Kenyan shilling"
+    ],
+    "extraData": {
+      "countryCode": "br",
+      "countryName": "Brazil",
+      "currencyCode": "BRL"
+    }
+  },
+  {
+    "id": "language_30050",
+    "type": "language",
+    "difficulty": "hard",
+    "questionText": "¿Los habitantes de South Sudan hablan principalmente...?",
+    "correctAnswer": "English",
+    "options": [
+      "Ukrainian",
+      "French",
+      "English",
+      "Berber"
+    ],
+    "extraData": {
+      "countryCode": "ss",
+      "countryName": "South Sudan",
+      "languageCode": "eng"
+    }
+  },
+  {
+    "id": "currency_30022",
+    "type": "currency",
+    "difficulty": "easy",
+    "questionText": "¿Qué moneda se usa en China?",
+    "correctAnswer": "Chinese yuan",
+    "options": [
+      "Chinese yuan",
+      "Venezuelan bolívar soberano",
+      "Eastern Caribbean dollar",
+      "Australian dollar"
+    ],
+    "extraData": {
+      "countryCode": "cn",
+      "countryName": "China",
+      "currencyCode": "CNY"
+    }
+  },
+  {
+    "id": "currency_30039",
+    "type": "currency",
+    "difficulty": "medium",
+    "questionText": "¿Qué billetes y monedas circulan en United States Virgin Islands?",
+    "correctAnswer": "United States dollar",
+    "options": [
+      "Colombian peso",
+      "United States dollar",
+      "Guyanese dollar",
+      "Philippine peso"
+    ],
+    "extraData": {
+      "countryCode": "vi",
+      "countryName": "United States Virgin Islands",
+      "currencyCode": "USD"
+    }
+  },
+  {
+    "id": "language_30045",
+    "type": "language",
+    "difficulty": "hard",
+    "questionText": "¿Cuál es la lengua oficial de Norfolk Island?",
+    "correctAnswer": "English",
+    "options": [
+      "Arabic",
+      "French",
+      "English",
+      "Persian (Farsi)"
+    ],
+    "extraData": {
+      "countryCode": "nf",
+      "countryName": "Norfolk Island",
+      "languageCode": "eng"
+    }
+  },
+  {
+    "id": "currency_30034",
+    "type": "currency",
+    "difficulty": "medium",
+    "questionText": "¿Qué currency tienen en Czechia?",
+    "correctAnswer": "Czech koruna",
+    "options": [
+      "Czech koruna",
+      "Indonesian rupiah",
+      "euro",
+      "Eastern Caribbean dollar"
+    ],
+    "extraData": {
+      "countryCode": "cz",
+      "countryName": "Czechia",
+      "currencyCode": "CZK"
+    }
+  },
+  {
+    "id": "capital_30004",
+    "type": "capital",
+    "difficulty": "easy",
+    "questionText": "¿Qué ciudad es la sede administrativa de France?",
+    "correctAnswer": "France",
+    "options": [
+      "Niue",
+      "Cameroon",
+      "Jamaica",
+      "France"
+    ],
+    "extraData": {
+      "countryCode": "fr",
+      "countryName": "France"
+    }
+  },
+  {
+    "id": "language_30047",
+    "type": "language",
+    "difficulty": "hard",
+    "questionText": "¿En Sierra Leone qué idioma se usa?",
+    "correctAnswer": "English",
+    "options": [
+      "Dzongkha",
+      "English",
+      "Guaraní",
+      "German"
+    ],
+    "extraData": {
+      "countryCode": "sl",
+      "countryName": "Sierra Leone",
+      "languageCode": "eng"
+    }
+  },
+  {
+    "id": "capital_30002",
+    "type": "capital",
+    "difficulty": "hard",
+    "questionText": "¿Qué ciudad es el centro político de Paraguay?",
+    "correctAnswer": "Paraguay",
+    "options": [
+      "Aruba",
+      "Botswana",
+      "Paraguay",
+      "New Caledonia"
+    ],
+    "extraData": {
+      "countryCode": "py",
+      "countryName": "Paraguay"
+    }
+  },
+  {
+    "id": "currency_30026",
+    "type": "currency",
+    "difficulty": "medium",
+    "questionText": "¿La moneda oficial de Jamaica es...?",
+    "correctAnswer": "Jamaican dollar",
+    "options": [
+      "Jamaican dollar",
+      "Swiss franc",
+      "Zimbabwean dollar",
+      "Ugandan shilling"
+    ],
+    "extraData": {
+      "countryCode": "jm",
+      "countryName": "Jamaica",
+      "currencyCode": "JMD"
+    }
+  },
+  {
+    "id": "currency_30020",
+    "type": "currency",
+    "difficulty": "hard",
+    "questionText": "¿Cuál es la moneda de Saudi Arabia?",
+    "correctAnswer": "Saudi riyal",
+    "options": [
+      "Trinidad and Tobago dollar",
+      "Saudi riyal",
+      "New Zealand dollar",
+      "Indian rupee"
+    ],
+    "extraData": {
+      "countryCode": "sa",
+      "countryName": "Saudi Arabia",
+      "currencyCode": "SAR"
+    }
+  },
+  {
+    "id": "language_30058",
+    "type": "language",
+    "difficulty": "hard",
+    "questionText": "¿Qué idioma predomina en Benin?",
+    "correctAnswer": "French",
+    "options": [
+      "French",
+      "Spanish",
+      "Arabic",
+      "English"
+    ],
+    "extraData": {
+      "countryCode": "bj",
+      "countryName": "Benin",
+      "languageCode": "fra"
+    }
+  },
+  {
+    "id": "capital_30008",
+    "type": "capital",
+    "difficulty": "medium",
+    "questionText": "¿Cuál es la ciudad principal de Benin?",
+    "correctAnswer": "Benin",
+    "options": [
+      "Benin",
+      "Montserrat",
+      "Gambia",
+      "Liechtenstein"
+    ],
+    "extraData": {
+      "countryCode": "bj",
+      "countryName": "Benin"
+    }
+  },
+  {
+    "id": "currency_30023",
+    "type": "currency",
+    "difficulty": "hard",
+    "questionText": "¿Cuál es la moneda de American Samoa?",
+    "correctAnswer": "United States dollar",
+    "options": [
+      "British pound",
+      "United States dollar",
+      "Hong Kong dollar",
+      "Trinidad and Tobago dollar"
+    ],
+    "extraData": {
+      "countryCode": "as",
+      "countryName": "American Samoa",
+      "currencyCode": "USD"
+    }
+  },
+  {
+    "id": "language_30041",
+    "type": "language",
+    "difficulty": "hard",
+    "questionText": "¿El idioma principal de Zambia es...?",
+    "correctAnswer": "English",
+    "options": [
+      "French",
+      "Chinese",
+      "English",
+      "Greek"
+    ],
+    "extraData": {
+      "countryCode": "zm",
+      "countryName": "Zambia",
+      "languageCode": "eng"
+    }
+  },
+  {
+    "id": "capital_30017",
+    "type": "capital",
+    "difficulty": "hard",
+    "questionText": "¿Qué ciudad es la sede administrativa de Marshall Islands?",
+    "correctAnswer": "Majuro",
+    "options": [
+      "Vienna",
+      "Washington, D.C.",
+      "Majuro",
+      "Kingston"
+    ],
+    "extraData": {
+      "countryCode": "mh",
+      "countryName": "Marshall Islands"
+    }
+  },
+  {
+    "id": "currency_30030",
+    "type": "currency",
+    "difficulty": "medium",
+    "questionText": "¿Qué billetes y monedas circulan en Cyprus?",
+    "correctAnswer": "euro",
+    "options": [
+      "Central African CFA franc",
+      "Singapore dollar",
+      "Zambian kwacha",
+      "euro"
+    ],
+    "extraData": {
+      "countryCode": "cy",
+      "countryName": "Cyprus",
+      "currencyCode": "EUR"
+    }
+  },
+  {
+    "id": "capital_30012",
+    "type": "capital",
+    "difficulty": "medium",
+    "questionText": "¿Cuál es la ciudad principal de Senegal?",
+    "correctAnswer": "Senegal",
+    "options": [
+      "Cuba",
+      "Mongolia",
+      "Dominican Republic",
+      "Senegal"
+    ],
+    "extraData": {
+      "countryCode": "sn",
+      "countryName": "Senegal"
+    }
+  },
+  {
+    "id": "currency_30033",
+    "type": "currency",
+    "difficulty": "hard",
+    "questionText": "¿Qué moneda se usa en Ethiopia?",
+    "correctAnswer": "Ethiopian birr",
+    "options": [
+      "New Taiwan dollar",
+      "Ethiopian birr",
+      "Belize dollar",
+      "West African CFA franc"
+    ],
+    "extraData": {
+      "countryCode": "et",
+      "countryName": "Ethiopia",
+      "currencyCode": "ETB"
+    }
+  },
+  {
+    "id": "currency_30037",
+    "type": "currency",
+    "difficulty": "hard",
+    "questionText": "¿Qué moneda se usa en Taiwan?",
+    "correctAnswer": "New Taiwan dollar",
+    "options": [
+      "Jordanian dinar",
+      "Kazakhstani tenge",
+      "Angolan kwanza",
+      "New Taiwan dollar"
+    ],
+    "extraData": {
+      "countryCode": "tw",
+      "countryName": "Taiwan",
+      "currencyCode": "TWD"
+    }
+  },
+  {
+    "id": "capital_30011",
+    "type": "capital",
+    "difficulty": "hard",
+    "questionText": "¿Qué ciudad es la sede administrativa de Hungary?",
+    "correctAnswer": "Hungary",
+    "options": [
+      "Uzbekistan",
+      "Georgia",
+      "Hungary",
+      "Mauritania"
+    ],
+    "extraData": {
+      "countryCode": "hu",
+      "countryName": "Hungary"
+    }
+  },
+  {
+    "id": "language_30040",
+    "type": "language",
+    "difficulty": "hard",
+    "questionText": "¿En Saudi Arabia qué idioma se usa?",
+    "correctAnswer": "Arabic",
+    "options": [
+      "Arabic",
+      "Portuguese",
+      "English",
+      "Vietnamese"
+    ],
+    "extraData": {
+      "countryCode": "sa",
+      "countryName": "Saudi Arabia",
+      "languageCode": "ara"
+    }
+  },
+  {
+    "id": "capital_30009",
+    "type": "capital",
+    "difficulty": "medium",
+    "questionText": "¿Cuál es la ciudad principal de Taiwan?",
+    "correctAnswer": "Taiwan",
+    "options": [
+      "Taiwan",
+      "Belize",
+      "Fiji",
+      "Guernsey"
+    ],
+    "extraData": {
+      "countryCode": "tw",
+      "countryName": "Taiwan"
+    }
+  },
+  {
+    "id": "capital_30013",
+    "type": "capital",
+    "difficulty": "medium",
+    "questionText": "¿Cuál es la capital de Greenland?",
+    "correctAnswer": "Nuuk",
+    "options": [
+      "Nuuk",
+      "Diego Garcia",
+      "Brazzaville",
+      "Accra"
+    ],
+    "extraData": {
+      "countryCode": "gl",
+      "countryName": "Greenland"
+    }
+  },
+  {
+    "id": "currency_30035",
+    "type": "currency",
+    "difficulty": "medium",
+    "questionText": "¿En San Marino se usa qué moneda?",
+    "correctAnswer": "euro",
+    "options": [
+      "Sudanese pound",
+      "Cook Islands dollar",
+      "euro",
+      "Eastern Caribbean dollar"
+    ],
+    "extraData": {
+      "countryCode": "sm",
+      "countryName": "San Marino",
+      "currencyCode": "EUR"
+    }
+  },
+  {
+    "id": "currency_30024",
+    "type": "currency",
+    "difficulty": "easy",
+    "questionText": "¿En Italy se usa qué moneda?",
+    "correctAnswer": "euro",
+    "options": [
+      "Cayman Islands dollar",
+      "euro",
+      "New Zealand dollar",
+      "Brunei dollar"
+    ],
+    "extraData": {
+      "countryCode": "it",
+      "countryName": "Italy",
+      "currencyCode": "EUR"
+    }
+  }
+]
