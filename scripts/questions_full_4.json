@@ -413,7 +413,7 @@
     "questionText": "¿Qué país tiene más población?",
     "correctAnswer": "Malawi",
     "options": [
-      "Grecia",
+      "Malawi",
       "Malaui"
     ],
     "extraData": {
@@ -451,7 +451,7 @@
     "questionText": "¿Qué país es más extenso?",
     "correctAnswer": "Mali",
     "options": [
-      "Egipto",
+      "Mali",
       "Malí"
     ],
     "extraData": {
@@ -4053,7 +4053,7 @@
     "questionText": "¿Qué país tiene más población?",
     "correctAnswer": "Malawi",
     "options": [
-      "Bélgica",
+      "Malawi",
       "Malaui"
     ],
     "extraData": {

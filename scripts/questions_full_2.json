@@ -3124,7 +3124,7 @@
     "questionText": "¿Qué país tiene más población?",
     "correctAnswer": "Malawi",
     "options": [
-      "Malaui",
+      "Malawi",
       "Grecia"
     ],
     "extraData": {
@@ -3682,7 +3682,7 @@
     "questionText": "¿De qué país es esta bandera?",
     "correctAnswer": "Brunei",
     "options": [
-      "Malasia",
+      "Brunei",
       "Indonesia",
       "Brunéi",
       "Singapur"
