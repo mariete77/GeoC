@@ -105,7 +105,8 @@
         "Vanuatu"
       ],
       "population1": 10749635,
-      "population2": 321409
+      "population2": 321409,
+      "infoToShow": "10.7 millones habitantes"
     }
   },
   {
@@ -252,7 +253,8 @@
         "Brunei"
       ],
       "area1": 83600.0,
-      "area2": 5765.0
+      "area2": 5765.0,
+      "infoToShow": "84 mil km²"
     }
   },
   {
@@ -327,7 +329,8 @@
         "Marshall Islands"
       ],
       "population1": 6142180,
-      "population2": 42418
+      "population2": 42418,
+      "infoToShow": "6.1 millones habitantes"
     }
   },
   {
@@ -383,7 +386,8 @@
         "Djibouti"
       ],
       "area1": 118484.0,
-      "area2": 23200.0
+      "area2": 23200.0,
+      "infoToShow": "118 mil km²"
     }
   },
   {
@@ -420,7 +424,8 @@
         "Equatorial Guinea"
       ],
       "area1": 244376.0,
-      "area2": 28051.0
+      "area2": 28051.0,
+      "infoToShow": "244 mil km²"
     }
   },
   {
@@ -439,7 +444,8 @@
         "American Samoa"
       ],
       "area1": 75417.0,
-      "area2": 199.0
+      "area2": 199.0,
+      "infoToShow": "75 mil km²"
     }
   },
   {
@@ -476,7 +482,8 @@
         "Puerto Rico"
       ],
       "area1": 1104300.0,
-      "area2": 8870.0
+      "area2": 8870.0,
+      "infoToShow": "1.1 millones de km²"
     }
   },
   {
@@ -513,7 +520,8 @@
         "Iceland"
       ],
       "population1": 37392000,
-      "population2": 391810
+      "population2": 391810,
+      "infoToShow": "37.4 millones habitantes"
     }
   },
   {
@@ -586,7 +594,8 @@
         "Montenegro"
       ],
       "population1": 10882341,
-      "population2": 623327
+      "population2": 623327,
+      "infoToShow": "10.9 millones habitantes"
     }
   },
   {
@@ -623,7 +632,8 @@
         "Bahamas"
       ],
       "area1": 108889.0,
-      "area2": 13943.0
+      "area2": 13943.0,
+      "infoToShow": "109 mil km²"
     }
   },
   {
@@ -642,7 +652,8 @@
         "Solomon Islands"
       ],
       "population1": 53330978,
-      "population2": 750325
+      "population2": 750325,
+      "infoToShow": "53.3 millones habitantes"
     }
   },
   {
@@ -715,7 +726,8 @@
         "Marshall Islands"
       ],
       "area1": 65610.0,
-      "area2": 181.0
+      "area2": 181.0,
+      "infoToShow": "66 mil km²"
     }
   },
   {
@@ -789,7 +801,8 @@
         "Isle of Man"
       ],
       "area1": 1104300.0,
-      "area2": 572.0
+      "area2": 572.0,
+      "infoToShow": "1.1 millones de km²"
     }
   },
   {
@@ -844,7 +857,8 @@
         "Bahamas"
       ],
       "area1": 622984.0,
-      "area2": 13943.0
+      "area2": 13943.0,
+      "infoToShow": "623 mil km²"
     }
   },
   {
@@ -863,7 +877,8 @@
         "Tonga"
       ],
       "population1": 107271260,
-      "population2": 100179
+      "population2": 100179,
+      "infoToShow": "107.3 millones habitantes"
     }
   },
   {
@@ -901,7 +916,8 @@
         "Uruguay"
       ],
       "population1": 28517000,
-      "population2": 3499451
+      "population2": 3499451,
+      "infoToShow": "28.5 millones habitantes"
     }
   },
   {
@@ -1112,7 +1128,8 @@
         "Martinique"
       ],
       "area1": 181035.0,
-      "area2": 1128.0
+      "area2": 1128.0,
+      "infoToShow": "181 mil km²"
     }
   },
   {
@@ -1148,7 +1165,8 @@
         "Croatia"
       ],
       "population1": 43844000,
-      "population2": 3866233
+      "population2": 3866233,
+      "infoToShow": "43.8 millones habitantes"
     }
   },
   {
@@ -1167,7 +1185,8 @@
         "Iceland"
       ],
       "population1": 6011488,
-      "population2": 391810
+      "population2": 391810,
+      "infoToShow": "6.0 millones habitantes"
     }
   },
   {
@@ -1186,7 +1205,8 @@
         "Sint Maarten"
       ],
       "population1": 6142180,
-      "population2": 41349
+      "population2": 41349,
+      "infoToShow": "6.1 millones habitantes"
     }
   },
   {
@@ -1276,7 +1296,8 @@
         "Heard Island and McDonald Islands"
       ],
       "area1": 131990.0,
-      "area2": 412.0
+      "area2": 412.0,
+      "infoToShow": "132 mil km²"
     }
   },
   {
@@ -1313,7 +1334,8 @@
         "Costa Rica"
       ],
       "area1": 65300.0,
-      "area2": 51100.0
+      "area2": 51100.0,
+      "infoToShow": "65 mil km²"
     }
   },
   {
@@ -1332,7 +1354,8 @@
         "Saint Vincent and the Grenadines"
       ],
       "area1": 207600.0,
-      "area2": 389.0
+      "area2": 389.0,
+      "infoToShow": "208 mil km²"
     }
   },
   {
@@ -1404,7 +1427,8 @@
         "British Virgin Islands"
       ],
       "population1": 17073087,
-      "population2": 39471
+      "population2": 39471,
+      "infoToShow": "17.1 millones habitantes"
     }
   },
   {
@@ -1477,7 +1501,8 @@
         "Andorra"
       ],
       "area1": 112492.0,
-      "area2": 468.0
+      "area2": 468.0,
+      "infoToShow": "112 mil km²"
     }
   },
   {
@@ -1549,7 +1574,8 @@
         "Montenegro"
       ],
       "population1": 284438782,
-      "population2": 623327
+      "population2": 623327,
+      "infoToShow": "284.4 millones habitantes"
     }
   },
   {
@@ -1587,7 +1613,8 @@
         "Micronesia"
       ],
       "area1": 196722.0,
-      "area2": 702.0
+      "area2": 702.0,
+      "infoToShow": "197 mil km²"
     }
   },
   {
@@ -1643,7 +1670,8 @@
         "British Virgin Islands"
       ],
       "population1": 5458600,
-      "population2": 39471
+      "population2": 39471,
+      "infoToShow": "5.5 millones habitantes"
     }
   },
   {
@@ -1662,7 +1690,8 @@
         "Mayotte"
       ],
       "area1": 1285216.0,
-      "area2": 374.0
+      "area2": 374.0,
+      "infoToShow": "1.3 millones de km²"
     }
   },
   {
@@ -1699,7 +1728,8 @@
         "Saint Vincent and the Grenadines"
       ],
       "population1": 5309625,
-      "population2": 110872
+      "population2": 110872,
+      "infoToShow": "5.3 millones habitantes"
     }
   },
   {
@@ -1718,7 +1748,8 @@
         "Saint Martin"
       ],
       "population1": 32862000,
-      "population2": 31496
+      "population2": 31496,
+      "infoToShow": "32.9 millones habitantes"
     }
   },
   {
@@ -1737,7 +1768,8 @@
         "American Samoa"
       ],
       "population1": 5343630,
-      "population2": 49710
+      "population2": 49710,
+      "infoToShow": "5.3 millones habitantes"
     }
   },
   {

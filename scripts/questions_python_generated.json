@@ -32,7 +32,8 @@
         "Grecia"
       ],
       "population1": 109262178,
-      "population2": 10724599
+      "population2": 10724599,
+      "infoToShow": "109.3 millones habitantes"
     }
   },
   {
@@ -138,7 +139,8 @@
         "Bélgica"
       ],
       "population1": 85042738,
-      "population2": 11589623
+      "population2": 11589623,
+      "infoToShow": "85.0 millones habitantes"
     }
   },
   {
@@ -157,7 +159,8 @@
         "Suecia"
       ],
       "population1": 59554023,
-      "population2": 10416196
+      "population2": 10416196,
+      "infoToShow": "59.6 millones habitantes"
     }
   },
   {
@@ -176,7 +179,8 @@
         "Noruega"
       ],
       "population1": 59308690,
-      "population2": 5391369
+      "population2": 5391369,
+      "infoToShow": "59.3 millones habitantes"
     }
   },
   {
@@ -195,7 +199,8 @@
         "España"
       ],
       "population1": 59308690,
-      "population2": 47450795
+      "population2": 47450795,
+      "infoToShow": "59.3 millones habitantes"
     }
   },
   {
@@ -214,7 +219,8 @@
         "Australia"
       ],
       "population1": 1406631776,
-      "population2": 25687041
+      "population2": 25687041,
+      "infoToShow": "1.4 mil millones habitantes"
     }
   },
   {
@@ -301,7 +307,8 @@
         "Corea del Sur"
       ],
       "population1": 59308690,
-      "population2": 51844886
+      "population2": 51844886,
+      "infoToShow": "59.3 millones habitantes"
     }
   },
   {
@@ -338,7 +345,8 @@
         "Grecia"
       ],
       "population1": 125681593,
-      "population2": 10724599
+      "population2": 10724599,
+      "infoToShow": "125.7 millones habitantes"
     }
   },
   {
@@ -460,7 +468,8 @@
         "Suecia"
       ],
       "population1": 331893745,
-      "population2": 10416196
+      "population2": 10416196,
+      "infoToShow": "331.9 millones habitantes"
     }
   },
   {
@@ -479,7 +488,8 @@
         "Países Bajos"
       ],
       "population1": 65273511,
-      "population2": 17534942
+      "population2": 17534942,
+      "infoToShow": "65.3 millones habitantes"
     }
   },
   {

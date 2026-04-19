@@ -15,7 +15,8 @@
         "Suriname"
       ],
       "population1": 47400000,
-      "population2": 616500
+      "population2": 616500,
+      "infoToShow": "47.4 millones habitantes"
     }
   },
   {
@@ -69,7 +70,8 @@
         "Moldova"
       ],
       "population1": 25950000,
-      "population2": 2749076
+      "population2": 2749076,
+      "infoToShow": "25.9 millones habitantes"
     }
   },
   {
@@ -176,7 +178,8 @@
         "Jersey"
       ],
       "population1": 58927633,
-      "population2": 103267
+      "population2": 103267,
+      "infoToShow": "58.9 millones habitantes"
     }
   },
   {
@@ -267,7 +270,8 @@
         "Solomon Islands"
       ],
       "area1": 1221037.0,
-      "area2": 28896.0
+      "area2": 28896.0,
+      "infoToShow": "1.2 millones de km²"
     }
   },
   {
@@ -286,7 +290,8 @@
         "Slovenia"
       ],
       "area1": 331212.0,
-      "area2": 20273.0
+      "area2": 20273.0,
+      "infoToShow": "331 mil km²"
     }
   },
   {
@@ -359,7 +364,8 @@
         "Solomon Islands"
       ],
       "population1": 68153004,
-      "population2": 750325
+      "population2": 750325,
+      "infoToShow": "68.2 millones habitantes"
     }
   },
   {
@@ -378,7 +384,8 @@
         "Macau"
       ],
       "population1": 63100945,
-      "population2": 685900
+      "population2": 685900,
+      "infoToShow": "63.1 millones habitantes"
     }
   },
   {
@@ -487,7 +494,8 @@
         "Estonia"
       ],
       "area1": 120538.0,
-      "area2": 45227.0
+      "area2": 45227.0,
+      "infoToShow": "121 mil km²"
     }
   },
   {
@@ -506,7 +514,8 @@
         "Fiji"
       ],
       "population1": 6567783,
-      "population2": 900869
+      "population2": 900869,
+      "infoToShow": "6.6 millones habitantes"
     }
   },
   {
@@ -579,7 +588,8 @@
         "Slovenia"
       ],
       "population1": 51316756,
-      "population2": 2130638
+      "population2": 2130638,
+      "infoToShow": "51.3 millones habitantes"
     }
   },
   {
@@ -688,7 +698,8 @@
         "Anguilla"
       ],
       "population1": 9077691,
-      "population2": 16010
+      "population2": 16010,
+      "infoToShow": "9.1 millones habitantes"
     }
   },
   {
@@ -796,7 +807,8 @@
         "Lesotho"
       ],
       "area1": 527968.0,
-      "area2": 30355.0
+      "area2": 30355.0,
+      "infoToShow": "528 mil km²"
     }
   },
   {
@@ -927,7 +939,8 @@
         "Bermuda"
       ],
       "area1": 582000.0,
-      "area2": 54.0
+      "area2": 54.0,
+      "infoToShow": "582 mil km²"
     }
   },
   {
@@ -946,7 +959,8 @@
         "Saint Lucia"
       ],
       "population1": 32684503,
-      "population2": 184100
+      "population2": 184100,
+      "infoToShow": "32.7 millones habitantes"
     }
   },
   {
@@ -983,7 +997,8 @@
         "Belize"
       ],
       "population1": 20206953,
-      "population2": 417634
+      "population2": 417634,
+      "infoToShow": "20.2 millones habitantes"
     }
   },
   {
@@ -1039,7 +1054,8 @@
         "Saint Martin"
       ],
       "population1": 43844000,
-      "population2": 31496
+      "population2": 31496,
+      "infoToShow": "43.8 millones habitantes"
     }
   },
   {
@@ -1093,7 +1109,8 @@
         "Bahrain"
       ],
       "population1": 101343800,
-      "population2": 1594654
+      "population2": 1594654,
+      "infoToShow": "101.3 millones habitantes"
     }
   },
   {
@@ -1112,7 +1129,8 @@
         "Latvia"
       ],
       "area1": 1886068.0,
-      "area2": 64559.0
+      "area2": 64559.0,
+      "infoToShow": "1.9 millones de km²"
     }
   },
   {
@@ -1148,7 +1166,8 @@
         "Timor-Leste"
       ],
       "area1": 199951.0,
-      "area2": 14874.0
+      "area2": 14874.0,
+      "infoToShow": "200 mil km²"
     }
   },
   {
@@ -1202,7 +1221,8 @@
         "Hong Kong"
       ],
       "area1": 342000.0,
-      "area2": 1104.0
+      "area2": 1104.0,
+      "infoToShow": "342 mil km²"
     }
   },
   {
@@ -1239,7 +1259,8 @@
         "Saint Pierre and Miquelon"
       ],
       "population1": 18103660,
-      "population2": 5819
+      "population2": 5819,
+      "infoToShow": "18.1 millones habitantes"
     }
   },
   {
@@ -1441,7 +1462,8 @@
         "São Tomé and Príncipe"
       ],
       "area1": 330803.0,
-      "area2": 964.0
+      "area2": 964.0,
+      "infoToShow": "331 mil km²"
     }
   },
   {
@@ -1460,7 +1482,8 @@
         "Comoros"
       ],
       "area1": 236800.0,
-      "area2": 1862.0
+      "area2": 1862.0,
+      "infoToShow": "237 mil km²"
     }
   },
   {
@@ -1498,7 +1521,8 @@
         "El Salvador"
       ],
       "area1": 342000.0,
-      "area2": 21041.0
+      "area2": 21041.0,
+      "infoToShow": "342 mil km²"
     }
   },
   {
@@ -1517,7 +1541,8 @@
         "Burundi"
       ],
       "area1": 7692024.0,
-      "area2": 27834.0
+      "area2": 27834.0,
+      "infoToShow": "7.7 millones de km²"
     }
   },
   {
@@ -1536,7 +1561,8 @@
         "Tokelau"
       ],
       "area1": 2381741.0,
-      "area2": 12.0
+      "area2": 12.0,
+      "infoToShow": "2.4 millones de km²"
     }
   },
   {
@@ -1555,7 +1581,8 @@
         "Macau"
       ],
       "population1": 7459000,
-      "population2": 685900
+      "population2": 685900,
+      "infoToShow": "7.5 millones habitantes"
     }
   },
   {
@@ -1574,7 +1601,8 @@
         "Palestine"
       ],
       "area1": 17098246.0,
-      "area2": 6220.0
+      "area2": 6220.0,
+      "infoToShow": "17.1 millones de km²"
     }
   },
   {
@@ -1628,7 +1656,8 @@
         "Mayotte"
       ],
       "area1": 266000.0,
-      "area2": 374.0
+      "area2": 374.0,
+      "infoToShow": "266 mil km²"
     }
   },
   {
@@ -1664,7 +1693,8 @@
         "Croatia"
       ],
       "population1": 26312034,
-      "population2": 3866233
+      "population2": 3866233,
+      "infoToShow": "26.3 millones habitantes"
     }
   },
   {
@@ -1756,7 +1786,8 @@
         "Andorra"
       ],
       "area1": 83534.0,
-      "area2": 468.0
+      "area2": 468.0,
+      "infoToShow": "84 mil km²"
     }
   }
 ]

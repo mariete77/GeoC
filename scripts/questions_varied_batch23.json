@@ -69,7 +69,8 @@
         "Armenia"
       ],
       "population1": 11734000,
-      "population2": 3076200
+      "population2": 3076200,
+      "infoToShow": "11.7 millones habitantes"
     }
   },
   {
@@ -107,7 +108,8 @@
         "Dominica"
       ],
       "area1": 17098246.0,
-      "area2": 751.0
+      "area2": 751.0,
+      "infoToShow": "17.1 millones de km²"
     }
   },
   {
@@ -143,7 +145,8 @@
         "Saint Lucia"
       ],
       "area1": 83871.0,
-      "area2": 616.0
+      "area2": 616.0,
+      "infoToShow": "84 mil km²"
     }
   },
   {
@@ -200,7 +203,8 @@
         "Iceland"
       ],
       "population1": 1408280000,
-      "population2": 391810
+      "population2": 391810,
+      "infoToShow": "1.4 mil millones habitantes"
     }
   },
   {
@@ -237,7 +241,8 @@
         "Cape Verde"
       ],
       "population1": 130575786,
-      "population2": 491233
+      "population2": 491233,
+      "infoToShow": "130.6 millones habitantes"
     }
   },
   {
@@ -311,7 +316,8 @@
         "Saint Kitts and Nevis"
       ],
       "population1": 112832000,
-      "population2": 51320
+      "population2": 51320,
+      "infoToShow": "112.8 millones habitantes"
     }
   },
   {
@@ -455,7 +461,8 @@
         "Falkland Islands"
       ],
       "population1": 47400000,
-      "population2": 3662
+      "population2": 3662,
+      "infoToShow": "47.4 millones habitantes"
     }
   },
   {
@@ -493,7 +500,8 @@
         "Vanuatu"
       ],
       "area1": 1002450.0,
-      "area2": 12189.0
+      "area2": 12189.0,
+      "infoToShow": "1.0 millones de km²"
     }
   },
   {
@@ -547,7 +555,8 @@
         "Solomon Islands"
       ],
       "area1": 342353.0,
-      "area2": 28896.0
+      "area2": 28896.0,
+      "infoToShow": "342 mil km²"
     }
   },
   {
@@ -583,7 +592,8 @@
         "Antigua and Barbuda"
       ],
       "population1": 63100945,
-      "population2": 103603
+      "population2": 103603,
+      "infoToShow": "63.1 millones habitantes"
     }
   },
   {
@@ -602,7 +612,8 @@
         "Dominican Republic"
       ],
       "area1": 2166086.0,
-      "area2": 48671.0
+      "area2": 48671.0,
+      "infoToShow": "2.2 millones de km²"
     }
   },
   {
@@ -658,7 +669,8 @@
         "British Virgin Islands"
       ],
       "area1": 181035.0,
-      "area2": 151.0
+      "area2": 151.0,
+      "infoToShow": "181 mil km²"
     }
   },
   {
@@ -677,7 +689,8 @@
         "Seychelles"
       ],
       "area1": 181035.0,
-      "area2": 452.0
+      "area2": 452.0,
+      "infoToShow": "181 mil km²"
     }
   },
   {
@@ -696,7 +709,8 @@
         "Estonia"
       ],
       "area1": 580367.0,
-      "area2": 45227.0
+      "area2": 45227.0,
+      "infoToShow": "580 mil km²"
     }
   },
   {
@@ -753,7 +767,8 @@
         "Timor-Leste"
       ],
       "population1": 31719275,
-      "population2": 1391221
+      "population2": 1391221,
+      "infoToShow": "31.7 millones habitantes"
     }
   },
   {
@@ -825,7 +840,8 @@
         "Pitcairn Islands"
       ],
       "area1": 947303.0,
-      "area2": 47.0
+      "area2": 47.0,
+      "infoToShow": "947 mil km²"
     }
   },
   {
@@ -844,7 +860,8 @@
         "Bosnia and Herzegovina"
       ],
       "area1": 488100.0,
-      "area2": 51209.0
+      "area2": 51209.0,
+      "infoToShow": "488 mil km²"
     }
   },
   {
@@ -935,7 +952,8 @@
         "French Southern and Antarctic Lands"
       ],
       "area1": 309500.0,
-      "area2": 7747.0
+      "area2": 7747.0,
+      "infoToShow": "310 mil km²"
     }
   },
   {
@@ -954,7 +972,8 @@
         "Croatia"
       ],
       "area1": 244376.0,
-      "area2": 56594.0
+      "area2": 56594.0,
+      "infoToShow": "244 mil km²"
     }
   },
   {
@@ -1064,7 +1083,8 @@
         "Wallis and Futuna"
       ],
       "area1": 9706961.0,
-      "area2": 142.0
+      "area2": 142.0,
+      "infoToShow": "9.7 millones de km²"
     }
   },
   {
@@ -1139,7 +1159,8 @@
         "Tuvalu"
       ],
       "area1": 71740.0,
-      "area2": 26.0
+      "area2": 26.0,
+      "infoToShow": "72 mil km²"
     }
   },
   {
@@ -1192,7 +1213,8 @@
         "Botswana"
       ],
       "population1": 10134800,
-      "population2": 2359609
+      "population2": 2359609,
+      "infoToShow": "10.1 millones habitantes"
     }
   },
   {
@@ -1301,7 +1323,8 @@
         "Palau"
       ],
       "population1": 11867032,
-      "population2": 16733
+      "population2": 16733,
+      "infoToShow": "11.9 millones habitantes"
     }
   },
   {
@@ -1320,7 +1343,8 @@
         "Aruba"
       ],
       "population1": 53057212,
-      "population2": 107566
+      "population2": 107566,
+      "infoToShow": "53.1 millones habitantes"
     }
   },
   {
@@ -1429,7 +1453,8 @@
         "Anguilla"
       ],
       "population1": 23317031,
-      "population2": 16010
+      "population2": 16010,
+      "infoToShow": "23.3 millones habitantes"
     }
   },
   {
@@ -1590,7 +1615,8 @@
         "Guinea-Bissau"
       ],
       "population1": 34231700,
-      "population2": 1781308
+      "population2": 1781308,
+      "infoToShow": "34.2 millones habitantes"
     }
   },
   {
@@ -1663,7 +1689,8 @@
         "Jamaica"
       ],
       "population1": 51662000,
-      "population2": 2825544
+      "population2": 2825544,
+      "infoToShow": "51.7 millones habitantes"
     }
   },
   {
@@ -1682,7 +1709,8 @@
         "Tonga"
       ],
       "area1": 527968.0,
-      "area2": 747.0
+      "area2": 747.0,
+      "infoToShow": "528 mil km²"
     }
   },
   {
@@ -1720,7 +1748,8 @@
         "Niue"
       ],
       "area1": 272967.0,
-      "area2": 260.0
+      "area2": 260.0,
+      "infoToShow": "273 mil km²"
     }
   },
   {

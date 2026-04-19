@@ -365,7 +365,8 @@
         "Japón"
       ],
       "population1": 1425671352,
-      "population2": 123294513
+      "population2": 123294513,
+      "infoToShow": "1.4 mil millones habitantes"
     }
   },
   {
@@ -384,7 +385,8 @@
         "Alemania"
       ],
       "population1": 126527060,
-      "population2": 83294633
+      "population2": 83294633,
+      "infoToShow": "126.5 millones habitantes"
     }
   },
   {
@@ -403,7 +405,8 @@
         "Finlandia"
       ],
       "population1": 11724763,
-      "population2": 5545475
+      "population2": 5545475,
+      "infoToShow": "11.7 millones habitantes"
     }
   },
   {
@@ -422,7 +425,8 @@
         "Guinea"
       ],
       "population1": 11686140,
-      "population2": 14190612
+      "population2": 14190612,
+      "infoToShow": "14.2 millones habitantes"
     }
   },
   {
@@ -441,7 +445,8 @@
         "Francia"
       ],
       "population1": 85816199,
-      "population2": 64756584
+      "population2": 64756584,
+      "infoToShow": "85.8 millones habitantes"
     }
   },
   {
@@ -460,7 +465,8 @@
         "India"
       ],
       "area1": 9984670,
-      "area2": 3287263
+      "area2": 3287263,
+      "infoToShow": "10.0 millones de km²"
     }
   },
   {
@@ -479,7 +485,8 @@
         "Nigeria"
       ],
       "area1": 1284000,
-      "area2": 923768
+      "area2": 923768,
+      "infoToShow": "1.3 millones de km²"
     }
   },
   {
@@ -498,7 +505,8 @@
         "Tailandia"
       ],
       "area1": 676578,
-      "area2": 513120
+      "area2": 513120,
+      "infoToShow": "677 mil km²"
     }
   },
   {
@@ -536,7 +544,8 @@
         "Argelia"
       ],
       "area1": 1964375,
-      "area2": 2381741
+      "area2": 2381741,
+      "infoToShow": "2.4 millones de km²"
     }
   },
   {

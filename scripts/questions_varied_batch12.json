@@ -33,7 +33,8 @@
         "Réunion"
       ],
       "population1": 49315949,
-      "population2": 896175
+      "population2": 896175,
+      "infoToShow": "49.3 millones habitantes"
     }
   },
   {
@@ -89,7 +90,8 @@
         "Tokelau"
       ],
       "area1": 86600.0,
-      "area2": 12.0
+      "area2": 12.0,
+      "infoToShow": "87 mil km²"
     }
   },
   {
@@ -143,7 +145,8 @@
         "Saint Kitts and Nevis"
       ],
       "area1": 241550.0,
-      "area2": 261.0
+      "area2": 261.0,
+      "infoToShow": "242 mil km²"
     }
   },
   {
@@ -199,7 +202,8 @@
         "Maldives"
       ],
       "population1": 65859640,
-      "population2": 515132
+      "population2": 515132,
+      "infoToShow": "65.9 millones habitantes"
     }
   },
   {
@@ -218,7 +222,8 @@
         "Dominica"
       ],
       "area1": 7692024.0,
-      "area2": 751.0
+      "area2": 751.0,
+      "infoToShow": "7.7 millones de km²"
     }
   },
   {
@@ -237,7 +242,8 @@
         "Christmas Island"
       ],
       "area1": 330803.0,
-      "area2": 135.0
+      "area2": 135.0,
+      "infoToShow": "331 mil km²"
     }
   },
   {
@@ -329,7 +335,8 @@
         "Tonga"
       ],
       "population1": 47400000,
-      "population2": 100179
+      "population2": 100179,
+      "infoToShow": "47.4 millones habitantes"
     }
   },
   {
@@ -527,7 +534,8 @@
         "Bahamas"
       ],
       "area1": 1284000.0,
-      "area2": 13943.0
+      "area2": 13943.0,
+      "infoToShow": "1.3 millones de km²"
     }
   },
   {
@@ -564,7 +572,8 @@
         "Bahamas"
       ],
       "population1": 9748007,
-      "population2": 398165
+      "population2": 398165,
+      "infoToShow": "9.7 millones habitantes"
     }
   },
   {
@@ -583,7 +592,8 @@
         "Bhutan"
       ],
       "area1": 312679.0,
-      "area2": 38394.0
+      "area2": 38394.0,
+      "infoToShow": "313 mil km²"
     }
   },
   {
@@ -602,7 +612,8 @@
         "Macau"
       ],
       "population1": 10749635,
-      "population2": 685900
+      "population2": 685900,
+      "infoToShow": "10.7 millones habitantes"
     }
   },
   {
@@ -658,7 +669,8 @@
         "Eswatini"
       ],
       "area1": 238391.0,
-      "area2": 17364.0
+      "area2": 17364.0,
+      "infoToShow": "238 mil km²"
     }
   },
   {
@@ -731,7 +743,8 @@
         "South Georgia"
       ],
       "area1": 619745.0,
-      "area2": 3903.0
+      "area2": 3903.0,
+      "infoToShow": "620 mil km²"
     }
   },
   {
@@ -890,7 +903,8 @@
         "Christmas Island"
       ],
       "population1": 33742380,
-      "population2": 1692
+      "population2": 1692,
+      "infoToShow": "33.7 millones habitantes"
     }
   },
   {
@@ -963,7 +977,8 @@
         "Falkland Islands"
       ],
       "population1": 19036031,
-      "population2": 3662
+      "population2": 3662,
+      "infoToShow": "19.0 millones habitantes"
     }
   },
   {
@@ -1108,7 +1123,8 @@
         "Mauritius"
       ],
       "population1": 14363931,
-      "population2": 1243741
+      "population2": 1243741,
+      "infoToShow": "14.4 millones habitantes"
     }
   },
   {
@@ -1144,7 +1160,8 @@
         "Trinidad and Tobago"
       ],
       "population1": 41651653,
-      "population2": 1367764
+      "population2": 1367764,
+      "infoToShow": "41.7 millones habitantes"
     }
   },
   {
@@ -1217,7 +1234,8 @@
         "Cape Verde"
       ],
       "area1": 214969.0,
-      "area2": 4033.0
+      "area2": 4033.0,
+      "infoToShow": "215 mil km²"
     }
   },
   {
@@ -1326,7 +1344,8 @@
         "Gibraltar"
       ],
       "population1": 14104969,
-      "population2": 38000
+      "population2": 38000,
+      "infoToShow": "14.1 millones habitantes"
     }
   },
   {
@@ -1345,7 +1364,8 @@
         "Samoa"
       ],
       "area1": 241550.0,
-      "area2": 2842.0
+      "area2": 2842.0,
+      "infoToShow": "242 mil km²"
     }
   },
   {
@@ -1418,7 +1438,8 @@
         "Samoa"
       ],
       "area1": 1104300.0,
-      "area2": 2842.0
+      "area2": 2842.0,
+      "infoToShow": "1.1 millones de km²"
     }
   },
   {
@@ -1437,7 +1458,8 @@
         "Vanuatu"
       ],
       "population1": 28517000,
-      "population2": 321409
+      "population2": 321409,
+      "infoToShow": "28.5 millones habitantes"
     }
   },
   {
@@ -1531,7 +1553,8 @@
         "Falkland Islands"
       ],
       "population1": 25950000,
-      "population2": 3662
+      "population2": 3662,
+      "infoToShow": "25.9 millones habitantes"
     }
   },
   {
@@ -1550,7 +1573,8 @@
         "Mauritius"
       ],
       "population1": 36828330,
-      "population2": 1243741
+      "population2": 1243741,
+      "infoToShow": "36.8 millones habitantes"
     }
   },
   {
@@ -1569,7 +1593,8 @@
         "Mauritius"
       ],
       "area1": 214969.0,
-      "area2": 2040.0
+      "area2": 2040.0,
+      "infoToShow": "215 mil km²"
     }
   },
   {
@@ -1588,7 +1613,8 @@
         "Aruba"
       ],
       "area1": 1284000.0,
-      "area2": 180.0
+      "area2": 180.0,
+      "infoToShow": "1.3 millones de km²"
     }
   },
   {
@@ -1644,7 +1670,8 @@
         "Cayman Islands"
       ],
       "area1": 1221037.0,
-      "area2": 264.0
+      "area2": 264.0,
+      "infoToShow": "1.2 millones de km²"
     }
   },
   {
@@ -1681,7 +1708,8 @@
         "Guernsey"
       ],
       "population1": 6567783,
-      "population2": 64781
+      "population2": 64781,
+      "infoToShow": "6.6 millones habitantes"
     }
   },
   {
@@ -1700,7 +1728,8 @@
         "Macau"
       ],
       "area1": 312679.0,
-      "area2": 30.0
+      "area2": 30.0,
+      "infoToShow": "313 mil km²"
     }
   },
   {
@@ -1737,7 +1766,8 @@
         "São Tomé and Príncipe"
       ],
       "population1": 6029976,
-      "population2": 209607
+      "population2": 209607,
+      "infoToShow": "6.0 millones habitantes"
     }
   },
   {
@@ -1756,7 +1786,8 @@
         "Åland Islands"
       ],
       "area1": 238533.0,
-      "area2": 1580.0
+      "area2": 1580.0,
+      "infoToShow": "239 mil km²"
     }
   }
 ]

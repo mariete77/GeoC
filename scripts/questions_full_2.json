@@ -365,7 +365,8 @@
         "Japón"
       ],
       "population1": 1425671352,
-      "population2": 123294513
+      "population2": 123294513,
+      "infoToShow": "1.4 mil millones habitantes"
     }
   },
   {
@@ -384,7 +385,8 @@
         "Reino Unido"
       ],
       "population1": 112716598,
-      "population2": 67736802
+      "population2": 67736802,
+      "infoToShow": "112.7 millones habitantes"
     }
   },
   {
@@ -403,7 +405,8 @@
         "Suecia"
       ],
       "population1": 18278568,
-      "population2": 10612086
+      "population2": 10612086,
+      "infoToShow": "18.3 millones habitantes"
     }
   },
   {
@@ -422,7 +425,8 @@
         "Portugal"
       ],
       "population1": 18092026,
-      "population2": 10247605
+      "population2": 10247605,
+      "infoToShow": "18.1 millones habitantes"
     }
   },
   {
@@ -441,7 +445,8 @@
         "Italia"
       ],
       "population1": 71801279,
-      "population2": 58870762
+      "population2": 58870762,
+      "infoToShow": "71.8 millones habitantes"
     }
   },
   {
@@ -460,7 +465,8 @@
         "India"
       ],
       "area1": 8515767,
-      "area2": 3287263
+      "area2": 3287263,
+      "infoToShow": "8.5 millones de km²"
     }
   },
   {
@@ -479,7 +485,8 @@
         "Turquía"
       ],
       "area1": 801590,
-      "area2": 783562
+      "area2": 783562,
+      "infoToShow": "802 mil km²"
     }
   },
   {
@@ -498,7 +505,8 @@
         "Venezuela"
       ],
       "area1": 923768,
-      "area2": 916445
+      "area2": 916445,
+      "infoToShow": "924 mil km²"
     }
   },
   {
@@ -517,7 +525,8 @@
         "Camboya"
       ],
       "area1": 488100,
-      "area2": 181035
+      "area2": 181035,
+      "infoToShow": "488 mil km²"
     }
   },
   {
@@ -536,7 +545,8 @@
         "Egipto"
       ],
       "area1": 1221037,
-      "area2": 1002450
+      "area2": 1002450,
+      "infoToShow": "1.2 millones de km²"
     }
   },
   {
@@ -1275,7 +1285,8 @@
         "Brasil"
       ],
       "population1": 1428627663,
-      "population2": 216422446
+      "population2": 216422446,
+      "infoToShow": "1.4 mil millones habitantes"
     }
   },
   {
@@ -1294,7 +1305,8 @@
         "Argentina"
       ],
       "population1": 38781292,
-      "population2": 45773884
+      "population2": 45773884,
+      "infoToShow": "45.8 millones habitantes"
     }
   },
   {
@@ -1313,7 +1325,8 @@
         "Finlandia"
       ],
       "population1": 12458223,
-      "population2": 5545475
+      "population2": 5545475,
+      "infoToShow": "12.5 millones habitantes"
     }
   },
   {
@@ -1332,7 +1345,8 @@
         "Hungría"
       ],
       "population1": 12224110,
-      "population2": 9597085
+      "population2": 9597085,
+      "infoToShow": "12.2 millones habitantes"
     }
   },
   {
@@ -1351,7 +1365,8 @@
         "Italia"
       ],
       "population1": 64756584,
-      "population2": 58870762
+      "population2": 58870762,
+      "infoToShow": "64.8 millones habitantes"
     }
   },
   {
@@ -1370,7 +1385,8 @@
         "Sudáfrica"
       ],
       "area1": 1284000,
-      "area2": 1221037
+      "area2": 1221037,
+      "infoToShow": "1.3 millones de km²"
     }
   },
   {
@@ -1389,7 +1405,8 @@
         "España"
       ],
       "area1": 603500,
-      "area2": 505992
+      "area2": 505992,
+      "infoToShow": "604 mil km²"
     }
   },
   {
@@ -1408,7 +1425,8 @@
         "Brasil"
       ],
       "area1": 9833517,
-      "area2": 8515767
+      "area2": 8515767,
+      "infoToShow": "9.8 millones de km²"
     }
   },
   {
@@ -1427,7 +1445,8 @@
         "Kenia"
       ],
       "area1": 587041,
-      "area2": 580367
+      "area2": 580367,
+      "infoToShow": "587 mil km²"
     }
   },
   {
@@ -1446,7 +1465,8 @@
         "Colombia"
       ],
       "area1": 1285216,
-      "area2": 1141748
+      "area2": 1141748,
+      "infoToShow": "1.3 millones de km²"
     }
   },
   {
@@ -2185,7 +2205,8 @@
         "Estados Unidos"
       ],
       "population1": 128455567,
-      "population2": 339996563
+      "population2": 339996563,
+      "infoToShow": "340.0 millones habitantes"
     }
   },
   {
@@ -2204,7 +2225,8 @@
         "Reino Unido"
       ],
       "population1": 64756584,
-      "population2": 67736802
+      "population2": 67736802,
+      "infoToShow": "67.7 millones habitantes"
     }
   },
   {
@@ -2223,7 +2245,8 @@
         "Noruega"
       ],
       "population1": 14190612,
-      "population2": 5474360
+      "population2": 5474360,
+      "infoToShow": "14.2 millones habitantes"
     }
   },
   {
@@ -2242,7 +2265,8 @@
         "Benín"
       ],
       "population1": 11686140,
-      "population2": 13352864
+      "population2": 13352864,
+      "infoToShow": "13.4 millones habitantes"
     }
   },
   {
@@ -2261,7 +2285,8 @@
         "Italia"
       ],
       "population1": 60414495,
-      "population2": 58870762
+      "population2": 58870762,
+      "infoToShow": "60.4 millones habitantes"
     }
   },
   {
@@ -2280,7 +2305,8 @@
         "Turquía"
       ],
       "area1": 923768,
-      "area2": 783562
+      "area2": 783562,
+      "infoToShow": "924 mil km²"
     }
   },
   {
@@ -2299,7 +2325,8 @@
         "Francia"
       ],
       "area1": 676578,
-      "area2": 551695
+      "area2": 551695,
+      "infoToShow": "677 mil km²"
     }
   },
   {
@@ -2318,7 +2345,8 @@
         "Estados Unidos"
       ],
       "area1": 17098242,
-      "area2": 9833517
+      "area2": 9833517,
+      "infoToShow": "17.1 millones de km²"
     }
   },
   {
@@ -2337,7 +2365,8 @@
         "Japón"
       ],
       "area1": 450295,
-      "area2": 377975
+      "area2": 377975,
+      "infoToShow": "450 mil km²"
     }
   },
   {
@@ -2356,7 +2385,8 @@
         "Nigeria"
       ],
       "area1": 1002450,
-      "area2": 923768
+      "area2": 923768,
+      "infoToShow": "1.0 millones de km²"
     }
   },
   {
@@ -3095,7 +3125,8 @@
         "Australia"
       ],
       "population1": 144236933,
-      "population2": 26439111
+      "population2": 26439111,
+      "infoToShow": "144.2 millones habitantes"
     }
   },
   {
@@ -3114,7 +3145,8 @@
         "Canadá"
       ],
       "population1": 44496122,
-      "population2": 38781292
+      "population2": 38781292,
+      "infoToShow": "44.5 millones habitantes"
     }
   },
   {
@@ -3152,7 +3184,8 @@
         "Bélgica"
       ],
       "population1": 27202843,
-      "population2": 11686140
+      "population2": 11686140,
+      "infoToShow": "27.2 millones habitantes"
     }
   },
   {
@@ -3171,7 +3204,8 @@
         "Argentina"
       ],
       "population1": 47519628,
-      "population2": 45773884
+      "population2": 45773884,
+      "infoToShow": "47.5 millones habitantes"
     }
   },
   {
@@ -3190,7 +3224,8 @@
         "Alemania"
       ],
       "area1": 450295,
-      "area2": 357114
+      "area2": 357114,
+      "infoToShow": "450 mil km²"
     }
   },
   {
@@ -3209,7 +3244,8 @@
         "Reino Unido"
       ],
       "area1": 377975,
-      "area2": 242495
+      "area2": 242495,
+      "infoToShow": "378 mil km²"
     }
   },
   {
@@ -3228,7 +3264,8 @@
         "Brasil"
       ],
       "area1": 9596961,
-      "area2": 8515767
+      "area2": 8515767,
+      "infoToShow": "9.6 millones de km²"
     }
   },
   {
@@ -3247,7 +3284,8 @@
         "Polonia"
       ],
       "area1": 323802,
-      "area2": 312696
+      "area2": 312696,
+      "infoToShow": "324 mil km²"
     }
   },
   {
@@ -4005,7 +4043,8 @@
         "Reino Unido"
       ],
       "population1": 123294513,
-      "population2": 67736802
+      "population2": 67736802,
+      "infoToShow": "123.3 millones habitantes"
     }
   },
   {
@@ -4024,7 +4063,8 @@
         "Grecia"
       ],
       "population1": 41026067,
-      "population2": 10341277
+      "population2": 10341277,
+      "infoToShow": "41.0 millones habitantes"
     }
   },
   {
@@ -4043,7 +4083,8 @@
         "Portugal"
       ],
       "population1": 20017675,
-      "population2": 10247605
+      "population2": 10247605,
+      "infoToShow": "20.0 millones habitantes"
     }
   },
   {
@@ -4062,7 +4103,8 @@
         "Suecia"
       ],
       "population1": 16665409,
-      "population2": 10612086
+      "population2": 10612086,
+      "infoToShow": "16.7 millones habitantes"
     }
   },
   {
@@ -4081,7 +4123,8 @@
         "Irak"
       ],
       "population1": 45606480,
-      "population2": 44496122
+      "population2": 44496122,
+      "infoToShow": "45.6 millones habitantes"
     }
   },
   {
@@ -4100,7 +4143,8 @@
         "Turquía"
       ],
       "area1": 1267000,
-      "area2": 783562
+      "area2": 783562,
+      "infoToShow": "1.3 millones de km²"
     }
   },
   {
@@ -4119,7 +4163,8 @@
         "España"
       ],
       "area1": 513120,
-      "area2": 505992
+      "area2": 505992,
+      "infoToShow": "513 mil km²"
     }
   },
   {
@@ -4138,7 +4183,8 @@
         "España"
       ],
       "area1": 1964375,
-      "area2": 505992
+      "area2": 505992,
+      "infoToShow": "2.0 millones de km²"
     }
   },
   {
@@ -4157,7 +4203,8 @@
         "Portugal"
       ],
       "area1": 199951,
-      "area2": 92212
+      "area2": 92212,
+      "infoToShow": "200 mil km²"
     }
   },
   {
@@ -4176,7 +4223,8 @@
         "Libia"
       ],
       "area1": 1886068,
-      "area2": 1759540
+      "area2": 1759540,
+      "infoToShow": "1.9 millones de km²"
     }
   },
   {
@@ -4915,7 +4963,8 @@
         "Portugal"
       ],
       "population1": 83294633,
-      "population2": 10247605
+      "population2": 10247605,
+      "infoToShow": "83.3 millones habitantes"
     }
   },
   {
@@ -4934,7 +4983,8 @@
         "Alemania"
       ],
       "population1": 98858950,
-      "population2": 83294633
+      "population2": 83294633,
+      "infoToShow": "98.9 millones habitantes"
     }
   },
   {
@@ -4953,7 +5003,8 @@
         "Bélgica"
       ],
       "population1": 33897354,
-      "population2": 11686140
+      "population2": 11686140,
+      "infoToShow": "33.9 millones habitantes"
     }
   },
   {
@@ -4972,7 +5023,8 @@
         "Australia"
       ],
       "population1": 28647293,
-      "population2": 26439111
+      "population2": 26439111,
+      "infoToShow": "28.6 millones habitantes"
     }
   },
   {
@@ -4991,7 +5043,8 @@
         "Francia"
       ],
       "population1": 71801279,
-      "population2": 64756584
+      "population2": 64756584,
+      "infoToShow": "71.8 millones habitantes"
     }
   },
   {
@@ -5029,7 +5082,8 @@
         "Polonia"
       ],
       "area1": 322463,
-      "area2": 312696
+      "area2": 312696,
+      "infoToShow": "322 mil km²"
     }
   },
   {
@@ -5048,7 +5102,8 @@
         "India"
       ],
       "area1": 7692024,
-      "area2": 3287263
+      "area2": 3287263,
+      "infoToShow": "7.7 millones de km²"
     }
   },
   {
@@ -5067,7 +5122,8 @@
         "Grecia"
       ],
       "area1": 342353,
-      "area2": 131957
+      "area2": 131957,
+      "infoToShow": "342 mil km²"
     }
   },
   {
@@ -5086,7 +5142,8 @@
         "Colombia"
       ],
       "area1": 1221037,
-      "area2": 1141748
+      "area2": 1141748,
+      "infoToShow": "1.2 millones de km²"
     }
   },
   {
@@ -5825,7 +5882,8 @@
         "Egipto"
       ],
       "population1": 223804632,
-      "population2": 112716598
+      "population2": 112716598,
+      "infoToShow": "223.8 millones habitantes"
     }
   },
   {
@@ -5863,7 +5921,8 @@
         "Hungría"
       ],
       "population1": 11194449,
-      "population2": 9597085
+      "population2": 9597085,
+      "infoToShow": "11.2 millones habitantes"
     }
   },
   {
@@ -5882,7 +5941,8 @@
         "Burkina Faso"
       ],
       "population1": 11686140,
-      "population2": 22673762
+      "population2": 22673762,
+      "infoToShow": "22.7 millones habitantes"
     }
   },
   {
@@ -5901,7 +5961,8 @@
         "Turquía"
       ],
       "population1": 88536000,
-      "population2": 85816199
+      "population2": 85816199,
+      "infoToShow": "88.5 millones habitantes"
     }
   },
   {
@@ -5920,7 +5981,8 @@
         "México"
       ],
       "area1": 2149690,
-      "area2": 1964375
+      "area2": 1964375,
+      "infoToShow": "2.1 millones de km²"
     }
   },
   {
@@ -5939,7 +6001,8 @@
         "Italia"
       ],
       "area1": 331212,
-      "area2": 301340
+      "area2": 301340,
+      "infoToShow": "331 mil km²"
     }
   },
   {
@@ -5958,7 +6021,8 @@
         "China"
       ],
       "area1": 17098242,
-      "area2": 9596961
+      "area2": 9596961,
+      "infoToShow": "17.1 millones de km²"
     }
   },
   {
@@ -5977,7 +6041,8 @@
         "Reino Unido"
       ],
       "area1": 245857,
-      "area2": 242495
+      "area2": 242495,
+      "infoToShow": "246 mil km²"
     }
   },
   {
@@ -6735,7 +6800,8 @@
         "México"
       ],
       "population1": 216422446,
-      "population2": 128455567
+      "population2": 128455567,
+      "infoToShow": "216.4 millones habitantes"
     }
   },
   {
@@ -6773,7 +6839,8 @@
         "Australia"
       ],
       "population1": 30325732,
-      "population2": 26439111
+      "population2": 26439111,
+      "infoToShow": "30.3 millones habitantes"
     }
   },
   {
@@ -6792,7 +6859,8 @@
         "Australia"
       ],
       "population1": 34121985,
-      "population2": 26439111
+      "population2": 26439111,
+      "infoToShow": "34.1 millones habitantes"
     }
   },
   {
@@ -6811,7 +6879,8 @@
         "Irán"
       ],
       "population1": 98858950,
-      "population2": 88536000
+      "population2": 88536000,
+      "infoToShow": "98.9 millones habitantes"
     }
   },
   {
@@ -6849,7 +6918,8 @@
         "España"
       ],
       "area1": 1240192,
-      "area2": 505992
+      "area2": 505992,
+      "infoToShow": "1.2 millones de km²"
     }
   },
   {
@@ -6868,7 +6938,8 @@
         "India"
       ],
       "area1": 9984670,
-      "area2": 3287263
+      "area2": 3287263,
+      "infoToShow": "10.0 millones de km²"
     }
   },
   {
@@ -6906,7 +6977,8 @@
         "Irán"
       ],
       "area1": 1759540,
-      "area2": 1648195
+      "area2": 1648195,
+      "infoToShow": "1.8 millones de km²"
     }
   },
   {
@@ -7645,7 +7717,8 @@
         "Portugal"
       ],
       "population1": 64756584,
-      "population2": 10247605
+      "population2": 10247605,
+      "infoToShow": "64.8 millones habitantes"
     }
   },
   {
@@ -7664,7 +7737,8 @@
         "Vietnam"
       ],
       "population1": 117337368,
-      "population2": 98858950
+      "population2": 98858950,
+      "infoToShow": "117.3 millones habitantes"
     }
   },
   {
@@ -7683,7 +7757,8 @@
         "Portugal"
       ],
       "population1": 36684000,
-      "population2": 10247605
+      "population2": 10247605,
+      "infoToShow": "36.7 millones habitantes"
     }
   },
   {
@@ -7721,7 +7796,8 @@
         "Alemania"
       ],
       "population1": 126527060,
-      "population2": 83294633
+      "population2": 83294633,
+      "infoToShow": "126.5 millones habitantes"
     }
   },
   {
@@ -7778,7 +7854,8 @@
         "Brasil"
       ],
       "area1": 9596961,
-      "area2": 8515767
+      "area2": 8515767,
+      "infoToShow": "9.6 millones de km²"
     }
   },
   {
@@ -7797,7 +7874,8 @@
         "Austria"
       ],
       "area1": 86600,
-      "area2": 83879
+      "area2": 83879,
+      "infoToShow": "87 mil km²"
     }
   },
   {
@@ -8555,7 +8633,8 @@
         "México"
       ],
       "population1": 47519628,
-      "population2": 128455567
+      "population2": 128455567,
+      "infoToShow": "128.5 millones habitantes"
     }
   },
   {
@@ -8574,7 +8653,8 @@
         "Sudáfrica"
       ],
       "population1": 65497748,
-      "population2": 60414495
+      "population2": 60414495,
+      "infoToShow": "65.5 millones habitantes"
     }
   },
   {
@@ -8593,7 +8673,8 @@
         "Países Bajos"
       ],
       "population1": 18290937,
-      "population2": 17618299
+      "population2": 17618299,
+      "infoToShow": "18.3 millones habitantes"
     }
   },
   {
@@ -8612,7 +8693,8 @@
         "Bélgica"
       ],
       "population1": 14190612,
-      "population2": 11686140
+      "population2": 11686140,
+      "infoToShow": "14.2 millones habitantes"
     }
   },
   {
@@ -8631,7 +8713,8 @@
         "Argentina"
       ],
       "population1": 55100586,
-      "population2": 45773884
+      "population2": 45773884,
+      "infoToShow": "55.1 millones habitantes"
     }
   },
   {
@@ -8650,7 +8733,8 @@
         "Egipto"
       ],
       "area1": 1030700,
-      "area2": 1002450
+      "area2": 1002450,
+      "infoToShow": "1.0 millones de km²"
     }
   },
   {
@@ -8669,7 +8753,8 @@
         "Portugal"
       ],
       "area1": 108889,
-      "area2": 92212
+      "area2": 92212,
+      "infoToShow": "109 mil km²"
     }
   },
   {
@@ -8688,7 +8773,8 @@
         "Argentina"
       ],
       "area1": 3287263,
-      "area2": 2780400
+      "area2": 2780400,
+      "infoToShow": "3.3 millones de km²"
     }
   },
   {
@@ -8707,7 +8793,8 @@
         "Nepal"
       ],
       "area1": 148460,
-      "area2": 147516
+      "area2": 147516,
+      "infoToShow": "148 mil km²"
     }
   },
   {
@@ -8726,7 +8813,8 @@
         "Turquía"
       ],
       "area1": 881913,
-      "area2": 783562
+      "area2": 783562,
+      "infoToShow": "882 mil km²"
     }
   },
   {

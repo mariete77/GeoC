@@ -15,7 +15,8 @@
         "Martinique"
       ],
       "area1": 2166086.0,
-      "area2": 1128.0
+      "area2": 1128.0,
+      "infoToShow": "2.2 millones de km²"
     }
   },
   {
@@ -34,7 +35,8 @@
         "El Salvador"
       ],
       "area1": 357114.0,
-      "area2": 21041.0
+      "area2": 21041.0,
+      "infoToShow": "357 mil km²"
     }
   },
   {
@@ -90,7 +92,8 @@
         "Switzerland"
       ],
       "area1": 2724900.0,
-      "area2": 41284.0
+      "area2": 41284.0,
+      "infoToShow": "2.7 millones de km²"
     }
   },
   {
@@ -233,7 +236,8 @@
         "Kuwait"
       ],
       "population1": 9077691,
-      "population2": 4881254
+      "population2": 4881254,
+      "infoToShow": "9.1 millones habitantes"
     }
   },
   {
@@ -377,7 +381,8 @@
         "Dominica"
       ],
       "population1": 18079810,
-      "population2": 67408
+      "population2": 67408,
+      "infoToShow": "18.1 millones habitantes"
     }
   },
   {
@@ -396,7 +401,8 @@
         "Trinidad and Tobago"
       ],
       "area1": 1285216.0,
-      "area2": 5130.0
+      "area2": 5130.0,
+      "infoToShow": "1.3 millones de km²"
     }
   },
   {
@@ -415,7 +421,8 @@
         "Bahamas"
       ],
       "population1": 6029976,
-      "population2": 398165
+      "population2": 398165,
+      "infoToShow": "6.0 millones habitantes"
     }
   },
   {
@@ -543,7 +550,8 @@
         "Togo"
       ],
       "area1": 9984670.0,
-      "area2": 56785.0
+      "area2": 56785.0,
+      "infoToShow": "10.0 millones de km²"
     }
   },
   {
@@ -580,7 +588,8 @@
         "Denmark"
       ],
       "area1": 377930.0,
-      "area2": 43094.0
+      "area2": 43094.0,
+      "infoToShow": "378 mil km²"
     }
   },
   {
@@ -618,7 +627,8 @@
         "Guernsey"
       ],
       "area1": 622984.0,
-      "area2": 78.0
+      "area2": 78.0,
+      "infoToShow": "623 mil km²"
     }
   },
   {
@@ -693,7 +703,8 @@
         "Guam"
       ],
       "area1": 1002450.0,
-      "area2": 549.0
+      "area2": 549.0,
+      "infoToShow": "1.0 millones de km²"
     }
   },
   {
@@ -804,7 +815,8 @@
         "Wallis and Futuna"
       ],
       "population1": 69281437,
-      "population2": 11620
+      "population2": 11620,
+      "infoToShow": "69.3 millones habitantes"
     }
   },
   {
@@ -823,7 +835,8 @@
         "Bermuda"
       ],
       "population1": 26312034,
-      "population2": 64055
+      "population2": 64055,
+      "infoToShow": "26.3 millones habitantes"
     }
   },
   {
@@ -842,7 +855,8 @@
         "Saint Vincent and the Grenadines"
       ],
       "population1": 69281437,
-      "population2": 110872
+      "population2": 110872,
+      "infoToShow": "69.3 millones habitantes"
     }
   },
   {
@@ -879,7 +893,8 @@
         "Guernsey"
       ],
       "area1": 1002450.0,
-      "area2": 78.0
+      "area2": 78.0,
+      "infoToShow": "1.0 millones de km²"
     }
   },
   {
@@ -952,7 +967,8 @@
         "Caribbean Netherlands"
       ],
       "area1": 390757.0,
-      "area2": 328.0
+      "area2": 328.0,
+      "infoToShow": "391 mil km²"
     }
   },
   {
@@ -1007,7 +1023,8 @@
         "Comoros"
       ],
       "population1": 10499000,
-      "population2": 919901
+      "population2": 919901,
+      "infoToShow": "10.5 millones habitantes"
     }
   },
   {
@@ -1026,7 +1043,8 @@
         "Norfolk Island"
       ],
       "population1": 68153004,
-      "population2": 2188
+      "population2": 2188,
+      "infoToShow": "68.2 millones habitantes"
     }
   },
   {
@@ -1045,7 +1063,8 @@
         "Guadeloupe"
       ],
       "population1": 53057212,
-      "population2": 378561
+      "population2": 378561,
+      "infoToShow": "53.1 millones habitantes"
     }
   },
   {
@@ -1064,7 +1083,8 @@
         "North Macedonia"
       ],
       "area1": 196722.0,
-      "area2": 25713.0
+      "area2": 25713.0,
+      "infoToShow": "197 mil km²"
     }
   },
   {
@@ -1119,7 +1139,8 @@
         "Puerto Rico"
       ],
       "area1": 1030700.0,
-      "area2": 8870.0
+      "area2": 8870.0,
+      "infoToShow": "1.0 millones de km²"
     }
   },
   {
@@ -1155,7 +1176,8 @@
         "Vatican City"
       ],
       "area1": 2381741.0,
-      "area2": 0.49
+      "area2": 0.49,
+      "infoToShow": "2.4 millones de km²"
     }
   },
   {
@@ -1353,7 +1375,8 @@
         "Palau"
       ],
       "population1": 14363931,
-      "population2": 16733
+      "population2": 16733,
+      "infoToShow": "14.4 millones habitantes"
     }
   },
   {
@@ -1372,7 +1395,8 @@
         "Namibia"
       ],
       "population1": 28517000,
-      "population2": 3022401
+      "population2": 3022401,
+      "infoToShow": "28.5 millones habitantes"
     }
   },
   {
@@ -1410,7 +1434,8 @@
         "Sint Maarten"
       ],
       "area1": 603550.0,
-      "area2": 34.0
+      "area2": 34.0,
+      "infoToShow": "604 mil km²"
     }
   },
   {
@@ -1429,7 +1454,8 @@
         "Namibia"
       ],
       "population1": 7459000,
-      "population2": 3022401
+      "population2": 3022401,
+      "infoToShow": "7.5 millones habitantes"
     }
   },
   {
@@ -1448,7 +1474,8 @@
         "Vatican City"
       ],
       "population1": 31719275,
-      "population2": 882
+      "population2": 882,
+      "infoToShow": "31.7 millones habitantes"
     }
   },
   {
@@ -1504,7 +1531,8 @@
         "Liechtenstein"
       ],
       "area1": 1104300.0,
-      "area2": 160.0
+      "area2": 160.0,
+      "infoToShow": "1.1 millones de km²"
     }
   },
   {
@@ -1702,7 +1730,8 @@
         "Wallis and Futuna"
       ],
       "population1": 19340757,
-      "population2": 11620
+      "population2": 11620,
+      "infoToShow": "19.3 millones habitantes"
     }
   },
   {
@@ -1756,7 +1785,8 @@
         "Puerto Rico"
       ],
       "area1": 9984670.0,
-      "area2": 8870.0
+      "area2": 8870.0,
+      "infoToShow": "10.0 millones de km²"
     }
   }
 ]

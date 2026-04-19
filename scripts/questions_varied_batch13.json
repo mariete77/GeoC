@@ -157,7 +157,8 @@
         "Saint Kitts and Nevis"
       ],
       "area1": 9984670.0,
-      "area2": 261.0
+      "area2": 261.0,
+      "infoToShow": "10.0 millones de km²"
     }
   },
   {
@@ -284,7 +285,8 @@
         "Cayman Islands"
       ],
       "area1": 268838.0,
-      "area2": 264.0
+      "area2": 264.0,
+      "infoToShow": "269 mil km²"
     }
   },
   {
@@ -303,7 +305,8 @@
         "Macau"
       ],
       "population1": 10400720,
-      "population2": 685900
+      "population2": 685900,
+      "infoToShow": "10.4 millones habitantes"
     }
   },
   {
@@ -359,7 +362,8 @@
         "Norfolk Island"
       ],
       "area1": 244376.0,
-      "area2": 36.0
+      "area2": 36.0,
+      "infoToShow": "244 mil km²"
     }
   },
   {
@@ -412,7 +416,8 @@
         "Montserrat"
       ],
       "area1": 312679.0,
-      "area2": 102.0
+      "area2": 102.0,
+      "infoToShow": "313 mil km²"
     }
   },
   {
@@ -431,7 +436,8 @@
         "Gabon"
       ],
       "population1": 63100945,
-      "population2": 2469296
+      "population2": 2469296,
+      "infoToShow": "63.1 millones habitantes"
     }
   },
   {
@@ -505,7 +511,8 @@
         "North Macedonia"
       ],
       "area1": 438317.0,
-      "area2": 25713.0
+      "area2": 25713.0,
+      "infoToShow": "438 mil km²"
     }
   },
   {
@@ -524,7 +531,8 @@
         "Mauritania"
       ],
       "population1": 213421037,
-      "population2": 4927532
+      "population2": 4927532,
+      "infoToShow": "213.4 millones habitantes"
     }
   },
   {
@@ -561,7 +569,8 @@
         "Qatar"
       ],
       "area1": 9706961.0,
-      "area2": 11586.0
+      "area2": 11586.0,
+      "infoToShow": "9.7 millones de km²"
     }
   },
   {
@@ -580,7 +589,8 @@
         "Lesotho"
       ],
       "population1": 36170961,
-      "population2": 2116427
+      "population2": 2116427,
+      "infoToShow": "36.2 millones habitantes"
     }
   },
   {
@@ -744,7 +754,8 @@
         "Jersey"
       ],
       "area1": 71740.0,
-      "area2": 116.0
+      "area2": 116.0,
+      "infoToShow": "72 mil km²"
     }
   },
   {
@@ -763,7 +774,8 @@
         "Albania"
       ],
       "area1": 505992.0,
-      "area2": 28748.0
+      "area2": 28748.0,
+      "infoToShow": "506 mil km²"
     }
   },
   {
@@ -799,7 +811,8 @@
         "Saint Pierre and Miquelon"
       ],
       "population1": 6470307,
-      "population2": 5819
+      "population2": 5819,
+      "infoToShow": "6.5 millones habitantes"
     }
   },
   {
@@ -872,7 +885,8 @@
         "Belize"
       ],
       "area1": 268838.0,
-      "area2": 22966.0
+      "area2": 22966.0,
+      "infoToShow": "269 mil km²"
     }
   },
   {
@@ -891,7 +905,8 @@
         "Cook Islands"
       ],
       "population1": 85664944,
-      "population2": 15040
+      "population2": 15040,
+      "infoToShow": "85.7 millones habitantes"
     }
   },
   {
@@ -928,7 +943,8 @@
         "Seychelles"
       ],
       "area1": 78865.0,
-      "area2": 452.0
+      "area2": 452.0,
+      "infoToShow": "79 mil km²"
     }
   },
   {
@@ -966,7 +982,8 @@
         "Brunei"
       ],
       "population1": 51662000,
-      "population2": 455500
+      "population2": 455500,
+      "infoToShow": "51.7 millones habitantes"
     }
   },
   {
@@ -1074,7 +1091,8 @@
         "Cyprus"
       ],
       "population1": 169828911,
-      "population2": 1442614
+      "population2": 1442614,
+      "infoToShow": "169.8 millones habitantes"
     }
   },
   {
@@ -1204,7 +1222,8 @@
         "Tokelau"
       ],
       "area1": 312679.0,
-      "area2": 12.0
+      "area2": 12.0,
+      "infoToShow": "313 mil km²"
     }
   },
   {
@@ -1242,7 +1261,8 @@
         "Saint Vincent and the Grenadines"
       ],
       "population1": 6803886,
-      "population2": 110872
+      "population2": 110872,
+      "infoToShow": "6.8 millones habitantes"
     }
   },
   {
@@ -1261,7 +1281,8 @@
         "Jersey"
       ],
       "population1": 31727042,
-      "population2": 103267
+      "population2": 103267,
+      "infoToShow": "31.7 millones habitantes"
     }
   },
   {
@@ -1280,7 +1301,8 @@
         "Tuvalu"
       ],
       "population1": 11867032,
-      "population2": 10643
+      "population2": 10643,
+      "infoToShow": "11.9 millones habitantes"
     }
   },
   {
@@ -1336,7 +1358,8 @@
         "Equatorial Guinea"
       ],
       "population1": 29911840,
-      "population2": 1668768
+      "population2": 1668768,
+      "infoToShow": "29.9 millones habitantes"
     }
   },
   {
@@ -1391,7 +1414,8 @@
         "Barbados"
       ],
       "population1": 7459000,
-      "population2": 267800
+      "population2": 267800,
+      "infoToShow": "7.5 millones habitantes"
     }
   },
   {
@@ -1410,7 +1434,8 @@
         "Barbados"
       ],
       "area1": 587041.0,
-      "area2": 430.0
+      "area2": 430.0,
+      "infoToShow": "587 mil km²"
     }
   },
   {
@@ -1464,7 +1489,8 @@
         "Jamaica"
       ],
       "area1": 86600.0,
-      "area2": 10991.0
+      "area2": 10991.0,
+      "infoToShow": "87 mil km²"
     }
   },
   {
@@ -1483,7 +1509,8 @@
         "Uruguay"
       ],
       "population1": 6803886,
-      "population2": 3499451
+      "population2": 3499451,
+      "infoToShow": "6.8 millones habitantes"
     }
   },
   {
@@ -1538,7 +1565,8 @@
         "Macau"
       ],
       "area1": 331212.0,
-      "area2": 30.0
+      "area2": 30.0,
+      "infoToShow": "331 mil km²"
     }
   },
   {
@@ -1575,7 +1603,8 @@
         "Caribbean Netherlands"
       ],
       "area1": 69700.0,
-      "area2": 328.0
+      "area2": 328.0,
+      "infoToShow": "70 mil km²"
     }
   },
   {
@@ -1630,7 +1659,8 @@
         "Botswana"
       ],
       "population1": 9892632,
-      "population2": 2359609
+      "population2": 2359609,
+      "infoToShow": "9.9 millones habitantes"
     }
   },
   {
@@ -1701,7 +1731,8 @@
         "Antigua and Barbuda"
       ],
       "area1": 2344858.0,
-      "area2": 442.0
+      "area2": 442.0,
+      "infoToShow": "2.3 millones de km²"
     }
   },
   {

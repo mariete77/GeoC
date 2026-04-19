@@ -101,7 +101,8 @@
         "Palestine"
       ],
       "area1": 331212.0,
-      "area2": 6220.0
+      "area2": 6220.0,
+      "infoToShow": "331 mil km²"
     }
   },
   {
@@ -158,7 +159,8 @@
         "Lebanon"
       ],
       "area1": 181034.0,
-      "area2": 10452.0
+      "area2": 10452.0,
+      "infoToShow": "181 mil km²"
     }
   },
   {
@@ -177,7 +179,8 @@
         "Nauru"
       ],
       "population1": 6109644,
-      "population2": 11680
+      "population2": 11680,
+      "infoToShow": "6.1 millones habitantes"
     }
   },
   {
@@ -319,7 +322,8 @@
         "French Southern and Antarctic Lands"
       ],
       "population1": 51316756,
-      "population2": 400
+      "population2": 400,
+      "infoToShow": "51.3 millones habitantes"
     }
   },
   {
@@ -338,7 +342,8 @@
         "Tuvalu"
       ],
       "area1": 322463.0,
-      "area2": 26.0
+      "area2": 26.0,
+      "infoToShow": "322 mil km²"
     }
   },
   {
@@ -357,7 +362,8 @@
         "Samoa"
       ],
       "population1": 340110988,
-      "population2": 205557
+      "population2": 205557,
+      "infoToShow": "340.1 millones habitantes"
     }
   },
   {
@@ -394,7 +400,8 @@
         "Bahrain"
       ],
       "population1": 29442327,
-      "population2": 1594654
+      "population2": 1594654,
+      "infoToShow": "29.4 millones habitantes"
     }
   },
   {
@@ -413,7 +420,8 @@
         "Croatia"
       ],
       "population1": 6029976,
-      "population2": 3866233
+      "population2": 3866233,
+      "infoToShow": "6.0 millones habitantes"
     }
   },
   {
@@ -432,7 +440,8 @@
         "Timor-Leste"
       ],
       "population1": 19655000,
-      "population2": 1391221
+      "population2": 1391221,
+      "infoToShow": "19.7 millones habitantes"
     }
   },
   {
@@ -486,7 +495,8 @@
         "Armenia"
       ],
       "area1": 1246700.0,
-      "area2": 29743.0
+      "area2": 29743.0,
+      "infoToShow": "1.2 millones de km²"
     }
   },
   {
@@ -524,7 +534,8 @@
         "São Tomé and Príncipe"
       ],
       "area1": 462840.0,
-      "area2": 964.0
+      "area2": 964.0,
+      "infoToShow": "463 mil km²"
     }
   },
   {
@@ -543,7 +554,8 @@
         "Bahrain"
       ],
       "area1": 2724900.0,
-      "area2": 765.0
+      "area2": 765.0,
+      "infoToShow": "2.7 millones de km²"
     }
   },
   {
@@ -600,7 +612,8 @@
         "Brunei"
       ],
       "population1": 83491249,
-      "population2": 455500
+      "population2": 455500,
+      "infoToShow": "83.5 millones habitantes"
     }
   },
   {
@@ -765,7 +778,8 @@
         "Vanuatu"
       ],
       "population1": 69281437,
-      "population2": 321409
+      "population2": 321409,
+      "infoToShow": "69.3 millones habitantes"
     }
   },
   {
@@ -875,7 +889,8 @@
         "Liechtenstein"
       ],
       "area1": 69700.0,
-      "area2": 160.0
+      "area2": 160.0,
+      "infoToShow": "70 mil km²"
     }
   },
   {
@@ -894,7 +909,8 @@
         "Falkland Islands"
       ],
       "area1": 93028.0,
-      "area2": 12173.0
+      "area2": 12173.0,
+      "infoToShow": "93 mil km²"
     }
   },
   {
@@ -948,7 +964,8 @@
         "São Tomé and Príncipe"
       ],
       "area1": 268838.0,
-      "area2": 964.0
+      "area2": 964.0,
+      "infoToShow": "269 mil km²"
     }
   },
   {
@@ -985,7 +1002,8 @@
         "Åland Islands"
       ],
       "population1": 83491249,
-      "population2": 30654
+      "population2": 30654,
+      "infoToShow": "83.5 millones habitantes"
     }
   },
   {
@@ -1004,7 +1022,8 @@
         "Sint Maarten"
       ],
       "population1": 5483450,
-      "population2": 41349
+      "population2": 41349,
+      "infoToShow": "5.5 millones habitantes"
     }
   },
   {
@@ -1041,7 +1060,8 @@
         "United States Minor Outlying Islands"
       ],
       "area1": 100210.0,
-      "area2": 34.2
+      "area2": 34.2,
+      "infoToShow": "100 mil km²"
     }
   },
   {
@@ -1133,7 +1153,8 @@
         "Liechtenstein"
       ],
       "area1": 120538.0,
-      "area2": 160.0
+      "area2": 160.0,
+      "infoToShow": "121 mil km²"
     }
   },
   {
@@ -1171,7 +1192,8 @@
         "Gibraltar"
       ],
       "area1": 131990.0,
-      "area2": 6.0
+      "area2": 6.0,
+      "infoToShow": "132 mil km²"
     }
   },
   {
@@ -1208,7 +1230,8 @@
         "Saint Vincent and the Grenadines"
       ],
       "area1": 181034.0,
-      "area2": 389.0
+      "area2": 389.0,
+      "infoToShow": "181 mil km²"
     }
   },
   {
@@ -1408,7 +1431,8 @@
         "Saint Lucia"
       ],
       "population1": 28517000,
-      "population2": 184100
+      "population2": 184100,
+      "infoToShow": "28.5 millones habitantes"
     }
   },
   {
@@ -1427,7 +1451,8 @@
         "Brunei"
       ],
       "area1": 587041.0,
-      "area2": 5765.0
+      "area2": 5765.0,
+      "infoToShow": "587 mil km²"
     }
   },
   {
@@ -1502,7 +1527,8 @@
         "Taiwan"
       ],
       "area1": 357114.0,
-      "area2": 36197.0
+      "area2": 36197.0,
+      "infoToShow": "357 mil km²"
     }
   },
   {
@@ -1521,7 +1547,8 @@
         "Christmas Island"
       ],
       "population1": 19693423,
-      "population2": 1692
+      "population2": 1692,
+      "infoToShow": "19.7 millones habitantes"
     }
   },
   {
@@ -1540,7 +1567,8 @@
         "Western Sahara"
       ],
       "population1": 6110200,
-      "population2": 600904
+      "population2": 600904,
+      "infoToShow": "6.1 millones habitantes"
     }
   },
   {
@@ -1719,7 +1747,8 @@
         "United States Minor Outlying Islands"
       ],
       "area1": 131990.0,
-      "area2": 34.2
+      "area2": 34.2,
+      "infoToShow": "132 mil km²"
     }
   },
   {
@@ -1756,7 +1785,8 @@
         "Anguilla"
       ],
       "population1": 20426568,
-      "population2": 16010
+      "population2": 16010,
+      "infoToShow": "20.4 millones habitantes"
     }
   }
 ]

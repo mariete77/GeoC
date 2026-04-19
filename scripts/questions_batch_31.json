@@ -365,7 +365,8 @@
         "Brasil"
       ],
       "population1": 52085168,
-      "population2": 216422446
+      "population2": 216422446,
+      "infoToShow": "216.4 millones habitantes"
     }
   },
   {
@@ -403,7 +404,8 @@
         "Níger"
       ],
       "population1": 11686140,
-      "population2": 27202843
+      "population2": 27202843,
+      "infoToShow": "27.2 millones habitantes"
     }
   },
   {
@@ -441,7 +443,8 @@
         "Filipinas"
       ],
       "population1": 98858950,
-      "population2": 117337368
+      "population2": 117337368,
+      "infoToShow": "117.3 millones habitantes"
     }
   },
   {
@@ -479,7 +482,8 @@
         "Guinea"
       ],
       "area1": 242495,
-      "area2": 245857
+      "area2": 245857,
+      "infoToShow": "246 mil km²"
     }
   },
   {
@@ -498,7 +502,8 @@
         "Brasil"
       ],
       "area1": 9596961,
-      "area2": 8515767
+      "area2": 8515767,
+      "infoToShow": "9.6 millones de km²"
     }
   },
   {
@@ -517,7 +522,8 @@
         "Birmania"
       ],
       "area1": 551695,
-      "area2": 676578
+      "area2": 676578,
+      "infoToShow": "677 mil km²"
     }
   },
   {

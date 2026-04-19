@@ -51,7 +51,8 @@
         "Vanuatu"
       ],
       "population1": 11867032,
-      "population2": 321409
+      "population2": 321409,
+      "infoToShow": "11.9 millones habitantes"
     }
   },
   {
@@ -89,7 +90,8 @@
         "Rwanda"
       ],
       "area1": 582000.0,
-      "area2": 26338.0
+      "area2": 26338.0,
+      "infoToShow": "582 mil km²"
     }
   },
   {
@@ -108,7 +110,8 @@
         "Jamaica"
       ],
       "area1": 65300.0,
-      "area2": 10991.0
+      "area2": 10991.0,
+      "infoToShow": "65 mil km²"
     }
   },
   {
@@ -199,7 +202,8 @@
         "Equatorial Guinea"
       ],
       "area1": 342000.0,
-      "area2": 28051.0
+      "area2": 28051.0,
+      "infoToShow": "342 mil km²"
     }
   },
   {
@@ -218,7 +222,8 @@
         "Armenia"
       ],
       "area1": 1221037.0,
-      "area2": 29743.0
+      "area2": 29743.0,
+      "infoToShow": "1.2 millones de km²"
     }
   },
   {
@@ -254,7 +259,8 @@
         "Montenegro"
       ],
       "population1": 169828911,
-      "population2": 623327
+      "population2": 623327,
+      "infoToShow": "169.8 millones habitantes"
     }
   },
   {
@@ -273,7 +279,8 @@
         "British Indian Ocean Territory"
       ],
       "area1": 9706961.0,
-      "area2": 60.0
+      "area2": 60.0,
+      "infoToShow": "9.7 millones de km²"
     }
   },
   {
@@ -346,7 +353,8 @@
         "Lesotho"
       ],
       "population1": 85961000,
-      "population2": 2116427
+      "population2": 2116427,
+      "infoToShow": "86.0 millones habitantes"
     }
   },
   {
@@ -383,7 +391,8 @@
         "Suriname"
       ],
       "population1": 34350244,
-      "population2": 616500
+      "population2": 616500,
+      "infoToShow": "34.4 millones habitantes"
     }
   },
   {
@@ -402,7 +411,8 @@
         "Niue"
       ],
       "area1": 488100.0,
-      "area2": 260.0
+      "area2": 260.0,
+      "infoToShow": "488 mil km²"
     }
   },
   {
@@ -439,7 +449,8 @@
         "Slovenia"
       ],
       "population1": 51316756,
-      "population2": 2130638
+      "population2": 2130638,
+      "infoToShow": "51.3 millones habitantes"
     }
   },
   {
@@ -510,7 +521,8 @@
         "Antigua and Barbuda"
       ],
       "area1": 65300.0,
-      "area2": 442.0
+      "area2": 442.0,
+      "infoToShow": "65 mil km²"
     }
   },
   {
@@ -564,7 +576,8 @@
         "Grenada"
       ],
       "area1": 9984670.0,
-      "area2": 344.0
+      "area2": 344.0,
+      "infoToShow": "10.0 millones de km²"
     }
   },
   {
@@ -583,7 +596,8 @@
         "Åland Islands"
       ],
       "population1": 10749635,
-      "population2": 30654
+      "population2": 30654,
+      "infoToShow": "10.7 millones habitantes"
     }
   },
   {
@@ -693,7 +707,8 @@
         "Bermuda"
       ],
       "population1": 6011488,
-      "population2": 64055
+      "population2": 64055,
+      "infoToShow": "6.0 millones habitantes"
     }
   },
   {
@@ -819,7 +834,8 @@
         "Eritrea"
       ],
       "population1": 46118793,
-      "population2": 3607000
+      "population2": 3607000,
+      "infoToShow": "46.1 millones habitantes"
     }
   },
   {
@@ -948,7 +964,8 @@
         "Niue"
       ],
       "area1": 78865.0,
-      "area2": 260.0
+      "area2": 260.0,
+      "infoToShow": "79 mil km²"
     }
   },
   {
@@ -967,7 +984,8 @@
         "Fiji"
       ],
       "population1": 13224860,
-      "population2": 900869
+      "population2": 900869,
+      "infoToShow": "13.2 millones habitantes"
     }
   },
   {
@@ -986,7 +1004,8 @@
         "Curaçao"
       ],
       "population1": 7459000,
-      "population2": 156115
+      "population2": 156115,
+      "infoToShow": "7.5 millones habitantes"
     }
   },
   {
@@ -1220,7 +1239,8 @@
         "Lesotho"
       ],
       "area1": 238533.0,
-      "area2": 30355.0
+      "area2": 30355.0,
+      "infoToShow": "239 mil km²"
     }
   },
   {
@@ -1239,7 +1259,8 @@
         "Pitcairn Islands"
       ],
       "area1": 923768.0,
-      "area2": 47.0
+      "area2": 47.0,
+      "infoToShow": "924 mil km²"
     }
   },
   {
@@ -1276,7 +1297,8 @@
         "Botswana"
       ],
       "population1": 53330978,
-      "population2": 2359609
+      "population2": 2359609,
+      "infoToShow": "53.3 millones habitantes"
     }
   },
   {
@@ -1295,7 +1317,8 @@
         "Svalbard and Jan Mayen"
       ],
       "area1": 185180.0,
-      "area2": 61399.0
+      "area2": 61399.0,
+      "infoToShow": "185 mil km²"
     }
   },
   {
@@ -1332,7 +1355,8 @@
         "Botswana"
       ],
       "population1": 10605098,
-      "population2": 2359609
+      "population2": 2359609,
+      "infoToShow": "10.6 millones habitantes"
     }
   },
   {
@@ -1351,7 +1375,8 @@
         "Suriname"
       ],
       "population1": 5650325,
-      "population2": 616500
+      "population2": 616500,
+      "infoToShow": "5.7 millones habitantes"
     }
   },
   {
@@ -1370,7 +1395,8 @@
         "French Guiana"
       ],
       "population1": 10400720,
-      "population2": 292354
+      "population2": 292354,
+      "infoToShow": "10.4 millones habitantes"
     }
   },
   {
@@ -1424,7 +1450,8 @@
         "Heard Island and McDonald Islands"
       ],
       "area1": 301336.0,
-      "area2": 412.0
+      "area2": 412.0,
+      "infoToShow": "301 mil km²"
     }
   },
   {
@@ -1516,7 +1543,8 @@
         "Samoa"
       ],
       "area1": 93028.0,
-      "area2": 2842.0
+      "area2": 2842.0,
+      "infoToShow": "93 mil km²"
     }
   },
   {
@@ -1591,7 +1619,8 @@
         "Slovenia"
       ],
       "area1": 342353.0,
-      "area2": 20273.0
+      "area2": 20273.0,
+      "infoToShow": "342 mil km²"
     }
   },
   {
@@ -1628,7 +1657,8 @@
         "Denmark"
       ],
       "area1": 1886068.0,
-      "area2": 43094.0
+      "area2": 43094.0,
+      "infoToShow": "1.9 millones de km²"
     }
   },
   {
@@ -1647,7 +1677,8 @@
         "Croatia"
       ],
       "population1": 1417492000,
-      "population2": 3866233
+      "population2": 3866233,
+      "infoToShow": "1.4 mil millones habitantes"
     }
   },
   {
@@ -1738,7 +1769,8 @@
         "Micronesia"
       ],
       "population1": 53057212,
-      "population2": 105564
+      "population2": 105564,
+      "infoToShow": "53.1 millones habitantes"
     }
   },
   {

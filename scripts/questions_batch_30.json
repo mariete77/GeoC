@@ -365,7 +365,8 @@
         "Estados Unidos"
       ],
       "population1": 1428627663,
-      "population2": 339996563
+      "population2": 339996563,
+      "infoToShow": "1.4 mil millones habitantes"
     }
   },
   {
@@ -384,7 +385,8 @@
         "Vietnam"
       ],
       "population1": 83294633,
-      "population2": 98858950
+      "population2": 98858950,
+      "infoToShow": "98.9 millones habitantes"
     }
   },
   {
@@ -422,7 +424,8 @@
         "Congo (RDC)"
       ],
       "population1": 71801279,
-      "population2": 102262808
+      "population2": 102262808,
+      "infoToShow": "102.3 millones habitantes"
     }
   },
   {
@@ -441,7 +444,8 @@
         "Tanzania"
       ],
       "population1": 60414495,
-      "population2": 65497748
+      "population2": 65497748,
+      "infoToShow": "65.5 millones habitantes"
     }
   },
   {
@@ -460,7 +464,8 @@
         "Etiopía"
       ],
       "area1": 1002450,
-      "area2": 1104300
+      "area2": 1104300,
+      "infoToShow": "1.1 millones de km²"
     }
   },
   {
@@ -479,7 +484,8 @@
         "Ucrania"
       ],
       "area1": 551695,
-      "area2": 603500
+      "area2": 603500,
+      "infoToShow": "604 mil km²"
     }
   },
   {
@@ -498,7 +504,8 @@
         "Australia"
       ],
       "area1": 3287263,
-      "area2": 7692024
+      "area2": 7692024,
+      "infoToShow": "7.7 millones de km²"
     }
   },
   {
@@ -517,7 +524,8 @@
         "Madagascar"
       ],
       "area1": 580367,
-      "area2": 587041
+      "area2": 587041,
+      "infoToShow": "587 mil km²"
     }
   },
   {
@@ -536,7 +544,8 @@
         "Colombia"
       ],
       "area1": 505992,
-      "area2": 1141748
+      "area2": 1141748,
+      "infoToShow": "1.1 millones de km²"
     }
   },
   {

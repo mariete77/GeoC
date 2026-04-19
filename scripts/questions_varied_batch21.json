@@ -51,7 +51,8 @@
         "Liechtenstein"
       ],
       "population1": 28517000,
-      "population2": 40900
+      "population2": 40900,
+      "infoToShow": "28.5 millones habitantes"
     }
   },
   {
@@ -87,7 +88,8 @@
         "Niue"
       ],
       "area1": 357114.0,
-      "area2": 260.0
+      "area2": 260.0,
+      "infoToShow": "357 mil km²"
     }
   },
   {
@@ -143,7 +145,8 @@
         "Bermuda"
       ],
       "population1": 31719275,
-      "population2": 64055
+      "population2": 64055,
+      "infoToShow": "31.7 millones habitantes"
     }
   },
   {
@@ -162,7 +165,8 @@
         "Faroe Islands"
       ],
       "population1": 45905417,
-      "population2": 54885
+      "population2": 54885,
+      "infoToShow": "45.9 millones habitantes"
     }
   },
   {
@@ -218,7 +222,8 @@
         "Antigua and Barbuda"
       ],
       "population1": 34231700,
-      "population2": 103603
+      "population2": 103603,
+      "infoToShow": "34.2 millones habitantes"
     }
   },
   {
@@ -237,7 +242,8 @@
         "Namibia"
       ],
       "population1": 6142180,
-      "population2": 3022401
+      "population2": 3022401,
+      "infoToShow": "6.1 millones habitantes"
     }
   },
   {
@@ -256,7 +262,8 @@
         "Maldives"
       ],
       "population1": 9109280,
-      "population2": 515132
+      "population2": 515132,
+      "infoToShow": "9.1 millones habitantes"
     }
   },
   {
@@ -293,7 +300,8 @@
         "Norfolk Island"
       ],
       "area1": 587041.0,
-      "area2": 36.0
+      "area2": 36.0,
+      "infoToShow": "587 mil km²"
     }
   },
   {
@@ -312,7 +320,8 @@
         "Saint Martin"
       ],
       "area1": 1221037.0,
-      "area2": 53.0
+      "area2": 53.0,
+      "infoToShow": "1.2 millones de km²"
     }
   },
   {
@@ -386,7 +395,8 @@
         "Barbados"
       ],
       "population1": 6011488,
-      "population2": 267800
+      "population2": 267800,
+      "infoToShow": "6.0 millones habitantes"
     }
   },
   {
@@ -422,7 +432,8 @@
         "French Polynesia"
       ],
       "area1": 1221037.0,
-      "area2": 4167.0
+      "area2": 4167.0,
+      "infoToShow": "1.2 millones de km²"
     }
   },
   {
@@ -495,7 +506,8 @@
         "San Marino"
       ],
       "area1": 342353.0,
-      "area2": 61.0
+      "area2": 61.0,
+      "infoToShow": "342 mil km²"
     }
   },
   {
@@ -533,7 +545,8 @@
         "Liechtenstein"
       ],
       "area1": 338455.0,
-      "area2": 160.0
+      "area2": 160.0,
+      "infoToShow": "338 mil km²"
     }
   },
   {
@@ -660,7 +673,8 @@
         "Mayotte"
       ],
       "population1": 6109644,
-      "population2": 320901
+      "population2": 320901,
+      "infoToShow": "6.1 millones habitantes"
     }
   },
   {
@@ -805,7 +819,8 @@
         "Lesotho"
       ],
       "population1": 21763170,
-      "population2": 2116427
+      "population2": 2116427,
+      "infoToShow": "21.8 millones habitantes"
     }
   },
   {
@@ -896,7 +911,8 @@
         "Heard Island and McDonald Islands"
       ],
       "area1": 1648195.0,
-      "area2": 412.0
+      "area2": 412.0,
+      "infoToShow": "1.6 millones de km²"
     }
   },
   {
@@ -915,7 +931,8 @@
         "Gambia"
       ],
       "population1": 21763170,
-      "population2": 2422712
+      "population2": 2422712,
+      "infoToShow": "21.8 millones habitantes"
     }
   },
   {
@@ -934,7 +951,8 @@
         "Mayotte"
       ],
       "area1": 181034.0,
-      "area2": 374.0
+      "area2": 374.0,
+      "infoToShow": "181 mil km²"
     }
   },
   {
@@ -953,7 +971,8 @@
         "Dominican Republic"
       ],
       "area1": 117600.0,
-      "area2": 48671.0
+      "area2": 48671.0,
+      "infoToShow": "118 mil km²"
     }
   },
   {
@@ -972,7 +991,8 @@
         "Northern Mariana Islands"
       ],
       "area1": 390757.0,
-      "area2": 464.0
+      "area2": 464.0,
+      "infoToShow": "391 mil km²"
     }
   },
   {
@@ -1062,7 +1082,8 @@
         "Lebanon"
       ],
       "area1": 330803.0,
-      "area2": 10452.0
+      "area2": 10452.0,
+      "infoToShow": "331 mil km²"
     }
   },
   {
@@ -1119,7 +1140,8 @@
         "Cocos (Keeling) Islands"
       ],
       "population1": 21763170,
-      "population2": 593
+      "population2": 593,
+      "infoToShow": "21.8 millones habitantes"
     }
   },
   {
@@ -1246,7 +1268,8 @@
         "Barbados"
       ],
       "area1": 475442.0,
-      "area2": 430.0
+      "area2": 430.0,
+      "infoToShow": "475 mil km²"
     }
   },
   {
@@ -1283,7 +1306,8 @@
         "Trinidad and Tobago"
       ],
       "population1": 7647000,
-      "population2": 1367764
+      "population2": 1367764,
+      "infoToShow": "7.6 millones habitantes"
     }
   },
   {
@@ -1302,7 +1326,8 @@
         "Jamaica"
       ],
       "area1": 196722.0,
-      "area2": 10991.0
+      "area2": 10991.0,
+      "infoToShow": "197 mil km²"
     }
   },
   {
@@ -1339,7 +1364,8 @@
         "Barbados"
       ],
       "population1": 9082848,
-      "population2": 267800
+      "population2": 267800,
+      "infoToShow": "9.1 millones habitantes"
     }
   },
   {
@@ -1358,7 +1384,8 @@
         "Bermuda"
       ],
       "population1": 10499000,
-      "population2": 64055
+      "population2": 64055,
+      "infoToShow": "10.5 millones habitantes"
     }
   },
   {
@@ -1429,7 +1456,8 @@
         "Bahamas"
       ],
       "population1": 123210000,
-      "population2": 398165
+      "population2": 398165,
+      "infoToShow": "123.2 millones habitantes"
     }
   },
   {
@@ -1485,7 +1513,8 @@
         "Djibouti"
       ],
       "area1": 390757.0,
-      "area2": 23200.0
+      "area2": 23200.0,
+      "infoToShow": "391 mil km²"
     }
   },
   {
@@ -1539,7 +1568,8 @@
         "Guernsey"
       ],
       "population1": 13224860,
-      "population2": 64781
+      "population2": 64781,
+      "infoToShow": "13.2 millones habitantes"
     }
   },
   {
@@ -1628,7 +1658,8 @@
         "Latvia"
       ],
       "area1": 93028.0,
-      "area2": 64559.0
+      "area2": 64559.0,
+      "infoToShow": "93 mil km²"
     }
   },
   {
@@ -1665,7 +1696,8 @@
         "American Samoa"
       ],
       "area1": 238391.0,
-      "area2": 199.0
+      "area2": 199.0,
+      "infoToShow": "238 mil km²"
     }
   },
   {

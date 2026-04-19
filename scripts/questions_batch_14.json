@@ -365,7 +365,8 @@
         "Australia"
       ],
       "population1": 144236933,
-      "population2": 26439111
+      "population2": 26439111,
+      "infoToShow": "144.2 millones habitantes"
     }
   },
   {
@@ -384,7 +385,8 @@
         "Canadá"
       ],
       "population1": 44496122,
-      "population2": 38781292
+      "population2": 38781292,
+      "infoToShow": "44.5 millones habitantes"
     }
   },
   {
@@ -422,7 +424,8 @@
         "Bélgica"
       ],
       "population1": 27202843,
-      "population2": 11686140
+      "population2": 11686140,
+      "infoToShow": "27.2 millones habitantes"
     }
   },
   {
@@ -441,7 +444,8 @@
         "Argentina"
       ],
       "population1": 47519628,
-      "population2": 45773884
+      "population2": 45773884,
+      "infoToShow": "47.5 millones habitantes"
     }
   },
   {
@@ -460,7 +464,8 @@
         "Alemania"
       ],
       "area1": 450295,
-      "area2": 357114
+      "area2": 357114,
+      "infoToShow": "450 mil km²"
     }
   },
   {
@@ -479,7 +484,8 @@
         "Reino Unido"
       ],
       "area1": 377975,
-      "area2": 242495
+      "area2": 242495,
+      "infoToShow": "378 mil km²"
     }
   },
   {
@@ -498,7 +504,8 @@
         "Brasil"
       ],
       "area1": 9596961,
-      "area2": 8515767
+      "area2": 8515767,
+      "infoToShow": "9.6 millones de km²"
     }
   },
   {
@@ -517,7 +524,8 @@
         "Polonia"
       ],
       "area1": 323802,
-      "area2": 312696
+      "area2": 312696,
+      "infoToShow": "324 mil km²"
     }
   },
   {

@@ -34,7 +34,8 @@
         "Nauru"
       ],
       "population1": 6470307,
-      "population2": 11680
+      "population2": 11680,
+      "infoToShow": "6.5 millones habitantes"
     }
   },
   {
@@ -53,7 +54,8 @@
         "Antigua and Barbuda"
       ],
       "area1": 923768.0,
-      "area2": 442.0
+      "area2": 442.0,
+      "infoToShow": "924 mil km²"
     }
   },
   {
@@ -108,7 +110,8 @@
         "Western Sahara"
       ],
       "population1": 51316756,
-      "population2": 600904
+      "population2": 600904,
+      "infoToShow": "51.3 millones habitantes"
     }
   },
   {
@@ -162,7 +165,8 @@
         "Israel"
       ],
       "area1": 1564110.0,
-      "area2": 21937.0
+      "area2": 21937.0,
+      "infoToShow": "1.6 millones de km²"
     }
   },
   {
@@ -181,7 +185,8 @@
         "Latvia"
       ],
       "population1": 25620000,
-      "population2": 1829000
+      "population2": 1829000,
+      "infoToShow": "25.6 millones habitantes"
     }
   },
   {
@@ -325,7 +330,8 @@
         "Puerto Rico"
       ],
       "area1": 241550.0,
-      "area2": 8870.0
+      "area2": 8870.0,
+      "infoToShow": "242 mil km²"
     }
   },
   {
@@ -450,7 +456,8 @@
         "Brunei"
       ],
       "population1": 34090466,
-      "population2": 455500
+      "population2": 455500,
+      "infoToShow": "34.1 millones habitantes"
     }
   },
   {
@@ -504,7 +511,8 @@
         "Bermuda"
       ],
       "population1": 18079810,
-      "population2": 64055
+      "population2": 64055,
+      "infoToShow": "18.1 millones habitantes"
     }
   },
   {
@@ -576,7 +584,8 @@
         "Falkland Islands"
       ],
       "area1": 1267000.0,
-      "area2": 12173.0
+      "area2": 12173.0,
+      "infoToShow": "1.3 millones de km²"
     }
   },
   {
@@ -595,7 +604,8 @@
         "Faroe Islands"
       ],
       "population1": 49315949,
-      "population2": 54885
+      "population2": 54885,
+      "infoToShow": "49.3 millones habitantes"
     }
   },
   {
@@ -614,7 +624,8 @@
         "Burundi"
       ],
       "area1": 236800.0,
-      "area2": 27834.0
+      "area2": 27834.0,
+      "infoToShow": "237 mil km²"
     }
   },
   {
@@ -633,7 +644,8 @@
         "Qatar"
       ],
       "area1": 78865.0,
-      "area2": 11586.0
+      "area2": 11586.0,
+      "infoToShow": "79 mil km²"
     }
   },
   {
@@ -652,7 +664,8 @@
         "Western Sahara"
       ],
       "population1": 11734000,
-      "population2": 600904
+      "population2": 600904,
+      "infoToShow": "11.7 millones habitantes"
     }
   },
   {
@@ -745,7 +758,8 @@
         "Bahrain"
       ],
       "area1": 9706961.0,
-      "area2": 765.0
+      "area2": 765.0,
+      "infoToShow": "9.7 millones de km²"
     }
   },
   {
@@ -800,7 +814,8 @@
         "North Macedonia"
       ],
       "population1": 6110200,
-      "population2": 1822612
+      "population2": 1822612,
+      "infoToShow": "6.1 millones habitantes"
     }
   },
   {
@@ -837,7 +852,8 @@
         "South Georgia"
       ],
       "area1": 947303.0,
-      "area2": 3903.0
+      "area2": 3903.0,
+      "infoToShow": "947 mil km²"
     }
   },
   {
@@ -874,7 +890,8 @@
         "Wallis and Futuna"
       ],
       "area1": 1240192.0,
-      "area2": 142.0
+      "area2": 142.0,
+      "infoToShow": "1.2 millones de km²"
     }
   },
   {
@@ -893,7 +910,8 @@
         "South Georgia"
       ],
       "area1": 450295.0,
-      "area2": 3903.0
+      "area2": 3903.0,
+      "infoToShow": "450 mil km²"
     }
   },
   {
@@ -912,7 +930,8 @@
         "Timor-Leste"
       ],
       "area1": 796095.0,
-      "area2": 14874.0
+      "area2": 14874.0,
+      "infoToShow": "796 mil km²"
     }
   },
   {
@@ -984,7 +1003,8 @@
         "Andorra"
       ],
       "population1": 169828911,
-      "population2": 88406
+      "population2": 88406,
+      "infoToShow": "169.8 millones habitantes"
     }
   },
   {
@@ -1037,7 +1057,8 @@
         "Bhutan"
       ],
       "area1": 338455.0,
-      "area2": 38394.0
+      "area2": 38394.0,
+      "infoToShow": "338 mil km²"
     }
   },
   {
@@ -1110,7 +1131,8 @@
         "Croatia"
       ],
       "population1": 9748007,
-      "population2": 3866233
+      "population2": 3866233,
+      "infoToShow": "9.7 millones habitantes"
     }
   },
   {
@@ -1182,7 +1204,8 @@
         "Belize"
       ],
       "population1": 9539502,
-      "population2": 417634
+      "population2": 417634,
+      "infoToShow": "9.5 millones habitantes"
     }
   },
   {
@@ -1276,7 +1299,8 @@
         "French Polynesia"
       ],
       "area1": 446550.0,
-      "area2": 4167.0
+      "area2": 4167.0,
+      "infoToShow": "447 mil km²"
     }
   },
   {
@@ -1295,7 +1319,8 @@
         "Saint Pierre and Miquelon"
       ],
       "area1": 7692024.0,
-      "area2": 242.0
+      "area2": 242.0,
+      "infoToShow": "7.7 millones de km²"
     }
   },
   {
@@ -1333,7 +1358,8 @@
         "Brunei"
       ],
       "population1": 23317031,
-      "population2": 455500
+      "population2": 455500,
+      "infoToShow": "23.3 millones habitantes"
     }
   },
   {
@@ -1389,7 +1415,8 @@
         "Åland Islands"
       ],
       "population1": 6142180,
-      "population2": 30654
+      "population2": 30654,
+      "infoToShow": "6.1 millones habitantes"
     }
   },
   {
@@ -1427,7 +1454,8 @@
         "Mayotte"
       ],
       "area1": 619745.0,
-      "area2": 374.0
+      "area2": 374.0,
+      "infoToShow": "620 mil km²"
     }
   },
   {
@@ -1481,7 +1509,8 @@
         "Qatar"
       ],
       "population1": 10605098,
-      "population2": 3173024
+      "population2": 3173024,
+      "infoToShow": "10.6 millones habitantes"
     }
   },
   {
@@ -1535,7 +1564,8 @@
         "Saint Barthélemy"
       ],
       "population1": 169828911,
-      "population2": 10562
+      "population2": 10562,
+      "infoToShow": "169.8 millones habitantes"
     }
   },
   {
@@ -1609,7 +1639,8 @@
         "Bermuda"
       ],
       "area1": 214969.0,
-      "area2": 54.0
+      "area2": 54.0,
+      "infoToShow": "215 mil km²"
     }
   },
   {
@@ -1738,7 +1769,8 @@
         "Moldova"
       ],
       "population1": 17073087,
-      "population2": 2749076
+      "population2": 2749076,
+      "infoToShow": "17.1 millones habitantes"
     }
   },
   {

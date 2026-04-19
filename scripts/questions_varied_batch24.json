@@ -33,7 +33,8 @@
         "Malta"
       ],
       "area1": 83600.0,
-      "area2": 316.0
+      "area2": 316.0,
+      "infoToShow": "84 mil km²"
     }
   },
   {
@@ -305,7 +306,8 @@
         "Norfolk Island"
       ],
       "population1": 14104969,
-      "population2": 2188
+      "population2": 2188,
+      "infoToShow": "14.1 millones habitantes"
     }
   },
   {
@@ -399,7 +401,8 @@
         "Montserrat"
       ],
       "population1": 6567783,
-      "population2": 4386
+      "population2": 4386,
+      "infoToShow": "6.6 millones habitantes"
     }
   },
   {
@@ -437,7 +440,8 @@
         "Åland Islands"
       ],
       "population1": 9539502,
-      "population2": 30654
+      "population2": 30654,
+      "infoToShow": "9.5 millones habitantes"
     }
   },
   {
@@ -473,7 +477,8 @@
         "Turks and Caicos Islands"
       ],
       "population1": 18079810,
-      "population2": 50828
+      "population2": 50828,
+      "infoToShow": "18.1 millones habitantes"
     }
   },
   {
@@ -510,7 +515,8 @@
         "Mauritania"
       ],
       "population1": 10771504,
-      "population2": 4927532
+      "population2": 4927532,
+      "infoToShow": "10.8 millones habitantes"
     }
   },
   {
@@ -601,7 +607,8 @@
         "Cyprus"
       ],
       "area1": 77589.0,
-      "area2": 9251.0
+      "area2": 9251.0,
+      "infoToShow": "78 mil km²"
     }
   },
   {
@@ -656,7 +663,8 @@
         "El Salvador"
       ],
       "area1": 923768.0,
-      "area2": 21041.0
+      "area2": 21041.0,
+      "infoToShow": "924 mil km²"
     }
   },
   {
@@ -710,7 +718,8 @@
         "Heard Island and McDonald Islands"
       ],
       "area1": 796095.0,
-      "area2": 412.0
+      "area2": 412.0,
+      "infoToShow": "796 mil km²"
     }
   },
   {
@@ -818,7 +827,8 @@
         "Rwanda"
       ],
       "area1": 93028.0,
-      "area2": 26338.0
+      "area2": 26338.0,
+      "infoToShow": "93 mil km²"
     }
   },
   {
@@ -837,7 +847,8 @@
         "Bosnia and Herzegovina"
       ],
       "area1": 93028.0,
-      "area2": 51209.0
+      "area2": 51209.0,
+      "infoToShow": "93 mil km²"
     }
   },
   {
@@ -856,7 +867,8 @@
         "Singapore"
       ],
       "area1": 338455.0,
-      "area2": 710.0
+      "area2": 710.0,
+      "infoToShow": "338 mil km²"
     }
   },
   {
@@ -875,7 +887,8 @@
         "Saint Martin"
       ],
       "population1": 19693423,
-      "population2": 31496
+      "population2": 31496,
+      "infoToShow": "19.7 millones habitantes"
     }
   },
   {
@@ -912,7 +925,8 @@
         "Samoa"
       ],
       "population1": 36170961,
-      "population2": 205557
+      "population2": 205557,
+      "infoToShow": "36.2 millones habitantes"
     }
   },
   {
@@ -950,7 +964,8 @@
         "Malta"
       ],
       "population1": 11825551,
-      "population2": 574250
+      "population2": 574250,
+      "infoToShow": "11.8 millones habitantes"
     }
   },
   {
@@ -969,7 +984,8 @@
         "Cape Verde"
       ],
       "population1": 10771504,
-      "population2": 491233
+      "population2": 491233,
+      "infoToShow": "10.8 millones habitantes"
     }
   },
   {
@@ -988,7 +1004,8 @@
         "Western Sahara"
       ],
       "population1": 27536874,
-      "population2": 600904
+      "population2": 600904,
+      "infoToShow": "27.5 millones habitantes"
     }
   },
   {
@@ -1007,7 +1024,8 @@
         "Switzerland"
       ],
       "area1": 236800.0,
-      "area2": 41284.0
+      "area2": 41284.0,
+      "infoToShow": "237 mil km²"
     }
   },
   {
@@ -1118,7 +1136,8 @@
         "Georgia"
       ],
       "population1": 6437360,
-      "population2": 4000921
+      "population2": 4000921,
+      "infoToShow": "6.4 millones habitantes"
     }
   },
   {
@@ -1208,7 +1227,8 @@
         "Vanuatu"
       ],
       "area1": 783562.0,
-      "area2": 12189.0
+      "area2": 12189.0,
+      "infoToShow": "784 mil km²"
     }
   },
   {
@@ -1280,7 +1300,8 @@
         "Armenia"
       ],
       "area1": 450295.0,
-      "area2": 29743.0
+      "area2": 29743.0,
+      "infoToShow": "450 mil km²"
     }
   },
   {
@@ -1317,7 +1338,8 @@
         "Jersey"
       ],
       "area1": 322463.0,
-      "area2": 116.0
+      "area2": 116.0,
+      "infoToShow": "322 mil km²"
     }
   },
   {
@@ -1406,7 +1428,8 @@
         "Tuvalu"
       ],
       "population1": 18103660,
-      "population2": 10643
+      "population2": 10643,
+      "infoToShow": "18.1 millones habitantes"
     }
   },
   {
@@ -1461,7 +1484,8 @@
         "Grenada"
       ],
       "area1": 1886068.0,
-      "area2": 344.0
+      "area2": 344.0,
+      "infoToShow": "1.9 millones de km²"
     }
   },
   {
@@ -1499,7 +1523,8 @@
         "Aruba"
       ],
       "population1": 241499431,
-      "population2": 107566
+      "population2": 107566,
+      "infoToShow": "241.5 millones habitantes"
     }
   },
   {
@@ -1536,7 +1561,8 @@
         "Montenegro"
       ],
       "area1": 312679.0,
-      "area2": 13812.0
+      "area2": 13812.0,
+      "infoToShow": "313 mil km²"
     }
   },
   {
@@ -1555,7 +1581,8 @@
         "Curaçao"
       ],
       "population1": 13224860,
-      "population2": 156115
+      "population2": 156115,
+      "infoToShow": "13.2 millones habitantes"
     }
   },
   {
@@ -1574,7 +1601,8 @@
         "El Salvador"
       ],
       "area1": 322463.0,
-      "area2": 21041.0
+      "area2": 21041.0,
+      "infoToShow": "322 mil km²"
     }
   },
   {
@@ -1593,7 +1621,8 @@
         "Latvia"
       ],
       "area1": 1267000.0,
-      "area2": 64559.0
+      "area2": 64559.0,
+      "infoToShow": "1.3 millones de km²"
     }
   },
   {
@@ -1612,7 +1641,8 @@
         "Eritrea"
       ],
       "population1": 51159889,
-      "population2": 3607000
+      "population2": 3607000,
+      "infoToShow": "51.2 millones habitantes"
     }
   },
   {
@@ -1665,7 +1695,8 @@
         "Vatican City"
       ],
       "area1": 1240192.0,
-      "area2": 0.49
+      "area2": 0.49,
+      "infoToShow": "1.2 millones de km²"
     }
   },
   {

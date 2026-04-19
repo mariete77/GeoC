@@ -15,7 +15,8 @@
         "São Tomé and Príncipe"
       ],
       "area1": 181034.0,
-      "area2": 964.0
+      "area2": 964.0,
+      "infoToShow": "181 mil km²"
     }
   },
   {
@@ -34,7 +35,8 @@
         "British Indian Ocean Territory"
       ],
       "area1": 112622.0,
-      "area2": 60.0
+      "area2": 60.0,
+      "infoToShow": "113 mil km²"
     }
   },
   {
@@ -70,7 +72,8 @@
         "Bhutan"
       ],
       "population1": 10771504,
-      "population2": 784043
+      "population2": 784043,
+      "infoToShow": "10.8 millones habitantes"
     }
   },
   {
@@ -160,7 +163,8 @@
         "Faroe Islands"
       ],
       "population1": 9748007,
-      "population2": 54885
+      "population2": 54885,
+      "infoToShow": "9.7 millones habitantes"
     }
   },
   {
@@ -216,7 +220,8 @@
         "Lebanon"
       ],
       "area1": 181035.0,
-      "area2": 10452.0
+      "area2": 10452.0,
+      "infoToShow": "181 mil km²"
     }
   },
   {
@@ -235,7 +240,8 @@
         "Fiji"
       ],
       "population1": 11734000,
-      "population2": 900869
+      "population2": 900869,
+      "infoToShow": "11.7 millones habitantes"
     }
   },
   {
@@ -272,7 +278,8 @@
         "Falkland Islands"
       ],
       "population1": 22395489,
-      "population2": 3662
+      "population2": 3662,
+      "infoToShow": "22.4 millones habitantes"
     }
   },
   {
@@ -291,7 +298,8 @@
         "Dominica"
       ],
       "area1": 1104300.0,
-      "area2": 751.0
+      "area2": 751.0,
+      "infoToShow": "1.1 millones de km²"
     }
   },
   {
@@ -435,7 +443,8 @@
         "Pitcairn Islands"
       ],
       "population1": 340110988,
-      "population2": 35
+      "population2": 35,
+      "infoToShow": "340.1 millones habitantes"
     }
   },
   {
@@ -492,7 +501,8 @@
         "Faroe Islands"
       ],
       "population1": 10400720,
-      "population2": 54885
+      "population2": 54885,
+      "infoToShow": "10.4 millones habitantes"
     }
   },
   {
@@ -547,7 +557,8 @@
         "Falkland Islands"
       ],
       "area1": 406752.0,
-      "area2": 12173.0
+      "area2": 12173.0,
+      "infoToShow": "407 mil km²"
     }
   },
   {
@@ -566,7 +577,8 @@
         "Burundi"
       ],
       "area1": 1564110.0,
-      "area2": 27834.0
+      "area2": 27834.0,
+      "infoToShow": "1.6 millones de km²"
     }
   },
   {
@@ -604,7 +616,8 @@
         "Montenegro"
       ],
       "area1": 245857.0,
-      "area2": 13812.0
+      "area2": 13812.0,
+      "infoToShow": "246 mil km²"
     }
   },
   {
@@ -749,7 +762,8 @@
         "Cook Islands"
       ],
       "population1": 18103660,
-      "population2": 15040
+      "population2": 15040,
+      "infoToShow": "18.1 millones habitantes"
     }
   },
   {
@@ -839,7 +853,8 @@
         "Caribbean Netherlands"
       ],
       "population1": 223800000,
-      "population2": 31980
+      "population2": 31980,
+      "infoToShow": "223.8 millones habitantes"
     }
   },
   {
@@ -858,7 +873,8 @@
         "French Polynesia"
       ],
       "population1": 20426568,
-      "population2": 279500
+      "population2": 279500,
+      "infoToShow": "20.4 millones habitantes"
     }
   },
   {
@@ -896,7 +912,8 @@
         "Micronesia"
       ],
       "area1": 2149690.0,
-      "area2": 702.0
+      "area2": 702.0,
+      "infoToShow": "2.1 millones de km²"
     }
   },
   {
@@ -933,7 +950,8 @@
         "Vatican City"
       ],
       "population1": 51159889,
-      "population2": 882
+      "population2": 882,
+      "infoToShow": "51.2 millones habitantes"
     }
   },
   {
@@ -1041,7 +1059,8 @@
         "Vanuatu"
       ],
       "population1": 11867032,
-      "population2": 321409
+      "population2": 321409,
+      "infoToShow": "11.9 millones habitantes"
     }
   },
   {
@@ -1095,7 +1114,8 @@
         "North Macedonia"
       ],
       "area1": 241550.0,
-      "area2": 25713.0
+      "area2": 25713.0,
+      "infoToShow": "242 mil km²"
     }
   },
   {
@@ -1150,7 +1170,8 @@
         "United States Virgin Islands"
       ],
       "area1": 619745.0,
-      "area2": 347.0
+      "area2": 347.0,
+      "infoToShow": "620 mil km²"
     }
   },
   {
@@ -1169,7 +1190,8 @@
         "Heard Island and McDonald Islands"
       ],
       "area1": 9706961.0,
-      "area2": 412.0
+      "area2": 412.0,
+      "infoToShow": "9.7 millones de km²"
     }
   },
   {
@@ -1240,7 +1262,8 @@
         "Solomon Islands"
       ],
       "area1": 2149690.0,
-      "area2": 28896.0
+      "area2": 28896.0,
+      "infoToShow": "2.1 millones de km²"
     }
   },
   {
@@ -1313,7 +1336,8 @@
         "Réunion"
       ],
       "population1": 34090466,
-      "population2": 896175
+      "population2": 896175,
+      "infoToShow": "34.1 millones habitantes"
     }
   },
   {
@@ -1441,7 +1465,8 @@
         "Belize"
       ],
       "population1": 5483450,
-      "population2": 417634
+      "population2": 417634,
+      "infoToShow": "5.5 millones habitantes"
     }
   },
   {
@@ -1477,7 +1502,8 @@
         "United States Virgin Islands"
       ],
       "area1": 2344858.0,
-      "area2": 347.0
+      "area2": 347.0,
+      "infoToShow": "2.3 millones de km²"
     }
   },
   {
@@ -1533,7 +1559,8 @@
         "Latvia"
       ],
       "area1": 1098581.0,
-      "area2": 64559.0
+      "area2": 64559.0,
+      "infoToShow": "1.1 millones de km²"
     }
   },
   {
@@ -1644,7 +1671,8 @@
         "Åland Islands"
       ],
       "population1": 10400720,
-      "population2": 30654
+      "population2": 30654,
+      "infoToShow": "10.4 millones habitantes"
     }
   },
   {
@@ -1700,7 +1728,8 @@
         "Saint Helena, Ascension and Tristan da Cunha"
       ],
       "area1": 112492.0,
-      "area2": 394.0
+      "area2": 394.0,
+      "infoToShow": "112 mil km²"
     }
   },
   {
@@ -1719,7 +1748,8 @@
         "Saint Lucia"
       ],
       "area1": 93028.0,
-      "area2": 616.0
+      "area2": 616.0,
+      "infoToShow": "93 mil km²"
     }
   },
   {
@@ -1756,7 +1786,8 @@
         "Gibraltar"
       ],
       "population1": 43844000,
-      "population2": 38000
+      "population2": 38000,
+      "infoToShow": "43.8 millones habitantes"
     }
   }
 ]

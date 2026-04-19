@@ -365,7 +365,8 @@
         "China"
       ],
       "population1": 339996563,
-      "population2": 1425671352
+      "population2": 1425671352,
+      "infoToShow": "1.4 mil millones habitantes"
     }
   },
   {
@@ -384,7 +385,8 @@
         "Etiopía"
       ],
       "population1": 83294633,
-      "population2": 126527060
+      "population2": 126527060,
+      "infoToShow": "126.5 millones habitantes"
     }
   },
   {
@@ -403,7 +405,8 @@
         "Camerún"
       ],
       "population1": 26439111,
-      "population2": 28647293
+      "population2": 28647293,
+      "infoToShow": "28.6 millones habitantes"
     }
   },
   {
@@ -441,7 +444,8 @@
         "Francia"
       ],
       "population1": 98858950,
-      "population2": 64756584
+      "population2": 64756584,
+      "infoToShow": "98.9 millones habitantes"
     }
   },
   {
@@ -479,7 +483,8 @@
         "Madagascar"
       ],
       "area1": 581730,
-      "area2": 587041
+      "area2": 587041,
+      "infoToShow": "587 mil km²"
     }
   },
   {
@@ -498,7 +503,8 @@
         "Estados Unidos"
       ],
       "area1": 8515767,
-      "area2": 9833517
+      "area2": 9833517,
+      "infoToShow": "9.8 millones de km²"
     }
   },
   {
@@ -517,7 +523,8 @@
         "Azerbaiyán"
       ],
       "area1": 83879,
-      "area2": 86600
+      "area2": 86600,
+      "infoToShow": "87 mil km²"
     }
   },
   {
@@ -536,7 +543,8 @@
         "Sudáfrica"
       ],
       "area1": 1002450,
-      "area2": 1221037
+      "area2": 1221037,
+      "infoToShow": "1.2 millones de km²"
     }
   },
   {

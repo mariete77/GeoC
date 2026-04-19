@@ -365,7 +365,8 @@
         "Reino Unido"
       ],
       "population1": 123294513,
-      "population2": 67736802
+      "population2": 67736802,
+      "infoToShow": "123.3 millones habitantes"
     }
   },
   {
@@ -384,7 +385,8 @@
         "Grecia"
       ],
       "population1": 41026067,
-      "population2": 10341277
+      "population2": 10341277,
+      "infoToShow": "41.0 millones habitantes"
     }
   },
   {
@@ -403,7 +405,8 @@
         "Portugal"
       ],
       "population1": 20017675,
-      "population2": 10247605
+      "population2": 10247605,
+      "infoToShow": "20.0 millones habitantes"
     }
   },
   {
@@ -422,7 +425,8 @@
         "Suecia"
       ],
       "population1": 16665409,
-      "population2": 10612086
+      "population2": 10612086,
+      "infoToShow": "16.7 millones habitantes"
     }
   },
   {
@@ -441,7 +445,8 @@
         "Irak"
       ],
       "population1": 45606480,
-      "population2": 44496122
+      "population2": 44496122,
+      "infoToShow": "45.6 millones habitantes"
     }
   },
   {
@@ -460,7 +465,8 @@
         "Turquía"
       ],
       "area1": 1267000,
-      "area2": 783562
+      "area2": 783562,
+      "infoToShow": "1.3 millones de km²"
     }
   },
   {
@@ -479,7 +485,8 @@
         "España"
       ],
       "area1": 513120,
-      "area2": 505992
+      "area2": 505992,
+      "infoToShow": "513 mil km²"
     }
   },
   {
@@ -498,7 +505,8 @@
         "España"
       ],
       "area1": 1964375,
-      "area2": 505992
+      "area2": 505992,
+      "infoToShow": "2.0 millones de km²"
     }
   },
   {
@@ -517,7 +525,8 @@
         "Portugal"
       ],
       "area1": 199951,
-      "area2": 92212
+      "area2": 92212,
+      "infoToShow": "200 mil km²"
     }
   },
   {
@@ -536,7 +545,8 @@
         "Libia"
       ],
       "area1": 1886068,
-      "area2": 1759540
+      "area2": 1759540,
+      "infoToShow": "1.9 millones de km²"
     }
   },
   {
