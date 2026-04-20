@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+
+<html lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>GeoC - Battle Summary</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;700;800;900&amp;family=Work+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-secondary-container": "#4d694f",
+                        "surface-container-highest": "#e2e3e1",
+                        "on-tertiary-fixed-variant": "#594324",
+                        "surface-dim": "#dadad8",
+                        "surface-bright": "#f9f9f7",
+                        "on-secondary-fixed": "#06210c",
+                        "surface-container-high": "#e8e8e6",
+                        "error-container": "#ffdad6",
+                        "on-primary": "#ffffff",
+                        "on-primary-fixed-variant": "#2d4e31",
+                        "tertiary-fixed-dim": "#e2c199",
+                        "on-surface": "#1a1c1b",
+                        "on-secondary-fixed-variant": "#324d34",
+                        "secondary-fixed": "#cbebc9",
+                        "on-primary-container": "#f7fff2",
+                        "on-tertiary-container": "#fffbff",
+                        "primary-container": "#5a7d5c",
+                        "on-tertiary": "#ffffff",
+                        "inverse-primary": "#aad0aa",
+                        "surface-container": "#eeeeec",
+                        "surface-variant": "#e2e3e1",
+                        "on-background": "#1a1c1b",
+                        "background": "#f9f9f7",
+                        "primary": "#426445",
+                        "on-tertiary-fixed": "#291801",
+                        "outline-variant": "#c2c8bf",
+                        "on-error-container": "#93000a",
+                        "secondary-container": "#c8e8c6",
+                        "surface-container-low": "#f4f4f2",
+                        "on-error": "#ffffff",
+                        "on-primary-fixed": "#002109",
+                        "surface-container-lowest": "#ffffff",
+                        "error": "#ba1a1a",
+                        "on-surface-variant": "#424841",
+                        "tertiary-fixed": "#ffddb4",
+                        "primary-fixed-dim": "#aad0aa",
+                        "outline": "#727970",
+                        "inverse-on-surface": "#f1f1ef",
+                        "secondary-fixed-dim": "#afcfae",
+                        "inverse-surface": "#2f3130",
+                        "surface-tint": "#446647",
+                        "tertiary": "#705837",
+                        "on-secondary": "#ffffff",
+                        "surface": "#f9f9f7",
+                        "secondary": "#49654b",
+                        "primary-fixed": "#c5edc5",
+                        "tertiary-container": "#8b704d",
+                        "highlight": "#D9B991"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "fontFamily": {
+                        "headline": ["Plus Jakarta Sans", "sans-serif"],
+                        "body": ["Work Sans", "sans-serif"],
+                        "label": ["Work Sans", "sans-serif"]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .glass-panel {
+            background: rgba(226, 227, 225, 0.4);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+        }
+        .text-gradient {
+            background: linear-gradient(145deg, #426445, #5a7d5c);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .btn-gradient {
+            background: linear-gradient(145deg, #426445, #5a7d5c);
+        }
+        .ambient-shadow {
+            box-shadow: 0 16px 32px -4px rgba(26, 28, 27, 0.06);
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background text-on-background font-body min-h-screen flex flex-col antialiased">
+<!-- TopAppBar -->
+<header class="bg-[#f9f9f7] text-[#426445] font-['Plus_Jakarta_Sans'] font-bold tracking-tighter text-2xl docked full-width top-0 sticky flex justify-between items-center w-full px-6 py-4 max-w-7xl mx-auto z-40 bg-stone-100">
+<div class="flex items-center gap-4">
+<div class="w-10 h-10 rounded-full overflow-hidden bg-surface-container-highest">
+<img alt="User avatar" class="w-full h-full object-cover" data-alt="Close up portrait of a young man smiling, professional studio lighting against a neutral background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBRA65G6gJSWRfMr6mvwNEJNjrWLlx-Dhk0KMQrrBZujJ_GDa19fOSuRg8WjIn_McmScMdWe-4wRhkmWzd26lJuDCIgC_yCFeUAVQqXUmusmCiCY2i0ZehXjL2rWL5_srn7-64HJ2qGAoZgFSd5BNMr5Apo6tO6afj_3Sdn4mfCFCRGAle9Rdl2FFHHjvyqb2otZxXipn2CVfTytCvw-iKvJVPN2W-armCLtFAE8IO0uhb4UQvDXs4ntQfHsrRIo6dG4r9D97O0ktV4"/>
+</div>
+<span class="font-['Plus_Jakarta_Sans'] font-black text-3xl tracking-tighter text-[#426445]">GeoC</span>
+</div>
+<button class="w-12 h-12 flex items-center justify-center rounded-full hover:bg-stone-200/50 transition-colors">
+<span class="material-symbols-outlined text-[#426445]">settings</span>
+</button>
+</header>
+<!-- Main Content Canvas (No Shell Navs as this is a linear/transactional screen) -->
+<main class="flex-grow flex flex-col items-center justify-start px-4 py-8 md:py-12 max-w-4xl mx-auto w-full relative">
+<!-- Victory Banner - Overhanging Asymmetry -->
+<div class="w-full relative mb-12 flex justify-end md:justify-center mt-4">
+<div class="absolute -left-4 md:left-0 top-0 text-[120px] md:text-[180px] font-headline font-black text-surface-container-high leading-none select-none tracking-tighter opacity-50 z-0">
+                VICTORIA
+            </div>
+<div class="relative z-10 bg-primary-container text-on-primary-container pl-8 pr-12 py-6 rounded-l-full md:rounded-full ml-auto md:mx-auto ambient-shadow max-w-md w-full sm:w-auto">
+<h1 class="font-headline text-4xl md:text-5xl font-extrabold tracking-tight">Victoria</h1>
+<p class="font-body text-inverse-primary text-sm mt-1">vs. Explorer_99</p>
+</div>
+</div>
+<!-- Bento Grid Layout -->
+<div class="grid grid-cols-1 md:grid-cols-12 gap-6 w-full relative z-10">
+<!-- Key Stats Box - Left -->
+<div class="md:col-span-5 bg-surface-container-lowest rounded-3xl p-8 ambient-shadow relative overflow-hidden flex flex-col justify-center">
+<div class="absolute top-0 right-0 w-32 h-32 bg-highlight opacity-10 rounded-bl-full"></div>
+<h2 class="font-headline text-xl font-bold text-on-surface mb-6">Resumen del Duelo</h2>
+<div class="space-y-6">
+<div class="flex justify-between items-end border-b border-surface-variant/30 pb-4">
+<span class="font-label text-sm text-on-surface-variant uppercase tracking-widest">Preguntas Correctas</span>
+<span class="font-headline text-3xl font-black text-primary">8<span class="text-lg text-outline font-medium">/10</span></span>
+</div>
+<div class="flex justify-between items-end pb-2">
+<span class="font-label text-sm text-on-surface-variant uppercase tracking-widest">Puntos Obtenidos</span>
+<span class="font-headline text-4xl font-black text-tertiary-container">+450</span>
+</div>
+</div>
+</div>
+<!-- ELO Graph Area - Right -->
+<div class="md:col-span-7 bg-surface-container-low rounded-3xl p-6 md:p-8 ambient-shadow relative overflow-hidden flex flex-col">
+<div class="flex justify-between items-center mb-6">
+<div>
+<h2 class="font-headline text-xl font-bold text-on-surface">Progresión ELO</h2>
+<p class="font-body text-sm text-on-surface-variant">Rango: Cartógrafo Maestro</p>
+</div>
+<div class="bg-secondary-container text-on-secondary-container px-4 py-2 rounded-full font-headline font-bold">
+                        +24 ELO
+                    </div>
+</div>
+<!-- Abstract Graph Area -->
+<div class="flex-grow min-h-[200px] w-full relative flex items-end pt-8">
+<!-- Grid Lines -->
+<div class="absolute inset-0 flex flex-col justify-between z-0">
+<div class="w-full h-px bg-outline-variant opacity-20"></div>
+<div class="w-full h-px bg-outline-variant opacity-20"></div>
+<div class="w-full h-px bg-outline-variant opacity-20"></div>
+<div class="w-full h-px bg-outline-variant opacity-20"></div>
+</div>
+<!-- SVG Line Graph Concept -->
+<svg class="w-full h-full preserve-aspect-ratio z-10 overflow-visible" fill="none" stroke="currentColor" viewbox="0 0 100 40">
+<path d="M0,35 C15,32 25,28 40,25 S60,28 75,15 S90,10 100,5" stroke="var(--tw-colors-primary)" stroke-linecap="round" stroke-width="2" vector-effect="non-scaling-stroke"></path>
+<circle cx="100" cy="5" fill="var(--tw-colors-primary)" r="2.5"></circle>
+<!-- Subtle gradient fill under curve -->
+<path d="M0,35 C15,32 25,28 40,25 S60,28 75,15 S90,10 100,5 L100,40 L0,40 Z" fill="url(#elo-gradient)" opacity="0.2"></path>
+<defs>
+<lineargradient id="elo-gradient" x1="0" x2="0" y1="0" y2="1">
+<stop offset="0%" stop-color="var(--tw-colors-primary)"></stop>
+<stop offset="100%" stop-color="transparent"></stop>
+</lineargradient>
+</defs>
+</svg>
+<!-- Floating current score label -->
+<div class="absolute top-2 right-0 glass-panel px-3 py-1 rounded-lg text-xs font-headline font-bold text-primary shadow-sm">
+                        1845
+                    </div>
+</div>
+</div>
+<!-- Detail Cards (Map snippet / Opponent) -->
+<div class="md:col-span-12 grid grid-cols-1 sm:grid-cols-2 gap-6 mt-2">
+<div class="bg-surface-container-highest rounded-2xl h-48 relative overflow-hidden group">
+<img alt="Map terrain" class="w-full h-full object-cover opacity-60" data-alt="Satellite view of diverse geographical terrain with mountains and valleys, earth tones, high contrast" data-location="Andes Mountains" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAeR_4ge5ZUko8Svcyt_3Bbzzha9rT974oFUFCpw5gT1za9iLfmprngqrmeKhiUdVdY2n2DHXXGC59WNWmFsn4bo-qfSjv0XZGZ0N3fpvrFMj9pLkFbkLG6MnF4dLV5HYtVllX0crQzf4a-9A_3Owl_jTJSvn__IWzbF22b5PKNM4KHBQZwIbmgL-BmM-Wh6BE3FwIzPn1r3aXH2dfoTM7b-zcHv33YUgcFzFoX7OHZ801GWuD5zVLVIA8Qmoq35zY019SedzQuXae-"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-highest to-transparent"></div>
+<div class="absolute bottom-4 left-4 right-4">
+<p class="font-label text-xs uppercase tracking-widest text-on-surface-variant">Mejor Acierto</p>
+<p class="font-headline font-bold text-lg text-on-surface">Lago Titicaca, Perú</p>
+<p class="font-body text-sm text-primary font-medium mt-1">Error: 12 km</p>
+</div>
+</div>
+<div class="bg-surface-container-lowest rounded-2xl h-48 p-6 flex flex-col justify-between ambient-shadow">
+<div>
+<p class="font-label text-xs uppercase tracking-widest text-on-surface-variant mb-4">Oponente</p>
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-full overflow-hidden bg-surface-variant">
+<img alt="Opponent avatar" class="w-full h-full object-cover grayscale" data-alt="Black and white portrait of a person looking thoughtful, soft lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA_y5AwC6y1ODGMldj4Jb1REq99lXGHBIzY6677Y6TkcKOu8fXk6JIlqfPGlUo5EQgt4IPlTILegUir7eTrZQ_orWC7tvIFvrz6pm4xmzv2KoIBTB4upC_sE_91HwVtLPYHPxRbcQ9kBgWKvJZtnlC_TauBLWDmXMS4Wl5-GWigA8X6BRHZFM7onRhaY8V4aUSX_x8aAFS-jZG8hSGFzx_CZQA0LR2KUZ40GF86mrj8u5A0kK2s_Ggav2RzNUN6J_cDybiHNB7yh_6z"/>
+</div>
+<div>
+<p class="font-headline font-bold text-lg text-on-surface">Explorer_99</p>
+<p class="font-body text-sm text-on-surface-variant">ELO: 1820 <span class="text-error font-medium">(-24)</span></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Action Buttons -->
+<div class="w-full flex flex-col sm:flex-row gap-4 mt-12 justify-center pb-8">
+<button class="px-8 py-4 rounded-full font-headline font-bold text-primary border border-outline-variant/30 hover:bg-surface-container-high transition-colors min-w-[200px]">
+                Volver al Inicio
+            </button>
+<button class="px-8 py-4 rounded-full font-headline font-bold text-on-tertiary-container bg-tertiary-container hover:bg-[#7a6242] transition-colors min-w-[200px] flex items-center justify-center gap-2 ambient-shadow">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">swords</span>
+                Revancha
+            </button>
+</div>
+</main>
+</body></html>

@@ -1,13 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
+import 'package:google_fonts/google_fonts.dart';
 import '../../providers/auth_provider.dart';
 import '../../providers/user_provider.dart';
-import '../../../core/theme/app_text_styles.dart';
 import '../../../core/theme/app_colors.dart';
-import '../../../core/constants/game_constants.dart';
+import '../../../domain/entities/user.dart';
 
-/// Home screen
+/// Home screen — "PantallaPrincipal" mockup.
+/// Bento-grid layout with editorial player stats and game mode cards.
 class HomeScreen extends ConsumerWidget {
   const HomeScreen({super.key});
 
@@ -17,381 +18,338 @@ class HomeScreen extends ConsumerWidget {
     final userState = ref.watch(userNotifierProvider);
     final dailyGames = ref.watch(dailyGamesStatusProvider);
 
-    // Load user profile from Firestore in background
-    if (currentUser != null && userState.valueOrNull == null && !userState.hasError) {
+    // Load user profile from Firestore
+    if (currentUser != null &&
+        userState.valueOrNull == null &&
+        !userState.isLoading &&
+        !userState.hasError) {
       WidgetsBinding.instance.addPostFrameCallback((_) {
         ref.read(userNotifierProvider.notifier).getUserProfile(currentUser.userId);
       });
     }
 
-    // Use Firestore user if available, otherwise fall back to auth user
     final displayUser = userState.valueOrNull ?? currentUser;
 
     if (displayUser == null) {
-      return const Scaffold(
-        body: Center(child: Text('No user data')),
+      return Scaffold(
+        backgroundColor: AppColors.background,
+        body: Center(
+          child: Column(
+            mainAxisSize: MainAxisSize.min,
+            children: [
+              Icon(Icons.explore, size: 64, color: AppColors.primary.withOpacity(0.3)),
+              const SizedBox(height: 16),
+              Text(
+                'Cargando...',
+                style: GoogleFonts.workSans(
+                  color: AppColors.onSurfaceVariant,
+                  fontSize: 16,
+                ),
+              ),
+            ],
+          ),
+        ),
       );
     }
 
     return Scaffold(
-      body: SafeArea(
-        child: _buildHomeContent(context, ref, displayUser, dailyGames),
+      backgroundColor: AppColors.background,
+      body: Column(
+        children: [
+          // ── Top App Bar ───────────────────────────────
+          _buildTopBar(context, displayUser),
+
+          // ── Scrollable Content ─────────────────────────
+          Expanded(
+            child: SingleChildScrollView(
+              padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 24),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  // Player Stats Section
+                  _buildPlayerStats(context, displayUser),
+                  const SizedBox(height: 24),
+
+                  // Game Mode Cards
+                  _buildGameModes(context, ref, dailyGames),
+                  const SizedBox(height: 24),
+
+                  // Quick Actions
+                  _buildQuickActions(context),
+                ],
+              ),
+            ),
+          ),
+        ],
+      ),
+      // ── Bottom Navigation Bar (mobile) ───────────────
+      bottomNavigationBar: MediaQuery.of(context).size.width < 640
+          ? _buildBottomNavBar(context)
+          : null,
+    );
+  }
+
+  // ── Top App Bar ─────────────────────────────────────────
+
+  Widget _buildTopBar(BuildContext context, User user) {
+    return Container(
+      padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 16),
+      decoration: const BoxDecoration(
+        color: AppColors.background,
+      ),
+      child: SafeArea(
+        bottom: false,
+        child: Row(
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          children: [
+            Row(
+              children: [
+                // Avatar
+                CircleAvatar(
+                  radius: 20,
+                  backgroundImage:
+                      user.photoUrl != null ? NetworkImage(user.photoUrl!) : null,
+                  backgroundColor: AppColors.surfaceContainerHigh,
+                  child: user.photoUrl == null
+                      ? Text(
+                          user.displayName.isNotEmpty ? user.displayName[0].toUpperCase() : '?',
+                          style: GoogleFonts.plusJakartaSans(
+                            fontWeight: FontWeight.w700,
+                            color: AppColors.onSurface,
+                          ),
+                        )
+                      : null,
+                ),
+                const SizedBox(width: 12),
+                // Logo
+                Text(
+                  'GeoC',
+                  style: GoogleFonts.plusJakartaSans(
+                    fontSize: 28,
+                    fontWeight: FontWeight.w900,
+                    color: AppColors.primary,
+                    letterSpacing: -1.5,
+                  ),
+                ),
+              ],
+            ),
+            // Settings
+            Container(
+              decoration: BoxDecoration(
+                shape: BoxShape.circle,
+                color: AppColors.primary.withOpacity(0.08),
+              ),
+              child: IconButton(
+                onPressed: () {
+                  // TODO: Navigate to settings
+                },
+                icon: Icon(Icons.settings_outlined, color: AppColors.primary),
+              ),
+            ),
+          ],
+        ),
       ),
     );
   }
 
-  Widget _buildHomeContent(
-    BuildContext context,
-    WidgetRef ref,
-    dynamic user,
-    DailyGamesStatus dailyGames,
-  ) {
-    return CustomScrollView(
-      slivers: [
-        // App Bar
-        SliverAppBar(
-          expandedHeight: 200,
-          floating: false,
-          pinned: true,
-          flexibleSpace: FlexibleSpaceBar(
-            background: Container(
-              decoration: BoxDecoration(
-                gradient: LinearGradient(
-                  begin: Alignment.topLeft,
-                  end: Alignment.bottomRight,
-                  colors: [
-                    AppColors.primary,
-                    AppColors.primaryDark,
-                  ],
+  // ── Player Stats Section ────────────────────────────────
+
+  Widget _buildPlayerStats(BuildContext context, User user) {
+    final winStreak = user.stats.currentWinStreak;
+    final elo = user.elo;
+
+    return Container(
+      padding: const EdgeInsets.all(32),
+      decoration: BoxDecoration(
+        color: AppColors.surfaceContainerLow,
+        borderRadius: BorderRadius.circular(16),
+      ),
+      child: Row(
+        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+        children: [
+          // Left — Player Info
+          Expanded(
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Text(
+                  'EXPLORER',
+                  style: GoogleFonts.workSans(
+                    fontSize: 12,
+                    fontWeight: FontWeight.w600,
+                    color: AppColors.onSurfaceVariant,
+                    letterSpacing: 2,
+                  ),
                 ),
-              ),
-              child: SafeArea(
-                child: Padding(
-                  padding: const EdgeInsets.all(16),
-                  child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    mainAxisAlignment: MainAxisAlignment.end,
+                const SizedBox(height: 8),
+                Text(
+                  user.displayName,
+                  style: GoogleFonts.plusJakartaSans(
+                    fontSize: 36,
+                    fontWeight: FontWeight.w700,
+                    color: AppColors.onSurface,
+                    height: 1.1,
+                  ),
+                ),
+                const SizedBox(height: 12),
+                // Streak badge
+                Container(
+                  padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 6),
+                  decoration: BoxDecoration(
+                    color: AppColors.tertiaryContainer.withOpacity(0.2),
+                    borderRadius: BorderRadius.circular(9999),
+                  ),
+                  child: Row(
+                    mainAxisSize: MainAxisSize.min,
                     children: [
-                      Row(
-                        children: [
-                          // Avatar
-                          CircleAvatar(
-                            radius: 32,
-                            backgroundImage: user.photoUrl != null
-                                ? NetworkImage(user.photoUrl!)
-                                : null,
-                            child: user.photoUrl == null
-                                ? Text(
-                                    user.displayName[0].toUpperCase(),
-                                    style: AppTextStyles.h2.copyWith(
-                                      color: Colors.white,
-                                    ),
-                                  )
-                                : null,
-                          ),
-                          const SizedBox(width: 16),
-                          // Name and ELO
-                          Expanded(
-                            child: Column(
-                              crossAxisAlignment: CrossAxisAlignment.start,
-                              children: [
-                                Text(
-                                  user.displayName,
-                                  style: AppTextStyles.h2.copyWith(
-                                    color: Colors.white,
-                                  ),
-                                ),
-                                const SizedBox(height: 4),
-                                Row(
-                                  children: [
-                                    const Icon(
-                                      Icons.star,
-                                      color: AppColors.secondary,
-                                      size: 20,
-                                    ),
-                                    const SizedBox(width: 4),
-                                    Text(
-                                      '${user.elo} ELO',
-                                      style: AppTextStyles.elo.copyWith(
-                                        color: AppColors.secondary,
-                                        fontSize: 24,
-                                      ),
-                                    ),
-                                  ],
-                                ),
-                              ],
-                            ),
-                          ),
-                          // Settings button
-                          IconButton(
-                            onPressed: () {
-                              // TODO: Navigate to settings
-                            },
-                            icon: const Icon(
-                              Icons.settings,
-                              color: Colors.white,
-                            ),
-                          ),
-                        ],
-                      ),
-                      // Rank badge
-                      const SizedBox(height: 16),
-                      Container(
-                        padding:
-                            const EdgeInsets.symmetric(horizontal: 12, vertical: 4),
-                        decoration: BoxDecoration(
-                          color: Colors.white.withOpacity(0.2),
-                          borderRadius: BorderRadius.circular(20),
-                        ),
-                        child: Row(
-                          mainAxisSize: MainAxisSize.min,
-                          children: [
-                            const Icon(
-                              Icons.military_tech,
-                              color: AppColors.rankGold,
-                              size: 16,
-                            ),
-                            const SizedBox(width: 4),
-                            Text(
-                              user.rank,
-                              style: AppTextStyles.bodyMedium.copyWith(
-                                color: Colors.white,
-                                fontWeight: FontWeight.bold,
-                              ),
-                            ),
-                          ],
+                      Icon(Icons.local_fire_department,
+                          size: 16, color: AppColors.tertiary),
+                      const SizedBox(width: 4),
+                      Text(
+                        'Streak: $winStreak',
+                        style: GoogleFonts.workSans(
+                          fontSize: 13,
+                          fontWeight: FontWeight.w600,
+                          color: AppColors.tertiary,
                         ),
                       ),
                     ],
                   ),
                 ),
-              ),
-            ),
-          ),
-        ),
-
-        // Content
-        SliverToBoxAdapter(
-          child: Padding(
-            padding: const EdgeInsets.all(16),
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                // Stats cards
-                _buildStatsRow(user),
-
-                const SizedBox(height: 24),
-
-                // Game mode buttons
-                _buildGameModes(context, ref, dailyGames),
-
-                const SizedBox(height: 24),
-
-                // Quick actions
-                _buildQuickActions(context),
-
-                const SizedBox(height: 24),
-
-                // Recent matches
-                _buildRecentMatches(context),
               ],
             ),
           ),
-        ),
-      ],
-    );
-  }
-
-  Widget _buildStatsRow(dynamic user) {
-    return Row(
-      children: [
-        Expanded(
-          child: _buildStatCard(
-            'Partidas',
-            '${user.stats.totalGames}',
-            Icons.sports_esports,
-            AppColors.primary,
-          ),
-        ),
-        const SizedBox(width: 12),
-        Expanded(
-          child: _buildStatCard(
-            'Victorias',
-            '${user.stats.wins}',
-            Icons.emoji_events,
-            AppColors.correct,
-          ),
-        ),
-        const SizedBox(width: 12),
-        Expanded(
-          child: _buildStatCard(
-            'Racha',
-            '${user.stats.currentWinStreak}',
-            Icons.local_fire_department,
-            AppColors.secondary,
-          ),
-        ),
-      ],
-    );
-  }
-
-  Widget _buildStatCard(String title, String value, IconData icon, Color color) {
-    return Container(
-      padding: const EdgeInsets.all(16),
-      decoration: BoxDecoration(
-        color: AppColors.surface,
-        borderRadius: BorderRadius.circular(16),
-        boxShadow: [
-          BoxShadow(
-            color: AppColors.shadow,
-            blurRadius: 10,
-            offset: const Offset(0, 4),
-          ),
-        ],
-      ),
-      child: Column(
-        children: [
-          Icon(icon, color: color, size: 24),
-          const SizedBox(height: 8),
-          Text(
-            value,
-            style: AppTextStyles.h3.copyWith(
-              color: color,
-              fontWeight: FontWeight.bold,
-            ),
-          ),
-          const SizedBox(height: 4),
-          Text(
-            title,
-            style: AppTextStyles.bodySmall,
+          // Right — ELO Score
+          Column(
+            crossAxisAlignment: CrossAxisAlignment.end,
+            children: [
+              Text(
+                'GLOBAL RATING',
+                style: GoogleFonts.workSans(
+                  fontSize: 12,
+                  fontWeight: FontWeight.w600,
+                  color: AppColors.onSurfaceVariant,
+                  letterSpacing: 2,
+                ),
+              ),
+              const SizedBox(height: 4),
+              Text(
+                '$elo',
+                style: GoogleFonts.plusJakartaSans(
+                  fontSize: 56,
+                  fontWeight: FontWeight.w900,
+                  color: AppColors.primary,
+                  height: 1,
+                ),
+              ),
+              const SizedBox(height: 4),
+              Text(
+                'ELO Score',
+                style: GoogleFonts.workSans(
+                  fontSize: 13,
+                  color: AppColors.primaryContainer,
+                ),
+              ),
+            ],
           ),
         ],
       ),
     );
   }
+
+  // ── Game Modes (Bento Grid) ─────────────────────────────
 
   Widget _buildGameModes(
     BuildContext context,
     WidgetRef ref,
     DailyGamesStatus dailyGames,
   ) {
+    final isWide = MediaQuery.of(context).size.width >= 640;
+
+    if (isWide) {
+      return Column(
+        children: [
+          Row(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Expanded(flex: 8, child: _buildQuickPlayCard(context, dailyGames)),
+              const SizedBox(width: 16),
+              Expanded(flex: 4, child: _buildRankedCard(context, dailyGames)),
+            ],
+          ),
+          const SizedBox(height: 16),
+          Row(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Expanded(child: _buildGhostRunCard(context)),
+              const SizedBox(width: 16),
+              Expanded(child: _buildMultiplayerCard(context)),
+            ],
+          ),
+        ],
+      );
+    }
+
     return Column(
-      crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        Text(
-          'Modos de Juego',
-          style: AppTextStyles.h3,
-        ),
+        _buildQuickPlayCard(context, dailyGames),
         const SizedBox(height: 16),
-        // Casual game
-        _buildGameModeCard(
-          'Partida Rápida',
-          'Sin ELO • Diviértete',
-          Icons.play_arrow,
-          AppColors.primary,
-          dailyGames.canPlayCasual,
-          dailyGames.casualRemaining >= 999 ? '∞' : '${dailyGames.casualRemaining}',
-          () {
-            context.go('/game/easy');
-          },
-        ),
-        const SizedBox(height: 12),
-        // Ranked game
-        _buildGameModeCard(
-          'Ranked',
-          'ELO • Compite en el ranking',
-          Icons.leaderboard,
-          AppColors.secondary,
-          dailyGames.canPlayRanked,
-          '${dailyGames.rankedRemaining}',
-          () {
-            context.go('/game/medium');
-          },
-        ),
+        _buildRankedCard(context, dailyGames),
+        const SizedBox(height: 16),
+        _buildGhostRunCard(context),
+        const SizedBox(height: 16),
+        _buildMultiplayerCard(context),
       ],
     );
   }
 
-  Widget _buildGameModeCard(
-    String title,
-    String subtitle,
-    IconData icon,
-    Color color,
-    bool canPlay,
-    String remaining,
-    VoidCallback onTap,
-  ) {
+  /// Partida Rápida — dominant CTA with green gradient
+  Widget _buildQuickPlayCard(BuildContext context, DailyGamesStatus dailyGames) {
     return Container(
       decoration: BoxDecoration(
-        color: AppColors.surface,
         borderRadius: BorderRadius.circular(16),
-        boxShadow: [
-          BoxShadow(
-            color: AppColors.shadow,
-            blurRadius: 10,
-            offset: const Offset(0, 4),
-          ),
-        ],
+        gradient: const LinearGradient(
+          begin: Alignment.topLeft,
+          end: Alignment.bottomRight,
+          colors: [Color(0xFFD5F2E5), Color(0xFFB9D9B8)],
+        ),
       ),
       child: Material(
         color: Colors.transparent,
-        borderRadius: BorderRadius.circular(16),
         child: InkWell(
-          onTap: canPlay ? onTap : null,
           borderRadius: BorderRadius.circular(16),
+          onTap: dailyGames.canPlayCasual ? () => context.go('/game/easy') : null,
           child: Padding(
-            padding: const EdgeInsets.all(16),
-            child: Row(
+            padding: const EdgeInsets.all(32),
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
               children: [
+                // Icon badge
                 Container(
-                  width: 56,
-                  height: 56,
+                  padding: const EdgeInsets.all(12),
                   decoration: BoxDecoration(
-                    color: color.withOpacity(0.1),
-                    borderRadius: BorderRadius.circular(12),
+                    color: Colors.white.withOpacity(0.5),
+                    shape: BoxShape.circle,
                   ),
-                  child: Icon(icon, color: color, size: 28),
+                  child: Icon(Icons.bolt, size: 28, color: AppColors.primary),
                 ),
-                const SizedBox(width: 16),
-                Expanded(
-                  child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      Text(
-                        title,
-                        style: AppTextStyles.bodyLarge.copyWith(
-                          fontWeight: FontWeight.bold,
-                        ),
-                      ),
-                      const SizedBox(height: 4),
-                      Text(
-                        subtitle,
-                        style: AppTextStyles.bodySmall,
-                      ),
-                    ],
+                const SizedBox(height: 48),
+                Text(
+                  'Partida Rápida',
+                  style: GoogleFonts.plusJakartaSans(
+                    fontSize: 28,
+                    fontWeight: FontWeight.w700,
+                    color: AppColors.primary,
                   ),
                 ),
-                if (!canPlay)
-                  const Icon(
-                    Icons.lock,
-                    color: AppColors.textSecondary,
-                  )
-                else
-                  Column(
-                    children: [
-                      Text(
-                        remaining,
-                        style: AppTextStyles.h3.copyWith(
-                          color: color,
-                          fontWeight: FontWeight.bold,
-                        ),
-                      ),
-                      Text(
-                        'restantes',
-                        style: AppTextStyles.bodySmall,
-                      ),
-                    ],
+                const SizedBox(height: 8),
+                Text(
+                  'Salta a una partida casual instantánea.',
+                  style: GoogleFonts.workSans(
+                    fontSize: 15,
+                    color: AppColors.primaryContainer,
                   ),
+                ),
               ],
             ),
           ),
@@ -399,6 +357,200 @@ class HomeScreen extends ConsumerWidget {
       ),
     );
   }
+
+  /// Ranked — compact card
+  Widget _buildRankedCard(BuildContext context, DailyGamesStatus dailyGames) {
+    return Container(
+      decoration: BoxDecoration(
+        color: AppColors.surfaceContainerHigh,
+        borderRadius: BorderRadius.circular(16),
+        border: Border.all(
+            color: AppColors.outlineVariant.withOpacity(0.15)),
+        boxShadow: [
+          BoxShadow(
+            color: Colors.black.withOpacity(0.03),
+            blurRadius: 32,
+            offset: const Offset(0, 8),
+          ),
+        ],
+      ),
+      child: Material(
+        color: Colors.transparent,
+        child: InkWell(
+          borderRadius: BorderRadius.circular(16),
+          onTap:
+              dailyGames.canPlayRanked ? () => context.go('/game/medium') : null,
+          child: Padding(
+            padding: const EdgeInsets.all(24),
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Container(
+                  padding: const EdgeInsets.all(12),
+                  decoration: BoxDecoration(
+                    color: AppColors.surface,
+                    shape: BoxShape.circle,
+                    border: Border.all(
+                        color: AppColors.outlineVariant.withOpacity(0.1)),
+                    boxShadow: [
+                      BoxShadow(
+                        color: Colors.black.withOpacity(0.05),
+                        blurRadius: 8,
+                        offset: const Offset(0, 2),
+                      ),
+                    ],
+                  ),
+                  child:
+                      Icon(Icons.leaderboard, size: 22, color: AppColors.tertiary),
+                ),
+                const SizedBox(height: 48),
+                Text(
+                  'Ranked',
+                  style: GoogleFonts.plusJakartaSans(
+                    fontSize: 20,
+                    fontWeight: FontWeight.w700,
+                    color: AppColors.onSurface,
+                  ),
+                ),
+                const SizedBox(height: 4),
+                Text(
+                  'Compite por ELO y sube en el ranking global.',
+                  style: GoogleFonts.workSans(
+                    fontSize: 13,
+                    color: AppColors.onSurfaceVariant,
+                  ),
+                ),
+              ],
+            ),
+          ),
+        ),
+      ),
+    );
+  }
+
+  /// Multijugador — row card similar to Ghost Run
+  Widget _buildMultiplayerCard(BuildContext context) {
+    return Container(
+      decoration: BoxDecoration(
+        color: AppColors.surfaceContainerLowest,
+        borderRadius: BorderRadius.circular(16),
+        border: Border.all(
+            color: AppColors.outlineVariant.withOpacity(0.15)),
+      ),
+      child: Material(
+        color: Colors.transparent,
+        child: InkWell(
+          borderRadius: BorderRadius.circular(16),
+          onTap: () => context.go('/matchmaking/casual'),
+          child: Padding(
+            padding: const EdgeInsets.all(24),
+            child: Row(
+              children: [
+                Container(
+                  padding: const EdgeInsets.all(16),
+                  decoration: BoxDecoration(
+                    color: AppColors.tertiaryContainer.withOpacity(0.2),
+                    borderRadius: BorderRadius.circular(12),
+                  ),
+                  child: Icon(Icons.sports_martial_arts,
+                      size: 28, color: AppColors.tertiary),
+                ),
+                const SizedBox(width: 20),
+                Expanded(
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Text(
+                        'Multijugador',
+                        style: GoogleFonts.plusJakartaSans(
+                          fontSize: 22,
+                          fontWeight: FontWeight.w700,
+                          color: AppColors.onSurface,
+                        ),
+                      ),
+                      const SizedBox(height: 4),
+                      Text(
+                        'Enfréntate a otros jugadores en tiempo real.',
+                        style: GoogleFonts.workSans(
+                          fontSize: 14,
+                          color: AppColors.onSurfaceVariant,
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+                Icon(Icons.arrow_forward,
+                    size: 32, color: AppColors.outlineVariant),
+              ],
+            ),
+          ),
+        ),
+      ),
+    );
+  }
+
+  /// Fantasma (Ghost Run) — full-width row card
+  Widget _buildGhostRunCard(BuildContext context) {
+    return Container(
+      decoration: BoxDecoration(
+        color: AppColors.surfaceContainerLowest,
+        borderRadius: BorderRadius.circular(16),
+        border: Border.all(
+            color: AppColors.outlineVariant.withOpacity(0.15)),
+      ),
+      child: Material(
+        color: Colors.transparent,
+        child: InkWell(
+          borderRadius: BorderRadius.circular(16),
+          onTap: () => context.go('/matchmaking/ghostRun'),
+          child: Padding(
+            padding: const EdgeInsets.all(24),
+            child: Row(
+              children: [
+                Container(
+                  padding: const EdgeInsets.all(16),
+                  decoration: BoxDecoration(
+                    color: AppColors.secondaryContainer.withOpacity(0.5),
+                    borderRadius: BorderRadius.circular(12),
+                  ),
+                  child: Icon(Icons.history_edu,
+                      size: 28, color: AppColors.secondary),
+                ),
+                const SizedBox(width: 20),
+                Expanded(
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Text(
+                        'Fantasma',
+                        style: GoogleFonts.plusJakartaSans(
+                          fontSize: 22,
+                          fontWeight: FontWeight.w700,
+                          color: AppColors.onSurface,
+                        ),
+                      ),
+                      const SizedBox(height: 4),
+                      Text(
+                        'Practica contra las mejores partidas pasadas.',
+                        style: GoogleFonts.workSans(
+                          fontSize: 14,
+                          color: AppColors.onSurfaceVariant,
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+                Icon(Icons.arrow_forward,
+                    size: 32, color: AppColors.outlineVariant),
+              ],
+            ),
+          ),
+        ),
+      ),
+    );
+  }
+
+  // ── Quick Actions ───────────────────────────────────────
 
   Widget _buildQuickActions(BuildContext context) {
     return Column(
@@ -406,39 +558,27 @@ class HomeScreen extends ConsumerWidget {
       children: [
         Text(
           'Accesos Rápidos',
-          style: AppTextStyles.h3,
+          style: GoogleFonts.plusJakartaSans(
+            fontSize: 18,
+            fontWeight: FontWeight.w700,
+            color: AppColors.onSurface,
+          ),
         ),
         const SizedBox(height: 12),
         Row(
           children: [
             Expanded(
-              child: _buildActionButton(
-                'Perfil',
-                Icons.person,
-                () {
-                  // TODO: Navigate to profile
-                },
-              ),
+              child: _buildActionChip(Icons.person, 'Perfil', () {}),
             ),
             const SizedBox(width: 12),
             Expanded(
-              child: _buildActionButton(
-                'Leaderboard',
-                Icons.leaderboard,
-                () {
-                  // TODO: Navigate to leaderboard
-                },
-              ),
+              child:
+                  _buildActionChip(Icons.leaderboard, 'Leaderboard', () {}),
             ),
             const SizedBox(width: 12),
             Expanded(
-              child: _buildActionButton(
-                'Suscripción',
-                Icons.workspace_premium,
-                () {
-                  // TODO: Navigate to subscription
-                },
-              ),
+              child: _buildActionChip(
+                  Icons.workspace_premium, 'Suscripción', () {}),
             ),
           ],
         ),
@@ -446,103 +586,87 @@ class HomeScreen extends ConsumerWidget {
     );
   }
 
-  Widget _buildActionButton(String label, IconData icon, VoidCallback onTap) {
-    return Container(
-      decoration: BoxDecoration(
-        color: AppColors.surface,
+  Widget _buildActionChip(IconData icon, String label, VoidCallback onTap) {
+    return Material(
+      color: AppColors.surfaceContainerHigh,
+      borderRadius: BorderRadius.circular(12),
+      child: InkWell(
         borderRadius: BorderRadius.circular(12),
-        boxShadow: [
-          BoxShadow(
-            color: AppColors.shadow,
-            blurRadius: 5,
-            offset: const Offset(0, 2),
-          ),
-        ],
-      ),
-      child: Material(
-        color: Colors.transparent,
-        borderRadius: BorderRadius.circular(12),
-        child: InkWell(
-          onTap: onTap,
-          borderRadius: BorderRadius.circular(12),
-          child: Padding(
-            padding: const EdgeInsets.symmetric(vertical: 16),
-            child: Column(
-              children: [
-                Icon(icon, color: AppColors.primary),
-                const SizedBox(height: 8),
-                Text(
-                  label,
-                  style: AppTextStyles.bodySmall,
+        onTap: onTap,
+        child: Padding(
+          padding: const EdgeInsets.symmetric(vertical: 16),
+          child: Column(
+            children: [
+              Icon(icon, color: AppColors.primary),
+              const SizedBox(height: 8),
+              Text(
+                label,
+                style: GoogleFonts.workSans(
+                  fontSize: 12,
+                  color: AppColors.onSurface,
                 ),
-              ],
-            ),
-          ),
-        ),
-      ),
-    );
-  }
-
-  Widget _buildRecentMatches(BuildContext context) {
-    return Column(
-      crossAxisAlignment: CrossAxisAlignment.start,
-      children: [
-        Row(
-          mainAxisAlignment: MainAxisAlignment.spaceBetween,
-          children: [
-            Text(
-              'Partidas Recientes',
-              style: AppTextStyles.h3,
-            ),
-            TextButton(
-              onPressed: () {
-                // TODO: Navigate to match history
-              },
-              child: Text('Ver todas', style: AppTextStyles.buttonSmall),
-            ),
-          ],
-        ),
-        const SizedBox(height: 12),
-        Container(
-          padding: const EdgeInsets.all(24),
-          decoration: BoxDecoration(
-            color: AppColors.surface,
-            borderRadius: BorderRadius.circular(16),
-            boxShadow: [
-              BoxShadow(
-                color: AppColors.shadow,
-                blurRadius: 10,
-                offset: const Offset(0, 4),
               ),
             ],
           ),
-          child: Center(
-            child: Column(
-              children: [
-                Icon(
-                  Icons.history,
-                  size: 48,
-                  color: AppColors.textSecondary,
-                ),
-                const SizedBox(height: 16),
-                Text(
-                  'No hay partidas recientes',
-                  style: AppTextStyles.bodyMedium.copyWith(
-                    color: AppColors.textSecondary,
-                  ),
-                ),
-                const SizedBox(height: 8),
-                ElevatedButton(
-                  onPressed: () {
-                    // TODO: Start first match
-                  },
-                  child: const Text('Jugar tu primera partida'),
-                ),
-              ],
-            ),
-          ),
         ),
-      ],
+      ),
+    );
+  }
+
+  // ── Bottom Navigation Bar ───────────────────────────────
+
+  Widget _buildBottomNavBar(BuildContext context) {
+    return Container(
+      decoration: BoxDecoration(
+        color: AppColors.background.withOpacity(0.9),
+        borderRadius: const BorderRadius.vertical(top: Radius.circular(31)),
+        boxShadow: [
+          BoxShadow(
+            color: Colors.black.withOpacity(0.06),
+            blurRadius: 32,
+            offset: const Offset(0, -8),
+          ),
+        ],
+      ),
+      child: ClipRRect(
+        borderRadius: const BorderRadius.vertical(top: Radius.circular(31)),
+        child: BottomNavigationBar(
+          currentIndex: 0,
+          type: BottomNavigationBarType.fixed,
+          backgroundColor: AppColors.background,
+          elevation: 0,
+          selectedItemColor: AppColors.primary,
+          unselectedItemColor: AppColors.onSurfaceVariant.withOpacity(0.5),
+          selectedLabelStyle: GoogleFonts.workSans(
+            fontSize: 10,
+            fontWeight: FontWeight.w600,
+            letterSpacing: 2,
+          ),
+          unselectedLabelStyle: GoogleFonts.workSans(
+            fontSize: 10,
+            fontWeight: FontWeight.w600,
+            letterSpacing: 2,
+          ),
+          items: const [
+            BottomNavigationBarItem(
+              icon: Icon(Icons.explore),
+              label: 'HOME',
+            ),
+            BottomNavigationBarItem(
+              icon: Icon(Icons.sports_martial_arts),
+              label: 'BATTLE',
+            ),
+            BottomNavigationBarItem(
+              icon: Icon(Icons.auto_stories),
+              label: 'JOURNAL',
+            ),
+            BottomNavigationBarItem(
+              icon: Icon(Icons.person),
+              label: 'PROFILE',
+            ),
+          ],
+        ),
+      ),
     );
   }
 }

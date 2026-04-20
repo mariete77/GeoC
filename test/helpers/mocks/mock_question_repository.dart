@@ -80,6 +80,15 @@ class MockQuestionRepository implements QuestionRepository {
     return Right(filtered);
   }
 
+  @override
+  Future<Either<Failure, List<Question>>> getQuestionsByIds(List<String> ids) async {
+    final questions = ids
+        .map((id) => _questions[id])
+        .whereType<Question>()
+        .toList();
+    return Right(questions);
+  }
+
   /// Helper method to add questions to the mock
   void addQuestion(Question question) {
     _questions[question.id] = question;

@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:geoquiz_battle/domain/entities/question.dart';
+import '../../../../core/theme/app_colors.dart';
 
 class AnswerOptionsWidget extends StatelessWidget {
   final Question question;
@@ -13,8 +15,6 @@ class AnswerOptionsWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    // We don't shuffle here to keep A, B, C, D consistent with the original options if needed
-    // or we shuffle and just use the new index.
     final options = question.options;
 
     return Column(
@@ -96,25 +96,22 @@ class _AnswerOptionButtonState extends State<_AnswerOptionButton>
         scale: _scaleAnimation,
         child: Container(
           width: double.infinity,
-          padding: const EdgeInsets.symmetric(
-            horizontal: 24,
-            vertical: 18,
-          ),
+          padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 18),
           decoration: BoxDecoration(
             color: _isPressed
-                ? Colors.orange.withOpacity(0.4)
-                : const Color(0xFF3D3D5C),
+                ? AppColors.primary.withOpacity(0.15)
+                : AppColors.surfaceContainerHigh,
             borderRadius: BorderRadius.circular(16),
             border: Border.all(
               color: _isPressed
-                  ? Colors.orange
-                  : Colors.white.withOpacity(0.1),
+                  ? AppColors.primary
+                  : AppColors.outlineVariant.withOpacity(0.2),
               width: 2,
             ),
             boxShadow: [
               BoxShadow(
-                color: Colors.black.withOpacity(0.2),
-                blurRadius: 8,
+                color: Colors.black.withOpacity(0.04),
+                blurRadius: 16,
                 offset: const Offset(0, 4),
               ),
             ],
@@ -125,19 +122,19 @@ class _AnswerOptionButtonState extends State<_AnswerOptionButton>
                 width: 40,
                 height: 40,
                 decoration: BoxDecoration(
-                  color: Colors.orange.withOpacity(0.2),
+                  color: AppColors.primary.withOpacity(0.1),
                   borderRadius: BorderRadius.circular(12),
                   border: Border.all(
-                    color: Colors.orange.withOpacity(0.5),
+                    color: AppColors.primary.withOpacity(0.3),
                   ),
                 ),
                 child: Center(
                   child: Text(
                     ['A', 'B', 'C', 'D'].elementAt(widget.index),
-                    style: const TextStyle(
-                      color: Colors.orange,
+                    style: GoogleFonts.plusJakartaSans(
+                      color: AppColors.primary,
                       fontSize: 18,
-                      fontWeight: FontWeight.bold,
+                      fontWeight: FontWeight.w700,
                     ),
                   ),
                 ),
@@ -146,8 +143,8 @@ class _AnswerOptionButtonState extends State<_AnswerOptionButton>
               Expanded(
                 child: Text(
                   widget.option,
-                  style: const TextStyle(
-                    color: Colors.white,
+                  style: GoogleFonts.workSans(
+                    color: AppColors.onSurface,
                     fontSize: 18,
                     fontWeight: FontWeight.w600,
                   ),
@@ -155,7 +152,7 @@ class _AnswerOptionButtonState extends State<_AnswerOptionButton>
               ),
               Icon(
                 Icons.arrow_forward_ios,
-                color: Colors.white.withOpacity(0.5),
+                color: AppColors.onSurfaceVariant.withOpacity(0.5),
                 size: 16,
               ),
             ],

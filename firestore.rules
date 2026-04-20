@@ -1,0 +1,49 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    // Helper: Check if user is authenticated
+    function isAuth() {
+      return request.auth != null;
+    }
+
+    // Helper: Check if user is the resource owner
+    function isOwner(userId) {
+      return isAuth() && request.auth.uid == userId;
+    }
+
+    // Users collection
+    match /users/{userId} {
+      allow read: if isAuth();
+      allow create: if isOwner(userId);
+      allow update: if isOwner(userId);
+    }
+
+    // Matches collection
+    match /matches/{matchId} {
+      allow read: if isAuth();
+      allow create: if isAuth();
+      allow update: if isAuth();
+      allow delete: if false; // No deletion from client
+
+      // Answers subcollection
+      match /answers/{userId} {
+        allow read: if isAuth();
+        allow write: if isAuth();
+      }
+    }
+
+    // Questions collection (read-only for authenticated users)
+    match /questions/{questionId} {
+      allow read: if isAuth();
+      allow write: if false; // Managed server-side only
+    }
+
+    // Ghost runs collection
+    match /ghostRuns/{ghostRunId} {
+      allow read: if isAuth();
+      allow create: if isAuth();
+      allow update: if isAuth();
+      allow delete: if false;
+    }
+  }
+}

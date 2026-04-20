@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:geoquiz_battle/domain/entities/question.dart';
+import '../../../../core/theme/app_colors.dart';
 
 /// Widget for typing answers in type-answer game mode
 class TypeAnswerWidget extends StatefulWidget {
@@ -61,18 +63,18 @@ class _TypeAnswerWidgetState extends State<TypeAnswerWidget> {
         Container(
           padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
           decoration: BoxDecoration(
-            color: Colors.orange.withOpacity(0.1),
+            color: AppColors.tertiary.withOpacity(0.1),
             borderRadius: BorderRadius.circular(12),
-            border: Border.all(color: Colors.orange.withOpacity(0.3)),
+            border: Border.all(color: AppColors.tertiary.withOpacity(0.3)),
           ),
           child: Row(
             children: [
-              Icon(Icons.keyboard, color: Colors.orange.withOpacity(0.7), size: 20),
+              Icon(Icons.keyboard, color: AppColors.tertiary.withOpacity(0.7), size: 20),
               const SizedBox(width: 8),
               Text(
                 _getHintText(),
-                style: TextStyle(
-                  color: Colors.orange.withOpacity(0.7),
+                style: GoogleFonts.workSans(
+                  color: AppColors.tertiary.withOpacity(0.7),
                   fontSize: 14,
                 ),
               ),
@@ -84,12 +86,12 @@ class _TypeAnswerWidgetState extends State<TypeAnswerWidget> {
         // Text input
         Container(
           decoration: BoxDecoration(
-            color: const Color(0xFF2D2D44),
+            color: AppColors.surfaceContainerHigh,
             borderRadius: BorderRadius.circular(16),
             border: Border.all(
               color: _submitted
-                  ? Colors.grey
-                  : Colors.orange.withOpacity(0.5),
+                  ? AppColors.outlineVariant
+                  : AppColors.primary.withOpacity(0.5),
               width: 2,
             ),
           ),
@@ -97,8 +99,8 @@ class _TypeAnswerWidgetState extends State<TypeAnswerWidget> {
             controller: _textController,
             focusNode: _focusNode,
             enabled: !_submitted,
-            style: const TextStyle(
-              color: Colors.white,
+            style: GoogleFonts.plusJakartaSans(
+              color: AppColors.onSurface,
               fontSize: 20,
               fontWeight: FontWeight.w600,
             ),
@@ -107,8 +109,8 @@ class _TypeAnswerWidgetState extends State<TypeAnswerWidget> {
             onSubmitted: (_) => _submitAnswer(),
             decoration: InputDecoration(
               hintText: 'Escribe tu respuesta...',
-              hintStyle: TextStyle(
-                color: Colors.grey.withOpacity(0.5),
+              hintStyle: GoogleFonts.workSans(
+                color: AppColors.onSurfaceVariant.withOpacity(0.5),
                 fontSize: 18,
               ),
               border: InputBorder.none,
@@ -118,10 +120,10 @@ class _TypeAnswerWidgetState extends State<TypeAnswerWidget> {
               ),
               suffixIcon: !_submitted
                   ? IconButton(
-                      icon: const Icon(Icons.send, color: Colors.orange),
+                      icon: Icon(Icons.send, color: AppColors.primary),
                       onPressed: _submitAnswer,
                     )
-                  : const Icon(Icons.check, color: Colors.grey),
+                  : Icon(Icons.check, color: AppColors.outline),
             ),
           ),
         ),
@@ -134,17 +136,21 @@ class _TypeAnswerWidgetState extends State<TypeAnswerWidget> {
             child: ElevatedButton(
               onPressed: _textController.text.trim().isEmpty ? null : _submitAnswer,
               style: ElevatedButton.styleFrom(
-                backgroundColor: Colors.orange,
-                foregroundColor: Colors.white,
+                backgroundColor: AppColors.primary,
+                foregroundColor: AppColors.onPrimary,
                 padding: const EdgeInsets.symmetric(vertical: 14),
                 shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(12),
                 ),
-                disabledBackgroundColor: Colors.grey.withOpacity(0.3),
+                disabledBackgroundColor: AppColors.outlineVariant.withOpacity(0.3),
               ),
-              child: const Text(
+              child: Text(
                 'CONFIRMAR',
-                style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
+                style: GoogleFonts.workSans(
+                  fontSize: 16,
+                  fontWeight: FontWeight.w700,
+                  letterSpacing: 1,
+                ),
               ),
             ),
           ),
@@ -168,6 +174,12 @@ class _TypeAnswerWidgetState extends State<TypeAnswerWidget> {
         return 'Escribe el nombre de la ciudad';
       case QuestionType.area:
         return 'Escribe la superficie aproximada';
+      case QuestionType.language:
+        return 'Escribe el idioma oficial';
+      case QuestionType.currency:
+        return 'Escribe el nombre de la moneda';
+      case QuestionType.region:
+        return 'Escribe el nombre de la región';
       default:
         return 'Escribe tu respuesta';
     }

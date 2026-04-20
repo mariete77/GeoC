@@ -9,6 +9,9 @@ enum QuestionType {
   river,
   cityPhoto,
   area,
+  language,
+  currency,
+  region,
 }
 
 /// Question difficulty

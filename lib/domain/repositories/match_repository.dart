@@ -31,4 +31,23 @@ abstract class MatchRepository {
 
   /// Finish match (call when game ends)
   Future<Either<Failure, void>> finishMatch(String matchId);
+
+  /// Find a waiting match for the given mode and ELO range
+  Future<Either<Failure, GameMatch?>> findWaitingMatch({
+    required String mode,
+    required int playerElo,
+    required String userId,
+  });
+
+  /// Join an existing waiting match
+  Future<Either<Failure, GameMatch>> joinMatch({
+    required String matchId,
+    required String userId,
+  });
+
+  /// Get a player's submitted answers for a match
+  Future<Either<Failure, List<Answer>>> getPlayerAnswers({
+    required String matchId,
+    required String userId,
+  });
 }

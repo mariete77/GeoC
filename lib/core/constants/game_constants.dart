@@ -32,7 +32,7 @@ class GameConstants {
   static const int ghostRunEloRange = 200;
 
   // Question Types
-  static const int totalQuestionTypes = 7; // silhouette, flag, capital, population, river, cityPhoto, area
+  static const int totalQuestionTypes = 10; // silhouette, flag, capital, population, river, cityPhoto, area, language, currency, region
   static const int optionsPerQuestion = 4;
 
   // Answer Scoring

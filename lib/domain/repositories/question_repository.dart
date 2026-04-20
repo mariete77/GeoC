@@ -23,4 +23,7 @@ abstract class QuestionRepository {
   Future<Either<Failure, List<Question>>> getQuestionsByDifficulty(
     Difficulty difficulty,
   );
+
+  /// Get questions by their IDs (for multiplayer shared questions)
+  Future<Either<Failure, List<Question>>> getQuestionsByIds(List<String> ids);
 }

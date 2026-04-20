@@ -91,8 +91,8 @@ class GhostRunRepositoryImpl implements GhostRunRepository {
       final runId = '${userId}_${DateTime.now().millisecondsSinceEpoch}';
 
       final ghostRun = GhostRunModel(
+        id: runId,
         userId: userId,
-        ghostRunId: runId,
         elo: elo,
         questionIds: questionIds,
         answers: ghostAnswers

@@ -1,164 +1,212 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
-import 'package:freezed_annotation/freezed_annotation.dart';
-import 'json_key_converter.dart';
-import 'package:geoquiz_battle/domain/entities/match.dart';
+import '../../domain/entities/match.dart';
 
-part 'match_model.freezed.dart';
-part 'match_model.g.dart';
+/// Match model for Firestore serialization
+class MatchModel {
+  final String id;
+  final List<String> players;
+  final String mode;
+  final String type;
+  final String status;
+  final List<String> questionIds;
+  final Map<String, List<Map<String, dynamic>>> answers;
+  final Map<String, dynamic>? result;
+  final DateTime createdAt;
+  final DateTime? startedAt;
+  final DateTime? finishedAt;
+  final int creatorElo;
 
-@freezed
-class MatchModel with _$MatchModel {
-  const MatchModel._();
+  const MatchModel({
+    required this.id,
+    required this.players,
+    required this.mode,
+    required this.type,
+    required this.status,
+    required this.questionIds,
+    required this.answers,
+    this.result,
+    required this.createdAt,
+    this.startedAt,
+    this.finishedAt,
+    this.creatorElo = 1000,
+  });
 
-  const factory MatchModel({
-    required String id,
-    required List<String> players,
-    @MatchModeConverter() required MatchMode mode,
-    @MatchTypeConverter() required MatchType type,
-    @MatchStatusConverter() required MatchStatus status,
-    required List<String> questionIds,
-    @Default({}) Map<String, List<AnswerModel>> answers,
-    MatchResultModel? result,
-    required DateTime createdAt,
-    DateTime? startedAt,
-    DateTime? finishedAt,
-  }) = _MatchModel;
-
-  factory MatchModel.fromJson(Map<String, dynamic> json) =>
-      _$MatchModelFromJson(json);
-
+  /// Create from Firestore DocumentSnapshot
   factory MatchModel.fromFirestore(DocumentSnapshot doc) {
-    final data = doc.data() as Map<String, dynamic>;
-    return MatchModel.fromJson({
-      'id': doc.id,
-      ...data,
-      'createdAt': data['createdAt'] != null
-          ? (data['createdAt'] as Timestamp).toDate().toIso8601String()
-          : DateTime.now().toIso8601String(),
-      'startedAt': data['startedAt'] != null
-          ? (data['startedAt'] as Timestamp).toDate().toIso8601String()
-          : null,
-      'finishedAt': data['finishedAt'] != null
-          ? (data['finishedAt'] as Timestamp).toDate().toIso8601String()
-          : null,
+    return MatchModel.fromJson(doc.data() as Map<String, dynamic>, doc.id);
+  }
+
+  /// Create from JSON map
+  factory MatchModel.fromJson(Map<String, dynamic> json, String docId) {
+    final answersMap = <String, List<Map<String, dynamic>>>{};
+    final rawAnswers = json['answers'] as Map<String, dynamic>?;
+    if (rawAnswers != null) {
+      rawAnswers.forEach((key, value) {
+        if (value is List) {
+          answersMap[key] = value.map((a) => a as Map<String, dynamic>).toList();
+        }
+      });
+    }
+
+    return MatchModel(
+      id: docId,
+      players: (json['players'] as List<dynamic>).map((e) => e as String).toList(),
+      mode: json['mode'] as String? ?? 'async',
+      type: json['type'] as String? ?? 'casual',
+      status: json['status'] as String? ?? 'waiting',
+      questionIds: (json['questionIds'] as List<dynamic>?)
+              ?.map((e) => e as String)
+              .toList() ??
+          [],
+      answers: answersMap,
+      result: json['result'] as Map<String, dynamic>?,
+      createdAt: (json['createdAt'] as dynamic)?.toDate() ?? DateTime.now(),
+      startedAt: (json['startedAt'] as dynamic)?.toDate(),
+      finishedAt: (json['finishedAt'] as dynamic)?.toDate(),
+      creatorElo: json['creatorElo'] as int? ?? 1000,
+    );
+  }
+
+  /// Convert to Firestore document
+  Map<String, dynamic> toFirestore() {
+    final answersJson = <String, dynamic>{};
+    answers.forEach((key, value) {
+      answersJson[key] = value;
     });
+
+    return {
+      'players': players,
+      'mode': mode,
+      'type': type,
+      'status': status,
+      'questionIds': questionIds,
+      'answers': answersJson,
+      if (result != null) 'result': result,
+      'creatorElo': creatorElo,
+      'createdAt': FieldValue.serverTimestamp(),
+      if (startedAt != null) 'startedAt': Timestamp.fromDate(startedAt!),
+      if (finishedAt != null) 'finishedAt': Timestamp.fromDate(finishedAt!),
+    };
   }
 
   /// Convert to domain entity
   GameMatch toDomain() {
+    final domainAnswers = <String, List<Answer>>{};
+    answers.forEach((userId, answerList) {
+      domainAnswers[userId] = answerList
+          .map((a) => Answer(
+                questionIndex: a['questionIndex'] as int? ?? 0,
+                selectedAnswer: a['selectedAnswer'] as String? ?? '',
+                isCorrect: a['isCorrect'] as bool? ?? false,
+                timeMs: a['timeMs'] as int? ?? 0,
+                answeredAt: a['answeredAt'] != null
+                    ? (a['answeredAt'] as dynamic).toDate()
+                    : DateTime.now(),
+              ))
+          .toList();
+    });
+
+    MatchResult? domainResult;
+    if (result != null) {
+      final scores = (result!['scores'] as Map<String, dynamic>?)
+              ?.map((k, v) => MapEntry(k, v as int)) ??
+          {};
+      final eloChanges = (result!['eloChanges'] as Map<String, dynamic>?)
+              ?.map((k, v) => MapEntry(k, v as int)) ??
+          {};
+      final newElo = (result!['newElo'] as Map<String, dynamic>?)
+              ?.map((k, v) => MapEntry(k, v as int)) ??
+          {};
+      domainResult = MatchResult(
+        winnerId: result!['winnerId'] as String?,
+        scores: scores,
+        eloChanges: eloChanges,
+        newElo: newElo,
+      );
+    }
+
     return GameMatch(
       id: id,
       players: players,
-      mode: mode,
-      type: type,
-      status: status,
+      mode: mode == 'realtime' ? MatchMode.realtime : MatchMode.async,
+      type: type == 'ranked' ? MatchType.ranked : MatchType.casual,
+      status: _parseStatus(status),
       questionIds: questionIds,
-      answers: answers.map((key, value) =>
-          MapEntry(key, value.map((a) => a.toDomain()).toList())),
-      result: result?.toDomain(),
+      answers: domainAnswers,
+      result: domainResult,
       createdAt: createdAt,
       startedAt: startedAt,
       finishedAt: finishedAt,
+      creatorElo: creatorElo,
     );
   }
 
-  /// Convert from domain entity
-  factory MatchModel.fromDomain(GameMatch gameMatch) {
+  /// Create from domain entity
+  factory MatchModel.fromDomain(GameMatch match) {
+    final answersMap = <String, List<Map<String, dynamic>>>{};
+    match.answers.forEach((userId, answerList) {
+      answersMap[userId] = answerList
+          .map((a) => {
+                'questionIndex': a.questionIndex,
+                'selectedAnswer': a.selectedAnswer,
+                'isCorrect': a.isCorrect,
+                'timeMs': a.timeMs,
+                'answeredAt': a.answeredAt,
+              })
+          .toList();
+    });
+
+    Map<String, dynamic>? resultMap;
+    if (match.result != null) {
+      resultMap = {
+        'winnerId': match.result!.winnerId,
+        'scores': match.result!.scores,
+        'eloChanges': match.result!.eloChanges,
+        'newElo': match.result!.newElo,
+      };
+    }
+
     return MatchModel(
-      id: gameMatch.id,
-      players: gameMatch.players,
-      mode: gameMatch.mode,
-      type: gameMatch.type,
-      status: gameMatch.status,
-      questionIds: gameMatch.questionIds,
-      answers: gameMatch.answers.map((key, value) =>
-          MapEntry(key, value.map((a) => AnswerModel.fromDomain(a)).toList())),
-      result: gameMatch.result != null
-          ? MatchResultModel.fromDomain(gameMatch.result!)
-          : null,
-      createdAt: gameMatch.createdAt,
-      startedAt: gameMatch.startedAt,
-      finishedAt: gameMatch.finishedAt,
+      id: match.id,
+      players: match.players,
+      mode: match.mode == MatchMode.realtime ? 'realtime' : 'async',
+      type: match.type == MatchType.ranked ? 'ranked' : 'casual',
+      status: _statusToString(match.status),
+      questionIds: match.questionIds,
+      answers: answersMap,
+      result: resultMap,
+      createdAt: match.createdAt,
+      startedAt: match.startedAt,
+      finishedAt: match.finishedAt,
+      creatorElo: match.creatorElo,
     );
   }
 
-  /// Convert to Firestore map
-  Map<String, dynamic> toFirestore() {
-    final json = toJson();
-    json.remove('id');
-    return json;
-  }
-}
-
-@freezed
-class AnswerModel with _$AnswerModel {
-  const AnswerModel._();
-
-  const factory AnswerModel({
-    required int questionIndex,
-    required String selectedAnswer,
-    required bool isCorrect,
-    required int timeMs,
-    required DateTime answeredAt,
-  }) = _AnswerModel;
-
-  factory AnswerModel.fromJson(Map<String, dynamic> json) =>
-      _$AnswerModelFromJson(json);
-
-  /// Convert to domain entity
-  Answer toDomain() {
-    return Answer(
-      questionIndex: questionIndex,
-      selectedAnswer: selectedAnswer,
-      isCorrect: isCorrect,
-      timeMs: timeMs,
-      answeredAt: answeredAt,
-    );
+  static MatchStatus _parseStatus(String s) {
+    switch (s) {
+      case 'waiting':
+        return MatchStatus.waiting;
+      case 'active':
+        return MatchStatus.active;
+      case 'finished':
+        return MatchStatus.finished;
+      case 'cancelled':
+        return MatchStatus.cancelled;
+      default:
+        return MatchStatus.waiting;
+    }
   }
 
-  /// Convert from domain entity
-  factory AnswerModel.fromDomain(Answer answer) {
-    return AnswerModel(
-      questionIndex: answer.questionIndex,
-      selectedAnswer: answer.selectedAnswer,
-      isCorrect: answer.isCorrect,
-      timeMs: answer.timeMs,
-      answeredAt: answer.answeredAt,
-    );
-  }
-}
-
-@freezed
-class MatchResultModel with _$MatchResultModel {
-  const MatchResultModel._();
-
-  const factory MatchResultModel({
-    String? winnerId,
-    required Map<String, int> scores,
-    required Map<String, int> eloChanges,
-    required Map<String, int> newElo,
-  }) = _MatchResultModel;
-
-  factory MatchResultModel.fromJson(Map<String, dynamic> json) =>
-      _$MatchResultModelFromJson(json);
-
-  /// Convert to domain entity
-  MatchResult toDomain() {
-    return MatchResult(
-      winnerId: winnerId,
-      scores: scores,
-      eloChanges: eloChanges,
-      newElo: newElo,
-    );
-  }
-
-  /// Convert from domain entity
-  factory MatchResultModel.fromDomain(MatchResult result) {
-    return MatchResultModel(
-      winnerId: result.winnerId,
-      scores: result.scores,
-      eloChanges: result.eloChanges,
-      newElo: result.newElo,
-    );
+  static String _statusToString(MatchStatus s) {
+    switch (s) {
+      case MatchStatus.waiting:
+        return 'waiting';
+      case MatchStatus.active:
+        return 'active';
+      case MatchStatus.finished:
+        return 'finished';
+      case MatchStatus.cancelled:
+        return 'cancelled';
+    }
   }
 }

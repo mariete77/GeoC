@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>GeoC - Feedback Modal</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;700;800&amp;family=Work+Sans:wght@400;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "on-secondary-container": "#4d694f",
+                      "surface-container-highest": "#e2e3e1",
+                      "on-tertiary-fixed-variant": "#594324",
+                      "surface-dim": "#dadad8",
+                      "surface-bright": "#f9f9f7",
+                      "on-secondary-fixed": "#06210c",
+                      "surface-container-high": "#e8e8e6",
+                      "error-container": "#ffdad6",
+                      "on-primary": "#ffffff",
+                      "on-primary-fixed-variant": "#2d4e31",
+                      "tertiary-fixed-dim": "#e2c199",
+                      "on-surface": "#1a1c1b",
+                      "on-secondary-fixed-variant": "#324d34",
+                      "secondary-fixed": "#cbebc9",
+                      "on-primary-container": "#f7fff2",
+                      "on-tertiary-container": "#fffbff",
+                      "primary-container": "#5a7d5c",
+                      "on-tertiary": "#ffffff",
+                      "inverse-primary": "#aad0aa",
+                      "surface-container": "#eeeeec",
+                      "surface-variant": "#e2e3e1",
+                      "on-background": "#1a1c1b",
+                      "background": "#f9f9f7",
+                      "primary": "#426445",
+                      "on-tertiary-fixed": "#291801",
+                      "outline-variant": "#c2c8bf",
+                      "on-error-container": "#93000a",
+                      "secondary-container": "#c8e8c6",
+                      "surface-container-low": "#f4f4f2",
+                      "on-error": "#ffffff",
+                      "on-primary-fixed": "#002109",
+                      "surface-container-lowest": "#ffffff",
+                      "error": "#ba1a1a",
+                      "on-surface-variant": "#424841",
+                      "tertiary-fixed": "#ffddb4",
+                      "primary-fixed-dim": "#aad0aa",
+                      "outline": "#727970",
+                      "inverse-on-surface": "#f1f1ef",
+                      "secondary-fixed-dim": "#afcfae",
+                      "inverse-surface": "#2f3130",
+                      "surface-tint": "#446647",
+                      "tertiary": "#705837",
+                      "on-secondary": "#ffffff",
+                      "surface": "#f9f9f7",
+                      "secondary": "#49654b",
+                      "primary-fixed": "#c5edc5",
+                      "tertiary-container": "#8b704d"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.25rem",
+                      "lg": "0.5rem",
+                      "xl": "0.75rem",
+                      "full": "9999px"
+              },
+              "spacing": {},
+              "fontFamily": {
+                      "headline": [
+                              "Plus Jakarta Sans"
+                      ],
+                      "body": [
+                              "Work Sans"
+                      ],
+                      "label": [
+                              "Work Sans"
+                      ]
+              }
+      },
+          },
+        }
+      </script>
+<style>
+        body {
+            font-family: 'Work Sans', sans-serif;
+            background-color: theme('colors.background');
+            color: theme('colors.on-background');
+        }
+        h1, h2, h3, h4, h5, h6, .font-headline {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 1, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="antialiased min-h-screen relative overflow-hidden">
+<!-- Faux Background (Simulating Gameplay) -->
+<div class="absolute inset-0 z-0 opacity-40 blur-sm pointer-events-none">
+<div class="h-full w-full bg-surface-container flex flex-col pt-24 px-6 gap-6">
+<div class="h-48 w-full bg-surface-container-high rounded-xl"></div>
+<div class="space-y-4">
+<div class="h-16 w-full bg-surface-container-high rounded-lg"></div>
+<div class="h-16 w-full bg-surface-container-high rounded-lg"></div>
+<div class="h-16 w-full bg-surface-container-high rounded-lg"></div>
+</div>
+</div>
+</div>
+<!-- Overlay Container -->
+<div class="fixed inset-0 z-50 flex flex-col items-center justify-end md:justify-center p-4 bg-on-background/20 backdrop-blur-md">
+<!-- Modal Card (Correct State Example) -->
+<!-- Note: Using primary-container for 'Correcto' as requested by brand rules, avoiding arbitrary hex where possible but matching the vibe -->
+<div class="w-full max-w-md bg-surface-container-lowest rounded-t-[32px] md:rounded-[32px] shadow-[0_-8px_32px_rgba(0,0,0,0.06)] overflow-hidden relative">
+<!-- Top Banner / Icon Area -->
+<div class="bg-primary-container text-on-primary-container py-12 flex flex-col items-center justify-center relative">
+<!-- Decorative subtle texture -->
+<div class="absolute inset-0 bg-gradient-to-br from-primary/20 to-transparent pointer-events-none"></div>
+<span class="material-symbols-outlined text-7xl mb-4" data-icon="check_circle" data-weight="fill">check_circle</span>
+<h2 class="font-headline font-bold text-4xl tracking-tight">Correcto</h2>
+</div>
+<!-- Content Area -->
+<div class="p-8 flex flex-col items-center text-center space-y-6">
+<div class="space-y-2">
+<p class="font-body text-on-surface-variant text-lg">La respuesta era:</p>
+<p class="font-headline font-bold text-2xl text-on-surface">Cusco, Perú</p>
+</div>
+<!-- Stats/Info Bento style -->
+<div class="w-full grid grid-cols-2 gap-4 mt-4">
+<div class="bg-surface-container-low rounded-xl p-4 flex flex-col items-center justify-center">
+<span class="font-body text-xs text-on-surface-variant uppercase tracking-widest font-semibold mb-1">Puntos</span>
+<span class="font-headline font-bold text-2xl text-primary">+150</span>
+</div>
+<div class="bg-surface-container-low rounded-xl p-4 flex flex-col items-center justify-center">
+<span class="font-body text-xs text-on-surface-variant uppercase tracking-widest font-semibold mb-1">Racha</span>
+<span class="font-headline font-bold text-2xl text-tertiary-container flex items-center gap-1">
+<span class="material-symbols-outlined text-lg" data-icon="local_fire_department">local_fire_department</span>
+                            3
+                        </span>
+</div>
+</div>
+<!-- Action -->
+<button class="w-full bg-gradient-to-br from-primary to-primary-container text-on-primary font-headline font-bold text-lg py-4 rounded-full mt-6 hover:scale-[0.98] transition-transform duration-200 shadow-md shadow-primary/20">
+                    Siguiente Pregunta
+                </button>
+</div>
+</div>
+</div>
+</body></html>

@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
-import '../../../core/theme/app_text_styles.dart';
+import 'package:google_fonts/google_fonts.dart';
+import '../../../core/theme/app_colors.dart';
 
-/// Custom button with consistent styling
+/// Custom button with consistent GeoC styling
 class CustomButton extends StatelessWidget {
   final String text;
   final VoidCallback? onPressed;
@@ -24,45 +25,44 @@ class CustomButton extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final buttonStyle = isOutlined
-        ? OutlinedButton.styleFrom(
-            padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 12),
-            shape: RoundedRectangleBorder(
-              borderRadius: BorderRadius.circular(12),
-            ),
-          )
-        : ElevatedButton.styleFrom(
-            padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 12),
-            backgroundColor: backgroundColor,
-            foregroundColor: foregroundColor,
-            shape: RoundedRectangleBorder(
-              borderRadius: BorderRadius.circular(12),
-            ),
-          );
-
     if (isOutlined) {
       return OutlinedButton(
         onPressed: isLoading ? null : onPressed,
-        style: buttonStyle,
-        child: _buildContent(),
+        style: OutlinedButton.styleFrom(
+          padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 14),
+          shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(12),
+          ),
+          side: BorderSide(color: AppColors.primary, width: 1.5),
+          foregroundColor: AppColors.primary,
+        ),
+        child: _buildContent(AppColors.primary),
       );
     }
 
     return ElevatedButton(
       onPressed: isLoading ? null : onPressed,
-      style: buttonStyle,
-      child: _buildContent(),
+      style: ElevatedButton.styleFrom(
+        padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 14),
+        backgroundColor: backgroundColor ?? AppColors.primary,
+        foregroundColor: foregroundColor ?? AppColors.onPrimary,
+        shape: RoundedRectangleBorder(
+          borderRadius: BorderRadius.circular(12),
+        ),
+        elevation: 0,
+      ),
+      child: _buildContent(foregroundColor ?? AppColors.onPrimary),
     );
   }
 
-  Widget _buildContent() {
+  Widget _buildContent(Color color) {
     if (isLoading) {
-      return const SizedBox(
+      return SizedBox(
         width: 20,
         height: 20,
         child: CircularProgressIndicator(
           strokeWidth: 2,
-          valueColor: AlwaysStoppedAnimation<Color>(Colors.white),
+          valueColor: AlwaysStoppedAnimation<Color>(color),
         ),
       );
     }
@@ -73,11 +73,27 @@ class CustomButton extends StatelessWidget {
         children: [
           Icon(icon, size: 20),
           const SizedBox(width: 8),
-          Text(text, style: AppTextStyles.button),
+          Text(
+            text,
+            style: GoogleFonts.workSans(
+              color: color,
+              fontSize: 16,
+              fontWeight: FontWeight.w700,
+              letterSpacing: 0.5,
+            ),
+          ),
         ],
       );
     }
 
-    return Text(text, style: AppTextStyles.button);
+    return Text(
+      text,
+      style: GoogleFonts.workSans(
+        color: color,
+        fontSize: 16,
+        fontWeight: FontWeight.w700,
+        letterSpacing: 0.5,
+      ),
+    );
   }
 }

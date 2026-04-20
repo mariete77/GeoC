@@ -146,6 +146,43 @@ class QuestionRepositoryImpl implements QuestionRepository {
     }
   }
 
+  @override
+  Future<Either<Failure, List<Question>>> getQuestionsByIds(List<String> ids) async {
+    try {
+      if (ids.isEmpty) return const Right([]);
+
+      final questions = <Question>[];
+      // Firestore 'in' queries support max 30 items
+      for (var i = 0; i < ids.length; i += 30) {
+        final chunk = ids.sublist(i, i + 30 > ids.length ? ids.length : i + 30);
+        final snapshot = await _firestore
+            .collection(FirebaseConstants.questions)
+            .where(FieldPath.documentId, whereIn: chunk)
+            .get();
+
+        for (final doc in snapshot.docs) {
+          questions.add(QuestionModel.fromJson({
+            'id': doc.id,
+            ...doc.data() as Map<String, dynamic>,
+          }).toDomain());
+        }
+      }
+
+      // Preserve original order
+      final questionMap = {for (final q in questions) q.id: q};
+      final ordered = ids
+          .map((id) => questionMap[id])
+          .whereType<Question>()
+          .toList();
+
+      return Right(ordered);
+    } on ServerException catch (e) {
+      return Left(ServerFailure(e.message));
+    } catch (e) {
+      return Left(UnknownFailure(e.toString()));
+    }
+  }
+
   /// Select balanced questions (variety of types)
   List<Question> _selectBalancedQuestions(
     List<Question> questions,
@@ -160,7 +197,7 @@ class QuestionRepositoryImpl implements QuestionRepository {
         selected.add(q);
         usedTypes.add(q.type);
       }
-      if (selected.length >= 7) break; // 7 types max
+      if (selected.length >= 10) break; // 10 types max
     }
 
     // Second pass: fill up to count

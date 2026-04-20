@@ -5,8 +5,12 @@ import 'package:geoquiz_battle/presentation/screens/splash/splash_screen.dart';
 import 'package:geoquiz_battle/presentation/screens/auth/login_screen.dart';
 import 'package:geoquiz_battle/presentation/screens/home/home_screen.dart';
 import 'package:geoquiz_battle/presentation/screens/game/game_screen.dart';
+import 'package:geoquiz_battle/presentation/screens/multiplayer/matchmaking_screen.dart';
+import 'package:geoquiz_battle/presentation/screens/multiplayer/multiplayer_game_screen.dart';
 import 'package:geoquiz_battle/presentation/providers/auth_provider.dart';
+import 'package:geoquiz_battle/presentation/providers/multiplayer_provider.dart';
 import 'package:geoquiz_battle/domain/entities/question.dart';
+import 'package:geoquiz_battle/core/theme/app_theme.dart';
 final routerProvider = Provider<GoRouter>((ref) {
   final authStreamState = ref.watch(authStateChangesProvider);
   final authNotifierState = ref.watch(authNotifierProvider);
@@ -56,6 +60,21 @@ final routerProvider = Provider<GoRouter>((ref) {
           return GameScreen(difficulty: difficulty);
         },
       ),
+      GoRoute(
+        path: '/matchmaking/:mode',
+        builder: (context, state) {
+          final modeStr = state.pathParameters['mode'] ?? 'casual';
+          final mode = MultiplayerMode.values.firstWhere(
+            (m) => m.name.toLowerCase() == modeStr.toLowerCase(),
+            orElse: () => MultiplayerMode.casual,
+          );
+          return MatchmakingScreen(mode: mode);
+        },
+      ),
+      GoRoute(
+        path: '/multiplayer-game',
+        builder: (context, state) => const MultiplayerGameScreen(),
+      ),
     ],
     errorBuilder: (context, state) => Scaffold(
       body: Center(
@@ -90,12 +109,9 @@ class GeoQuizBattleApp extends ConsumerWidget {
     return MaterialApp.router(
       title: 'GeoQuiz Battle',
       debugShowCheckedModeBanner: false,
-      theme: ThemeData(
-        brightness: Brightness.dark,
-        scaffoldBackgroundColor: const Color(0xFF1A1A2E),
-        colorSchemeSeed: Colors.orange,
-        useMaterial3: true,
-      ),
+      theme: AppTheme.lightTheme,
+      darkTheme: AppTheme.darkTheme,
+      themeMode: ThemeMode.light,
       routerDelegate: router.routerDelegate,
       routeInformationProvider: router.routeInformationProvider,
       routeInformationParser: router.routeInformationParser,

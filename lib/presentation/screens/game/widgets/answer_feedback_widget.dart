@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:cached_network_image/cached_network_image.dart';
-import '../../../../domain/entities/question.dart';
+import 'package:google_fonts/google_fonts.dart';
+import 'package:geoquiz_battle/domain/entities/question.dart';
+import '../../../../core/theme/app_colors.dart';
 
 class AnswerFeedbackWidget extends StatefulWidget {
   final bool isCorrect;
@@ -55,15 +57,20 @@ class _AnswerFeedbackWidgetState extends State<AnswerFeedbackWidget>
 
   @override
   Widget build(BuildContext context) {
-    final color = widget.isCorrect ? Colors.green : Colors.red;
+    final color = widget.isCorrect ? AppColors.success : AppColors.error;
     final icon = widget.isCorrect ? Icons.check_circle : Icons.cancel;
-    final title = widget.isCorrect ? 'Correct!' : 'Wrong!';
+    final title = widget.isCorrect ? '¡Correcto!' : '¡Incorrecto!';
+
+    // Extract educational info from extraData
+    final infoToShow = widget.question?.extraData?['infoToShow'] as String?;
+    final hasInfo = infoToShow != null && infoToShow.isNotEmpty;
+
     final message = widget.isCorrect
-        ? '+${widget.score} points'
-        : 'Correct answer: ${widget.correctAnswer}';
+        ? (hasInfo ? '${widget.correctAnswer} tiene $infoToShow' : '+${widget.score} puntos')
+        : 'Respuesta correcta: ${widget.correctAnswer}';
 
     return Container(
-      color: const Color(0xFF1A1A2E),
+      color: AppColors.background,
       child: Center(
         child: FadeTransition(
           opacity: _fadeAnimation,
@@ -73,7 +80,7 @@ class _AnswerFeedbackWidgetState extends State<AnswerFeedbackWidget>
               margin: const EdgeInsets.all(24),
               padding: const EdgeInsets.all(32),
               decoration: BoxDecoration(
-                color: const Color(0xFF2D2D44),
+                color: AppColors.surfaceContainerHigh,
                 borderRadius: BorderRadius.circular(24),
                 border: Border.all(
                   color: color.withOpacity(0.5),
@@ -94,7 +101,7 @@ class _AnswerFeedbackWidgetState extends State<AnswerFeedbackWidget>
                   Container(
                     padding: const EdgeInsets.all(20),
                     decoration: BoxDecoration(
-                      color: color.withOpacity(0.2),
+                      color: color.withOpacity(0.15),
                       shape: BoxShape.circle,
                     ),
                     child: Icon(
@@ -108,10 +115,10 @@ class _AnswerFeedbackWidgetState extends State<AnswerFeedbackWidget>
                   // Title
                   Text(
                     title,
-                    style: TextStyle(
+                    style: GoogleFonts.plusJakartaSans(
                       color: color,
                       fontSize: 32,
-                      fontWeight: FontWeight.bold,
+                      fontWeight: FontWeight.w800,
                     ),
                   ),
                   const SizedBox(height: 12),
@@ -119,8 +126,8 @@ class _AnswerFeedbackWidgetState extends State<AnswerFeedbackWidget>
                   // Message
                   Text(
                     message,
-                    style: const TextStyle(
-                      color: Colors.white,
+                    style: GoogleFonts.workSans(
+                      color: AppColors.onSurface,
                       fontSize: 20,
                       fontWeight: FontWeight.w600,
                     ),
@@ -137,21 +144,21 @@ class _AnswerFeedbackWidgetState extends State<AnswerFeedbackWidget>
                         height: 120,
                         width: double.infinity,
                         fit: BoxFit.contain,
-                        placeholder: (context, url) => const SizedBox(
+                        placeholder: (context, url) => SizedBox(
                           height: 120,
                           child: Center(
                             child: CircularProgressIndicator(
-                              color: Colors.orange,
+                              color: AppColors.primary,
                             ),
                           ),
                         ),
-                        errorWidget: (context, url, error) => const SizedBox(
+                        errorWidget: (context, url, error) => SizedBox(
                           height: 120,
                           child: Center(
                             child: Icon(
                               Icons.broken_image,
                               size: 60,
-                              color: Colors.grey,
+                              color: AppColors.outline,
                             ),
                           ),
                         ),
@@ -160,6 +167,41 @@ class _AnswerFeedbackWidgetState extends State<AnswerFeedbackWidget>
                   ],
 
                   const SizedBox(height: 32),
+
+                  // Educational info card
+                  if (hasInfo) ...[
+                    const SizedBox(height: 16),
+                    Container(
+                      padding: const EdgeInsets.symmetric(
+                        horizontal: 20,
+                        vertical: 14,
+                      ),
+                      decoration: BoxDecoration(
+                        color: AppColors.primary.withOpacity(0.08),
+                        borderRadius: BorderRadius.circular(16),
+                      ),
+                      child: Row(
+                        children: [
+                          Icon(Icons.lightbulb_outline, color: AppColors.tertiary, size: 22),
+                          const SizedBox(width: 10),
+                          Expanded(
+                            child: Text(
+                              widget.isCorrect
+                                  ? '${widget.correctAnswer} tiene $infoToShow'
+                                  : '${widget.correctAnswer} tiene $infoToShow',
+                              style: GoogleFonts.workSans(
+                                color: AppColors.onSurfaceVariant,
+                                fontSize: 15,
+                                fontWeight: FontWeight.w500,
+                              ),
+                            ),
+                          ),
+                        ],
+                      ),
+                    ),
+                  ],
+
+                  const SizedBox(height: 16),
 
                   // Selected answer indicator
                   Container(
@@ -185,10 +227,10 @@ class _AnswerFeedbackWidgetState extends State<AnswerFeedbackWidget>
                         const SizedBox(width: 8),
                         Text(
                           widget.isCorrect
-                              ? 'You answered correctly'
-                              : 'You answered: ${widget.selectedAnswer}',
-                          style: TextStyle(
-                            color: Colors.white,
+                              ? (hasInfo ? '+${widget.score} puntos' : '¡Respuesta correcta!')
+                              : 'Tu respuesta: ${widget.selectedAnswer}',
+                          style: GoogleFonts.workSans(
+                            color: AppColors.onSurface,
                             fontSize: 16,
                           ),
                         ),

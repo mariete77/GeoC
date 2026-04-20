@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>GeoC - Login</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;700;800;900&amp;family=Work+Sans:wght@400;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-secondary-container": "#4d694f",
+                        "surface-container-highest": "#e2e3e1",
+                        "on-tertiary-fixed-variant": "#594324",
+                        "surface-dim": "#dadad8",
+                        "surface-bright": "#f9f9f7",
+                        "on-secondary-fixed": "#06210c",
+                        "surface-container-high": "#e8e8e6",
+                        "error-container": "#ffdad6",
+                        "on-primary": "#ffffff",
+                        "on-primary-fixed-variant": "#2d4e31",
+                        "tertiary-fixed-dim": "#e2c199",
+                        "on-surface": "#1a1c1b",
+                        "on-secondary-fixed-variant": "#324d34",
+                        "secondary-fixed": "#cbebc9",
+                        "on-primary-container": "#f7fff2",
+                        "on-tertiary-container": "#fffbff",
+                        "primary-container": "#5a7d5c",
+                        "on-tertiary": "#ffffff",
+                        "inverse-primary": "#aad0aa",
+                        "surface-container": "#eeeeec",
+                        "surface-variant": "#e2e3e1",
+                        "on-background": "#1a1c1b",
+                        "background": "#f9f9f7",
+                        "primary": "#426445",
+                        "on-tertiary-fixed": "#291801",
+                        "outline-variant": "#c2c8bf",
+                        "on-error-container": "#93000a",
+                        "secondary-container": "#c8e8c6",
+                        "surface-container-low": "#f4f4f2",
+                        "on-error": "#ffffff",
+                        "on-primary-fixed": "#002109",
+                        "surface-container-lowest": "#ffffff",
+                        "error": "#ba1a1a",
+                        "on-surface-variant": "#424841",
+                        "tertiary-fixed": "#ffddb4",
+                        "primary-fixed-dim": "#aad0aa",
+                        "outline": "#727970",
+                        "inverse-on-surface": "#f1f1ef",
+                        "secondary-fixed-dim": "#afcfae",
+                        "inverse-surface": "#2f3130",
+                        "surface-tint": "#446647",
+                        "tertiary": "#705837",
+                        "on-secondary": "#ffffff",
+                        "surface": "#f9f9f7",
+                        "secondary": "#49654b",
+                        "primary-fixed": "#c5edc5",
+                        "tertiary-container": "#8b704d"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {},
+                    "fontFamily": {
+                        "headline": [
+                            "Plus Jakarta Sans",
+                            "sans-serif"
+                        ],
+                        "body": [
+                            "Work Sans",
+                            "sans-serif"
+                        ],
+                        "label": [
+                            "Work Sans",
+                            "sans-serif"
+                        ]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        body {
+            background-color: theme('colors.background');
+            color: theme('colors.on-background');
+            font-family: theme('fontFamily.body');
+        }
+        .text-gradient {
+            background: linear-gradient(145deg, theme('colors.primary'), theme('colors.primary-container'));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .bg-gradient-primary {
+            background: linear-gradient(145deg, theme('colors.primary'), theme('colors.primary-container'));
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="min-h-screen flex items-center justify-center p-4 lg:p-8 relative overflow-hidden">
+<!-- Decorative background elements -->
+<div class="absolute top-0 left-0 w-full h-1/2 bg-surface-container-low -z-10 skew-y-6 transform origin-top-left"></div>
+<main class="w-full max-w-md bg-surface-container-lowest rounded-xl p-8 relative shadow-[0_32px_64px_rgba(26,28,27,0.06)]">
+<!-- Header -->
+<div class="text-center mb-10">
+<h1 class="font-headline font-black text-5xl tracking-tighter text-gradient mb-2">GeoC</h1>
+<p class="font-body text-on-surface-variant text-lg">The Digital Cartographer</p>
+</div>
+<!-- Login Form -->
+<form class="space-y-6">
+<!-- Email Field -->
+<div class="space-y-2 relative">
+<label class="font-label text-sm font-semibold text-on-surface ml-1 block" for="email">Email</label>
+<div class="relative">
+<span class="material-symbols-outlined absolute left-4 top-1/2 -translate-y-1/2 text-outline" data-icon="mail">mail</span>
+<input class="w-full bg-surface-variant/50 border outline-variant/15 text-on-surface rounded-lg pl-12 pr-4 py-3 focus:ring-primary focus:border-primary font-body placeholder:text-outline/70 transition-all" id="email" name="email" placeholder="explorer@geoc.app" required="" type="email"/>
+</div>
+</div>
+<!-- Password Field -->
+<div class="space-y-2 relative">
+<div class="flex justify-between items-center ml-1">
+<label class="font-label text-sm font-semibold text-on-surface block" for="password">Password</label>
+<a class="font-label text-sm text-primary hover:text-primary-container transition-colors" href="#">Forgot password?</a>
+</div>
+<div class="relative">
+<span class="material-symbols-outlined absolute left-4 top-1/2 -translate-y-1/2 text-outline" data-icon="lock">lock</span>
+<input class="w-full bg-surface-variant/50 border outline-variant/15 text-on-surface rounded-lg pl-12 pr-4 py-3 focus:ring-primary focus:border-primary font-body placeholder:text-outline/70 transition-all" id="password" name="password" placeholder="••••••••" required="" type="password"/>
+</div>
+</div>
+<!-- Action Buttons -->
+<div class="pt-4 space-y-4">
+<button class="w-full bg-gradient-primary text-on-primary font-headline font-bold py-4 rounded-full text-lg hover:scale-[0.98] transition-transform duration-200 shadow-[0_8px_24px_rgba(66,100,69,0.2)]" type="submit">
+                    Begin Journey
+                </button>
+<div class="text-center pt-4">
+<p class="font-body text-on-surface-variant text-sm">
+                        New to the atlas? 
+                        <a class="text-primary font-semibold hover:underline" href="#">Create Account</a>
+</p>
+</div>
+</div>
+</form>
+</main>
+<!-- Contextual map background hint (optional visual interest) -->
+<div class="absolute bottom-[-10%] right-[-5%] w-96 h-96 bg-tertiary-container/10 rounded-full blur-3xl -z-20 pointer-events-none"></div>
+</body></html>

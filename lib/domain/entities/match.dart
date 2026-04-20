@@ -22,6 +22,7 @@ class GameMatch extends Equatable {
   final DateTime createdAt;
   final DateTime? startedAt;
   final DateTime? finishedAt;
+  final int creatorElo;
 
   const GameMatch({
     required this.id,
@@ -35,6 +36,7 @@ class GameMatch extends Equatable {
     required this.createdAt,
     this.startedAt,
     this.finishedAt,
+    this.creatorElo = 1000,
   });
 
   /// Check if user is a player in this match

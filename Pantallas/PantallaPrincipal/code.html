@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>GeoC - Home</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;700;900&amp;family=Work+Sans:wght@400;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          "colors": {
+            "on-secondary-container": "#4d694f",
+            "surface-container-highest": "#e2e3e1",
+            "on-tertiary-fixed-variant": "#594324",
+            "surface-dim": "#dadad8",
+            "surface-bright": "#f9f9f7",
+            "on-secondary-fixed": "#06210c",
+            "surface-container-high": "#e8e8e6",
+            "error-container": "#ffdad6",
+            "on-primary": "#ffffff",
+            "on-primary-fixed-variant": "#2d4e31",
+            "tertiary-fixed-dim": "#e2c199",
+            "on-surface": "#1a1c1b",
+            "on-secondary-fixed-variant": "#324d34",
+            "secondary-fixed": "#cbebc9",
+            "on-primary-container": "#f7fff2",
+            "on-tertiary-container": "#fffbff",
+            "primary-container": "#5a7d5c",
+            "on-tertiary": "#ffffff",
+            "inverse-primary": "#aad0aa",
+            "surface-container": "#eeeeec",
+            "surface-variant": "#e2e3e1",
+            "on-background": "#1a1c1b",
+            "background": "#f9f9f7",
+            "primary": "#426445",
+            "on-tertiary-fixed": "#291801",
+            "outline-variant": "#c2c8bf",
+            "on-error-container": "#93000a",
+            "secondary-container": "#c8e8c6",
+            "surface-container-low": "#f4f4f2",
+            "on-error": "#ffffff",
+            "on-primary-fixed": "#002109",
+            "surface-container-lowest": "#ffffff",
+            "error": "#ba1a1a",
+            "on-surface-variant": "#424841",
+            "tertiary-fixed": "#ffddb4",
+            "primary-fixed-dim": "#aad0aa",
+            "outline": "#727970",
+            "inverse-on-surface": "#f1f1ef",
+            "secondary-fixed-dim": "#afcfae",
+            "inverse-surface": "#2f3130",
+            "surface-tint": "#446647",
+            "tertiary": "#705837",
+            "on-secondary": "#ffffff",
+            "surface": "#f9f9f7",
+            "secondary": "#49654b",
+            "primary-fixed": "#c5edc5",
+            "tertiary-container": "#8b704d"
+          },
+          "borderRadius": {
+            "DEFAULT": "0.25rem",
+            "lg": "0.5rem",
+            "xl": "0.75rem",
+            "full": "9999px"
+          },
+          "fontFamily": {
+            "headline": ["Plus Jakarta Sans", "sans-serif"],
+            "body": ["Work Sans", "sans-serif"],
+            "label": ["Work Sans", "sans-serif"]
+          }
+        }
+      }
+    }
+  </script>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background text-on-background font-body min-h-screen flex flex-col pb-24 md:pb-0">
+<!-- TopAppBar from JSON -->
+<header class="bg-[#f9f9f7] dark:bg-stone-950 docked full-width top-0 sticky flat no-shadows z-40">
+<div class="flex justify-between items-center w-full px-6 py-4 max-w-7xl mx-auto">
+<div class="flex items-center gap-3">
+<img alt="User avatar profile photo" class="w-10 h-10 rounded-full object-cover" data-alt="close up of a professional male headshot in studio lighting with a neutral background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB7_k1y2bRT624XqZTM4Him7lTLzFOCfZs1uJydYiI7slrJRpCKcEi0OGONsvH6xsHjjhEzoNQuspBeqMXQEd_I5js5fddcJtoyfOdxhK3VUups0IpPYU6BLuAaoLIpaEVuAikAf1w5ZeSnQnKRv_9Lw09VXJSH1iYQfKXcqX4xWgCcfe9KSpg4CW3h7gCQuCWvHCIwcFPmtuA3IY51hhRsYLCoxkL60qtR2H00igm5-p4OwV0zgDAhlhn09mFkDGaeWYpgiqicS_Pl"/>
+<h1 class="font-['Plus_Jakarta_Sans'] font-black text-3xl tracking-tighter text-[#426445] dark:text-[#688C6A]">GeoC</h1>
+</div>
+<div class="hidden md:flex items-center gap-8">
+<a class="text-[#426445] font-bold font-['Plus_Jakarta_Sans'] hover:bg-stone-200/50 dark:hover:bg-stone-800/20 transition-colors px-3 py-2 rounded-lg" href="#">Home</a>
+<a class="text-stone-400 font-normal font-['Plus_Jakarta_Sans'] hover:bg-stone-200/50 dark:hover:bg-stone-800/20 transition-colors px-3 py-2 rounded-lg" href="#">Battle</a>
+<a class="text-stone-400 font-normal font-['Plus_Jakarta_Sans'] hover:bg-stone-200/50 dark:hover:bg-stone-800/20 transition-colors px-3 py-2 rounded-lg" href="#">Journal</a>
+<a class="text-stone-400 font-normal font-['Plus_Jakarta_Sans'] hover:bg-stone-200/50 dark:hover:bg-stone-800/20 transition-colors px-3 py-2 rounded-lg" href="#">Profile</a>
+</div>
+<button class="text-[#426445] dark:text-[#688C6A] hover:bg-stone-200/50 dark:hover:bg-stone-800/20 transition-colors p-2 rounded-full">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0;">settings</span>
+</button>
+</div>
+</header>
+<main class="flex-grow w-full max-w-7xl mx-auto px-6 py-8 flex flex-col gap-8">
+<!-- Player Stats Section - Asymmetric Editorial Layout -->
+<section class="bg-surface-container-low rounded-xl p-8 flex flex-col md:flex-row items-start md:items-center justify-between gap-6 relative overflow-hidden">
+<!-- Decorative map overlay -->
+<div class="absolute inset-0 opacity-5 bg-[url('https://images.unsplash.com/photo-1524661135-423995f22d0b?auto=format&amp;fit=crop&amp;q=80&amp;w=1000')] bg-cover bg-center pointer-events-none" data-alt="vintage stylized world map with muted sepia tones and intricate contour lines"></div>
+<div class="z-10 flex flex-col gap-2">
+<span class="font-label text-sm uppercase tracking-widest text-on-surface-variant">Explorer</span>
+<h2 class="font-headline text-4xl md:text-5xl font-bold text-on-surface">Alex Mercer</h2>
+<div class="flex items-center gap-3 mt-2">
+<span class="bg-tertiary-container/20 text-tertiary px-3 py-1 rounded-full text-sm font-semibold flex items-center gap-1">
+<span class="material-symbols-outlined text-sm">local_fire_department</span>
+              Streak: 5
+           </span>
+</div>
+</div>
+<div class="z-10 flex flex-col items-end">
+<span class="font-label text-sm uppercase tracking-widest text-on-surface-variant mb-1">Global Rating</span>
+<div class="font-headline text-6xl font-black text-primary drop-shadow-sm">1450</div>
+<span class="text-sm text-primary-container mt-1">ELO Score</span>
+</div>
+</section>
+<!-- Main Actions Bento Grid -->
+<section class="grid grid-cols-1 md:grid-cols-12 gap-6">
+<!-- Partida Rápida (Quick Play) - Dominant CTA -->
+<button class="md:col-span-8 bg-gradient-to-br from-[#D5F2E5] to-[#B9D9B8] rounded-xl p-8 flex flex-col justify-between items-start min-h-[240px] group relative overflow-hidden text-left hover:scale-[0.98] transition-transform duration-200">
+<!-- Floating glass effect icon -->
+<div class="absolute -right-10 -bottom-10 bg-white/30 backdrop-blur-md w-48 h-48 rounded-full flex items-center justify-center opacity-70 group-hover:scale-110 transition-transform duration-500">
+<span class="material-symbols-outlined text-8xl text-primary/40">bolt</span>
+</div>
+<div class="z-10 bg-white/50 backdrop-blur-sm p-3 rounded-full mb-4">
+<span class="material-symbols-outlined text-3xl text-primary" style="font-variation-settings: 'FILL' 1;">bolt</span>
+</div>
+<div class="z-10">
+<h3 class="font-headline text-3xl font-bold text-primary mb-2">Partida Rápida</h3>
+<p class="font-body text-primary-container max-w-[70%]">Jump into an instant casual match against a random opponent.</p>
+</div>
+</button>
+<!-- Ranked Match -->
+<button class="md:col-span-4 bg-surface-container-high rounded-xl p-6 flex flex-col justify-between items-start min-h-[240px] group relative overflow-hidden text-left hover:scale-[0.98] transition-transform duration-200 shadow-[0_8px_32px_rgba(0,0,0,0.03)] border border-outline-variant/15">
+<div class="absolute -right-6 -bottom-6 bg-tertiary-container/10 w-32 h-32 rounded-full flex items-center justify-center opacity-50">
+<span class="material-symbols-outlined text-6xl text-tertiary/20">swords</span>
+</div>
+<div class="z-10 bg-surface p-3 rounded-full mb-4 shadow-sm border border-outline-variant/10">
+<span class="material-symbols-outlined text-2xl text-tertiary">swords</span>
+</div>
+<div class="z-10 mt-auto">
+<h3 class="font-headline text-xl font-bold text-on-surface mb-1">Ranked</h3>
+<p class="font-body text-sm text-on-surface-variant">Compete for ELO and climb the global leaderboards.</p>
+</div>
+</button>
+<!-- Fantasma (Ghost/Practice) -->
+<button class="md:col-span-12 bg-surface-container-lowest rounded-xl p-6 flex flex-row justify-between items-center group relative overflow-hidden text-left hover:bg-surface-container-low transition-colors duration-200 border border-outline-variant/15">
+<div class="flex items-center gap-6 z-10">
+<div class="bg-secondary-container/50 p-4 rounded-xl">
+<span class="material-symbols-outlined text-3xl text-secondary">history_edu</span>
+</div>
+<div>
+<h3 class="font-headline text-2xl font-bold text-on-surface mb-1">Fantasma</h3>
+<p class="font-body text-on-surface-variant">Practice against past top-tier performances.</p>
+</div>
+</div>
+<span class="material-symbols-outlined text-4xl text-outline-variant group-hover:translate-x-2 transition-transform z-10">arrow_forward</span>
+</button>
+</section>
+</main>
+<!-- BottomNavBar from JSON -->
+<nav class="md:hidden bg-[#f9f9f7]/90 dark:bg-stone-950/90 backdrop-blur-md fixed bottom-0 w-full z-50 rounded-t-[32px] shadow-[0_-8px_32px_rgba(0,0,0,0.06)]">
+<div class="flex justify-around items-center w-full h-20 px-4 pb-safe">
+<a class="flex flex-col items-center justify-center text-[#426445] dark:text-[#688C6A] relative after:content-[''] after:absolute after:-bottom-1 after:w-1 after:h-1 after:bg-[#426445] after:rounded-full scale-95 transition-transform duration-150" href="#">
+<span class="material-symbols-outlined mb-1" style="font-variation-settings: 'FILL' 1;">explore</span>
+<span class="font-['Work_Sans'] text-[10px] uppercase tracking-widest font-semibold">Home</span>
+</a>
+<a class="flex flex-col items-center justify-center text-stone-400 dark:text-stone-600 hover:text-[#426445] dark:hover:text-[#688C6A] transition-all" href="#">
+<span class="material-symbols-outlined mb-1">swords</span>
+<span class="font-['Work_Sans'] text-[10px] uppercase tracking-widest font-semibold">Battle</span>
+</a>
+<a class="flex flex-col items-center justify-center text-stone-400 dark:text-stone-600 hover:text-[#426445] dark:hover:text-[#688C6A] transition-all" href="#">
+<span class="material-symbols-outlined mb-1">auto_stories</span>
+<span class="font-['Work_Sans'] text-[10px] uppercase tracking-widest font-semibold">Journal</span>
+</a>
+<a class="flex flex-col items-center justify-center text-stone-400 dark:text-stone-600 hover:text-[#426445] dark:hover:text-[#688C6A] transition-all" href="#">
+<span class="material-symbols-outlined mb-1">person</span>
+<span class="font-['Work_Sans'] text-[10px] uppercase tracking-widest font-semibold">Profile</span>
+</a>
+</div>
+</nav>
+</body></html>

@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
+import 'package:google_fonts/google_fonts.dart';
 import '../../../domain/entities/question.dart';
 import '../../providers/game_provider.dart';
 import 'widgets/timer_widget.dart';
@@ -11,14 +12,12 @@ import 'widgets/game_result_widget.dart';
 import 'widgets/type_answer_widget.dart';
 import '../../../core/constants/game_constants.dart';
 import '../../../core/utils/fuzzy_matcher.dart';
+import '../../../core/theme/app_colors.dart';
 
 class GameScreen extends ConsumerWidget {
   final Difficulty difficulty;
 
-  const GameScreen({
-    super.key,
-    required this.difficulty,
-  });
+  const GameScreen({super.key, required this.difficulty});
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
@@ -28,30 +27,28 @@ class GameScreen extends ConsumerWidget {
     final timerProgress = ref.watch(timerProgressProvider);
 
     return Scaffold(
-      backgroundColor: const Color(0xFF1A1A2E),
+      backgroundColor: AppColors.background,
       appBar: AppBar(
-        backgroundColor: Colors.transparent,
+        backgroundColor: AppColors.background,
         elevation: 0,
         leading: IconButton(
-          icon: const Icon(Icons.close, color: Colors.white),
-          onPressed: () {
-            _showExitDialog(context, ref);
-          },
+          icon: const Icon(Icons.close, color: AppColors.onSurface),
+          onPressed: () => _showExitDialog(context, ref),
         ),
         actions: [
-          // Score display
+          // Score pill
           Container(
             margin: const EdgeInsets.only(right: 16),
-            padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 6),
+            padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
             decoration: BoxDecoration(
-              color: Colors.orange.withOpacity(0.2),
-              borderRadius: BorderRadius.circular(20),
-              border: Border.all(color: Colors.orange.withOpacity(0.5)),
+              color: AppColors.primary.withOpacity(0.1),
+              borderRadius: BorderRadius.circular(9999),
+              border: Border.all(color: AppColors.primary.withOpacity(0.3)),
             ),
             child: Row(
               children: [
-                const Icon(Icons.star, color: Colors.orange, size: 20),
-                const SizedBox(width: 6),
+                const Icon(Icons.star, color: AppColors.primary, size: 20),
+                const SizedBox(width: 8),
                 Text(
                   gameState.maybeWhen(
                     playing: (_, __, ___, score, _____, ______, _______) => '$score',
@@ -59,10 +56,10 @@ class GameScreen extends ConsumerWidget {
                     finished: (score, ___, _____, _______, ______) => '$score',
                     orElse: () => '0',
                   ),
-                  style: const TextStyle(
-                    color: Colors.white,
-                    fontWeight: FontWeight.bold,
-                    fontSize: 16,
+                  style: GoogleFonts.plusJakartaSans(
+                    color: AppColors.primary,
+                    fontWeight: FontWeight.w700,
+                    fontSize: 18,
                   ),
                 ),
               ],
@@ -74,36 +71,11 @@ class GameScreen extends ConsumerWidget {
         initial: () => _buildInitial(context, ref),
         loading: () => _buildLoading(),
         playing: (_, currentQuestionIndex, ___, score, _____, correctAnswers, ________) =>
-            _buildPlaying(
-          context,
-          ref,
-          currentQuestion,
-          currentQuestionIndex,
-          progress,
-          timerProgress,
-          score,
-          correctAnswers,
-        ),
+            _buildPlaying(context, ref, currentQuestion, currentQuestionIndex, progress, timerProgress, score, correctAnswers),
         answered: (isCorrect, correctAnswer, selectedAnswer, score) =>
-            _buildAnswered(
-          context,
-          ref,
-          isCorrect,
-          correctAnswer,
-          selectedAnswer,
-          score,
-          currentQuestion,
-        ),
+            _buildAnswered(context, ref, isCorrect, correctAnswer, selectedAnswer, score, currentQuestion),
         finished: (score, totalQuestions, correctAnswers, userAnswers, averageTime) =>
-            _buildFinished(
-          context,
-          ref,
-          score,
-          totalQuestions,
-          correctAnswers,
-          userAnswers,
-          averageTime,
-        ),
+            _buildFinished(context, ref, score, totalQuestions, correctAnswers, userAnswers, averageTime),
         error: (message) => _buildError(context, message, ref),
       ),
     );
@@ -111,72 +83,90 @@ class GameScreen extends ConsumerWidget {
 
   Widget _buildInitial(BuildContext context, WidgetRef ref) {
     return Center(
-      child: Column(
-        mainAxisAlignment: MainAxisAlignment.center,
-        children: [
-          const Icon(
-            Icons.play_circle_outline,
-            size: 80,
-            color: Colors.orange,
-          ),
-          const SizedBox(height: 24),
-          const Text(
-            'Ready to Play?',
-            style: TextStyle(
-              color: Colors.white,
-              fontSize: 28,
-              fontWeight: FontWeight.bold,
+      child: Padding(
+        padding: const EdgeInsets.all(32),
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            Container(
+              padding: const EdgeInsets.all(24),
+              decoration: BoxDecoration(
+                color: AppColors.primary.withOpacity(0.1),
+                shape: BoxShape.circle,
+              ),
+              child: Icon(Icons.play_circle_outline, size: 80, color: AppColors.primary),
             ),
-          ),
-          const SizedBox(height: 12),
-          Text(
-            'Difficulty: ${difficulty.name.toUpperCase()}',
-            style: const TextStyle(
-              color: Colors.grey,
-              fontSize: 18,
-            ),
-          ),
-          const SizedBox(height: 32),
-          ElevatedButton(
-            onPressed: () {
-            ref.read(gameNotifierProvider.notifier).startGame(
-                  difficulty: difficulty,
-                );
-            },
-            style: ElevatedButton.styleFrom(
-              backgroundColor: Colors.orange,
-              foregroundColor: Colors.white,
-              padding: const EdgeInsets.symmetric(horizontal: 48, vertical: 16),
-              shape: RoundedRectangleBorder(
-                borderRadius: BorderRadius.circular(30),
+            const SizedBox(height: 32),
+            Text(
+              'Ready to Play?',
+              style: GoogleFonts.plusJakartaSans(
+                fontSize: 32,
+                fontWeight: FontWeight.w700,
+                color: AppColors.onSurface,
               ),
             ),
-            child: const Text(
-              'START GAME',
-              style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
+            const SizedBox(height: 12),
+            Text(
+              'Difficulty: ${difficulty.name.toUpperCase()}',
+              style: GoogleFonts.workSans(
+                fontSize: 18,
+                color: AppColors.onSurfaceVariant,
+              ),
             ),
-          ),
-        ],
+            const SizedBox(height: 40),
+            SizedBox(
+              width: double.infinity,
+              height: 56,
+              child: DecoratedBox(
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(9999),
+                  gradient: LinearGradient(
+                    colors: [AppColors.primary, AppColors.primaryContainer],
+                  ),
+                  boxShadow: [
+                    BoxShadow(
+                      color: AppColors.primary.withOpacity(0.3),
+                      blurRadius: 24,
+                      offset: const Offset(0, 8),
+                    ),
+                  ],
+                ),
+                child: Material(
+                  color: Colors.transparent,
+                  child: InkWell(
+                    borderRadius: BorderRadius.circular(9999),
+                    onTap: () => ref.read(gameNotifierProvider.notifier).startGame(difficulty: difficulty),
+                    child: Center(
+                      child: Text(
+                        'START GAME',
+                        style: GoogleFonts.plusJakartaSans(
+                          fontSize: 18,
+                          fontWeight: FontWeight.w700,
+                          color: AppColors.onPrimary,
+                          letterSpacing: 2,
+                        ),
+                      ),
+                    ),
+                  ),
+                ),
+              ),
+            ),
+          ],
+        ),
       ),
     );
   }
 
   Widget _buildLoading() {
-    return const Center(
+    return Center(
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          CircularProgressIndicator(
-            color: Colors.orange,
-            strokeWidth: 3,
-          ),
-          SizedBox(height: 24),
+          const CircularProgressIndicator(color: AppColors.primary, strokeWidth: 3),
+          const SizedBox(height: 24),
           Text(
             'Loading questions...',
-            style: TextStyle(
-              color: Colors.white,
-              fontSize: 18,
-            ),
+            style: GoogleFonts.workSans(fontSize: 18, color: AppColors.onSurfaceVariant),
           ),
         ],
       ),
@@ -184,21 +174,14 @@ class GameScreen extends ConsumerWidget {
   }
 
   Widget _buildPlaying(
-    BuildContext context,
-    WidgetRef ref,
-    dynamic currentQuestion,
-    int currentQuestionIndex,
-    double progress,
-    double timerProgress,
-    int score,
-    int correctAnswers,
+    BuildContext context, WidgetRef ref, dynamic currentQuestion,
+    int currentQuestionIndex, double progress, double timerProgress,
+    int score, int correctAnswers,
   ) {
-    if (currentQuestion == null) {
-      return _buildLoading();
-    }
+    if (currentQuestion == null) return _buildLoading();
 
     return SingleChildScrollView(
-      padding: const EdgeInsets.all(16),
+      padding: const EdgeInsets.all(24),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
@@ -207,11 +190,11 @@ class GameScreen extends ConsumerWidget {
             children: [
               Expanded(
                 child: ClipRRect(
-                  borderRadius: BorderRadius.circular(10),
+                  borderRadius: BorderRadius.circular(9999),
                   child: LinearProgressIndicator(
                     value: progress,
-                    backgroundColor: Colors.grey.withOpacity(0.3),
-                    valueColor: const AlwaysStoppedAnimation<Color>(Colors.orange),
+                    backgroundColor: AppColors.outlineVariant.withOpacity(0.3),
+                    valueColor: const AlwaysStoppedAnimation<Color>(AppColors.primary),
                     minHeight: 8,
                   ),
                 ),
@@ -219,25 +202,19 @@ class GameScreen extends ConsumerWidget {
               const SizedBox(width: 12),
               Text(
                 '${currentQuestionIndex + 1}/10',
-                style: const TextStyle(
-                  color: Colors.white,
+                style: GoogleFonts.plusJakartaSans(
+                  color: AppColors.onSurface,
                   fontSize: 16,
-                  fontWeight: FontWeight.bold,
+                  fontWeight: FontWeight.w700,
                 ),
               ),
             ],
           ),
           const SizedBox(height: 20),
-
-          // Timer
           TimerWidget(progress: timerProgress),
           const SizedBox(height: 30),
-
-          // Question card
           QuestionCard(question: currentQuestion),
           const SizedBox(height: 30),
-
-          // Answer options - type answer if no options, otherwise multiple choice
           if (currentQuestion.options.isEmpty)
             TypeAnswerWidget(
               question: currentQuestion,
@@ -245,19 +222,14 @@ class GameScreen extends ConsumerWidget {
                   ? (ref.watch(timerProgressProvider) * GameConstants.secondsPerTypeQuestion).round()
                   : 0,
               onAnswerSubmitted: (answer) {
-                ref.read(gameNotifierProvider.notifier).submitTypedAnswer(
-                      typedAnswer: answer,
-                    );
+                ref.read(gameNotifierProvider.notifier).submitTypedAnswer(typedAnswer: answer);
               },
             )
           else
             AnswerOptionsWidget(
               question: currentQuestion,
               onAnswerSelected: (answer) {
-                ref.read(gameNotifierProvider.notifier).submitAnswer(
-                      selectedAnswer: answer,
-                      isTimeout: false,
-                    );
+                ref.read(gameNotifierProvider.notifier).submitAnswer(selectedAnswer: answer, isTimeout: false);
               },
             ),
         ],
@@ -265,14 +237,8 @@ class GameScreen extends ConsumerWidget {
     );
   }
 
-  Widget _buildAnswered(
-    BuildContext context,
-    WidgetRef ref,
-    bool isCorrect,
-    String correctAnswer,
-    String selectedAnswer,
-    int score,
-    dynamic currentQuestion,
+  Widget _buildAnswered(BuildContext context, WidgetRef ref, bool isCorrect,
+    String correctAnswer, String selectedAnswer, int score, dynamic currentQuestion,
   ) {
     return AnswerFeedbackWidget(
       isCorrect: isCorrect,
@@ -283,27 +249,16 @@ class GameScreen extends ConsumerWidget {
     );
   }
 
-  Widget _buildFinished(
-    BuildContext context,
-    WidgetRef ref,
-    int score,
-    int totalQuestions,
-    int correctAnswers,
-    List<dynamic> userAnswers,
-    double averageTime,
+  Widget _buildFinished(BuildContext context, WidgetRef ref, int score,
+    int totalQuestions, int correctAnswers, List<dynamic> userAnswers, double averageTime,
   ) {
     return GameResultWidget(
       score: score,
       totalQuestions: totalQuestions,
       correctAnswers: correctAnswers,
       averageTime: averageTime,
-      onPlayAgain: () {
-        ref.read(gameNotifierProvider.notifier).startGame(
-              difficulty: difficulty,
-            );
-      },
+      onPlayAgain: () => ref.read(gameNotifierProvider.notifier).startGame(difficulty: difficulty),
       onGoHome: () {
-        // Navigate first, then reset state to avoid context issues
         context.go('/home');
         Future.microtask(() => ref.read(gameNotifierProvider.notifier).resetGame());
       },
@@ -317,29 +272,13 @@ class GameScreen extends ConsumerWidget {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            const Icon(
-              Icons.error_outline,
-              size: 64,
-              color: Colors.red,
-            ),
+            const Icon(Icons.error_outline, size: 64, color: AppColors.error),
             const SizedBox(height: 16),
-            Text(
-              message,
-              style: const TextStyle(
-                color: Colors.white,
-                fontSize: 16,
-              ),
-              textAlign: TextAlign.center,
-            ),
+            Text(message, style: GoogleFonts.workSans(fontSize: 16, color: AppColors.onSurface), textAlign: TextAlign.center),
             const SizedBox(height: 24),
             ElevatedButton(
-              onPressed: () {
-                context.go('/home');
-              },
-              style: ElevatedButton.styleFrom(
-                backgroundColor: Colors.orange,
-                foregroundColor: Colors.white,
-              ),
+              onPressed: () => context.go('/home'),
+              style: ElevatedButton.styleFrom(backgroundColor: AppColors.primary, foregroundColor: AppColors.onPrimary),
               child: const Text('Go Back'),
             ),
           ],
@@ -349,34 +288,24 @@ class GameScreen extends ConsumerWidget {
   }
 
   void _showExitDialog(BuildContext context, WidgetRef ref) {
-    final screenContext = context;
     showDialog(
-      context: screenContext,
+      context: context,
       builder: (dialogContext) => AlertDialog(
-        backgroundColor: const Color(0xFF2D2D44),
-        title: const Text(
-          'Exit Game?',
-          style: TextStyle(color: Colors.white),
-        ),
-        content: const Text(
-          'Your progress will be lost. Are you sure?',
-          style: TextStyle(color: Colors.grey),
-        ),
+        backgroundColor: AppColors.surfaceContainerHigh,
+        title: Text('Exit Game?', style: GoogleFonts.plusJakartaSans(color: AppColors.onSurface, fontWeight: FontWeight.w700)),
+        content: Text('Your progress will be lost. Are you sure?', style: GoogleFonts.workSans(color: AppColors.onSurfaceVariant)),
         actions: [
           TextButton(
             onPressed: () => Navigator.of(dialogContext).pop(),
-            child: const Text('Cancel', style: TextStyle(color: Colors.grey)),
+            child: Text('Cancel', style: TextStyle(color: AppColors.onSurfaceVariant)),
           ),
           TextButton(
             onPressed: () {
-              Navigator.of(dialogContext).pop(); // Close dialog
+              Navigator.of(dialogContext).pop();
               ref.read(gameNotifierProvider.notifier).cancelGame();
               context.go('/home');
             },
-            child: const Text(
-              'Exit',
-              style: TextStyle(color: Colors.red),
-            ),
+            child: const Text('Exit', style: TextStyle(color: AppColors.error)),
           ),
         ],
       ),

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>GeoC - Loading</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;700;800;900&amp;family=Work+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-secondary-container": "#4d694f",
+                    "surface-container-highest": "#e2e3e1",
+                    "on-tertiary-fixed-variant": "#594324",
+                    "surface-dim": "#dadad8",
+                    "surface-bright": "#f9f9f7",
+                    "on-secondary-fixed": "#06210c",
+                    "surface-container-high": "#e8e8e6",
+                    "error-container": "#ffdad6",
+                    "on-primary": "#ffffff",
+                    "on-primary-fixed-variant": "#2d4e31",
+                    "tertiary-fixed-dim": "#e2c199",
+                    "on-surface": "#1a1c1b",
+                    "on-secondary-fixed-variant": "#324d34",
+                    "secondary-fixed": "#cbebc9",
+                    "on-primary-container": "#f7fff2",
+                    "on-tertiary-container": "#fffbff",
+                    "primary-container": "#5a7d5c",
+                    "on-tertiary": "#ffffff",
+                    "inverse-primary": "#aad0aa",
+                    "surface-container": "#eeeeec",
+                    "surface-variant": "#e2e3e1",
+                    "on-background": "#1a1c1b",
+                    "background": "#f9f9f7",
+                    "primary": "#426445",
+                    "on-tertiary-fixed": "#291801",
+                    "outline-variant": "#c2c8bf",
+                    "on-error-container": "#93000a",
+                    "secondary-container": "#c8e8c6",
+                    "surface-container-low": "#f4f4f2",
+                    "on-error": "#ffffff",
+                    "on-primary-fixed": "#002109",
+                    "surface-container-lowest": "#ffffff",
+                    "error": "#ba1a1a",
+                    "on-surface-variant": "#424841",
+                    "tertiary-fixed": "#ffddb4",
+                    "primary-fixed-dim": "#aad0aa",
+                    "outline": "#727970",
+                    "inverse-on-surface": "#f1f1ef",
+                    "secondary-fixed-dim": "#afcfae",
+                    "inverse-surface": "#2f3130",
+                    "surface-tint": "#446647",
+                    "tertiary": "#705837",
+                    "on-secondary": "#ffffff",
+                    "surface": "#f9f9f7",
+                    "secondary": "#49654b",
+                    "primary-fixed": "#c5edc5",
+                    "tertiary-container": "#8b704d"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "spacing": {},
+            "fontFamily": {
+                    "headline": [
+                            "Plus Jakarta Sans"
+                    ],
+                    "body": [
+                            "Work Sans"
+                    ],
+                    "label": [
+                            "Work Sans"
+                    ]
+            }
+    },
+        },
+      }
+    </script>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background overflow-hidden antialiased text-on-surface h-screen w-full">
+<main class="relative w-full h-full flex flex-col items-center justify-center">
+<!-- Background Layering -->
+<div class="absolute inset-0 z-0 pointer-events-none">
+<!-- Vintage Educational Warmth Overlay -->
+<div class="absolute inset-0 bg-tertiary-fixed opacity-10 mix-blend-multiply"></div>
+<!-- Map Pattern -->
+<div class="w-full h-full bg-cover bg-center opacity-[0.06] grayscale" data-alt="highly abstract, very faint vintage topographical map background with intricate contour lines, delicate geographic markings, and subtle latitude lines spanning across the canvas" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAdwuiDaF651_A-BQ0j3YJPz_87nygXpdujKTkVLVnVINV-uLInCQjJ-vVuYEk_--up6ia65y1N6sl6BPh66Jly5VJAw9uPiCPjl2yFjcj6ik3Y0AvnSkQ9MdM0mcd1PRH1UpSTpq1Ljvj8AbgDp1dvnEjgD4j5f96KGFdlCjNMaYMN3fjUxq7Fmg6L2BVokYqMAWi55drZnTH6mESCB7qQxS9PWnRyu0FfmcS5AdMwxVBRGWhjcKJRGYeFJ07HKP0mLfso6Icn7BAi');">
+</div>
+</div>
+<!-- Central Brand Canvas -->
+<div class="relative z-10 flex flex-col items-center mt-[-10vh]">
+<!-- Hero Icon -->
+<span class="material-symbols-outlined text-[88px] md:text-[104px] text-primary mb-6 drop-shadow-[0_16px_32px_rgba(66,100,69,0.15)]" style="font-variation-settings: 'FILL' 0, 'wght' 200;">
+                explore
+            </span>
+<!-- Brand Typography Anchor -->
+<h1 class="font-headline font-black text-7xl md:text-9xl tracking-tighter text-primary">
+                GeoC
+            </h1>
+<!-- Educational Subtitle -->
+<p class="font-body text-surface-tint mt-5 tracking-[0.25em] uppercase text-[10px] md:text-xs font-semibold">
+                The Digital Cartographer
+            </p>
+</div>
+<!-- Bottom Loading Module (Segmented Gauge Pattern) -->
+<div class="absolute bottom-16 md:bottom-24 w-64 md:w-80 flex flex-col items-center z-10">
+<p class="font-body text-[10px] text-on-surface-variant mb-5 tracking-[0.15em] uppercase font-medium">
+                Calibrating Instruments
+            </p>
+<div class="flex gap-2 w-full h-1.5 md:h-2">
+<div class="flex-1 bg-primary rounded-full shadow-[0_4px_12px_rgba(66,100,69,0.2)]"></div>
+<div class="flex-1 bg-primary rounded-full shadow-[0_4px_12px_rgba(66,100,69,0.2)]"></div>
+<div class="flex-1 bg-primary rounded-full shadow-[0_4px_12px_rgba(66,100,69,0.2)]"></div>
+<div class="flex-1 bg-primary-fixed rounded-full"></div>
+<div class="flex-1 bg-primary-fixed rounded-full"></div>
+</div>
+</div>
+</main>
+</body></html>

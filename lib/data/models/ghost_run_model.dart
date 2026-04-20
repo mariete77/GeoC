@@ -1,41 +1,59 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
-import 'package:freezed_annotation/freezed_annotation.dart';
-import 'package:geoquiz_battle/domain/entities/match.dart';
+import '../../domain/entities/match.dart';
 
-part 'ghost_run_model.freezed.dart';
-part 'ghost_run_model.g.dart';
+/// Ghost run model for Firestore serialization
+class GhostRunModel {
+  final String id;
+  final String userId;
+  final int elo;
+  final List<String> questionIds;
+  final List<GhostAnswerModel> answers;
+  final DateTime createdAt;
 
-@freezed
-class GhostRunModel with _$GhostRunModel {
-  const GhostRunModel._();
+  const GhostRunModel({
+    required this.id,
+    required this.userId,
+    required this.elo,
+    required this.questionIds,
+    required this.answers,
+    required this.createdAt,
+  });
 
-  const factory GhostRunModel({
-    required String userId,
-    required String ghostRunId,
-    required int elo,
-    required List<String> questionIds,
-    required List<GhostAnswerModel> answers,
-    required DateTime createdAt,
-  }) = _GhostRunModel;
-
-  factory GhostRunModel.fromJson(Map<String, dynamic> json) =>
-      _$GhostRunModelFromJson(json);
-
+  /// Create from Firestore DocumentSnapshot
   factory GhostRunModel.fromFirestore(DocumentSnapshot doc) {
     final data = doc.data() as Map<String, dynamic>;
-    return GhostRunModel.fromJson({
-      ...data,
-      'createdAt': data['createdAt'] != null
-          ? (data['createdAt'] as Timestamp).toDate().toIso8601String()
-          : DateTime.now().toIso8601String(),
-    });
+    return GhostRunModel(
+      id: doc.id,
+      userId: data['userId'] as String? ?? '',
+      elo: data['elo'] as int? ?? 1000,
+      questionIds: (data['questionIds'] as List<dynamic>?)
+              ?.map((e) => e as String)
+              .toList() ??
+          [],
+      answers: (data['answers'] as List<dynamic>?)
+              ?.map((a) => GhostAnswerModel.fromJson(a as Map<String, dynamic>))
+              .toList() ??
+          [],
+      createdAt: (data['createdAt'] as dynamic)?.toDate() ?? DateTime.now(),
+    );
+  }
+
+  /// Convert to Firestore document
+  Map<String, dynamic> toFirestore() {
+    return {
+      'userId': userId,
+      'elo': elo,
+      'questionIds': questionIds,
+      'answers': answers.map((a) => a.toJson()).toList(),
+      'createdAt': createdAt,
+    };
   }
 
   /// Convert to domain entity
   GhostRun toDomain() {
     return GhostRun(
       userId: userId,
-      ghostRunId: ghostRunId,
+      ghostRunId: id,
       elo: elo,
       questionIds: questionIds,
       answers: answers.map((a) => a.toDomain()).toList(),
@@ -43,41 +61,69 @@ class GhostRunModel with _$GhostRunModel {
     );
   }
 
-  /// Convert from domain entity
+  /// Create from domain entity
   factory GhostRunModel.fromDomain(GhostRun ghostRun) {
     return GhostRunModel(
+      id: ghostRun.ghostRunId,
       userId: ghostRun.userId,
-      ghostRunId: ghostRun.ghostRunId,
       elo: ghostRun.elo,
       questionIds: ghostRun.questionIds,
-      answers: ghostRun.answers
-          .map((a) => GhostAnswerModel.fromDomain(a))
-          .toList(),
+      answers: ghostRun.answers.map((a) => GhostAnswerModel.fromDomain(a)).toList(),
       createdAt: ghostRun.createdAt,
     );
   }
 
-  /// Convert to Firestore map
-  Map<String, dynamic> toFirestore() {
-    final json = toJson();
-    return json;
+  /// Create from a completed game's answers
+  factory GhostRunModel.fromGameSession({
+    required String id,
+    required String userId,
+    required int elo,
+    required List<String> questionIds,
+    required List<Answer> playerAnswers,
+  }) {
+    return GhostRunModel(
+      id: id,
+      userId: userId,
+      elo: elo,
+      questionIds: questionIds,
+      answers: playerAnswers.map((a) => GhostAnswerModel(
+        questionIndex: a.questionIndex,
+        isCorrect: a.isCorrect,
+        timeMs: a.timeMs,
+      )).toList(),
+      createdAt: DateTime.now(),
+    );
   }
 }
 
-@freezed
-class GhostAnswerModel with _$GhostAnswerModel {
-  const GhostAnswerModel._();
+/// Ghost answer model
+class GhostAnswerModel {
+  final int questionIndex;
+  final bool isCorrect;
+  final int timeMs;
 
-  const factory GhostAnswerModel({
-    required int questionIndex,
-    required bool isCorrect,
-    required int timeMs,
-  }) = _GhostAnswerModel;
+  const GhostAnswerModel({
+    required this.questionIndex,
+    required this.isCorrect,
+    required this.timeMs,
+  });
 
-  factory GhostAnswerModel.fromJson(Map<String, dynamic> json) =>
-      _$GhostAnswerModelFromJson(json);
+  factory GhostAnswerModel.fromJson(Map<String, dynamic> json) {
+    return GhostAnswerModel(
+      questionIndex: json['questionIndex'] as int? ?? 0,
+      isCorrect: json['isCorrect'] as bool? ?? false,
+      timeMs: json['timeMs'] as int? ?? 0,
+    );
+  }
 
-  /// Convert to domain entity
+  Map<String, dynamic> toJson() {
+    return {
+      'questionIndex': questionIndex,
+      'isCorrect': isCorrect,
+      'timeMs': timeMs,
+    };
+  }
+
   GhostAnswer toDomain() {
     return GhostAnswer(
       questionIndex: questionIndex,
@@ -86,12 +132,11 @@ class GhostAnswerModel with _$GhostAnswerModel {
     );
   }
 
-  /// Convert from domain entity
-  factory GhostAnswerModel.fromDomain(GhostAnswer ghostAnswer) {
+  factory GhostAnswerModel.fromDomain(GhostAnswer answer) {
     return GhostAnswerModel(
-      questionIndex: ghostAnswer.questionIndex,
-      isCorrect: ghostAnswer.isCorrect,
-      timeMs: ghostAnswer.timeMs,
+      questionIndex: answer.questionIndex,
+      isCorrect: answer.isCorrect,
+      timeMs: answer.timeMs,
     );
   }
 }
