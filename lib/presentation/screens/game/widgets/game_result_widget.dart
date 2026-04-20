@@ -308,7 +308,7 @@ class _GameResultWidgetState extends State<GameResultWidget>
                             _buildMiniStat(
                               icon: Icons.timer_outlined,
                               value:
-                                  '${widget.averageTime.toStringAsFixed(1)}s',
+                                  '${(widget.averageTime / 1000).toStringAsFixed(1)}s',
                               label: 'Tiempo medio',
                               color: AppColors.tertiary,
                             ),
@@ -383,8 +383,9 @@ class _GameResultWidgetState extends State<GameResultWidget>
                     ),
                     const SizedBox(height: 24),
 
-                    // ELO Graph
-                    Expanded(
+                    // ELO Graph (fixed height to avoid IntrinsicHeight + Expanded conflict)
+                    SizedBox(
+                      height: 120,
                       child: LayoutBuilder(
                         builder: (context, constraints) {
                           return _buildEloGraph(constraints);
