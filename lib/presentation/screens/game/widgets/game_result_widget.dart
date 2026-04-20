@@ -210,8 +210,7 @@ class _GameResultWidgetState extends State<GameResultWidget>
   // ═══════════════════════════════════════════════════════════
 
   Widget _buildBentoRow(double accuracy) {
-    return SizedBox(
-      height: 340,
+    return IntrinsicHeight(
       child: Row(
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
@@ -251,10 +250,10 @@ class _GameResultWidgetState extends State<GameResultWidget>
                             color: AppColors.onSurface,
                           ),
                         ),
-                        const SizedBox(height: 24),
+                        const SizedBox(height: 20),
 
                         // Correct answers
-                        _buildStatRow(
+                        _buildStatBlock(
                           label: 'Preguntas Correctas',
                           value: RichText(
                             text: TextSpan(
@@ -279,13 +278,10 @@ class _GameResultWidgetState extends State<GameResultWidget>
                             ),
                           ),
                         ),
-                        Divider(
-                          color: AppColors.surfaceVariant.withOpacity(0.3),
-                          height: 32,
-                        ),
+                        const SizedBox(height: 16),
 
                         // Points
-                        _buildStatRow(
+                        _buildStatBlock(
                           label: 'Puntos Obtenidos',
                           value: Text(
                             '+${widget.score}',
@@ -668,22 +664,20 @@ class _GameResultWidgetState extends State<GameResultWidget>
     );
   }
 
-  Widget _buildStatRow({required String label, required Widget value}) {
-    return Row(
-      mainAxisAlignment: MainAxisAlignment.spaceBetween,
-      crossAxisAlignment: CrossAxisAlignment.end,
+  Widget _buildStatBlock({required String label, required Widget value}) {
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        Expanded(
-          child: Text(
-            label,
-            style: GoogleFonts.workSans(
-              fontSize: 11,
-              fontWeight: FontWeight.w600,
-              color: AppColors.onSurfaceVariant,
-              letterSpacing: 1.5,
-            ),
+        Text(
+          label,
+          style: GoogleFonts.workSans(
+            fontSize: 12,
+            fontWeight: FontWeight.w600,
+            color: AppColors.onSurfaceVariant,
+            letterSpacing: 0.5,
           ),
         ),
+        const SizedBox(height: 4),
         value,
       ],
     );

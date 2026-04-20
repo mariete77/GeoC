@@ -27,19 +27,19 @@ class AnswerFeedbackWidget extends StatefulWidget {
 class _AnswerFeedbackWidgetState extends State<AnswerFeedbackWidget>
     with SingleTickerProviderStateMixin {
   late AnimationController _controller;
-  late Animation<double> _scaleAnimation;
+  late Animation<Offset> _slideAnimation;
   late Animation<double> _fadeAnimation;
 
   @override
   void initState() {
     super.initState();
     _controller = AnimationController(
-      duration: const Duration(milliseconds: 600),
+      duration: const Duration(milliseconds: 500),
       vsync: this,
     );
 
-    _scaleAnimation = Tween<double>(begin: 0.0, end: 1.0).animate(
-      CurvedAnimation(parent: _controller, curve: Curves.elasticOut),
+    _slideAnimation = Tween<Offset>(begin: const Offset(0, 1.0), end: Offset.zero).animate(
+      CurvedAnimation(parent: _controller, curve: Curves.easeOutCubic),
     );
 
     _fadeAnimation = Tween<double>(begin: 0.0, end: 1.0).animate(
@@ -57,183 +57,261 @@ class _AnswerFeedbackWidgetState extends State<AnswerFeedbackWidget>
 
   @override
   Widget build(BuildContext context) {
-    final color = widget.isCorrect ? AppColors.success : AppColors.error;
-    final icon = widget.isCorrect ? Icons.check_circle : Icons.cancel;
-    final title = widget.isCorrect ? '¡Correcto!' : '¡Incorrecto!';
-
     // Extract educational info from extraData
     final infoToShow = widget.question?.extraData?['infoToShow'] as String?;
     final hasInfo = infoToShow != null && infoToShow.isNotEmpty;
 
-    final message = widget.isCorrect
-        ? (hasInfo ? '${widget.correctAnswer} tiene $infoToShow' : '+${widget.score} puntos')
-        : 'Respuesta correcta: ${widget.correctAnswer}';
+    // Banner colors
+    final bannerColor = widget.isCorrect
+        ? AppColors.primaryContainer
+        : AppColors.errorContainer;
+    final bannerFg = widget.isCorrect
+        ? AppColors.onPrimaryContainer
+        : AppColors.onErrorContainer;
+    final icon = widget.isCorrect ? Icons.check_circle : Icons.cancel;
+    final title = widget.isCorrect ? 'Correcto' : 'Incorrecto';
 
     return Container(
-      color: AppColors.background,
-      child: Center(
-        child: FadeTransition(
-          opacity: _fadeAnimation,
-          child: ScaleTransition(
-            scale: _scaleAnimation,
+      color: AppColors.onBackground.withOpacity(0.20),
+      child: FadeTransition(
+        opacity: _fadeAnimation,
+        child: Align(
+          alignment: Alignment.bottomCenter,
+          child: SlideTransition(
+            position: _slideAnimation,
             child: Container(
-              margin: const EdgeInsets.all(24),
-              padding: const EdgeInsets.all(32),
+              width: double.infinity,
+              constraints: const BoxConstraints(maxWidth: 480),
               decoration: BoxDecoration(
-                color: AppColors.surfaceContainerHigh,
-                borderRadius: BorderRadius.circular(24),
-                border: Border.all(
-                  color: color.withOpacity(0.5),
-                  width: 2,
+                color: AppColors.surfaceContainerLowest,
+                borderRadius: const BorderRadius.vertical(
+                  top: Radius.circular(32),
                 ),
                 boxShadow: [
                   BoxShadow(
-                    color: color.withOpacity(0.3),
-                    blurRadius: 20,
-                    spreadRadius: 5,
+                    color: const Color(0xFF1A1C1B).withOpacity(0.06),
+                    blurRadius: 32,
+                    offset: const Offset(0, -8),
                   ),
                 ],
               ),
               child: Column(
                 mainAxisSize: MainAxisSize.min,
                 children: [
-                  // Animated icon
+                  // ── Top Banner (primary-container for correct, error-container for incorrect)
                   Container(
-                    padding: const EdgeInsets.all(20),
+                    width: double.infinity,
+                    padding: const EdgeInsets.symmetric(vertical: 40),
                     decoration: BoxDecoration(
-                      color: color.withOpacity(0.15),
-                      shape: BoxShape.circle,
+                      color: bannerColor,
+                      borderRadius: const BorderRadius.vertical(
+                        top: Radius.circular(32),
+                      ),
                     ),
-                    child: Icon(
-                      icon,
-                      size: 80,
-                      color: color,
-                    ),
-                  ),
-                  const SizedBox(height: 24),
-
-                  // Title
-                  Text(
-                    title,
-                    style: GoogleFonts.plusJakartaSans(
-                      color: color,
-                      fontSize: 32,
-                      fontWeight: FontWeight.w800,
-                    ),
-                  ),
-                  const SizedBox(height: 12),
-
-                  // Message
-                  Text(
-                    message,
-                    style: GoogleFonts.workSans(
-                      color: AppColors.onSurface,
-                      fontSize: 20,
-                      fontWeight: FontWeight.w600,
-                    ),
-                    textAlign: TextAlign.center,
-                  ),
-
-                  // Show question image if available
-                  if (widget.question?.imageUrl != null) ...[
-                    const SizedBox(height: 24),
-                    ClipRRect(
-                      borderRadius: BorderRadius.circular(16),
-                      child: CachedNetworkImage(
-                        imageUrl: widget.question!.imageUrl!,
-                        height: 120,
-                        width: double.infinity,
-                        fit: BoxFit.contain,
-                        placeholder: (context, url) => SizedBox(
-                          height: 120,
-                          child: Center(
-                            child: CircularProgressIndicator(
-                              color: AppColors.primary,
-                            ),
+                    child: Column(
+                      children: [
+                        // Icon
+                        Icon(icon, size: 64, color: bannerFg),
+                        const SizedBox(height: 12),
+                        // Title
+                        Text(
+                          title,
+                          style: GoogleFonts.plusJakartaSans(
+                            fontSize: 36,
+                            fontWeight: FontWeight.w800,
+                            color: bannerFg,
+                            letterSpacing: -0.5,
                           ),
                         ),
-                        errorWidget: (context, url, error) => SizedBox(
-                          height: 120,
-                          child: Center(
-                            child: Icon(
-                              Icons.broken_image,
-                              size: 60,
-                              color: AppColors.outline,
-                            ),
+                      ],
+                    ),
+                  ),
+
+                  // ── Content Area
+                  Padding(
+                    padding: const EdgeInsets.all(32),
+                    child: Column(
+                      children: [
+                        // Correct answer display
+                        Text(
+                          'La respuesta era:',
+                          style: GoogleFonts.workSans(
+                            fontSize: 16,
+                            color: AppColors.onSurfaceVariant,
                           ),
                         ),
-                      ),
-                    ),
-                  ],
+                        const SizedBox(height: 8),
+                        Text(
+                          widget.correctAnswer,
+                          style: GoogleFonts.plusJakartaSans(
+                            fontSize: 24,
+                            fontWeight: FontWeight.w700,
+                            color: AppColors.onSurface,
+                          ),
+                        ),
 
-                  const SizedBox(height: 32),
-
-                  // Educational info card
-                  if (hasInfo) ...[
-                    const SizedBox(height: 16),
-                    Container(
-                      padding: const EdgeInsets.symmetric(
-                        horizontal: 20,
-                        vertical: 14,
-                      ),
-                      decoration: BoxDecoration(
-                        color: AppColors.primary.withOpacity(0.08),
-                        borderRadius: BorderRadius.circular(16),
-                      ),
-                      child: Row(
-                        children: [
-                          Icon(Icons.lightbulb_outline, color: AppColors.tertiary, size: 22),
-                          const SizedBox(width: 10),
-                          Expanded(
-                            child: Text(
-                              widget.isCorrect
-                                  ? '${widget.correctAnswer} tiene $infoToShow'
-                                  : '${widget.correctAnswer} tiene $infoToShow',
-                              style: GoogleFonts.workSans(
-                                color: AppColors.onSurfaceVariant,
-                                fontSize: 15,
-                                fontWeight: FontWeight.w500,
+                        // Show image if available
+                        if (widget.question?.imageUrl != null) ...[
+                          const SizedBox(height: 20),
+                          ClipRRect(
+                            borderRadius: BorderRadius.circular(16),
+                            child: CachedNetworkImage(
+                              imageUrl: widget.question!.imageUrl!,
+                              height: 100,
+                              width: double.infinity,
+                              fit: BoxFit.contain,
+                              placeholder: (context, url) => SizedBox(
+                                height: 100,
+                                child: Center(
+                                  child: CircularProgressIndicator(
+                                    color: AppColors.primary,
+                                  ),
+                                ),
+                              ),
+                              errorWidget: (context, url, error) => SizedBox(
+                                height: 100,
+                                child: Center(
+                                  child: Icon(
+                                    Icons.broken_image,
+                                    size: 48,
+                                    color: AppColors.outline,
+                                  ),
+                                ),
                               ),
                             ),
                           ),
                         ],
-                      ),
-                    ),
-                  ],
 
-                  const SizedBox(height: 16),
+                        const SizedBox(height: 20),
 
-                  // Selected answer indicator
-                  Container(
-                    padding: const EdgeInsets.symmetric(
-                      horizontal: 24,
-                      vertical: 16,
-                    ),
-                    decoration: BoxDecoration(
-                      color: color.withOpacity(0.1),
-                      borderRadius: BorderRadius.circular(12),
-                      border: Border.all(
-                        color: color.withOpacity(0.3),
-                      ),
-                    ),
-                    child: Row(
-                      mainAxisSize: MainAxisSize.min,
-                      children: [
-                        Icon(
-                          widget.isCorrect ? Icons.done : Icons.close,
-                          color: color,
-                          size: 20,
+                        // ── Stats Bento Grid (2 columns)
+                        Row(
+                          children: [
+                            // Points
+                            Expanded(
+                              child: Container(
+                                padding: const EdgeInsets.all(16),
+                                decoration: BoxDecoration(
+                                  color: AppColors.surfaceContainerLow,
+                                  borderRadius: BorderRadius.circular(16),
+                                ),
+                                child: Column(
+                                  children: [
+                                    Text(
+                                      'PUNTOS',
+                                      style: GoogleFonts.workSans(
+                                        fontSize: 10,
+                                        fontWeight: FontWeight.w600,
+                                        color: AppColors.onSurfaceVariant,
+                                        letterSpacing: 2,
+                                      ),
+                                    ),
+                                    const SizedBox(height: 4),
+                                    Text(
+                                      '+${widget.score}',
+                                      style: GoogleFonts.plusJakartaSans(
+                                        fontSize: 24,
+                                        fontWeight: FontWeight.w800,
+                                        color: AppColors.primary,
+                                      ),
+                                    ),
+                                  ],
+                                ),
+                              ),
+                            ),
+                            const SizedBox(width: 12),
+
+                            // Educational info or streak
+                            Expanded(
+                              child: Container(
+                                padding: const EdgeInsets.all(16),
+                                decoration: BoxDecoration(
+                                  color: AppColors.surfaceContainerLow,
+                                  borderRadius: BorderRadius.circular(16),
+                                ),
+                                child: hasInfo
+                                    ? Column(
+                                        children: [
+                                          Icon(
+                                            Icons.lightbulb_outline,
+                                            color: AppColors.tertiary,
+                                            size: 18,
+                                          ),
+                                          const SizedBox(height: 4),
+                                          Text(
+                                            infoToShow,
+                                            style: GoogleFonts.workSans(
+                                              fontSize: 13,
+                                              fontWeight: FontWeight.w600,
+                                              color: AppColors.onSurface,
+                                            ),
+                                            textAlign: TextAlign.center,
+                                          ),
+                                        ],
+                                      )
+                                    : Column(
+                                        children: [
+                                          Text(
+                                            'TU RESPUESTA',
+                                            style: GoogleFonts.workSans(
+                                              fontSize: 10,
+                                              fontWeight: FontWeight.w600,
+                                              color: AppColors.onSurfaceVariant,
+                                              letterSpacing: 2,
+                                            ),
+                                          ),
+                                          const SizedBox(height: 4),
+                                          Text(
+                                            widget.isCorrect
+                                                ? '✓'
+                                                : widget.selectedAnswer,
+                                            style: GoogleFonts.plusJakartaSans(
+                                              fontSize: 20,
+                                              fontWeight: FontWeight.w800,
+                                              color: widget.isCorrect
+                                                  ? AppColors.primary
+                                                  : AppColors.error,
+                                            ),
+                                            textAlign: TextAlign.center,
+                                          ),
+                                        ],
+                                      ),
+                              ),
+                            ),
+                          ],
                         ),
-                        const SizedBox(width: 8),
-                        Text(
-                          widget.isCorrect
-                              ? (hasInfo ? '+${widget.score} puntos' : '¡Respuesta correcta!')
-                              : 'Tu respuesta: ${widget.selectedAnswer}',
-                          style: GoogleFonts.workSans(
-                            color: AppColors.onSurface,
-                            fontSize: 16,
+
+                        // ── Wrong answer indicator
+                        if (!widget.isCorrect && hasInfo) ...[
+                          const SizedBox(height: 12),
+                          Container(
+                            padding: const EdgeInsets.symmetric(
+                              horizontal: 16,
+                              vertical: 10,
+                            ),
+                            decoration: BoxDecoration(
+                              color: AppColors.error.withOpacity(0.08),
+                              borderRadius: BorderRadius.circular(12),
+                            ),
+                            child: Row(
+                              mainAxisSize: MainAxisSize.min,
+                              children: [
+                                Icon(Icons.close, color: AppColors.error, size: 18),
+                                const SizedBox(width: 8),
+                                Flexible(
+                                  child: Text(
+                                    'Tu respuesta: ${widget.selectedAnswer}',
+                                    style: GoogleFonts.workSans(
+                                      color: AppColors.error,
+                                      fontSize: 14,
+                                      fontWeight: FontWeight.w500,
+                                    ),
+                                  ),
+                                ),
+                              ],
+                            ),
                           ),
-                        ),
+                        ],
                       ],
                     ),
                   ),

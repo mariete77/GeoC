@@ -35,4 +35,7 @@ abstract class UserRepository {
     bool isActive,
     DateTime? expiresAt,
   );
+
+  /// Get leaderboard — all users sorted by ELO descending
+  Future<Either<Failure, List<User>>> getLeaderboard({int limit = 50});
 }

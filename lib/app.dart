@@ -7,6 +7,7 @@ import 'package:geoquiz_battle/presentation/screens/home/home_screen.dart';
 import 'package:geoquiz_battle/presentation/screens/game/game_screen.dart';
 import 'package:geoquiz_battle/presentation/screens/multiplayer/matchmaking_screen.dart';
 import 'package:geoquiz_battle/presentation/screens/multiplayer/multiplayer_game_screen.dart';
+import 'package:geoquiz_battle/presentation/screens/home/leaderboard_screen.dart';
 import 'package:geoquiz_battle/presentation/providers/auth_provider.dart';
 import 'package:geoquiz_battle/presentation/providers/multiplayer_provider.dart';
 import 'package:geoquiz_battle/domain/entities/question.dart';
@@ -70,6 +71,10 @@ final routerProvider = Provider<GoRouter>((ref) {
           );
           return MatchmakingScreen(mode: mode);
         },
+      ),
+      GoRoute(
+        path: '/leaderboard',
+        builder: (context, state) => const LeaderboardScreen(),
       ),
       GoRoute(
         path: '/multiplayer-game',

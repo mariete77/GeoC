@@ -1,6 +1,7 @@
 """Import questions to Firestore via REST API - batched for large files."""
 import json
 import urllib.request
+import urllib.parse
 import sys
 import time
 import os
@@ -12,13 +13,58 @@ BASE = f"projects/{PROJECT_ID}/databases/(default)/documents/questions"
 BATCH_SIZE = 100  # Firestore limit per batchWrite
 
 def get_access_token():
-    """Read access token from Firebase CLI credentials."""
-    # Try standard location
+    """Read access token from Firebase CLI credentials, refreshing if needed."""
+    import time as _time
     cred_path = pathlib.Path.home() / ".config" / "configstore" / "firebase-tools.json"
     if cred_path.exists():
         with open(cred_path, "r", encoding="utf-8") as f:
             data = json.load(f)
-            return data.get("tokens", {}).get("access_token")
+        tokens = data.get("tokens", {})
+        expires_at = tokens.get("expires_at", 0)
+        now_ms = int(_time.time() * 1000)
+        
+        if expires_at > now_ms:
+            return tokens.get("access_token")
+        
+        # Token expired, refresh it
+        refresh_token = tokens.get("refresh_token")
+        if not refresh_token:
+            print("❌ No refresh token found. Run 'firebase login --reauth'.")
+            return None
+        
+        print("🔄 Refreshing expired token...")
+        refresh_data = urllib.parse.urlencode({
+            "grant_type": "refresh_token",
+            "refresh_token": refresh_token,
+            "client_id": "563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com",
+            "client_secret": "j9iVZfS8kk8fyFhMU95pPqB7",
+        }).encode()
+        
+        req = urllib.request.Request(
+            "https://oauth2.googleapis.com/token",
+            data=refresh_data,
+            method="POST"
+        )
+        req.add_header("Content-Type", "application/x-www-form-urlencoded")
+        
+        try:
+            with urllib.request.urlopen(req, timeout=30) as resp:
+                new_tokens = json.loads(resp.read().decode())
+                data["tokens"]["access_token"] = new_tokens["access_token"]
+                data["tokens"]["expires_at"] = int(_time.time() * 1000) + new_tokens.get("expires_in", 3600) * 1000
+                if "refresh_token" in new_tokens:
+                    data["tokens"]["refresh_token"] = new_tokens["refresh_token"]
+                
+                # Save refreshed token
+                with open(cred_path, "w", encoding="utf-8") as f:
+                    json.dump(data, f)
+                
+                print("✅ Token refreshed successfully")
+                return new_tokens["access_token"]
+        except Exception as e:
+            print(f"❌ Failed to refresh token: {e}")
+            print("Run 'firebase login --reauth' manually.")
+            return None
     return None
 
 def field(v):

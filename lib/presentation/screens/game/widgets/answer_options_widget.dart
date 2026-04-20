@@ -16,16 +16,12 @@ class AnswerOptionsWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final options = question.options;
-
     return Column(
       children: options.asMap().entries.map((entry) {
         final index = entry.key;
         final option = entry.value;
-
         return Padding(
-          padding: EdgeInsets.only(
-            bottom: index < options.length - 1 ? 12 : 0,
-          ),
+          padding: EdgeInsets.only(bottom: index < options.length - 1 ? 16 : 0),
           child: _AnswerOptionButton(
             option: option,
             index: index,
@@ -62,10 +58,10 @@ class _AnswerOptionButtonState extends State<_AnswerOptionButton>
   void initState() {
     super.initState();
     _controller = AnimationController(
-      duration: const Duration(milliseconds: 100),
+      duration: const Duration(milliseconds: 120),
       vsync: this,
     );
-    _scaleAnimation = Tween<double>(begin: 1.0, end: 0.95).animate(
+    _scaleAnimation = Tween<double>(begin: 1.0, end: 0.98).animate(
       CurvedAnimation(parent: _controller, curve: Curves.easeInOut),
     );
   }
@@ -96,64 +92,57 @@ class _AnswerOptionButtonState extends State<_AnswerOptionButton>
         scale: _scaleAnimation,
         child: Container(
           width: double.infinity,
-          padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 18),
+          padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 20),
           decoration: BoxDecoration(
             color: _isPressed
-                ? AppColors.primary.withOpacity(0.15)
+                ? AppColors.surfaceDim
                 : AppColors.surfaceContainerHigh,
             borderRadius: BorderRadius.circular(16),
             border: Border.all(
-              color: _isPressed
-                  ? AppColors.primary
-                  : AppColors.outlineVariant.withOpacity(0.2),
-              width: 2,
+              color: AppColors.outlineVariant.withOpacity(0.10),
             ),
             boxShadow: [
               BoxShadow(
-                color: Colors.black.withOpacity(0.04),
-                blurRadius: 16,
+                color: const Color(0xFF1A1C1B).withOpacity(0.02),
+                blurRadius: 24,
                 offset: const Offset(0, 4),
               ),
             ],
           ),
           child: Row(
             children: [
+              // Letter circle — clean, small, "surface" bg
               Container(
-                width: 40,
-                height: 40,
+                width: 32,
+                height: 32,
                 decoration: BoxDecoration(
-                  color: AppColors.primary.withOpacity(0.1),
-                  borderRadius: BorderRadius.circular(12),
-                  border: Border.all(
-                    color: AppColors.primary.withOpacity(0.3),
-                  ),
+                  color: AppColors.surface,
+                  shape: BoxShape.circle,
                 ),
                 child: Center(
                   child: Text(
                     ['A', 'B', 'C', 'D'].elementAt(widget.index),
                     style: GoogleFonts.plusJakartaSans(
-                      color: AppColors.primary,
-                      fontSize: 18,
+                      color: _isPressed
+                          ? AppColors.primary
+                          : AppColors.onSurfaceVariant,
+                      fontSize: 14,
                       fontWeight: FontWeight.w700,
                     ),
                   ),
                 ),
               ),
               const SizedBox(width: 16),
+              // Answer text — Work Sans, editorial body voice
               Expanded(
                 child: Text(
                   widget.option,
                   style: GoogleFonts.workSans(
                     color: AppColors.onSurface,
                     fontSize: 18,
-                    fontWeight: FontWeight.w600,
+                    fontWeight: FontWeight.w500,
                   ),
                 ),
-              ),
-              Icon(
-                Icons.arrow_forward_ios,
-                color: AppColors.onSurfaceVariant.withOpacity(0.5),
-                size: 16,
               ),
             ],
           ),

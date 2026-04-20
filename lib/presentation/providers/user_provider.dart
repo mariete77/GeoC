@@ -79,6 +79,16 @@ class UserNotifier extends _$UserNotifier {
   }
 }
 
+/// Leaderboard provider — all users sorted by ELO descending
+final leaderboardProvider =
+    FutureProvider.autoDispose<List<User>>((ref) async {
+  final result = await ref.read(userRepositoryProvider).getLeaderboard();
+  return result.fold(
+    (failure) => [],
+    (users) => users,
+  );
+});
+
 /// Daily games status provider
 @riverpod
 DailyGamesStatus dailyGamesStatus(DailyGamesStatusRef ref) {

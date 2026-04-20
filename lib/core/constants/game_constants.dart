@@ -42,9 +42,9 @@ class GameConstants {
   static const int maxPointsPerMatch = 1000; // 10 questions * (100 + max time + max streak)
 
   // Transitions
-  static const int answeredDelayCorrectMs = 1000; // Delay after correct answer
-  static const int answeredDelayIncorrectMs = 2000; // Delay after incorrect answer
-  static const int answeredDelayTimeoutMs = 1500; // Delay after timeout
+  static const int answeredDelayCorrectMs = 2500; // Delay after correct answer
+  static const int answeredDelayIncorrectMs = 3500; // Delay after incorrect answer
+  static const int answeredDelayTimeoutMs = 2500; // Delay after timeout
 
   // Ranks (ELO ranges)
   static const int rankBronze = 0;

@@ -72,6 +72,10 @@ class HomeScreen extends ConsumerWidget {
 
                   // Game Mode Cards
                   _buildGameModes(context, ref, dailyGames),
+                  const SizedBox(height: 16),
+
+                  // Clasificación Card
+                  _buildLeaderboardCard(context),
                   const SizedBox(height: 24),
 
                   // Quick Actions
@@ -489,6 +493,67 @@ class HomeScreen extends ConsumerWidget {
     );
   }
 
+  /// Clasificación — full-width row card
+  Widget _buildLeaderboardCard(BuildContext context) {
+    return Container(
+      decoration: BoxDecoration(
+        gradient: const LinearGradient(
+          begin: Alignment.topLeft,
+          end: Alignment.bottomRight,
+          colors: [Color(0xFFE8D5F5), Color(0xFFD5C8E8)],
+        ),
+        borderRadius: BorderRadius.circular(16),
+      ),
+      child: Material(
+        color: Colors.transparent,
+        child: InkWell(
+          borderRadius: BorderRadius.circular(16),
+          onTap: () => context.go('/leaderboard'),
+          child: Padding(
+            padding: const EdgeInsets.all(24),
+            child: Row(
+              children: [
+                Container(
+                  padding: const EdgeInsets.all(16),
+                  decoration: BoxDecoration(
+                    color: Colors.white.withOpacity(0.5),
+                    borderRadius: BorderRadius.circular(12),
+                  ),
+                  child: Icon(Icons.emoji_events, size: 28, color: AppColors.tertiary),
+                ),
+                const SizedBox(width: 20),
+                Expanded(
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Text(
+                        'Clasificación',
+                        style: GoogleFonts.plusJakartaSans(
+                          fontSize: 22,
+                          fontWeight: FontWeight.w700,
+                          color: AppColors.tertiary,
+                        ),
+                      ),
+                      const SizedBox(height: 4),
+                      Text(
+                        'Mira tu posición respecto a los demás jugadores.',
+                        style: GoogleFonts.workSans(
+                          fontSize: 14,
+                          color: AppColors.tertiary.withOpacity(0.8),
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+                Icon(Icons.arrow_forward, size: 32, color: AppColors.tertiary.withOpacity(0.6)),
+              ],
+            ),
+          ),
+        ),
+      ),
+    );
+  }
+
   /// Fantasma (Ghost Run) — full-width row card
   Widget _buildGhostRunCard(BuildContext context) {
     return Container(
@@ -573,7 +638,7 @@ class HomeScreen extends ConsumerWidget {
             const SizedBox(width: 12),
             Expanded(
               child:
-                  _buildActionChip(Icons.leaderboard, 'Leaderboard', () {}),
+                  _buildActionChip(Icons.leaderboard, 'Leaderboard', () => context.go('/leaderboard')),
             ),
             const SizedBox(width: 12),
             Expanded(

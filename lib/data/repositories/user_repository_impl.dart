@@ -180,6 +180,27 @@ class UserRepositoryImpl implements UserRepository {
   }
 
   @override
+  Future<Either<Failure, List<User>>> getLeaderboard({int limit = 50}) async {
+    try {
+      final snapshot = await _firestore
+          .collection('users')
+          .orderBy('elo', descending: true)
+          .limit(limit)
+          .get();
+
+      final users = snapshot.docs
+          .map((doc) => UserModel.fromFirestore(doc).toDomain())
+          .toList();
+
+      return Right(users);
+    } on ServerException catch (e) {
+      return Left(ServerFailure(e.message));
+    } catch (e) {
+      return Left(UnknownFailure(e.toString()));
+    }
+  }
+
+  @override
   Future<Either<Failure, void>> updateSubscription(
     String userId,
     String type,

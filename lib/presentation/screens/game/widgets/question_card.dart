@@ -13,11 +13,14 @@ class QuestionCard extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       decoration: BoxDecoration(
-        color: AppColors.surfaceContainerHigh,
-        borderRadius: BorderRadius.circular(20),
+        color: AppColors.surfaceContainerLowest,
+        borderRadius: BorderRadius.circular(32),
+        border: Border.all(
+          color: AppColors.outlineVariant.withOpacity(0.15),
+        ),
         boxShadow: [
           BoxShadow(
-            color: Colors.black.withOpacity(0.06),
+            color: const Color(0xFF1A1C1B).withOpacity(0.04),
             blurRadius: 32,
             offset: const Offset(0, 8),
           ),
@@ -49,6 +52,20 @@ class QuestionCard extends StatelessWidget {
         return _buildCurrencyQuestion();
       case QuestionType.region:
         return _buildRegionQuestion();
+      case QuestionType.city:
+        return _buildCityQuestion();
+      case QuestionType.mountain:
+        return _buildMountainQuestion();
+      case QuestionType.lake:
+        return _buildLakeQuestion();
+      case QuestionType.border:
+        return _buildBorderQuestion();
+      case QuestionType.monumentImage:
+        return _buildMonumentImageQuestion();
+      case QuestionType.monumentCountry:
+        return _buildMonumentCountryQuestion();
+      case QuestionType.monumentCity:
+        return _buildMonumentCityQuestion();
     }
   }
 
@@ -62,7 +79,7 @@ class QuestionCard extends StatelessWidget {
       children: [
         if (flagUrl != null)
           ClipRRect(
-            borderRadius: const BorderRadius.vertical(top: Radius.circular(20)),
+            borderRadius: const BorderRadius.vertical(top: Radius.circular(32)),
             child: CachedNetworkImage(
               imageUrl: flagUrl,
               height: 150,
@@ -85,7 +102,7 @@ class QuestionCard extends StatelessWidget {
             height: 150,
             decoration: BoxDecoration(
               color: AppColors.surfaceVariant.withOpacity(0.3),
-              borderRadius: const BorderRadius.vertical(top: Radius.circular(20)),
+              borderRadius: const BorderRadius.vertical(top: Radius.circular(32)),
             ),
             child: const Center(child: Icon(Icons.flag, size: 60, color: AppColors.outline)),
           ),
@@ -116,7 +133,7 @@ class QuestionCard extends StatelessWidget {
       children: [
         if (question.imageUrl != null)
           ClipRRect(
-            borderRadius: const BorderRadius.vertical(top: Radius.circular(20)),
+            borderRadius: const BorderRadius.vertical(top: Radius.circular(32)),
             child: ColorFiltered(
               colorFilter: const ColorFilter.mode(Colors.black, BlendMode.srcIn),
               child: CachedNetworkImage(
@@ -161,16 +178,22 @@ class QuestionCard extends StatelessWidget {
 
   Widget _buildCapitalQuestion() {
     return Padding(
-      padding: const EdgeInsets.all(24),
+      padding: const EdgeInsets.all(32),
       child: Column(
         children: [
           _buildDifficultyBadge(),
-          const SizedBox(height: 16),
+          const SizedBox(height: 20),
           Icon(Icons.location_city, size: 80, color: AppColors.primary.withOpacity(0.8)),
-          const SizedBox(height: 24),
+          const SizedBox(height: 28),
           Text(
             question.questionText ?? '¿Cuál es la capital de este país?',
-            style: GoogleFonts.plusJakartaSans(color: AppColors.onSurface, fontSize: 22, fontWeight: FontWeight.w700),
+            style: GoogleFonts.plusJakartaSans(
+              color: AppColors.onSurface,
+              fontSize: 28,
+              fontWeight: FontWeight.w700,
+              height: 1.2,
+              letterSpacing: -0.5,
+            ),
             textAlign: TextAlign.center,
           ),
         ],
@@ -221,7 +244,7 @@ class QuestionCard extends StatelessWidget {
       children: [
         if (question.imageUrl != null)
           ClipRRect(
-            borderRadius: const BorderRadius.vertical(top: Radius.circular(20)),
+            borderRadius: const BorderRadius.vertical(top: Radius.circular(32)),
             child: CachedNetworkImage(
               imageUrl: question.imageUrl!,
               height: 200,
@@ -325,6 +348,172 @@ class QuestionCard extends StatelessWidget {
           const SizedBox(height: 24),
           Text(
             question.questionText ?? '¿En qué región se encuentra este país?',
+            style: GoogleFonts.plusJakartaSans(color: AppColors.onSurface, fontSize: 22, fontWeight: FontWeight.w700),
+            textAlign: TextAlign.center,
+          ),
+        ],
+      ),
+    );
+  }
+
+  Widget _buildCityQuestion() {
+    return Padding(
+      padding: const EdgeInsets.all(24),
+      child: Column(
+        children: [
+          _buildDifficultyBadge(),
+          const SizedBox(height: 16),
+          Icon(Icons.location_city, size: 80, color: AppColors.primary.withOpacity(0.8)),
+          const SizedBox(height: 24),
+          Text(
+            question.questionText ?? '¿En qué país se encuentra esta ciudad?',
+            style: GoogleFonts.plusJakartaSans(color: AppColors.onSurface, fontSize: 22, fontWeight: FontWeight.w700),
+            textAlign: TextAlign.center,
+          ),
+        ],
+      ),
+    );
+  }
+
+  Widget _buildMountainQuestion() {
+    return Padding(
+      padding: const EdgeInsets.all(24),
+      child: Column(
+        children: [
+          _buildDifficultyBadge(),
+          const SizedBox(height: 16),
+          Icon(Icons.terrain, size: 80, color: AppColors.tertiaryContainer.withOpacity(0.8)),
+          const SizedBox(height: 24),
+          Text(
+            question.questionText ?? '¿En qué país se encuentra esta montaña?',
+            style: GoogleFonts.plusJakartaSans(color: AppColors.onSurface, fontSize: 22, fontWeight: FontWeight.w700),
+            textAlign: TextAlign.center,
+          ),
+        ],
+      ),
+    );
+  }
+
+  Widget _buildLakeQuestion() {
+    return Padding(
+      padding: const EdgeInsets.all(24),
+      child: Column(
+        children: [
+          _buildDifficultyBadge(),
+          const SizedBox(height: 16),
+          Icon(Icons.water, size: 80, color: AppColors.secondary.withOpacity(0.8)),
+          const SizedBox(height: 24),
+          Text(
+            question.questionText ?? '¿En qué país se encuentra este lago?',
+            style: GoogleFonts.plusJakartaSans(color: AppColors.onSurface, fontSize: 22, fontWeight: FontWeight.w700),
+            textAlign: TextAlign.center,
+          ),
+        ],
+      ),
+    );
+  }
+
+  Widget _buildBorderQuestion() {
+    return Padding(
+      padding: const EdgeInsets.all(24),
+      child: Column(
+        children: [
+          _buildDifficultyBadge(),
+          const SizedBox(height: 16),
+          Icon(Icons.compare_arrows, size: 80, color: AppColors.primary.withOpacity(0.8)),
+          const SizedBox(height: 24),
+          Text(
+            question.questionText ?? '¿Qué países comparten esta frontera?',
+            style: GoogleFonts.plusJakartaSans(color: AppColors.onSurface, fontSize: 22, fontWeight: FontWeight.w700),
+            textAlign: TextAlign.center,
+          ),
+        ],
+      ),
+    );
+  }
+
+  Widget _buildMonumentImageQuestion() {
+    return Column(
+      children: [
+        if (question.imageUrl != null)
+          ClipRRect(
+            borderRadius: const BorderRadius.vertical(top: Radius.circular(32)),
+            child: CachedNetworkImage(
+              imageUrl: question.imageUrl!,
+              height: 200,
+              width: double.infinity,
+              fit: BoxFit.cover,
+              placeholder: (context, url) => Container(
+                height: 200,
+                color: AppColors.surfaceVariant.withOpacity(0.3),
+                child: const Center(child: CircularProgressIndicator(color: AppColors.primary)),
+              ),
+              errorWidget: (context, url, error) => Container(
+                height: 200,
+                color: AppColors.surfaceVariant.withOpacity(0.3),
+                child: const Center(child: Icon(Icons.photo_camera, size: 60, color: AppColors.outline)),
+              ),
+            ),
+          ),
+        if (question.imageUrl == null)
+          Container(
+            height: 200,
+            decoration: BoxDecoration(
+              color: AppColors.surfaceVariant.withOpacity(0.3),
+              borderRadius: const BorderRadius.vertical(top: Radius.circular(32)),
+            ),
+            child: const Center(child: Icon(Icons.account_balance, size: 60, color: AppColors.outline)),
+          ),
+        Padding(
+          padding: const EdgeInsets.all(20),
+          child: Column(
+            children: [
+              _buildDifficultyBadge(),
+              const SizedBox(height: 16),
+              Text(
+                question.questionText ?? '¿Qué monumento o edificio es este?',
+                style: GoogleFonts.plusJakartaSans(color: AppColors.onSurface, fontSize: 22, fontWeight: FontWeight.w700),
+                textAlign: TextAlign.center,
+              ),
+            ],
+          ),
+        ),
+      ],
+    );
+  }
+
+  Widget _buildMonumentCountryQuestion() {
+    final monumentName = question.extraData?['monumentName'] as String?;
+    return Padding(
+      padding: const EdgeInsets.all(24),
+      child: Column(
+        children: [
+          _buildDifficultyBadge(),
+          const SizedBox(height: 16),
+          Icon(Icons.account_balance, size: 80, color: AppColors.tertiary.withOpacity(0.8)),
+          const SizedBox(height: 24),
+          Text(
+            question.questionText ?? (monumentName != null ? '¿De qué país es $monumentName?' : '¿De qué país es este monumento?'),
+            style: GoogleFonts.plusJakartaSans(color: AppColors.onSurface, fontSize: 22, fontWeight: FontWeight.w700),
+            textAlign: TextAlign.center,
+          ),
+        ],
+      ),
+    );
+  }
+
+  Widget _buildMonumentCityQuestion() {
+    final monumentName = question.extraData?['monumentName'] as String?;
+    return Padding(
+      padding: const EdgeInsets.all(24),
+      child: Column(
+        children: [
+          _buildDifficultyBadge(),
+          const SizedBox(height: 16),
+          Icon(Icons.location_city, size: 80, color: AppColors.secondary.withOpacity(0.8)),
+          const SizedBox(height: 24),
+          Text(
+            question.questionText ?? (monumentName != null ? '¿En qué ciudad está $monumentName?' : '¿En qué ciudad está este monumento?'),
             style: GoogleFonts.plusJakartaSans(color: AppColors.onSurface, fontSize: 22, fontWeight: FontWeight.w700),
             textAlign: TextAlign.center,
           ),
