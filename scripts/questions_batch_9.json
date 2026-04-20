@@ -6,7 +6,7 @@
     "questionText": "¿De qué país es esta bandera?",
     "correctAnswer": "Luxemburgo",
     "options": [
-      "Países Bajos",
+      "Burundi",
       "Bélgica",
       "Luxemburgo",
       "Francia"
@@ -254,10 +254,10 @@
     "questionText": "¿Cuál es la capital de Yibuti?",
     "correctAnswer": "Yibuti",
     "options": [
+      "Dikhil",
       "Ali Sabieh",
-      "Yibuti",
       "Tadjoura",
-      "Dikhil"
+      "Freetown"
     ],
     "extraData": {
       "countryCode": "dj",
@@ -271,10 +271,10 @@
     "questionText": "¿Cuál es la capital de Brasil?",
     "correctAnswer": "Brasilia",
     "options": [
-      "Río de Janeiro",
-      "Brasilia",
+      "Salvador",
       "São Paulo",
-      "Salvador"
+      "Asunción",
+      "Río de Janeiro"
     ],
     "extraData": {
       "countryCode": "br",

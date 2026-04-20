@@ -24,10 +24,10 @@
     "questionText": "¿De qué país es esta bandera?",
     "correctAnswer": "Rusia",
     "options": [
-      "Países Bajos",
       "Rusia",
-      "Luxemburgo",
-      "Francia"
+      "Libya",
+      "Francia",
+      "Luxemburgo"
     ],
     "imageUrl": "https://flagcdn.com/w320/ru.png",
     "extraData": {
@@ -60,10 +60,10 @@
     "questionText": "¿De qué país es esta bandera?",
     "correctAnswer": "Nigeria",
     "options": [
-      "Nigeria",
+      "Chile",
+      "Níger",
       "Irlanda",
-      "Costa de Marfil",
-      "Níger"
+      "Nigeria"
     ],
     "imageUrl": "https://flagcdn.com/w320/ng.png",
     "extraData": {
@@ -78,9 +78,9 @@
     "questionText": "¿De qué país es esta bandera?",
     "correctAnswer": "Vietnam",
     "options": [
-      "China",
       "Vietnam",
-      "Corea del Sur",
+      "Marruecos",
+      "China",
       "Laos"
     ],
     "imageUrl": "https://flagcdn.com/w320/vn.png",
@@ -150,10 +150,10 @@
     "questionText": "¿De qué país es esta bandera?",
     "correctAnswer": "Corea del Sur",
     "options": [
-      "Corea del Sur",
-      "Corea del Norte",
+      "China",
       "Japón",
-      "China"
+      "Marshall Islands",
+      "Corea del Sur"
     ],
     "imageUrl": "https://flagcdn.com/w320/kr.png",
     "extraData": {
@@ -576,10 +576,10 @@
     "questionText": "¿Cuál es el idioma oficial de Italia?",
     "correctAnswer": "Italiano",
     "options": [
-      "Español",
-      "Italiano",
       "Francés",
-      "Portugués"
+      "Portugués",
+      "Mongol",
+      "Español"
     ],
     "extraData": {
       "countryCode": "it",
@@ -595,8 +595,8 @@
     "correctAnswer": "Vietnamita",
     "options": [
       "Camboyano",
-      "Vietnamita",
       "Lao",
+      "Jemer",
       "Tailandés"
     ],
     "extraData": {
@@ -612,10 +612,10 @@
     "questionText": "¿Cuál es el idioma oficial de Ucrania?",
     "correctAnswer": "Ucraniano",
     "options": [
-      "Ruso",
+      "Polaco",
       "Bielorruso",
-      "Ucraniano",
-      "Polaco"
+      "Belarusian",
+      "Ruso"
     ],
     "extraData": {
       "countryCode": "ua",
@@ -630,9 +630,9 @@
     "questionText": "¿Cuál es el idioma oficial de Georgia?",
     "correctAnswer": "Georgiano",
     "options": [
-      "Armenio",
       "Azerí",
-      "Georgiano",
+      "Armenio",
+      "Letón",
       "Ruso"
     ],
     "extraData": {
@@ -666,9 +666,9 @@
     "questionText": "¿Cuál es la moneda de Australia?",
     "correctAnswer": "Dólar australiano",
     "options": [
-      "Dólar australiano",
       "Dólar neozelandés",
       "Libra esterlina",
+      "Metical mozambiqueño",
       "Dólar canadiense"
     ],
     "extraData": {
@@ -684,10 +684,10 @@
     "questionText": "¿Cuál es la moneda de India?",
     "correctAnswer": "Rupia india",
     "options": [
-      "Rupia pakistaní",
-      "Rupia india",
+      "Rupia de Sri Lanka",
       "Taka bangladesí",
-      "Rupia de Sri Lanka"
+      "Leu moldavo",
+      "Rupia pakistaní"
     ],
     "extraData": {
       "countryCode": "in",
@@ -703,8 +703,8 @@
     "correctAnswer": "Real brasileño",
     "options": [
       "Peso argentino",
-      "Real brasileño",
       "Peso colombiano",
+      "Rial yemení",
       "Sol peruano"
     ],
     "extraData": {

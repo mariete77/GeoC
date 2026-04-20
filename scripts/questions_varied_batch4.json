@@ -121,10 +121,10 @@
     "questionText": "¿Cuál es la ciudad principal de Gambia?",
     "correctAnswer": "Gambia",
     "options": [
+      "Bermuda",
       "Saint Helena, Ascension and Tristan da Cunha",
-      "Gambia",
       "South Africa",
-      "Bermuda"
+      "Amsterdam"
     ],
     "extraData": {
       "countryCode": "gm",
@@ -215,9 +215,9 @@
     "correctAnswer": "Bosnia and Herzegovina",
     "options": [
       "Serbia",
-      "Saint Vincent and the Grenadines",
-      "Bosnia and Herzegovina",
-      "Tokelau"
+      "Berlín",
+      "Tokelau",
+      "Vientián"
     ],
     "extraData": {
       "countryCode": "ba",
@@ -359,10 +359,10 @@
     "questionText": "¿En Samoa qué idioma se usa?",
     "correctAnswer": "English",
     "options": [
-      "French",
-      "Italian",
       "Norwegian Nynorsk",
-      "English"
+      "English",
+      "Italian",
+      "Aymara"
     ],
     "extraData": {
       "countryCode": "ws",
@@ -675,10 +675,10 @@
     "questionText": "¿Qué ciudad es el centro político de Jersey?",
     "correctAnswer": "Jersey",
     "options": [
-      "Nauru",
-      "Jersey",
+      "French Guiana",
       "Dominican Republic",
-      "French Guiana"
+      "Nauru",
+      "Fakaofo"
     ],
     "extraData": {
       "countryCode": "je",
@@ -960,9 +960,9 @@
     "correctAnswer": "United States Minor Outlying Islands",
     "options": [
       "Kazakhstan",
-      "Saint Martin",
       "Saint Lucia",
-      "United States Minor Outlying Islands"
+      "Honiara",
+      "Saint Martin"
     ],
     "extraData": {
       "countryCode": "um",
@@ -1087,10 +1087,10 @@
     "questionText": "¿Cuál es la moneda de Christmas Island?",
     "correctAnswer": "Dólar australiano",
     "options": [
-      "Dólar australiano",
       "Bulgarian lev",
-      "Lira turca",
-      "Falkland Islands pound"
+      "Dólar australiano",
+      "Won norcoreano",
+      "Lira turca"
     ],
     "extraData": {
       "countryCode": "cx",
@@ -1142,9 +1142,9 @@
     "questionText": "¿En qué ciudad se encuentra el gobierno de Canada?",
     "correctAnswer": "Canada",
     "options": [
-      "Panama",
       "Taiwan",
-      "Canada",
+      "Brazzaville",
+      "Panama",
       "Portugal"
     ],
     "extraData": {
@@ -1159,10 +1159,10 @@
     "questionText": "¿En Macau se usa qué moneda?",
     "correctAnswer": "Macanese pataca",
     "options": [
-      "Yuan chino",
       "Macanese pataca",
-      "Franco CFA de África Occidental",
-      "Vanuatu vatu"
+      "Falkland Islands pound",
+      "Vanuatu vatu",
+      "Yuan chino"
     ],
     "extraData": {
       "countryCode": "mo",
@@ -1178,9 +1178,9 @@
     "correctAnswer": "Malawian kwacha",
     "options": [
       "Franco guineano",
-      "Malawian kwacha",
-      "Grivna ucraniana",
-      "Eritrean nakfa"
+      "Naira nigeriana",
+      "Eritrean nakfa",
+      "Grivna ucraniana"
     ],
     "extraData": {
       "countryCode": "mw",
@@ -1272,10 +1272,10 @@
     "questionText": "¿En Burundi qué idioma se usa?",
     "correctAnswer": "French",
     "options": [
-      "Vietnamese",
-      "English",
+      "Berber",
+      "Tayiko",
       "French",
-      "Berber"
+      "Vietnamese"
     ],
     "extraData": {
       "countryCode": "bi",
@@ -1483,10 +1483,10 @@
     "questionText": "¿Qué ciudad es el centro político de Guinea-Bissau?",
     "correctAnswer": "Bissau",
     "options": [
-      "Ciudad de la Paz",
       "City of San Marino",
+      "Bissau",
       "Kabul",
-      "Bissau"
+      "Mata-Utu"
     ],
     "extraData": {
       "countryCode": "gw",
@@ -1538,10 +1538,10 @@
     "questionText": "¿Cuál es la ciudad principal de Cambodia?",
     "correctAnswer": "Cambodia",
     "options": [
-      "Vatican City",
       "Bouvet Island",
-      "Cambodia",
-      "Netherlands"
+      "Vatican City",
+      "Netherlands",
+      "Wallis and Futuna"
     ],
     "extraData": {
       "countryCode": "kh",
@@ -1669,10 +1669,10 @@
     "questionText": "¿En Germany se usa qué moneda?",
     "correctAnswer": "Euro",
     "options": [
-      "denar",
-      "Franco CFA de África Central",
       "Euro",
-      "Dinar iraquí"
+      "Dinar iraquí",
+      "Riyal saudí",
+      "Dólar surinamés"
     ],
     "extraData": {
       "countryCode": "de",
@@ -1687,10 +1687,10 @@
     "questionText": "¿Cuál es la lengua oficial de Iceland?",
     "correctAnswer": "Icelandic",
     "options": [
-      "English",
-      "Icelandic",
+      "Russian",
       "Aymara",
-      "Indonesian"
+      "Indonesian",
+      "English"
     ],
     "extraData": {
       "countryCode": "is",
@@ -1724,9 +1724,9 @@
     "questionText": "¿Qué billetes y monedas circulan en Zambia?",
     "correctAnswer": "Kwacha zambiano",
     "options": [
-      "dalasi",
-      "Kwacha zambiano",
       "Libra egipcia",
+      "Dólar de Singapur",
+      "dalasi",
       "Dólar barbadense"
     ],
     "extraData": {

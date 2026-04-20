@@ -24,10 +24,10 @@
     "questionText": "¿De qué país es esta bandera?",
     "correctAnswer": "Albania",
     "options": [
-      "Macedonia del Norte",
       "Serbia",
+      "Albania",
       "Montenegro",
-      "Albania"
+      "Equatorial Guinea"
     ],
     "imageUrl": "https://flagcdn.com/w320/al.png",
     "extraData": {
@@ -96,10 +96,10 @@
     "questionText": "¿De qué país es esta bandera?",
     "correctAnswer": "Rusia",
     "options": [
+      "Rusia",
+      "New Caledonia",
       "Francia",
-      "Países Bajos",
-      "Luxemburgo",
-      "Rusia"
+      "Luxemburgo"
     ],
     "imageUrl": "https://flagcdn.com/w320/ru.png",
     "extraData": {
@@ -203,10 +203,10 @@
     "questionText": "¿Cuál es la capital de Túnez?",
     "correctAnswer": "Túnez",
     "options": [
-      "Sfax",
       "Susa",
-      "Túnez",
-      "Sidi Bou Said"
+      "Sidi Bou Said",
+      "Norway",
+      "Sfax"
     ],
     "extraData": {
       "countryCode": "tn",
@@ -272,9 +272,9 @@
     "correctAnswer": "Ciudad de México",
     "options": [
       "Guadalajara",
+      "Bratislava",
       "Monterrey",
-      "Cancún",
-      "Ciudad de México"
+      "Cancún"
     ],
     "extraData": {
       "countryCode": "mx",
@@ -644,10 +644,10 @@
     "questionText": "¿Cuál es la moneda de Nepal?",
     "correctAnswer": "Rupia nepalí",
     "options": [
-      "Rupia india",
       "Taka bangladesí",
-      "Rupia nepalí",
-      "Rupia pakistaní"
+      "Rupia pakistaní",
+      "Nuevo séquel israelí",
+      "Rupia india"
     ],
     "extraData": {
       "countryCode": "np",
@@ -680,10 +680,10 @@
     "questionText": "¿Cuál es la moneda de Bolivia?",
     "correctAnswer": "Boliviano",
     "options": [
-      "Peso colombiano",
-      "Sol peruano",
       "Guaraní paraguayo",
-      "Boliviano"
+      "Rupia nepalí",
+      "Sol peruano",
+      "Peso colombiano"
     ],
     "extraData": {
       "countryCode": "bo",
@@ -717,9 +717,9 @@
     "correctAnswer": "Real brasileño",
     "options": [
       "Peso argentino",
+      "Chelín tanzano",
       "Peso mexicano",
-      "Dólar",
-      "Real brasileño"
+      "Dólar"
     ],
     "extraData": {
       "countryCode": "br",

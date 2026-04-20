@@ -24,10 +24,10 @@
     "questionText": "¿De qué país es esta bandera?",
     "correctAnswer": "Taiwán",
     "options": [
-      "China",
-      "Taiwán",
       "Vietnam",
-      "Corea del Sur"
+      "Sudáfrica",
+      "Taiwán",
+      "China"
     ],
     "imageUrl": "https://flagcdn.com/w320/tw.png",
     "extraData": {
@@ -79,9 +79,9 @@
     "correctAnswer": "Nigeria",
     "options": [
       "Bangladés",
-      "Nigeria",
       "Irlanda",
-      "Costa de Marfil"
+      "Suriname",
+      "Nigeria"
     ],
     "imageUrl": "https://flagcdn.com/w320/ng.png",
     "extraData": {
@@ -132,10 +132,10 @@
     "questionText": "¿De qué país es esta bandera?",
     "correctAnswer": "Albania",
     "options": [
-      "Macedonia del Norte",
-      "Albania",
+      "Montenegro",
       "Serbia",
-      "Montenegro"
+      "Kenya",
+      "Albania"
     ],
     "imageUrl": "https://flagcdn.com/w320/al.png",
     "extraData": {
@@ -682,10 +682,10 @@
     "questionText": "¿Cuál es la moneda de Georgia?",
     "correctAnswer": "Lari georgiano",
     "options": [
-      "Dram armenio",
+      "Franco CFA",
       "Manat azerbaiyano",
       "Rublo ruso",
-      "Lari georgiano"
+      "Dram armenio"
     ],
     "extraData": {
       "countryCode": "ge",

@@ -254,9 +254,9 @@
     "questionText": "¿Cuál es la capital de Yibuti?",
     "correctAnswer": "Yibuti",
     "options": [
-      "Yibuti",
-      "Ali Sabieh",
       "Tadjoura",
+      "Dili",
+      "Ali Sabieh",
       "Obock"
     ],
     "extraData": {

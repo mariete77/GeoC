@@ -60,10 +60,10 @@
     "questionText": "¿De qué país es esta bandera?",
     "correctAnswer": "Mongolia",
     "options": [
+      "United States",
       "Japón",
       "Mongolia",
-      "China",
-      "Corea del Norte"
+      "China"
     ],
     "imageUrl": "https://flagcdn.com/w320/mn.png",
     "extraData": {
@@ -114,9 +114,9 @@
     "questionText": "¿De qué país es esta bandera?",
     "correctAnswer": "Nigeria",
     "options": [
+      "Philippines",
       "Ghana",
       "Nigeria",
-      "Costa de Marfil",
       "Camerún"
     ],
     "imageUrl": "https://flagcdn.com/w320/ng.png",
@@ -150,10 +150,10 @@
     "questionText": "¿De qué país es esta bandera?",
     "correctAnswer": "India",
     "options": [
-      "Níger",
-      "Irlanda",
       "India",
-      "Costa de Marfil"
+      "Irlanda",
+      "Níger",
+      "Morocco"
     ],
     "imageUrl": "https://flagcdn.com/w320/in.png",
     "extraData": {
@@ -307,8 +307,8 @@
     "options": [
       "Guadalajara",
       "Monterrey",
-      "Ciudad de México",
-      "Cancún"
+      "Cancún",
+      "Canberra"
     ],
     "extraData": {
       "countryCode": "mx",

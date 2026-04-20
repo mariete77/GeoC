@@ -322,9 +322,9 @@
     "questionText": "¿Cuál es la capital de Brasil?",
     "correctAnswer": "Brasilia",
     "options": [
+      "Honduras",
       "Río de Janeiro",
       "São Paulo",
-      "Brasilia",
       "Salvador"
     ],
     "extraData": {

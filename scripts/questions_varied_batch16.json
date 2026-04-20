@@ -26,10 +26,10 @@
     "questionText": "¿Cuál es la ciudad principal de Kazakhstan?",
     "correctAnswer": "Kazakhstan",
     "options": [
+      "French Polynesia",
       "Guam",
       "Algeria",
-      "Kazakhstan",
-      "French Polynesia"
+      "Benin"
     ],
     "extraData": {
       "countryCode": "kz",
@@ -134,10 +134,10 @@
     "questionText": "¿Qué ciudad es el centro político de South Korea?",
     "correctAnswer": "South Korea",
     "options": [
+      "Cameroon",
       "Tokelau",
       "Timor-Leste",
-      "Cameroon",
-      "South Korea"
+      "Bermuda"
     ],
     "extraData": {
       "countryCode": "kr",
@@ -243,10 +243,10 @@
     "questionText": "¿Cuál es la divisa de Uruguay?",
     "correctAnswer": "Peso uruguayo",
     "options": [
-      "Peso uruguayo",
-      "Franco CFA de África Occidental",
+      "Dólar del Caribe Oriental",
+      "Guaraní paraguayo",
       "Libra egipcia",
-      "Dólar del Caribe Oriental"
+      "Franco CFA de África Occidental"
     ],
     "extraData": {
       "countryCode": "uy",
@@ -414,10 +414,10 @@
     "questionText": "¿La moneda oficial de South Georgia es...?",
     "correctAnswer": "Libra esterlina",
     "options": [
-      "Franco CFA de África Occidental",
-      "Dólar estadounidense",
+      "Libra esterlina",
+      "Kwacha zambiano",
       "Metical mozambiqueño",
-      "Libra esterlina"
+      "Franco CFA de África Occidental"
     ],
     "extraData": {
       "countryCode": "gs",
@@ -432,10 +432,10 @@
     "questionText": "¿Cuál es la ciudad principal de Uruguay?",
     "correctAnswer": "Uruguay",
     "options": [
+      "Gibraltar",
+      "Muscat",
       "Namibia",
-      "Uruguay",
-      "Sudan",
-      "Gibraltar"
+      "Sudan"
     ],
     "extraData": {
       "countryCode": "uy",
@@ -467,10 +467,10 @@
     "questionText": "¿En Sint Maarten qué idioma se usa?",
     "correctAnswer": "English",
     "options": [
+      "Japonés",
       "Khmer",
-      "English",
-      "Armenian",
-      "Guaraní"
+      "Guaraní",
+      "English"
     ],
     "extraData": {
       "countryCode": "sx",
@@ -525,10 +525,10 @@
     "questionText": "¿En Saint Martin se usa qué moneda?",
     "correctAnswer": "Euro",
     "options": [
-      "Dólar estadounidense",
-      "Honduran lempira",
+      "Naira nigeriana",
+      "Euro",
       "Dólar de las Islas Caimán",
-      "Euro"
+      "Honduran lempira"
     ],
     "extraData": {
       "countryCode": "mf",
@@ -671,9 +671,9 @@
     "questionText": "¿Cuál es la divisa de Bosnia and Herzegovina?",
     "correctAnswer": "Bosnia and Herzegovina convertible mark",
     "options": [
-      "Dólar liberiano",
-      "Bosnia and Herzegovina convertible mark",
       "Dólar bahameño",
+      "Dólar liberiano",
+      "Honduran lempira",
       "Dólar estadounidense"
     ],
     "extraData": {
@@ -1065,10 +1065,10 @@
     "questionText": "¿En Guam se usa qué moneda?",
     "correctAnswer": "Dólar estadounidense",
     "options": [
-      "Peso argentino",
       "Dólar estadounidense",
+      "Dólar de Singapur",
       "Euro",
-      "Franco CFA de África Occidental"
+      "Libra libanesa"
     ],
     "extraData": {
       "countryCode": "gu",
@@ -1177,10 +1177,10 @@
     "questionText": "¿La capital de Togo se llama...?",
     "correctAnswer": "Togo",
     "options": [
+      "Japan",
+      "Uganda",
       "Denmark",
-      "Togo",
-      "Malawi",
-      "Japan"
+      "Togo"
     ],
     "extraData": {
       "countryCode": "tg",
@@ -1232,10 +1232,10 @@
     "questionText": "¿La moneda oficial de Honduras es...?",
     "correctAnswer": "Honduran lempira",
     "options": [
-      "Honduran lempira",
-      "Euro",
       "Rublo ruso",
-      "Dólar estadounidense"
+      "Euro",
+      "Honduran lempira",
+      "Guaraní paraguayo"
     ],
     "extraData": {
       "countryCode": "hn",
@@ -1363,10 +1363,10 @@
     "questionText": "¿El idioma principal de Libya es...?",
     "correctAnswer": "Arabic",
     "options": [
-      "Icelandic",
-      "English",
-      "Seychellois Creole",
-      "Arabic"
+      "Arabic",
+      "Italian",
+      "Berber",
+      "English"
     ],
     "extraData": {
       "countryCode": "ly",
@@ -1419,9 +1419,9 @@
     "correctAnswer": "Angolan kwanza",
     "options": [
       "Leu moldavo",
-      "Angolan kwanza",
       "Dólar estadounidense",
-      "Sudanese pound"
+      "Sudanese pound",
+      "Rand sudafricano"
     ],
     "extraData": {
       "countryCode": "ao",
@@ -1436,10 +1436,10 @@
     "questionText": "¿Qué ciudad es el centro político de Belize?",
     "correctAnswer": "Belize",
     "options": [
-      "Norfolk Island",
-      "Belize",
+      "Norway",
       "Suriname",
-      "Norway"
+      "São Tomé",
+      "Norfolk Island"
     ],
     "extraData": {
       "countryCode": "bz",
@@ -1614,8 +1614,8 @@
     "options": [
       "Dólar estadounidense",
       "Corona checa",
-      "Naira nigeriana",
-      "Ouguiya mauritana"
+      "Ouguiya mauritana",
+      "Grivna ucraniana"
     ],
     "extraData": {
       "countryCode": "ng",
@@ -1631,9 +1631,9 @@
     "correctAnswer": "Christmas Island",
     "options": [
       "Christmas Island",
-      "Macau",
-      "United States Minor Outlying Islands",
-      "Monaco"
+      "Nuuk",
+      "Monaco",
+      "Macau"
     ],
     "extraData": {
       "countryCode": "cx",

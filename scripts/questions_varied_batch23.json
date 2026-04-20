@@ -119,10 +119,10 @@
     "questionText": "¿En qué ciudad se encuentra el gobierno de Wallis and Futuna?",
     "correctAnswer": "Wallis and Futuna",
     "options": [
-      "Pitcairn Islands",
-      "Wallis and Futuna",
+      "Bahrain",
       "Aruba",
-      "Fiji"
+      "Fiji",
+      "Quito"
     ],
     "extraData": {
       "countryCode": "wf",
@@ -214,10 +214,10 @@
     "questionText": "¿En Ivory Coast se usa qué moneda?",
     "correctAnswer": "Franco CFA de África Occidental",
     "options": [
-      "Franco CFA de África Occidental",
-      "Eritrean nakfa",
       "Euro",
-      "Rial yemení"
+      "Eritrean nakfa",
+      "Franco CFA de África Occidental",
+      "Dólar surinamés"
     ],
     "extraData": {
       "countryCode": "ci",
@@ -327,10 +327,10 @@
     "questionText": "¿La moneda oficial de Czechia es...?",
     "correctAnswer": "Corona checa",
     "options": [
-      "United Arab Emirates dirham",
+      "Leu rumano",
+      "Franco burundés",
       "Franco CFA de África Occidental",
-      "Corona checa",
-      "Dólar neozelandés"
+      "Corona checa"
     ],
     "extraData": {
       "countryCode": "cz",
@@ -400,10 +400,10 @@
     "questionText": "¿En qué ciudad se encuentra el gobierno de Saint Martin?",
     "correctAnswer": "Saint Martin",
     "options": [
-      "Morocco",
-      "Saint Martin",
-      "Sint Maarten",
-      "Western Sahara"
+      "Western Sahara",
+      "Hong Kong",
+      "Mexico City",
+      "Morocco"
     ],
     "extraData": {
       "countryCode": "mf",
@@ -528,10 +528,10 @@
     "questionText": "¿La moneda oficial de Niger es...?",
     "correctAnswer": "Franco CFA de África Occidental",
     "options": [
-      "Dólar estadounidense",
-      "Libra esterlina",
       "Franco CFA de África Occidental",
-      "Franco guineano"
+      "Dinar serbio",
+      "Franco guineano",
+      "Tögrög mongol"
     ],
     "extraData": {
       "countryCode": "ne",
@@ -778,9 +778,9 @@
     "questionText": "¿Cuál es la ciudad principal de Burundi?",
     "correctAnswer": "Burundi",
     "options": [
-      "Uganda",
       "Guinea-Bissau",
-      "Burundi",
+      "India",
+      "Uganda",
       "Ukraine"
     ],
     "extraData": {
@@ -1001,10 +1001,10 @@
     "questionText": "¿En Vatican City qué idioma se usa?",
     "correctAnswer": "Italian",
     "options": [
-      "French",
-      "English",
-      "Italian",
-      "Seychellois Creole"
+      "Seychellois Creole",
+      "Indonesio",
+      "Rumano",
+      "Italian"
     ],
     "extraData": {
       "countryCode": "va",
@@ -1094,10 +1094,10 @@
     "questionText": "¿En Honduras qué idioma se usa?",
     "correctAnswer": "Spanish",
     "options": [
-      "Spanish",
+      "Francés",
+      "Árabe",
       "Guaraní",
-      "English",
-      "French"
+      "Spanish"
     ],
     "extraData": {
       "countryCode": "hn",
@@ -1279,10 +1279,10 @@
     "questionText": "¿Cuál es la capital de Saint Barthélemy?",
     "correctAnswer": "Saint Barthélemy",
     "options": [
-      "British Indian Ocean Territory",
-      "Saint Barthélemy",
+      "Washington, D.C.",
       "Colombia",
-      "Cape Verde"
+      "Cape Verde",
+      "British Indian Ocean Territory"
     ],
     "extraData": {
       "countryCode": "bl",
@@ -1464,10 +1464,10 @@
     "questionText": "¿Qué ciudad es el centro político de Ireland?",
     "correctAnswer": "Ireland",
     "options": [
-      "Ireland",
+      "Caribbean Netherlands",
       "Sierra Leone",
-      "Bahamas",
-      "Belarus"
+      "Belarus",
+      "Bahamas"
     ],
     "extraData": {
       "countryCode": "ie",
@@ -1481,10 +1481,10 @@
     "questionText": "¿La moneda oficial de Ghana es...?",
     "correctAnswer": "Cedi ghanés",
     "options": [
-      "lari",
+      "Euro",
       "Cedi ghanés",
-      "Peso uruguayo",
-      "Euro"
+      "Rupia paquistaní",
+      "Sol peruano"
     ],
     "extraData": {
       "countryCode": "gh",
@@ -1588,9 +1588,9 @@
     "questionText": "¿La moneda oficial de Sudan es...?",
     "correctAnswer": "Sudanese pound",
     "options": [
-      "Dólar del Caribe Oriental",
-      "Pound sterling",
       "Sudanese pound",
+      "Pound sterling",
+      "Bosnia and Herzegovina convertible mark",
       "Won norcoreano"
     ],
     "extraData": {
@@ -1626,10 +1626,10 @@
     "questionText": "¿Qué billetes y monedas circulan en Gibraltar?",
     "correctAnswer": "Gibraltar pound",
     "options": [
-      "Franco suizo",
-      "Chelín keniano",
       "Dólar neozelandés",
-      "Gibraltar pound"
+      "Franco suizo",
+      "Boliviano boliviano",
+      "Chelín keniano"
     ],
     "extraData": {
       "countryCode": "gi",

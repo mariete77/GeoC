@@ -150,10 +150,10 @@
     "questionText": "¿De qué país es esta bandera?",
     "correctAnswer": "Bélgica",
     "options": [
-      "Alemania",
-      "Países Bajos",
       "Bélgica",
-      "Francia"
+      "Francia",
+      "French Guiana",
+      "Alemania"
     ],
     "imageUrl": "https://flagcdn.com/w320/be.png",
     "extraData": {
@@ -271,10 +271,10 @@
     "questionText": "¿Cuál es la capital de Brasil?",
     "correctAnswer": "Brasilia",
     "options": [
-      "Río de Janeiro",
+      "Antananarivo",
       "São Paulo",
-      "Brasilia",
-      "Salvador"
+      "Salvador",
+      "Río de Janeiro"
     ],
     "extraData": {
       "countryCode": "br",
@@ -628,8 +628,8 @@
     "options": [
       "Español",
       "Francés",
-      "Italiano",
-      "Portugués"
+      "Portugués",
+      "Indonesio"
     ],
     "extraData": {
       "countryCode": "it",
@@ -680,10 +680,10 @@
     "questionText": "¿Cuál es la moneda de Bolivia?",
     "correctAnswer": "Boliviano",
     "options": [
-      "Peso colombiano",
-      "Sol peruano",
       "Guaraní paraguayo",
-      "Boliviano"
+      "Sol peruano",
+      "Rupia de Sri Lanka",
+      "Peso colombiano"
     ],
     "extraData": {
       "countryCode": "bo",

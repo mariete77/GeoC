@@ -664,10 +664,10 @@
     "questionText": "¿Cuál es la moneda de Vietnam?",
     "correctAnswer": "Dong vietnamita",
     "options": [
-      "Baht tailandés",
-      "Rupia indonesia",
+      "Dólar de las Islas Caimán",
       "Kip laosiano",
-      "Dong vietnamita"
+      "Baht tailandés",
+      "Rupia indonesia"
     ],
     "extraData": {
       "countryCode": "vn",

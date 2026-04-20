@@ -6,9 +6,9 @@
     "questionText": "¿En Gibraltar qué idioma se usa?",
     "correctAnswer": "English",
     "options": [
-      "Czech",
-      "Bengali",
+      "Portugués",
       "Arabic",
+      "Czech",
       "English"
     ],
     "extraData": {
@@ -120,9 +120,9 @@
     "questionText": "¿Cuál es la divisa de Falkland Islands?",
     "correctAnswer": "Falkland Islands pound",
     "options": [
-      "Dólar estadounidense",
-      "Falkland Islands pound",
+      "Chelín keniano",
       "Franco CFA de África Central",
+      "Dólar estadounidense",
       "Cedi ghanés"
     ],
     "extraData": {
@@ -138,10 +138,10 @@
     "questionText": "¿En Azerbaijan qué idioma se usa?",
     "correctAnswer": "Azerbaijani",
     "options": [
-      "English",
+      "Guaraní",
       "Azerbaijani",
       "Kyrgyz",
-      "Guaraní"
+      "Korean"
     ],
     "extraData": {
       "countryCode": "az",
@@ -195,7 +195,7 @@
       "Saint Martin",
       "Denmark",
       "Uganda",
-      "Christmas Island"
+      "Yakarta"
     ],
     "extraData": {
       "countryCode": "ug",
@@ -229,10 +229,10 @@
     "questionText": "¿Cuál es el idioma oficial de Romania?",
     "correctAnswer": "Romanian",
     "options": [
-      "Arabic",
-      "Romanian",
       "Icelandic",
-      "Turkish"
+      "Arabic",
+      "Turkish",
+      "Chinese"
     ],
     "extraData": {
       "countryCode": "ro",
@@ -384,9 +384,9 @@
     "questionText": "¿El idioma principal de Marshall Islands es...?",
     "correctAnswer": "English",
     "options": [
-      "English",
-      "Portuguese",
       "Arabic",
+      "Húngaro",
+      "English",
       "French"
     ],
     "extraData": {
@@ -402,10 +402,10 @@
     "questionText": "¿Cuál es la capital de Antigua and Barbuda?",
     "correctAnswer": "Antigua and Barbuda",
     "options": [
-      "Turkmenistan",
       "Pakistan",
+      "Turkmenistan",
       "Papua New Guinea",
-      "Antigua and Barbuda"
+      "Malabo"
     ],
     "extraData": {
       "countryCode": "ag",
@@ -477,7 +477,7 @@
     "correctAnswer": "Dólar jamaicano",
     "options": [
       "Euro",
-      "Dólar jamaicano",
+      "Franco burundés",
       "Real brasileño",
       "Rial iraní"
     ],
@@ -591,10 +591,10 @@
     "questionText": "¿En Belarus qué idioma se usa?",
     "correctAnswer": "Belarusian",
     "options": [
-      "Belarusian",
       "Arabic",
-      "English",
-      "French"
+      "Filipino",
+      "Griego",
+      "Belarusian"
     ],
     "extraData": {
       "countryCode": "by",
@@ -609,10 +609,10 @@
     "questionText": "¿Qué ciudad es el centro político de Cook Islands?",
     "correctAnswer": "Cook Islands",
     "options": [
+      "Ecuador",
+      "Mascate",
       "Syria",
-      "Cape Verde",
-      "Cook Islands",
-      "Ecuador"
+      "Cape Verde"
     ],
     "extraData": {
       "countryCode": "ck",
@@ -857,10 +857,10 @@
     "questionText": "¿Qué ciudad es el centro político de Pitcairn Islands?",
     "correctAnswer": "Pitcairn Islands",
     "options": [
-      "South Sudan",
       "Sint Maarten",
+      "South Sudan",
       "Panama",
-      "Pitcairn Islands"
+      "Marshall Islands"
     ],
     "extraData": {
       "countryCode": "pn",
@@ -984,10 +984,10 @@
     "questionText": "¿El idioma principal de Guam es...?",
     "correctAnswer": "Chamorro",
     "options": [
-      "English",
-      "Korean",
       "Chamorro",
-      "Estonian"
+      "Ucraniano",
+      "English",
+      "Korean"
     ],
     "extraData": {
       "countryCode": "gu",
@@ -1264,9 +1264,9 @@
     "questionText": "¿La moneda oficial de Switzerland es...?",
     "correctAnswer": "Franco suizo",
     "options": [
-      "Rial iraní",
       "Franco suizo",
-      "Dólar del Caribe Oriental",
+      "Rial iraní",
+      "Chelín tanzano",
       "Rand sudafricano"
     ],
     "extraData": {
@@ -1282,9 +1282,9 @@
     "questionText": "¿La moneda oficial de Central African Republic es...?",
     "correctAnswer": "Franco CFA de África Central",
     "options": [
-      "Chelín tanzano",
       "Euro",
-      "Ringgit malayo",
+      "Chelín tanzano",
+      "denar",
       "Franco CFA de África Central"
     ],
     "extraData": {
@@ -1372,10 +1372,10 @@
     "questionText": "¿Cuál es el idioma oficial de Russia?",
     "correctAnswer": "Russian",
     "options": [
-      "Russian",
+      "English",
       "French",
-      "Slovene",
-      "English"
+      "Amharic",
+      "Slovene"
     ],
     "extraData": {
       "countryCode": "ru",
@@ -1488,7 +1488,7 @@
     "options": [
       "Antigua and Barbuda",
       "El Salvador",
-      "Saint Martin",
+      "Astana",
       "Svalbard and Jan Mayen"
     ],
     "extraData": {
@@ -1558,10 +1558,10 @@
     "questionText": "¿En Nepal qué idioma se usa?",
     "correctAnswer": "Nepali",
     "options": [
+      "Nepali",
       "Afrikaans",
-      "French",
       "Russian",
-      "Nepali"
+      "Hebreo"
     ],
     "extraData": {
       "countryCode": "np",
@@ -1593,10 +1593,10 @@
     "questionText": "¿Cuál es la capital de Finland?",
     "correctAnswer": "Finland",
     "options": [
+      "Guadeloupe",
       "Nicaragua",
-      "Aruba",
       "Equatorial Guinea",
-      "Finland"
+      "Aruba"
     ],
     "extraData": {
       "countryCode": "fi",
@@ -1630,10 +1630,10 @@
     "questionText": "¿Cuál es la ciudad principal de Central African Republic?",
     "correctAnswer": "Central African Republic",
     "options": [
-      "Israel",
+      "Andorra la Vieja",
+      "Argentina",
       "Tanzania",
-      "Central African Republic",
-      "Argentina"
+      "Israel"
     ],
     "extraData": {
       "countryCode": "cf",

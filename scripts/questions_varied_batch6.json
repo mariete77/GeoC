@@ -177,10 +177,10 @@
     "questionText": "¿En Finland qué idioma se usa?",
     "correctAnswer": "Finnish",
     "options": [
+      "Letón",
       "Berber",
       "Finnish",
-      "English",
-      "French"
+      "Kyrgyz"
     ],
     "extraData": {
       "countryCode": "fi",
@@ -231,9 +231,9 @@
     "questionText": "¿En Taiwan se usa qué moneda?",
     "correctAnswer": "Nuevo dólar taiwanés",
     "options": [
-      "Lilangeni suazi",
       "Nuevo dólar taiwanés",
-      "Franco CFA de África Occidental",
+      "Rand sudafricano",
+      "krone",
       "Rublo ruso"
     ],
     "extraData": {
@@ -326,10 +326,10 @@
     "questionText": "¿Cuál es la capital de Estonia?",
     "correctAnswer": "Estonia",
     "options": [
-      "Qatar",
       "Portugal",
+      "Qatar",
       "Morocco",
-      "Estonia"
+      "Mogadiscio"
     ],
     "extraData": {
       "countryCode": "ee",
@@ -361,10 +361,10 @@
     "questionText": "¿La moneda oficial de Indonesia es...?",
     "correctAnswer": "Rupia indonesia",
     "options": [
-      "Riyal saudí",
-      "Cedi ghanés",
       "Rupia indonesia",
-      "Dólar de las Islas Caimán"
+      "Riyal saudí",
+      "Tögrög mongol",
+      "Cedi ghanés"
     ],
     "extraData": {
       "countryCode": "id",
@@ -493,10 +493,10 @@
     "questionText": "¿Cuál es la ciudad principal de Bermuda?",
     "correctAnswer": "Bermuda",
     "options": [
-      "Peru",
-      "Israel",
       "Turkmenistan",
-      "Bermuda"
+      "Israel",
+      "Peru",
+      "Oman"
     ],
     "extraData": {
       "countryCode": "bm",
@@ -528,10 +528,10 @@
     "questionText": "¿Cuál es la capital de Sri Lanka?",
     "correctAnswer": "Sri Lanka",
     "options": [
-      "Central African Republic",
-      "Serbia",
+      "Libya",
       "Vatican City",
-      "Sri Lanka"
+      "Serbia",
+      "Central African Republic"
     ],
     "extraData": {
       "countryCode": "lk",
@@ -673,10 +673,10 @@
     "questionText": "¿Cuál es la capital de French Polynesia?",
     "correctAnswer": "French Polynesia",
     "options": [
-      "Albania",
       "South Sudan",
       "Denmark",
-      "French Polynesia"
+      "Lima",
+      "Albania"
     ],
     "extraData": {
       "countryCode": "pf",
@@ -726,10 +726,10 @@
     "questionText": "¿El idioma principal de El Salvador es...?",
     "correctAnswer": "Spanish",
     "options": [
-      "Spanish",
+      "English",
       "French",
-      "Seychellois Creole",
-      "English"
+      "Latvian",
+      "Spanish"
     ],
     "extraData": {
       "countryCode": "sv",
@@ -951,9 +951,9 @@
     "questionText": "¿Qué billetes y monedas circulan en Nicaragua?",
     "correctAnswer": "Nicaraguan córdoba",
     "options": [
-      "Nicaraguan córdoba",
       "Cape Verdean escudo",
       "Euro",
+      "Dólar neozelandés",
       "Gibraltar pound"
     ],
     "extraData": {
@@ -1024,7 +1024,7 @@
     "questionText": "¿Cuál es la divisa de Saint Kitts and Nevis?",
     "correctAnswer": "Dólar del Caribe Oriental",
     "options": [
-      "Dólar neozelandés",
+      "Dólar namibio",
       "Euro",
       "Som kirguís",
       "Dólar del Caribe Oriental"
@@ -1099,10 +1099,10 @@
     "questionText": "¿Cuál es la lengua oficial de Romania?",
     "correctAnswer": "Romanian",
     "options": [
-      "Arabic",
       "English",
-      "Chinese",
-      "Romanian"
+      "Arabic",
+      "Islandés",
+      "Chinese"
     ],
     "extraData": {
       "countryCode": "ro",
@@ -1290,10 +1290,10 @@
     "questionText": "¿Cuál es el idioma oficial de Nepal?",
     "correctAnswer": "Nepali",
     "options": [
-      "Nepali",
-      "Norwegian Nynorsk",
+      "Estonian",
+      "Greek",
       "English",
-      "Estonian"
+      "Norwegian Nynorsk"
     ],
     "extraData": {
       "countryCode": "np",
@@ -1308,10 +1308,10 @@
     "questionText": "¿Qué ciudad es el centro político de Russia?",
     "correctAnswer": "Russia",
     "options": [
-      "Antarctica",
-      "Russia",
       "Monaco",
-      "Guadeloupe"
+      "Guadeloupe",
+      "Antarctica",
+      "Suriname"
     ],
     "extraData": {
       "countryCode": "ru",
@@ -1534,10 +1534,10 @@
     "questionText": "¿En Wallis and Futuna se usa qué moneda?",
     "correctAnswer": "Franco CFP",
     "options": [
-      "Netherlands Antillean guilder",
-      "Euro",
       "Franco CFP",
-      "Albanian lek"
+      "Euro",
+      "Albanian lek",
+      "Rupia indonesia"
     ],
     "extraData": {
       "countryCode": "wf",
@@ -1592,9 +1592,9 @@
     "correctAnswer": "Euro",
     "options": [
       "Aruban florin",
-      "Euro",
-      "Netherlands Antillean guilder",
-      "Manat turcomano"
+      "Manat turcomano",
+      "Rupia paquistaní",
+      "Euro"
     ],
     "extraData": {
       "countryCode": "de",
@@ -1645,10 +1645,10 @@
     "questionText": "¿Cuál es el idioma oficial de Albania?",
     "correctAnswer": "Albanian",
     "options": [
-      "Norwegian",
-      "French",
       "Arabic",
-      "Albanian"
+      "Burmese",
+      "Norwegian",
+      "French"
     ],
     "extraData": {
       "countryCode": "al",

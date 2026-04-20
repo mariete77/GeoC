@@ -42,8 +42,8 @@
     "questionText": "¿De qué país es esta bandera?",
     "correctAnswer": "Malasia",
     "options": [
-      "Estados Unidos",
       "Malasia",
+      "Equatorial Guinea",
       "Liberia",
       "Tailandia"
     ],
@@ -168,10 +168,10 @@
     "questionText": "¿De qué país es esta bandera?",
     "correctAnswer": "Costa Rica",
     "options": [
+      "Dinamarca",
       "Tailandia",
       "Costa Rica",
-      "India",
-      "Corea del Norte"
+      "India"
     ],
     "imageUrl": "https://flagcdn.com/w320/cr.png",
     "extraData": {
@@ -644,9 +644,9 @@
     "correctAnswer": "Rupia indonesia",
     "options": [
       "Baht tailandés",
-      "Ringgit malayo",
-      "Rupia indonesia",
-      "Peso filipino"
+      "Manat azerbayano",
+      "Peso filipino",
+      "Ringgit malayo"
     ],
     "extraData": {
       "countryCode": "id",
@@ -715,10 +715,10 @@
     "questionText": "¿Cuál es la moneda de Italia?",
     "correctAnswer": "Euro",
     "options": [
-      "Lira italiana",
-      "Euro",
+      "Belarusian ruble",
       "Franco suizo",
-      "Libra esterlina"
+      "Libra esterlina",
+      "Euro"
     ],
     "extraData": {
       "countryCode": "it",

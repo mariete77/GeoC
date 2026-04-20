@@ -65,8 +65,8 @@
     "correctAnswer": "Russian",
     "options": [
       "Dutch",
-      "Russian",
       "Indonesian",
+      "Khmer",
       "Korean"
     ],
     "extraData": {
@@ -82,10 +82,10 @@
     "questionText": "¿Cuál es la ciudad principal de India?",
     "correctAnswer": "India",
     "options": [
-      "Anguilla",
-      "India",
+      "Greece",
+      "Asmara",
       "Panama",
-      "Greece"
+      "Anguilla"
     ],
     "extraData": {
       "countryCode": "in",
@@ -99,10 +99,10 @@
     "questionText": "¿Cuál es la ciudad principal de Mali?",
     "correctAnswer": "Mali",
     "options": [
+      "Ciudad de México",
       "Taiwan",
-      "Namibia",
       "United States Virgin Islands",
-      "Mali"
+      "Namibia"
     ],
     "extraData": {
       "countryCode": "ml",
@@ -853,7 +853,7 @@
     "questionText": "¿Cuál es el idioma oficial de Latvia?",
     "correctAnswer": "Latvian",
     "options": [
-      "Latvian",
+      "Turkish",
       "French",
       "English",
       "Spanish"
@@ -908,10 +908,10 @@
     "questionText": "¿En qué ciudad se encuentra el gobierno de Svalbard and Jan Mayen?",
     "correctAnswer": "Longyearbyen",
     "options": [
+      "Longyearbyen",
       "Honiara",
-      "Ciudad de la Paz",
-      "Copenhagen",
-      "Longyearbyen"
+      "Tonga",
+      "Podgorica"
     ],
     "extraData": {
       "countryCode": "sj",
@@ -1036,9 +1036,9 @@
     "correctAnswer": "Dólar liberiano",
     "options": [
       "Dong vietnamita",
+      "Macanese pataca",
       "Dólar de Hong Kong",
-      "Dólar liberiano",
-      "Macanese pataca"
+      "krone"
     ],
     "extraData": {
       "countryCode": "lr",
@@ -1149,10 +1149,10 @@
     "questionText": "¿En Libya qué idioma se usa?",
     "correctAnswer": "Arabic",
     "options": [
-      "Arabic",
-      "English",
-      "Montenegrin",
-      "French"
+      "Indonesio",
+      "Tigriña",
+      "Azerbaijani",
+      "Arabic"
     ],
     "extraData": {
       "countryCode": "ly",
@@ -1411,10 +1411,10 @@
     "questionText": "¿En qué ciudad se encuentra el gobierno de Uganda?",
     "correctAnswer": "Uganda",
     "options": [
-      "Timor-Leste",
-      "Uganda",
+      "Saint Martin",
+      "Georgetown",
       "Guyana",
-      "Saint Martin"
+      "Timor-Leste"
     ],
     "extraData": {
       "countryCode": "ug",
@@ -1596,8 +1596,8 @@
     "correctAnswer": "Antananarivo",
     "options": [
       "Saipan",
+      "Dominica",
       "Apia",
-      "Ciudad de la Paz",
       "Antananarivo"
     ],
     "extraData": {
@@ -1612,10 +1612,10 @@
     "questionText": "¿Cuál es la capital de Kyrgyzstan?",
     "correctAnswer": "Kyrgyzstan",
     "options": [
-      "Kyrgyzstan",
-      "Netherlands",
       "Luxembourg",
-      "New Zealand"
+      "Puerto Príncipe",
+      "New Zealand",
+      "Netherlands"
     ],
     "extraData": {
       "countryCode": "kg",
@@ -1647,10 +1647,10 @@
     "questionText": "¿Cuál es el idioma oficial de Belarus?",
     "correctAnswer": "Belarusian",
     "options": [
-      "French",
       "Finnish",
-      "Arabic",
-      "Belarusian"
+      "French",
+      "Polish",
+      "Arabic"
     ],
     "extraData": {
       "countryCode": "by",
@@ -1742,10 +1742,10 @@
     "questionText": "¿En Gabon qué idioma se usa?",
     "correctAnswer": "French",
     "options": [
-      "English",
-      "French",
       "Romanian",
-      "Montenegrin"
+      "Chibarwe",
+      "French",
+      "Uzbeko"
     ],
     "extraData": {
       "countryCode": "ga",

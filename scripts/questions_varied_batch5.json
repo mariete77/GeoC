@@ -46,10 +46,10 @@
     "questionText": "¿Cuál es la divisa de Colombia?",
     "correctAnswer": "Peso colombiano",
     "options": [
-      "Libra esterlina",
+      "Rial yemení",
       "denar",
       "Dólar estadounidense",
-      "Peso colombiano"
+      "Libra esterlina"
     ],
     "extraData": {
       "countryCode": "co",
@@ -64,10 +64,10 @@
     "questionText": "¿Cuál es la capital de Oman?",
     "correctAnswer": "Oman",
     "options": [
-      "Oman",
-      "Honduras",
       "Grenada",
-      "Belize"
+      "Belize",
+      "Daca",
+      "Honduras"
     ],
     "extraData": {
       "countryCode": "om",
@@ -81,10 +81,10 @@
     "questionText": "¿En Senegal se usa qué moneda?",
     "correctAnswer": "Franco CFA de África Occidental",
     "options": [
-      "Dólar australiano",
-      "Dólar del Caribe Oriental",
       "Franco CFA de África Occidental",
-      "Corona danesa"
+      "Dólar australiano",
+      "Corona danesa",
+      "Dinar jordano"
     ],
     "extraData": {
       "countryCode": "sn",
@@ -119,10 +119,10 @@
     "questionText": "¿Cuál es la ciudad principal de El Salvador?",
     "correctAnswer": "San Salvador",
     "options": [
-      "Fort-de-France",
+      "Dublín",
       "Saipan",
-      "San Salvador",
-      "Ottawa"
+      "Ottawa",
+      "Fort-de-France"
     ],
     "extraData": {
       "countryCode": "sv",
@@ -153,10 +153,10 @@
     "questionText": "¿En qué ciudad se encuentra el gobierno de Spain?",
     "correctAnswer": "Spain",
     "options": [
-      "Cayman Islands",
+      "Belgrado",
       "Uruguay",
       "Tunisia",
-      "Spain"
+      "Cayman Islands"
     ],
     "extraData": {
       "countryCode": "es",
@@ -264,10 +264,10 @@
     "questionText": "¿El idioma principal de Bahrain es...?",
     "correctAnswer": "Arabic",
     "options": [
-      "Arabic",
       "Spanish",
-      "English",
-      "Japanese"
+      "Suazi",
+      "Arabic",
+      "English"
     ],
     "extraData": {
       "countryCode": "bh",
@@ -302,10 +302,10 @@
     "questionText": "¿Qué ciudad es el centro político de Georgia?",
     "correctAnswer": "Georgia",
     "options": [
-      "Belarus",
       "Jordan",
-      "Georgia",
-      "Gibraltar"
+      "Gibraltar",
+      "Valletta",
+      "Belarus"
     ],
     "extraData": {
       "countryCode": "ge",
@@ -617,10 +617,10 @@
     "questionText": "¿La capital de Lithuania se llama...?",
     "correctAnswer": "Lithuania",
     "options": [
-      "Lithuania",
-      "Finland",
+      "United States",
       "United Kingdom",
-      "Kuwait"
+      "Kuwait",
+      "Lithuania"
     ],
     "extraData": {
       "countryCode": "lt",
@@ -898,9 +898,9 @@
     "questionText": "¿Cuál es la ciudad principal de Antigua and Barbuda?",
     "correctAnswer": "Antigua and Barbuda",
     "options": [
-      "Saint Kitts and Nevis",
-      "Antigua and Barbuda",
+      "Port Vila",
       "Zimbabwe",
+      "Guadeloupe",
       "Uzbekistan"
     ],
     "extraData": {
@@ -1008,9 +1008,9 @@
     "questionText": "¿En Western Sahara qué idioma se usa?",
     "correctAnswer": "Berber",
     "options": [
-      "Spanish",
-      "English",
       "Berber",
+      "Italian",
+      "Spanish",
       "Arabic"
     ],
     "extraData": {
@@ -1080,10 +1080,10 @@
     "questionText": "¿El idioma principal de Saint Pierre and Miquelon es...?",
     "correctAnswer": "French",
     "options": [
+      "Jemer",
       "English",
-      "Spanish",
-      "Portuguese",
-      "French"
+      "French",
+      "Spanish"
     ],
     "extraData": {
       "countryCode": "pm",
@@ -1368,10 +1368,10 @@
     "questionText": "¿En Mauritania qué idioma se usa?",
     "correctAnswer": "Arabic",
     "options": [
-      "Arabic",
-      "Nepali",
       "Portuguese",
-      "French"
+      "Nepali",
+      "Islandés",
+      "Arabic"
     ],
     "extraData": {
       "countryCode": "mr",
@@ -1386,10 +1386,10 @@
     "questionText": "¿Qué ciudad es la sede administrativa de Svalbard and Jan Mayen?",
     "correctAnswer": "Svalbard and Jan Mayen",
     "options": [
-      "Turks and Caicos Islands",
       "Svalbard and Jan Mayen",
       "Laos",
-      "Puerto Rico"
+      "Puerto Rico",
+      "Papeetē"
     ],
     "extraData": {
       "countryCode": "sj",
@@ -1480,10 +1480,10 @@
     "questionText": "¿La moneda oficial de Monaco es...?",
     "correctAnswer": "Euro",
     "options": [
-      "Taka bangladesí",
-      "Dólar australiano",
       "Franco suizo",
-      "Euro"
+      "Euro",
+      "Dram armenio",
+      "Boliviano"
     ],
     "extraData": {
       "countryCode": "mc",
@@ -1670,10 +1670,10 @@
     "questionText": "¿Qué moneda se usa en Jordan?",
     "correctAnswer": "Dinar jordano",
     "options": [
-      "Botswana pula",
       "Dólar bahameño",
-      "Dinar jordano",
-      "Euro"
+      "Euro",
+      "Botswana pula",
+      "Corona danesa"
     ],
     "extraData": {
       "countryCode": "jo",
@@ -1780,9 +1780,9 @@
     "questionText": "¿En Jordan qué idioma se usa?",
     "correctAnswer": "Arabic",
     "options": [
+      "Guaraní",
       "Chinese",
-      "English",
-      "Armenian",
+      "Norwegian",
       "Arabic"
     ],
     "extraData": {

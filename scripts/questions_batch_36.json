@@ -6,10 +6,10 @@
     "questionText": "¿De qué país es esta bandera?",
     "correctAnswer": "Vietnam",
     "options": [
+      "Georgia",
       "China",
-      "Corea del Sur",
-      "Laos",
-      "Vietnam"
+      "Vietnam",
+      "Laos"
     ],
     "imageUrl": "https://flagcdn.com/w320/vn.png",
     "extraData": {
@@ -25,8 +25,8 @@
     "correctAnswer": "Mongolia",
     "options": [
       "China",
+      "Hungary",
       "Japón",
-      "Corea del Norte",
       "Mongolia"
     ],
     "imageUrl": "https://flagcdn.com/w320/mn.png",
@@ -42,9 +42,9 @@
     "questionText": "¿De qué país es esta bandera?",
     "correctAnswer": "Irlanda",
     "options": [
-      "Costa de Marfil",
-      "Italia",
       "India",
+      "Bahamas",
+      "Italia",
       "Irlanda"
     ],
     "imageUrl": "https://flagcdn.com/w320/ie.png",
@@ -630,8 +630,8 @@
     "options": [
       "Español",
       "Francés",
-      "Portugués",
-      "Italiano"
+      "Indonesian",
+      "Portugués"
     ],
     "extraData": {
       "countryCode": "it",
@@ -700,10 +700,10 @@
     "questionText": "¿Cuál es la moneda de Chile?",
     "correctAnswer": "Peso chileno",
     "options": [
-      "Peso argentino",
       "Sol peruano",
-      "Peso colombiano",
-      "Peso chileno"
+      "Peso argentino",
+      "Chelín keniano",
+      "Peso colombiano"
     ],
     "extraData": {
       "countryCode": "cl",
@@ -721,7 +721,7 @@
       "Yuan chino",
       "Baht tailandés",
       "Rupia pakistaní",
-      "Rupia india"
+      "Somoni tayiko"
     ],
     "extraData": {
       "countryCode": "in",

@@ -119,9 +119,9 @@
     "questionText": "¿En qué ciudad se encuentra el gobierno de Gabon?",
     "correctAnswer": "Gabon",
     "options": [
-      "Jersey",
+      "Teherán",
       "Fiji",
-      "Gabon",
+      "Jersey",
       "Madagascar"
     ],
     "extraData": {
@@ -136,10 +136,10 @@
     "questionText": "¿En Djibouti se usa qué moneda?",
     "correctAnswer": "Franco yibutí",
     "options": [
+      "Birr etíope",
       "Franco yibutí",
-      "Somoni tayiko",
-      "Franco CFA de África Central",
-      "Birr etíope"
+      "Leu moldavo",
+      "Somoni tayiko"
     ],
     "extraData": {
       "countryCode": "dj",
@@ -327,10 +327,10 @@
     "questionText": "¿En Peru se usa qué moneda?",
     "correctAnswer": "Sol peruano",
     "options": [
-      "Sol peruano",
-      "denar",
+      "Won norcoreano",
+      "Botswana pula",
       "Dólar australiano",
-      "Won norcoreano"
+      "Sol peruano"
     ],
     "extraData": {
       "countryCode": "pe",
@@ -381,10 +381,10 @@
     "questionText": "¿En Azerbaijan qué idioma se usa?",
     "correctAnswer": "Azerbaijani",
     "options": [
-      "Azerbaijani",
-      "English",
       "Arabic",
-      "Portuguese"
+      "Azerbaijani",
+      "Portuguese",
+      "Swedish"
     ],
     "extraData": {
       "countryCode": "az",
@@ -399,10 +399,10 @@
     "questionText": "¿La capital de American Samoa se llama...?",
     "correctAnswer": "American Samoa",
     "options": [
+      "Hong Kong",
       "American Samoa",
       "Tanzania",
-      "Senegal",
-      "Guatemala"
+      "Senegal"
     ],
     "extraData": {
       "countryCode": "as",
@@ -530,10 +530,10 @@
     "questionText": "¿En Svalbard and Jan Mayen qué idioma se usa?",
     "correctAnswer": "Norwegian",
     "options": [
-      "Norwegian",
+      "Italian",
       "Spanish",
-      "English",
-      "Italian"
+      "Coreano",
+      "Norwegian"
     ],
     "extraData": {
       "countryCode": "sj",
@@ -684,9 +684,9 @@
     "correctAnswer": "Tongan paʻanga",
     "options": [
       "Real brasileño",
+      "Dólar surinamés",
       "Dólar estadounidense",
-      "Tongan paʻanga",
-      "Dólar surinamés"
+      "Rand sudafricano"
     ],
     "extraData": {
       "countryCode": "to",
@@ -790,10 +790,10 @@
     "questionText": "¿En Latvia se usa qué moneda?",
     "correctAnswer": "Euro",
     "options": [
-      "Euro",
+      "Dólar fiyiano",
       "Real brasileño",
-      "Dólar del Caribe Oriental",
-      "Dólar fiyiano"
+      "Peso filipino",
+      "Euro"
     ],
     "extraData": {
       "countryCode": "lv",
@@ -1088,10 +1088,10 @@
     "questionText": "¿Cuál es la capital de Azerbaijan?",
     "correctAnswer": "Azerbaijan",
     "options": [
-      "Chad",
+      "Dakar",
+      "Gambia",
       "Belgium",
-      "Azerbaijan",
-      "Gambia"
+      "Chad"
     ],
     "extraData": {
       "countryCode": "az",
@@ -1143,10 +1143,10 @@
     "questionText": "¿La moneda oficial de Cuba es...?",
     "correctAnswer": "Peso convertible cubano",
     "options": [
-      "Peso convertible cubano",
-      "Falkland Islands pound",
-      "Rupia indonesia",
-      "Rupia seychellense"
+      "Rupia seychellense",
+      "Rupia india",
+      "Rupia nepalí",
+      "Peso convertible cubano"
     ],
     "extraData": {
       "countryCode": "cu",
@@ -1201,10 +1201,10 @@
     "questionText": "¿Cuál es la ciudad principal de Mayotte?",
     "correctAnswer": "Mayotte",
     "options": [
-      "Mayotte",
-      "Anguilla",
       "Sweden",
-      "Italy"
+      "Anguilla",
+      "Italy",
+      "Kuala Lumpur"
     ],
     "extraData": {
       "countryCode": "yt",
@@ -1291,9 +1291,9 @@
     "correctAnswer": "Franco CFP",
     "options": [
       "Franco CFP",
-      "Franco CFA de África Central",
-      "Euro",
-      "Dinar serbio"
+      "Libra siria",
+      "Dinar serbio",
+      "Euro"
     ],
     "extraData": {
       "countryCode": "pf",
@@ -1365,10 +1365,10 @@
     "questionText": "¿En Paraguay se usa qué moneda?",
     "correctAnswer": "Guaraní paraguayo",
     "options": [
+      "Florín húngaro",
       "Guaraní paraguayo",
       "Baht tailandés",
-      "Rial yemení",
-      "Florín húngaro"
+      "Yuan chino"
     ],
     "extraData": {
       "countryCode": "py",
@@ -1383,10 +1383,10 @@
     "questionText": "¿En Albania se usa qué moneda?",
     "correctAnswer": "Albanian lek",
     "options": [
-      "Yen japonés",
-      "Albanian lek",
       "Euro",
-      "Dólar zimbabuense"
+      "Chelín ugandés",
+      "Boliviano",
+      "Albanian lek"
     ],
     "extraData": {
       "countryCode": "al",

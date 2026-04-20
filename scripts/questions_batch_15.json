@@ -150,8 +150,8 @@
     "questionText": "¿De qué país es esta bandera?",
     "correctAnswer": "Canadá",
     "options": [
-      "Estados Unidos",
       "Reino Unido",
+      "Algeria",
       "Australia",
       "Canadá"
     ],
@@ -682,10 +682,10 @@
     "questionText": "¿Cuál es la moneda de Paraguay?",
     "correctAnswer": "Guaraní paraguayo",
     "options": [
+      "Dram armenio",
       "Peso argentino",
-      "Boliviano",
-      "Guaraní paraguayo",
-      "Peso uruguayo"
+      "Peso uruguayo",
+      "Boliviano"
     ],
     "extraData": {
       "countryCode": "py",
@@ -700,10 +700,10 @@
     "questionText": "¿Cuál es la moneda de Indonesia?",
     "correctAnswer": "Rupia indonesia",
     "options": [
-      "Baht tailandés",
       "Ringgit malayo",
-      "Rupia indonesia",
-      "Peso filipino"
+      "Baht tailandés",
+      "Peso filipino",
+      "Dirham de EAU"
     ],
     "extraData": {
       "countryCode": "id",
@@ -718,10 +718,10 @@
     "questionText": "¿Cuál es la moneda de Australia?",
     "correctAnswer": "Dólar australiano",
     "options": [
-      "Dólar neozelandés",
-      "Dólar canadiense",
       "Libra esterlina",
-      "Dólar australiano"
+      "Dólar canadiense",
+      "Dólar neozelandés",
+      "Bulgarian lev"
     ],
     "extraData": {
       "countryCode": "au",

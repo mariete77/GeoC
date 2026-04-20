@@ -168,10 +168,10 @@
     "questionText": "¿De qué país es esta bandera?",
     "correctAnswer": "India",
     "options": [
-      "Níger",
+      "Irlanda",
       "India",
-      "Costa de Marfil",
-      "Irlanda"
+      "Seychelles",
+      "Níger"
     ],
     "imageUrl": "https://flagcdn.com/w320/in.png",
     "extraData": {
@@ -220,10 +220,10 @@
     "questionText": "¿Cuál es la capital de México?",
     "correctAnswer": "Ciudad de México",
     "options": [
+      "Cancún",
       "Guadalajara",
       "Monterrey",
-      "Ciudad de México",
-      "Cancún"
+      "French Polynesia"
     ],
     "extraData": {
       "countryCode": "mx",
@@ -759,9 +759,9 @@
     "correctAnswer": "Corona noruega",
     "options": [
       "Corona sueca",
-      "Corona noruega",
+      "Franco suizo",
       "Corona danesa",
-      "Franco suizo"
+      "Kina papú"
     ],
     "extraData": {
       "countryCode": "no",

@@ -764,7 +764,7 @@
     "options": [
       "Bolivia",
       "French Guiana",
-      "Guadeloupe",
+      "Malta",
       "Northern Mariana Islands"
     ],
     "imageUrl": "https://flagcdn.com/w320/bo.png",
@@ -834,10 +834,10 @@
     "questionText": "¿De qué país es esta bandera?",
     "correctAnswer": "Japan",
     "options": [
-      "Japan",
-      "Russia",
       "Tanzania",
-      "Cape Verde"
+      "Russia",
+      "Dominican Republic",
+      "Japan"
     ],
     "imageUrl": "https://flagcdn.com/w320/jp.png",
     "extraData": {
@@ -854,8 +854,8 @@
     "options": [
       "Western Sahara",
       "Antarctica",
-      "Denmark",
-      "Samoa"
+      "Samoa",
+      "Surinam"
     ],
     "imageUrl": "https://flagcdn.com/w320/eh.png",
     "extraData": {

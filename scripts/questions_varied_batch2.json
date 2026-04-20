@@ -137,9 +137,9 @@
     "correctAnswer": "Cape Verdean escudo",
     "options": [
       "Franco CFA de África Occidental",
-      "Yuan chino",
       "Somoni tayiko",
-      "Cape Verdean escudo"
+      "Yuan chino",
+      "Dinar libio"
     ],
     "extraData": {
       "countryCode": "cv",
@@ -154,10 +154,10 @@
     "questionText": "¿Cuál es la ciudad principal de North Macedonia?",
     "correctAnswer": "North Macedonia",
     "options": [
-      "Lesotho",
-      "North Macedonia",
+      "Malta",
       "Central African Republic",
-      "Malta"
+      "Norfolk Island",
+      "Lesotho"
     ],
     "extraData": {
       "countryCode": "mk",
@@ -382,9 +382,9 @@
     "correctAnswer": "Iceland",
     "options": [
       "Comoros",
-      "Guernsey",
       "Tunisia",
-      "Iceland"
+      "Guernsey",
+      "Ciudad de Panamá"
     ],
     "extraData": {
       "countryCode": "is",
@@ -452,10 +452,10 @@
     "questionText": "¿Qué billetes y monedas circulan en Nicaragua?",
     "correctAnswer": "Nicaraguan córdoba",
     "options": [
+      "Dinar bareiní",
       "Dólar fiyiano",
       "Bulgarian lev",
-      "Rublo ruso",
-      "Nicaraguan córdoba"
+      "Rublo ruso"
     ],
     "extraData": {
       "countryCode": "ni",
@@ -752,10 +752,10 @@
     "questionText": "¿Cuál es la ciudad principal de Gambia?",
     "correctAnswer": "Gambia",
     "options": [
-      "Gambia",
-      "Moldova",
+      "Pakistan",
+      "Port Vila",
       "Paraguay",
-      "Pakistan"
+      "Moldova"
     ],
     "extraData": {
       "countryCode": "gm",
@@ -769,10 +769,10 @@
     "questionText": "¿Qué ciudad es el centro político de Solomon Islands?",
     "correctAnswer": "Solomon Islands",
     "options": [
+      "Ulán Bator",
       "Svalbard and Jan Mayen",
-      "Solomon Islands",
-      "Greenland",
-      "Bahamas"
+      "Bahamas",
+      "Greenland"
     ],
     "extraData": {
       "countryCode": "sb",
@@ -969,10 +969,10 @@
     "questionText": "¿Cuál es la moneda de Mozambique?",
     "correctAnswer": "Metical mozambiqueño",
     "options": [
-      "Franco ruandés",
       "Franco CFP",
       "Dólar liberiano",
-      "Metical mozambiqueño"
+      "Franco ruandés",
+      "Libra sudanesa"
     ],
     "extraData": {
       "countryCode": "mz",
@@ -987,10 +987,10 @@
     "questionText": "¿La moneda oficial de Trinidad and Tobago es...?",
     "correctAnswer": "Dólar de Trinidad y Tobago",
     "options": [
-      "Dólar canadiense",
-      "Ringgit malayo",
       "Dólar de Trinidad y Tobago",
-      "Franco CFA de África Central"
+      "Guaraní paraguayo",
+      "Franco CFA de África Central",
+      "Nicaraguan córdoba"
     ],
     "extraData": {
       "countryCode": "tt",
@@ -1082,10 +1082,10 @@
     "questionText": "¿En Sri Lanka se usa qué moneda?",
     "correctAnswer": "Rupia de Sri Lanka",
     "options": [
-      "Corona danesa",
-      "Franco CFA de África Central",
+      "Lira turca",
       "Rupia de Sri Lanka",
-      "Dólar australiano"
+      "Dólar australiano",
+      "Corona danesa"
     ],
     "extraData": {
       "countryCode": "lk",
@@ -1120,10 +1120,10 @@
     "questionText": "¿El idioma principal de Montserrat es...?",
     "correctAnswer": "English",
     "options": [
+      "English",
+      "Serbian",
       "Romanian",
-      "Chinese",
-      "Belizean Creole",
-      "English"
+      "Slovak"
     ],
     "extraData": {
       "countryCode": "ms",
@@ -1456,9 +1456,9 @@
     "questionText": "¿En Belgium qué idioma se usa?",
     "correctAnswer": "German",
     "options": [
-      "French",
-      "English",
+      "Icelandic",
       "Spanish",
+      "Catalán",
       "German"
     ],
     "extraData": {
@@ -1494,10 +1494,10 @@
     "questionText": "¿En Myanmar qué idioma se usa?",
     "correctAnswer": "Burmese",
     "options": [
-      "English",
-      "Ukrainian",
+      "Chibarwe",
       "Burmese",
-      "Spanish"
+      "Spanish",
+      "Ukrainian"
     ],
     "extraData": {
       "countryCode": "mm",
@@ -1663,10 +1663,10 @@
     "questionText": "¿Cuál es la lengua oficial de Armenia?",
     "correctAnswer": "Armenian",
     "options": [
-      "Armenian",
+      "Húngaro",
       "Chibarwe",
-      "Spanish",
-      "English"
+      "English",
+      "Spanish"
     ],
     "extraData": {
       "countryCode": "am",

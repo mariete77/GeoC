@@ -151,9 +151,9 @@
     "correctAnswer": "Rusia",
     "options": [
       "Francia",
-      "Luxemburgo",
-      "Países Bajos",
-      "Rusia"
+      "Rusia",
+      "Timor-Leste",
+      "Luxemburgo"
     ],
     "imageUrl": "https://flagcdn.com/w320/ru.png",
     "extraData": {
@@ -642,10 +642,10 @@
     "questionText": "¿Cuál es la moneda de Mozambique?",
     "correctAnswer": "Metical mozambiqueño",
     "options": [
-      "Kwacha zambiano",
-      "Rand sudafricano",
       "Chelín tanzano",
-      "Metical mozambiqueño"
+      "Birr etíope",
+      "Rand sudafricano",
+      "Kwacha zambiano"
     ],
     "extraData": {
       "countryCode": "mz",
@@ -660,10 +660,10 @@
     "questionText": "¿Cuál es la moneda de Singapur?",
     "correctAnswer": "Dólar de Singapur",
     "options": [
+      "Rial yemení",
       "Ringgit malayo",
-      "Rupia indonesia",
       "Baht tailandés",
-      "Dólar de Singapur"
+      "Rupia indonesia"
     ],
     "extraData": {
       "countryCode": "sg",
@@ -678,10 +678,10 @@
     "questionText": "¿Cuál es la moneda de Uruguay?",
     "correctAnswer": "Peso uruguayo",
     "options": [
+      "Dólar estadounidense",
       "Peso argentino",
-      "Real brasileño",
       "Guaraní paraguayo",
-      "Peso uruguayo"
+      "Real brasileño"
     ],
     "extraData": {
       "countryCode": "uy",
@@ -714,10 +714,10 @@
     "questionText": "¿Cuál es la moneda de Corea del Sur?",
     "correctAnswer": "Won surcoreano",
     "options": [
-      "Yen japonés",
+      "Dram armenio",
       "Yuan chino",
-      "Dólar",
-      "Won surcoreano"
+      "Yen japonés",
+      "Dólar"
     ],
     "extraData": {
       "countryCode": "kr",
@@ -1842,7 +1842,7 @@
     "correctAnswer": "Nigeria",
     "options": [
       "Ghana",
-      "Costa de Marfil",
+      "Letonia",
       "Nigeria",
       "Camerún"
     ],
@@ -2023,8 +2023,8 @@
     "options": [
       "Río de Janeiro",
       "São Paulo",
-      "Brasilia",
-      "Salvador"
+      "Salvador",
+      "Kazakhstan"
     ],
     "extraData": {
       "countryCode": "br",
@@ -2481,10 +2481,10 @@
     "questionText": "¿Cuál es la moneda de Kuwait?",
     "correctAnswer": "Dinar kuwaití",
     "options": [
-      "Rial omaní",
-      "Dirham marroquí",
+      "Ouguiya mauritana",
       "Rial iraní",
-      "Dinar kuwaití"
+      "Dirham marroquí",
+      "Rial omaní"
     ],
     "extraData": {
       "countryCode": "kw",
@@ -2501,8 +2501,8 @@
     "options": [
       "Dram armenio",
       "Manat azerbaiyano",
-      "Rublo ruso",
-      "Lari georgiano"
+      "Franco CFP",
+      "Rublo ruso"
     ],
     "extraData": {
       "countryCode": "ge",
@@ -2535,10 +2535,10 @@
     "questionText": "¿Cuál es la moneda de Indonesia?",
     "correctAnswer": "Rupia indonesia",
     "options": [
-      "Baht tailandés",
-      "Ringgit malayo",
       "Peso filipino",
-      "Rupia indonesia"
+      "Libra sursudanesa",
+      "Baht tailandés",
+      "Ringgit malayo"
     ],
     "extraData": {
       "countryCode": "id",
@@ -2553,9 +2553,9 @@
     "questionText": "¿Cuál es la moneda de Italia?",
     "correctAnswer": "Euro",
     "options": [
-      "Lira italiana",
       "Franco suizo",
       "Libra esterlina",
+      "Dinar argelino",
       "Euro"
     ],
     "extraData": {
@@ -3026,10 +3026,10 @@
     "questionText": "¿Cuál es la capital de México?",
     "correctAnswer": "Ciudad de México",
     "options": [
-      "Guadalajara",
+      "Lebanon",
       "Monterrey",
-      "Cancún",
-      "Ciudad de México"
+      "Guadalajara",
+      "Cancún"
     ],
     "extraData": {
       "countryCode": "mx",
@@ -3735,8 +3735,8 @@
     "questionText": "¿De qué país es esta bandera?",
     "correctAnswer": "Canadá",
     "options": [
-      "Estados Unidos",
       "Reino Unido",
+      "Mauritania",
       "Australia",
       "Canadá"
     ],
@@ -3807,10 +3807,10 @@
     "questionText": "¿De qué país es esta bandera?",
     "correctAnswer": "Ghana",
     "options": [
+      "Ghana",
       "Togo",
-      "Costa de Marfil",
-      "Nigeria",
-      "Ghana"
+      "French Southern and Antarctic Lands",
+      "Nigeria"
     ],
     "imageUrl": "https://flagcdn.com/w320/gh.png",
     "extraData": {
@@ -3963,10 +3963,10 @@
     "questionText": "¿Cuál es la capital de Guatemala?",
     "correctAnswer": "Ciudad de Guatemala",
     "options": [
-      "Antigua",
       "Quetzaltenango",
-      "Escuintla",
-      "Ciudad de Guatemala"
+      "Antigua",
+      "Mbabane",
+      "Escuintla"
     ],
     "extraData": {
       "countryCode": "gt",
@@ -4373,10 +4373,10 @@
     "questionText": "¿Cuál es la moneda de Noruega?",
     "correctAnswer": "Corona noruega",
     "options": [
-      "Corona sueca",
-      "Corona danesa",
+      "Boliviano boliviano",
       "Franco suizo",
-      "Corona noruega"
+      "Corona danesa",
+      "Corona sueca"
     ],
     "extraData": {
       "countryCode": "no",
@@ -4600,9 +4600,9 @@
     "correctAnswer": "Vietnam",
     "options": [
       "China",
-      "Corea del Sur",
+      "Vietnam",
       "Laos",
-      "Vietnam"
+      "Irán"
     ],
     "imageUrl": "https://flagcdn.com/w320/vn.png",
     "extraData": {
@@ -4617,10 +4617,10 @@
     "questionText": "¿De qué país es esta bandera?",
     "correctAnswer": "Mongolia",
     "options": [
-      "China",
+      "Jordania",
+      "Mongolia",
       "Japón",
-      "Corea del Norte",
-      "Mongolia"
+      "China"
     ],
     "imageUrl": "https://flagcdn.com/w320/mn.png",
     "extraData": {
@@ -4635,10 +4635,10 @@
     "questionText": "¿De qué país es esta bandera?",
     "correctAnswer": "Irlanda",
     "options": [
-      "Costa de Marfil",
-      "Italia",
       "India",
-      "Irlanda"
+      "Irlanda",
+      "Italia",
+      "Latvia"
     ],
     "imageUrl": "https://flagcdn.com/w320/ie.png",
     "extraData": {
@@ -5221,10 +5221,10 @@
     "questionText": "¿Cuál es el idioma oficial de Italia?",
     "correctAnswer": "Italiano",
     "options": [
-      "Español",
-      "Francés",
       "Portugués",
-      "Italiano"
+      "Español",
+      "Norwegian",
+      "Francés"
     ],
     "extraData": {
       "countryCode": "it",
@@ -5293,10 +5293,10 @@
     "questionText": "¿Cuál es la moneda de Chile?",
     "correctAnswer": "Peso chileno",
     "options": [
-      "Peso argentino",
+      "Vanuatu vatu",
       "Sol peruano",
       "Peso colombiano",
-      "Peso chileno"
+      "Peso argentino"
     ],
     "extraData": {
       "countryCode": "cl",
@@ -5311,10 +5311,10 @@
     "questionText": "¿Cuál es la moneda de India?",
     "correctAnswer": "Rupia india",
     "options": [
+      "Yen japonés",
       "Yuan chino",
-      "Baht tailandés",
       "Rupia pakistaní",
-      "Rupia india"
+      "Baht tailandés"
     ],
     "extraData": {
       "countryCode": "in",

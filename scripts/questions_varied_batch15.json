@@ -119,10 +119,10 @@
     "questionText": "¿Cuál es la divisa de Cayman Islands?",
     "correctAnswer": "Dólar de las Islas Caimán",
     "options": [
-      "Dólar liberiano",
-      "Falkland Islands pound",
       "Dólar de las Islas Caimán",
-      "Sudanese pound"
+      "Dólar liberiano",
+      "Sudanese pound",
+      "Guaraní paraguayo"
     ],
     "extraData": {
       "countryCode": "ky",
@@ -194,10 +194,10 @@
     "questionText": "¿En Finland qué idioma se usa?",
     "correctAnswer": "Finnish",
     "options": [
-      "Finnish",
-      "Romanian",
       "Catalan",
-      "English"
+      "Finnish",
+      "Persa",
+      "Romanian"
     ],
     "extraData": {
       "countryCode": "fi",
@@ -212,10 +212,10 @@
     "questionText": "¿En Sierra Leone se usa qué moneda?",
     "correctAnswer": "Leone",
     "options": [
+      "Rublo ruso",
       "Nuevo dólar taiwanés",
-      "Ringgit malayo",
       "Leone",
-      "Dólar estadounidense"
+      "Ringgit malayo"
     ],
     "extraData": {
       "countryCode": "sl",
@@ -366,10 +366,10 @@
     "questionText": "¿Qué ciudad es el centro político de Marshall Islands?",
     "correctAnswer": "Marshall Islands",
     "options": [
-      "Austria",
       "Caribbean Netherlands",
-      "Marshall Islands",
-      "Argentina"
+      "Argentina",
+      "Austria",
+      "Washington DC"
     ],
     "extraData": {
       "countryCode": "mh",
@@ -515,9 +515,9 @@
     "correctAnswer": "French",
     "options": [
       "Arabic",
-      "Swedish",
       "French",
-      "English"
+      "Vietnamita",
+      "Swedish"
     ],
     "extraData": {
       "countryCode": "ne",
@@ -549,10 +549,10 @@
     "questionText": "¿Cuál es la ciudad principal de Ireland?",
     "correctAnswer": "Ireland",
     "options": [
-      "Ireland",
       "Indonesia",
       "Sweden",
-      "Namibia"
+      "Namibia",
+      "Lomé"
     ],
     "extraData": {
       "countryCode": "ie",
@@ -566,10 +566,10 @@
     "questionText": "¿Qué ciudad es el centro político de Saint Pierre and Miquelon?",
     "correctAnswer": "Saint-Pierre",
     "options": [
+      "Conakry",
+      "San José",
       "Wellington",
-      "Ciudad de la Paz",
-      "Saint-Pierre",
-      "San José"
+      "Saint-Pierre"
     ],
     "extraData": {
       "countryCode": "pm",
@@ -603,9 +603,9 @@
     "correctAnswer": "Lithuanian",
     "options": [
       "Thai",
-      "English",
-      "Lithuanian",
-      "Arabic"
+      "Arabic",
+      "Filipino",
+      "English"
     ],
     "extraData": {
       "countryCode": "lt",
@@ -717,10 +717,10 @@
     "questionText": "¿En Thailand se usa qué moneda?",
     "correctAnswer": "Baht tailandés",
     "options": [
+      "Baht tailandés",
+      "Libra egipcia",
       "Euro",
-      "Franco CFA de África Occidental",
-      "Malawian kwacha",
-      "Baht tailandés"
+      "Malawian kwacha"
     ],
     "extraData": {
       "countryCode": "th",
@@ -754,10 +754,10 @@
     "questionText": "¿Qué billetes y monedas circulan en Nepal?",
     "correctAnswer": "Rupia nepalí",
     "options": [
-      "Metical mozambiqueño",
-      "Rupia nepalí",
+      "Dólar estadounidense",
       "Dinar serbio",
-      "Dólar estadounidense"
+      "Metical mozambiqueño",
+      "Franco CFP"
     ],
     "extraData": {
       "countryCode": "np",
@@ -979,10 +979,10 @@
     "questionText": "¿Cuál es la capital de San Marino?",
     "correctAnswer": "San Marino",
     "options": [
+      "Russia",
       "Central African Republic",
       "Comoros",
-      "San Marino",
-      "Russia"
+      "San Juan"
     ],
     "extraData": {
       "countryCode": "sm",
@@ -1299,10 +1299,10 @@
     "questionText": "¿La moneda oficial de Peru es...?",
     "correctAnswer": "Sol peruano",
     "options": [
-      "Sol peruano",
-      "lari",
       "Franco CFA de África Central",
-      "Franco CFA de África Occidental"
+      "Dirham marroquí",
+      "Franco CFA de África Occidental",
+      "Sol peruano"
     ],
     "extraData": {
       "countryCode": "pe",
@@ -1374,10 +1374,10 @@
     "questionText": "¿Cuál es la divisa de Bolivia?",
     "correctAnswer": "Boliviano boliviano",
     "options": [
+      "Dólar neozelandés",
       "Guaraní paraguayo",
-      "Boliviano boliviano",
-      "Dólar del Caribe Oriental",
-      "Dólar neozelandés"
+      "Peso uruguayo",
+      "Dólar del Caribe Oriental"
     ],
     "extraData": {
       "countryCode": "bo",
@@ -1598,10 +1598,10 @@
     "questionText": "¿Qué moneda se usa en Mozambique?",
     "correctAnswer": "Metical mozambiqueño",
     "options": [
-      "Franco CFA de África Occidental",
-      "Metical mozambiqueño",
       "Dólar de Trinidad y Tobago",
-      "Cedi ghanés"
+      "Cedi ghanés",
+      "Naira nigeriana",
+      "Franco CFA de África Occidental"
     ],
     "extraData": {
       "countryCode": "mz",
@@ -1635,10 +1635,10 @@
     "questionText": "¿Qué idioma se habla en Belarus?",
     "correctAnswer": "Belarusian",
     "options": [
-      "Arabic",
       "German",
-      "English",
-      "Belarusian"
+      "Amharic",
+      "Arabic",
+      "English"
     ],
     "extraData": {
       "countryCode": "by",
@@ -1655,8 +1655,8 @@
     "options": [
       "Franco CFA de África Occidental",
       "Peso filipino",
-      "Euro",
-      "Gibraltar pound"
+      "Ariary malgache",
+      "Euro"
     ],
     "extraData": {
       "countryCode": "gi",
@@ -1671,10 +1671,10 @@
     "questionText": "¿El idioma principal de Yemen es...?",
     "correctAnswer": "Arabic",
     "options": [
-      "German",
-      "Portuguese",
+      "French",
       "Arabic",
-      "French"
+      "German",
+      "Islandés"
     ],
     "extraData": {
       "countryCode": "ye",

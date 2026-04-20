@@ -6,10 +6,10 @@
     "questionText": "¿Qué ciudad es el centro político de Russia?",
     "correctAnswer": "Russia",
     "options": [
-      "Dominica",
       "Bahamas",
-      "Russia",
-      "British Indian Ocean Territory"
+      "Dominica",
+      "British Indian Ocean Territory",
+      "Ulán Bator"
     ],
     "extraData": {
       "countryCode": "ru",
@@ -23,9 +23,9 @@
     "questionText": "¿Qué ciudad es el centro político de San Marino?",
     "correctAnswer": "San Marino",
     "options": [
+      "South Korea",
       "Moldova",
       "Bouvet Island",
-      "San Marino",
       "South Georgia"
     ],
     "extraData": {
@@ -190,10 +190,10 @@
     "questionText": "¿La moneda oficial de Jamaica es...?",
     "correctAnswer": "Dólar jamaicano",
     "options": [
-      "Dólar jamaicano",
       "Franco CFA de África Occidental",
       "Euro",
-      "Dólar estadounidense"
+      "Afgano afgano",
+      "Dólar jamaicano"
     ],
     "extraData": {
       "countryCode": "jm",
@@ -243,9 +243,9 @@
     "questionText": "¿Cuál es la moneda de Albania?",
     "correctAnswer": "Albanian lek",
     "options": [
-      "Albanian lek",
-      "Pound sterling",
+      "Rial iraní",
       "Dólar del Caribe Oriental",
+      "Pound sterling",
       "Aruban florin"
     ],
     "extraData": {
@@ -641,10 +641,10 @@
     "questionText": "¿En Djibouti qué idioma se usa?",
     "correctAnswer": "Arabic",
     "options": [
-      "English",
-      "Russian",
+      "Jemer",
+      "Arabic",
       "German",
-      "Arabic"
+      "Russian"
     ],
     "extraData": {
       "countryCode": "dj",
@@ -660,9 +660,9 @@
     "correctAnswer": "Ecuador",
     "options": [
       "South Africa",
-      "Ecuador",
-      "Madagascar",
-      "Malaysia"
+      "Warsaw",
+      "Malaysia",
+      "Madagascar"
     ],
     "extraData": {
       "countryCode": "ec",
@@ -695,10 +695,10 @@
     "questionText": "¿Cuál es el idioma oficial de Albania?",
     "correctAnswer": "Albanian",
     "options": [
-      "Chamorro",
+      "Slovak",
       "Seychellois Creole",
-      "Albanian",
-      "French"
+      "French",
+      "Chamorro"
     ],
     "extraData": {
       "countryCode": "al",
@@ -862,10 +862,10 @@
     "questionText": "¿Qué idioma predomina en Russia?",
     "correctAnswer": "Russian",
     "options": [
-      "English",
-      "Croatian",
+      "Catalán",
       "Berber",
-      "Russian"
+      "Croatian",
+      "English"
     ],
     "extraData": {
       "countryCode": "ru",
@@ -920,10 +920,10 @@
     "questionText": "¿En qué ciudad se encuentra el gobierno de Ghana?",
     "correctAnswer": "Ghana",
     "options": [
-      "Senegal",
+      "Kabul",
       "Tunisia",
-      "Ghana",
-      "Tanzania"
+      "Tanzania",
+      "Italy"
     ],
     "extraData": {
       "countryCode": "gh",
@@ -975,10 +975,10 @@
     "questionText": "¿La moneda oficial de Somalia es...?",
     "correctAnswer": "Chelín somalí",
     "options": [
-      "Dólar de las Islas Salomón",
+      "Won surcoreano",
       "Rial iraní",
       "Chelín somalí",
-      "Won surcoreano"
+      "Birr etíope"
     ],
     "extraData": {
       "countryCode": "so",
@@ -1369,10 +1369,10 @@
     "questionText": "¿El idioma principal de Belize es...?",
     "correctAnswer": "Belizean Creole",
     "options": [
+      "Belizean Creole",
       "Italian",
       "Albanian",
-      "Portuguese",
-      "Belizean Creole"
+      "Sueco"
     ],
     "extraData": {
       "countryCode": "bz",
@@ -1614,10 +1614,10 @@
     "questionText": "¿Cuál es la ciudad principal de Luxembourg?",
     "correctAnswer": "Luxembourg",
     "options": [
-      "Turks and Caicos Islands",
-      "Luxembourg",
+      "Vietnam",
       "United Kingdom",
-      "Vietnam"
+      "Madagascar",
+      "Turks and Caicos Islands"
     ],
     "extraData": {
       "countryCode": "lu",
@@ -1649,9 +1649,9 @@
     "questionText": "¿La capital de Cape Verde se llama...?",
     "correctAnswer": "Cape Verde",
     "options": [
-      "Antarctica",
+      "Suriname",
       "Timor-Leste",
-      "Christmas Island",
+      "Antarctica",
       "Cape Verde"
     ],
     "extraData": {
@@ -1666,8 +1666,8 @@
     "questionText": "¿En Cambodia qué idioma se usa?",
     "correctAnswer": "Khmer",
     "options": [
-      "English",
-      "French",
+      "Polish",
+      "Albanian",
       "Latvian",
       "Khmer"
     ],
@@ -1684,10 +1684,10 @@
     "questionText": "¿Qué moneda se usa en Nigeria?",
     "correctAnswer": "Naira nigeriana",
     "options": [
-      "Samoan tālā",
-      "Naira nigeriana",
+      "Franco comorano",
+      "Dírham marroquí",
       "Dólar barbadense",
-      "Dírham marroquí"
+      "Samoan tālā"
     ],
     "extraData": {
       "countryCode": "ng",

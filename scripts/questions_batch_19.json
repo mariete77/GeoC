@@ -150,8 +150,8 @@
     "questionText": "¿De qué país es esta bandera?",
     "correctAnswer": "India",
     "options": [
-      "Costa de Marfil",
       "Níger",
+      "Saint Martin",
       "Irlanda",
       "India"
     ],
@@ -643,9 +643,9 @@
     "correctAnswer": "Rupia nepalí",
     "options": [
       "Rupia india",
-      "Taka bangladesí",
-      "Rupia nepalí",
-      "Rupia pakistaní"
+      "Gibraltar pound",
+      "Rupia pakistaní",
+      "Taka bangladesí"
     ],
     "extraData": {
       "countryCode": "np",

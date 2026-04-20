@@ -418,10 +418,10 @@
     "questionText": "¿Cuál es la capital de Isle of Man?",
     "correctAnswer": "Isle of Man",
     "options": [
-      "Latvia",
-      "Isle of Man",
+      "Sudan",
       "Zambia",
-      "Sudan"
+      "París",
+      "Latvia"
     ],
     "extraData": {
       "countryCode": "im",
@@ -681,9 +681,9 @@
     "correctAnswer": "Italy",
     "options": [
       "Romania",
-      "North Korea",
+      "Vanuatu",
       "Cayman Islands",
-      "Italy"
+      "North Korea"
     ],
     "extraData": {
       "countryCode": "it",
@@ -697,10 +697,10 @@
     "questionText": "¿Cuál es la divisa de Sri Lanka?",
     "correctAnswer": "Rupia de Sri Lanka",
     "options": [
+      "Loti lesoto",
       "Corona sueca",
-      "Metical mozambiqueño",
       "Chelín tanzano",
-      "Rupia de Sri Lanka"
+      "Metical mozambiqueño"
     ],
     "extraData": {
       "countryCode": "lk",
@@ -788,10 +788,10 @@
     "questionText": "¿En qué ciudad se encuentra el gobierno de DR Congo?",
     "correctAnswer": "DR Congo",
     "options": [
-      "DR Congo",
       "Australia",
       "Niger",
-      "Mozambique"
+      "Mozambique",
+      "Managua"
     ],
     "extraData": {
       "countryCode": "cd",
@@ -876,10 +876,10 @@
     "questionText": "¿Cuál es la lengua oficial de Vietnam?",
     "correctAnswer": "Vietnamese",
     "options": [
-      "Vietnamese",
       "Spanish",
+      "Arabic",
       "Norwegian",
-      "Arabic"
+      "Romanian"
     ],
     "extraData": {
       "countryCode": "vn",
@@ -933,10 +933,10 @@
     "questionText": "¿Cuál es el idioma oficial de Nepal?",
     "correctAnswer": "Nepali",
     "options": [
-      "Arabic",
+      "Turco",
       "English",
-      "Nepali",
-      "German"
+      "German",
+      "Arabic"
     ],
     "extraData": {
       "countryCode": "np",
@@ -951,10 +951,10 @@
     "questionText": "¿Qué ciudad es el centro político de Taiwan?",
     "correctAnswer": "Taiwan",
     "options": [
-      "Uzbekistan",
       "Northern Mariana Islands",
-      "Taiwan",
-      "Ghana"
+      "Uzbekistan",
+      "Ghana",
+      "Pitcairn Islands"
     ],
     "extraData": {
       "countryCode": "tw",
@@ -1005,10 +1005,10 @@
     "questionText": "¿Cuál es la ciudad principal de Vatican City?",
     "correctAnswer": "Vatican City",
     "options": [
-      "Yemen",
-      "Vatican City",
+      "DR Congo",
       "United Kingdom",
-      "DR Congo"
+      "Belize",
+      "Yemen"
     ],
     "extraData": {
       "countryCode": "va",
@@ -1134,10 +1134,10 @@
     "questionText": "¿Cuál es la capital de United Kingdom?",
     "correctAnswer": "United Kingdom",
     "options": [
-      "Réunion",
       "Bermuda",
       "Libya",
-      "United Kingdom"
+      "Freetown",
+      "Réunion"
     ],
     "extraData": {
       "countryCode": "gb",
@@ -1171,10 +1171,10 @@
     "questionText": "¿La moneda oficial de Chad es...?",
     "correctAnswer": "Franco CFA de África Central",
     "options": [
-      "Won norcoreano",
       "Franco CFA de África Central",
+      "Won norcoreano",
       "Rial iraní",
-      "Dólar beliceño"
+      "Nicaraguan córdoba"
     ],
     "extraData": {
       "countryCode": "td",
@@ -1207,10 +1207,10 @@
     "questionText": "¿La moneda oficial de Bosnia and Herzegovina es...?",
     "correctAnswer": "Bosnia and Herzegovina convertible mark",
     "options": [
-      "Euro",
-      "Dólar estadounidense",
       "Bosnia and Herzegovina convertible mark",
-      "Balboa panameño"
+      "Balboa panameño",
+      "Franco CFA de África Central",
+      "Euro"
     ],
     "extraData": {
       "countryCode": "ba",
@@ -1624,10 +1624,10 @@
     "questionText": "¿Cuál es la moneda de Peru?",
     "correctAnswer": "Sol peruano",
     "options": [
-      "Sol peruano",
-      "Euro",
+      "Rupia nepalí",
+      "Dólar fiyiano",
       "Ringgit malayo",
-      "Rupia nepalí"
+      "Euro"
     ],
     "extraData": {
       "countryCode": "pe",

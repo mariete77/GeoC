@@ -114,8 +114,8 @@
     "questionText": "¿De qué país es esta bandera?",
     "correctAnswer": "Irlanda",
     "options": [
-      "Costa de Marfil",
       "Italia",
+      "Dominica",
       "India",
       "Irlanda"
     ],
@@ -272,7 +272,7 @@
     "correctAnswer": "Yibuti",
     "options": [
       "Ali Sabieh",
-      "Yibuti",
+      "Panama",
       "Tadjoura",
       "Obock"
     ],
@@ -664,9 +664,9 @@
     "correctAnswer": "Peso chileno",
     "options": [
       "Peso argentino",
-      "Peso colombiano",
       "Sol peruano",
-      "Peso chileno"
+      "Boliviano boliviano",
+      "Peso colombiano"
     ],
     "extraData": {
       "countryCode": "cl",

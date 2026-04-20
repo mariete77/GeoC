@@ -24,10 +24,10 @@
     "questionText": "¿De qué país es esta bandera?",
     "correctAnswer": "Irlanda",
     "options": [
-      "Costa de Marfil",
-      "Irlanda",
+      "India",
       "Italia",
-      "India"
+      "Irlanda",
+      "Ucrania"
     ],
     "imageUrl": "https://flagcdn.com/w320/ie.png",
     "extraData": {
@@ -186,10 +186,10 @@
     "questionText": "¿Cuál es la capital de Brasil?",
     "correctAnswer": "Brasilia",
     "options": [
-      "Río de Janeiro",
       "São Paulo",
-      "Brasilia",
-      "Salvador"
+      "Salvador",
+      "Kosovo",
+      "Río de Janeiro"
     ],
     "extraData": {
       "countryCode": "br",
@@ -339,10 +339,10 @@
     "questionText": "¿Cuál es la capital de Kuwait?",
     "correctAnswer": "Ciudad de Kuwait",
     "options": [
-      "Ciudad de Kuwait",
       "Hawalli",
-      "Jahra",
-      "Ahmadi"
+      "Brasília",
+      "Ahmadi",
+      "Jahra"
     ],
     "extraData": {
       "countryCode": "kw",
@@ -718,8 +718,8 @@
     "questionText": "¿Cuál es la moneda de Nigeria?",
     "correctAnswer": "Naira nigeriana",
     "options": [
+      "Leu moldavo",
       "Cedi ghanés",
-      "Naira nigeriana",
       "Franco CFA",
       "Kwacha zambiano"
     ],

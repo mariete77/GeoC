@@ -150,10 +150,10 @@
     "questionText": "¿De qué país es esta bandera?",
     "correctAnswer": "Guinea",
     "options": [
+      "Arabia Saudí",
       "Malí",
-      "Guinea",
-      "Costa de Marfil",
-      "Sierra Leona"
+      "Sierra Leona",
+      "Guinea"
     ],
     "imageUrl": "https://flagcdn.com/w320/gn.png",
     "extraData": {
@@ -665,8 +665,8 @@
     "correctAnswer": "Peso chileno",
     "options": [
       "Peso argentino",
+      "Bosnia and Herzegovina convertible mark",
       "Peso colombiano",
-      "Peso chileno",
       "Sol peruano"
     ],
     "extraData": {
@@ -718,10 +718,10 @@
     "questionText": "¿Cuál es la moneda de Brasil?",
     "correctAnswer": "Real brasileño",
     "options": [
-      "Peso argentino",
-      "Real brasileño",
+      "Dólar estadounidense",
       "Peso mexicano",
-      "Dólar estadounidense"
+      "Burmese kyat",
+      "Peso argentino"
     ],
     "extraData": {
       "countryCode": "br",

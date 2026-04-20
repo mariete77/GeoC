@@ -82,9 +82,9 @@
     "correctAnswer": "Ethiopia",
     "options": [
       "Austria",
-      "Ethiopia",
-      "Kiribati",
-      "Albania"
+      "Ciudad de México",
+      "Albania",
+      "Kiribati"
     ],
     "extraData": {
       "countryCode": "et",
@@ -117,10 +117,10 @@
     "questionText": "¿Qué ciudad es el centro político de Chile?",
     "correctAnswer": "Chile",
     "options": [
+      "Georgia",
       "Ukraine",
-      "Algeria",
-      "Chile",
-      "Georgia"
+      "Jersey",
+      "Algeria"
     ],
     "extraData": {
       "countryCode": "cl",
@@ -227,10 +227,10 @@
     "questionText": "¿La moneda oficial de India es...?",
     "correctAnswer": "Rupia india",
     "options": [
-      "Icelandic króna",
-      "Rupia india",
       "Ouguiya mauritana",
-      "Falkland Islands pound"
+      "Rupia india",
+      "Franco comorano",
+      "Riyal saudí"
     ],
     "extraData": {
       "countryCode": "in",
@@ -342,10 +342,10 @@
     "questionText": "¿La moneda oficial de Curaçao es...?",
     "correctAnswer": "Netherlands Antillean guilder",
     "options": [
-      "Dólar estadounidense",
-      "Franco yibutí",
+      "Netherlands Antillean guilder",
       "Corona noruega",
-      "Netherlands Antillean guilder"
+      "krone",
+      "Franco yibutí"
     ],
     "extraData": {
       "countryCode": "cw",
@@ -415,10 +415,10 @@
     "questionText": "¿La moneda oficial de American Samoa es...?",
     "correctAnswer": "Dólar estadounidense",
     "options": [
+      "Riel camboyano",
+      "Cedi ghanés",
       "Euro",
-      "Dólar de Trinidad y Tobago",
-      "Dólar estadounidense",
-      "Cedi ghanés"
+      "Dólar estadounidense"
     ],
     "extraData": {
       "countryCode": "as",
@@ -618,9 +618,9 @@
     "correctAnswer": "Romanian",
     "options": [
       "English",
+      "Macedonian",
       "French",
-      "Mongolian",
-      "Romanian"
+      "Mongolian"
     ],
     "extraData": {
       "countryCode": "ro",
@@ -673,10 +673,10 @@
     "questionText": "¿Cuál es la ciudad principal de Rwanda?",
     "correctAnswer": "Rwanda",
     "options": [
-      "Monaco",
-      "San Marino",
       "Sint Maarten",
-      "Rwanda"
+      "Monaco",
+      "Maputo",
+      "San Marino"
     ],
     "extraData": {
       "countryCode": "rw",
@@ -762,10 +762,10 @@
     "questionText": "¿El idioma principal de Saint Barthélemy es...?",
     "correctAnswer": "French",
     "options": [
-      "Maldivian",
-      "Portuguese",
       "French",
-      "English"
+      "English",
+      "Maldivian",
+      "Dzongkha"
     ],
     "extraData": {
       "countryCode": "bl",
@@ -893,9 +893,9 @@
     "correctAnswer": "Kosovo",
     "options": [
       "Saint Lucia",
-      "Romania",
-      "Kosovo",
-      "Malta"
+      "Ciudad de Panamá",
+      "Malta",
+      "Romania"
     ],
     "extraData": {
       "countryCode": "xk",
@@ -927,10 +927,10 @@
     "questionText": "¿Qué moneda se usa en Cuba?",
     "correctAnswer": "Peso convertible cubano",
     "options": [
+      "Macanese pataca",
       "Pound sterling",
-      "Dólar del Caribe Oriental",
       "Franco CFA de África Occidental",
-      "Peso convertible cubano"
+      "Dólar del Caribe Oriental"
     ],
     "extraData": {
       "countryCode": "cu",
@@ -1212,10 +1212,10 @@
     "questionText": "¿La moneda oficial de Timor-Leste es...?",
     "correctAnswer": "Dólar estadounidense",
     "options": [
-      "Netherlands Antillean guilder",
       "Riel camboyano",
+      "Dirham de EAU",
       "Dólar estadounidense",
-      "Dólar jamaicano"
+      "Rial iraní"
     ],
     "extraData": {
       "countryCode": "tl",
@@ -1403,7 +1403,7 @@
     "options": [
       "Canada",
       "Malawi",
-      "Bahrain",
+      "Beijing",
       "Finland"
     ],
     "extraData": {
@@ -1495,10 +1495,10 @@
     "questionText": "¿La moneda oficial de Marshall Islands es...?",
     "correctAnswer": "Dólar estadounidense",
     "options": [
-      "Libra esterlina",
-      "Euro",
-      "Belarusian ruble",
-      "Dólar estadounidense"
+      "Dong vietnamita",
+      "Dirham de EAU",
+      "Dólar estadounidense",
+      "Euro"
     ],
     "extraData": {
       "countryCode": "mh",
@@ -1607,10 +1607,10 @@
     "questionText": "¿La moneda oficial de Suriname es...?",
     "correctAnswer": "Dólar surinamés",
     "options": [
-      "Florín húngaro",
-      "Dólar surinamés",
       "Cedi ghanés",
-      "Dólar de las Islas Cook"
+      "Dólar surinamés",
+      "Florín húngaro",
+      "Tugrik mongol"
     ],
     "extraData": {
       "countryCode": "sr",
@@ -1681,8 +1681,8 @@
     "questionText": "¿La moneda oficial de Zimbabwe es...?",
     "correctAnswer": "Dólar zimbabuense",
     "options": [
-      "Libra sursudanesa",
-      "Dólar surinamés",
+      "Somoni tayiko",
+      "Manat azerbayano",
       "Dólar zimbabuense",
       "Euro"
     ],

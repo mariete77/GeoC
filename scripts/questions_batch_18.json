@@ -42,10 +42,10 @@
     "questionText": "¿De qué país es esta bandera?",
     "correctAnswer": "Japón",
     "options": [
-      "China",
-      "Corea del Sur",
+      "Vietnam",
       "Japón",
-      "Vietnam"
+      "China",
+      "Libia"
     ],
     "imageUrl": "https://flagcdn.com/w320/jp.png",
     "extraData": {
@@ -150,10 +150,10 @@
     "questionText": "¿De qué país es esta bandera?",
     "correctAnswer": "Costa Rica",
     "options": [
-      "Tailandia",
-      "India",
       "Costa Rica",
-      "Corea del Norte"
+      "Turkmenistan",
+      "India",
+      "Tailandia"
     ],
     "imageUrl": "https://flagcdn.com/w320/cr.png",
     "extraData": {
@@ -220,9 +220,9 @@
     "questionText": "¿Cuál es la capital de Luxemburgo?",
     "correctAnswer": "Luxemburgo",
     "options": [
-      "Luxemburgo",
-      "Esch-sur-Alzette",
+      "Ankara",
       "Differdange",
+      "Esch-sur-Alzette",
       "Dudelange"
     ],
     "extraData": {
@@ -254,10 +254,10 @@
     "questionText": "¿Cuál es la capital de Guatemala?",
     "correctAnswer": "Ciudad de Guatemala",
     "options": [
+      "Escuintla",
       "Antigua",
-      "Ciudad de Guatemala",
       "Quetzaltenango",
-      "Escuintla"
+      "Athens"
     ],
     "extraData": {
       "countryCode": "gt",
@@ -288,10 +288,10 @@
     "questionText": "¿Cuál es la capital de Yibuti?",
     "correctAnswer": "Yibuti",
     "options": [
-      "Ali Sabieh",
-      "Yibuti",
       "Tadjoura",
-      "Obock"
+      "Ali Sabieh",
+      "Obock",
+      "Palikir"
     ],
     "extraData": {
       "countryCode": "dj",
@@ -305,10 +305,10 @@
     "questionText": "¿Cuál es la capital de Panamá?",
     "correctAnswer": "Ciudad de Panamá",
     "options": [
-      "Colón",
       "David",
-      "Ciudad de Panamá",
-      "Santiago"
+      "Colón",
+      "Santiago",
+      "Flying Fish Cove"
     ],
     "extraData": {
       "countryCode": "pa",
@@ -661,10 +661,10 @@
     "questionText": "¿Cuál es la moneda de Vietnam?",
     "correctAnswer": "Dong vietnamita",
     "options": [
+      "Dólar de Trinidad y Tobago",
+      "Kip laosiano",
       "Baht tailandés",
-      "Rupia indonesia",
-      "Dong vietnamita",
-      "Kip laosiano"
+      "Rupia indonesia"
     ],
     "extraData": {
       "countryCode": "vn",

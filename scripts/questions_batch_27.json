@@ -42,9 +42,9 @@
     "questionText": "¿De qué país es esta bandera?",
     "correctAnswer": "Japón",
     "options": [
-      "China",
-      "Corea del Sur",
       "Vietnam",
+      "Grecia",
+      "China",
       "Japón"
     ],
     "imageUrl": "https://flagcdn.com/w320/jp.png",
@@ -96,10 +96,10 @@
     "questionText": "¿De qué país es esta bandera?",
     "correctAnswer": "Alemania",
     "options": [
-      "Bélgica",
-      "Países Bajos",
       "Alemania",
-      "Austria"
+      "Bélgica",
+      "Austria",
+      "Isle of Man"
     ],
     "imageUrl": "https://flagcdn.com/w320/de.png",
     "extraData": {
@@ -114,10 +114,10 @@
     "questionText": "¿De qué país es esta bandera?",
     "correctAnswer": "Ghana",
     "options": [
-      "Costa de Marfil",
-      "Togo",
       "Nigeria",
-      "Ghana"
+      "Siria",
+      "Ghana",
+      "Togo"
     ],
     "imageUrl": "https://flagcdn.com/w320/gh.png",
     "extraData": {

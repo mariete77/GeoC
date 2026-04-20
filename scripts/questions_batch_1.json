@@ -24,10 +24,10 @@
     "questionText": "¿De qué país es esta bandera?",
     "correctAnswer": "Alemania",
     "options": [
-      "Bélgica",
       "Alemania",
-      "Países Bajos",
-      "Polonia"
+      "Polonia",
+      "Bélgica",
+      "Iraq"
     ],
     "imageUrl": "https://flagcdn.com/w320/de.png",
     "extraData": {
@@ -42,10 +42,10 @@
     "questionText": "¿De qué país es esta bandera?",
     "correctAnswer": "Francia",
     "options": [
-      "Francia",
-      "Países Bajos",
+      "Eslovaquia",
       "Rusia",
-      "Eslovaquia"
+      "Francia",
+      "Germany"
     ],
     "imageUrl": "https://flagcdn.com/w320/fr.png",
     "extraData": {
@@ -96,8 +96,8 @@
     "questionText": "¿De qué país es esta bandera?",
     "correctAnswer": "Canadá",
     "options": [
+      "Russia",
       "Canadá",
-      "Estados Unidos",
       "Cuba",
       "Jamaica"
     ],
@@ -309,8 +309,8 @@
     "options": [
       "Río de Janeiro",
       "São Paulo",
-      "Brasilia",
-      "Salvador"
+      "Salvador",
+      "Bratislava"
     ],
     "extraData": {
       "countryCode": "br",

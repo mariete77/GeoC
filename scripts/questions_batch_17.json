@@ -60,10 +60,10 @@
     "questionText": "¿De qué país es esta bandera?",
     "correctAnswer": "Rusia",
     "options": [
+      "Yemen",
+      "Luxemburgo",
       "Francia",
-      "Países Bajos",
-      "Rusia",
-      "Luxemburgo"
+      "Rusia"
     ],
     "imageUrl": "https://flagcdn.com/w320/ru.png",
     "extraData": {
@@ -150,9 +150,9 @@
     "questionText": "¿De qué país es esta bandera?",
     "correctAnswer": "Alemania",
     "options": [
-      "Bélgica",
       "Alemania",
-      "Países Bajos",
+      "Sudán",
+      "Bélgica",
       "Austria"
     ],
     "imageUrl": "https://flagcdn.com/w320/de.png",
@@ -662,10 +662,10 @@
     "questionText": "¿Cuál es la moneda de Chile?",
     "correctAnswer": "Peso chileno",
     "options": [
+      "Sol peruano",
       "Peso argentino",
       "Real brasileño",
-      "Sol peruano",
-      "Peso chileno"
+      "Rupia india"
     ],
     "extraData": {
       "countryCode": "cl",
@@ -716,10 +716,10 @@
     "questionText": "¿Cuál es la moneda de India?",
     "correctAnswer": "Rupia india",
     "options": [
-      "Yuan chino",
-      "Rupia pakistaní",
       "Baht tailandés",
-      "Rupia india"
+      "Manat azerbaiyano",
+      "Rupia pakistaní",
+      "Yuan chino"
     ],
     "extraData": {
       "countryCode": "in",

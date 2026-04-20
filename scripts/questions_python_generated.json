@@ -78,10 +78,10 @@
     "questionText": "¿De qué país es esta bandera?",
     "correctAnswer": "Alemania",
     "options": [
-      "Alemania",
       "Noruega",
-      "Irlanda",
-      "Países Bajos"
+      "Jordania",
+      "Alemania",
+      "Irlanda"
     ],
     "imageUrl": "https://flagcdn.com/w320/de.png",
     "extraData": {
@@ -391,10 +391,10 @@
     "questionText": "¿Cuál es la capital de Brasil?",
     "correctAnswer": "Brasilia",
     "options": [
-      "Brasilia",
+      "Abuya",
+      "Oman",
       "Berlín",
-      "Atenas",
-      "Abuya"
+      "Atenas"
     ],
     "extraData": {
       "countryCode": "br",
@@ -516,10 +516,10 @@
     "questionText": "¿De qué país es esta bandera?",
     "correctAnswer": "Australia",
     "options": [
-      "México",
-      "Australia",
       "Egipto",
-      "Corea del Sur"
+      "Zimbabwe",
+      "Australia",
+      "México"
     ],
     "imageUrl": "https://flagcdn.com/w320/au.png",
     "extraData": {

@@ -140,10 +140,10 @@
     "questionText": "¿En Saint Pierre and Miquelon qué idioma se usa?",
     "correctAnswer": "French",
     "options": [
-      "English",
       "Arabic",
       "Spanish",
-      "French"
+      "French",
+      "Lithuanian"
     ],
     "extraData": {
       "countryCode": "pm",
@@ -292,10 +292,10 @@
     "questionText": "¿En Comoros se usa qué moneda?",
     "correctAnswer": "Franco comorano",
     "options": [
+      "Florín húngaro",
       "Franco comorano",
-      "Euro",
       "Nuevo dólar taiwanés",
-      "Dram armenio"
+      "Euro"
     ],
     "extraData": {
       "countryCode": "km",
@@ -553,8 +553,8 @@
     "correctAnswer": "Luxembourg",
     "options": [
       "Tegucigalpa",
-      "Luxembourg",
       "Dushanbe",
+      "Dusambé",
       "Montevideo"
     ],
     "extraData": {
@@ -702,9 +702,9 @@
     "questionText": "¿En Kuwait se usa qué moneda?",
     "correctAnswer": "Dinar kuwaití",
     "options": [
-      "Tenge kazajo",
-      "Dinar kuwaití",
       "Lao kip",
+      "Belarusian ruble",
+      "Dinar kuwaití",
       "Won norcoreano"
     ],
     "extraData": {
@@ -795,10 +795,10 @@
     "questionText": "¿Cuál es la ciudad principal de Nepal?",
     "correctAnswer": "Nepal",
     "options": [
+      "Curaçao",
       "Israel",
       "Sint Maarten",
-      "Lithuania",
-      "Nepal"
+      "Lithuania"
     ],
     "extraData": {
       "countryCode": "np",
@@ -996,10 +996,10 @@
     "questionText": "¿Cuál es la capital de Trinidad and Tobago?",
     "correctAnswer": "Trinidad and Tobago",
     "options": [
-      "Trinidad and Tobago",
       "Belarus",
       "Kazakhstan",
-      "Madagascar"
+      "Madagascar",
+      "Estonia"
     ],
     "extraData": {
       "countryCode": "tt",
@@ -1013,10 +1013,10 @@
     "questionText": "¿Qué ciudad es el centro político de Dominica?",
     "correctAnswer": "Dominica",
     "options": [
-      "Ireland",
+      "París",
       "New Zealand",
       "Latvia",
-      "Dominica"
+      "Ireland"
     ],
     "extraData": {
       "countryCode": "dm",
@@ -1239,10 +1239,10 @@
     "questionText": "¿La moneda oficial de Cook Islands es...?",
     "correctAnswer": "Dólar de las Islas Cook",
     "options": [
+      "Dinar serbio",
+      "Euro",
       "Dólar de las Islas Cook",
-      "Dólar guyanés",
-      "Baht tailandés",
-      "Euro"
+      "Ariary malgache"
     ],
     "extraData": {
       "countryCode": "ck",
@@ -1274,10 +1274,10 @@
     "questionText": "¿En Cambodia se usa qué moneda?",
     "correctAnswer": "Riel camboyano",
     "options": [
+      "Euro",
+      "Leone",
       "Riel camboyano",
-      "Dólar del Caribe Oriental",
-      "Dólar estadounidense",
-      "Euro"
+      "Dólar de Brunéi"
     ],
     "extraData": {
       "countryCode": "kh",
@@ -1364,10 +1364,10 @@
     "questionText": "¿Qué moneda se usa en French Southern and Antarctic Lands?",
     "correctAnswer": "Euro",
     "options": [
-      "Euro",
       "Rupia seychellense",
+      "Euro",
       "Rial iraní",
-      "Rand sudafricano"
+      "Dólar jamaicano"
     ],
     "extraData": {
       "countryCode": "tf",
@@ -1443,9 +1443,9 @@
     "correctAnswer": "Falkland Islands pound",
     "options": [
       "Falkland Islands pound",
-      "Dólar estadounidense",
       "Złoty polaco",
-      "Yen japonés"
+      "Leu rumano",
+      "Leone"
     ],
     "extraData": {
       "countryCode": "fk",

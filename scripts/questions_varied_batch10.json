@@ -217,10 +217,10 @@
     "questionText": "¿Qué moneda se usa en Paraguay?",
     "correctAnswer": "Guaraní paraguayo",
     "options": [
+      "Belarusian ruble",
       "Somoni tayiko",
       "Dólar estadounidense",
-      "Netherlands Antillean guilder",
-      "Guaraní paraguayo"
+      "Netherlands Antillean guilder"
     ],
     "extraData": {
       "countryCode": "py",
@@ -308,9 +308,9 @@
     "correctAnswer": "English",
     "options": [
       "Slovak",
-      "French",
       "English",
-      "Spanish"
+      "Spanish",
+      "Bislama"
     ],
     "extraData": {
       "countryCode": "tt",
@@ -535,8 +535,8 @@
     "questionText": "¿Cuál es la capital de Palestine?",
     "correctAnswer": "Palestine",
     "options": [
+      "Hong Kong",
       "Croatia",
-      "Palestine",
       "Morocco",
       "Afghanistan"
     ],
@@ -875,10 +875,10 @@
     "questionText": "¿Cuál es la capital de Curaçao?",
     "correctAnswer": "Curaçao",
     "options": [
-      "Denmark",
       "Iceland",
-      "Tuvalu",
-      "Curaçao"
+      "Chișinău",
+      "Denmark",
+      "Tuvalu"
     ],
     "extraData": {
       "countryCode": "cw",
@@ -1024,10 +1024,10 @@
     "questionText": "¿Qué ciudad es el centro político de Vanuatu?",
     "correctAnswer": "Vanuatu",
     "options": [
-      "Sint Maarten",
       "Israel",
-      "Vanuatu",
-      "Sudan"
+      "Sint Maarten",
+      "Sudan",
+      "Argentina"
     ],
     "extraData": {
       "countryCode": "vu",
@@ -1308,9 +1308,9 @@
     "questionText": "¿El idioma principal de Luxembourg es...?",
     "correctAnswer": "German",
     "options": [
-      "Portuguese",
-      "German",
+      "Kazajo",
       "Arabic",
+      "German",
       "English"
     ],
     "extraData": {
@@ -1326,9 +1326,9 @@
     "questionText": "¿Cuál es la capital de New Caledonia?",
     "correctAnswer": "New Caledonia",
     "options": [
-      "New Caledonia",
-      "Namibia",
       "Mali",
+      "Namibia",
+      "Guatemala",
       "Ghana"
     ],
     "extraData": {
@@ -1399,10 +1399,10 @@
     "questionText": "¿En qué ciudad se encuentra el gobierno de Ethiopia?",
     "correctAnswer": "Ethiopia",
     "options": [
-      "Singapore",
       "Faroe Islands",
-      "Ethiopia",
-      "Saint Kitts and Nevis"
+      "Saint Kitts and Nevis",
+      "Singapore",
+      "Alofi"
     ],
     "extraData": {
       "countryCode": "et",
@@ -1452,9 +1452,9 @@
     "questionText": "¿Cuál es la ciudad principal de Bahamas?",
     "correctAnswer": "Bahamas",
     "options": [
-      "Canada",
-      "Bahamas",
       "Grenada",
+      "Bruselas",
+      "Canada",
       "Heard Island and McDonald Islands"
     ],
     "extraData": {
@@ -1506,10 +1506,10 @@
     "questionText": "¿Cuál es la ciudad principal de Israel?",
     "correctAnswer": "Israel",
     "options": [
-      "Montenegro",
       "Uganda",
+      "George Town",
       "Mexico",
-      "Israel"
+      "Montenegro"
     ],
     "extraData": {
       "countryCode": "il",
@@ -1540,10 +1540,10 @@
     "questionText": "¿En Republic of the Congo qué idioma se usa?",
     "correctAnswer": "French",
     "options": [
-      "French",
-      "Spanish",
       "Portuguese",
-      "English"
+      "Aymara",
+      "French",
+      "Spanish"
     ],
     "extraData": {
       "countryCode": "cg",
@@ -1685,10 +1685,10 @@
     "questionText": "¿Cuál es la divisa de Colombia?",
     "correctAnswer": "Peso colombiano",
     "options": [
+      "Dólar estadounidense",
+      "Belarusian ruble",
       "Rupia indonesia",
-      "Peso colombiano",
-      "Franco CFP",
-      "Dólar estadounidense"
+      "Franco CFP"
     ],
     "extraData": {
       "countryCode": "co",

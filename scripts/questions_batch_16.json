@@ -78,10 +78,10 @@
     "questionText": "¿De qué país es esta bandera?",
     "correctAnswer": "Ghana",
     "options": [
-      "Togo",
-      "Costa de Marfil",
+      "Nigeria",
       "Ghana",
-      "Nigeria"
+      "Bouvet Island",
+      "Togo"
     ],
     "imageUrl": "https://flagcdn.com/w320/gh.png",
     "extraData": {
@@ -150,10 +150,10 @@
     "questionText": "¿De qué país es esta bandera?",
     "correctAnswer": "China",
     "options": [
-      "Japón",
-      "Corea del Sur",
       "China",
-      "Vietnam"
+      "Japón",
+      "Vietnam",
+      "Lesotho"
     ],
     "imageUrl": "https://flagcdn.com/w320/cn.png",
     "extraData": {
@@ -220,10 +220,10 @@
     "questionText": "¿Cuál es la capital de Túnez?",
     "correctAnswer": "Túnez",
     "options": [
-      "Túnez",
-      "Sfax",
+      "Sidi Bou Said",
+      "French Polynesia",
       "Susa",
-      "Sidi Bou Said"
+      "Sfax"
     ],
     "extraData": {
       "countryCode": "tn",
@@ -647,8 +647,8 @@
     "options": [
       "Peso argentino",
       "Real brasileño",
-      "Peso uruguayo",
-      "Guaraní paraguayo"
+      "Guaraní paraguayo",
+      "Dólar singapurense"
     ],
     "extraData": {
       "countryCode": "uy",
@@ -663,10 +663,10 @@
     "questionText": "¿Cuál es la moneda de Singapur?",
     "correctAnswer": "Dólar de Singapur",
     "options": [
-      "Ringgit malayo",
-      "Rupia indonesia",
       "Baht tailandés",
-      "Dólar de Singapur"
+      "Chelín somalí",
+      "Ringgit malayo",
+      "Rupia indonesia"
     ],
     "extraData": {
       "countryCode": "sg",
@@ -681,10 +681,10 @@
     "questionText": "¿Cuál es la moneda de Mozambique?",
     "correctAnswer": "Metical mozambiqueño",
     "options": [
-      "Kwacha zambiano",
+      "Dólar beliceño",
       "Rand sudafricano",
-      "Metical mozambiqueño",
-      "Chelín tanzano"
+      "Chelín tanzano",
+      "Kwacha zambiano"
     ],
     "extraData": {
       "countryCode": "mz",
@@ -699,10 +699,10 @@
     "questionText": "¿Cuál es la moneda de Colombia?",
     "correctAnswer": "Peso colombiano",
     "options": [
-      "Peso mexicano",
       "Sol peruano",
-      "Peso colombiano",
-      "Real brasileño"
+      "Real brasileño",
+      "Ringgit malayo",
+      "Peso mexicano"
     ],
     "extraData": {
       "countryCode": "co",

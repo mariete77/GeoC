@@ -44,10 +44,10 @@
     "questionText": "¿Qué billetes y monedas circulan en Colombia?",
     "correctAnswer": "Peso colombiano",
     "options": [
+      "Peso dominicano",
+      "Franco CFA de África Occidental",
       "Tenge kazajo",
-      "Peso colombiano",
-      "Dólar fiyiano",
-      "Franco CFA de África Occidental"
+      "Dólar fiyiano"
     ],
     "extraData": {
       "countryCode": "co",
@@ -79,7 +79,7 @@
     "questionText": "¿La moneda oficial de Anguilla es...?",
     "correctAnswer": "Dólar del Caribe Oriental",
     "options": [
-      "Dólar estadounidense",
+      "denar",
       "Dólar del Caribe Oriental",
       "Euro",
       "Franco CFA de África Occidental"
@@ -169,9 +169,9 @@
     "questionText": "¿Qué ciudad es la sede administrativa de Ireland?",
     "correctAnswer": "Dublin",
     "options": [
-      "Ciudad de la Paz",
       "Dublin",
       "Rome",
+      "Malé",
       "Belgrade"
     ],
     "extraData": {
@@ -563,10 +563,10 @@
     "questionText": "¿Qué ciudad es el centro político de Lebanon?",
     "correctAnswer": "Lebanon",
     "options": [
-      "Saint Lucia",
       "Marshall Islands",
-      "Lebanon",
-      "Japan"
+      "Japan",
+      "Brasília",
+      "Saint Lucia"
     ],
     "extraData": {
       "countryCode": "lb",
@@ -580,10 +580,10 @@
     "questionText": "¿En Myanmar qué idioma se usa?",
     "correctAnswer": "Burmese",
     "options": [
-      "French",
-      "Burmese",
-      "English",
-      "Chamorro"
+      "Arabic",
+      "Malay",
+      "Chamorro",
+      "Burmese"
     ],
     "extraData": {
       "countryCode": "mm",
@@ -636,10 +636,10 @@
     "questionText": "¿La moneda oficial de Sudan es...?",
     "correctAnswer": "Sudanese pound",
     "options": [
-      "Sudanese pound",
       "Dinar iraquí",
-      "Dólar estadounidense",
-      "Dólar del Caribe Oriental"
+      "Sudanese pound",
+      "Franco CFA de África Central",
+      "Tenge kazajo"
     ],
     "extraData": {
       "countryCode": "sd",
@@ -748,10 +748,10 @@
     "questionText": "¿Cuál es la ciudad principal de Slovenia?",
     "correctAnswer": "Slovenia",
     "options": [
-      "Slovenia",
-      "Saint Martin",
+      "Sudan",
+      "Georgia",
       "Afghanistan",
-      "Georgia"
+      "Saint Martin"
     ],
     "extraData": {
       "countryCode": "si",
@@ -898,10 +898,10 @@
     "questionText": "¿En Central African Republic qué idioma se usa?",
     "correctAnswer": "French",
     "options": [
-      "English",
-      "Arabic",
+      "French",
       "Spanish",
-      "French"
+      "Serbian",
+      "Arabic"
     ],
     "extraData": {
       "countryCode": "cf",
@@ -1312,9 +1312,9 @@
     "correctAnswer": "Metical mozambiqueño",
     "options": [
       "Tongan paʻanga",
-      "Metical mozambiqueño",
-      "Lilangeni suazi",
-      "Dólar neozelandés"
+      "Dólar neozelandés",
+      "Libra sudanesa",
+      "Lilangeni suazi"
     ],
     "extraData": {
       "countryCode": "mz",
@@ -1439,10 +1439,10 @@
     "questionText": "¿Cuál es el idioma oficial de Iceland?",
     "correctAnswer": "Icelandic",
     "options": [
+      "Latvian",
       "French",
-      "English",
       "Indonesian",
-      "Icelandic"
+      "English"
     ],
     "extraData": {
       "countryCode": "is",

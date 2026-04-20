@@ -139,10 +139,10 @@
     "questionText": "¿Qué idioma se habla en Nepal?",
     "correctAnswer": "Nepali",
     "options": [
+      "English",
       "French",
-      "Norwegian",
-      "Nepali",
-      "English"
+      "Lituano",
+      "Norwegian"
     ],
     "extraData": {
       "countryCode": "np",
@@ -364,9 +364,9 @@
     "questionText": "¿Cuál es la moneda de Vietnam?",
     "correctAnswer": "Dong vietnamita",
     "options": [
-      "Dólar estadounidense",
-      "Dong vietnamita",
       "Franco CFA de África Occidental",
+      "Riyal saudí",
+      "Dólar estadounidense",
       "Pound sterling"
     ],
     "extraData": {
@@ -423,9 +423,9 @@
     "correctAnswer": "Bulgarian",
     "options": [
       "Arabic",
-      "English",
-      "Chinese",
-      "Bulgarian"
+      "Nepali",
+      "Bulgarian",
+      "English"
     ],
     "extraData": {
       "countryCode": "bg",
@@ -532,10 +532,10 @@
     "questionText": "¿La capital de Iceland se llama...?",
     "correctAnswer": "Reykjavik",
     "options": [
+      "Lusaka",
       "Reykjavik",
       "Pyongyang",
-      "Ciudad de la Paz",
-      "Lusaka"
+      "Luanda"
     ],
     "extraData": {
       "countryCode": "is",
@@ -645,8 +645,8 @@
     "correctAnswer": "French",
     "options": [
       "Greek",
-      "Portuguese",
       "English",
+      "Danish",
       "French"
     ],
     "extraData": {
@@ -662,10 +662,10 @@
     "questionText": "¿Qué ciudad es el centro político de Cambodia?",
     "correctAnswer": "Cambodia",
     "options": [
-      "Turkmenistan",
-      "Seychelles",
       "Yemen",
-      "Cambodia"
+      "Seychelles",
+      "Turkmenistan",
+      "Naypyidaw"
     ],
     "extraData": {
       "countryCode": "kh",
@@ -718,10 +718,10 @@
     "questionText": "¿El idioma principal de DR Congo es...?",
     "correctAnswer": "French",
     "options": [
-      "Portuguese",
-      "French",
+      "Danish",
+      "Korean",
       "English",
-      "Korean"
+      "French"
     ],
     "extraData": {
       "countryCode": "cd",
@@ -808,9 +808,9 @@
     "correctAnswer": "Rial omaní",
     "options": [
       "dalasi",
-      "Franco CFA de África Central",
-      "Rial omaní",
-      "Netherlands Antillean guilder"
+      "Netherlands Antillean guilder",
+      "Lari georgiano",
+      "Franco CFA de África Central"
     ],
     "extraData": {
       "countryCode": "om",
@@ -902,9 +902,9 @@
     "questionText": "¿Cuál es la capital de Guinea-Bissau?",
     "correctAnswer": "Guinea-Bissau",
     "options": [
-      "United States Minor Outlying Islands",
-      "Guinea-Bissau",
       "United Kingdom",
+      "India",
+      "United States Minor Outlying Islands",
       "Poland"
     ],
     "extraData": {
@@ -1017,8 +1017,8 @@
     "options": [
       "Wallis and Futuna",
       "Czechia",
-      "Isle of Man",
-      "Norway"
+      "France",
+      "Isle of Man"
     ],
     "extraData": {
       "countryCode": "no",
@@ -1032,10 +1032,10 @@
     "questionText": "¿La moneda oficial de Senegal es...?",
     "correctAnswer": "Franco CFA de África Occidental",
     "options": [
+      "Franco CFA de África Occidental",
+      "Nuevo séquel israelí",
       "Rupia seychellense",
-      "Dólar estadounidense",
-      "Qatari riyal",
-      "Franco CFA de África Occidental"
+      "Qatari riyal"
     ],
     "extraData": {
       "countryCode": "sn",
@@ -1068,10 +1068,10 @@
     "questionText": "¿La moneda oficial de Montenegro es...?",
     "correctAnswer": "Euro",
     "options": [
-      "Euro",
+      "Kina papú",
+      "Rupia paquistaní",
       "Real brasileño",
-      "Dólar estadounidense",
-      "Libra esterlina"
+      "Euro"
     ],
     "extraData": {
       "countryCode": "me",
@@ -1176,10 +1176,10 @@
     "questionText": "¿Qué ciudad es el centro político de Colombia?",
     "correctAnswer": "Colombia",
     "options": [
+      "Switzerland",
+      "Western Sahara",
       "Greece",
-      "Angola",
-      "Colombia",
-      "Switzerland"
+      "Angola"
     ],
     "extraData": {
       "countryCode": "co",
@@ -1725,10 +1725,10 @@
     "questionText": "¿La moneda oficial de Mongolia es...?",
     "correctAnswer": "Tögrög mongol",
     "options": [
+      "Quetzal guatemalteco",
       "Euro",
-      "Dólar australiano",
-      "Riyal saudí",
-      "Tögrög mongol"
+      "Tögrög mongol",
+      "Riyal saudí"
     ],
     "extraData": {
       "countryCode": "mn",
@@ -1743,10 +1743,10 @@
     "questionText": "¿Cuál es la capital de Guernsey?",
     "correctAnswer": "Guernsey",
     "options": [
-      "Guernsey",
-      "Netherlands",
+      "Naypyidó",
       "Belize",
-      "Benin"
+      "Benin",
+      "Netherlands"
     ],
     "extraData": {
       "countryCode": "gg",

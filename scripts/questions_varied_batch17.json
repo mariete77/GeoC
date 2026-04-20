@@ -6,9 +6,9 @@
     "questionText": "¿La moneda oficial de Greenland es...?",
     "correctAnswer": "krone",
     "options": [
-      "Tongan paʻanga",
       "Franco CFP",
-      "Peso argentino",
+      "Tongan paʻanga",
+      "Vanuatu vatu",
       "krone"
     ],
     "extraData": {
@@ -24,10 +24,10 @@
     "questionText": "¿El idioma principal de American Samoa es...?",
     "correctAnswer": "English",
     "options": [
-      "English",
       "Hungarian",
-      "Seychellois Creole",
-      "Japanese"
+      "English",
+      "Mongolian",
+      "Bengalí"
     ],
     "extraData": {
       "countryCode": "as",
@@ -93,10 +93,10 @@
     "questionText": "¿Cuál es el idioma oficial de Belize?",
     "correctAnswer": "Belizean Creole",
     "options": [
-      "Belizean Creole",
+      "Persian (Farsi)",
       "English",
-      "German",
-      "Persian (Farsi)"
+      "Belarusian",
+      "German"
     ],
     "extraData": {
       "countryCode": "bz",
@@ -189,10 +189,10 @@
     "questionText": "¿Qué billetes y monedas circulan en Bulgaria?",
     "correctAnswer": "Bulgarian lev",
     "options": [
-      "Afgano afgano",
       "Vanuatu vatu",
-      "Bulgarian lev",
-      "Rublo ruso"
+      "Rublo ruso",
+      "denar",
+      "Afgano afgano"
     ],
     "extraData": {
       "countryCode": "bg",
@@ -264,9 +264,9 @@
     "correctAnswer": "Panama City",
     "options": [
       "Wellington",
-      "Panama City",
       "Banjul",
-      "Ashgabat"
+      "Ashgabat",
+      "Yibuti"
     ],
     "extraData": {
       "countryCode": "pa",
@@ -450,10 +450,10 @@
     "questionText": "¿En Timor-Leste se usa qué moneda?",
     "correctAnswer": "Dólar estadounidense",
     "options": [
+      "Euro",
       "Rublo ruso",
-      "Franco CFA de África Occidental",
       "Dólar estadounidense",
-      "Euro"
+      "Dinar serbio"
     ],
     "extraData": {
       "countryCode": "tl",
@@ -583,10 +583,10 @@
     "questionText": "¿Qué ciudad es el centro político de El Salvador?",
     "correctAnswer": "San Salvador",
     "options": [
+      "Port Moresby",
       "Ngerulmud",
-      "Marigot",
-      "San Salvador",
-      "Port Moresby"
+      "Cairo",
+      "Marigot"
     ],
     "extraData": {
       "countryCode": "sv",
@@ -620,10 +620,10 @@
     "questionText": "¿La capital de Monaco se llama...?",
     "correctAnswer": "Monaco",
     "options": [
+      "Estonia",
+      "Tarawa Sur",
       "Monaco",
-      "Malaysia",
-      "Mongolia",
-      "Estonia"
+      "Mongolia"
     ],
     "extraData": {
       "countryCode": "mc",
@@ -877,10 +877,10 @@
     "questionText": "¿Cuál es la divisa de Jordan?",
     "correctAnswer": "Dinar jordano",
     "options": [
-      "Bulgarian lev",
+      "Netherlands Antillean guilder",
+      "Zloty polaco",
       "Nuevo séquel israelí",
-      "Dinar jordano",
-      "Netherlands Antillean guilder"
+      "Bulgarian lev"
     ],
     "extraData": {
       "countryCode": "jo",
@@ -971,9 +971,9 @@
     "correctAnswer": "Turkish",
     "options": [
       "Turkish",
+      "Greek",
       "English",
-      "Icelandic",
-      "Greek"
+      "Griego"
     ],
     "extraData": {
       "countryCode": "tr",
@@ -1184,9 +1184,9 @@
     "correctAnswer": "English",
     "options": [
       "English",
-      "French",
       "Arabic",
-      "German"
+      "French",
+      "Dari"
     ],
     "extraData": {
       "countryCode": "im",
@@ -1294,10 +1294,10 @@
     "questionText": "¿Cuál es la divisa de Botswana?",
     "correctAnswer": "Botswana pula",
     "options": [
-      "Botswana pula",
+      "Peso colombiano",
+      "Dólar canadiense",
       "Dólar del Caribe Oriental",
-      "Libra esterlina",
-      "Dólar canadiense"
+      "Libra esterlina"
     ],
     "extraData": {
       "countryCode": "bw",
@@ -1370,10 +1370,10 @@
     "questionText": "¿En qué ciudad se encuentra el gobierno de Northern Mariana Islands?",
     "correctAnswer": "Northern Mariana Islands",
     "options": [
-      "Northern Mariana Islands",
       "Switzerland",
-      "Cook Islands",
-      "Djibouti"
+      "Bruselas",
+      "Djibouti",
+      "Curaçao"
     ],
     "extraData": {
       "countryCode": "mp",
@@ -1594,10 +1594,10 @@
     "questionText": "¿Qué ciudad es el centro político de Malaysia?",
     "correctAnswer": "Malaysia",
     "options": [
+      "Zagreb",
+      "Guernsey",
       "Uzbekistan",
-      "Malaysia",
-      "Puerto Rico",
-      "Guernsey"
+      "Puerto Rico"
     ],
     "extraData": {
       "countryCode": "my",
@@ -1781,10 +1781,10 @@
     "questionText": "¿Qué ciudad es el centro político de Tanzania?",
     "correctAnswer": "Tanzania",
     "options": [
+      "Caribbean Netherlands",
       "Slovakia",
-      "Tanzania",
       "Thailand",
-      "Caribbean Netherlands"
+      "Curaçao"
     ],
     "extraData": {
       "countryCode": "tz",

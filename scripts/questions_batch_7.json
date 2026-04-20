@@ -6,10 +6,10 @@
     "questionText": "¿De qué país es esta bandera?",
     "correctAnswer": "Bélgica",
     "options": [
+      "Francia",
+      "British Virgin Islands",
       "Alemania",
-      "Bélgica",
-      "Países Bajos",
-      "Francia"
+      "Bélgica"
     ],
     "imageUrl": "https://flagcdn.com/w320/be.png",
     "extraData": {
@@ -591,10 +591,10 @@
     "questionText": "¿Cuál es el idioma oficial de Nepal?",
     "correctAnswer": "Nepalí",
     "options": [
+      "Tibetano",
       "Hindi",
       "Bengalí",
-      "Nepalí",
-      "Tibetano"
+      "Khmer"
     ],
     "extraData": {
       "countryCode": "np",
@@ -699,10 +699,10 @@
     "questionText": "¿Cuál es la moneda de India?",
     "correctAnswer": "Rupia india",
     "options": [
+      "Rupia de Sri Lanka",
       "Taka bangladesí",
       "Rupia pakistaní",
-      "Rupia india",
-      "Rupia de Sri Lanka"
+      "Bolívar soberano venezolano"
     ],
     "extraData": {
       "countryCode": "in",

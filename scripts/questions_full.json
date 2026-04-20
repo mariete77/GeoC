@@ -24,10 +24,10 @@
     "questionText": "¿De qué país es esta bandera?",
     "correctAnswer": "Alemania",
     "options": [
+      "Polonia",
+      "Ukraine",
       "Bélgica",
-      "Alemania",
-      "Países Bajos",
-      "Polonia"
+      "Alemania"
     ],
     "imageUrl": "https://flagcdn.com/w320/de.png",
     "extraData": {
@@ -43,7 +43,7 @@
     "correctAnswer": "Francia",
     "options": [
       "Francia",
-      "Países Bajos",
+      "Kuwait",
       "Rusia",
       "Eslovaquia"
     ],
@@ -96,10 +96,10 @@
     "questionText": "¿De qué país es esta bandera?",
     "correctAnswer": "Canadá",
     "options": [
+      "Jamaica",
       "Canadá",
-      "Estados Unidos",
-      "Cuba",
-      "Jamaica"
+      "Turks and Caicos Islands",
+      "Cuba"
     ],
     "imageUrl": "https://flagcdn.com/w320/ca.png",
     "extraData": {
@@ -307,10 +307,10 @@
     "questionText": "¿Cuál es la capital de Brasil?",
     "correctAnswer": "Brasilia",
     "options": [
-      "Río de Janeiro",
+      "Salvador",
       "São Paulo",
-      "Brasilia",
-      "Salvador"
+      "Río de Janeiro",
+      "Tunisia"
     ],
     "extraData": {
       "countryCode": "br",
@@ -938,10 +938,10 @@
     "questionText": "¿De qué país es esta bandera?",
     "correctAnswer": "Kenia",
     "options": [
-      "Sudán del Sur",
       "Kenia",
+      "Tanzania",
       "Uganda",
-      "Tanzania"
+      "Mali"
     ],
     "imageUrl": "https://flagcdn.com/w320/ke.png",
     "extraData": {
@@ -956,10 +956,10 @@
     "questionText": "¿De qué país es esta bandera?",
     "correctAnswer": "Paraguay",
     "options": [
-      "Países Bajos",
+      "Francia",
       "Paraguay",
       "Luxemburgo",
-      "Francia"
+      "Islandia"
     ],
     "imageUrl": "https://flagcdn.com/w320/py.png",
     "extraData": {
@@ -975,8 +975,8 @@
     "correctAnswer": "Ghana",
     "options": [
       "Guinea",
+      "Gambia",
       "Ghana",
-      "Costa de Marfil",
       "Togo"
     ],
     "imageUrl": "https://flagcdn.com/w320/gh.png",
@@ -1117,10 +1117,10 @@
     "questionText": "¿Cuál es la capital de Singapur?",
     "correctAnswer": "Singapur",
     "options": [
-      "Singapur",
-      "Jurong East",
       "Woodlands",
-      "Tampines"
+      "Tampines",
+      "Jurong East",
+      "Oman"
     ],
     "extraData": {
       "countryCode": "sg",
@@ -1578,10 +1578,10 @@
     "questionText": "¿Cuál es la moneda de Colombia?",
     "correctAnswer": "Peso colombiano",
     "options": [
-      "Peso mexicano",
-      "Peso colombiano",
+      "Dólar liberiano",
       "Sol peruano",
-      "Real brasileño"
+      "Real brasileño",
+      "Peso mexicano"
     ],
     "extraData": {
       "countryCode": "co",
@@ -1596,9 +1596,9 @@
     "questionText": "¿Cuál es la moneda de Kuwait?",
     "correctAnswer": "Dinar kuwaití",
     "options": [
-      "Rial omaní",
-      "Dinar kuwaití",
+      "Dólar liberiano",
       "Dirham marroquí",
+      "Rial omaní",
       "Rial iraní"
     ],
     "extraData": {
@@ -1632,10 +1632,10 @@
     "questionText": "¿Cuál es la moneda de India?",
     "correctAnswer": "Rupia india",
     "options": [
+      "Yuan chino",
       "Rupia pakistaní",
-      "Rupia india",
-      "Taka bangladesí",
-      "Yuan chino"
+      "Rupia mauriciana",
+      "Taka bangladesí"
     ],
     "extraData": {
       "countryCode": "in",
@@ -2003,9 +2003,9 @@
     "correctAnswer": "India",
     "options": [
       "Níger",
-      "India",
-      "Costa de Marfil",
-      "Irlanda"
+      "Brazil",
+      "Irlanda",
+      "India"
     ],
     "imageUrl": "https://flagcdn.com/w320/in.png",
     "extraData": {
@@ -2054,10 +2054,10 @@
     "questionText": "¿Cuál es la capital de México?",
     "correctAnswer": "Ciudad de México",
     "options": [
+      "Puerto Príncipe",
       "Guadalajara",
-      "Monterrey",
-      "Ciudad de México",
-      "Cancún"
+      "Cancún",
+      "Monterrey"
     ],
     "extraData": {
       "countryCode": "mx",
@@ -2592,9 +2592,9 @@
     "questionText": "¿Cuál es la moneda de Noruega?",
     "correctAnswer": "Corona noruega",
     "options": [
-      "Corona sueca",
-      "Corona noruega",
       "Corona danesa",
+      "Riyal saudí",
+      "Corona sueca",
       "Franco suizo"
     ],
     "extraData": {
@@ -2780,10 +2780,10 @@
     "questionText": "¿De qué país es esta bandera?",
     "correctAnswer": "Rusia",
     "options": [
-      "Países Bajos",
-      "Rusia",
       "Luxemburgo",
-      "Francia"
+      "Francia",
+      "Rwanda",
+      "Rusia"
     ],
     "imageUrl": "https://flagcdn.com/w320/ru.png",
     "extraData": {
@@ -2817,9 +2817,9 @@
     "correctAnswer": "Nigeria",
     "options": [
       "Nigeria",
+      "Níger",
       "Irlanda",
-      "Costa de Marfil",
-      "Níger"
+      "Perú"
     ],
     "imageUrl": "https://flagcdn.com/w320/ng.png",
     "extraData": {
@@ -2834,10 +2834,10 @@
     "questionText": "¿De qué país es esta bandera?",
     "correctAnswer": "Vietnam",
     "options": [
-      "China",
       "Vietnam",
-      "Corea del Sur",
-      "Laos"
+      "Laos",
+      "China",
+      "Macau"
     ],
     "imageUrl": "https://flagcdn.com/w320/vn.png",
     "extraData": {
@@ -2906,10 +2906,10 @@
     "questionText": "¿De qué país es esta bandera?",
     "correctAnswer": "Corea del Sur",
     "options": [
-      "Corea del Sur",
-      "Corea del Norte",
       "Japón",
-      "China"
+      "Corea del Sur",
+      "China",
+      "France"
     ],
     "imageUrl": "https://flagcdn.com/w320/kr.png",
     "extraData": {
@@ -3332,10 +3332,10 @@
     "questionText": "¿Cuál es el idioma oficial de Italia?",
     "correctAnswer": "Italiano",
     "options": [
-      "Español",
-      "Italiano",
+      "Portugués",
       "Francés",
-      "Portugués"
+      "Russian",
+      "Español"
     ],
     "extraData": {
       "countryCode": "it",
@@ -3350,10 +3350,10 @@
     "questionText": "¿Cuál es el idioma oficial de Vietnam?",
     "correctAnswer": "Vietnamita",
     "options": [
-      "Camboyano",
-      "Vietnamita",
+      "Italian",
+      "Tailandés",
       "Lao",
-      "Tailandés"
+      "Camboyano"
     ],
     "extraData": {
       "countryCode": "vn",
@@ -3368,10 +3368,10 @@
     "questionText": "¿Cuál es el idioma oficial de Ucrania?",
     "correctAnswer": "Ucraniano",
     "options": [
-      "Ruso",
       "Bielorruso",
-      "Ucraniano",
-      "Polaco"
+      "Ruso",
+      "Polaco",
+      "Kinyarwanda"
     ],
     "extraData": {
       "countryCode": "ua",
@@ -3386,10 +3386,10 @@
     "questionText": "¿Cuál es el idioma oficial de Georgia?",
     "correctAnswer": "Georgiano",
     "options": [
-      "Armenio",
       "Azerí",
-      "Georgiano",
-      "Ruso"
+      "Ruso",
+      "Aymara",
+      "Armenio"
     ],
     "extraData": {
       "countryCode": "ge",
@@ -3422,10 +3422,10 @@
     "questionText": "¿Cuál es la moneda de Australia?",
     "correctAnswer": "Dólar australiano",
     "options": [
-      "Dólar australiano",
-      "Dólar neozelandés",
+      "Dólar canadiense",
       "Libra esterlina",
-      "Dólar canadiense"
+      "Rupia nepalí",
+      "Dólar neozelandés"
     ],
     "extraData": {
       "countryCode": "au",
@@ -3440,9 +3440,9 @@
     "questionText": "¿Cuál es la moneda de India?",
     "correctAnswer": "Rupia india",
     "options": [
-      "Rupia pakistaní",
-      "Rupia india",
       "Taka bangladesí",
+      "Chelín keniano",
+      "Rupia pakistaní",
       "Rupia de Sri Lanka"
     ],
     "extraData": {
@@ -3458,8 +3458,8 @@
     "questionText": "¿Cuál es la moneda de Brasil?",
     "correctAnswer": "Real brasileño",
     "options": [
+      "Quetzal guatemalteco",
       "Peso argentino",
-      "Real brasileño",
       "Peso colombiano",
       "Sol peruano"
     ],
@@ -3737,10 +3737,10 @@
     "questionText": "¿De qué país es esta bandera?",
     "correctAnswer": "Senegal",
     "options": [
-      "Mali",
-      "Senegal",
       "Guinea",
-      "Costa de Marfil"
+      "Senegal",
+      "Mali",
+      "Mexico"
     ],
     "imageUrl": "https://flagcdn.com/w320/sn.png",
     "extraData": {
@@ -4321,10 +4321,10 @@
     "questionText": "¿Cuál es la moneda de Corea del Sur?",
     "correctAnswer": "Won surcoreano",
     "options": [
-      "Yen japonés",
+      "Dólar de Singapur",
       "Yuan chino",
-      "Won surcoreano",
-      "Dólar de Singapur"
+      "Somoni tayiko",
+      "Yen japonés"
     ],
     "extraData": {
       "countryCode": "kr",
@@ -4359,8 +4359,8 @@
     "options": [
       "Baht tailandés",
       "Rupia indonesia",
-      "Dong vietnamita",
-      "Kip laosiano"
+      "Kip laosiano",
+      "Bolívar soberano venezolano"
     ],
     "extraData": {
       "countryCode": "vn",
@@ -4619,10 +4619,10 @@
     "questionText": "¿De qué país es esta bandera?",
     "correctAnswer": "Irlanda",
     "options": [
-      "Costa de Marfil",
-      "Irlanda",
+      "India",
       "Italia",
-      "India"
+      "Irlanda",
+      "Faroe Islands"
     ],
     "imageUrl": "https://flagcdn.com/w320/ie.png",
     "extraData": {
@@ -4781,10 +4781,10 @@
     "questionText": "¿Cuál es la capital de Brasil?",
     "correctAnswer": "Brasilia",
     "options": [
-      "Río de Janeiro",
+      "Salvador",
       "São Paulo",
-      "Brasilia",
-      "Salvador"
+      "Río de Janeiro",
+      "Lilongüe"
     ],
     "extraData": {
       "countryCode": "br",
@@ -4934,9 +4934,9 @@
     "questionText": "¿Cuál es la capital de Kuwait?",
     "correctAnswer": "Ciudad de Kuwait",
     "options": [
-      "Ciudad de Kuwait",
-      "Hawalli",
       "Jahra",
+      "Israel",
+      "Hawalli",
       "Ahmadi"
     ],
     "extraData": {
@@ -5314,8 +5314,8 @@
     "correctAnswer": "Naira nigeriana",
     "options": [
       "Cedi ghanés",
-      "Naira nigeriana",
       "Franco CFA",
+      "Loti lesoto",
       "Kwacha zambiano"
     ],
     "extraData": {
@@ -5557,10 +5557,10 @@
     "questionText": "¿De qué país es esta bandera?",
     "correctAnswer": "Malasia",
     "options": [
-      "Estados Unidos",
+      "Tailandia",
       "Malasia",
-      "Liberia",
-      "Tailandia"
+      "Romania",
+      "Liberia"
     ],
     "imageUrl": "https://flagcdn.com/w320/my.png",
     "extraData": {
@@ -5683,10 +5683,10 @@
     "questionText": "¿De qué país es esta bandera?",
     "correctAnswer": "Costa Rica",
     "options": [
-      "Tailandia",
       "Costa Rica",
       "India",
-      "Corea del Norte"
+      "Tailandia",
+      "Azerbaiyán"
     ],
     "imageUrl": "https://flagcdn.com/w320/cr.png",
     "extraData": {
@@ -6160,7 +6160,7 @@
     "options": [
       "Baht tailandés",
       "Ringgit malayo",
-      "Rupia indonesia",
+      "Belarusian ruble",
       "Peso filipino"
     ],
     "extraData": {
@@ -6230,9 +6230,9 @@
     "questionText": "¿Cuál es la moneda de Italia?",
     "correctAnswer": "Euro",
     "options": [
-      "Lira italiana",
       "Euro",
       "Franco suizo",
+      "Rial omaní",
       "Libra esterlina"
     ],
     "extraData": {
@@ -6438,10 +6438,10 @@
     "questionText": "¿De qué país es esta bandera?",
     "correctAnswer": "Bélgica",
     "options": [
-      "Alemania",
+      "Equatorial Guinea",
+      "Francia",
       "Bélgica",
-      "Países Bajos",
-      "Francia"
+      "Alemania"
     ],
     "imageUrl": "https://flagcdn.com/w320/be.png",
     "extraData": {
@@ -7023,9 +7023,9 @@
     "questionText": "¿Cuál es el idioma oficial de Nepal?",
     "correctAnswer": "Nepalí",
     "options": [
+      "Turcomano",
       "Hindi",
       "Bengalí",
-      "Nepalí",
       "Tibetano"
     ],
     "extraData": {
@@ -7131,10 +7131,10 @@
     "questionText": "¿Cuál es la moneda de India?",
     "correctAnswer": "Rupia india",
     "options": [
-      "Taka bangladesí",
       "Rupia pakistaní",
-      "Rupia india",
-      "Rupia de Sri Lanka"
+      "Taka bangladesí",
+      "Rupia de Sri Lanka",
+      "Zloty polaco"
     ],
     "extraData": {
       "countryCode": "in",
@@ -7605,10 +7605,10 @@
     "questionText": "¿Cuál es la capital de Yibuti?",
     "correctAnswer": "Yibuti",
     "options": [
-      "Yibuti",
-      "Ali Sabieh",
+      "Obock",
+      "Beirut",
       "Tadjoura",
-      "Obock"
+      "Ali Sabieh"
     ],
     "extraData": {
       "countryCode": "dj",
@@ -8276,10 +8276,10 @@
     "questionText": "¿De qué país es esta bandera?",
     "correctAnswer": "Luxemburgo",
     "options": [
-      "Países Bajos",
-      "Bélgica",
       "Luxemburgo",
-      "Francia"
+      "Bermuda",
+      "Francia",
+      "Bélgica"
     ],
     "imageUrl": "https://flagcdn.com/w320/lu.png",
     "extraData": {
@@ -8524,10 +8524,10 @@
     "questionText": "¿Cuál es la capital de Yibuti?",
     "correctAnswer": "Yibuti",
     "options": [
-      "Ali Sabieh",
-      "Yibuti",
+      "Dikhil",
       "Tadjoura",
-      "Dikhil"
+      "Ali Sabieh",
+      "Managua"
     ],
     "extraData": {
       "countryCode": "dj",
@@ -8541,10 +8541,10 @@
     "questionText": "¿Cuál es la capital de Brasil?",
     "correctAnswer": "Brasilia",
     "options": [
+      "Salvador",
       "Río de Janeiro",
-      "Brasilia",
-      "São Paulo",
-      "Salvador"
+      "Kyiv",
+      "São Paulo"
     ],
     "extraData": {
       "countryCode": "br",

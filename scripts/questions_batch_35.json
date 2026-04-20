@@ -60,9 +60,9 @@
     "questionText": "¿De qué país es esta bandera?",
     "correctAnswer": "Canadá",
     "options": [
-      "Estados Unidos",
-      "Reino Unido",
+      "Serbia",
       "Australia",
+      "Reino Unido",
       "Canadá"
     ],
     "imageUrl": "https://flagcdn.com/w320/ca.png",
@@ -133,9 +133,9 @@
     "correctAnswer": "Ghana",
     "options": [
       "Togo",
-      "Costa de Marfil",
       "Nigeria",
-      "Ghana"
+      "Ghana",
+      "Perú"
     ],
     "imageUrl": "https://flagcdn.com/w320/gh.png",
     "extraData": {
@@ -288,10 +288,10 @@
     "questionText": "¿Cuál es la capital de Guatemala?",
     "correctAnswer": "Ciudad de Guatemala",
     "options": [
-      "Antigua",
-      "Quetzaltenango",
       "Escuintla",
-      "Ciudad de Guatemala"
+      "Andorra la Vieja",
+      "Antigua",
+      "Quetzaltenango"
     ],
     "extraData": {
       "countryCode": "gt",
@@ -698,10 +698,10 @@
     "questionText": "¿Cuál es la moneda de Noruega?",
     "correctAnswer": "Corona noruega",
     "options": [
-      "Corona sueca",
       "Corona danesa",
+      "Corona sueca",
       "Franco suizo",
-      "Corona noruega"
+      "Franco burundés"
     ],
     "extraData": {
       "countryCode": "no",

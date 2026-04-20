@@ -24,10 +24,10 @@
     "questionText": "¿De qué país es esta bandera?",
     "correctAnswer": "Costa Rica",
     "options": [
+      "Costa Rica",
       "Tailandia",
       "India",
-      "Corea del Norte",
-      "Costa Rica"
+      "Monaco"
     ],
     "imageUrl": "https://flagcdn.com/w320/cr.png",
     "extraData": {
@@ -78,10 +78,10 @@
     "questionText": "¿De qué país es esta bandera?",
     "correctAnswer": "Luxemburgo",
     "options": [
-      "Países Bajos",
-      "Bélgica",
+      "Luxemburgo",
       "Francia",
-      "Luxemburgo"
+      "Bélgica",
+      "España"
     ],
     "imageUrl": "https://flagcdn.com/w320/lu.png",
     "extraData": {
@@ -150,10 +150,10 @@
     "questionText": "¿De qué país es esta bandera?",
     "correctAnswer": "Canadá",
     "options": [
-      "Estados Unidos",
-      "Reino Unido",
       "Australia",
-      "Canadá"
+      "Canadá",
+      "Reino Unido",
+      "United States Virgin Islands"
     ],
     "imageUrl": "https://flagcdn.com/w320/ca.png",
     "extraData": {
@@ -254,10 +254,10 @@
     "questionText": "¿Cuál es la capital de Andorra?",
     "correctAnswer": "Andorra la Vieja",
     "options": [
+      "Amsterdam",
       "Escaldes-Engordany",
-      "Andorra la Vieja",
-      "Encamp",
-      "Sant Julià de Lòria"
+      "Sant Julià de Lòria",
+      "Encamp"
     ],
     "extraData": {
       "countryCode": "ad",
@@ -288,10 +288,10 @@
     "questionText": "¿Cuál es la capital de Panamá?",
     "correctAnswer": "Ciudad de Panamá",
     "options": [
-      "Colón",
-      "David",
       "Santiago",
-      "Ciudad de Panamá"
+      "David",
+      "Guernsey",
+      "Colón"
     ],
     "extraData": {
       "countryCode": "pa",
@@ -663,10 +663,10 @@
     "questionText": "¿Cuál es la moneda de Noruega?",
     "correctAnswer": "Corona noruega",
     "options": [
+      "Franco suizo",
       "Corona sueca",
       "Corona danesa",
-      "Franco suizo",
-      "Corona noruega"
+      "Lari georgiano"
     ],
     "extraData": {
       "countryCode": "no",
@@ -681,10 +681,10 @@
     "questionText": "¿Cuál es la moneda de Paraguay?",
     "correctAnswer": "Guaraní paraguayo",
     "options": [
-      "Peso argentino",
-      "Boliviano",
       "Peso uruguayo",
-      "Guaraní paraguayo"
+      "Rupia nepalí",
+      "Boliviano",
+      "Peso argentino"
     ],
     "extraData": {
       "countryCode": "py",
@@ -699,10 +699,10 @@
     "questionText": "¿Cuál es la moneda de Colombia?",
     "correctAnswer": "Peso colombiano",
     "options": [
-      "Peso mexicano",
-      "Sol peruano",
       "Real brasileño",
-      "Peso colombiano"
+      "Libra libanesa",
+      "Sol peruano",
+      "Peso mexicano"
     ],
     "extraData": {
       "countryCode": "co",

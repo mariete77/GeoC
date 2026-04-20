@@ -132,9 +132,9 @@
     "questionText": "¿De qué país es esta bandera?",
     "correctAnswer": "Fiji",
     "options": [
-      "Fiji",
+      "Puerto Rico",
       "Isle of Man",
-      "Guadeloupe",
+      "Fiji",
       "Djibouti"
     ],
     "imageUrl": "https://flagcdn.com/w320/fj.png",
@@ -350,8 +350,8 @@
     "options": [
       "United States Virgin Islands",
       "Iran",
-      "Bangladesh",
-      "Bolivia"
+      "Bolivia",
+      "Etiopía"
     ],
     "imageUrl": "https://flagcdn.com/w320/vi.png",
     "extraData": {
@@ -529,9 +529,9 @@
     "correctAnswer": "Central African Republic",
     "options": [
       "Marshall Islands",
-      "Central African Republic",
       "Ethiopia",
-      "Denmark"
+      "Hungary",
+      "Central African Republic"
     ],
     "imageUrl": "https://flagcdn.com/w320/cf.png",
     "extraData": {
@@ -582,10 +582,10 @@
     "questionText": "¿De qué país es esta bandera?",
     "correctAnswer": "India",
     "options": [
-      "Cayman Islands",
       "India",
-      "Denmark",
-      "Sint Maarten"
+      "Papua New Guinea",
+      "Sint Maarten",
+      "Cayman Islands"
     ],
     "imageUrl": "https://flagcdn.com/w320/in.png",
     "extraData": {
@@ -1032,10 +1032,10 @@
     "questionText": "¿De qué país es esta bandera?",
     "correctAnswer": "France",
     "options": [
-      "France",
       "Peru",
-      "Bangladesh",
-      "Laos"
+      "Laos",
+      "France",
+      "Qatar"
     ],
     "imageUrl": "https://flagcdn.com/w320/fr.png",
     "extraData": {
@@ -1464,10 +1464,10 @@
     "questionText": "¿De qué país es esta bandera?",
     "correctAnswer": "Lesotho",
     "options": [
-      "Denmark",
+      "Sri Lanka",
+      "Mozambique",
       "Lesotho",
-      "Japan",
-      "Mozambique"
+      "Japan"
     ],
     "imageUrl": "https://flagcdn.com/w320/ls.png",
     "extraData": {

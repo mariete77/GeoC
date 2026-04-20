@@ -139,10 +139,10 @@
     "questionText": "¿La moneda oficial de Namibia es...?",
     "correctAnswer": "Dólar namibio",
     "options": [
-      "Aruban florin",
-      "Cape Verdean escudo",
+      "Dólar namibio",
       "Euro",
-      "Dólar namibio"
+      "Manat turcomano",
+      "Aruban florin"
     ],
     "extraData": {
       "countryCode": "na",
@@ -193,9 +193,9 @@
     "correctAnswer": "Lithuania",
     "options": [
       "Algeria",
-      "Chile",
-      "Lithuania",
-      "Panama"
+      "Yibuti",
+      "Panama",
+      "Chile"
     ],
     "extraData": {
       "countryCode": "lt",
@@ -247,10 +247,10 @@
     "questionText": "¿Cuál es la ciudad principal de Hong Kong?",
     "correctAnswer": "Hong Kong",
     "options": [
-      "Hong Kong",
-      "Venezuela",
+      "Bermuda",
       "Turkey",
-      "Bermuda"
+      "Venezuela",
+      "Niamey"
     ],
     "extraData": {
       "countryCode": "hk",
@@ -264,10 +264,10 @@
     "questionText": "¿La capital de Bolivia se llama...?",
     "correctAnswer": "Bolivia",
     "options": [
-      "Norfolk Island",
-      "Bolivia",
+      "San Marino",
       "Vanuatu",
-      "San Marino"
+      "Ouagadougou",
+      "Bolivia"
     ],
     "extraData": {
       "countryCode": "bo",
@@ -336,9 +336,9 @@
     "questionText": "¿Cuál es la ciudad principal de Slovakia?",
     "correctAnswer": "Slovakia",
     "options": [
-      "Denmark",
       "Ukraine",
-      "Slovakia",
+      "Bakú",
+      "Denmark",
       "Hong Kong"
     ],
     "extraData": {
@@ -433,9 +433,9 @@
     "correctAnswer": "Mexico City",
     "options": [
       "Apia",
+      "Wellington",
       "Lisbon",
-      "Maseru",
-      "Mexico City"
+      "Maseru"
     ],
     "extraData": {
       "countryCode": "mx",
@@ -486,10 +486,10 @@
     "questionText": "¿En Pakistan se usa qué moneda?",
     "correctAnswer": "Rupia paquistaní",
     "options": [
-      "Franco CFA de África Occidental",
+      "Libra egipcia",
+      "Corona islandesa",
       "Ringgit malayo",
-      "Rupia paquistaní",
-      "Libra egipcia"
+      "Rupia paquistaní"
     ],
     "extraData": {
       "countryCode": "pk",
@@ -562,9 +562,9 @@
     "correctAnswer": "Bolívar soberano venezolano",
     "options": [
       "Bolívar soberano venezolano",
-      "Libra sursudanesa",
-      "Euro",
-      "Pound sterling"
+      "Pound sterling",
+      "Won norcoreano",
+      "Euro"
     ],
     "extraData": {
       "countryCode": "ve",
@@ -732,10 +732,10 @@
     "questionText": "¿Cuál es la moneda de Yemen?",
     "correctAnswer": "Rial yemení",
     "options": [
-      "Baht tailandés",
-      "Libra egipcia",
       "Sol peruano",
-      "Rial yemení"
+      "Libra egipcia",
+      "Baht tailandés",
+      "Peso colombiano"
     ],
     "extraData": {
       "countryCode": "ye",
@@ -1112,9 +1112,9 @@
     "questionText": "¿La moneda oficial de Sri Lanka es...?",
     "correctAnswer": "Rupia de Sri Lanka",
     "options": [
+      "Rupia nepalí",
       "Franco burundés",
-      "Dólar estadounidense",
-      "Loti lesoto",
+      "Bosnia and Herzegovina convertible mark",
       "Rupia de Sri Lanka"
     ],
     "extraData": {
@@ -1187,10 +1187,10 @@
     "questionText": "¿Cuál es la moneda de Sudan?",
     "correctAnswer": "Sudanese pound",
     "options": [
-      "Dólar zimbabuense",
       "Euro",
-      "Sudanese pound",
-      "Dólar estadounidense"
+      "Dólar estadounidense",
+      "Dólar zimbabuense",
+      "Rupia nepalí"
     ],
     "extraData": {
       "countryCode": "sd",
@@ -1312,10 +1312,10 @@
     "questionText": "¿El Aaiún es la capital de qué país?",
     "correctAnswer": "Western Sahara",
     "options": [
+      "Colombia",
       "Guyana",
-      "Dominica",
       "Western Sahara",
-      "Tokelau"
+      "Dominica"
     ],
     "extraData": {
       "countryCode": "eh",
@@ -1329,10 +1329,10 @@
     "questionText": "¿En South Sudan se usa qué moneda?",
     "correctAnswer": "Libra sursudanesa",
     "options": [
-      "Franco CFA de África Central",
-      "Rupia indonesia",
+      "Sol peruano",
+      "Euro",
       "Libra sursudanesa",
-      "Euro"
+      "Rupia indonesia"
     ],
     "extraData": {
       "countryCode": "ss",
@@ -1596,9 +1596,9 @@
     "questionText": "¿Qué idioma predomina en Japan?",
     "correctAnswer": "Japanese",
     "options": [
-      "Japanese",
-      "Chinese",
       "French",
+      "Polish",
+      "Chinese",
       "Aymara"
     ],
     "extraData": {
@@ -1614,10 +1614,10 @@
     "questionText": "¿La moneda oficial de Puerto Rico es...?",
     "correctAnswer": "Dólar estadounidense",
     "options": [
-      "Dólar estadounidense",
-      "Chelín keniano",
       "Euro",
-      "Dólar beliceño"
+      "Pound sterling",
+      "Dólar estadounidense",
+      "Chelín keniano"
     ],
     "extraData": {
       "countryCode": "pr",
@@ -1632,10 +1632,10 @@
     "questionText": "¿Cuál es la ciudad principal de New Zealand?",
     "correctAnswer": "New Zealand",
     "options": [
-      "Kyrgyzstan",
       "Portugal",
-      "Burundi",
-      "New Zealand"
+      "Kyrgyzstan",
+      "Chad",
+      "Burundi"
     ],
     "extraData": {
       "countryCode": "nz",
@@ -1668,9 +1668,9 @@
     "questionText": "¿Qué ciudad es el centro político de Tonga?",
     "correctAnswer": "Tonga",
     "options": [
+      "Somalia",
       "France",
       "Latvia",
-      "Tonga",
       "Switzerland"
     ],
     "extraData": {
@@ -1741,10 +1741,10 @@
     "questionText": "¿La capital de Comoros se llama...?",
     "correctAnswer": "Moroni",
     "options": [
+      "Baku",
+      "London",
       "El Aaiún",
-      "Moroni",
-      "Islamabad",
-      "London"
+      "Moroni"
     ],
     "extraData": {
       "countryCode": "km",

@@ -6,10 +6,10 @@
     "questionText": "¿Qué ciudad es el centro político de Russia?",
     "correctAnswer": "Russia",
     "options": [
+      "Turkey",
       "Estonia",
-      "Russia",
       "Réunion",
-      "Turkey"
+      "Georgia"
     ],
     "extraData": {
       "countryCode": "ru",
@@ -135,10 +135,10 @@
     "questionText": "¿Qué ciudad es el centro político de Ireland?",
     "correctAnswer": "Ireland",
     "options": [
-      "Iraq",
       "Zambia",
-      "Cuba",
-      "Ireland"
+      "Iraq",
+      "San Salvador",
+      "Cuba"
     ],
     "extraData": {
       "countryCode": "ie",
@@ -170,10 +170,10 @@
     "questionText": "¿En Dominica se usa qué moneda?",
     "correctAnswer": "Dólar del Caribe Oriental",
     "options": [
+      "Gibraltar pound",
       "Franco CFP",
-      "Dólar estadounidense",
-      "Dólar del Caribe Oriental",
-      "Gibraltar pound"
+      "Libra sudanesa",
+      "Dólar del Caribe Oriental"
     ],
     "extraData": {
       "countryCode": "dm",
@@ -362,10 +362,10 @@
     "questionText": "¿Cuál es la lengua oficial de Romania?",
     "correctAnswer": "Romanian",
     "options": [
-      "English",
-      "Norwegian Nynorsk",
       "Slovak",
-      "Romanian"
+      "Greek",
+      "Norwegian Nynorsk",
+      "English"
     ],
     "extraData": {
       "countryCode": "ro",
@@ -474,10 +474,10 @@
     "questionText": "¿En qué ciudad se encuentra el gobierno de Colombia?",
     "correctAnswer": "Colombia",
     "options": [
-      "Colombia",
-      "British Virgin Islands",
+      "Tokelau",
       "Madagascar",
-      "Tokelau"
+      "San José",
+      "British Virgin Islands"
     ],
     "extraData": {
       "countryCode": "co",
@@ -511,10 +511,10 @@
     "questionText": "¿Qué billetes y monedas circulan en Kuwait?",
     "correctAnswer": "Dinar kuwaití",
     "options": [
-      "Rublo ruso",
       "Grivna ucraniana",
+      "Rublo ruso",
       "Burmese kyat",
-      "Dinar kuwaití"
+      "Dólar de las Islas Salomón"
     ],
     "extraData": {
       "countryCode": "kw",
@@ -1078,9 +1078,9 @@
     "questionText": "¿En qué ciudad se encuentra el gobierno de Suriname?",
     "correctAnswer": "Suriname",
     "options": [
-      "Suriname",
+      "Laos",
+      "Daca",
       "Burkina Faso",
-      "Argentina",
       "Cook Islands"
     ],
     "extraData": {
@@ -1186,10 +1186,10 @@
     "questionText": "¿La moneda oficial de Ghana es...?",
     "correctAnswer": "Cedi ghanés",
     "options": [
-      "Euro",
+      "Honduran lempira",
       "Dinar tunecino",
-      "Dólar zimbabuense",
-      "Cedi ghanés"
+      "Cedi ghanés",
+      "Euro"
     ],
     "extraData": {
       "countryCode": "gh",
@@ -1337,10 +1337,10 @@
     "questionText": "¿Cuál es la capital de Indonesia?",
     "correctAnswer": "Indonesia",
     "options": [
+      "Faroe Islands",
       "San Marino",
-      "Antarctica",
-      "Indonesia",
-      "Faroe Islands"
+      "Tórshavn",
+      "Antarctica"
     ],
     "extraData": {
       "countryCode": "id",
@@ -1375,8 +1375,8 @@
     "options": [
       "Qatar",
       "Heard Island and McDonald Islands",
-      "Egypt",
-      "Turkmenistan"
+      "Atenas",
+      "Egypt"
     ],
     "extraData": {
       "countryCode": "tm",
@@ -1428,9 +1428,9 @@
     "questionText": "¿Qué moneda se usa en Nicaragua?",
     "correctAnswer": "Nicaraguan córdoba",
     "options": [
-      "Nicaraguan córdoba",
-      "Lao kip",
       "Dólar del Caribe Oriental",
+      "Lao kip",
+      "Dinar serbio",
       "Euro"
     ],
     "extraData": {
@@ -1620,9 +1620,9 @@
     "correctAnswer": "Anguilla",
     "options": [
       "Burundi",
-      "Djibouti",
-      "Anguilla",
-      "Fiji"
+      "Pekín",
+      "Fiji",
+      "Djibouti"
     ],
     "extraData": {
       "countryCode": "ai",
@@ -1672,9 +1672,9 @@
     "correctAnswer": "Spanish",
     "options": [
       "Portuguese",
-      "Spanish",
-      "English",
-      "Albanian"
+      "Albanian",
+      "Kinyarwanda",
+      "Spanish"
     ],
     "extraData": {
       "countryCode": "gt",

@@ -222,10 +222,10 @@
     "questionText": "¿De qué país es esta bandera?",
     "correctAnswer": "Guyana",
     "options": [
+      "Falkland Islands",
       "Anguilla",
-      "Guadeloupe",
-      "Guyana",
-      "Greenland"
+      "Greenland",
+      "Guyana"
     ],
     "imageUrl": "https://flagcdn.com/w320/gy.png",
     "extraData": {

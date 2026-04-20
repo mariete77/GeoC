@@ -151,9 +151,9 @@
     "correctAnswer": "Rusia",
     "options": [
       "Francia",
-      "Luxemburgo",
-      "Países Bajos",
-      "Rusia"
+      "Rusia",
+      "Perú",
+      "Luxemburgo"
     ],
     "imageUrl": "https://flagcdn.com/w320/ru.png",
     "extraData": {
@@ -642,10 +642,10 @@
     "questionText": "¿Cuál es la moneda de Mozambique?",
     "correctAnswer": "Metical mozambiqueño",
     "options": [
-      "Kwacha zambiano",
+      "Dólar canadiense",
       "Rand sudafricano",
-      "Chelín tanzano",
-      "Metical mozambiqueño"
+      "Kwacha zambiano",
+      "Chelín tanzano"
     ],
     "extraData": {
       "countryCode": "mz",
@@ -660,10 +660,10 @@
     "questionText": "¿Cuál es la moneda de Singapur?",
     "correctAnswer": "Dólar de Singapur",
     "options": [
-      "Ringgit malayo",
-      "Rupia indonesia",
       "Baht tailandés",
-      "Dólar de Singapur"
+      "Ringgit malayo",
+      "Dólar liberiano",
+      "Rupia indonesia"
     ],
     "extraData": {
       "countryCode": "sg",
@@ -678,10 +678,10 @@
     "questionText": "¿Cuál es la moneda de Uruguay?",
     "correctAnswer": "Peso uruguayo",
     "options": [
+      "Netherlands Antillean guilder",
       "Peso argentino",
-      "Real brasileño",
       "Guaraní paraguayo",
-      "Peso uruguayo"
+      "Real brasileño"
     ],
     "extraData": {
       "countryCode": "uy",
@@ -714,10 +714,10 @@
     "questionText": "¿Cuál es la moneda de Corea del Sur?",
     "correctAnswer": "Won surcoreano",
     "options": [
-      "Yen japonés",
-      "Yuan chino",
       "Dólar",
-      "Won surcoreano"
+      "Yuan chino",
+      "Yen japonés",
+      "denar"
     ],
     "extraData": {
       "countryCode": "kr",

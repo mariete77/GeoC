@@ -271,10 +271,10 @@
     "questionText": "¿Cuál es la capital de México?",
     "correctAnswer": "Ciudad de México",
     "options": [
+      "Seúl",
       "Guadalajara",
       "Monterrey",
-      "Cancún",
-      "Ciudad de México"
+      "Cancún"
     ],
     "extraData": {
       "countryCode": "mx",

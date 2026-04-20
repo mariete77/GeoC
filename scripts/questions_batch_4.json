@@ -60,10 +60,10 @@
     "questionText": "¿De qué país es esta bandera?",
     "correctAnswer": "Senegal",
     "options": [
+      "Croacia",
       "Mali",
       "Senegal",
-      "Guinea",
-      "Costa de Marfil"
+      "Guinea"
     ],
     "imageUrl": "https://flagcdn.com/w320/sn.png",
     "extraData": {
@@ -645,9 +645,9 @@
     "correctAnswer": "Won surcoreano",
     "options": [
       "Yen japonés",
-      "Yuan chino",
-      "Won surcoreano",
-      "Dólar de Singapur"
+      "Peso chileno",
+      "Dólar de Singapur",
+      "Yuan chino"
     ],
     "extraData": {
       "countryCode": "kr",
@@ -680,9 +680,9 @@
     "questionText": "¿Cuál es la moneda de Vietnam?",
     "correctAnswer": "Dong vietnamita",
     "options": [
-      "Baht tailandés",
       "Rupia indonesia",
-      "Dong vietnamita",
+      "Bosnia and Herzegovina convertible mark",
+      "Baht tailandés",
       "Kip laosiano"
     ],
     "extraData": {

@@ -6,10 +6,10 @@
     "questionText": "¿De qué país es esta bandera?",
     "correctAnswer": "Bélgica",
     "options": [
-      "Países Bajos",
       "Luxemburgo",
       "Bélgica",
-      "Francia"
+      "Francia",
+      "Madagascar"
     ],
     "imageUrl": "https://flagcdn.com/w320/be.png",
     "extraData": {
@@ -42,9 +42,9 @@
     "questionText": "¿De qué país es esta bandera?",
     "correctAnswer": "India",
     "options": [
-      "Costa de Marfil",
-      "Níger",
       "Irlanda",
+      "Níger",
+      "Benín",
       "India"
     ],
     "imageUrl": "https://flagcdn.com/w320/in.png",
@@ -237,9 +237,9 @@
     "questionText": "¿Cuál es la capital de Guatemala?",
     "correctAnswer": "Ciudad de Guatemala",
     "options": [
-      "Antigua",
       "Quetzaltenango",
-      "Ciudad de Guatemala",
+      "Abuya",
+      "Antigua",
       "Escuintla"
     ],
     "extraData": {
@@ -324,8 +324,8 @@
     "options": [
       "Río de Janeiro",
       "São Paulo",
-      "Brasilia",
-      "Salvador"
+      "Salvador",
+      "India"
     ],
     "extraData": {
       "countryCode": "br",
@@ -717,10 +717,10 @@
     "questionText": "¿Cuál es la moneda de Australia?",
     "correctAnswer": "Dólar australiano",
     "options": [
-      "Dólar neozelandés",
       "Libra esterlina",
+      "Samoan tālā",
       "Euro",
-      "Dólar australiano"
+      "Dólar neozelandés"
     ],
     "extraData": {
       "countryCode": "au",

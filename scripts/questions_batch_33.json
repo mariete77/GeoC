@@ -6,10 +6,10 @@
     "questionText": "¿De qué país es esta bandera?",
     "correctAnswer": "Nigeria",
     "options": [
-      "Ghana",
-      "Costa de Marfil",
+      "Martinique",
+      "Camerún",
       "Nigeria",
-      "Camerún"
+      "Ghana"
     ],
     "imageUrl": "https://flagcdn.com/w320/ng.png",
     "extraData": {
@@ -188,8 +188,8 @@
     "options": [
       "Río de Janeiro",
       "São Paulo",
-      "Brasilia",
-      "Salvador"
+      "Salvador",
+      "Longyearbyen"
     ],
     "extraData": {
       "countryCode": "br",
@@ -649,7 +649,7 @@
       "Rial omaní",
       "Dirham marroquí",
       "Rial iraní",
-      "Dinar kuwaití"
+      "Baht tailandés"
     ],
     "extraData": {
       "countryCode": "kw",
@@ -664,10 +664,10 @@
     "questionText": "¿Cuál es la moneda de Georgia?",
     "correctAnswer": "Lari georgiano",
     "options": [
-      "Dram armenio",
-      "Manat azerbaiyano",
+      "Rupia seychellense",
       "Rublo ruso",
-      "Lari georgiano"
+      "Dram armenio",
+      "Manat azerbaiyano"
     ],
     "extraData": {
       "countryCode": "ge",
@@ -703,7 +703,7 @@
       "Baht tailandés",
       "Ringgit malayo",
       "Peso filipino",
-      "Rupia indonesia"
+      "Won surcoreano"
     ],
     "extraData": {
       "countryCode": "id",
@@ -718,9 +718,9 @@
     "questionText": "¿Cuál es la moneda de Italia?",
     "correctAnswer": "Euro",
     "options": [
-      "Lira italiana",
-      "Franco suizo",
+      "Dirham marroquí",
       "Libra esterlina",
+      "Franco suizo",
       "Euro"
     ],
     "extraData": {

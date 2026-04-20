@@ -42,7 +42,7 @@
     "correctAnswer": "Malay",
     "options": [
       "Malay",
-      "English",
+      "Suazi",
       "Spanish",
       "Guaraní"
     ],
@@ -59,10 +59,10 @@
     "questionText": "¿En Gabon se usa qué moneda?",
     "correctAnswer": "Franco CFA de África Central",
     "options": [
-      "Euro",
+      "Franco CFA de África Central",
       "Chelín somalí",
-      "Dram armenio",
-      "Franco CFA de África Central"
+      "Riyal saudí",
+      "Euro"
     ],
     "extraData": {
       "countryCode": "ga",
@@ -128,10 +128,10 @@
     "questionText": "¿En Vietnam qué idioma se usa?",
     "correctAnswer": "Vietnamese",
     "options": [
-      "English",
       "Portuguese",
-      "Vietnamese",
-      "Arabic"
+      "Letón",
+      "Arabic",
+      "Vietnamese"
     ],
     "extraData": {
       "countryCode": "vn",
@@ -182,10 +182,10 @@
     "questionText": "¿Cuál es la capital de Svalbard and Jan Mayen?",
     "correctAnswer": "Svalbard and Jan Mayen",
     "options": [
-      "Saint Kitts and Nevis",
-      "United Kingdom",
-      "Svalbard and Jan Mayen",
-      "Afghanistan"
+      "Cook Islands",
+      "Afghanistan",
+      "Madrid",
+      "United Kingdom"
     ],
     "extraData": {
       "countryCode": "sj",
@@ -199,10 +199,10 @@
     "questionText": "¿En qué ciudad se encuentra el gobierno de Eswatini?",
     "correctAnswer": "Eswatini",
     "options": [
-      "Caribbean Netherlands",
-      "Eswatini",
       "Anguilla",
-      "Qatar"
+      "Qatar",
+      "Dushanbe",
+      "Caribbean Netherlands"
     ],
     "extraData": {
       "countryCode": "sz",
@@ -288,10 +288,10 @@
     "questionText": "¿En qué ciudad se encuentra el gobierno de Syria?",
     "correctAnswer": "Syria",
     "options": [
-      "South Africa",
       "American Samoa",
-      "Syria",
-      "Haiti"
+      "Asjabad",
+      "Haiti",
+      "South Africa"
     ],
     "extraData": {
       "countryCode": "sy",
@@ -341,10 +341,10 @@
     "questionText": "¿Qué billetes y monedas circulan en Nepal?",
     "correctAnswer": "Rupia nepalí",
     "options": [
-      "Colón costarricense",
-      "Rupia nepalí",
       "Libra esterlina",
-      "Dólar australiano"
+      "Colón costarricense",
+      "Dólar australiano",
+      "Dinar argelino"
     ],
     "extraData": {
       "countryCode": "np",
@@ -450,9 +450,9 @@
     "correctAnswer": "Guadeloupe",
     "options": [
       "Lebanon",
-      "Russia",
       "Guadeloupe",
-      "Tokelau"
+      "Budapest",
+      "Russia"
     ],
     "extraData": {
       "countryCode": "gp",
@@ -520,8 +520,8 @@
     "options": [
       "Korean",
       "Arabic",
-      "Dzongkha",
-      "Belizean Creole"
+      "Turkish",
+      "Dzongkha"
     ],
     "extraData": {
       "countryCode": "bt",
@@ -554,9 +554,9 @@
     "correctAnswer": "Namibia",
     "options": [
       "Kiribati",
-      "Tuvalu",
+      "Bucharest",
       "Guinea",
-      "Namibia"
+      "Tuvalu"
     ],
     "extraData": {
       "countryCode": "na",
@@ -570,10 +570,10 @@
     "questionText": "¿En Saint Pierre and Miquelon qué idioma se usa?",
     "correctAnswer": "French",
     "options": [
-      "Burmese",
-      "French",
+      "Thai",
       "Catalan",
-      "English"
+      "French",
+      "Burmese"
     ],
     "extraData": {
       "countryCode": "pm",
@@ -749,10 +749,10 @@
     "questionText": "¿Qué ciudad es el centro político de Paraguay?",
     "correctAnswer": "Paraguay",
     "options": [
+      "New Caledonia",
+      "Tashkent",
       "Aruba",
-      "Botswana",
-      "Paraguay",
-      "New Caledonia"
+      "Botswana"
     ],
     "extraData": {
       "countryCode": "py",
@@ -766,10 +766,10 @@
     "questionText": "¿La moneda oficial de Jamaica es...?",
     "correctAnswer": "Dólar jamaicano",
     "options": [
-      "Dólar jamaicano",
       "Franco suizo",
-      "Dólar zimbabuense",
-      "Chelín ugandés"
+      "Dólar jamaicano",
+      "Chelín ugandés",
+      "Dinar kuwaití"
     ],
     "extraData": {
       "countryCode": "jm",
@@ -820,10 +820,10 @@
     "questionText": "¿Cuál es la ciudad principal de Benin?",
     "correctAnswer": "Benin",
     "options": [
-      "Benin",
+      "Liechtenstein",
       "Montserrat",
-      "Gambia",
-      "Liechtenstein"
+      "Bruselas",
+      "Gambia"
     ],
     "extraData": {
       "countryCode": "bj",
@@ -855,10 +855,10 @@
     "questionText": "¿El idioma principal de Zambia es...?",
     "correctAnswer": "English",
     "options": [
+      "Ukrainian",
       "French",
-      "Chinese",
-      "English",
-      "Greek"
+      "Greek",
+      "English"
     ],
     "extraData": {
       "countryCode": "zm",
@@ -909,9 +909,9 @@
     "correctAnswer": "Senegal",
     "options": [
       "Cuba",
+      "Somalia",
       "Mongolia",
-      "Dominican Republic",
-      "Senegal"
+      "Dominican Republic"
     ],
     "extraData": {
       "countryCode": "sn",
@@ -943,10 +943,10 @@
     "questionText": "¿Qué moneda se usa en Taiwan?",
     "correctAnswer": "Nuevo dólar taiwanés",
     "options": [
-      "Dinar jordano",
-      "Tenge kazajo",
       "Angolan kwanza",
-      "Nuevo dólar taiwanés"
+      "Rand sudafricano",
+      "Tenge kazajo",
+      "Dinar jordano"
     ],
     "extraData": {
       "countryCode": "tw",
@@ -979,9 +979,9 @@
     "correctAnswer": "Arabic",
     "options": [
       "Arabic",
+      "Vietnamese",
       "Portuguese",
-      "English",
-      "Vietnamese"
+      "Somalí"
     ],
     "extraData": {
       "countryCode": "sa",
@@ -996,10 +996,10 @@
     "questionText": "¿Cuál es la ciudad principal de Taiwan?",
     "correctAnswer": "Taiwan",
     "options": [
-      "Taiwan",
-      "Belize",
+      "Guernsey",
       "Fiji",
-      "Guernsey"
+      "Iceland",
+      "Belize"
     ],
     "extraData": {
       "countryCode": "tw",
@@ -1033,7 +1033,7 @@
       "Sudanese pound",
       "Dólar de las Islas Cook",
       "Euro",
-      "Dólar del Caribe Oriental"
+      "Boliviano boliviano"
     ],
     "extraData": {
       "countryCode": "sm",

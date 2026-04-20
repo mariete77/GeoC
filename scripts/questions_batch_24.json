@@ -150,10 +150,10 @@
     "questionText": "¿De qué país es esta bandera?",
     "correctAnswer": "China",
     "options": [
-      "Corea del Sur",
+      "China",
+      "Kenia",
       "Vietnam",
-      "Japón",
-      "China"
+      "Japón"
     ],
     "imageUrl": "https://flagcdn.com/w320/cn.png",
     "extraData": {
@@ -626,10 +626,10 @@
     "questionText": "¿Cuál es el idioma oficial de Italia?",
     "correctAnswer": "Italiano",
     "options": [
-      "Francés",
+      "Japonés",
       "Español",
-      "Portugués",
-      "Italiano"
+      "Francés",
+      "Portugués"
     ],
     "extraData": {
       "countryCode": "it",

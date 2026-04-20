@@ -24,10 +24,10 @@
     "questionText": "¿La moneda oficial de Belarus es...?",
     "correctAnswer": "Belarusian ruble",
     "options": [
-      "Dólar neozelandés",
+      "Euro",
       "Rial yemení",
       "Belarusian ruble",
-      "Euro"
+      "Chelín ugandés"
     ],
     "extraData": {
       "countryCode": "by",
@@ -79,10 +79,10 @@
     "questionText": "¿Cuál es la capital de Greece?",
     "correctAnswer": "Greece",
     "options": [
-      "Madagascar",
+      "Bahamas",
       "Morocco",
-      "Russia",
-      "Greece"
+      "Madagascar",
+      "Russia"
     ],
     "extraData": {
       "countryCode": "gr",
@@ -131,10 +131,10 @@
     "questionText": "¿Cuál es la ciudad principal de Liechtenstein?",
     "correctAnswer": "Liechtenstein",
     "options": [
-      "Liechtenstein",
-      "Germany",
+      "Tunisia",
+      "Yemen",
       "Guernsey",
-      "Yemen"
+      "Germany"
     ],
     "extraData": {
       "countryCode": "li",
@@ -240,10 +240,10 @@
     "questionText": "¿El idioma principal de Philippines es...?",
     "correctAnswer": "English",
     "options": [
-      "Dutch",
+      "Turkish",
       "French",
-      "English",
-      "Japanese"
+      "Dutch",
+      "English"
     ],
     "extraData": {
       "countryCode": "ph",
@@ -335,9 +335,9 @@
     "questionText": "¿Cuál es la moneda de Chile?",
     "correctAnswer": "Peso chileno",
     "options": [
-      "Libra siria",
-      "Peso chileno",
       "Grivna ucraniana",
+      "Libra siria",
+      "Kina papú",
       "Bosnia and Herzegovina convertible mark"
     ],
     "extraData": {
@@ -484,8 +484,8 @@
     "questionText": "¿En Indonesia se usa qué moneda?",
     "correctAnswer": "Rupia indonesia",
     "options": [
-      "Franco CFA de África Central",
       "Rupia indonesia",
+      "United Arab Emirates dirham",
       "Dinar kuwaití",
       "Franco suizo"
     ],
@@ -672,9 +672,9 @@
     "questionText": "¿En Israel qué idioma se usa?",
     "correctAnswer": "Arabic",
     "options": [
-      "Greenlandic",
-      "English",
       "Portuguese",
+      "Indonesian",
+      "Hebreo",
       "Arabic"
     ],
     "extraData": {
@@ -785,9 +785,9 @@
     "questionText": "¿Qué ciudad es el centro político de DR Congo?",
     "correctAnswer": "DR Congo",
     "options": [
-      "DR Congo",
-      "Guinea-Bissau",
       "South Africa",
+      "Papeetē",
+      "Guinea-Bissau",
       "Mali"
     ],
     "extraData": {
@@ -1049,8 +1049,8 @@
     "options": [
       "Leu rumano",
       "Dólar de Brunéi",
-      "Euro",
-      "Dólar de las Islas Salomón"
+      "Manat turcomano",
+      "Euro"
     ],
     "extraData": {
       "countryCode": "bn",
@@ -1065,10 +1065,10 @@
     "questionText": "¿Cuál es la ciudad principal de Latvia?",
     "correctAnswer": "Latvia",
     "options": [
-      "Latvia",
       "Libya",
-      "South Korea",
-      "Senegal"
+      "Brasília",
+      "Senegal",
+      "South Korea"
     ],
     "extraData": {
       "countryCode": "lv",
@@ -1121,10 +1121,10 @@
     "questionText": "¿En Switzerland se usa qué moneda?",
     "correctAnswer": "Franco suizo",
     "options": [
-      "Franco suizo",
-      "Franco CFA de África Central",
       "Euro",
-      "Franco CFP"
+      "Franco CFP",
+      "Franco suizo",
+      "Kina papú"
     ],
     "extraData": {
       "countryCode": "ch",
@@ -1369,10 +1369,10 @@
     "questionText": "¿El idioma principal de Cayman Islands es...?",
     "correctAnswer": "English",
     "options": [
+      "Chibarwe",
       "English",
-      "Portuguese",
       "French",
-      "Chibarwe"
+      "Malay"
     ],
     "extraData": {
       "countryCode": "ky",
@@ -1614,10 +1614,10 @@
     "questionText": "¿Cuál es la lengua oficial de Indonesia?",
     "correctAnswer": "Indonesian",
     "options": [
-      "English",
       "Montenegrin",
-      "French",
-      "Indonesian"
+      "Chibarwe",
+      "English",
+      "French"
     ],
     "extraData": {
       "countryCode": "id",
@@ -1670,10 +1670,10 @@
     "questionText": "¿En Vatican City se usa qué moneda?",
     "correctAnswer": "Euro",
     "options": [
-      "Peso chileno",
+      "Ariary malgache",
       "Złoty polaco",
-      "Euro",
-      "Franco CFA de África Occidental"
+      "Dinar libio",
+      "Euro"
     ],
     "extraData": {
       "countryCode": "va",

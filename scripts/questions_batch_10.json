@@ -24,10 +24,10 @@
     "questionText": "¿De qué país es esta bandera?",
     "correctAnswer": "Kenia",
     "options": [
-      "Sudán del Sur",
-      "Kenia",
+      "Somalia",
+      "Tanzania",
       "Uganda",
-      "Tanzania"
+      "Kenia"
     ],
     "imageUrl": "https://flagcdn.com/w320/ke.png",
     "extraData": {
@@ -42,10 +42,10 @@
     "questionText": "¿De qué país es esta bandera?",
     "correctAnswer": "Paraguay",
     "options": [
-      "Países Bajos",
+      "Haiti",
+      "Francia",
       "Paraguay",
-      "Luxemburgo",
-      "Francia"
+      "Luxemburgo"
     ],
     "imageUrl": "https://flagcdn.com/w320/py.png",
     "extraData": {
@@ -62,7 +62,7 @@
     "options": [
       "Guinea",
       "Ghana",
-      "Costa de Marfil",
+      "Norfolk Island",
       "Togo"
     ],
     "imageUrl": "https://flagcdn.com/w320/gh.png",
@@ -203,10 +203,10 @@
     "questionText": "¿Cuál es la capital de Singapur?",
     "correctAnswer": "Singapur",
     "options": [
-      "Singapur",
       "Jurong East",
-      "Woodlands",
-      "Tampines"
+      "Tampines",
+      "Yuba",
+      "Woodlands"
     ],
     "extraData": {
       "countryCode": "sg",
@@ -664,10 +664,10 @@
     "questionText": "¿Cuál es la moneda de Colombia?",
     "correctAnswer": "Peso colombiano",
     "options": [
+      "Real brasileño",
       "Peso mexicano",
-      "Peso colombiano",
-      "Sol peruano",
-      "Real brasileño"
+      "Dólar bermudeño",
+      "Sol peruano"
     ],
     "extraData": {
       "countryCode": "co",
@@ -682,10 +682,10 @@
     "questionText": "¿Cuál es la moneda de Kuwait?",
     "correctAnswer": "Dinar kuwaití",
     "options": [
+      "United Arab Emirates dirham",
+      "Rial iraní",
       "Rial omaní",
-      "Dinar kuwaití",
-      "Dirham marroquí",
-      "Rial iraní"
+      "Dirham marroquí"
     ],
     "extraData": {
       "countryCode": "kw",
@@ -718,10 +718,10 @@
     "questionText": "¿Cuál es la moneda de India?",
     "correctAnswer": "Rupia india",
     "options": [
-      "Rupia pakistaní",
-      "Rupia india",
+      "Chelín keniano",
+      "Yuan chino",
       "Taka bangladesí",
-      "Yuan chino"
+      "Rupia pakistaní"
     ],
     "extraData": {
       "countryCode": "in",

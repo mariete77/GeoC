@@ -61,9 +61,9 @@
     "correctAnswer": "Charlotte Amalie",
     "options": [
       "Saipan",
-      "Guatemala City",
-      "Ngerulmud",
-      "Charlotte Amalie"
+      "Charlotte Amalie",
+      "Pristina",
+      "Ngerulmud"
     ],
     "extraData": {
       "countryCode": "vi",
@@ -153,10 +153,10 @@
     "questionText": "¿Qué idioma se habla en Russia?",
     "correctAnswer": "Russian",
     "options": [
+      "Tigriña",
       "Dutch",
       "English",
-      "Afrikaans",
-      "Russian"
+      "Afrikaans"
     ],
     "extraData": {
       "countryCode": "ru",
@@ -189,9 +189,9 @@
     "questionText": "¿Qué moneda se usa en Sri Lanka?",
     "correctAnswer": "Rupia de Sri Lanka",
     "options": [
-      "Rupia de Sri Lanka",
-      "Franco CFA de África Occidental",
       "Ouguiya mauritana",
+      "Dólar de Trinidad y Tobago",
+      "Franco CFA de África Occidental",
       "Leu moldavo"
     ],
     "extraData": {
@@ -207,10 +207,10 @@
     "questionText": "¿La moneda oficial de Mauritania es...?",
     "correctAnswer": "Ouguiya mauritana",
     "options": [
-      "Ouguiya mauritana",
-      "Euro",
       "Nuevo séquel israelí",
-      "Dólar neozelandés"
+      "Euro",
+      "Riyal saudí",
+      "Ouguiya mauritana"
     ],
     "extraData": {
       "countryCode": "mr",
@@ -397,10 +397,10 @@
     "questionText": "¿La moneda oficial de Mongolia es...?",
     "correctAnswer": "Tögrög mongol",
     "options": [
-      "Dólar barbadense",
+      "Dram armenio",
+      "Tögrög mongol",
       "Euro",
-      "Dólar estadounidense",
-      "Tögrög mongol"
+      "Kina papú"
     ],
     "extraData": {
       "countryCode": "mn",
@@ -548,9 +548,9 @@
     "questionText": "¿En Niger qué idioma se usa?",
     "correctAnswer": "French",
     "options": [
-      "English",
-      "French",
+      "Indonesian",
       "Albanian",
+      "French",
       "Chamorro"
     ],
     "extraData": {
@@ -605,10 +605,10 @@
     "questionText": "¿En Mauritania qué idioma se usa?",
     "correctAnswer": "Arabic",
     "options": [
-      "Guaraní",
       "Arabic",
-      "English",
-      "French"
+      "Suazi",
+      "Guaraní",
+      "Nepalí"
     ],
     "extraData": {
       "countryCode": "mr",
@@ -812,10 +812,10 @@
     "questionText": "¿La moneda oficial de Nepal es...?",
     "correctAnswer": "Rupia nepalí",
     "options": [
-      "Chelín somalí",
-      "Dólar australiano",
-      "Dólar liberiano",
-      "Rupia nepalí"
+      "Rupia nepalí",
+      "Manat azerbaiyano",
+      "Yuan chino",
+      "Chelín somalí"
     ],
     "extraData": {
       "countryCode": "np",
@@ -963,9 +963,9 @@
     "questionText": "¿Cuál es la capital de French Guiana?",
     "correctAnswer": "French Guiana",
     "options": [
+      "Varsovia",
       "Kosovo",
       "United Kingdom",
-      "French Guiana",
       "Saint Lucia"
     ],
     "extraData": {
@@ -982,8 +982,8 @@
     "options": [
       "Brunei",
       "Romania",
-      "India",
-      "Qatar"
+      "Qatar",
+      "Berna"
     ],
     "extraData": {
       "countryCode": "in",
@@ -999,8 +999,8 @@
     "options": [
       "Spanish",
       "Macedonian",
-      "French",
-      "English"
+      "Vietnamita",
+      "Islandés"
     ],
     "extraData": {
       "countryCode": "mk",
@@ -1035,7 +1035,7 @@
       "English",
       "Dutch",
       "Greenlandic",
-      "Belizean Creole"
+      "Korean"
     ],
     "extraData": {
       "countryCode": "bz",
@@ -1103,9 +1103,9 @@
     "correctAnswer": "Oman",
     "options": [
       "Barbados",
-      "Turkey",
       "Curaçao",
-      "Oman"
+      "Kosovo",
+      "Turkey"
     ],
     "extraData": {
       "countryCode": "om",
@@ -1383,10 +1383,10 @@
     "questionText": "¿Cuál es la capital de Israel?",
     "correctAnswer": "Israel",
     "options": [
-      "Macau",
+      "Rwanda",
       "Guinea",
-      "Israel",
-      "Saint Pierre and Miquelon"
+      "Saint Pierre and Miquelon",
+      "Macau"
     ],
     "extraData": {
       "countryCode": "il",
@@ -1400,10 +1400,10 @@
     "questionText": "¿En Grenada se usa qué moneda?",
     "correctAnswer": "Dólar del Caribe Oriental",
     "options": [
-      "Won surcoreano",
-      "Dólar del Caribe Oriental",
+      "Yuan chino",
       "Netherlands Antillean guilder",
-      "Franco CFA de África Central"
+      "Won surcoreano",
+      "Dólar del Caribe Oriental"
     ],
     "extraData": {
       "countryCode": "gd",
@@ -1475,9 +1475,9 @@
     "correctAnswer": "Dólar australiano",
     "options": [
       "Dólar australiano",
-      "Dólar de las Islas Salomón",
-      "Dólar estadounidense",
-      "Franco guineano"
+      "Quetzal guatemalteco",
+      "Franco guineano",
+      "Dong vietnamita"
     ],
     "extraData": {
       "countryCode": "cc",
@@ -1547,10 +1547,10 @@
     "questionText": "¿En Kosovo se usa qué moneda?",
     "correctAnswer": "Euro",
     "options": [
+      "Som uzbeko",
+      "Euro",
       "Dólar australiano",
-      "Franco CFA de África Central",
-      "Franco CFA de África Occidental",
-      "Euro"
+      "Leu moldavo"
     ],
     "extraData": {
       "countryCode": "xk",
@@ -1701,10 +1701,10 @@
     "questionText": "¿En Haiti qué idioma se usa?",
     "correctAnswer": "French",
     "options": [
-      "English",
       "French",
       "Icelandic",
-      "Georgian"
+      "Georgian",
+      "Nepalí"
     ],
     "extraData": {
       "countryCode": "ht",

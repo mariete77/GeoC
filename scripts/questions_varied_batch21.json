@@ -684,10 +684,10 @@
     "questionText": "¿La capital de Paraguay se llama...?",
     "correctAnswer": "Paraguay",
     "options": [
-      "Malawi",
       "Paraguay",
       "Montserrat",
-      "Sudan"
+      "Sudan",
+      "Uganda"
     ],
     "extraData": {
       "countryCode": "py",
@@ -756,10 +756,10 @@
     "questionText": "¿Cuál es el idioma oficial de Belarus?",
     "correctAnswer": "Belarusian",
     "options": [
-      "Belarusian",
       "Norwegian Nynorsk",
+      "English",
       "Portuguese",
-      "English"
+      "Khmer"
     ],
     "extraData": {
       "countryCode": "by",
@@ -847,10 +847,10 @@
     "questionText": "¿La moneda oficial de Iran es...?",
     "correctAnswer": "Rial iraní",
     "options": [
-      "Libra esterlina",
-      "Franco CFP",
+      "Franco yibutí",
       "Rial iraní",
-      "Libra siria"
+      "Libra siria",
+      "Franco CFP"
     ],
     "extraData": {
       "countryCode": "ir",
@@ -1021,8 +1021,8 @@
     "correctAnswer": "Franco CFP",
     "options": [
       "Franco CFP",
-      "Icelandic króna",
       "Libra esterlina",
+      "Won norcoreano",
       "Dólar namibio"
     ],
     "extraData": {
@@ -1038,10 +1038,10 @@
     "questionText": "¿Qué moneda se usa en Samoa?",
     "correctAnswer": "Samoan tālā",
     "options": [
-      "Euro",
       "Burmese kyat",
-      "Samoan tālā",
-      "krone"
+      "Corona danesa",
+      "krone",
+      "Euro"
     ],
     "extraData": {
       "countryCode": "ws",
@@ -1057,9 +1057,9 @@
     "correctAnswer": "Lithuania",
     "options": [
       "Saint Pierre and Miquelon",
+      "Cook Islands",
       "Slovakia",
-      "Lithuania",
-      "Cook Islands"
+      "Harare"
     ],
     "extraData": {
       "countryCode": "lt",
@@ -1151,10 +1151,10 @@
     "questionText": "¿En Mozambique qué idioma se usa?",
     "correctAnswer": "Portuguese",
     "options": [
+      "Albanés",
       "Spanish",
-      "Portuguese",
-      "English",
-      "Dutch"
+      "Dutch",
+      "Portuguese"
     ],
     "extraData": {
       "countryCode": "mz",
@@ -1188,10 +1188,10 @@
     "questionText": "¿Qué moneda se usa en Taiwan?",
     "correctAnswer": "Nuevo dólar taiwanés",
     "options": [
-      "Euro",
-      "Nuevo dólar taiwanés",
+      "Som uzbeko",
+      "Franco yibutí",
       "Ariary malgache",
-      "Som uzbeko"
+      "Euro"
     ],
     "extraData": {
       "countryCode": "tw",
@@ -1395,10 +1395,10 @@
     "questionText": "¿La moneda oficial de Cook Islands es...?",
     "correctAnswer": "Dólar de las Islas Cook",
     "options": [
-      "Euro",
-      "Dólar de las Islas Caimán",
       "Dólar de las Islas Cook",
-      "Franco CFA de África Central"
+      "Franco comorano",
+      "Franco CFA de África Central",
+      "Euro"
     ],
     "extraData": {
       "countryCode": "ck",
@@ -1631,8 +1631,8 @@
     "questionText": "¿En Yemen qué idioma se usa?",
     "correctAnswer": "Arabic",
     "options": [
-      "English",
-      "French",
+      "Árabe",
+      "Turkish",
       "Dutch",
       "Arabic"
     ],
@@ -1707,10 +1707,10 @@
     "questionText": "¿Cuál es la divisa de Falkland Islands?",
     "correctAnswer": "Falkland Islands pound",
     "options": [
-      "Guaraní paraguayo",
-      "Rupia nepalí",
       "Manat turcomano",
-      "Falkland Islands pound"
+      "Tongan paʻanga",
+      "Guaraní paraguayo",
+      "Rupia nepalí"
     ],
     "extraData": {
       "countryCode": "fk",
@@ -1744,10 +1744,10 @@
     "questionText": "¿El idioma principal de Montenegro es...?",
     "correctAnswer": "Montenegrin",
     "options": [
+      "Dari",
       "English",
-      "Portuguese",
       "Montenegrin",
-      "Dari"
+      "Suazi"
     ],
     "extraData": {
       "countryCode": "me",

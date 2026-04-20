@@ -610,10 +610,10 @@
     "questionText": "¿Cuál es el idioma oficial de Georgia?",
     "correctAnswer": "Georgiano",
     "options": [
-      "Armenio",
-      "Azerí",
       "Ruso",
-      "Georgiano"
+      "Albanés",
+      "Armenio",
+      "Azerí"
     ],
     "extraData": {
       "countryCode": "ge",
@@ -718,10 +718,10 @@
     "questionText": "¿Cuál es la moneda de India?",
     "correctAnswer": "Rupia india",
     "options": [
-      "Yuan chino",
+      "Yen japonés",
       "Baht tailandés",
       "Rupia pakistaní",
-      "Rupia india"
+      "Yuan chino"
     ],
     "extraData": {
       "countryCode": "in",
