@@ -10,6 +10,7 @@ class AnswerFeedbackWidget extends StatefulWidget {
   final String selectedAnswer;
   final int score;
   final Question? question;
+  final VoidCallback? onNextQuestion;
 
   const AnswerFeedbackWidget({
     super.key,
@@ -18,6 +19,7 @@ class AnswerFeedbackWidget extends StatefulWidget {
     required this.selectedAnswer,
     required this.score,
     this.question,
+    this.onNextQuestion,
   });
 
   @override
@@ -312,6 +314,51 @@ class _AnswerFeedbackWidgetState extends State<AnswerFeedbackWidget>
                             ),
                           ),
                         ],
+
+                        // ── Gradient "Siguiente Pregunta" Button (PreguntaCorrecta mockup)
+                        const SizedBox(height: 24),
+                        SizedBox(
+                          width: double.infinity,
+                          height: 56,
+                          child: DecoratedBox(
+                            decoration: BoxDecoration(
+                              borderRadius: BorderRadius.circular(9999),
+                              gradient: LinearGradient(
+                                colors: widget.isCorrect
+                                    ? [AppColors.primary, AppColors.primaryContainer]
+                                    : [AppColors.error, AppColors.errorContainer],
+                              ),
+                              boxShadow: [
+                                BoxShadow(
+                                  color: (widget.isCorrect
+                                          ? AppColors.primary
+                                          : AppColors.error)
+                                      .withOpacity(0.3),
+                                  blurRadius: 24,
+                                  offset: const Offset(0, 8),
+                                ),
+                              ],
+                            ),
+                            child: Material(
+                              color: Colors.transparent,
+                              child: InkWell(
+                                borderRadius: BorderRadius.circular(9999),
+                                onTap: widget.onNextQuestion,
+                                child: Center(
+                                  child: Text(
+                                    'SIGUIENTE PREGUNTA',
+                                    style: GoogleFonts.plusJakartaSans(
+                                      fontSize: 16,
+                                      fontWeight: FontWeight.w700,
+                                      color: AppColors.onPrimary,
+                                      letterSpacing: 1.5,
+                                    ),
+                                  ),
+                                ),
+                              ),
+                            ),
+                          ),
+                        ),
                       ],
                     ),
                   ),

@@ -56,13 +56,21 @@ class GameState with _$GameState {
 @riverpod
 class GameNotifier extends _$GameNotifier {
   Timer? _timer;
+  Timer? _answeredTimer;
   List<Question> _questions = [];
   int _currentQuestionIndex = 0;
+
+  // Pending state for manual "next question" flow
+  int _pendingScore = 0;
+  List<Answer> _pendingUserAnswers = [];
+  int _pendingCorrectAnswers = 0;
+  int _pendingStreak = 0;
 
   @override
   GameState build() {
     ref.onDispose(() {
       _timer?.cancel();
+      _answeredTimer?.cancel();
     });
     return const GameState.initial();
   }
@@ -266,6 +274,12 @@ class GameNotifier extends _$GameNotifier {
   }) {
     final displayAnswer = isTimeout ? "Time's up!" : selectedAnswer;
 
+    // Store pending values for manual next-question flow
+    _pendingScore = newScore;
+    _pendingUserAnswers = updatedAnswers;
+    _pendingCorrectAnswers = newCorrectAnswers;
+    _pendingStreak = newStreak;
+
     state = GameState.answered(
       isCorrect: isCorrect,
       correctAnswer: question.correctAnswer,
@@ -280,31 +294,36 @@ class GameNotifier extends _$GameNotifier {
             ? GameConstants.answeredDelayCorrectMs
             : GameConstants.answeredDelayIncorrectMs;
 
-    Future.delayed(Duration(milliseconds: delayMs), () {
-      nextQuestion(
-        score: newScore,
-        userAnswers: updatedAnswers,
-        correctAnswers: newCorrectAnswers,
-        streak: newStreak,
-      );
+    _answeredTimer?.cancel();
+    _answeredTimer = Timer(Duration(milliseconds: delayMs), () {
+      nextQuestion();
     });
   }
 
   /// Move to next question or finish game
+  /// Can be called without args (uses stored pending values) for manual tap.
   void nextQuestion({
-    required int score,
-    required List<Answer> userAnswers,
-    required int correctAnswers,
-    required int streak,
+    int? score,
+    List<Answer>? userAnswers,
+    int? correctAnswers,
+    int? streak,
   }) {
+    _answeredTimer?.cancel();
+
+    // Use provided values or fall back to stored pending values
+    final s = score ?? _pendingScore;
+    final ua = userAnswers ?? _pendingUserAnswers;
+    final ca = correctAnswers ?? _pendingCorrectAnswers;
+    final st = streak ?? _pendingStreak;
+
     // Use instance variables instead of state, since state is _Answered here
     final nextIndex = _currentQuestionIndex + 1;
 
     if (nextIndex >= _questions.length) {
       finishGame(
-        score: score,
-        userAnswers: userAnswers,
-        correctAnswers: correctAnswers,
+        score: s,
+        userAnswers: ua,
+        correctAnswers: ca,
       );
     } else {
       _currentQuestionIndex = nextIndex;
@@ -317,10 +336,10 @@ class GameNotifier extends _$GameNotifier {
         questions: _questions,
         currentQuestionIndex: nextIndex,
         timeRemaining: secondsPerQuestion,
-        score: score,
-        userAnswers: userAnswers,
-        correctAnswers: correctAnswers,
-        streak: streak,
+        score: s,
+        userAnswers: ua,
+        correctAnswers: ca,
+        streak: st,
       );
       _startTimer();
     }
@@ -352,14 +371,20 @@ class GameNotifier extends _$GameNotifier {
   /// Cancel game
   void cancelGame() {
     _timer?.cancel();
+    _answeredTimer?.cancel();
     state = const GameState.initial();
   }
 
   /// Reset game state (for navigating back home)
   void resetGame() {
     _timer?.cancel();
+    _answeredTimer?.cancel();
     _questions = [];
     _currentQuestionIndex = 0;
+    _pendingScore = 0;
+    _pendingUserAnswers = [];
+    _pendingCorrectAnswers = 0;
+    _pendingStreak = 0;
     state = const GameState.initial();
   }
 

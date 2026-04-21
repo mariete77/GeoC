@@ -11,7 +11,6 @@ import 'widgets/answer_feedback_widget.dart';
 import 'widgets/game_result_widget.dart';
 import 'widgets/type_answer_widget.dart';
 import '../../../core/constants/game_constants.dart';
-import '../../../core/utils/fuzzy_matcher.dart';
 import '../../../core/theme/app_colors.dart';
 
 class GameScreen extends ConsumerWidget {
@@ -181,40 +180,95 @@ class GameScreen extends ConsumerWidget {
     if (currentQuestion == null) return _buildLoading();
 
     return SingleChildScrollView(
-      padding: const EdgeInsets.all(24),
+      padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 16),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
-          // Progress bar
+          // ── Status Bar & Progress (Partida mockup) ────
           Row(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            crossAxisAlignment: CrossAxisAlignment.end,
             children: [
-              Expanded(
-                child: ClipRRect(
-                  borderRadius: BorderRadius.circular(9999),
-                  child: LinearProgressIndicator(
-                    value: progress,
-                    backgroundColor: AppColors.outlineVariant.withOpacity(0.3),
-                    valueColor: const AlwaysStoppedAnimation<Color>(AppColors.primary),
-                    minHeight: 8,
+              Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Text(
+                    'QUESTION ${currentQuestionIndex + 1}/10',
+                    style: GoogleFonts.plusJakartaSans(
+                      fontSize: 13,
+                      fontWeight: FontWeight.w600,
+                      color: AppColors.onSurfaceVariant,
+                      letterSpacing: 1.5,
+                    ),
                   ),
-                ),
+                  const SizedBox(height: 4),
+                  Text(
+                    difficulty.name == 'easy' ? 'World Tour' : difficulty.name == 'medium' ? 'Deep Dive' : 'Expert',
+                    style: GoogleFonts.plusJakartaSans(
+                      fontSize: 22,
+                      fontWeight: FontWeight.w700,
+                      color: AppColors.primary,
+                    ),
+                  ),
+                ],
               ),
-              const SizedBox(width: 12),
-              Text(
-                '${currentQuestionIndex + 1}/10',
-                style: GoogleFonts.plusJakartaSans(
-                  color: AppColors.onSurface,
-                  fontSize: 16,
-                  fontWeight: FontWeight.w700,
-                ),
+              Column(
+                crossAxisAlignment: CrossAxisAlignment.end,
+                children: [
+                  Text(
+                    'SCORE',
+                    style: GoogleFonts.plusJakartaSans(
+                      fontSize: 13,
+                      fontWeight: FontWeight.w600,
+                      color: AppColors.onSurfaceVariant,
+                      letterSpacing: 1.5,
+                    ),
+                  ),
+                  const SizedBox(height: 2),
+                  Text(
+                    '$score',
+                    style: GoogleFonts.plusJakartaSans(
+                      fontSize: 28,
+                      fontWeight: FontWeight.w900,
+                      color: AppColors.onSurface,
+                    ),
+                  ),
+                ],
               ),
             ],
           ),
-          const SizedBox(height: 20),
-          TimerWidget(progress: timerProgress),
-          const SizedBox(height: 30),
-          QuestionCard(question: currentQuestion),
-          const SizedBox(height: 30),
+          const SizedBox(height: 28),
+
+          // ── Question Area with Overhanging Timer ──────
+          Stack(
+            clipBehavior: Clip.none,
+            children: [
+              // Decorative accent blur
+              Positioned(
+                top: -40,
+                left: -30,
+                child: Container(
+                  width: 200,
+                  height: 200,
+                  decoration: BoxDecoration(
+                    shape: BoxShape.circle,
+                    color: AppColors.secondaryContainer.withOpacity(0.20),
+                  ),
+                ),
+              ),
+              // Question card
+              QuestionCard(question: currentQuestion),
+              // Overhanging timer (top-right, overlapping border)
+              Positioned(
+                top: -24,
+                right: -12,
+                child: TimerWidget(progress: timerProgress),
+              ),
+            ],
+          ),
+          const SizedBox(height: 32),
+
+          // ── Answer Options ────────────────────────────
           if (currentQuestion.options.isEmpty)
             TypeAnswerWidget(
               question: currentQuestion,
@@ -246,6 +300,7 @@ class GameScreen extends ConsumerWidget {
       selectedAnswer: selectedAnswer,
       score: score,
       question: currentQuestion,
+      onNextQuestion: () => ref.read(gameNotifierProvider.notifier).nextQuestion(),
     );
   }
 

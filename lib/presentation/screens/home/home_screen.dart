@@ -405,7 +405,7 @@ class HomeScreen extends ConsumerWidget {
                     ],
                   ),
                   child:
-                      Icon(Icons.leaderboard, size: 22, color: AppColors.tertiary),
+                      Icon(Icons.military_tech, size: 22, color: AppColors.tertiary),
                 ),
                 const SizedBox(height: 48),
                 Text(
@@ -493,16 +493,20 @@ class HomeScreen extends ConsumerWidget {
     );
   }
 
-  /// Clasificación — full-width row card
+  /// Clasificación — full-width row card (design system colors, no purple)
   Widget _buildLeaderboardCard(BuildContext context) {
     return Container(
       decoration: BoxDecoration(
-        gradient: const LinearGradient(
-          begin: Alignment.topLeft,
-          end: Alignment.bottomRight,
-          colors: [Color(0xFFE8D5F5), Color(0xFFD5C8E8)],
-        ),
+        color: AppColors.surfaceContainerHigh,
         borderRadius: BorderRadius.circular(16),
+        border: Border.all(color: AppColors.outlineVariant.withOpacity(0.15)),
+        boxShadow: [
+          BoxShadow(
+            color: AppColors.ambientShadow(),
+            blurRadius: 32,
+            offset: const Offset(0, 8),
+          ),
+        ],
       ),
       child: Material(
         color: Colors.transparent,
@@ -516,7 +520,7 @@ class HomeScreen extends ConsumerWidget {
                 Container(
                   padding: const EdgeInsets.all(16),
                   decoration: BoxDecoration(
-                    color: Colors.white.withOpacity(0.5),
+                    color: AppColors.secondaryContainer.withOpacity(0.5),
                     borderRadius: BorderRadius.circular(12),
                   ),
                   child: Icon(Icons.emoji_events, size: 28, color: AppColors.tertiary),
@@ -531,7 +535,7 @@ class HomeScreen extends ConsumerWidget {
                         style: GoogleFonts.plusJakartaSans(
                           fontSize: 22,
                           fontWeight: FontWeight.w700,
-                          color: AppColors.tertiary,
+                          color: AppColors.onSurface,
                         ),
                       ),
                       const SizedBox(height: 4),
@@ -539,13 +543,13 @@ class HomeScreen extends ConsumerWidget {
                         'Mira tu posición respecto a los demás jugadores.',
                         style: GoogleFonts.workSans(
                           fontSize: 14,
-                          color: AppColors.tertiary.withOpacity(0.8),
+                          color: AppColors.onSurfaceVariant,
                         ),
                       ),
                     ],
                   ),
                 ),
-                Icon(Icons.arrow_forward, size: 32, color: AppColors.tertiary.withOpacity(0.6)),
+                Icon(Icons.arrow_forward, size: 32, color: AppColors.outlineVariant),
               ],
             ),
           ),
