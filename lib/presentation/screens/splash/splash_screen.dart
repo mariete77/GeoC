@@ -4,6 +4,7 @@ import 'package:go_router/go_router.dart';
 import 'package:google_fonts/google_fonts.dart';
 import '../../providers/auth_provider.dart';
 import '../../../core/theme/app_colors.dart';
+import 'widgets/animated_compass.dart';
 
 /// Splash screen — "PantallaCarga" design.
 /// Vintage explorer aesthetic with segmented loading gauge.
@@ -109,7 +110,7 @@ class _SplashScreenState extends ConsumerState<SplashScreen>
                     child: Column(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
-                        // Hero Icon
+                        // Hero Icon — Animated compass rose
                         Container(
                           decoration: BoxDecoration(
                             boxShadow: [
@@ -120,11 +121,7 @@ class _SplashScreenState extends ConsumerState<SplashScreen>
                               ),
                             ],
                           ),
-                          child: Icon(
-                            Icons.explore,
-                            size: 96,
-                            color: AppColors.primary,
-                          ),
+                          child: const AnimatedCompass(size: 130),
                         ),
                         const SizedBox(height: 24),
 
