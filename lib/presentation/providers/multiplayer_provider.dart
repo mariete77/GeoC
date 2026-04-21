@@ -6,12 +6,14 @@ import '../../data/repositories/ghost_run_repository_impl.dart';
 import '../../data/repositories/question_repository_impl.dart';
 import '../../domain/entities/match.dart';
 import '../../domain/entities/question.dart';
+import '../../domain/entities/user.dart';
 import '../../domain/repositories/match_repository.dart';
 import '../../domain/repositories/ghost_run_repository.dart';
 import '../../domain/repositories/question_repository.dart';
 import '../../core/constants/game_constants.dart';
 import '../../core/utils/score_calculator.dart';
 import '../../core/utils/fuzzy_matcher.dart';
+import '../../core/utils/elo_calculator.dart';
 import 'user_provider.dart';
 
 /// Repository providers
@@ -58,6 +60,8 @@ class MultiplayerState {
   final String? opponentName;
   final int? opponentElo;
   final int opponentCorrectAnswers;
+  final int? eloChange;
+  final int? newElo;
 
   const MultiplayerState({
     this.status = MultiplayerStatus.idle,
@@ -76,6 +80,8 @@ class MultiplayerState {
     this.opponentName,
     this.opponentElo,
     this.opponentCorrectAnswers = 0,
+    this.eloChange,
+    this.newElo,
   });
 
   MultiplayerState copyWith({
@@ -95,6 +101,8 @@ class MultiplayerState {
     String? opponentName,
     int? opponentElo,
     int? opponentCorrectAnswers,
+    int? eloChange,
+    int? newElo,
   }) {
     return MultiplayerState(
       status: status ?? this.status,
@@ -113,6 +121,8 @@ class MultiplayerState {
       opponentName: opponentName ?? this.opponentName,
       opponentElo: opponentElo ?? this.opponentElo,
       opponentCorrectAnswers: opponentCorrectAnswers ?? this.opponentCorrectAnswers,
+      eloChange: eloChange ?? this.eloChange,
+      newElo: newElo ?? this.newElo,
     );
   }
 }
@@ -754,7 +764,86 @@ class MultiplayerNotifier extends StateNotifier<MultiplayerState> {
       }
     }
 
-    state = state.copyWith(status: MultiplayerStatus.finished);
+    // ── Calculate and update Elo (multiplayer only) ──────────────
+    int? eloChange;
+    int? newElo;
+
+    if (_currentUserId != null) {
+      final userState = _ref.read(userNotifierProvider);
+      final currentUser = userState.valueOrNull;
+      final playerElo = currentUser?.elo ?? GameConstants.initialElo;
+      final gamesPlayed = currentUser?.stats.totalGames ?? 0;
+
+      // Determine opponent Elo for calculation
+      final opponentElo = state.opponentElo ?? GameConstants.initialElo;
+
+      // Calculate score: based on win/loss/draw
+      // 1.0 = win, 0.0 = loss, 0.5 = draw
+      double score;
+      if (state.playerScore > state.opponentScore) {
+        score = 1.0; // Win
+      } else if (state.playerScore < state.opponentScore) {
+        score = 0.0; // Loss
+      } else {
+        score = 0.5; // Draw
+      }
+
+      final eloCalc = EloCalculator();
+      eloChange = eloCalc.calculateChange(
+        playerElo: playerElo,
+        opponentElo: opponentElo,
+        score: score,
+        gamesPlayed: gamesPlayed,
+      );
+      newElo = eloCalc.calculateNewElo(
+        playerElo: playerElo,
+        opponentElo: opponentElo,
+        score: score,
+        gamesPlayed: gamesPlayed,
+      );
+
+      // Update user Elo and stats in Firestore
+      if (currentUser != null) {
+        final isWin = score == 1.0;
+        final isDraw = score == 0.5;
+        final newStreak = isWin
+            ? currentUser.stats.currentWinStreak + 1
+            : 0;
+        final bestStreak = newStreak > currentUser.stats.bestWinStreak
+            ? newStreak
+            : currentUser.stats.bestWinStreak;
+
+        final updatedUser = User(
+          userId: currentUser.userId,
+          displayName: currentUser.displayName,
+          email: currentUser.email,
+          photoUrl: currentUser.photoUrl,
+          elo: newElo,
+          stats: UserStats(
+            totalGames: currentUser.stats.totalGames + 1,
+            wins: currentUser.stats.wins + (isWin ? 1 : 0),
+            losses: currentUser.stats.losses + (!isWin && !isDraw ? 1 : 0),
+            draws: currentUser.stats.draws + (isDraw ? 1 : 0),
+            totalCorrectAnswers:
+                currentUser.stats.totalCorrectAnswers + state.correctAnswers,
+            currentWinStreak: newStreak,
+            bestWinStreak: bestStreak,
+          ),
+          subscription: currentUser.subscription,
+          dailyGames: currentUser.dailyGames,
+          createdAt: currentUser.createdAt,
+          lastLoginAt: currentUser.lastLoginAt,
+        );
+
+        await _ref.read(userNotifierProvider.notifier).updateUserProfile(updatedUser);
+      }
+    }
+
+    state = state.copyWith(
+      status: MultiplayerStatus.finished,
+      eloChange: eloChange,
+      newElo: newElo,
+    );
   }
 
   /// Fallback to ghost run when no opponent found

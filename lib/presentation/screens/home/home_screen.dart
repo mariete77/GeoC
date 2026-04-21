@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 import 'package:google_fonts/google_fonts.dart';
+import '../../providers/active_players_provider.dart';
 import '../../providers/auth_provider.dart';
 import '../../providers/user_provider.dart';
 import '../../../core/theme/app_colors.dart';
@@ -27,6 +28,11 @@ class HomeScreen extends ConsumerWidget {
         ref.read(userNotifierProvider.notifier).getUserProfile(currentUser.userId);
       });
     }
+
+    // Start presence service (updates lastLoginAt every 5 min)
+    WidgetsBinding.instance.addPostFrameCallback((_) {
+      ref.read(presenceServiceProvider).startPresenceUpdates();
+    });
 
     final displayUser = userState.valueOrNull ?? currentUser;
 
@@ -57,7 +63,7 @@ class HomeScreen extends ConsumerWidget {
       body: Column(
         children: [
           // ── Top App Bar ───────────────────────────────
-          _buildTopBar(context, displayUser),
+          _buildTopBar(context, ref, displayUser),
 
           // ── Scrollable Content ─────────────────────────
           Expanded(
@@ -95,7 +101,11 @@ class HomeScreen extends ConsumerWidget {
 
   // ── Top App Bar ─────────────────────────────────────────
 
-  Widget _buildTopBar(BuildContext context, User user) {
+  Widget _buildTopBar(BuildContext context, WidgetRef ref, User user) {
+    // Start presence updates and watch active players
+    final activePlayersAsync = ref.watch(activePlayersProvider);
+    final activeCount = activePlayersAsync.valueOrNull ?? 0;
+
     return Container(
       padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 16),
       decoration: const BoxDecoration(
@@ -137,18 +147,63 @@ class HomeScreen extends ConsumerWidget {
                 ),
               ],
             ),
-            // Settings
-            Container(
-              decoration: BoxDecoration(
-                shape: BoxShape.circle,
-                color: AppColors.primary.withOpacity(0.08),
-              ),
-              child: IconButton(
-                onPressed: () {
-                  // TODO: Navigate to settings
-                },
-                icon: Icon(Icons.settings_outlined, color: AppColors.primary),
-              ),
+            Row(
+              mainAxisSize: MainAxisSize.min,
+              children: [
+                // ── Active Players Indicator ─────────────
+                if (activeCount > 0)
+                  Container(
+                    padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 5),
+                    decoration: BoxDecoration(
+                      color: const Color(0xFF1B5E20).withOpacity(0.15),
+                      borderRadius: BorderRadius.circular(9999),
+                    ),
+                    child: Row(
+                      mainAxisSize: MainAxisSize.min,
+                      children: [
+                        // Green neon dot
+                        Container(
+                          width: 8,
+                          height: 8,
+                          decoration: BoxDecoration(
+                            shape: BoxShape.circle,
+                            color: const Color(0xFF4CAF50),
+                            boxShadow: [
+                              BoxShadow(
+                                color: const Color(0xFF4CAF50).withOpacity(0.6),
+                                blurRadius: 6,
+                                spreadRadius: 1,
+                              ),
+                            ],
+                          ),
+                        ),
+                        const SizedBox(width: 6),
+                        Text(
+                          '$activeCount',
+                          style: GoogleFonts.plusJakartaSans(
+                            fontSize: 13,
+                            fontWeight: FontWeight.w700,
+                            color: const Color(0xFF4CAF50),
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                const SizedBox(width: 8),
+                // Settings
+                Container(
+                  decoration: BoxDecoration(
+                    shape: BoxShape.circle,
+                    color: AppColors.primary.withOpacity(0.08),
+                  ),
+                  child: IconButton(
+                    onPressed: () {
+                      // TODO: Navigate to settings
+                    },
+                    icon: Icon(Icons.settings_outlined, color: AppColors.primary),
+                  ),
+                ),
+              ],
             ),
           ],
         ),

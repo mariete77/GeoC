@@ -287,6 +287,7 @@ class MultiplayerGameScreen extends ConsumerWidget {
       averageTime: avgTime,
       isVictory: won,
       opponentName: state.opponentName,
+      eloChange: state.eloChange,
       onPlayAgain: () {
         ref.read(multiplayerProvider.notifier).reset();
         context.go('/home');
