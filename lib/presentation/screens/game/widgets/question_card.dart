@@ -129,29 +129,44 @@ class QuestionCard extends StatelessWidget {
   }
 
   Widget _buildSilhouetteQuestion() {
+    final isAsset = question.imageUrl != null &&
+        !question.imageUrl!.startsWith('http');
+
     return Column(
       children: [
         if (question.imageUrl != null)
           ClipRRect(
             borderRadius: const BorderRadius.vertical(top: Radius.circular(32)),
-            child: ColorFiltered(
-              colorFilter: const ColorFilter.mode(Colors.black, BlendMode.srcIn),
-              child: CachedNetworkImage(
-                imageUrl: question.imageUrl!,
-                height: 180,
-                width: double.infinity,
-                fit: BoxFit.contain,
-                placeholder: (context, url) => Container(
-                  height: 180,
-                  color: AppColors.surfaceVariant.withOpacity(0.3),
-                  child: const Center(child: CircularProgressIndicator(color: AppColors.primary)),
-                ),
-                errorWidget: (context, url, error) => Container(
-                  height: 180,
-                  color: AppColors.surfaceVariant.withOpacity(0.3),
-                  child: const Center(child: Icon(Icons.place, size: 60, color: AppColors.outline)),
-                ),
-              ),
+            child: Container(
+              color: Colors.white,
+              child: isAsset
+                  ? Image.asset(
+                      question.imageUrl!,
+                      height: 180,
+                      width: double.infinity,
+                      fit: BoxFit.contain,
+                      errorBuilder: (context, error, stackTrace) => Container(
+                        height: 180,
+                        color: AppColors.surfaceVariant.withOpacity(0.3),
+                        child: const Center(child: Icon(Icons.place, size: 60, color: AppColors.outline)),
+                      ),
+                    )
+                  : CachedNetworkImage(
+                      imageUrl: question.imageUrl!,
+                      height: 180,
+                      width: double.infinity,
+                      fit: BoxFit.contain,
+                      placeholder: (context, url) => Container(
+                        height: 180,
+                        color: AppColors.surfaceVariant.withOpacity(0.3),
+                        child: const Center(child: CircularProgressIndicator(color: AppColors.primary)),
+                      ),
+                      errorWidget: (context, url, error) => Container(
+                        height: 180,
+                        color: AppColors.surfaceVariant.withOpacity(0.3),
+                        child: const Center(child: Icon(Icons.place, size: 60, color: AppColors.outline)),
+                      ),
+                    ),
             ),
           ),
         Padding(

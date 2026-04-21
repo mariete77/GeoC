@@ -3,6 +3,7 @@ import 'package:cached_network_image/cached_network_image.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:geoquiz_battle/domain/entities/question.dart';
 import '../../../../core/theme/app_colors.dart';
+import '../../../widgets/common/report_question_dialog.dart';
 
 class AnswerFeedbackWidget extends StatefulWidget {
   final bool isCorrect;
@@ -317,6 +318,42 @@ class _AnswerFeedbackWidgetState extends State<AnswerFeedbackWidget>
 
                         // ── Gradient "Siguiente Pregunta" Button (PreguntaCorrecta mockup)
                         const SizedBox(height: 24),
+
+                        // ── Report button (small flag icon, right-aligned)
+                        if (widget.question != null)
+                          Align(
+                            alignment: Alignment.centerRight,
+                            child: TextButton.icon(
+                              onPressed: () {
+                                showModalBottomSheet(
+                                  context: context,
+                                  isScrollControlled: true,
+                                  backgroundColor: Colors.transparent,
+                                  builder: (_) => ReportQuestionDialog(
+                                    questionId: widget.question!.id,
+                                  ),
+                                );
+                              },
+                              icon: Icon(
+                                Icons.flag_outlined,
+                                size: 16,
+                                color: AppColors.onSurfaceVariant.withOpacity(0.6),
+                              ),
+                              label: Text(
+                                'Reportar',
+                                style: GoogleFonts.workSans(
+                                  fontSize: 12,
+                                  color: AppColors.onSurfaceVariant.withOpacity(0.6),
+                                ),
+                              ),
+                              style: TextButton.styleFrom(
+                                padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 4),
+                                minimumSize: Size.zero,
+                              ),
+                            ),
+                          ),
+                        const SizedBox(height: 8),
+
                         SizedBox(
                           width: double.infinity,
                           height: 56,

@@ -45,5 +45,11 @@ service cloud.firestore {
       allow update: if isAuth();
       allow delete: if false;
     }
+
+    // Question reports collection
+    match /questionReports/{reportId} {
+      allow create: if isAuth();
+      allow read, update, delete: if false; // Admin only
+    }
   }
 }

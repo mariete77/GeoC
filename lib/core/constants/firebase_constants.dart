@@ -5,6 +5,7 @@ class FirebaseConstants {
   static const String matches = 'matches';
   static const String questions = 'questions';
   static const String ghostRuns = 'ghostRuns';
+  static const String questionReports = 'questionReports';
 
   // Firestore Fields - Users
   static const String userId = 'userId';
