@@ -4370,7 +4370,7 @@
     "questionText": "¿Cuál es la capital de Brasil?",
     "correctAnswer": "Brasilia",
     "options": [
-      "Río de Janeiro",
+      "Brasilia",
       "São Paulo",
       "Salvador",
       "Bratislava"
@@ -5180,7 +5180,7 @@
     "questionText": "¿Cuál es la capital de Singapur?",
     "correctAnswer": "Singapur",
     "options": [
-      "Jurong East",
+      "Singapur",
       "Tampines",
       "Yuba",
       "Woodlands"
@@ -5641,7 +5641,7 @@
     "questionText": "¿Cuál es la moneda de Colombia?",
     "correctAnswer": "Peso colombiano",
     "options": [
-      "Real brasileño",
+      "Peso colombiano",
       "Peso mexicano",
       "Dólar bermudeño",
       "Sol peruano"
@@ -5659,7 +5659,7 @@
     "questionText": "¿Cuál es la moneda de Kuwait?",
     "correctAnswer": "Dinar kuwaití",
     "options": [
-      "United Arab Emirates dirham",
+      "Dinar kuwaití",
       "Rial iraní",
       "Rial omaní",
       "Dirham marroquí"
@@ -5695,7 +5695,7 @@
     "questionText": "¿Cuál es la moneda de India?",
     "correctAnswer": "Rupia india",
     "options": [
-      "Chelín keniano",
+      "Rupia india",
       "Yuan chino",
       "Taka bangladesí",
       "Rupia pakistaní"
@@ -6561,7 +6561,7 @@
     "questionText": "¿Cuál es la moneda de Chile?",
     "correctAnswer": "Peso chileno",
     "options": [
-      "Peso argentino",
+      "Peso chileno",
       "Bosnia and Herzegovina convertible mark",
       "Peso colombiano",
       "Sol peruano"
@@ -6615,7 +6615,7 @@
     "questionText": "¿Cuál es la moneda de Brasil?",
     "correctAnswer": "Real brasileño",
     "options": [
-      "Dólar estadounidense",
+      "Real brasileño",
       "Peso mexicano",
       "Burmese kyat",
       "Peso argentino"
@@ -7122,7 +7122,7 @@
     "questionText": "¿Cuál es la capital de México?",
     "correctAnswer": "Ciudad de México",
     "options": [
-      "Guadalajara",
+      "Ciudad de México",
       "Monterrey",
       "Cancún",
       "Canberra"
@@ -8419,7 +8419,7 @@
     "questionText": "¿Cuál es la moneda de Georgia?",
     "correctAnswer": "Lari georgiano",
     "options": [
-      "Franco CFA",
+      "Lari georgiano",
       "Manat azerbaiyano",
       "Rublo ruso",
       "Dram armenio"
@@ -8928,7 +8928,7 @@
     "questionText": "¿Cuál es la capital de Brasil?",
     "correctAnswer": "Brasilia",
     "options": [
-      "Antananarivo",
+      "Brasilia",
       "São Paulo",
       "Salvador",
       "Río de Janeiro"
@@ -9062,7 +9062,8 @@
         "Grecia"
       ],
       "population1": 20405317,
-      "population2": 10341277
+      "population2": 10341277,
+      "infoToShow": "10.3 millones"
     }
   },
   {
@@ -9201,7 +9202,8 @@
         "Argelia"
       ],
       "area1": 2344858,
-      "area2": 2381741
+      "area2": 2381741,
+      "infoToShow": "2.3 millones de km²"
     }
   },
   {
@@ -9283,7 +9285,7 @@
     "questionText": "¿Cuál es el idioma oficial de Italia?",
     "correctAnswer": "Italiano",
     "options": [
-      "Español",
+      "Italiano",
       "Francés",
       "Portugués",
       "Indonesio"
@@ -9337,7 +9339,7 @@
     "questionText": "¿Cuál es la moneda de Bolivia?",
     "correctAnswer": "Boliviano",
     "options": [
-      "Guaraní paraguayo",
+      "Boliviano",
       "Sol peruano",
       "Rupia de Sri Lanka",
       "Peso colombiano"
@@ -10257,7 +10259,7 @@
     "questionText": "¿Cuál es la moneda de Paraguay?",
     "correctAnswer": "Guaraní paraguayo",
     "options": [
-      "Dram armenio",
+      "Guaraní paraguayo",
       "Peso argentino",
       "Peso uruguayo",
       "Boliviano"
@@ -10275,7 +10277,7 @@
     "questionText": "¿Cuál es la moneda de Indonesia?",
     "correctAnswer": "Rupia indonesia",
     "options": [
-      "Ringgit malayo",
+      "Rupia indonesia",
       "Baht tailandés",
       "Peso filipino",
       "Dirham de EAU"
@@ -10293,7 +10295,7 @@
     "questionText": "¿Cuál es la moneda de Australia?",
     "correctAnswer": "Dólar australiano",
     "options": [
-      "Libra esterlina",
+      "Dólar australiano",
       "Dólar canadiense",
       "Dólar neozelandés",
       "Bulgarian lev"
@@ -10715,7 +10717,7 @@
     "questionText": "¿Cuál es la capital de Túnez?",
     "correctAnswer": "Túnez",
     "options": [
-      "Sidi Bou Said",
+      "Túnez",
       "French Polynesia",
       "Susa",
       "Sfax"
@@ -10960,7 +10962,8 @@
         "Venezuela"
       ],
       "area1": 825615,
-      "area2": 916445
+      "area2": 916445,
+      "infoToShow": "826 mil km²"
     }
   },
   {
@@ -11140,7 +11143,7 @@
     "questionText": "¿Cuál es la moneda de Uruguay?",
     "correctAnswer": "Peso uruguayo",
     "options": [
-      "Peso argentino",
+      "Peso uruguayo",
       "Real brasileño",
       "Guaraní paraguayo",
       "Dólar singapurense"
@@ -11158,7 +11161,7 @@
     "questionText": "¿Cuál es la moneda de Singapur?",
     "correctAnswer": "Dólar de Singapur",
     "options": [
-      "Baht tailandés",
+      "Dólar de Singapur",
       "Chelín somalí",
       "Ringgit malayo",
       "Rupia indonesia"
@@ -11176,7 +11179,7 @@
     "questionText": "¿Cuál es la moneda de Mozambique?",
     "correctAnswer": "Metical mozambiqueño",
     "options": [
-      "Dólar beliceño",
+      "Metical mozambiqueño",
       "Rand sudafricano",
       "Chelín tanzano",
       "Kwacha zambiano"
@@ -11194,7 +11197,7 @@
     "questionText": "¿Cuál es la moneda de Colombia?",
     "correctAnswer": "Peso colombiano",
     "options": [
-      "Sol peruano",
+      "Peso colombiano",
       "Real brasileño",
       "Ringgit malayo",
       "Peso mexicano"
@@ -11799,7 +11802,8 @@
         "Canadá"
       ],
       "population1": 37840044,
-      "population2": 38781292
+      "population2": 38781292,
+      "infoToShow": "37.8 millones"
     }
   },
   {
@@ -11958,7 +11962,8 @@
         "Irán"
       ],
       "area1": 1564116,
-      "area2": 1648195
+      "area2": 1648195,
+      "infoToShow": "1.6 millones de km²"
     }
   },
   {
@@ -12076,7 +12081,7 @@
     "questionText": "¿Cuál es la moneda de Chile?",
     "correctAnswer": "Peso chileno",
     "options": [
-      "Sol peruano",
+      "Peso chileno",
       "Peso argentino",
       "Real brasileño",
       "Rupia india"
@@ -12130,7 +12135,7 @@
     "questionText": "¿Cuál es la moneda de India?",
     "correctAnswer": "Rupia india",
     "options": [
-      "Baht tailandés",
+      "Rupia india",
       "Manat azerbaiyano",
       "Rupia pakistaní",
       "Yuan chino"
@@ -12552,7 +12557,7 @@
     "questionText": "¿Cuál es la capital de Luxemburgo?",
     "correctAnswer": "Luxemburgo",
     "options": [
-      "Ankara",
+      "Luxemburgo",
       "Differdange",
       "Esch-sur-Alzette",
       "Dudelange"
@@ -12586,7 +12591,7 @@
     "questionText": "¿Cuál es la capital de Guatemala?",
     "correctAnswer": "Ciudad de Guatemala",
     "options": [
-      "Escuintla",
+      "Ciudad de Guatemala",
       "Antigua",
       "Quetzaltenango",
       "Athens"
@@ -12620,7 +12625,7 @@
     "questionText": "¿Cuál es la capital de Yibuti?",
     "correctAnswer": "Yibuti",
     "options": [
-      "Tadjoura",
+      "Yibuti",
       "Ali Sabieh",
       "Obock",
       "Palikir"
@@ -12637,7 +12642,7 @@
     "questionText": "¿Cuál es la capital de Panamá?",
     "correctAnswer": "Ciudad de Panamá",
     "options": [
-      "David",
+      "Ciudad de Panamá",
       "Colón",
       "Santiago",
       "Flying Fish Cove"
@@ -12717,7 +12722,8 @@
         "España"
       ],
       "population1": 44496122,
-      "population2": 47519628
+      "population2": 47519628,
+      "infoToShow": "44.5 millones"
     }
   },
   {
@@ -12796,7 +12802,8 @@
         "Colombia"
       ],
       "area1": 1104300,
-      "area2": 1141748
+      "area2": 1141748,
+      "infoToShow": "1.1 millones de km²"
     }
   },
   {
@@ -12855,7 +12862,8 @@
         "Argelia"
       ],
       "area1": 2344858,
-      "area2": 2381741
+      "area2": 2381741,
+      "infoToShow": "2.3 millones de km²"
     }
   },
   {
@@ -12993,7 +13001,7 @@
     "questionText": "¿Cuál es la moneda de Vietnam?",
     "correctAnswer": "Dong vietnamita",
     "options": [
-      "Dólar de Trinidad y Tobago",
+      "Dong vietnamita",
       "Kip laosiano",
       "Baht tailandés",
       "Rupia indonesia"
@@ -13674,7 +13682,8 @@
         "Bélgica"
       ],
       "population1": 11194449,
-      "population2": 11686140
+      "population2": 11686140,
+      "infoToShow": "11.2 millones"
     }
   },
   {
@@ -13713,7 +13722,8 @@
         "Nigeria"
       ],
       "area1": 916445,
-      "area2": 923768
+      "area2": 923768,
+      "infoToShow": "916 mil km²"
     }
   },
   {
@@ -13732,7 +13742,8 @@
         "Bangladés"
       ],
       "area1": 147516,
-      "area2": 148460
+      "area2": 148460,
+      "infoToShow": "148 mil km²"
     }
   },
   {
@@ -13791,7 +13802,8 @@
         "Sudáfrica"
       ],
       "area1": 801590,
-      "area2": 1221037
+      "area2": 1221037,
+      "infoToShow": "802 mil km²"
     }
   },
   {
@@ -13891,7 +13903,7 @@
     "questionText": "¿Cuál es la moneda de Nepal?",
     "correctAnswer": "Rupia nepalí",
     "options": [
-      "Rupia india",
+      "Rupia nepalí",
       "Gibraltar pound",
       "Rupia pakistaní",
       "Taka bangladesí"
@@ -14385,7 +14397,7 @@
     "questionText": "¿Cuál es la capital de México?",
     "correctAnswer": "Ciudad de México",
     "options": [
-      "Cancún",
+      "Ciudad de México",
       "Guadalajara",
       "Monterrey",
       "French Polynesia"
@@ -14923,7 +14935,7 @@
     "questionText": "¿Cuál es la moneda de Noruega?",
     "correctAnswer": "Corona noruega",
     "options": [
-      "Corona sueca",
+      "Corona noruega",
       "Franco suizo",
       "Corona danesa",
       "Kina papú"
@@ -16278,7 +16290,7 @@
     "questionText": "¿Cuál es la capital de Yibuti?",
     "correctAnswer": "Yibuti",
     "options": [
-      "Ali Sabieh",
+      "Yibuti",
       "Panama",
       "Tadjoura",
       "Obock"
@@ -16532,7 +16544,8 @@
         "Suecia"
       ],
       "area1": 505992,
-      "area2": 450295
+      "area2": 450295,
+      "infoToShow": "450 mil km²"
     }
   },
   {
@@ -16670,7 +16683,7 @@
     "questionText": "¿Cuál es la moneda de Chile?",
     "correctAnswer": "Peso chileno",
     "options": [
-      "Peso argentino",
+      "Peso chileno",
       "Sol peruano",
       "Boliviano boliviano",
       "Peso colombiano"
@@ -18168,7 +18181,7 @@
     "questionText": "¿Cuál es la capital de Brasil?",
     "correctAnswer": "Brasilia",
     "options": [
-      "Honduras",
+      "Brasilia",
       "Río de Janeiro",
       "São Paulo",
       "Salvador"
@@ -18391,7 +18404,8 @@
         "Pakistán"
       ],
       "area1": 923768,
-      "area2": 881913
+      "area2": 881913,
+      "infoToShow": "882 mil km²"
     }
   },
   {
@@ -19150,7 +19164,8 @@
         "Ucrania"
       ],
       "population1": 47519628,
-      "population2": 36744636
+      "population2": 36744636,
+      "infoToShow": "36.7 millones"
     }
   },
   {
@@ -19269,7 +19284,8 @@
         "Estados Unidos"
       ],
       "area1": 9596961,
-      "area2": 9833517
+      "area2": 9833517,
+      "infoToShow": "9.6 millones de km²"
     }
   },
   {
@@ -19391,7 +19407,7 @@
     "questionText": "¿Cuál es el idioma oficial de Italia?",
     "correctAnswer": "Italiano",
     "options": [
-      "Japonés",
+      "Italiano",
       "Español",
       "Francés",
       "Portugués"
@@ -19886,7 +19902,7 @@
     "questionText": "¿Cuál es la capital de Túnez?",
     "correctAnswer": "Túnez",
     "options": [
-      "Susa",
+      "Túnez",
       "Sidi Bou Said",
       "Norway",
       "Sfax"
@@ -19954,7 +19970,7 @@
     "questionText": "¿Cuál es la capital de México?",
     "correctAnswer": "Ciudad de México",
     "options": [
-      "Guadalajara",
+      "Ciudad de México",
       "Bratislava",
       "Monterrey",
       "Cancún"
@@ -20168,7 +20184,8 @@
         "Nepal"
       ],
       "area1": 148460,
-      "area2": 147516
+      "area2": 147516,
+      "infoToShow": "148 mil km²"
     }
   },
   {
@@ -20227,7 +20244,8 @@
         "Congo (RDC)"
       ],
       "area1": 2381741,
-      "area2": 2344858
+      "area2": 2344858,
+      "infoToShow": "2.3 millones de km²"
     }
   },
   {
@@ -20327,7 +20345,7 @@
     "questionText": "¿Cuál es la moneda de Nepal?",
     "correctAnswer": "Rupia nepalí",
     "options": [
-      "Taka bangladesí",
+      "Rupia nepalí",
       "Rupia pakistaní",
       "Nuevo séquel israelí",
       "Rupia india"
@@ -20363,7 +20381,7 @@
     "questionText": "¿Cuál es la moneda de Bolivia?",
     "correctAnswer": "Boliviano",
     "options": [
-      "Guaraní paraguayo",
+      "Boliviano",
       "Rupia nepalí",
       "Sol peruano",
       "Peso colombiano"
@@ -20399,7 +20417,7 @@
     "questionText": "¿Cuál es la moneda de Brasil?",
     "correctAnswer": "Real brasileño",
     "options": [
-      "Peso argentino",
+      "Real brasileño",
       "Chelín tanzano",
       "Peso mexicano",
       "Dólar"
@@ -21211,7 +21229,7 @@
     "questionText": "¿Cuál es el idioma oficial de Georgia?",
     "correctAnswer": "Georgiano",
     "options": [
-      "Ruso",
+      "Georgiano",
       "Albanés",
       "Armenio",
       "Azerí"
@@ -21319,7 +21337,7 @@
     "questionText": "¿Cuál es la moneda de India?",
     "correctAnswer": "Rupia india",
     "options": [
-      "Yen japonés",
+      "Rupia india",
       "Baht tailandés",
       "Rupia pakistaní",
       "Yuan chino"
@@ -22066,7 +22084,8 @@
         "Etiopía"
       ],
       "area1": 1141748,
-      "area2": 1104300
+      "area2": 1104300,
+      "infoToShow": "1.1 millones de km²"
     }
   },
   {
@@ -23104,7 +23123,7 @@
     "questionText": "¿Cuál es la moneda de Vietnam?",
     "correctAnswer": "Dong vietnamita",
     "options": [
-      "Dólar de las Islas Caimán",
+      "Dong vietnamita",
       "Kip laosiano",
       "Baht tailandés",
       "Rupia indonesia"
@@ -23597,7 +23616,7 @@
     "questionText": "¿Cuál es la capital de Guatemala?",
     "correctAnswer": "Ciudad de Guatemala",
     "options": [
-      "Quetzaltenango",
+      "Ciudad de Guatemala",
       "Abuya",
       "Antigua",
       "Escuintla"
@@ -23682,7 +23701,7 @@
     "questionText": "¿Cuál es la capital de Brasil?",
     "correctAnswer": "Brasilia",
     "options": [
-      "Río de Janeiro",
+      "Brasilia",
       "São Paulo",
       "Salvador",
       "India"
@@ -23725,7 +23744,8 @@
         "China"
       ],
       "population1": 1428627663,
-      "population2": 1425671352
+      "population2": 1425671352,
+      "infoToShow": "1.4 mil millones"
     }
   },
   {
@@ -24077,7 +24097,7 @@
     "questionText": "¿Cuál es la moneda de Australia?",
     "correctAnswer": "Dólar australiano",
     "options": [
-      "Libra esterlina",
+      "Dólar australiano",
       "Samoan tālā",
       "Euro",
       "Dólar neozelandés"
@@ -24855,7 +24875,7 @@
     "questionText": "¿Cuál es el idioma oficial de Italia?",
     "correctAnswer": "Italiano",
     "options": [
-      "Francés",
+      "Italiano",
       "Portugués",
       "Mongol",
       "Español"
@@ -24873,7 +24893,7 @@
     "questionText": "¿Cuál es el idioma oficial de Vietnam?",
     "correctAnswer": "Vietnamita",
     "options": [
-      "Camboyano",
+      "Vietnamita",
       "Lao",
       "Jemer",
       "Tailandés"
@@ -24891,7 +24911,7 @@
     "questionText": "¿Cuál es el idioma oficial de Ucrania?",
     "correctAnswer": "Ucraniano",
     "options": [
-      "Polaco",
+      "Ucraniano",
       "Bielorruso",
       "Belarusian",
       "Ruso"
@@ -24909,7 +24929,7 @@
     "questionText": "¿Cuál es el idioma oficial de Georgia?",
     "correctAnswer": "Georgiano",
     "options": [
-      "Azerí",
+      "Georgiano",
       "Armenio",
       "Letón",
       "Ruso"
@@ -24945,7 +24965,7 @@
     "questionText": "¿Cuál es la moneda de Australia?",
     "correctAnswer": "Dólar australiano",
     "options": [
-      "Dólar neozelandés",
+      "Dólar australiano",
       "Libra esterlina",
       "Metical mozambiqueño",
       "Dólar canadiense"
@@ -24963,7 +24983,7 @@
     "questionText": "¿Cuál es la moneda de India?",
     "correctAnswer": "Rupia india",
     "options": [
-      "Rupia de Sri Lanka",
+      "Rupia india",
       "Taka bangladesí",
       "Leu moldavo",
       "Rupia pakistaní"
@@ -24981,7 +25001,7 @@
     "questionText": "¿Cuál es la moneda de Brasil?",
     "correctAnswer": "Real brasileño",
     "options": [
-      "Peso argentino",
+      "Real brasileño",
       "Peso colombiano",
       "Rial yemení",
       "Sol peruano"
@@ -25454,7 +25474,7 @@
     "questionText": "¿Cuál es la capital de Andorra?",
     "correctAnswer": "Andorra la Vieja",
     "options": [
-      "Amsterdam",
+      "Andorra la Vieja",
       "Escaldes-Engordany",
       "Sant Julià de Lòria",
       "Encamp"
@@ -25488,7 +25508,7 @@
     "questionText": "¿Cuál es la capital de Panamá?",
     "correctAnswer": "Ciudad de Panamá",
     "options": [
-      "Santiago",
+      "Ciudad de Panamá",
       "David",
       "Guernsey",
       "Colón"
@@ -25605,7 +25625,8 @@
         "Malí"
       ],
       "population1": 10341277,
-      "population2": 23293698
+      "population2": 23293698,
+      "infoToShow": "23.3 millones"
     }
   },
   {
@@ -25863,7 +25884,7 @@
     "questionText": "¿Cuál es la moneda de Noruega?",
     "correctAnswer": "Corona noruega",
     "options": [
-      "Franco suizo",
+      "Corona noruega",
       "Corona sueca",
       "Corona danesa",
       "Lari georgiano"
@@ -25881,7 +25902,7 @@
     "questionText": "¿Cuál es la moneda de Paraguay?",
     "correctAnswer": "Guaraní paraguayo",
     "options": [
-      "Peso uruguayo",
+      "Guaraní paraguayo",
       "Rupia nepalí",
       "Boliviano",
       "Peso argentino"
@@ -25899,7 +25920,7 @@
     "questionText": "¿Cuál es la moneda de Colombia?",
     "correctAnswer": "Peso colombiano",
     "options": [
-      "Real brasileño",
+      "Peso colombiano",
       "Libra libanesa",
       "Sol peruano",
       "Peso mexicano"
@@ -26504,7 +26525,8 @@
         "Irak"
       ],
       "population1": 47519628,
-      "population2": 44496122
+      "population2": 44496122,
+      "infoToShow": "44.5 millones"
     }
   },
   {
@@ -26543,7 +26565,8 @@
         "Malaui"
       ],
       "population1": 10341277,
-      "population2": 20405317
+      "population2": 20405317,
+      "infoToShow": "20.4 millones"
     }
   },
   {
@@ -26582,7 +26605,8 @@
         "Malí"
       ],
       "area1": 1002450,
-      "area2": 1240192
+      "area2": 1240192,
+      "infoToShow": "1.2 millones de km²"
     }
   },
   {
@@ -26661,7 +26685,8 @@
         "Mongolia"
       ],
       "area1": 1648195,
-      "area2": 1564116
+      "area2": 1564116,
+      "infoToShow": "1.6 millones de km²"
     }
   },
   {
@@ -26761,7 +26786,7 @@
     "questionText": "¿Cuál es la moneda de Mozambique?",
     "correctAnswer": "Metical mozambiqueño",
     "options": [
-      "Dólar canadiense",
+      "Metical mozambiqueño",
       "Rand sudafricano",
       "Kwacha zambiano",
       "Chelín tanzano"
@@ -26779,7 +26804,7 @@
     "questionText": "¿Cuál es la moneda de Singapur?",
     "correctAnswer": "Dólar de Singapur",
     "options": [
-      "Baht tailandés",
+      "Dólar de Singapur",
       "Ringgit malayo",
       "Dólar liberiano",
       "Rupia indonesia"
@@ -26797,7 +26822,7 @@
     "questionText": "¿Cuál es la moneda de Uruguay?",
     "correctAnswer": "Peso uruguayo",
     "options": [
-      "Netherlands Antillean guilder",
+      "Peso uruguayo",
       "Peso argentino",
       "Guaraní paraguayo",
       "Real brasileño"
@@ -26833,7 +26858,7 @@
     "questionText": "¿Cuál es la moneda de Corea del Sur?",
     "correctAnswer": "Won surcoreano",
     "options": [
-      "Dólar",
+      "Won surcoreano",
       "Yuan chino",
       "Yen japonés",
       "denar"
@@ -27480,7 +27505,8 @@
         "Argentina"
       ],
       "population1": 47519628,
-      "population2": 45773884
+      "population2": 45773884,
+      "infoToShow": "45.8 millones"
     }
   },
   {
@@ -28140,7 +28166,7 @@
     "questionText": "¿Cuál es la capital de Brasil?",
     "correctAnswer": "Brasilia",
     "options": [
-      "Río de Janeiro",
+      "Brasilia",
       "São Paulo",
       "Salvador",
       "Longyearbyen"
@@ -28600,7 +28626,7 @@
     "questionText": "¿Cuál es la moneda de Kuwait?",
     "correctAnswer": "Dinar kuwaití",
     "options": [
-      "Rial omaní",
+      "Dinar kuwaití",
       "Dirham marroquí",
       "Rial iraní",
       "Baht tailandés"
@@ -28618,7 +28644,7 @@
     "questionText": "¿Cuál es la moneda de Georgia?",
     "correctAnswer": "Lari georgiano",
     "options": [
-      "Rupia seychellense",
+      "Lari georgiano",
       "Rublo ruso",
       "Dram armenio",
       "Manat azerbaiyano"
@@ -28654,7 +28680,7 @@
     "questionText": "¿Cuál es la moneda de Indonesia?",
     "correctAnswer": "Rupia indonesia",
     "options": [
-      "Baht tailandés",
+      "Rupia indonesia",
       "Ringgit malayo",
       "Peso filipino",
       "Won surcoreano"
@@ -29145,7 +29171,7 @@
     "questionText": "¿Cuál es la capital de México?",
     "correctAnswer": "Ciudad de México",
     "options": [
-      "Seúl",
+      "Ciudad de México",
       "Guadalajara",
       "Monterrey",
       "Cancún"
@@ -30082,7 +30108,7 @@
     "questionText": "¿Cuál es la capital de Guatemala?",
     "correctAnswer": "Ciudad de Guatemala",
     "options": [
-      "Escuintla",
+      "Ciudad de Guatemala",
       "Andorra la Vieja",
       "Antigua",
       "Quetzaltenango"
@@ -30219,7 +30245,8 @@
         "Malaui"
       ],
       "population1": 11686140,
-      "population2": 20405317
+      "population2": 20405317,
+      "infoToShow": "20.4 millones"
     }
   },
   {
@@ -30258,7 +30285,8 @@
         "Irán"
       ],
       "area1": 1964375,
-      "area2": 1648195
+      "area2": 1648195,
+      "infoToShow": "1.6 millones de km²"
     }
   },
   {
@@ -30492,7 +30520,7 @@
     "questionText": "¿Cuál es la moneda de Noruega?",
     "correctAnswer": "Corona noruega",
     "options": [
-      "Corona danesa",
+      "Corona noruega",
       "Corona sueca",
       "Franco suizo",
       "Franco burundés"
@@ -31340,7 +31368,7 @@
     "questionText": "¿Cuál es el idioma oficial de Italia?",
     "correctAnswer": "Italiano",
     "options": [
-      "Español",
+      "Italiano",
       "Francés",
       "Indonesian",
       "Portugués"
@@ -31412,7 +31440,7 @@
     "questionText": "¿Cuál es la moneda de Chile?",
     "correctAnswer": "Peso chileno",
     "options": [
-      "Sol peruano",
+      "Peso chileno",
       "Peso argentino",
       "Chelín keniano",
       "Peso colombiano"
@@ -31430,7 +31458,7 @@
     "questionText": "¿Cuál es la moneda de India?",
     "correctAnswer": "Rupia india",
     "options": [
-      "Yuan chino",
+      "Rupia india",
       "Baht tailandés",
       "Rupia pakistaní",
       "Somoni tayiko"
@@ -32017,7 +32045,8 @@
         "Irán"
       ],
       "population1": 85816199,
-      "population2": 88536000
+      "population2": 88536000,
+      "infoToShow": "85.8 millones"
     }
   },
   {
@@ -32156,7 +32185,8 @@
         "Pakistán"
       ],
       "area1": 825615,
-      "area2": 881913
+      "area2": 881913,
+      "infoToShow": "826 mil km²"
     }
   },
   {
@@ -32276,7 +32306,7 @@
     "questionText": "¿Cuál es la moneda de Corea del Sur?",
     "correctAnswer": "Won surcoreano",
     "options": [
-      "Yen japonés",
+      "Won surcoreano",
       "Peso chileno",
       "Dólar de Singapur",
       "Yuan chino"
@@ -32312,7 +32342,7 @@
     "questionText": "¿Cuál es la moneda de Vietnam?",
     "correctAnswer": "Dong vietnamita",
     "options": [
-      "Rupia indonesia",
+      "Dong vietnamita",
       "Bosnia and Herzegovina convertible mark",
       "Baht tailandés",
       "Kip laosiano"
@@ -32736,7 +32766,7 @@
     "questionText": "¿Cuál es la capital de Brasil?",
     "correctAnswer": "Brasilia",
     "options": [
-      "São Paulo",
+      "Brasilia",
       "Salvador",
       "Kosovo",
       "Río de Janeiro"
@@ -32889,7 +32919,7 @@
     "questionText": "¿Cuál es la capital de Kuwait?",
     "correctAnswer": "Ciudad de Kuwait",
     "options": [
-      "Hawalli",
+      "Ciudad de Kuwait",
       "Brasília",
       "Ahmadi",
       "Jahra"
@@ -33268,7 +33298,7 @@
     "questionText": "¿Cuál es la moneda de Nigeria?",
     "correctAnswer": "Naira nigeriana",
     "options": [
-      "Leu moldavo",
+      "Naira nigeriana",
       "Cedi ghanés",
       "Franco CFA",
       "Kwacha zambiano"
@@ -33875,7 +33905,8 @@
         "España"
       ],
       "population1": 45773884,
-      "population2": 47519628
+      "population2": 47519628,
+      "infoToShow": "45.8 millones"
     }
   },
   {
@@ -33894,7 +33925,8 @@
         "Bolivia"
       ],
       "population1": 11724763,
-      "population2": 12224110
+      "population2": 12224110,
+      "infoToShow": "11.7 millones"
     }
   },
   {
@@ -34013,7 +34045,8 @@
         "Turquía"
       ],
       "area1": 756102,
-      "area2": 783562
+      "area2": 783562,
+      "infoToShow": "756 mil km²"
     }
   },
   {
@@ -34113,7 +34146,7 @@
     "questionText": "¿Cuál es la moneda de Indonesia?",
     "correctAnswer": "Rupia indonesia",
     "options": [
-      "Baht tailandés",
+      "Rupia indonesia",
       "Manat azerbayano",
       "Peso filipino",
       "Ringgit malayo"
@@ -34792,7 +34825,8 @@
         "Canadá"
       ],
       "population1": 36744636,
-      "population2": 38781292
+      "population2": 38781292,
+      "infoToShow": "36.7 millones"
     }
   },
   {
@@ -34978,7 +35012,7 @@
     "questionText": "¿Cuál es el idioma oficial de Nepal?",
     "correctAnswer": "Nepalí",
     "options": [
-      "Tibetano",
+      "Nepalí",
       "Hindi",
       "Bengalí",
       "Khmer"
@@ -35086,7 +35120,7 @@
     "questionText": "¿Cuál es la moneda de India?",
     "correctAnswer": "Rupia india",
     "options": [
-      "Rupia de Sri Lanka",
+      "Rupia india",
       "Taka bangladesí",
       "Rupia pakistaní",
       "Bolívar soberano venezolano"
@@ -35560,7 +35594,7 @@
     "questionText": "¿Cuál es la capital de Yibuti?",
     "correctAnswer": "Yibuti",
     "options": [
-      "Tadjoura",
+      "Yibuti",
       "Dili",
       "Ali Sabieh",
       "Obock"
@@ -35691,7 +35725,8 @@
         "España"
       ],
       "population1": 44496122,
-      "population2": 47519628
+      "population2": 47519628,
+      "infoToShow": "44.5 millones"
     }
   },
   {
@@ -36479,7 +36514,7 @@
     "questionText": "¿Cuál es la capital de Yibuti?",
     "correctAnswer": "Yibuti",
     "options": [
-      "Dikhil",
+      "Yibuti",
       "Ali Sabieh",
       "Tadjoura",
       "Freetown"
@@ -36496,7 +36531,7 @@
     "questionText": "¿Cuál es la capital de Brasil?",
     "correctAnswer": "Brasilia",
     "options": [
-      "Salvador",
+      "Brasilia",
       "São Paulo",
       "Asunción",
       "Río de Janeiro"
@@ -40213,7 +40248,10 @@
     "questionText": "¿De qué país es esta bandera?",
     "correctAnswer": "Argentina",
     "options": [
-      "Argentina"
+      "Argentina",
+      "España",
+      "Francia",
+      "Alemania"
     ],
     "imageUrl": "https://flagcdn.com/w320/ar.png",
     "extraData": {
@@ -40356,7 +40394,7 @@
     "questionText": "¿Cuál es la capital de Brasil?",
     "correctAnswer": "Brasilia",
     "options": [
-      "Abuya",
+      "Brasilia",
       "Oman",
       "Berlín",
       "Atenas"
@@ -40752,7 +40790,7 @@
     "questionText": "¿En qué ciudad se encuentra el gobierno de Eswatini?",
     "correctAnswer": "Eswatini",
     "options": [
-      "Anguilla",
+      "Eswatini",
       "Qatar",
       "Dushanbe",
       "Caribbean Netherlands"
@@ -40841,7 +40879,7 @@
     "questionText": "¿En qué ciudad se encuentra el gobierno de Syria?",
     "correctAnswer": "Syria",
     "options": [
-      "American Samoa",
+      "Syria",
       "Asjabad",
       "Haiti",
       "South Africa"
@@ -40894,7 +40932,7 @@
     "questionText": "¿Qué billetes y monedas circulan en Nepal?",
     "correctAnswer": "Rupia nepalí",
     "options": [
-      "Libra esterlina",
+      "Rupia nepalí",
       "Colón costarricense",
       "Dólar australiano",
       "Dinar argelino"
@@ -41055,7 +41093,7 @@
     "questionText": "¿En qué ciudad se encuentra el gobierno de Namibia?",
     "correctAnswer": "Namibia",
     "options": [
-      "Kiribati",
+      "Namibia",
       "Bucharest",
       "Guinea",
       "Tuvalu"
@@ -41251,7 +41289,7 @@
     "questionText": "¿Qué ciudad es el centro político de Paraguay?",
     "correctAnswer": "Paraguay",
     "options": [
-      "New Caledonia",
+      "Paraguay",
       "Tashkent",
       "Aruba",
       "Botswana"
@@ -41322,7 +41360,7 @@
     "questionText": "¿Cuál es la ciudad principal de Benin?",
     "correctAnswer": "Benin",
     "options": [
-      "Liechtenstein",
+      "Benin",
       "Montserrat",
       "Bruselas",
       "Gambia"
@@ -41411,7 +41449,7 @@
     "questionText": "¿Qué moneda se usa en Taiwan?",
     "correctAnswer": "Nuevo dólar taiwanés",
     "options": [
-      "Angolan kwanza",
+      "Nuevo dólar taiwanés",
       "Rand sudafricano",
       "Tenge kazajo",
       "Dinar jordano"
@@ -41447,7 +41485,7 @@
     "questionText": "¿Cuál es la ciudad principal de Taiwan?",
     "correctAnswer": "Taiwan",
     "options": [
-      "Guernsey",
+      "Taiwan",
       "Fiji",
       "Iceland",
       "Belize"
@@ -41693,7 +41731,7 @@
     "questionText": "¿Qué moneda se usa en Paraguay?",
     "correctAnswer": "Guaraní paraguayo",
     "options": [
-      "Belarusian ruble",
+      "Guaraní paraguayo",
       "Somoni tayiko",
       "Dólar estadounidense",
       "Netherlands Antillean guilder"
@@ -41933,7 +41971,8 @@
         "South Georgia"
       ],
       "population1": 14104969,
-      "population2": 0
+      "population2": 14104969,
+      "infoToShow": "14.1 millones"
     }
   },
   {
@@ -42582,7 +42621,7 @@
     "questionText": "¿Cuál es la divisa de Colombia?",
     "correctAnswer": "Peso colombiano",
     "options": [
-      "Dólar estadounidense",
+      "Peso colombiano",
       "Belarusian ruble",
       "Rupia indonesia",
       "Franco CFP"
@@ -47389,7 +47428,10 @@
     "questionText": "¿El lago más grande de España se llama...?",
     "correctAnswer": "Lagos de España",
     "options": [
-      "Lagos de España"
+      "Lagos de España",
+      "Lago de Sanabria",
+      "Embalse de Almansa",
+      "Embalse de Cíjara"
     ],
     "extraData": {
       "country": "España",

@@ -4,6 +4,7 @@ import 'package:go_router/go_router.dart';
 import 'package:google_fonts/google_fonts.dart';
 import '../../providers/auth_provider.dart';
 import '../../../core/theme/app_colors.dart';
+import '../splash/widgets/animated_compass.dart';
 
 /// Login screen — adapted from "Login" mockup.
 /// Clean card design with gradient CTA, decorative background elements.
@@ -232,10 +233,13 @@ class _LoginScreenState extends ConsumerState<LoginScreen> {
 
                         // ── Social Buttons / Loading ──────
                         if (authState.isLoading)
-                          const Padding(
-                            padding: EdgeInsets.all(16),
-                            child: CircularProgressIndicator(
-                                color: AppColors.primary),
+                          Padding(
+                            padding: const EdgeInsets.all(24),
+                            child: SizedBox(
+                              width: 80,
+                              height: 80,
+                              child: const AnimatedCompass(size: 80),
+                            ),
                           )
                         else ...[
                           _buildGoogleButton(),
@@ -332,13 +336,10 @@ class _LoginScreenState extends ConsumerState<LoginScreen> {
             onTap: authState.isLoading ? null : _submit,
             child: Center(
               child: authState.isLoading
-                  ? const SizedBox(
-                      width: 24,
-                      height: 24,
-                      child: CircularProgressIndicator(
-                        strokeWidth: 2,
-                        color: AppColors.onPrimary,
-                      ),
+                  ? SizedBox(
+                      width: 28,
+                      height: 28,
+                      child: const AnimatedCompass(size: 28),
                     )
                   : Text(
                       _isSignUp ? 'Crear cuenta' : 'Begin Journey',

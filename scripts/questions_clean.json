@@ -381,11 +381,11 @@
     "type": "river",
     "difficulty": "medium",
     "questionText": "¿Qué río es el más largo de Chile?",
-    "correctAnswer": "Baker",
+    "correctAnswer": "Loa",
     "options": [
       "Ucayali",
       "Mersey",
-      "Baker",
+      "Loa",
       "Misisipi"
     ],
     "extraData": {
@@ -398,12 +398,12 @@
     "type": "lake",
     "difficulty": "medium",
     "questionText": "¿Qué lago es el más grande de Brasil?",
-    "correctAnswer": "Lago de Itaipu",
+    "correctAnswer": "Brasil no tiene grandes lagos naturales",
     "options": [
       "Lago Llanquihue",
       "Lago Parón",
       "Lago de Cuitzeo",
-      "Lago de Itaipu"
+      "Brasil no tiene grandes lagos naturales"
     ],
     "extraData": {
       "country": "Brasil",
@@ -415,11 +415,11 @@
     "type": "river",
     "difficulty": "medium",
     "questionText": "¿Qué río es el más largo de China?",
-    "correctAnswer": "Amarillo",
+    "correctAnswer": "Yangtsé",
     "options": [
       "Colorado",
       "Rin",
-      "Amarillo",
+      "Yangtsé",
       "Yenisei"
     ],
     "extraData": {
@@ -483,11 +483,11 @@
     "type": "river",
     "difficulty": "medium",
     "questionText": "¿Qué río es el más largo de Alemania?",
-    "correctAnswer": "Danubio",
+    "correctAnswer": "Rin",
     "options": [
       "Tone",
       "Baker",
-      "Danubio",
+      "Rin",
       "Río Grande"
     ],
     "extraData": {
@@ -500,9 +500,9 @@
     "type": "mountain",
     "difficulty": "medium",
     "questionText": "¿La montaña más alta de Perú es...?",
-    "correctAnswer": "Coropuna",
+    "correctAnswer": "Huascarán",
     "options": [
-      "Monte Lucania",
+      "Huascarán",
       "Coropuna",
       "Nevado Tres Cruces",
       "Wildspitze"
@@ -556,7 +556,7 @@
       "Lago Onega",
       "Lago Lemán",
       "Lago Superior",
-      "Lago Junín"
+      "Lago Huron"
     ],
     "extraData": {
       "country": "Canadá",
@@ -568,12 +568,12 @@
     "type": "mountain",
     "difficulty": "medium",
     "questionText": "¿La montaña más alta de Colombia es...?",
-    "correctAnswer": "Simón Bolívar",
+    "correctAnswer": "Pico Cristóbal Colón",
     "options": [
       "Coropuna",
       "Scafell Pike",
       "Kangchenjunga",
-      "Simón Bolívar"
+      "Pico Cristóbal Colón"
     ],
     "extraData": {
       "country": "Colombia",
@@ -585,10 +585,10 @@
     "type": "river",
     "difficulty": "medium",
     "questionText": "¿Cuál es el río más largo de Australia?",
-    "correctAnswer": "Darling",
+    "correctAnswer": "Murray",
     "options": [
       "Elba",
-      "Darling",
+      "Murray",
       "Júcar",
       "Amazonas"
     ],
@@ -602,12 +602,12 @@
     "type": "lake",
     "difficulty": "medium",
     "questionText": "¿Qué lago es el más grande de India?",
-    "correctAnswer": "Lago Chilka",
+    "correctAnswer": "Lago Chilika",
     "options": [
       "Lago Parón",
       "Represa de Tucuruí",
       "Lago Onega",
-      "Lago Chilka"
+      "Lago Chilika"
     ],
     "extraData": {
       "country": "India",
@@ -619,10 +619,10 @@
     "type": "mountain",
     "difficulty": "medium",
     "questionText": "¿La montaña más alta de México es...?",
-    "correctAnswer": "Popocatépetl",
+    "correctAnswer": "Pico de Orizaba",
     "options": [
       "Njesuthi",
-      "Popocatépetl",
+      "Pico de Orizaba",
       "Ben Nevis",
       "Sajama"
     ],
@@ -670,11 +670,11 @@
     "type": "mountain",
     "difficulty": "medium",
     "questionText": "¿Cuál es la montaña más alta de India?",
-    "correctAnswer": "Nanda Devi",
+    "correctAnswer": "Kanchenjunga",
     "options": [
       "Everest",
       "Monte Kosciuszko",
-      "Nanda Devi",
+      "Kanchenjunga",
       "Kilimanjaro"
     ],
     "extraData": {
@@ -687,11 +687,11 @@
     "type": "lake",
     "difficulty": "medium",
     "questionText": "¿Qué lago es el más grande de Egipto?",
-    "correctAnswer": "Lago Toshka",
+    "correctAnswer": "Lago Nasser",
     "options": [
       "Lago de Chapala",
       "Gran Lago del Esclavo",
-      "Lago Toshka",
+      "Lago Nasser",
       "Lago Constanza"
     ],
     "extraData": {
@@ -704,11 +704,11 @@
     "type": "river",
     "difficulty": "medium",
     "questionText": "¿Cuál es el principal río de Francia?",
-    "correctAnswer": "Ródano",
+    "correctAnswer": "Loira",
     "options": [
       "Adigio",
       "Brahmaputra",
-      "Ródano",
+      "Loira",
       "Nelson"
     ],
     "extraData": {
@@ -755,10 +755,10 @@
     "type": "river",
     "difficulty": "medium",
     "questionText": "¿El río más largo de Japón se llama...?",
-    "correctAnswer": "Tone",
+    "correctAnswer": "Shinano",
     "options": [
       "Nilo",
-      "Tone",
+      "Shinano",
       "Orange",
       "Amur"
     ],
@@ -789,9 +789,9 @@
     "type": "river",
     "difficulty": "medium",
     "questionText": "¿Cuál es el río más largo de España?",
-    "correctAnswer": "Ebro",
+    "correctAnswer": "Tajo",
     "options": [
-      "Ebro",
+      "Tajo",
       "Po",
       "Baker",
       "Mackenzie"
@@ -806,12 +806,12 @@
     "type": "mountain",
     "difficulty": "medium",
     "questionText": "¿Cuál es la montaña más alta de España?",
-    "correctAnswer": "Mulhacén",
+    "correctAnswer": "Teide",
     "options": [
-      "Monte Kosciuszko",
-      "Kamet",
+      "Teide",
+      "Mulhacén",
       "Monte Fuji",
-      "Mulhacén"
+      "Kosciuszko"
     ],
     "extraData": {
       "country": "España",
@@ -823,12 +823,12 @@
     "type": "river",
     "difficulty": "medium",
     "questionText": "¿Qué río es el más largo de Argentina?",
-    "correctAnswer": "Uruguay",
+    "correctAnswer": "Paraná",
     "options": [
       "Cauca",
       "Garona",
       "Nilo",
-      "Uruguay"
+      "Paraná"
     ],
     "extraData": {
       "country": "Argentina",
@@ -874,9 +874,9 @@
     "type": "mountain",
     "difficulty": "medium",
     "questionText": "¿La montaña más alta de Chile es...?",
-    "correctAnswer": "Nevado Tres Cruces",
+    "correctAnswer": "Ojos del Salado",
     "options": [
-      "Nevado Tres Cruces",
+      "Ojos del Salado",
       "Njesuthi",
       "Simón Bolívar",
       "Twins Spire"
@@ -891,11 +891,11 @@
     "type": "mountain",
     "difficulty": "medium",
     "questionText": "¿Cuál es la montaña más alta de Canadá?",
-    "correctAnswer": "Monte Saint Elias",
+    "correctAnswer": "Logan",
     "options": [
       "Nevado Tres Cruces",
       "Simón Bolívar",
-      "Monte Saint Elias",
+      "Logan",
       "Ritacuba Blanco"
     ],
     "extraData": {
@@ -908,10 +908,10 @@
     "type": "mountain",
     "difficulty": "medium",
     "questionText": "¿Qué pico es el más alto de Francia?",
-    "correctAnswer": "Monte Viso",
+    "correctAnswer": "Mont Blanc",
     "options": [
       "Ojos del Salado",
-      "Monte Viso",
+      "Mont Blanc",
       "Watzmann",
       "Monte Kita"
     ],
@@ -993,10 +993,10 @@
     "type": "lake",
     "difficulty": "medium",
     "questionText": "¿Cuál es el principal lago de México?",
-    "correctAnswer": "Lago de Pátzcuaro",
+    "correctAnswer": "Lago de Chapala",
     "options": [
       "Lago Gairdner",
-      "Lago de Pátzcuaro",
+      "Lago de Chapala",
       "Lago Onega",
       "Lago Huron"
     ],
@@ -1010,12 +1010,12 @@
     "type": "lake",
     "difficulty": "medium",
     "questionText": "¿Cuál es el principal lago de Brasil?",
-    "correctAnswer": "Lago de Sobradinho",
+    "correctAnswer": "Brasil no tiene grandes lagos naturales",
     "options": [
       "Gran Lago del Oso",
       "Lago de Itaipu",
       "Lago Gairdner",
-      "Lago de Sobradinho"
+      "Brasil no tiene grandes lagos naturales"
     ],
     "extraData": {
       "country": "Brasil",
@@ -1027,11 +1027,11 @@
     "type": "mountain",
     "difficulty": "medium",
     "questionText": "¿La montaña más alta de Japón es...?",
-    "correctAnswer": "Monte Kita",
+    "correctAnswer": "Fuji",
     "options": [
       "Ojos del Salado",
       "Dom",
-      "Monte Kita",
+      "Fuji",
       "K2"
     ],
     "extraData": {
@@ -1044,9 +1044,9 @@
     "type": "lake",
     "difficulty": "medium",
     "questionText": "¿Cuál es el principal lago de Francia?",
-    "correctAnswer": "Lago de Ginebra",
+    "correctAnswer": "Lac du Bourget",
     "options": [
-      "Lago de Ginebra",
+      "Lac du Bourget",
       "Gran Lago del Oso",
       "Lago Windermere",
       "Lago Llanquihue"
@@ -1078,11 +1078,11 @@
     "type": "mountain",
     "difficulty": "medium",
     "questionText": "¿Cuál es el punto más alto de Estados Unidos?",
-    "correctAnswer": "Monte Rainier",
+    "correctAnswer": "Denali",
     "options": [
       "Pico da Neblina",
       "Monte Saint Elias",
-      "Monte Rainier",
+      "Denali",
       "Sajama"
     ],
     "extraData": {
@@ -1197,11 +1197,11 @@
     "type": "river",
     "difficulty": "medium",
     "questionText": "¿Cuál es el río más largo de Chile?",
-    "correctAnswer": "Biobío",
+    "correctAnswer": "Loa",
     "options": [
       "San Lorenzo",
       "Biobío",
-      "Mackenzie",
+      "Loa",
       "Magdalena"
     ],
     "extraData": {
@@ -1231,12 +1231,12 @@
     "type": "mountain",
     "difficulty": "medium",
     "questionText": "¿La montaña más alta de Alemania es...?",
-    "correctAnswer": "Watzmann",
+    "correctAnswer": "Zugspitze",
     "options": [
       "Teide",
       "Kilimanjaro",
-      "Ritacuba Blanco",
-      "Watzmann"
+      "Zugspitze",
+      "Ritacuba Blanco"
     ],
     "extraData": {
       "country": "Alemania",
@@ -1299,10 +1299,10 @@
     "type": "lake",
     "difficulty": "medium",
     "questionText": "¿Cuál es el principal lago de China?",
-    "correctAnswer": "Lago Poyang",
+    "correctAnswer": "Lago Qinghai",
     "options": [
       "Represa de Tucuruí",
-      "Lago Poyang",
+      "Lago Qinghai",
       "Embalse de Almansa",
       "Lago de Como"
     ],
@@ -1350,12 +1350,12 @@
     "type": "mountain",
     "difficulty": "medium",
     "questionText": "¿Qué pico es el más alto de China?",
-    "correctAnswer": "K2",
+    "correctAnswer": "Everest",
     "options": [
       "Monte Logan",
       "Monte Thaba Putsoa",
       "Ojos del Salado",
-      "K2"
+      "Everest"
     ],
     "extraData": {
       "country": "China",
@@ -1367,9 +1367,9 @@
     "type": "lake",
     "difficulty": "medium",
     "questionText": "¿El lago más grande de Argentina se llama...?",
-    "correctAnswer": "Lago Viedma",
+    "correctAnswer": "Lago Argentino",
     "options": [
-      "Lago Viedma",
+      "Lago Argentino",
       "Represa de Tucuruí",
       "Lago Eyre",
       "Lago Qinghai"
@@ -1384,10 +1384,10 @@
     "type": "mountain",
     "difficulty": "medium",
     "questionText": "¿Qué pico es el más alto de Egipto?",
-    "correctAnswer": "Monte Santa Catalina",
+    "correctAnswer": "Monte Catalina",
     "options": [
       "Aconcagua",
-      "Monte Santa Catalina",
+      "Monte Catalina",
       "Dom",
       "Cristóbal Colón"
     ],
@@ -1401,10 +1401,10 @@
     "type": "mountain",
     "difficulty": "medium",
     "questionText": "¿Qué pico es el más alto de Kenia?",
-    "correctAnswer": "Monte Elgon",
+    "correctAnswer": "Monte Kenia",
     "options": [
       "Ben Nevis",
-      "Mont Blanc",
+      "Monte Kenia",
       "Monte Elgon",
       "Grossglockner"
     ],
@@ -1435,11 +1435,11 @@
     "type": "river",
     "difficulty": "medium",
     "questionText": "¿Cuál es el río más largo de Italia?",
-    "correctAnswer": "Tíber",
+    "correctAnswer": "Po",
     "options": [
       "Indo",
       "Amazonas",
-      "Tíber",
+      "Po",
       "Pánuco"
     ],
     "extraData": {
@@ -1486,10 +1486,10 @@
     "type": "lake",
     "difficulty": "medium",
     "questionText": "¿Cuál es el principal lago de Australia?",
-    "correctAnswer": "Lago Torrens",
+    "correctAnswer": "Lago Eyre",
     "options": [
       "Lago de Cuitzeo",
-      "Lago Torrens",
+      "Lago Eyre",
       "Lago de Sanabria",
       "Lago Lemán"
     ],
@@ -1537,12 +1537,12 @@
     "type": "river",
     "difficulty": "medium",
     "questionText": "¿Qué río es el más largo de Perú?",
-    "correctAnswer": "Marañón",
+    "correctAnswer": "Amazonas",
     "options": [
       "Támesis",
       "Shinano",
       "Colorado",
-      "Marañón"
+      "Amazonas"
     ],
     "extraData": {
       "country": "Perú",
@@ -1554,12 +1554,12 @@
     "type": "river",
     "difficulty": "medium",
     "questionText": "¿Qué río es el más largo de México?",
-    "correctAnswer": "Río Bravo",
+    "correctAnswer": "Río Grande",
     "options": [
       "Ohio",
       "Júcar",
-      "Darling",
-      "Río Bravo"
+      "Río Grande",
+      "Darling"
     ],
     "extraData": {
       "country": "México",
@@ -1605,12 +1605,12 @@
     "type": "mountain",
     "difficulty": "medium",
     "questionText": "¿Cuál es la montaña más alta de Nepal?",
-    "correctAnswer": "Kangchenjunga",
+    "correctAnswer": "Huascarán",
     "options": [
-      "Kangchenjunga",
-      "Wildspitze",
-      "Simón Bolívar",
-      "Mulhacén"
+      "Elbrus",
+      "Huascarán",
+      "Grossglockner",
+      "Monte Saint Elias"
     ],
     "extraData": {
       "country": "Nepal",
@@ -1690,7 +1690,7 @@
     "type": "river",
     "difficulty": "medium",
     "questionText": "¿El río más largo de Colombia se llama...?",
-    "correctAnswer": "Cauca",
+    "correctAnswer": "Magdalena",
     "options": [
       "Maule",
       "Tíber",
@@ -1809,11 +1809,11 @@
     "type": "lake",
     "difficulty": "medium",
     "questionText": "¿Qué lago es el más grande de Perú?",
-    "correctAnswer": "Lago Junín",
+    "correctAnswer": "Lago Titicaca",
     "options": [
       "Lago Parón",
       "Lago Chilka",
-      "Lago Junín",
+      "Lago Titicaca",
       "Lago Superior"
     ],
     "extraData": {
@@ -1843,10 +1843,10 @@
     "type": "lake",
     "difficulty": "medium",
     "questionText": "¿Cuál es el principal lago de Chile?",
-    "correctAnswer": "Lago General Carrera",
+    "correctAnswer": "Lago Llanquihue",
     "options": [
       "Lago Müritz",
-      "Lago General Carrera",
+      "Lago Llanquihue",
       "Lago Baikal",
       "Lago Chilka"
     ],
@@ -1979,11 +1979,11 @@
     "type": "mountain",
     "difficulty": "medium",
     "questionText": "¿La montaña más alta de Egipto es...?",
-    "correctAnswer": "Gebel Shayeb",
+    "correctAnswer": "Gebel Katrín",
     "options": [
       "Pic du Midi de Bigorre",
       "Pico 31 de Março",
-      "Gebel Shayeb",
+      "Gebel Katrín",
       "Monte Hotaka"
     ],
     "extraData": {
@@ -2013,11 +2013,11 @@
     "type": "lake",
     "difficulty": "medium",
     "questionText": "¿Cuál es el lago más grande de Estados Unidos?",
-    "correctAnswer": "Lago Michigan",
+    "correctAnswer": "Lago Superior",
     "options": [
       "Lago de Annecy",
       "Lago Llanquihue",
-      "Lago Michigan",
+      "Lago Superior",
       "Lago Viedma"
     ],
     "extraData": {
@@ -2030,10 +2030,10 @@
     "type": "lake",
     "difficulty": "medium",
     "questionText": "¿Cuál es el lago más grande de India?",
-    "correctAnswer": "Lago Wular",
+    "correctAnswer": "Lago Chilika",
     "options": [
       "Lago Llanquihue",
-      "Lago Wular",
+      "Lago Chilika",
       "Lago Viedma",
       "Lago Superior"
     ],
@@ -2115,12 +2115,12 @@
     "type": "river",
     "difficulty": "medium",
     "questionText": "¿Cuál es el principal río de México?",
-    "correctAnswer": "Lerma",
+    "correctAnswer": "Ganges",
     "options": [
-      "Lerma",
-      "Garona",
-      "Támesis",
-      "Balsas"
+      "Arno",
+      "Ganges",
+      "Perla",
+      "Yamuna"
     ],
     "extraData": {
       "country": "México",
@@ -2149,12 +2149,12 @@
     "type": "river",
     "difficulty": "medium",
     "questionText": "¿Cuál es el río más largo de Brasil?",
-    "correctAnswer": "Paraná",
+    "correctAnswer": "Amazonas",
     "options": [
       "Nelson",
       "Misisipi",
       "Columbia",
-      "Paraná"
+      "Amazonas"
     ],
     "extraData": {
       "country": "Brasil",
@@ -2183,10 +2183,10 @@
     "type": "lake",
     "difficulty": "medium",
     "questionText": "¿Cuál es el lago más grande de España?",
-    "correctAnswer": "Embalse de Almansa",
+    "correctAnswer": "Lago de Sanabria",
     "options": [
       "Lago Onega",
-      "Embalse de Almansa",
+      "Lago de Sanabria",
       "Lago de Sobradinho",
       "Lago Buenos Aires"
     ],
@@ -2217,11 +2217,11 @@
     "type": "lake",
     "difficulty": "medium",
     "questionText": "¿El lago más grande de Canadá se llama...?",
-    "correctAnswer": "Lago Huron",
+    "correctAnswer": "Lago Superior",
     "options": [
       "Lago Dongting",
       "Lago de Itaipu",
-      "Lago Huron",
+      "Lago Superior",
       "Lago de Sobradinho"
     ],
     "extraData": {
@@ -2319,10 +2319,10 @@
     "type": "mountain",
     "difficulty": "medium",
     "questionText": "¿Cuál es la montaña más alta de Argentina?",
-    "correctAnswer": "Ojos del Salado",
+    "correctAnswer": "Aconcagua",
     "options": [
       "Mafadi",
-      "Ojos del Salado",
+      "Aconcagua",
       "Monte Kita",
       "Monte Elgon"
     ],
@@ -2336,12 +2336,12 @@
     "type": "mountain",
     "difficulty": "medium",
     "questionText": "¿Qué pico es el más alto de Brasil?",
-    "correctAnswer": "Pico 31 de Março",
+    "correctAnswer": "Pico da Neblina",
     "options": [
       "Wildspitze",
       "Grossglockner",
-      "Pico 31 de Março",
-      "Pico da Neblina"
+      "Pico da Neblina",
+      "Pico 31 de Março"
     ],
     "extraData": {
       "country": "Brasil",
@@ -2353,12 +2353,12 @@
     "type": "river",
     "difficulty": "medium",
     "questionText": "¿Cuál es el río más largo de Estados Unidos?",
-    "correctAnswer": "Colorado",
+    "correctAnswer": "Misisipi-Missouri",
     "options": [
       "Uruguay",
       "Ganges",
       "Colorado",
-      "Perla"
+      "Misisipi-Missouri"
     ],
     "extraData": {
       "country": "Estados Unidos",
@@ -2387,11 +2387,11 @@
     "type": "river",
     "difficulty": "medium",
     "questionText": "¿Cuál es el río más largo de Canadá?",
-    "correctAnswer": "San Lorenzo",
+    "correctAnswer": "Mackenzie",
     "options": [
       "Nilo",
       "Guadalquivir",
-      "San Lorenzo",
+      "Mackenzie",
       "Brahmaputra"
     ],
     "extraData": {
@@ -2421,7 +2421,7 @@
     "type": "river",
     "difficulty": "medium",
     "questionText": "¿El río más largo de India se llama...?",
-    "correctAnswer": "Brahmaputra",
+    "correctAnswer": "Ganges",
     "options": [
       "Arno",
       "Brahmaputra",
@@ -2540,12 +2540,12 @@
     "type": "lake",
     "difficulty": "medium",
     "questionText": "¿El lago más grande de Francia se llama...?",
-    "correctAnswer": "Lago Lemán",
+    "correctAnswer": "Lac du Bourget",
     "options": [
       "Lago Llanquihue",
       "Lago Lemán",
       "Lago Viedma",
-      "Represa de Tucuruí"
+      "Lac du Bourget"
     ],
     "extraData": {
       "country": "Francia",
@@ -2727,12 +2727,12 @@
     "type": "lake",
     "difficulty": "medium",
     "questionText": "¿Qué lago es el más grande de Francia?",
-    "correctAnswer": "Lago de Ginebra",
+    "correctAnswer": "Lac du Bourget",
     "options": [
       "Lago Qinghai",
       "Lago de Ginebra",
       "Embalse de Almansa",
-      "Lago Müritz"
+      "Lac du Bourget"
     ],
     "extraData": {
       "country": "Francia",
@@ -2744,12 +2744,12 @@
     "type": "mountain",
     "difficulty": "medium",
     "questionText": "¿Qué pico es el más alto de Italia?",
-    "correctAnswer": "Cervino",
+    "correctAnswer": "Monte Bianco",
     "options": [
       "Sajama",
       "Watzmann",
-      "Pic du Midi de Bigorre",
-      "Cervino"
+      "Monte Bianco",
+      "Pic du Midi de Bigorre"
     ],
     "extraData": {
       "country": "Italia",
@@ -2778,11 +2778,11 @@
     "type": "river",
     "difficulty": "medium",
     "questionText": "¿Qué río es el más largo de Japón?",
-    "correctAnswer": "Tone",
+    "correctAnswer": "Shinano",
     "options": [
       "Brahmaputra",
       "Volga",
-      "Tone",
+      "Shinano",
       "Río Grande"
     ],
     "extraData": {
@@ -2795,12 +2795,12 @@
     "type": "lake",
     "difficulty": "medium",
     "questionText": "¿El lago más grande de India se llama...?",
-    "correctAnswer": "Lago Wular",
+    "correctAnswer": "Lago Chilika",
     "options": [
       "Lago Wular",
       "Lago Como",
       "Gran Lago del Esclavo",
-      "Lago Müritz"
+      "Lago Chilika"
     ],
     "extraData": {
       "country": "India",
@@ -2812,10 +2812,10 @@
     "type": "river",
     "difficulty": "medium",
     "questionText": "¿Cuál es el principal río de Perú?",
-    "correctAnswer": "Marañón",
+    "correctAnswer": "Amazonas",
     "options": [
       "São Francisco",
-      "Marañón",
+      "Amazonas",
       "Darling",
       "Paraná"
     ],
@@ -2880,10 +2880,10 @@
     "type": "mountain",
     "difficulty": "medium",
     "questionText": "¿Cuál es el punto más alto de Japón?",
-    "correctAnswer": "Monte Hotaka",
+    "correctAnswer": "Fuji",
     "options": [
       "Bonete",
-      "Monte Hotaka",
+      "Fuji",
       "Denali",
       "Weißkugel"
     ],
@@ -2948,12 +2948,12 @@
     "type": "mountain",
     "difficulty": "medium",
     "questionText": "¿Cuál es la montaña más alta de Nepal?",
-    "correctAnswer": "Lhotse",
+    "correctAnswer": "Everest",
     "options": [
       "Lhotse",
       "Aconcagua",
       "Makalu",
-      "Monte Meru"
+      "Everest"
     ],
     "extraData": {
       "country": "Nepal",
@@ -2965,7 +2965,7 @@
     "type": "river",
     "difficulty": "medium",
     "questionText": "¿Cuál es el río más largo de Italia?",
-    "correctAnswer": "Arno",
+    "correctAnswer": "Po",
     "options": [
       "Ob",
       "Arno",
@@ -2982,12 +2982,12 @@
     "type": "river",
     "difficulty": "medium",
     "questionText": "¿Cuál es el río más largo de México?",
-    "correctAnswer": "Lerma",
+    "correctAnswer": "Río Grande",
     "options": [
       "Lerma",
       "Garona",
       "Loira",
-      "Nilo"
+      "Río Grande"
     ],
     "extraData": {
       "country": "México",
@@ -2999,11 +2999,11 @@
     "type": "mountain",
     "difficulty": "medium",
     "questionText": "¿Cuál es la montaña más alta de Perú?",
-    "correctAnswer": "Sajama",
+    "correctAnswer": "Huascarán",
     "options": [
       "Dom",
       "Sajama",
-      "Everest",
+      "Huascarán",
       "Monte Meru"
     ],
     "extraData": {
@@ -3016,12 +3016,12 @@
     "type": "river",
     "difficulty": "medium",
     "questionText": "¿Cuál es el principal río de India?",
-    "correctAnswer": "Brahmaputra",
+    "correctAnswer": "Ganges",
     "options": [
       "San Lorenzo",
       "Vaal",
       "Ucayali",
-      "Brahmaputra"
+      "Ganges"
     ],
     "extraData": {
       "country": "India",
@@ -3033,12 +3033,12 @@
     "type": "lake",
     "difficulty": "medium",
     "questionText": "¿El lago más grande de Italia se llama...?",
-    "correctAnswer": "Lago Como",
+    "correctAnswer": "Lago Garda",
     "options": [
       "Lago Onega",
       "Lago Superior",
       "Lago Titicaca",
-      "Lago Como"
+      "Lago Garda"
     ],
     "extraData": {
       "country": "Italia",
@@ -3084,9 +3084,9 @@
     "type": "river",
     "difficulty": "medium",
     "questionText": "¿Qué río es el más largo de México?",
-    "correctAnswer": "Río Bravo",
+    "correctAnswer": "Río Grande",
     "options": [
-      "Río Bravo",
+      "Río Grande",
       "Ob",
       "Danubio",
       "Ohio"
@@ -3101,7 +3101,7 @@
     "type": "river",
     "difficulty": "medium",
     "questionText": "¿Cuál es el río más largo de Francia?",
-    "correctAnswer": "Sena",
+    "correctAnswer": "Loira",
     "options": [
       "Sena",
       "Tíber",
@@ -3135,12 +3135,12 @@
     "type": "lake",
     "difficulty": "medium",
     "questionText": "¿Qué lago es el más grande de Perú?",
-    "correctAnswer": "Lago Junín",
+    "correctAnswer": "Lago Titicaca",
     "options": [
       "Lago de Como",
       "Lago Onega",
       "Lago Llanquihue",
-      "Lago Junín"
+      "Lago Titicaca"
     ],
     "extraData": {
       "country": "Perú",
@@ -3152,12 +3152,12 @@
     "type": "mountain",
     "difficulty": "medium",
     "questionText": "¿Qué pico es el más alto de Nepal?",
-    "correctAnswer": "Kangchenjunga",
+    "correctAnswer": "Everest",
     "options": [
-      "Ben Nevis",
-      "Kangchenjunga",
-      "Monte Santa Catalina",
-      "Monte Thaba Putsoa"
+      "Lhotse",
+      "Aconcagua",
+      "Makalu",
+      "Everest"
     ],
     "extraData": {
       "country": "Nepal",
@@ -3169,7 +3169,7 @@
     "type": "river",
     "difficulty": "medium",
     "questionText": "¿El río más largo de Italia se llama...?",
-    "correctAnswer": "Tíber",
+    "correctAnswer": "Po",
     "options": [
       "Tíber",
       "Amur",
@@ -3186,10 +3186,10 @@
     "type": "river",
     "difficulty": "medium",
     "questionText": "¿Cuál es el río más largo de Perú?",
-    "correctAnswer": "Ucayali",
+    "correctAnswer": "Amazonas",
     "options": [
       "Yangtsé",
-      "Ucayali",
+      "Amazonas",
       "Atrato",
       "San Lorenzo"
     ],
@@ -3203,10 +3203,10 @@
     "type": "lake",
     "difficulty": "medium",
     "questionText": "¿El lago más grande de India se llama...?",
-    "correctAnswer": "Lago Chilka",
+    "correctAnswer": "Lago Chilika",
     "options": [
       "Lago General Carrera",
-      "Lago Chilka",
+      "Lago Chilika",
       "Lago Parón",
       "Lago Müritz"
     ],
@@ -3220,12 +3220,12 @@
     "type": "mountain",
     "difficulty": "medium",
     "questionText": "¿Qué pico es el más alto de México?",
-    "correctAnswer": "Iztaccíhuatl",
+    "correctAnswer": "Pico de Orizaba",
     "options": [
       "Iztaccíhuatl",
       "Kangchenjunga",
       "Mont Blanc",
-      "Schneekoppe"
+      "Pico de Orizaba"
     ],
     "extraData": {
       "country": "México",
@@ -3237,12 +3237,12 @@
     "type": "lake",
     "difficulty": "medium",
     "questionText": "¿Qué lago es el más grande de Italia?",
-    "correctAnswer": "Lago Mayor",
+    "correctAnswer": "Lago Garda",
     "options": [
       "Lago Toshka",
       "Lago Chiemsee",
       "Lago Superior",
-      "Lago Mayor"
+      "Lago Garda"
     ],
     "extraData": {
       "country": "Italia",
@@ -3288,10 +3288,10 @@
     "type": "mountain",
     "difficulty": "medium",
     "questionText": "¿Qué pico es el más alto de Kenia?",
-    "correctAnswer": "Monte Elgon",
+    "correctAnswer": "Monte Kenia",
     "options": [
       "Scafell Pike",
-      "Monte Elgon",
+      "Monte Kenia",
       "Gebel Shayeb",
       "Everest"
     ],
@@ -3322,11 +3322,11 @@
     "type": "lake",
     "difficulty": "medium",
     "questionText": "¿Cuál es el lago más grande de Francia?",
-    "correctAnswer": "Lago de Annecy",
+    "correctAnswer": "Lac du Bourget",
     "options": [
       "Lago de Sanabria",
       "Lago Ullswater",
-      "Lago de Annecy",
+      "Lac du Bourget",
       "Lago Buenos Aires"
     ],
     "extraData": {
@@ -3373,7 +3373,7 @@
     "type": "river",
     "difficulty": "medium",
     "questionText": "¿Cuál es el principal río de México?",
-    "correctAnswer": "Pánuco",
+    "correctAnswer": "Río Grande",
     "options": [
       "Río Grande",
       "Murray",
@@ -3407,7 +3407,7 @@
     "type": "river",
     "difficulty": "medium",
     "questionText": "¿El río más largo de India se llama...?",
-    "correctAnswer": "Indo",
+    "correctAnswer": "Ganges",
     "options": [
       "Shinano",
       "Pánuco",
@@ -3424,10 +3424,10 @@
     "type": "lake",
     "difficulty": "medium",
     "questionText": "¿Qué lago es el más grande de México?",
-    "correctAnswer": "Lago de Cuitzeo",
+    "correctAnswer": "Lago de Chapala",
     "options": [
       "Lago Todos los Santos",
-      "Lago de Cuitzeo",
+      "Lago de Chapala",
       "Lago Ness",
       "Lago Gairdner"
     ],
@@ -3441,12 +3441,12 @@
     "type": "mountain",
     "difficulty": "medium",
     "questionText": "¿Cuál es el punto más alto de México?",
-    "correctAnswer": "Popocatépetl",
+    "correctAnswer": "Pico de Orizaba",
     "options": [
       "Monte Bianco",
       "Iztaccíhuatl",
       "Monte Kosciuszko",
-      "Popocatépetl"
+      "Pico de Orizaba"
     ],
     "extraData": {
       "country": "México",
@@ -3611,12 +3611,12 @@
     "type": "mountain",
     "difficulty": "medium",
     "questionText": "¿Cuál es la montaña más alta de Japón?",
-    "correctAnswer": "Monte Kita",
+    "correctAnswer": "Fuji",
     "options": [
       "Lhotse",
       "Monte Rainier",
       "Monte Bianco",
-      "Monte Kita"
+      "Fuji"
     ],
     "extraData": {
       "country": "Japón",
@@ -3628,11 +3628,11 @@
     "type": "mountain",
     "difficulty": "medium",
     "questionText": "¿Qué pico es el más alto de Italia?",
-    "correctAnswer": "Grossglockner",
+    "correctAnswer": "Monte Bianco",
     "options": [
       "Grossglockner",
       "Monte Bianco",
-      "Pico 31 de Março",
+      "Pico da Neblina",
       "Schneekoppe"
     ],
     "extraData": {
@@ -3645,7 +3645,7 @@
     "type": "river",
     "difficulty": "medium",
     "questionText": "¿Cuál es el principal río de Japón?",
-    "correctAnswer": "Ishikari",
+    "correctAnswer": "Shinano",
     "options": [
       "Tíber",
       "Ishikari",
@@ -3679,11 +3679,11 @@
     "type": "lake",
     "difficulty": "medium",
     "questionText": "¿Cuál es el principal lago de India?",
-    "correctAnswer": "Lago Kolleru",
+    "correctAnswer": "Lago Chilika",
     "options": [
       "Lago de Itaipu",
       "Lago Huron",
-      "Lago Kolleru",
+      "Lago Chilika",
       "Lago General Carrera"
     ],
     "extraData": {
@@ -3696,12 +3696,12 @@
     "type": "lake",
     "difficulty": "medium",
     "questionText": "¿Cuál es el principal lago de Perú?",
-    "correctAnswer": "Lago Parón",
+    "correctAnswer": "Lago Titicaca",
     "options": [
       "Lago Parón",
       "Lago Müritz",
       "Lago de Cuitzeo",
-      "Lago Ness"
+      "Lago Titicaca"
     ],
     "extraData": {
       "country": "Perú",
@@ -3730,12 +3730,12 @@
     "type": "lake",
     "difficulty": "medium",
     "questionText": "¿Cuál es el lago más grande de México?",
-    "correctAnswer": "Lago de Pátzcuaro",
+    "correctAnswer": "Lago de Chapala",
     "options": [
       "Lago Como",
       "Lago Dongting",
       "Lago de Ginebra",
-      "Lago de Pátzcuaro"
+      "Lago de Chapala"
     ],
     "extraData": {
       "country": "México",
@@ -3764,12 +3764,12 @@
     "type": "lake",
     "difficulty": "medium",
     "questionText": "¿Qué lago es el más grande de Perú?",
-    "correctAnswer": "Lago Parón",
+    "correctAnswer": "Lago Titicaca",
     "options": [
       "Lago Junín",
       "Lago Parón",
       "Gran Lago del Esclavo",
-      "Lago de Pátzcuaro"
+      "Lago Titicaca"
     ],
     "extraData": {
       "country": "Perú",
@@ -3815,11 +3815,11 @@
     "type": "mountain",
     "difficulty": "medium",
     "questionText": "¿Cuál es el punto más alto de Perú?",
-    "correctAnswer": "Sajama",
+    "correctAnswer": "Huascarán",
     "options": [
       "Denali",
       "Monte Elgon",
-      "Sajama",
+      "Huascarán",
       "Popocatépetl"
     ],
     "extraData": {
@@ -3832,7 +3832,7 @@
     "type": "river",
     "difficulty": "medium",
     "questionText": "¿Cuál es el río más largo de Italia?",
-    "correctAnswer": "Adigio",
+    "correctAnswer": "Po",
     "options": [
       "Lena",
       "Churchill",
@@ -3934,12 +3934,12 @@
     "type": "river",
     "difficulty": "medium",
     "questionText": "¿Qué río es el más largo de Perú?",
-    "correctAnswer": "Ucayali",
+    "correctAnswer": "Amazonas",
     "options": [
-      "Amur",
-      "Ucayali",
-      "Uruguay",
-      "Douro"
+      "Biobío",
+      "Orange",
+      "Amazonas",
+      "Cauca"
     ],
     "extraData": {
       "country": "Perú",
@@ -3951,7 +3951,7 @@
     "type": "river",
     "difficulty": "medium",
     "questionText": "¿Cuál es el río más largo de México?",
-    "correctAnswer": "Balsas",
+    "correctAnswer": "Río Grande",
     "options": [
       "Balsas",
       "Mackenzie",
@@ -4019,7 +4019,7 @@
     "type": "river",
     "difficulty": "medium",
     "questionText": "¿Qué río es el más largo de México?",
-    "correctAnswer": "Pánuco",
+    "correctAnswer": "Río Grande",
     "options": [
       "Colorado",
       "Nilo",
@@ -4087,11 +4087,11 @@
     "type": "mountain",
     "difficulty": "medium",
     "questionText": "¿La montaña más alta de Perú es...?",
-    "correctAnswer": "Coropuna",
+    "correctAnswer": "Huascarán",
     "options": [
       "Ritacuba Blanco",
       "Monte Kosciuszko",
-      "Coropuna",
+      "Huascarán",
       "Ortles"
     ],
     "extraData": {
@@ -4172,11 +4172,11 @@
     "type": "river",
     "difficulty": "medium",
     "questionText": "¿Cuál es el principal río de México?",
-    "correctAnswer": "Río Bravo",
+    "correctAnswer": "Río Grande",
     "options": [
       "Colorado",
       "Balsas",
-      "Río Bravo",
+      "Río Grande",
       "Nelson"
     ],
     "extraData": {
@@ -4206,12 +4206,12 @@
     "type": "river",
     "difficulty": "medium",
     "questionText": "¿Qué río es el más largo de Perú?",
-    "correctAnswer": "Marañón",
+    "correctAnswer": "Amazonas",
     "options": [
-      "Biobío",
-      "Orange",
-      "Marañón",
-      "Cauca"
+      "Amur",
+      "Amazonas",
+      "Uruguay",
+      "Douro"
     ],
     "extraData": {
       "country": "Perú",
@@ -4291,10 +4291,10 @@
     "type": "river",
     "difficulty": "medium",
     "questionText": "¿Cuál es el río más largo de Japón?",
-    "correctAnswer": "Tone",
+    "correctAnswer": "Shinano",
     "options": [
       "Guadiana",
-      "Tone",
+      "Shinano",
       "Paraná",
       "Baker"
     ],
@@ -4308,12 +4308,12 @@
     "type": "lake",
     "difficulty": "medium",
     "questionText": "¿Cuál es el principal lago de Perú?",
-    "correctAnswer": "Lago Junín",
+    "correctAnswer": "Lago Titicaca",
     "options": [
       "Lago Toshka",
       "Lago Junín",
       "Lago Superior",
-      "Lago Qinghai"
+      "Lago Titicaca"
     ],
     "extraData": {
       "country": "Perú",
@@ -4325,7 +4325,7 @@
     "type": "river",
     "difficulty": "medium",
     "questionText": "¿El río más largo de México se llama...?",
-    "correctAnswer": "Lerma",
+    "correctAnswer": "Río Grande",
     "options": [
       "Douro",
       "Lerma",
@@ -4342,11 +4342,11 @@
     "type": "river",
     "difficulty": "medium",
     "questionText": "¿Cuál es el río más largo de Japón?",
-    "correctAnswer": "Ishikari",
+    "correctAnswer": "Shinano",
     "options": [
       "Cauca",
       "Churchill",
-      "Ishikari",
+      "Shinano",
       "Ródano"
     ],
     "extraData": {
@@ -44171,71 +44171,6 @@
     }
   },
   {
-    "id": "mountain_51001",
-    "type": "mountain",
-    "difficulty": "medium",
-    "questionText": "¿La montaña más alta de Italia es...?",
-    "correctAnswer": "Gran Premio de la montaña en el Giro de Italia",
-    "options": [
-      "Gran Premio de la montaña en el Giro de Italia",
-      "Gran Premio de la montaña en el Tour de Francia"
-    ],
-    "extraData": {
-      "country": "Italia",
-      "mountainName": "Gran Premio de la montaña en el Giro de Italia",
-      "pageid": 7787529
-    }
-  },
-  {
-    "id": "river_50000",
-    "type": "river",
-    "difficulty": "medium",
-    "questionText": "¿Qué río es el más largo de España?",
-    "correctAnswer": "Piedras (España)",
-    "options": [
-      "Severn (Reino Unido)",
-      "Piedras (España)",
-      "Ríos de Italia"
-    ],
-    "extraData": {
-      "country": "España",
-      "riverName": "Piedras (España)",
-      "pageid": 465454
-    }
-  },
-  {
-    "id": "river_50001",
-    "type": "river",
-    "difficulty": "medium",
-    "questionText": "¿Qué río es el más largo de Italia?",
-    "correctAnswer": "Ríos de Italia",
-    "options": [
-      "Ríos de Italia",
-      "Severn (Reino Unido)",
-      "Piedras (España)"
-    ],
-    "extraData": {
-      "country": "Italia",
-      "riverName": "Ríos de Italia",
-      "pageid": 1259757
-    }
-  },
-  {
-    "id": "lake_52000",
-    "type": "lake",
-    "difficulty": "medium",
-    "questionText": "¿El lago más grande de España se llama...?",
-    "correctAnswer": "Lagos de España",
-    "options": [
-      "Lagos de España"
-    ],
-    "extraData": {
-      "country": "España",
-      "lakeName": "Lagos de España",
-      "pageid": 2129385
-    }
-  },
-  {
     "id": "river_50002",
     "type": "river",
     "difficulty": "medium",
@@ -44250,22 +44185,6 @@
       "country": "Reino Unido",
       "riverName": "Severn (Reino Unido)",
       "pageid": 650478
-    }
-  },
-  {
-    "id": "mountain_51000",
-    "type": "mountain",
-    "difficulty": "medium",
-    "questionText": "¿La montaña más alta de Francia es...?",
-    "correctAnswer": "Gran Premio de la montaña en el Tour de Francia",
-    "options": [
-      "Gran Premio de la montaña en el Tour de Francia",
-      "Gran Premio de la montaña en el Giro de Italia"
-    ],
-    "extraData": {
-      "country": "Francia",
-      "mountainName": "Gran Premio de la montaña en el Tour de Francia",
-      "pageid": 7781984
     }
   }
 ]

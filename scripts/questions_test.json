@@ -1,0 +1,69 @@
+[
+  {
+    "id": "flag_test_1",
+    "type": "flag",
+    "difficulty": "easy",
+    "questionText": "¿De qué país es esta bandera?",
+    "correctAnswer": "España",
+    "options": ["Francia", "España", "Italia", "Portugal"],
+    "imageUrl": "https://flagcdn.com/w320/es.png",
+    "extraData": {
+      "countryCode": "es",
+      "countryName": "España"
+    }
+  },
+  {
+    "id": "capital_test_1",
+    "type": "capital",
+    "difficulty": "easy",
+    "questionText": "¿Cuál es la capital de Alemania?",
+    "correctAnswer": "Berlín",
+    "options": ["Múnich", "Berlín", "Hamburgo", "Colonia"],
+    "extraData": {
+      "countryCode": "de",
+      "countryName": "Alemania"
+    }
+  },
+  {
+    "id": "currency_test_1",
+    "type": "currency",
+    "difficulty": "medium",
+    "questionText": "¿Cuál es la moneda de Japón?",
+    "correctAnswer": "Yen japonés",
+    "options": ["Dólar estadounidense", "Euro", "Yen japonés", "Libra esterlina"],
+    "extraData": {
+      "countryCode": "jp",
+      "countryName": "Japón",
+      "currencyCode": "jpy"
+    }
+  },
+  {
+    "id": "population_test_1",
+    "type": "population",
+    "difficulty": "medium",
+    "questionText": "¿Qué país tiene más población?",
+    "correctAnswer": "China",
+    "options": ["China", "India"],
+    "extraData": {
+      "countries": ["China", "India"],
+      "population1": 1428627663,
+      "population2": 1428627663,
+      "infoToShow": "1.4 mil millones habitantes"
+    }
+  },
+  {
+    "id": "monument_test_1",
+    "type": "monument_image",
+    "difficulty": "medium",
+    "questionText": "¿Qué monumento o edificio es este?",
+    "correctAnswer": "Torre Eiffel",
+    "options": ["Big Ben", "Torre Eiffel", "Coliseo", "Partenón"],
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Tour_Eiffel_Wikimedia_Commons_%28cropped%29.jpg/320px-Tour_Eiffel_Wikimedia_Commons_%28cropped%29.jpg",
+    "extraData": {
+      "monumentName": "Torre Eiffel",
+      "city": "París",
+      "country": "Francia",
+      "monumentType": "torre"
+    }
+  }
+]
