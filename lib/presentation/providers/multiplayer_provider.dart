@@ -767,6 +767,7 @@ class MultiplayerNotifier extends StateNotifier<MultiplayerState> {
     // ── Calculate and update Elo (multiplayer only) ──────────────
     int? eloChange;
     int? newElo;
+    MatchResult? matchResult;
 
     if (_currentUserId != null) {
       final userState = _ref.read(userNotifierProvider);
@@ -775,6 +776,7 @@ class MultiplayerNotifier extends StateNotifier<MultiplayerState> {
       final gamesPlayed = currentUser?.stats.totalGames ?? 0;
 
       // Determine opponent Elo for calculation
+      final opponentId = state.currentMatch?.getOpponentId(_currentUserId!) ?? '';
       final opponentElo = state.opponentElo ?? GameConstants.initialElo;
 
       // Calculate score: based on win/loss/draw
@@ -802,7 +804,52 @@ class MultiplayerNotifier extends StateNotifier<MultiplayerState> {
         gamesPlayed: gamesPlayed,
       );
 
-      // Update user Elo and stats in Firestore
+      // Calculate opponent's ELO change (inverse of player's)
+      final opponentScore = 1.0 - score; // 0.0 if win, 1.0 if loss, 0.5 if draw
+      // Get opponent games (estimated for now - stored in match in future)
+      final opponentGamesPlayed = gamesPlayed; // Simplified: same games count
+
+      final opponentEloChange = eloCalc.calculateChange(
+        playerElo: opponentElo,
+        opponentElo: playerElo,
+        score: opponentScore,
+        gamesPlayed: opponentGamesPlayed,
+      );
+      final opponentNewElo = eloCalc.calculateNewElo(
+        playerElo: opponentElo,
+        opponentElo: playerElo,
+        score: opponentScore,
+        gamesPlayed: opponentGamesPlayed,
+      );
+
+      // Create MatchResult with both players' ELO changes
+      if (opponentId.isNotEmpty && state.currentMatch != null) {
+        matchResult = MatchResult(
+          winnerId: score == 1.0 ? _currentUserId : (score == 0.0 ? null : opponentId),
+          scores: {
+            _currentUserId!: state.playerScore,
+            if (opponentId.isNotEmpty) opponentId: state.opponentScore,
+          },
+          eloChanges: {
+            _currentUserId!: eloChange!,
+            if (opponentId.isNotEmpty) opponentId: opponentEloChange,
+          },
+          newElo: {
+            _currentUserId!: newElo!,
+            if (opponentId.isNotEmpty) opponentId: opponentNewElo,
+          },
+        );
+      }
+
+      // Save match result to Firestore
+      if (state.currentMatch != null && matchResult != null) {
+        await _ref.read(matchRepositoryProvider).saveMatchResult(
+              matchId: state.currentMatch!.id,
+              result: matchResult!,
+            );
+      }
+
+      // Update user Elo and stats in Firestore (only our player)
       if (currentUser != null) {
         final isWin = score == 1.0;
         final isDraw = score == 0.5;
@@ -837,15 +884,16 @@ class MultiplayerNotifier extends StateNotifier<MultiplayerState> {
 
         await _ref.read(userNotifierProvider.notifier).updateUserProfile(updatedUser);
       }
+
+      // Update state with opponent's new ELO for display and finish status
+      state = state.copyWith(
+        opponentElo: opponentId.isNotEmpty ? opponentNewElo : null,
+        status: MultiplayerStatus.finished,
+        eloChange: eloChange,
+        newElo: newElo,
+      );
     }
-
-    state = state.copyWith(
-      status: MultiplayerStatus.finished,
-      eloChange: eloChange,
-      newElo: newElo,
-    );
   }
-
   /// Fallback to ghost run when no opponent found
   Future<void> _fallbackToGhostRun() async {
     // Switch to ghost run mode and start match

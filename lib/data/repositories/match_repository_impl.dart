@@ -305,4 +305,29 @@ class MatchRepositoryImpl implements MatchRepository {
       return Left(UnknownFailure(e.toString()));
     }
   }
+
+  @override
+  Future<Either<Failure, void>> saveMatchResult({
+    required String matchId,
+    required MatchResult result,
+  }) async {
+    try {
+      await _firestore
+          .collection(FirebaseConstants.matches)
+          .doc(matchId)
+          .update({
+        'result': {
+          'winnerId': result.winnerId,
+          'scores': result.scores,
+          'eloChanges': result.eloChanges,
+          'newElo': result.newElo,
+        },
+      });
+      return const Right(null);
+    } on ServerException catch (e) {
+      return Left(ServerFailure(e.message));
+    } catch (e) {
+      return Left(UnknownFailure(e.toString()));
+    }
+  }
 }

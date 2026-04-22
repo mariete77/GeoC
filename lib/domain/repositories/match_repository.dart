@@ -50,4 +50,10 @@ abstract class MatchRepository {
     required String matchId,
     required String userId,
   });
+
+  /// Save match result with ELO changes for both players
+  Future<Either<Failure, void>> saveMatchResult({
+    required String matchId,
+    required MatchResult result,
+  });
 }
