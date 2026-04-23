@@ -5,6 +5,12 @@ import '../../../domain/entities/match.dart';
 
 /// Widget que muestra una línea de tiempo de respuestas
 /// Visualiza gráficamente dónde acertó o falló cada jugador
+/// 
+/// Design System: Modern Explorer's Journal
+/// - No-Line Rule: Sin bordes de 1px, usar cambios de color de fondo
+/// - Tonal Layering: Definir jerarquía con capas de surface
+/// - Glassmorphism: backdrop-blur(20px) para elementos flotantes
+/// - Asymmetric Layouts: Layouts asimétricos con offset
 class AnswerTimeline extends StatelessWidget {
   final int totalQuestions;
   final List<Answer> playerAnswers;
@@ -24,23 +30,15 @@ class AnswerTimeline extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: const EdgeInsets.all(20),
-      decoration: BoxDecoration(
-        color: AppColors.surfaceContainerLow,
-        borderRadius: BorderRadius.circular(16),
-        border: Border.all(
-          color: AppColors.outlineVariant.withOpacity(0.3),
-          width: 1,
-        ),
-      ),
+      padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 28),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          // Header
+          // Header - Asymmetric layout
           _buildHeader(),
-          const SizedBox(height: 20),
+          const SizedBox(height: 32),
 
-          // Timeline
+          // Timeline - Tonal layering
           _buildTimeline(),
         ],
       ),
@@ -48,139 +46,150 @@ class AnswerTimeline extends StatelessWidget {
   }
 
   Widget _buildHeader() {
-    return Row(
-      children: [
-        // Player icon
-        Container(
-          width: 40,
-          height: 40,
-          decoration: BoxDecoration(
-            color: AppColors.primary.withOpacity(0.15),
-            borderRadius: BorderRadius.circular(10),
-          ),
-          child: const Icon(
-            Icons.person,
-            color: AppColors.primary,
-            size: 24,
-          ),
-        ),
+    return LayoutBuilder(
+      builder: (context, constraints) {
+        final isWide = constraints.maxWidth > 600;
+        
+        return Row(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            // Player section - Left aligned
+            Expanded(
+              flex: 3,
+              child: _buildPlayerHeader(
+                name: playerName,
+                answers: playerAnswers.length,
+                isPrimary: true,
+              ),
+            ),
 
-        const SizedBox(width: 12),
+            // Negative space
+            const SizedBox(width: 32),
 
-        // Player name
-        Expanded(
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              Text(
-                playerName,
-                style: GoogleFonts.plusJakartaSans(
-                  fontSize: 15,
-                  fontWeight: FontWeight.w700,
-                  color: AppColors.onSurface,
+            // Legend - Right aligned, offset vertically
+            if (!isWide) ...[
+              const Spacer(),
+              _buildLegend(),
+            ],
+
+            // VS section - For multiplayer
+            if (opponentAnswers != null && opponentName != null) ...[
+              // VS indicator - Glassmorphism
+              Container(
+                margin: const EdgeInsets.only(top: 8),
+                padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
+                decoration: BoxDecoration(
+                  color: AppColors.surfaceVariant.withOpacity(0.6),
+                  borderRadius: BorderRadius.circular(20),
+                  boxShadow: [
+                    BoxShadow(
+                      color: AppColors.onSurface.withOpacity(0.06),
+                      blurRadius: 32,
+                      offset: const Offset(0, 8),
+                    ),
+                  ],
+                ),
+                child: Text(
+                  'VS',
+                  style: GoogleFonts.plusJakartaSans(
+                    fontSize: 11,
+                    fontWeight: FontWeight.w800,
+                    color: AppColors.onSurface,
+                    letterSpacing: 2,
+                  ),
                 ),
               ),
-              Text(
-                '${playerAnswers.length} respuestas',
-                style: GoogleFonts.workSans(
-                  fontSize: 12,
-                  color: AppColors.onSurfaceVariant,
+
+              const SizedBox(width: 32),
+
+              // Opponent section
+              Expanded(
+                flex: 3,
+                child: _buildPlayerHeader(
+                  name: opponentName!,
+                  answers: opponentAnswers!.length,
+                  isPrimary: false,
                 ),
               ),
             ],
+          ],
+        );
+      },
+    );
+  }
+
+  Widget _buildPlayerHeader({
+    required String name,
+    required int answers,
+    required bool isPrimary,
+  }) {
+    final color = isPrimary ? AppColors.primary : AppColors.error;
+    
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: [
+        // Player name - High contrast typography
+        Text(
+          name,
+          style: GoogleFonts.plusJakartaSans(
+            fontSize: 24,
+            fontWeight: FontWeight.w700,
+            color: AppColors.onSurface,
+            height: 1.2,
+          ),
+        ),
+        const SizedBox(height: 4),
+        
+        // Answer count - Subtle body text
+        Text(
+          '$answers ${answers == 1 ? 'respuesta' : 'respuestas'}',
+          style: GoogleFonts.workSans(
+            fontSize: 14,
+            color: AppColors.onSurfaceVariant,
+            fontWeight: FontWeight.w500,
           ),
         ),
 
-        // VS (if opponent)
-        if (opponentAnswers != null && opponentName != null) ...[
-          Container(
-            padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 6),
-            decoration: BoxDecoration(
-              color: AppColors.surfaceContainerHighest,
-              borderRadius: BorderRadius.circular(8),
-            ),
-            child: Text(
-              'VS',
-              style: GoogleFonts.plusJakartaSans(
-                fontSize: 12,
-                fontWeight: FontWeight.w800,
-                color: AppColors.onSurfaceVariant,
-                letterSpacing: 1,
-              ),
-            ),
+        // Color accent line - Tonal layering
+        const SizedBox(height: 12),
+        Container(
+          width: 48,
+          height: 3,
+          decoration: BoxDecoration(
+            color: color,
+            borderRadius: BorderRadius.circular(2),
           ),
-          const SizedBox(width: 12),
-
-          // Opponent icon
-          Container(
-            width: 40,
-            height: 40,
-            decoration: BoxDecoration(
-              color: AppColors.error.withOpacity(0.15),
-              borderRadius: BorderRadius.circular(10),
-            ),
-            child: const Icon(
-              Icons.person,
-              color: AppColors.error,
-              size: 24,
-            ),
-          ),
-
-          const SizedBox(width: 12),
-
-          // Opponent name
-          Expanded(
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                Text(
-                  opponentName!,
-                  style: GoogleFonts.plusJakartaSans(
-                    fontSize: 15,
-                    fontWeight: FontWeight.w700,
-                    color: AppColors.onSurface,
-                  ),
-                ),
-                Text(
-                  '${opponentAnswers!.length} respuestas',
-                  style: GoogleFonts.workSans(
-                    fontSize: 12,
-                    color: AppColors.onSurfaceVariant,
-                  ),
-                ),
-              ],
-            ),
-          ),
-        ],
-
-        // Legend
-        _buildLegend(),
+        ),
       ],
     );
   }
 
   Widget _buildLegend() {
-    return Row(
-      mainAxisSize: MainAxisSize.min,
-      children: [
-        // Correct
-        _buildLegendItem(
-          color: AppColors.primary,
-          label: 'Correcta',
-        ),
-        const SizedBox(width: 12),
-        // Incorrect
-        _buildLegendItem(
-          color: AppColors.error,
-          label: 'Incorrecta',
-        ),
-        const SizedBox(width: 12),
-        // Timeout
-        _buildLegendItem(
-          color: AppColors.tertiary,
-          label: 'Tiempo',
-        ),
-      ],
+    return Container(
+      padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
+      decoration: BoxDecoration(
+        color: AppColors.surfaceContainerLow,
+        borderRadius: BorderRadius.circular(16),
+      ),
+      child: Row(
+        mainAxisSize: MainAxisSize.min,
+        children: [
+          _buildLegendItem(
+            color: AppColors.primary,
+            label: 'Correcta',
+          ),
+          const SizedBox(width: 20),
+          _buildLegendItem(
+            color: AppColors.error,
+            label: 'Incorrecta',
+          ),
+          const SizedBox(width: 20),
+          _buildLegendItem(
+            color: AppColors.tertiary,
+            label: 'Tiempo',
+          ),
+        ],
+      ),
     );
   }
 
@@ -191,20 +200,22 @@ class AnswerTimeline extends StatelessWidget {
     return Row(
       mainAxisSize: MainAxisSize.min,
       children: [
+        // Status dot - No border, tonal
         Container(
-          width: 12,
-          height: 12,
+          width: 14,
+          height: 14,
           decoration: BoxDecoration(
             color: color,
-            borderRadius: BorderRadius.circular(3),
+            borderRadius: BorderRadius.circular(4),
           ),
         ),
-        const SizedBox(width: 6),
+        const SizedBox(width: 8),
         Text(
           label,
           style: GoogleFonts.workSans(
-            fontSize: 11,
+            fontSize: 12,
             color: AppColors.onSurfaceVariant,
+            fontWeight: FontWeight.w500,
           ),
         ),
       ],
@@ -237,51 +248,49 @@ class AnswerTimeline extends StatelessWidget {
     final opponentColor = _getStatusColor(opponentAnswer);
 
     return Container(
-      margin: const EdgeInsets.only(bottom: 12),
+      margin: const EdgeInsets.only(bottom: 16),
       child: Row(
+        crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          // Question number
+          // Question number - Display typography, left aligned
           SizedBox(
-            width: 50,
+            width: 56,
             child: Text(
               '#${questionIndex + 1}',
-              style: GoogleFonts.workSans(
-                fontSize: 14,
-                fontWeight: FontWeight.w600,
+              style: GoogleFonts.plusJakartaSans(
+                fontSize: 18,
+                fontWeight: FontWeight.w700,
                 color: AppColors.onSurfaceVariant,
+                height: 1.3,
               ),
             ),
           ),
 
-          const SizedBox(width: 12),
+          const SizedBox(width: 20),
 
-          // Player answer
+          // Player answer - Tonal layering
           Expanded(
-            child: _buildAnswerDot(
+            child: _buildAnswerCard(
               answer: playerAnswer,
               color: playerColor,
               label: playerName,
+              isPrimary: true,
             ),
           ),
 
-          // Divider (if opponent)
+          // Negative space instead of divider
           if (opponentAnswers != null) ...[
-            const SizedBox(width: 16),
-            VerticalDivider(
-              width: 1,
-              thickness: 1,
-              color: AppColors.outlineVariant.withOpacity(0.3),
-            ),
-            const SizedBox(width: 16),
+            const SizedBox(width: 24),
           ],
 
           // Opponent answer
           if (opponentAnswers != null)
             Expanded(
-              child: _buildAnswerDot(
+              child: _buildAnswerCard(
                 answer: opponentAnswer,
                 color: opponentColor,
                 label: opponentName ?? '',
+                isPrimary: false,
               ),
             ),
         ],
@@ -289,74 +298,107 @@ class AnswerTimeline extends StatelessWidget {
     );
   }
 
-  Widget _buildAnswerDot({
+  Widget _buildAnswerCard({
     required Answer? answer,
     required Color color,
     required String label,
+    required bool isPrimary,
   }) {
+    final backgroundColor = color.withOpacity(0.08);
+    
     return Container(
-      padding: const EdgeInsets.symmetric(vertical: 8, horizontal: 12),
+      padding: const EdgeInsets.all(16),
       decoration: BoxDecoration(
-        color: color.withOpacity(0.1),
-        borderRadius: BorderRadius.circular(8),
-        border: Border.all(
-          color: color.withOpacity(0.3),
-          width: 1,
-        ),
+        color: backgroundColor,
+        borderRadius: BorderRadius.circular(16),
+        // No border - Tonal layering instead
       ),
-      child: Row(
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          // Status indicator
-          Container(
-            width: 24,
-            height: 24,
-            decoration: BoxDecoration(
-              color: color,
-              borderRadius: BorderRadius.circular(6),
-            ),
-            child: Center(
-              child: _getStatusIcon(answer),
-            ),
+          // Status header
+          Row(
+            children: [
+              // Status indicator - Glassmorphism
+              Container(
+                width: 28,
+                height: 28,
+                decoration: BoxDecoration(
+                  color: color,
+                  borderRadius: BorderRadius.circular(8),
+                  boxShadow: [
+                    BoxShadow(
+                      color: color.withOpacity(0.3),
+                      blurRadius: 16,
+                      offset: const Offset(0, 4),
+                    ),
+                  ],
+                ),
+                child: Center(
+                  child: _getStatusIcon(answer, color),
+                ),
+              ),
+
+              const SizedBox(width: 12),
+
+              // Status label - Display typography
+              Expanded(
+                child: Text(
+                  _getStatusLabel(answer),
+                  style: GoogleFonts.plusJakartaSans(
+                    fontSize: 15,
+                    fontWeight: FontWeight.w700,
+                    color: color,
+                    height: 1.2,
+                  ),
+                ),
+              ),
+            ],
           ),
 
-          const SizedBox(width: 10),
-
-          // Answer info
-          Expanded(
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                if (answer != null) ...[
-                  Text(
-                    _getStatusLabel(answer),
-                    style: GoogleFonts.plusJakartaSans(
-                      fontSize: 13,
-                      fontWeight: FontWeight.w700,
-                      color: color,
-                    ),
-                  ),
-                  if (answer.selectedAnswer.isNotEmpty && answer.selectedAnswer.length < 20)
-                    Text(
-                      answer.selectedAnswer,
-                      style: GoogleFonts.workSans(
-                        fontSize: 11,
-                        color: AppColors.onSurfaceVariant,
-                      ),
-                      maxLines: 1,
-                      overflow: TextOverflow.ellipsis,
-                    ),
-                ] else
-                  Text(
-                    'No respondida',
-                    style: GoogleFonts.workSans(
-                      fontSize: 11,
-                      color: AppColors.onSurfaceVariant,
-                      fontStyle: FontStyle.italic,
-                    ),
-                  ),
-              ],
+          // Answer details - Body typography
+          if (answer != null) ...[
+            const SizedBox(height: 8),
+            if (answer.selectedAnswer.isNotEmpty) ...[
+              Text(
+                answer.selectedAnswer,
+                style: GoogleFonts.workSans(
+                  fontSize: 13,
+                  color: AppColors.onSurface,
+                  fontWeight: FontWeight.w500,
+                  height: 1.4,
+                ),
+                maxLines: 2,
+                overflow: TextOverflow.ellipsis,
+              ),
+            ],
+            
+            // Time taken - Subtle
+            if (answer.timeMs > 0) ...[
+              const SizedBox(height: 4),
+              Text(
+                '${(answer.timeMs / 1000).toStringAsFixed(1)}s',
+                style: GoogleFonts.workSans(
+                  fontSize: 11,
+                  color: AppColors.onSurfaceVariant,
+                  fontWeight: FontWeight.w400,
+                ),
+              ),
+            ],
+          ] else
+            // Not answered - Subtle, italic
+            Padding(
+              padding: const EdgeInsets.only(top: 8),
+              child: Text(
+                'Sin respuesta',
+                style: GoogleFonts.workSans(
+                  fontSize: 13,
+                  color: AppColors.onSurfaceVariant.withOpacity(0.7),
+                  fontStyle: FontStyle.italic,
+                  fontWeight: FontWeight.w400,
+                ),
+              ),
             ),
-          ),
         ],
       ),
     );
@@ -368,42 +410,49 @@ class AnswerTimeline extends StatelessWidget {
     }
 
     if (answer.timeMs == 0) {
-      // Assuming timeMs == 0 means timeout (or check isTimeout flag)
+      // Assuming timeMs == 0 means timeout
       return AppColors.tertiary;
     }
 
     return answer.isCorrect ? AppColors.primary : AppColors.error;
   }
 
-  String _getStatusLabel(Answer answer) {
+  String _getStatusLabel(Answer? answer) {
+    if (answer == null) {
+      return '—';
+    }
+
     if (answer.timeMs == 0) {
-      return '⏱ Tiempo';
+      return '⏱ Tiempo agotado';
     }
 
     return answer.isCorrect ? '✓ Correcta' : '✗ Incorrecta';
   }
 
-  Widget _getStatusIcon(Answer? answer) {
+  Widget _getStatusIcon(Answer? answer, Color color) {
     if (answer == null) {
       return Icon(
-        Icons.help_outline,
-        color: AppColors.onPrimaryContainer,
-        size: 14,
+        Icons.circle_outline,
+        color: color,
+        size: 16,
+        weight: 3, // Thin weight
       );
     }
 
     if (answer.timeMs == 0) {
       return Icon(
-        Icons.timer,
-        color: AppColors.onPrimaryContainer,
-        size: 14,
+        Icons.timer_outlined,
+        color: color,
+        size: 16,
+        weight: 3, // Thin weight
       );
     }
 
     return Icon(
       answer.isCorrect ? Icons.check : Icons.close,
-      color: AppColors.onPrimaryContainer,
-      size: 14,
+      color: color,
+      size: 18,
+      weight: 3, // Thin weight
     );
   }
 }
