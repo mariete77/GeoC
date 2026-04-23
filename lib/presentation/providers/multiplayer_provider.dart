@@ -204,11 +204,10 @@ class MultiplayerNotifier extends StateNotifier<MultiplayerState> {
           return;
         }
 
-        // Get random questions (ghost run uses same question set in future)
-        // TODO: Implement getQuestionsByIds in QuestionRepository
+        // Load the SAME questions the ghost played with
         final questionsResult = await _ref
             .read(questionRepositoryMultiProvider)
-            .getRandomQuestions(count: GameConstants.questionsPerMatch);
+            .getQuestionsByIds(ghostRun.questionIds);
 
         await questionsResult.fold(
           (failure) async {
@@ -647,7 +646,7 @@ class MultiplayerNotifier extends StateNotifier<MultiplayerState> {
     required int timeMs,
   }) {
     try {
-      final attemptRepository = ref.read(quizAttemptRepositoryMultiProvider);
+      final attemptRepository = _ref.read(quizAttemptRepositoryMultiProvider);
       final auth = FirebaseAuth.instance;
 
       final matchModeStr = state.mode == MultiplayerMode.ranked ? 'ranked' : 'casual';
@@ -768,8 +767,8 @@ class MultiplayerNotifier extends StateNotifier<MultiplayerState> {
     _timer?.cancel();
     _matchSubscription?.cancel();
 
-    // Save ghost run if in ghost mode
-    if (state.mode == MultiplayerMode.ghostRun && _currentUserId != null) {
+    // Save ghost run from all multiplayer games (so there is always a pool for others)
+    if (_currentUserId != null && state.playerAnswers.isNotEmpty) {
       await _ref.read(ghostRunRepositoryProvider).saveGhostRun(
             userId: _currentUserId!,
             elo: _userElo,
