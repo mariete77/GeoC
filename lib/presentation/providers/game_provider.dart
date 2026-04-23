@@ -7,9 +7,12 @@ import '../../data/repositories/question_repository_impl.dart';
 import '../../domain/entities/question.dart';
 import '../../domain/entities/match.dart';
 import '../../domain/repositories/question_repository.dart';
+import '../../domain/repositories/quiz_attempt_repository.dart';
+import '../../data/models/quiz_attempt_model.dart';
 import '../../core/constants/game_constants.dart';
 import '../../core/utils/score_calculator.dart';
 import '../../core/utils/fuzzy_matcher.dart';
+import 'package:firebase_auth/firebase_auth.dart';
 
 part 'game_provider.freezed.dart';
 part 'game_provider.g.dart';
@@ -18,6 +21,12 @@ part 'game_provider.g.dart';
 @riverpod
 QuestionRepository questionRepository(QuestionRepositoryRef ref) {
   return QuestionRepositoryImpl();
+}
+
+/// Quiz attempt repository provider
+@riverpod
+QuizAttemptRepository quizAttemptRepository(QuizAttemptRepositoryRef ref) {
+  return ref.watch(quizAttemptRepositoryProvider);
 }
 
 /// Game state
@@ -239,6 +248,15 @@ class GameNotifier extends _$GameNotifier {
       answeredAt: DateTime.now(),
     );
 
+    // Track quiz attempt for analytics (fire and forget, don't block gameplay)
+    _trackQuizAttempt(
+      question: question,
+      selectedAnswer: selectedAnswer,
+      isCorrect: isCorrect,
+      isTimeout: isTimeout,
+      timeMs: answer.timeMs,
+    );
+
     // Update user answers list
     final updatedAnswers = [...currentState.userAnswers, answer];
 
@@ -259,6 +277,50 @@ class GameNotifier extends _$GameNotifier {
       newCorrectAnswers: newCorrectAnswers,
       newStreak: newStreak,
     );
+  }
+
+  /// Track quiz attempt to Firestore for analytics
+  /// This is a fire-and-forget operation that doesn't block gameplay
+  void _trackQuizAttempt({
+    required Question question,
+    required String selectedAnswer,
+    required bool isCorrect,
+    required bool isTimeout,
+    required int timeMs,
+  }) {
+    try {
+      final attemptRepository = ref.read(quizAttemptRepositoryProvider);
+      final auth = FirebaseAuth.instance;
+
+      final attempt = QuizAttemptModel(
+        questionId: question.id,
+        questionType: question.type,
+        questionDifficulty: question.difficulty,
+        correctAnswer: question.correctAnswer,
+        userAnswer: selectedAnswer,
+        isCorrect: isCorrect,
+        isTimeout: isTimeout,
+        timeMs: timeMs,
+        matchId: 'practice-${DateTime.now().millisecondsSinceEpoch}', // Practice mode
+        matchMode: 'practice',
+        matchType: 'casual',
+        userId: auth.currentUser?.uid,
+        userElo: null, // Practice mode doesn't track ELO
+        answeredAt: DateTime.now(),
+        questionData: question.extraData,
+      );
+
+      // Record attempt asynchronously, don't await to avoid blocking gameplay
+      attemptRepository.recordAttempt(attempt).then((_) {
+        // Success - optionally log for debugging
+      }).catchError((error) {
+        // Log error but don't crash the game
+        print('Failed to track quiz attempt: $error');
+      });
+    } catch (e) {
+      // Catch all errors to prevent affecting gameplay
+      print('Error tracking quiz attempt: $e');
+    }
   }
 
   /// Transition to answered state with appropriate delay

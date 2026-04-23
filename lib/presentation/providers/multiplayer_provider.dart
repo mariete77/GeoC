@@ -10,6 +10,8 @@ import '../../domain/entities/user.dart';
 import '../../domain/repositories/match_repository.dart';
 import '../../domain/repositories/ghost_run_repository.dart';
 import '../../domain/repositories/question_repository.dart';
+import '../../domain/repositories/quiz_attempt_repository.dart';
+import '../../data/models/quiz_attempt_model.dart';
 import '../../core/constants/game_constants.dart';
 import '../../core/utils/score_calculator.dart';
 import '../../core/utils/fuzzy_matcher.dart';
@@ -27,6 +29,11 @@ final ghostRunRepositoryProvider = Provider<GhostRunRepository>((ref) {
 
 final questionRepositoryMultiProvider = Provider<QuestionRepository>((ref) {
   return QuestionRepositoryImpl();
+});
+
+/// Quiz attempt repository provider for multiplayer
+final quizAttemptRepositoryMultiProvider = Provider<QuizAttemptRepository>((ref) {
+  return ref.watch(quizAttemptRepositoryProvider);
 });
 
 /// Multiplayer game mode
@@ -565,6 +572,15 @@ class MultiplayerNotifier extends StateNotifier<MultiplayerState> {
       answeredAt: DateTime.now(),
     );
 
+    // Track quiz attempt for analytics (fire and forget, don't block gameplay)
+    _trackQuizAttempt(
+      question: question,
+      selectedAnswer: selectedAnswer,
+      isCorrect: isCorrect,
+      isTimeout: isTimeout,
+      timeMs: answer.timeMs,
+    );
+
     final updatedAnswers = [...state.playerAnswers, answer];
     final newScore = state.playerScore + questionScore;
     final newCorrect = isCorrect ? state.correctAnswers + 1 : state.correctAnswers;
@@ -619,6 +635,52 @@ class MultiplayerNotifier extends StateNotifier<MultiplayerState> {
         _startTimer();
       }
     });
+  }
+
+  /// Track quiz attempt to Firestore for analytics in multiplayer mode
+  /// This is a fire-and-forget operation that doesn't block gameplay
+  void _trackQuizAttempt({
+    required Question question,
+    required String selectedAnswer,
+    required bool isCorrect,
+    required bool isTimeout,
+    required int timeMs,
+  }) {
+    try {
+      final attemptRepository = ref.read(quizAttemptRepositoryMultiProvider);
+      final auth = FirebaseAuth.instance;
+
+      final matchModeStr = state.mode == MultiplayerMode.ranked ? 'ranked' : 'casual';
+
+      final attempt = QuizAttemptModel(
+        questionId: question.id,
+        questionType: question.type,
+        questionDifficulty: question.difficulty,
+        correctAnswer: question.correctAnswer,
+        userAnswer: selectedAnswer,
+        isCorrect: isCorrect,
+        isTimeout: isTimeout,
+        timeMs: timeMs,
+        matchId: state.currentMatch?.id ?? 'unknown',
+        matchMode: state.currentMatch?.mode == MatchMode.realtime ? 'realtime' : 'async',
+        matchType: matchModeStr,
+        userId: auth.currentUser?.uid,
+        userElo: ref.read(userProvider).elo,
+        answeredAt: DateTime.now(),
+        questionData: question.extraData,
+      );
+
+      // Record attempt asynchronously, don't await to avoid blocking gameplay
+      attemptRepository.recordAttempt(attempt).then((_) {
+        // Success - optionally log for debugging
+      }).catchError((error) {
+        // Log error but don't crash the game
+        print('Failed to track quiz attempt: $error');
+      });
+    } catch (e) {
+      // Catch all errors to prevent affecting gameplay
+      print('Error tracking quiz attempt: $e');
+    }
   }
 
   /// Submit typed answer
