@@ -1,0 +1,53 @@
+[
+  {
+    "id": "historic_building_30000",
+    "type": "historic_building",
+    "difficulty": "easy",
+    "questionText": "¿En qué ciudad se encuentra la Torre Eiffel?",
+    "correctAnswer": "París",
+    "options": ["Londres", "Roma", "París", "Berlín"],
+    "imageUrl": null,
+    "extraData": {
+      "city": "París",
+      "country": "Francia"
+    }
+  },
+  {
+    "id": "historic_building_30001",
+    "type": "historic_building",
+    "difficulty": "easy",
+    "questionText": "¿Qué antigua civilización construyó las Pirámides de Giza?",
+    "correctAnswer": "Egipcios",
+    "options": ["Romanos", "Griegos", "Egipcios", "Mayas"],
+    "imageUrl": null,
+    "extraData": {
+      "civilization": "Egipcia",
+      "location": "Egipto"
+    }
+  },
+  {
+    "id": "historic_building_30002",
+    "type": "historic_building",
+    "difficulty": "easy",
+    "questionText": "¿Dónde se ubica el Coliseo Romano?",
+    "correctAnswer": "Roma",
+    "options": ["Atenas", "Estambul", "Roma", "Madrid"],
+    "imageUrl": null,
+    "extraData": {
+      "city": "Roma",
+      "country": "Italia"
+    }
+  },
+  {
+    "id": "historic_building_30003",
+    "type": "historic_building",
+    "difficulty": "medium",
+    "questionText": "¿Cuál es el famoso monumento de la India que es un mausoleo de mármol blanco?",
+    "correctAnswer": "Taj Mahal",
+    "options": ["Gran Muralla China", "Petra", "Taj Mahal", "Machu Picchu"],
+    "imageUrl": null,
+    "extraData": {
+      "country": "India"
+    }
+  }
+]

@@ -10,6 +10,11 @@ abstract class Failure extends Equatable {
   List<Object?> get props => [message];
 }
 
+/// No Ghost Run Found failure
+class NoGhostRunFoundFailure extends Failure {
+  const NoGhostRunFoundFailure([String message = 'No ghost run found']) : super(message);
+}
+
 /// Server failure
 class ServerFailure extends Failure {
   const ServerFailure(String message) : super(message);
@@ -55,6 +60,11 @@ class PermissionFailure extends Failure {
 /// Subscription failure
 class SubscriptionFailure extends Failure {
   const SubscriptionFailure(String message) : super(message);
+}
+
+/// User not found failure
+class UserNotFoundFailure extends Failure {
+  const UserNotFoundFailure(String message) : super(message);
 }
 
 /// Unknown failure for unexpected errors
