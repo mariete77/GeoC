@@ -67,6 +67,7 @@ class MultiplayerState {
   final String? opponentName;
   final int? opponentElo;
   final int opponentCorrectAnswers;
+  final List<Answer>? opponentAnswers;
   final int? eloChange;
   final int? newElo;
 
@@ -87,6 +88,7 @@ class MultiplayerState {
     this.opponentName,
     this.opponentElo,
     this.opponentCorrectAnswers = 0,
+    this.opponentAnswers,
     this.eloChange,
     this.newElo,
   });
@@ -108,6 +110,7 @@ class MultiplayerState {
     String? opponentName,
     int? opponentElo,
     int? opponentCorrectAnswers,
+    List<Answer>? opponentAnswers,
     int? eloChange,
     int? newElo,
   }) {
@@ -128,6 +131,7 @@ class MultiplayerState {
       opponentName: opponentName ?? this.opponentName,
       opponentElo: opponentElo ?? this.opponentElo,
       opponentCorrectAnswers: opponentCorrectAnswers ?? this.opponentCorrectAnswers,
+      opponentAnswers: opponentAnswers ?? this.opponentAnswers,
       eloChange: eloChange ?? this.eloChange,
       newElo: newElo ?? this.newElo,
     );
@@ -799,6 +803,7 @@ class MultiplayerNotifier extends StateNotifier<MultiplayerState> {
           (opponentAnswers) {
             int calculatedOpponentScore = 0;
             int calculatedOpponentCorrect = 0;
+            final convertedAnswers = <Answer>[];
             for (final ans in opponentAnswers) {
               if (ans.isCorrect) {
                 calculatedOpponentCorrect++;
@@ -815,10 +820,12 @@ class MultiplayerNotifier extends StateNotifier<MultiplayerState> {
                   isTimeout: false,
                 );
               }
+              convertedAnswers.add(ans);
             }
             state = state.copyWith(
               opponentScore: calculatedOpponentScore,
               opponentCorrectAnswers: calculatedOpponentCorrect,
+              opponentAnswers: convertedAnswers,
             );
           },
         );

@@ -312,6 +312,7 @@ class GameScreen extends ConsumerWidget {
       totalQuestions: totalQuestions,
       correctAnswers: correctAnswers,
       averageTime: averageTime,
+      userAnswers: userAnswers,
       onPlayAgain: () => ref.read(gameNotifierProvider.notifier).startGame(difficulty: difficulty),
       onGoHome: () {
         context.go('/home');

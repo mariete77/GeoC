@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import '../../../../core/theme/app_colors.dart';
+import 'answer_timeline_widget.dart';
+import '../../../domain/entities/match.dart';
 
 class GameResultWidget extends StatefulWidget {
   final int score;
@@ -12,6 +14,8 @@ class GameResultWidget extends StatefulWidget {
   final String? opponentName;
   final int? eloChange;
   final bool isVictory;
+  final List<dynamic>? userAnswers;
+  final List<dynamic>? opponentAnswers;
 
   const GameResultWidget({
     super.key,
@@ -24,6 +28,8 @@ class GameResultWidget extends StatefulWidget {
     this.opponentName,
     this.eloChange,
     this.isVictory = true,
+    this.userAnswers,
+    this.opponentAnswers,
   });
 
   @override
@@ -100,6 +106,17 @@ class _GameResultWidgetState extends State<GameResultWidget>
                 // ── Performance Message ────────────────────────
                 _buildPerformanceMessage(accuracy),
                 const SizedBox(height: 32),
+
+                // ── Answer Timeline ───────────────────────────
+                if (widget.userAnswers != null)
+                  AnswerTimeline(
+                    totalQuestions: widget.totalQuestions,
+                    playerAnswers: widget.userAnswers!.cast<Answer>(),
+                    opponentAnswers: widget.opponentAnswers?.cast<Answer>(),
+                    playerName: 'Tú',
+                    opponentName: widget.opponentName,
+                  ),
+                if (widget.userAnswers != null) const SizedBox(height: 24),
 
                 // ── Action Buttons ─────────────────────────────
                 _buildActionButtons(),

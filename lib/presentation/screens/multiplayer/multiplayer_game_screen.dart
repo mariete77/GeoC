@@ -9,6 +9,7 @@ import '../game/widgets/type_answer_widget.dart';
 import '../game/widgets/game_result_widget.dart';
 import '../../../core/constants/game_constants.dart';
 import '../../../core/theme/app_colors.dart';
+import '../../../domain/entities/match.dart';
 
 /// Multiplayer game screen
 class MultiplayerGameScreen extends ConsumerWidget {
@@ -280,6 +281,20 @@ class MultiplayerGameScreen extends ConsumerWidget {
                 .reduce((a, b) => a + b) /
             state.playerAnswers.length;
 
+    // Convert ghost answers to Answer for display in timeline
+    List<Answer>? opponentAnswersForTimeline;
+    if (state.ghostRun != null && state.opponentAnswers == null) {
+      opponentAnswersForTimeline = state.ghostRun!.answers.map((ga) => Answer(
+        questionIndex: ga.questionIndex,
+        selectedAnswer: '',
+        isCorrect: ga.isCorrect,
+        timeMs: ga.timeMs,
+        answeredAt: DateTime.now(),
+      )).toList();
+    } else if (state.opponentAnswers != null) {
+      opponentAnswersForTimeline = state.opponentAnswers;
+    }
+
     return GameResultWidget(
       score: state.playerScore,
       totalQuestions: totalQuestions,
@@ -288,6 +303,8 @@ class MultiplayerGameScreen extends ConsumerWidget {
       isVictory: won,
       opponentName: state.opponentName,
       eloChange: state.eloChange,
+      userAnswers: state.playerAnswers,
+      opponentAnswers: opponentAnswersForTimeline,
       onPlayAgain: () {
         ref.read(multiplayerProvider.notifier).reset();
         context.go('/home');
