@@ -3,11 +3,7 @@ import '../../core/errors/failures.dart';
 import '../../domain/entities/match.dart';
 import '../../domain/repositories/match_repository.dart';
 import 'auth_provider.dart'; // Assuming AuthProvider gives us the current user ID
-
-// Provider for the MatchRepository
-final matchRepositoryProvider = Provider<MatchRepository>(
-  (ref) => throw UnimplementedError(), // Will be overridden in main or test setup
-);
+import 'multiplayer_provider.dart'; // Import the actual matchRepositoryProvider
 
 // State for MatchHistoryProvider
 class MatchHistoryState {

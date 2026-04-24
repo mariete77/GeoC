@@ -5,8 +5,11 @@ import 'package:google_fonts/google_fonts.dart';
 import '../../providers/active_players_provider.dart';
 import '../../providers/auth_provider.dart';
 import '../../providers/user_provider.dart';
+import '../../providers/elo_history_provider.dart';
 import '../../../core/theme/app_colors.dart';
 import '../../../domain/entities/user.dart';
+import 'widgets/elo_sparkline.dart';
+import '../../widgets/common/geoc_page_transitions.dart';
 
 /// Home screen — "PantallaPrincipal" mockup.
 /// Bento-grid layout with editorial player stats and game mode cards.
@@ -18,6 +21,7 @@ class HomeScreen extends ConsumerWidget {
     final currentUser = ref.watch(currentUserProvider);
     final userState = ref.watch(userNotifierProvider);
     final dailyGames = ref.watch(dailyGamesStatusProvider);
+    final eloHistory = ref.watch(eloHistoryProvider);
 
     // Load user profile from Firestore
     if (currentUser != null &&
@@ -65,28 +69,44 @@ class HomeScreen extends ConsumerWidget {
           // ── Top App Bar ───────────────────────────────
           _buildTopBar(context, ref, displayUser),
 
-          // ── Scrollable Content ─────────────────────────
+          // ── Scrollable Content (staggered entrance) ────────
           Expanded(
             child: SingleChildScrollView(
               padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 24),
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  // Player Stats Section
-                  _buildPlayerStats(context, displayUser),
-                  const SizedBox(height: 24),
+              child: StaggeredEntrance(
+                staggerDelay: const Duration(milliseconds: 100),
+                itemDuration: const Duration(milliseconds: 450),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    // Player Stats Section
+                    StaggeredItem(
+                      index: 0,
+                      child: _buildPlayerStats(context, displayUser, eloHistory),
+                    ),
+                    const SizedBox(height: 24),
 
-                  // Game Mode Cards
-                  _buildGameModes(context, ref, dailyGames),
-                  const SizedBox(height: 16),
+                    // Game Mode Cards
+                    StaggeredItem(
+                      index: 1,
+                      child: _buildGameModes(context, ref, dailyGames),
+                    ),
+                    const SizedBox(height: 16),
 
-                  // Clasificación Card
-                  _buildLeaderboardCard(context),
-                  const SizedBox(height: 24),
+                    // Clasificación Card
+                    StaggeredItem(
+                      index: 2,
+                      child: _buildLeaderboardCard(context),
+                    ),
+                    const SizedBox(height: 24),
 
-                  // Quick Actions
-                  _buildQuickActions(context),
-                ],
+                    // Quick Actions
+                    StaggeredItem(
+                      index: 3,
+                      child: _buildQuickActions(context),
+                    ),
+                  ],
+                ),
               ),
             ),
           ),
@@ -213,7 +233,7 @@ class HomeScreen extends ConsumerWidget {
 
   // ── Player Stats Section ────────────────────────────────
 
-  Widget _buildPlayerStats(BuildContext context, User user) {
+  Widget _buildPlayerStats(BuildContext context, User user, EloHistoryState eloHistory) {
     final winStreak = user.stats.currentWinStreak;
     final elo = user.elo;
 
@@ -278,7 +298,7 @@ class HomeScreen extends ConsumerWidget {
               ],
             ),
           ),
-          // Right — ELO Score
+          // Right — ELO Score + Sparkline
           Column(
             crossAxisAlignment: CrossAxisAlignment.end,
             children: [
@@ -293,7 +313,7 @@ class HomeScreen extends ConsumerWidget {
               ),
               const SizedBox(height: 4),
               Text(
-                '$elo',
+                '\$elo',
                 style: GoogleFonts.plusJakartaSans(
                   fontSize: 56,
                   fontWeight: FontWeight.w900,
@@ -309,6 +329,14 @@ class HomeScreen extends ConsumerWidget {
                   color: AppColors.primaryContainer,
                 ),
               ),
+              if (eloHistory.eloValues.length >= 2) ...[
+                const SizedBox(height: 8),
+                EloSparkline(
+                  eloValues: eloHistory.eloValues,
+                  currentElo: eloHistory.currentElo,
+                  eloDelta: eloHistory.eloDelta,
+                ),
+              ],
             ],
           ),
         ],
@@ -771,6 +799,22 @@ class HomeScreen extends ConsumerWidget {
             fontWeight: FontWeight.w600,
             letterSpacing: 2,
           ),
+          onTap: (index) {
+            switch (index) {
+              case 0:
+                // Home - already here
+                break;
+              case 1:
+                context.go('/matchmaking/casual');
+                break;
+              case 2:
+                context.go('/history');
+                break;
+              case 3:
+                // TODO: Navigate to profile
+                break;
+            }
+          },
           items: const [
             BottomNavigationBarItem(
               icon: Icon(Icons.explore),
