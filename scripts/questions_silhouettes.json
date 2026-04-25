@@ -1,5 +1,22 @@
 [
   {
+    "id": "silhouette_fr",
+    "type": "silhouette",
+    "difficulty": "medium",
+    "questionText": "¿Qué país es esta silueta?",
+    "correctAnswer": "Francia",
+    "options": [],
+    "imageUrl": "assets/silhouettes/fr.png",
+    "extraData": {
+      "countryCode": "fr",
+      "countryName": "Francia",
+      "acceptedAnswers": [
+        "francia"
+      ]
+    },
+    "country": "FR"
+  },
+  {
     "id": "silhouette_id",
     "type": "silhouette",
     "difficulty": "medium",
