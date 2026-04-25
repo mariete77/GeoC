@@ -3345,5 +3345,146 @@
       ]
     },
     "country": "VU"
+  },
+  {
+    "id": "silhouette_no",
+    "type": "silhouette",
+    "difficulty": "medium",
+    "questionText": "¿Qué país es esta silueta?",
+    "correctAnswer": "Noruega",
+    "options": [],
+    "imageUrl": "assets/silhouettes/no.png",
+    "extraData": {
+      "countryCode": "no",
+      "countryName": "Noruega",
+      "acceptedAnswers": [
+        "noruega"
+      ]
+    },
+    "country": "NO"
+  },
+  {
+    "id": "silhouette_om",
+    "type": "silhouette",
+    "difficulty": "medium",
+    "questionText": "¿Qué país es esta silueta?",
+    "correctAnswer": "Omán",
+    "options": [],
+    "imageUrl": "assets/silhouettes/om.png",
+    "extraData": {
+      "countryCode": "om",
+      "countryName": "Omán",
+      "acceptedAnswers": [
+        "oman",
+        "oman"
+      ]
+    },
+    "country": "OM"
+  },
+  {
+    "id": "silhouette_bh",
+    "type": "silhouette",
+    "difficulty": "medium",
+    "questionText": "¿Qué país es esta silueta?",
+    "correctAnswer": "Baréin",
+    "options": [],
+    "imageUrl": "assets/silhouettes/bh.png",
+    "extraData": {
+      "countryCode": "bh",
+      "countryName": "Baréin",
+      "acceptedAnswers": [
+        "barein",
+        "bahrain"
+      ]
+    },
+    "country": "BH"
+  },
+  {
+    "id": "silhouette_tw",
+    "type": "silhouette",
+    "difficulty": "medium",
+    "questionText": "¿Qué país es esta silueta?",
+    "correctAnswer": "Taiwán",
+    "options": [],
+    "imageUrl": "assets/silhouettes/tw.png",
+    "extraData": {
+      "countryCode": "tw",
+      "countryName": "Taiwán",
+      "acceptedAnswers": [
+        "taiwan"
+      ]
+    },
+    "country": "TW"
+  },
+  {
+    "id": "silhouette_pr",
+    "type": "silhouette",
+    "difficulty": "medium",
+    "questionText": "¿Qué país es esta silueta?",
+    "correctAnswer": "Puerto Rico",
+    "options": [],
+    "imageUrl": "assets/silhouettes/pr.png",
+    "extraData": {
+      "countryCode": "pr",
+      "countryName": "Puerto Rico",
+      "acceptedAnswers": [
+        "puerto rico"
+      ]
+    },
+    "country": "PR"
+  },
+  {
+    "id": "silhouette_gl",
+    "type": "silhouette",
+    "difficulty": "medium",
+    "questionText": "¿Qué país es esta silueta?",
+    "correctAnswer": "Groenlandia",
+    "options": [],
+    "imageUrl": "assets/silhouettes/gl.png",
+    "extraData": {
+      "countryCode": "gl",
+      "countryName": "Groenlandia",
+      "acceptedAnswers": [
+        "groenlandia",
+        "greenland"
+      ]
+    },
+    "country": "GL"
+  },
+  {
+    "id": "silhouette_gi",
+    "type": "silhouette",
+    "difficulty": "medium",
+    "questionText": "¿Qué país es esta silueta?",
+    "correctAnswer": "Gibraltar",
+    "options": [],
+    "imageUrl": "assets/silhouettes/gi.png",
+    "extraData": {
+      "countryCode": "gi",
+      "countryName": "Gibraltar",
+      "acceptedAnswers": [
+        "gibraltar"
+      ]
+    },
+    "country": "GI"
+  },
+  {
+    "id": "silhouette_fo",
+    "type": "silhouette",
+    "difficulty": "medium",
+    "questionText": "¿Qué país es esta silueta?",
+    "correctAnswer": "Islas Feroe",
+    "options": [],
+    "imageUrl": "assets/silhouettes/fo.png",
+    "extraData": {
+      "countryCode": "fo",
+      "countryName": "Islas Feroe",
+      "acceptedAnswers": [
+        "islas feroe",
+        "faroe islands",
+        "feroe"
+      ]
+    },
+    "country": "FO"
   }
 ]
