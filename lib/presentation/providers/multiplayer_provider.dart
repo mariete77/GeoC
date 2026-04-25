@@ -1,6 +1,7 @@
 import 'dart:async';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:firebase_auth/firebase_auth.dart' hide User;
+import 'package:cloud_firestore/cloud_firestore.dart';
 import '../../data/repositories/match_repository_impl.dart';
 import '../../data/repositories/ghost_run_repository_impl.dart';
 import '../../data/repositories/question_repository_impl.dart';
@@ -38,7 +39,7 @@ final quizAttemptRepositoryMultiProvider = Provider<QuizAttemptRepository>((ref)
 });
 
 /// Multiplayer game mode
-enum MultiplayerMode { casual, ranked, ghostRun }
+enum MultiplayerMode { casual, ranked, ghostRun, friendChallenge }
 
 /// Multiplayer state
 enum MultiplayerStatus {
@@ -71,6 +72,7 @@ class MultiplayerState {
   final List<Answer>? opponentAnswers;
   final int? eloChange;
   final int? newElo;
+  final String? invitedFriendId;
 
   const MultiplayerState({
     this.status = MultiplayerStatus.idle,
@@ -92,6 +94,7 @@ class MultiplayerState {
     this.opponentAnswers,
     this.eloChange,
     this.newElo,
+    this.invitedFriendId,
   });
 
   MultiplayerState copyWith({
@@ -114,6 +117,7 @@ class MultiplayerState {
     List<Answer>? opponentAnswers,
     int? eloChange,
     int? newElo,
+    String? invitedFriendId,
   }) {
     return MultiplayerState(
       status: status ?? this.status,
@@ -135,6 +139,7 @@ class MultiplayerState {
       opponentAnswers: opponentAnswers ?? this.opponentAnswers,
       eloChange: eloChange ?? this.eloChange,
       newElo: newElo ?? this.newElo,
+      invitedFriendId: invitedFriendId ?? this.invitedFriendId,
     );
   }
 }
@@ -492,6 +497,139 @@ class MultiplayerNotifier extends StateNotifier<MultiplayerState> {
     _reset();
   }
 
+  /// Challenge a specific friend to a match
+  /// Uses the friend's most recent ghost run if available, otherwise generates random questions
+  Future<void> challengeFriend(
+    String friendId, {
+    String? friendName,
+    int? friendElo,
+  }) async {
+    if (_currentUserId == null) {
+      state = state.copyWith(
+        status: MultiplayerStatus.error,
+        errorMessage: 'Not authenticated',
+      );
+      return;
+    }
+    if (friendId == _currentUserId) {
+      state = state.copyWith(
+        status: MultiplayerStatus.error,
+        errorMessage: 'Cannot challenge yourself',
+      );
+      return;
+    }
+
+    state = state.copyWith(
+      status: MultiplayerStatus.searching,
+      mode: MultiplayerMode.friendChallenge,
+      errorMessage: null,
+    );
+
+    try {
+      // Fetch friend info from Firestore if not provided
+      String name = friendName ?? 'Amigo';
+      int elo = friendElo ?? 1000;
+      if (friendName == null || friendElo == null) {
+        final friendDoc = await FirebaseFirestore.instance
+            .collection('users')
+            .doc(friendId)
+            .get();
+        if (friendDoc.exists) {
+          final data = friendDoc.data()!;
+          name = data['displayName'] ?? name;
+          elo = data['elo'] ?? elo;
+        }
+      }
+
+      // Try to find friend's most recent ghost run to play against
+      final ghostResult = await _ref
+          .read(ghostRunRepositoryProvider)
+          .getUserGhostRuns(friendId);
+
+      await ghostResult.fold(
+        (failure) async {
+          // Couldn't fetch ghost runs — play with random questions
+          await _startFriendChallengeSolo(name, elo, friendId);
+        },
+        (ghostRuns) async {
+          if (ghostRuns.isEmpty) {
+            await _startFriendChallengeSolo(name, elo, friendId);
+            return;
+          }
+
+          // Use friend's most recent ghost run
+          final friendGhostRun = ghostRuns.first;
+          final questionsResult = await _ref
+              .read(questionRepositoryMultiProvider)
+              .getQuestionsByIds(friendGhostRun.questionIds);
+
+          await questionsResult.fold(
+            (failure) async {
+              await _startFriendChallengeSolo(name, elo, friendId);
+            },
+            (questions) async {
+              if (questions.isEmpty) {
+                await _startFriendChallengeSolo(name, elo, friendId);
+                return;
+              }
+
+              _questions = questions;
+              state = state.copyWith(
+                status: MultiplayerStatus.found,
+                ghostRun: friendGhostRun,
+                opponentName: name,
+                opponentElo: elo,
+                invitedFriendId: friendId,
+              );
+
+              // Auto-start after short delay
+              await Future.delayed(const Duration(seconds: 2));
+              _startPlaying();
+            },
+          );
+        },
+      );
+    } catch (e) {
+      state = state.copyWith(
+        status: MultiplayerStatus.error,
+        errorMessage: 'Error al crear reto: $e',
+      );
+    }
+  }
+
+  /// Start friend challenge with random questions (no ghost run available)
+  Future<void> _startFriendChallengeSolo(
+    String friendName,
+    int friendElo,
+    String friendId,
+  ) async {
+    final questionsResult = await _ref
+        .read(questionRepositoryMultiProvider)
+        .getRandomQuestions(count: GameConstants.questionsPerMatch);
+
+    questionsResult.fold(
+      (failure) {
+        state = state.copyWith(
+          status: MultiplayerStatus.error,
+          errorMessage: 'Failed to load questions',
+        );
+      },
+      (questions) {
+        _questions = questions;
+        state = state.copyWith(
+          status: MultiplayerStatus.found,
+          opponentName: friendName,
+          opponentElo: friendElo,
+          invitedFriendId: friendId,
+        );
+
+        Future.delayed(const Duration(seconds: 2), () {
+          _startPlaying();
+        });
+      },
+    );
+  }
+
   /// Start playing the match
   void _startPlaying() {
     if (_questions.isEmpty) {
@@ -654,7 +792,11 @@ class MultiplayerNotifier extends StateNotifier<MultiplayerState> {
       final attemptRepository = _ref.read(quizAttemptRepositoryMultiProvider);
       final auth = FirebaseAuth.instance;
 
-      final matchModeStr = state.mode == MultiplayerMode.ranked ? 'ranked' : 'casual';
+      final matchModeStr = state.mode == MultiplayerMode.ranked
+          ? 'ranked'
+          : state.mode == MultiplayerMode.friendChallenge
+              ? 'friend_challenge'
+              : 'casual';
 
       final attempt = QuizAttemptModel(
         questionId: question.id,

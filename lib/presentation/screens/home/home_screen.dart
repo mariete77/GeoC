@@ -808,9 +808,12 @@ class HomeScreen extends ConsumerWidget {
                 context.go('/matchmaking/casual');
                 break;
               case 2:
-                context.go('/history');
+                context.go('/friends');
                 break;
               case 3:
+                context.go('/history');
+                break;
+              case 4:
                 // TODO: Navigate to profile
                 break;
             }
@@ -823,6 +826,10 @@ class HomeScreen extends ConsumerWidget {
             BottomNavigationBarItem(
               icon: Icon(Icons.sports_martial_arts),
               label: 'BATTLE',
+            ),
+            BottomNavigationBarItem(
+              icon: Icon(Icons.group),
+              label: 'FRIENDS',
             ),
             BottomNavigationBarItem(
               icon: Icon(Icons.auto_stories),

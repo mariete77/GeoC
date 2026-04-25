@@ -12,6 +12,8 @@ class User extends Equatable {
   final DailyGames dailyGames;
   final DateTime createdAt;
   final DateTime? lastLoginAt;
+  final List<String> friends;
+  final List<String> pendingFriendRequests;
 
   const User({
     required this.userId,
@@ -24,6 +26,8 @@ class User extends Equatable {
     required this.dailyGames,
     required this.createdAt,
     this.lastLoginAt,
+    this.friends = const [],
+    this.pendingFriendRequests = const [],
   });
 
   /// Create User from Firebase User
@@ -38,6 +42,8 @@ class User extends Equatable {
       subscription: const Subscription(),
       dailyGames: DailyGames.today(),
       createdAt: DateTime.now(),
+      friends: const [],
+      pendingFriendRequests: const [],
     );
   }
 
@@ -71,6 +77,8 @@ class User extends Equatable {
         dailyGames,
         createdAt,
         lastLoginAt,
+        friends,
+        pendingFriendRequests,
       ];
 }
 

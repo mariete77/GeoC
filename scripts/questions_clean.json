@@ -74,7 +74,7 @@
     "type": "population",
     "difficulty": "easy",
     "questionText": "¿Qué país tiene más población?",
-    "correctAnswer": "China",
+    "correctAnswer": "India",
     "options": [
       "China",
       "India"
@@ -398,9 +398,9 @@
     "type": "lake",
     "difficulty": "medium",
     "questionText": "¿Qué lago es el más grande de Brasil?",
-    "correctAnswer": "Brasil no tiene grandes lagos naturales",
+    "correctAnswer": "Lago dos Patos",
     "options": [
-      "Lago Llanquihue",
+      "Lago dos Patos",
       "Lago Parón",
       "Lago de Cuitzeo",
       "Brasil no tiene grandes lagos naturales"
@@ -602,12 +602,12 @@
     "type": "lake",
     "difficulty": "medium",
     "questionText": "¿Qué lago es el más grande de India?",
-    "correctAnswer": "Lago Chilika",
+    "correctAnswer": "Lago Wular",
     "options": [
       "Lago Parón",
       "Represa de Tucuruí",
       "Lago Onega",
-      "Lago Chilika"
+      "Lago Wular"
     ],
     "extraData": {
       "country": "India",
@@ -653,10 +653,10 @@
     "type": "lake",
     "difficulty": "medium",
     "questionText": "¿Cuál es el lago más grande de Chile?",
-    "correctAnswer": "Lago Llanquihue",
+    "correctAnswer": "Lago General Carrera",
     "options": [
       "Lago de Pátzcuaro",
-      "Lago Llanquihue",
+      "Lago General Carrera",
       "Lago Eyre",
       "Lago Müritz"
     ],
@@ -976,10 +976,10 @@
     "type": "river",
     "difficulty": "medium",
     "questionText": "¿El río más largo de Estados Unidos se llama...?",
-    "correctAnswer": "Misisipi",
+    "correctAnswer": "Misuri",
     "options": [
       "Mersey",
-      "Misisipi",
+      "Misuri",
       "Danubio",
       "San Lorenzo"
     ],
@@ -1010,9 +1010,9 @@
     "type": "lake",
     "difficulty": "medium",
     "questionText": "¿Cuál es el principal lago de Brasil?",
-    "correctAnswer": "Brasil no tiene grandes lagos naturales",
+    "correctAnswer": "Lago dos Patos",
     "options": [
-      "Gran Lago del Oso",
+      "Lago dos Patos",
       "Lago de Itaipu",
       "Lago Gairdner",
       "Brasil no tiene grandes lagos naturales"
@@ -1044,9 +1044,9 @@
     "type": "lake",
     "difficulty": "medium",
     "questionText": "¿Cuál es el principal lago de Francia?",
-    "correctAnswer": "Lac du Bourget",
+    "correctAnswer": "Lago de Ginebra",
     "options": [
-      "Lac du Bourget",
+      "Lago de Ginebra",
       "Gran Lago del Oso",
       "Lago Windermere",
       "Lago Llanquihue"
@@ -1214,9 +1214,9 @@
     "type": "lake",
     "difficulty": "medium",
     "questionText": "¿Cuál es el lago más grande de Alemania?",
-    "correctAnswer": "Lago Müritz",
+    "correctAnswer": "Lago Constanza",
     "options": [
-      "Lago Müritz",
+      "Lago Constanza",
       "Lago Chilka",
       "Lago de Ginebra",
       "Lago Gairdner"
@@ -1605,10 +1605,10 @@
     "type": "mountain",
     "difficulty": "medium",
     "questionText": "¿Cuál es la montaña más alta de Nepal?",
-    "correctAnswer": "Huascarán",
+    "correctAnswer": "Everest",
     "options": [
       "Elbrus",
-      "Huascarán",
+      "Everest",
       "Grossglockner",
       "Monte Saint Elias"
     ],
@@ -1656,11 +1656,11 @@
     "type": "mountain",
     "difficulty": "medium",
     "questionText": "¿La montaña más alta de Austria es...?",
-    "correctAnswer": "Wildspitze",
+    "correctAnswer": "Großglockner",
     "options": [
       "Watzmann",
       "Snowdon",
-      "Wildspitze",
+      "Großglockner",
       "Nevado Tres Cruces"
     ],
     "extraData": {
@@ -1673,12 +1673,12 @@
     "type": "river",
     "difficulty": "medium",
     "questionText": "¿Qué río es el más largo de Colombia?",
-    "correctAnswer": "Magdalena",
+    "correctAnswer": "Amazonas",
     "options": [
       "Maule",
       "Balsas",
       "Marañón",
-      "Magdalena"
+      "Amazonas"
     ],
     "extraData": {
       "country": "Colombia",
@@ -1690,11 +1690,11 @@
     "type": "river",
     "difficulty": "medium",
     "questionText": "¿El río más largo de Colombia se llama...?",
-    "correctAnswer": "Magdalena",
+    "correctAnswer": "Amazonas",
     "options": [
       "Maule",
       "Tíber",
-      "Magdalena",
+      "Amazonas",
       "Cauca"
     ],
     "extraData": {
@@ -1707,10 +1707,10 @@
     "type": "lake",
     "difficulty": "medium",
     "questionText": "¿Qué lago es el más grande de Italia?",
-    "correctAnswer": "Lago Mayor",
+    "correctAnswer": "Lago de Garda",
     "options": [
       "Lago de Chapala",
-      "Lago Mayor",
+      "Lago de Garda",
       "Gran Lago del Oso",
       "Lago Toshka"
     ],
@@ -1843,10 +1843,10 @@
     "type": "lake",
     "difficulty": "medium",
     "questionText": "¿Cuál es el principal lago de Chile?",
-    "correctAnswer": "Lago Llanquihue",
+    "correctAnswer": "Lago General Carrera",
     "options": [
       "Lago Müritz",
-      "Lago Llanquihue",
+      "Lago General Carrera",
       "Lago Baikal",
       "Lago Chilka"
     ],
@@ -1894,10 +1894,10 @@
     "type": "mountain",
     "difficulty": "medium",
     "questionText": "¿La montaña más alta de Italia es...?",
-    "correctAnswer": "Cervino",
+    "correctAnswer": "Monte Bianco",
     "options": [
       "Llullaillaco",
-      "Cervino",
+      "Monte Bianco",
       "Everest",
       "Zugspitze"
     ],
@@ -2115,10 +2115,10 @@
     "type": "river",
     "difficulty": "medium",
     "questionText": "¿Cuál es el principal río de México?",
-    "correctAnswer": "Ganges",
+    "correctAnswer": "Río Grande",
     "options": [
       "Arno",
-      "Ganges",
+      "Río Grande",
       "Perla",
       "Yamuna"
     ],
@@ -2200,11 +2200,11 @@
     "type": "mountain",
     "difficulty": "medium",
     "questionText": "¿Cuál es la montaña más alta de Australia?",
-    "correctAnswer": "Pico Townsend",
+    "correctAnswer": "Kosciuszko",
     "options": [
       "Monte Lucania",
       "Bonete",
-      "Pico Townsend",
+      "Kosciuszko",
       "Dufourspitze"
     ],
     "extraData": {
@@ -2540,12 +2540,12 @@
     "type": "lake",
     "difficulty": "medium",
     "questionText": "¿El lago más grande de Francia se llama...?",
-    "correctAnswer": "Lac du Bourget",
+    "correctAnswer": "Lago de Ginebra",
     "options": [
       "Lago Llanquihue",
       "Lago Lemán",
       "Lago Viedma",
-      "Lac du Bourget"
+      "Lago de Ginebra"
     ],
     "extraData": {
       "country": "Francia",
@@ -2676,10 +2676,10 @@
     "type": "mountain",
     "difficulty": "medium",
     "questionText": "¿La montaña más alta de Perú es...?",
-    "correctAnswer": "Coropuna",
+    "correctAnswer": "Huascarán",
     "options": [
       "Elbrus",
-      "Coropuna",
+      "Huascarán",
       "Grossglockner",
       "Monte Saint Elias"
     ],
@@ -2727,12 +2727,12 @@
     "type": "lake",
     "difficulty": "medium",
     "questionText": "¿Qué lago es el más grande de Francia?",
-    "correctAnswer": "Lac du Bourget",
+    "correctAnswer": "Lago de Ginebra",
     "options": [
       "Lago Qinghai",
       "Lago de Ginebra",
       "Embalse de Almansa",
-      "Lac du Bourget"
+      "Lago de Ginebra"
     ],
     "extraData": {
       "country": "Francia",
@@ -2968,7 +2968,7 @@
     "correctAnswer": "Po",
     "options": [
       "Ob",
-      "Arno",
+      "Po",
       "Yangtsé",
       "Limpopo"
     ],
@@ -3105,7 +3105,7 @@
     "options": [
       "Sena",
       "Tíber",
-      "Magdalena",
+      "Loira",
       "Río Negro"
     ],
     "extraData": {
@@ -3173,7 +3173,7 @@
     "options": [
       "Tíber",
       "Amur",
-      "Baker",
+      "Po",
       "Colorado"
     ],
     "extraData": {
@@ -3322,11 +3322,11 @@
     "type": "lake",
     "difficulty": "medium",
     "questionText": "¿Cuál es el lago más grande de Francia?",
-    "correctAnswer": "Lac du Bourget",
+    "correctAnswer": "Lago de Ginebra",
     "options": [
       "Lago de Sanabria",
       "Lago Ullswater",
-      "Lac du Bourget",
+      "Lago de Ginebra",
       "Lago Buenos Aires"
     ],
     "extraData": {
@@ -3409,7 +3409,7 @@
     "questionText": "¿El río más largo de India se llama...?",
     "correctAnswer": "Ganges",
     "options": [
-      "Shinano",
+      "Ganges",
       "Pánuco",
       "Indo",
       "Garona"
@@ -3649,7 +3649,7 @@
     "options": [
       "Tíber",
       "Ishikari",
-      "Elba",
+      "Shinano",
       "Tajo"
     ],
     "extraData": {
@@ -3837,7 +3837,7 @@
       "Lena",
       "Churchill",
       "Adigio",
-      "Balsas"
+      "Po"
     ],
     "extraData": {
       "country": "Italia",
@@ -3955,7 +3955,7 @@
     "options": [
       "Balsas",
       "Mackenzie",
-      "San Lorenzo",
+      "Río Grande",
       "Támesis"
     ],
     "extraData": {
@@ -4024,7 +4024,7 @@
       "Colorado",
       "Nilo",
       "Pánuco",
-      "Godavari"
+      "Río Grande"
     ],
     "extraData": {
       "country": "México",
@@ -4329,7 +4329,7 @@
     "options": [
       "Douro",
       "Lerma",
-      "Murray",
+      "Río Grande",
       "Paraná"
     ],
     "extraData": {
@@ -4694,10 +4694,10 @@
     "type": "capital",
     "difficulty": "medium",
     "questionText": "¿Cuál es la capital de Nígeria?",
-    "correctAnswer": "Abuya",
+    "correctAnswer": "Niamey",
     "options": [
       "Lagos",
-      "Abuya",
+      "Niamey",
       "Kano",
       "Ibadán"
     ],
@@ -7261,10 +7261,10 @@
     "type": "capital",
     "difficulty": "medium",
     "questionText": "¿Cuál es la capital de Nígeria?",
-    "correctAnswer": "Abuya",
+    "correctAnswer": "Niamey",
     "options": [
       "Lagos",
-      "Abuya",
+      "Niamey",
       "Kano",
       "Ibadán"
     ],
@@ -7278,9 +7278,9 @@
     "type": "capital",
     "difficulty": "hard",
     "questionText": "¿Cuál es la capital de Guinea-Bisáu?",
-    "correctAnswer": "Bisáu",
+    "correctAnswer": "Conakry",
     "options": [
-      "Bisáu",
+      "Conakry",
       "Bafatá",
       "Gabú",
       "Cacheu"
@@ -9217,9 +9217,9 @@
     "type": "capital",
     "difficulty": "hard",
     "questionText": "¿Cuál es la capital de Sudán del Sur?",
-    "correctAnswer": "Yuba",
+    "correctAnswer": "Jartum",
     "options": [
-      "Yuba",
+      "Jartum",
       "Wau",
       "Malakal",
       "Bentiu"
@@ -9422,7 +9422,7 @@
     "type": "area",
     "difficulty": "medium",
     "questionText": "¿Qué país es más extenso?",
-    "correctAnswer": "Congo (RDC)",
+    "correctAnswer": "Argelia",
     "options": [
       "Congo (RDC)",
       "Argelia"
@@ -10952,10 +10952,10 @@
     "type": "capital",
     "difficulty": "hard",
     "questionText": "¿Cuál es la capital de Guinea Ecuatorial?",
-    "correctAnswer": "Malabo",
+    "correctAnswer": "Conakry",
     "options": [
       "Bata",
-      "Malabo",
+      "Conakry",
       "Ebebiyin",
       "Mbini"
     ],
@@ -11166,7 +11166,7 @@
     "type": "area",
     "difficulty": "medium",
     "questionText": "¿Qué país es más extenso?",
-    "correctAnswer": "Namibia",
+    "correctAnswer": "Venezuela",
     "options": [
       "Namibia",
       "Venezuela"
@@ -12000,7 +12000,7 @@
     "type": "population",
     "difficulty": "medium",
     "questionText": "¿Qué país tiene más población?",
-    "correctAnswer": "Marruecos",
+    "correctAnswer": "Canadá",
     "options": [
       "Marruecos",
       "Canadá"
@@ -12152,7 +12152,7 @@
     "type": "area",
     "difficulty": "medium",
     "questionText": "¿Qué país es más extenso?",
-    "correctAnswer": "Mongolia",
+    "correctAnswer": "Irán",
     "options": [
       "Mongolia",
       "Irán"
@@ -12910,7 +12910,7 @@
     "type": "population",
     "difficulty": "medium",
     "questionText": "¿Qué país tiene más población?",
-    "correctAnswer": "Irak",
+    "correctAnswer": "España",
     "options": [
       "Irak",
       "España"
@@ -12986,7 +12986,7 @@
     "type": "area",
     "difficulty": "medium",
     "questionText": "¿Qué país es más extenso?",
-    "correctAnswer": "Etiopía",
+    "correctAnswer": "Colombia",
     "options": [
       "Etiopía",
       "Colombia"
@@ -13043,7 +13043,7 @@
     "type": "area",
     "difficulty": "hard",
     "questionText": "¿Qué país es más extenso?",
-    "correctAnswer": "Congo (RDC)",
+    "correctAnswer": "Argelia",
     "options": [
       "Congo (RDC)",
       "Argelia"
@@ -13767,10 +13767,10 @@
     "type": "capital",
     "difficulty": "hard",
     "questionText": "¿Cuál es la capital de Sudán del Sur?",
-    "correctAnswer": "Yuba",
+    "correctAnswer": "Jartum",
     "options": [
       "Wau",
-      "Yuba",
+      "Jartum",
       "Malakal",
       "Bentiu"
     ],
@@ -13858,7 +13858,7 @@
     "type": "population",
     "difficulty": "hard",
     "questionText": "¿Qué país tiene más población?",
-    "correctAnswer": "Cuba",
+    "correctAnswer": "Bélgica",
     "options": [
       "Cuba",
       "Bélgica"
@@ -13896,7 +13896,7 @@
     "type": "area",
     "difficulty": "medium",
     "questionText": "¿Qué país es más extenso?",
-    "correctAnswer": "Venezuela",
+    "correctAnswer": "Nígeria",
     "options": [
       "Venezuela",
       "Nígeria"
@@ -13915,7 +13915,7 @@
     "type": "area",
     "difficulty": "hard",
     "questionText": "¿Qué país es más extenso?",
-    "correctAnswer": "Nepal",
+    "correctAnswer": "Bangladés",
     "options": [
       "Nepal",
       "Bangladés"
@@ -13972,7 +13972,7 @@
     "type": "area",
     "difficulty": "medium",
     "questionText": "¿Qué país es más extenso?",
-    "correctAnswer": "Mozambique",
+    "correctAnswer": "Sudáfrica",
     "options": [
       "Mozambique",
       "Sudáfrica"
@@ -16217,7 +16217,7 @@
     "type": "flag",
     "difficulty": "hard",
     "questionText": "¿De qué país es esta bandera?",
-    "correctAnswer": "Bahréin",
+    "correctAnswer": "Baréin",
     "options": [
       "Catar",
       "Baréin",
@@ -16683,7 +16683,7 @@
     "type": "area",
     "difficulty": "hard",
     "questionText": "¿Qué país es más extenso?",
-    "correctAnswer": "Suecia",
+    "correctAnswer": "España",
     "options": [
       "España",
       "Suecia"
@@ -18522,7 +18522,7 @@
     "type": "area",
     "difficulty": "medium",
     "questionText": "¿Qué país es más extenso?",
-    "correctAnswer": "Pakistán",
+    "correctAnswer": "Nígeria",
     "options": [
       "Nígeria",
       "Pakistán"
@@ -19159,11 +19159,11 @@
     "type": "capital",
     "difficulty": "hard",
     "questionText": "¿Cuál es la capital de Sudán del Sur?",
-    "correctAnswer": "Yuba",
+    "correctAnswer": "Jartum",
     "options": [
       "Wau",
       "Malakal",
-      "Yuba",
+      "Jartum",
       "Bentiu"
     ],
     "extraData": {
@@ -19280,7 +19280,7 @@
     "type": "population",
     "difficulty": "medium",
     "questionText": "¿Qué país tiene más población?",
-    "correctAnswer": "Ucrania",
+    "correctAnswer": "España",
     "options": [
       "España",
       "Ucrania"
@@ -19394,7 +19394,7 @@
     "type": "area",
     "difficulty": "easy",
     "questionText": "¿Qué país es más extenso?",
-    "correctAnswer": "China",
+    "correctAnswer": "Estados Unidos",
     "options": [
       "China",
       "Estados Unidos"
@@ -20035,10 +20035,10 @@
     "type": "capital",
     "difficulty": "hard",
     "questionText": "¿Cuál es la capital de Guinea-Bisáu?",
-    "correctAnswer": "Bisáu",
+    "correctAnswer": "Conakry",
     "options": [
       "Bafatá",
-      "Bisáu",
+      "Conakry",
       "Gabú",
       "Cacheu"
     ],
@@ -20285,7 +20285,7 @@
     "type": "area",
     "difficulty": "hard",
     "questionText": "¿Qué país es más extenso?",
-    "correctAnswer": "Nepal",
+    "correctAnswer": "Bangladés",
     "options": [
       "Bangladés",
       "Nepal"
@@ -20342,7 +20342,7 @@
     "type": "area",
     "difficulty": "medium",
     "questionText": "¿Qué país es más extenso?",
-    "correctAnswer": "Congo (RDC)",
+    "correctAnswer": "Argelia",
     "options": [
       "Argelia",
       "Congo (RDC)"
@@ -22162,7 +22162,7 @@
     "type": "area",
     "difficulty": "medium",
     "questionText": "¿Qué país es más extenso?",
-    "correctAnswer": "Etiopía",
+    "correctAnswer": "Colombia",
     "options": [
       "Colombia",
       "Etiopía"
@@ -23811,7 +23811,7 @@
     "type": "population",
     "difficulty": "easy",
     "questionText": "¿Qué país tiene más población?",
-    "correctAnswer": "China",
+    "correctAnswer": "India",
     "options": [
       "India",
       "China"
@@ -25669,7 +25669,7 @@
     "type": "population",
     "difficulty": "hard",
     "questionText": "¿Qué país tiene más población?",
-    "correctAnswer": "Mali",
+    "correctAnswer": "Malí",
     "options": [
       "Grecia",
       "Malí"
@@ -25745,7 +25745,7 @@
     "type": "area",
     "difficulty": "hard",
     "questionText": "¿Qué país es más extenso?",
-    "correctAnswer": "Ucrania",
+    "correctAnswer": "Francia",
     "options": [
       "Francia",
       "Ucrania"
@@ -26560,7 +26560,7 @@
     "type": "population",
     "difficulty": "medium",
     "questionText": "¿Qué país tiene más población?",
-    "correctAnswer": "Irak",
+    "correctAnswer": "España",
     "options": [
       "España",
       "Irak"
@@ -26636,7 +26636,7 @@
     "type": "area",
     "difficulty": "medium",
     "questionText": "¿Qué país es más extenso?",
-    "correctAnswer": "Mali",
+    "correctAnswer": "Malí",
     "options": [
       "Egipto",
       "Malí"
@@ -26712,7 +26712,7 @@
     "type": "area",
     "difficulty": "medium",
     "questionText": "¿Qué país es más extenso?",
-    "correctAnswer": "Mongolia",
+    "correctAnswer": "Irán",
     "options": [
       "Irán",
       "Mongolia"
@@ -27470,7 +27470,7 @@
     "type": "population",
     "difficulty": "medium",
     "questionText": "¿Qué país tiene más población?",
-    "correctAnswer": "Sudán",
+    "correctAnswer": "España",
     "options": [
       "Sudán",
       "España"
@@ -27527,7 +27527,7 @@
     "type": "population",
     "difficulty": "medium",
     "questionText": "¿Qué país tiene más población?",
-    "correctAnswer": "Argentina",
+    "correctAnswer": "España",
     "options": [
       "España",
       "Argentina"
@@ -27565,7 +27565,7 @@
     "type": "area",
     "difficulty": "hard",
     "questionText": "¿Qué país es más extenso?",
-    "correctAnswer": "Botsuana",
+    "correctAnswer": "Francia",
     "options": [
       "Francia",
       "Botsuana"
@@ -30276,7 +30276,7 @@
     "type": "area",
     "difficulty": "medium",
     "questionText": "¿Qué país es más extenso?",
-    "correctAnswer": "Irán",
+    "correctAnswer": "México",
     "options": [
       "México",
       "Irán"
@@ -30938,12 +30938,12 @@
     "type": "capital",
     "difficulty": "medium",
     "questionText": "¿Cuál es la capital de Nígeria?",
-    "correctAnswer": "Abuya",
+    "correctAnswer": "Niamey",
     "options": [
       "Lagos",
       "Kano",
       "Ibadán",
-      "Abuya"
+      "Niamey"
     ],
     "extraData": {
       "countryCode": "ng",
@@ -32020,7 +32020,7 @@
     "type": "population",
     "difficulty": "medium",
     "questionText": "¿Qué país tiene más población?",
-    "correctAnswer": "Turquía",
+    "correctAnswer": "Irán",
     "options": [
       "Turquía",
       "Irán"
@@ -32153,7 +32153,7 @@
     "type": "area",
     "difficulty": "hard",
     "questionText": "¿Qué país es más extenso?",
-    "correctAnswer": "Namibia",
+    "correctAnswer": "Pakistán",
     "options": [
       "Namibia",
       "Pakistán"
@@ -32860,10 +32860,10 @@
     "type": "capital",
     "difficulty": "hard",
     "questionText": "¿Cuál es la capital de Guinea Ecuatorial?",
-    "correctAnswer": "Malabo",
+    "correctAnswer": "Conakry",
     "options": [
       "Bata",
-      "Malabo",
+      "Conakry",
       "Ebebiyin",
       "Evinayong"
     ],
@@ -33859,7 +33859,7 @@
     "type": "population",
     "difficulty": "medium",
     "questionText": "¿Qué país tiene más población?",
-    "correctAnswer": "Argentina",
+    "correctAnswer": "España",
     "options": [
       "Argentina",
       "España"
@@ -33992,7 +33992,7 @@
     "type": "area",
     "difficulty": "medium",
     "questionText": "¿Qué país es más extenso?",
-    "correctAnswer": "Chile",
+    "correctAnswer": "Turquía",
     "options": [
       "Chile",
       "Turquía"
@@ -34750,7 +34750,7 @@
     "type": "population",
     "difficulty": "medium",
     "questionText": "¿Qué país tiene más población?",
-    "correctAnswer": "Sudán",
+    "correctAnswer": "España",
     "options": [
       "Sudán",
       "España"
@@ -34769,7 +34769,7 @@
     "type": "population",
     "difficulty": "medium",
     "questionText": "¿Qué país tiene más población?",
-    "correctAnswer": "Ucrania",
+    "correctAnswer": "Canadá",
     "options": [
       "Ucrania",
       "Canadá"
@@ -35505,9 +35505,9 @@
     "type": "capital",
     "difficulty": "hard",
     "questionText": "¿Cuál es la capital de Guinea-Bisáu?",
-    "correctAnswer": "Bisáu",
+    "correctAnswer": "Conakry",
     "options": [
-      "Bisáu",
+      "Conakry",
       "Bafatá",
       "Gabú",
       "Buba"
@@ -35660,7 +35660,7 @@
     "type": "population",
     "difficulty": "medium",
     "questionText": "¿Qué país tiene más población?",
-    "correctAnswer": "Irak",
+    "correctAnswer": "España",
     "options": [
       "Irak",
       "España"
@@ -35793,7 +35793,7 @@
     "type": "area",
     "difficulty": "hard",
     "questionText": "¿Qué país es más extenso?",
-    "correctAnswer": "Botsuana",
+    "correctAnswer": "Francia",
     "options": [
       "Botsuana",
       "Francia"

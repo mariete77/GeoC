@@ -20,6 +20,8 @@ class UserModel with _$UserModel {
     @Default(DailyGamesModel()) DailyGamesModel dailyGames,
     required DateTime createdAt,
     DateTime? lastLoginAt,
+    @Default([]) List<String> friends,
+    @Default([]) List<String> pendingFriendRequests,
   }) = _UserModel;
 
   factory UserModel.fromJson(Map<String, dynamic> json) =>
@@ -68,6 +70,8 @@ class UserModel with _$UserModel {
       ),
       createdAt: createdAt,
       lastLoginAt: lastLoginAt,
+      friends: friends,
+      pendingFriendRequests: pendingFriendRequests,
     );
   }
 
@@ -100,6 +104,8 @@ class UserModel with _$UserModel {
       ),
       createdAt: user.createdAt,
       lastLoginAt: user.lastLoginAt,
+      friends: user.friends,
+      pendingFriendRequests: user.pendingFriendRequests,
     );
   }
 

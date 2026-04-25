@@ -124,4 +124,144 @@ class FriendRepositoryImpl implements FriendRepository {
       return Left(ServerFailure(e.toString()));
     }
   }
+
+  @override
+  Stream<List<String>> watchFriends(String userId) {
+    return _firestore
+        .collection('users')
+        .doc(userId)
+        .snapshots()
+        .map((doc) {
+      if (!doc.exists) return <String>[];
+      final friends = doc.get('friends') as List<dynamic>? ?? [];
+      return List<String>.from(friends.map((e) => e as String));
+    });
+  }
+
+  @override
+  Stream<List<String>> watchPendingRequests(String userId) {
+    return _firestore
+        .collection('users')
+        .doc(userId)
+        .snapshots()
+        .map((doc) {
+      if (!doc.exists) return <String>[];
+      final requests = doc.get('pending_requests') as List<dynamic>? ?? [];
+      return List<String>.from(requests.map((e) => e as String));
+    });
+  }
+
+  @override
+  Future<Either<Failure, Unit>> rejectFriendRequest(
+      String rejectingUserId, String requestFromUserId) async {
+    try {
+      if (rejectingUserId == requestFromUserId) {
+        return Left(ValidationFailure('Cannot reject your own request'));
+      }
+
+      final rejectingDoc =
+          await _firestore.collection('users').doc(rejectingUserId).get();
+      if (!rejectingDoc.exists) {
+        return Left(UserNotFoundFailure('User not found'));
+      }
+
+      // Remove from pending_requests
+      await _firestore.collection('users').doc(rejectingUserId).update({
+        'pending_requests': FieldValue.arrayRemove([requestFromUserId]),
+      });
+
+      return const Right(unit);
+    } catch (e) {
+      return Left(ServerFailure(e.toString()));
+    }
+  }
+
+  @override
+  Future<Either<Failure, List<User>>> searchUsers(
+      String query, String currentUserId) async {
+    try {
+      if (query.trim().isEmpty) {
+        return const Right([]);
+      }
+
+      final lowerQuery = query.toLowerCase().trim();
+      final endQuery = '$lowerQuery\uf8ff'; // Firestore range query for prefix matching
+
+      // Query users whose displayName starts with the query
+      final snapshot = await _firestore
+          .collection('users')
+          .where('displayName',
+              isGreaterThanOrEqualTo: lowerQuery,
+              isLessThan: endQuery)
+          .limit(20)
+          .get();
+
+      // Import avoided at top – we need UserModel here
+      // Use dynamic mapping to construct User entities
+      final users = snapshot.docs
+          .where((doc) => doc.id != currentUserId)
+          .map((doc) {
+        final data = doc.data();
+        final timestamps = data['createdAt'];
+        final loginTimestamps = data['lastLoginAt'];
+
+        return User(
+          userId: doc.id,
+          displayName: data['displayName'] as String? ?? 'Player',
+          email: data['email'] as String?,
+          photoUrl: data['photoUrl'] as String?,
+          elo: data['elo'] as int? ?? 1000,
+          stats: const UserStats(),
+          subscription: const Subscription(),
+          dailyGames: DailyGames.today(),
+          createdAt: timestamps is Timestamp
+              ? timestamps.toDate()
+              : DateTime.now(),
+          lastLoginAt: loginTimestamps is Timestamp
+              ? loginTimestamps.toDate()
+              : null,
+        );
+      }).toList();
+
+      return Right(users);
+    } catch (e) {
+      return Left(ServerFailure(e.toString()));
+    }
+  }
+
+  @override
+  Future<Either<Failure, bool>> areFriends(
+      String userId1, String userId2) async {
+    try {
+      final userDoc =
+          await _firestore.collection('users').doc(userId1).get();
+      if (!userDoc.exists) return Left(UserNotFoundFailure('User not found'));
+
+      final friends = userDoc.get('friends') as List<dynamic>? ?? [];
+      final friendsList = List<String>.from(friends.map((e) => e as String));
+      return Right(friendsList.contains(userId2));
+    } catch (e) {
+      return Left(ServerFailure(e.toString()));
+    }
+  }
+
+  @override
+  Future<Either<Failure, bool>> hasPendingRequest(
+      String fromUserId, String toUserId) async {
+    try {
+      final targetDoc =
+          await _firestore.collection('users').doc(toUserId).get();
+      if (!targetDoc.exists) {
+        return Left(UserNotFoundFailure('Target user not found'));
+      }
+
+      final requests =
+          targetDoc.get('pending_requests') as List<dynamic>? ?? [];
+      final requestsList =
+          List<String>.from(requests.map((e) => e as String));
+      return Right(requestsList.contains(fromUserId));
+    } catch (e) {
+      return Left(ServerFailure(e.toString()));
+    }
+  }
 }

@@ -31,7 +31,7 @@ class MatchHistoryScreen extends ConsumerWidget {
       ),
       // ── Bottom Navigation Bar (mobile) ───────────────
       bottomNavigationBar: MediaQuery.of(context).size.width < 640
-          ? _buildBottomNavBar(context, currentIndex: 2)
+          ? _buildBottomNavBar(context, currentIndex: 3)
           : null,
     );
   }
@@ -222,9 +222,12 @@ class MatchHistoryScreen extends ConsumerWidget {
                 context.go('/matchmaking/casual');
                 break;
               case 2:
-                // Already on history
+                context.go('/friends');
                 break;
               case 3:
+                // Already on history
+                break;
+              case 4:
                 // TODO: Navigate to profile
                 break;
             }
@@ -237,6 +240,10 @@ class MatchHistoryScreen extends ConsumerWidget {
             BottomNavigationBarItem(
               icon: Icon(Icons.sports_martial_arts),
               label: 'BATTLE',
+            ),
+            BottomNavigationBarItem(
+              icon: Icon(Icons.group),
+              label: 'FRIENDS',
             ),
             BottomNavigationBarItem(
               icon: Icon(Icons.auto_stories),

@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
+import 'package:firebase_auth/firebase_auth.dart';
 import '../../providers/multiplayer_provider.dart';
+import '../../providers/friends_provider.dart';
 import '../game/widgets/timer_widget.dart';
 import '../game/widgets/question_card.dart';
 import '../game/widgets/answer_options_widget.dart';
@@ -295,6 +297,11 @@ class MultiplayerGameScreen extends ConsumerWidget {
       opponentAnswersForTimeline = state.opponentAnswers;
     }
 
+    // Calculate opponent average time
+    final oppAvgTime = state.opponentAnswers != null && state.opponentAnswers!.isNotEmpty
+        ? state.opponentAnswers!.map((a) => a.timeMs / 1000.0).reduce((a, b) => a + b) / state.opponentAnswers!.length
+        : null;
+
     return GameResultWidget(
       score: state.playerScore,
       totalQuestions: totalQuestions,
@@ -305,6 +312,21 @@ class MultiplayerGameScreen extends ConsumerWidget {
       eloChange: state.eloChange,
       userAnswers: state.playerAnswers,
       opponentAnswers: opponentAnswersForTimeline,
+      opponentScore: state.opponentScore,
+      opponentCorrectAnswers: state.opponentCorrectAnswers,
+      opponentAverageTime: oppAvgTime,
+      onAddFriend: state.currentMatch != null ? () {
+        final currentUserId = FirebaseAuth.instance.currentUser?.uid;
+        if (currentUserId != null) {
+          final opponentId = state.currentMatch!.getOpponentId(currentUserId);
+          if (opponentId != null && opponentId.isNotEmpty) {
+            ref.read(friendsProvider.notifier).sendFriendRequest(opponentId);
+            ScaffoldMessenger.of(context).showSnackBar(
+              SnackBar(content: Text('Solicitud enviada a ${state.opponentName}')),
+            );
+          }
+        }
+      } : null,
       onPlayAgain: () {
         ref.read(multiplayerProvider.notifier).reset();
         context.go('/home');

@@ -9,6 +9,7 @@ import 'package:geoquiz_battle/presentation/screens/multiplayer/matchmaking_scre
 import 'package:geoquiz_battle/presentation/screens/multiplayer/multiplayer_game_screen.dart';
 import 'package:geoquiz_battle/presentation/screens/home/leaderboard_screen.dart';
 import 'package:geoquiz_battle/presentation/screens/history/match_history_screen.dart';
+import 'package:geoquiz_battle/presentation/screens/friends/friends_screen.dart';
 import 'package:geoquiz_battle/presentation/providers/auth_provider.dart';
 import 'package:geoquiz_battle/presentation/providers/multiplayer_provider.dart';
 import 'package:geoquiz_battle/domain/entities/question.dart';
@@ -102,6 +103,12 @@ final routerProvider = Provider<GoRouter>((ref) {
         path: '/history',
         pageBuilder: (context, state) => GeoCTransitions.slideInFromRight(
           child: const MatchHistoryScreen(),
+        ),
+      ),
+      GoRoute(
+        path: '/friends',
+        pageBuilder: (context, state) => GeoCTransitions.slideInFromRight(
+          child: const FriendsScreen(),
         ),
       ),
     ],

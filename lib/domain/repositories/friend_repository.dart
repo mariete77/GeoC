@@ -24,4 +24,25 @@ abstract class FriendRepository {
   /// Accept a friend request (mutual friendship)
   Future<Either<Failure, Unit>> acceptFriendRequest(
       String acceptingUserId, String requestFromUserId);
+
+  /// Watch friends list in real-time
+  Stream<List<String>> watchFriends(String userId);
+
+  /// Watch pending friend requests in real-time
+  Stream<List<String>> watchPendingRequests(String userId);
+
+  /// Reject a friend request
+  Future<Either<Failure, Unit>> rejectFriendRequest(
+      String rejectingUserId, String requestFromUserId);
+
+  /// Search users by display name
+  Future<Either<Failure, List<User>>> searchUsers(
+      String query, String currentUserId);
+
+  /// Check if two users are friends
+  Future<Either<Failure, bool>> areFriends(String userId1, String userId2);
+
+  /// Check if a pending request exists from one user to another
+  Future<Either<Failure, bool>> hasPendingRequest(
+      String fromUserId, String toUserId);
 }

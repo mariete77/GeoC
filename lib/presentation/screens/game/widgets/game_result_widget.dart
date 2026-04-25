@@ -16,6 +16,10 @@ class GameResultWidget extends StatefulWidget {
   final bool isVictory;
   final List<dynamic>? userAnswers;
   final List<dynamic>? opponentAnswers;
+  final int? opponentScore;
+  final int? opponentCorrectAnswers;
+  final double? opponentAverageTime;
+  final VoidCallback? onAddFriend;
 
   const GameResultWidget({
     super.key,
@@ -30,6 +34,10 @@ class GameResultWidget extends StatefulWidget {
     this.isVictory = true,
     this.userAnswers,
     this.opponentAnswers,
+    this.opponentScore,
+    this.opponentCorrectAnswers,
+    this.opponentAverageTime,
+    this.onAddFriend,
   });
 
   @override
@@ -41,6 +49,7 @@ class _GameResultWidgetState extends State<GameResultWidget>
   late AnimationController _controller;
   late Animation<double> _fadeAnimation;
   late Animation<double> _slideAnimation;
+  late Animation<double> _barAnimation;
 
   @override
   void initState() {
@@ -56,6 +65,12 @@ class _GameResultWidgetState extends State<GameResultWidget>
 
     _slideAnimation = Tween<double>(begin: 30.0, end: 0.0).animate(
       CurvedAnimation(parent: _controller, curve: Curves.easeOutCubic),
+    );
+    _barAnimation = Tween<double>(begin: 0.0, end: 1.0).animate(
+      CurvedAnimation(
+        parent: _controller,
+        curve: const Interval(0.3, 1.0, curve: Curves.easeOutCubic),
+      ),
     );
 
     _controller.forward();
@@ -97,9 +112,39 @@ class _GameResultWidgetState extends State<GameResultWidget>
                 _buildBentoRow(accuracy),
                 const SizedBox(height: 16),
 
+                // ── Score Comparison (multiplayer only) ────────
+                if (hasOpponent && widget.opponentScore != null) ...[
+                  _buildScoreComparison(),
+                  const SizedBox(height: 16),
+                ],
+
                 // ── Detail Cards Row ───────────────────────────
                 if (hasOpponent) ...[
                   _buildDetailCards(),
+                  const SizedBox(height: 16),
+                ],
+
+                // ── Add Friend (multiplayer) ────────────────
+                if (hasOpponent && widget.onAddFriend != null && widget.opponentName != null) ...[
+                  Center(
+                    child: TextButton.icon(
+                      onPressed: widget.onAddFriend,
+                      icon: Icon(Icons.person_add_outlined, size: 18, color: AppColors.primary),
+                      label: Text(
+                        'Agregar a ${widget.opponentName}',
+                        style: GoogleFonts.plusJakartaSans(
+                          fontSize: 13,
+                          fontWeight: FontWeight.w600,
+                          color: AppColors.primary,
+                        ),
+                      ),
+                      style: TextButton.styleFrom(
+                        foregroundColor: AppColors.primary,
+                        padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
+                        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
+                      ),
+                    ),
+                  ),
                   const SizedBox(height: 16),
                 ],
 
@@ -563,6 +608,223 @@ class _GameResultWidgetState extends State<GameResultWidget>
             ),
           ),
         ],
+      ),
+    );
+  }
+
+  // ═══════════════════════════════════════════════════════════
+  // SCORE COMPARISON (multiplayer)
+  // ═══════════════════════════════════════════════════════════
+
+  Widget _buildScoreComparison() {
+    final playerScore = widget.score.toDouble();
+    final oppScore = widget.opponentScore!.toDouble();
+    final maxScore = (playerScore > oppScore ? playerScore : oppScore) * 1.1;
+    if (maxScore == 0) return const SizedBox.shrink();
+
+    final playerAccuracy =
+        widget.totalQuestions > 0
+            ? (widget.correctAnswers / widget.totalQuestions) * 100
+            : 0.0;
+    final oppAccuracy =
+        widget.totalQuestions > 0
+            ? (widget.opponentCorrectAnswers ?? 0) /
+                widget.totalQuestions *
+                100
+            : 0.0;
+
+    final playerTime = widget.averageTime;
+    final oppTime = widget.opponentAverageTime ?? 0.0;
+
+    return AnimatedBuilder(
+      animation: _barAnimation,
+      builder: (context, _) {
+        return _buildAmbientCard(
+          color: AppColors.surfaceContainerLowest,
+          child: Padding(
+            padding: const EdgeInsets.all(20),
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.stretch,
+              children: [
+                // Header
+                Text(
+                  'COMPARATIVA',
+                  style: GoogleFonts.workSans(
+                    fontSize: 10,
+                    fontWeight: FontWeight.w600,
+                    color: AppColors.onSurfaceVariant,
+                    letterSpacing: 2,
+                  ),
+                ),
+                const SizedBox(height: 16),
+
+                // Player vs Opponent labels
+                Row(
+                  children: [
+                    Text(
+                      'Tú',
+                      style: GoogleFonts.plusJakartaSans(
+                        fontWeight: FontWeight.w700,
+                        fontSize: 13,
+                        color: AppColors.onSurface,
+                      ),
+                    ),
+                    const Spacer(),
+                    Text(
+                      widget.opponentName ?? 'Oponente',
+                      style: GoogleFonts.plusJakartaSans(
+                        fontWeight: FontWeight.w700,
+                        fontSize: 13,
+                        color: AppColors.onSurface,
+                      ),
+                    ),
+                  ],
+                ),
+                const SizedBox(height: 8),
+
+                // Player bar
+                _buildComparisonBar(
+                  label: '${widget.score} pts',
+                  fraction: (playerScore / maxScore) * _barAnimation.value,
+                  color: AppColors.primary,
+                  isWinner: widget.isVictory,
+                ),
+                const SizedBox(height: 8),
+
+                // Opponent bar
+                _buildComparisonBar(
+                  label: '${widget.opponentScore} pts',
+                  fraction: (oppScore / maxScore) * _barAnimation.value,
+                  color: AppColors.tertiary,
+                  isWinner: !widget.isVictory,
+                ),
+                const SizedBox(height: 20),
+
+                // Stats row
+                Row(
+                  children: [
+                    _buildComparisonStat(
+                      label: 'Aciertos',
+                      playerValue: '${widget.correctAnswers}/${widget.totalQuestions}',
+                      opponentValue: '${widget.opponentCorrectAnswers ?? 0}/${widget.totalQuestions}',
+                    ),
+                    const SizedBox(width: 8),
+                    _buildComparisonStat(
+                      label: 'Precisión',
+                      playerValue: '${playerAccuracy.toStringAsFixed(0)}%',
+                      opponentValue: '${oppAccuracy.toStringAsFixed(0)}%',
+                    ),
+                    const SizedBox(width: 8),
+                    _buildComparisonStat(
+                      label: 'Tiempo',
+                      playerValue: '${playerTime.toStringAsFixed(1)}s',
+                      opponentValue:
+                          widget.opponentAverageTime != null
+                              ? '${oppTime.toStringAsFixed(1)}s'
+                              : '-',
+                    ),
+                  ],
+                ),
+              ],
+            ),
+          ),
+        );
+      },
+    );
+  }
+
+  Widget _buildComparisonBar({
+    required String label,
+    required double fraction,
+    required Color color,
+    required bool isWinner,
+  }) {
+    return Row(
+      children: [
+        Expanded(
+          child: ClipRRect(
+            borderRadius: BorderRadius.circular(8),
+            child: Container(
+              height: 28,
+              color: AppColors.surfaceContainer,
+              child: Align(
+                alignment: Alignment.centerLeft,
+                child: FractionallySizedBox(
+                  widthFactor: fraction.clamp(0.0, 1.0),
+                  heightFactor: 1.0,
+                  child: Container(
+                    decoration: BoxDecoration(
+                      color: color,
+                      borderRadius: BorderRadius.circular(8),
+                      boxShadow: isWinner
+                          ? [
+                              BoxShadow(
+                                color: color.withOpacity(0.3),
+                                blurRadius: 12,
+                                offset: const Offset(0, 4),
+                              ),
+                            ]
+                          : null,
+                    ),
+                  ),
+                ),
+              ),
+            ),
+          ),
+        ),
+        const SizedBox(width: 8),
+        Text(
+          label,
+          style: GoogleFonts.plusJakartaSans(
+            fontWeight: FontWeight.w800,
+            fontSize: 14,
+            color: AppColors.onSurface,
+          ),
+        ),
+      ],
+    );
+  }
+
+  Widget _buildComparisonStat({
+    required String label,
+    required String playerValue,
+    required String opponentValue,
+  }) {
+    return Expanded(
+      child: Container(
+        padding: const EdgeInsets.all(12),
+        decoration: BoxDecoration(
+          color: AppColors.surfaceContainerLow,
+          borderRadius: BorderRadius.circular(12),
+        ),
+        child: Column(
+          children: [
+            Text(
+              playerValue,
+              style: GoogleFonts.plusJakartaSans(
+                fontWeight: FontWeight.w800,
+                fontSize: 16,
+                color: AppColors.primary,
+              ),
+            ),
+            Text(
+              opponentValue,
+              style: GoogleFonts.plusJakartaSans(
+                fontWeight: FontWeight.w600,
+                fontSize: 13,
+                color: AppColors.tertiary,
+              ),
+            ),
+            const SizedBox(height: 2),
+            Text(
+              label,
+              style: GoogleFonts.workSans(
+                fontSize: 10,
+                color: AppColors.onSurfaceVariant,
+              ),
+            ),
+          ],
+        ),
       ),
     );
   }
