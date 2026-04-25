@@ -66,6 +66,8 @@ class QuestionCard extends StatelessWidget {
         return _buildMonumentCountryQuestion();
       case QuestionType.monumentCity:
         return _buildMonumentCityQuestion();
+      case QuestionType.historicBuilding:
+        return _buildHistoricBuildingQuestion();
     }
   }
 
@@ -529,6 +531,25 @@ class QuestionCard extends StatelessWidget {
           const SizedBox(height: 24),
           Text(
             question.questionText ?? (monumentName != null ? '¿En qué ciudad está $monumentName?' : '¿En qué ciudad está este monumento?'),
+            style: GoogleFonts.plusJakartaSans(color: AppColors.onSurface, fontSize: 22, fontWeight: FontWeight.w700),
+            textAlign: TextAlign.center,
+          ),
+        ],
+      ),
+    );
+  }
+
+  Widget _buildHistoricBuildingQuestion() {
+    return Padding(
+      padding: const EdgeInsets.all(24),
+      child: Column(
+        children: [
+          _buildDifficultyBadge(),
+          const SizedBox(height: 16),
+          Icon(Icons.account_balance, size: 80, color: AppColors.tertiary.withOpacity(0.8)),
+          const SizedBox(height: 24),
+          Text(
+            question.questionText ?? '¿En qué ciudad se encuentra este edificio histórico?',
             style: GoogleFonts.plusJakartaSans(color: AppColors.onSurface, fontSize: 22, fontWeight: FontWeight.w700),
             textAlign: TextAlign.center,
           ),

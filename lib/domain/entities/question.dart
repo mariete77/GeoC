@@ -16,6 +16,7 @@ enum QuestionType {
   monumentImage,
   monumentCountry,
   monumentCity,
+  historicBuilding,
   language,
   currency,
   region,

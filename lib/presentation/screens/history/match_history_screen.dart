@@ -13,7 +13,7 @@ class MatchHistoryScreen extends ConsumerWidget {
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
-    final currentUser = ref.watch(authProvider).user;
+    final currentUser = ref.watch(currentUserProvider);
     final matchHistory = ref.watch(matchHistoryProvider);
 
     return Scaffold(
@@ -25,7 +25,7 @@ class MatchHistoryScreen extends ConsumerWidget {
 
           // ── Content ───────────────────────────────────
           Expanded(
-            child: _buildContent(matchHistory, currentUser?.userId ?? ''),
+            child: _buildContent(ref, matchHistory, currentUser?.userId ?? ''),
           ),
         ],
       ),
@@ -76,7 +76,7 @@ class MatchHistoryScreen extends ConsumerWidget {
     );
   }
 
-  Widget _buildContent(MatchHistoryState state, String currentUserId) {
+  Widget _buildContent(WidgetRef ref, MatchHistoryState state, String currentUserId) {
     if (state.isLoading) {
       return Center(
         child: Column(

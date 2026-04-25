@@ -85,7 +85,7 @@ class _MatchmakingScreenState extends ConsumerState<MatchmakingScreen>
       onPopInvokedWithResult: (didPop, result) {
         if (!didPop) {
           ref.read(multiplayerProvider.notifier).cancelSearch();
-          context.pop();
+          context.go('/home');
         }
       },
       child: Scaffold(
@@ -109,7 +109,7 @@ class _MatchmakingScreenState extends ConsumerState<MatchmakingScreen>
                   child: IconButton(
                     onPressed: () {
                       ref.read(multiplayerProvider.notifier).cancelSearch();
-                      context.pop();
+                      context.go('/home');
                     },
                     icon: const Icon(Icons.close, color: Colors.white),
                   ),
@@ -268,7 +268,7 @@ class _MatchmakingScreenState extends ConsumerState<MatchmakingScreen>
         ElevatedButton(
           onPressed: () {
             ref.read(multiplayerProvider.notifier).reset();
-            context.pop();
+            context.go('/home');
           },
           child: const Text('Volver'),
         ),

@@ -64,7 +64,7 @@ class MatchHistoryNotifier extends StateNotifier<MatchHistoryState> {
 final matchHistoryProvider = StateNotifierProvider<MatchHistoryNotifier, MatchHistoryState>(
   (ref) {
     final matchRepository = ref.watch(matchRepositoryProvider);
-    final currentUserId = ref.watch(authProvider).user?.id; // Assuming authProvider exposes user ID
+    final currentUserId = ref.watch(currentUserProvider)?.userId;
     return MatchHistoryNotifier(matchRepository, currentUserId);
   },
 );

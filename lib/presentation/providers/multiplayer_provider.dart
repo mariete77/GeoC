@@ -1,6 +1,6 @@
 import 'dart:async';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:firebase_auth/firebase_auth.dart';
+import 'package:firebase_auth/firebase_auth.dart' hide User;
 import '../../data/repositories/match_repository_impl.dart';
 import '../../data/repositories/ghost_run_repository_impl.dart';
 import '../../data/repositories/question_repository_impl.dart';
@@ -11,6 +11,7 @@ import '../../domain/repositories/match_repository.dart';
 import '../../domain/repositories/ghost_run_repository.dart';
 import '../../domain/repositories/question_repository.dart';
 import '../../domain/repositories/quiz_attempt_repository.dart';
+import '../../data/repositories/quiz_attempt_repository_impl.dart';
 import '../../data/models/quiz_attempt_model.dart';
 import '../../core/constants/game_constants.dart';
 import '../../core/utils/score_calculator.dart';
@@ -33,7 +34,7 @@ final questionRepositoryMultiProvider = Provider<QuestionRepository>((ref) {
 
 /// Quiz attempt repository provider for multiplayer
 final quizAttemptRepositoryMultiProvider = Provider<QuizAttemptRepository>((ref) {
-  return ref.watch(quizAttemptRepositoryProvider);
+  return QuizAttemptRepositoryImpl();
 });
 
 /// Multiplayer game mode
@@ -657,8 +658,8 @@ class MultiplayerNotifier extends StateNotifier<MultiplayerState> {
 
       final attempt = QuizAttemptModel(
         questionId: question.id,
-        questionType: question.type,
-        questionDifficulty: question.difficulty,
+        questionType: question.type.name,
+        questionDifficulty: question.difficulty.name,
         correctAnswer: question.correctAnswer,
         userAnswer: selectedAnswer,
         isCorrect: isCorrect,
@@ -668,7 +669,7 @@ class MultiplayerNotifier extends StateNotifier<MultiplayerState> {
         matchMode: state.currentMatch?.mode == MatchMode.realtime ? 'realtime' : 'async',
         matchType: matchModeStr,
         userId: auth.currentUser?.uid,
-        userElo: ref.read(userProvider).elo,
+        userElo: _userElo,
         answeredAt: DateTime.now(),
         questionData: question.extraData,
       );

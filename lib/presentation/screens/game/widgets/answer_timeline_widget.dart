@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import '../../../../core/theme/app_colors.dart';
-import '../../../domain/entities/match.dart';
+import '../../../../domain/entities/match.dart';
 
 /// Widget que muestra una línea de tiempo de respuestas
 /// Visualiza gráficamente dónde acertó o falló cada jugador
@@ -432,7 +432,7 @@ class AnswerTimeline extends StatelessWidget {
   Widget _getStatusIcon(Answer? answer, Color color) {
     if (answer == null) {
       return Icon(
-        Icons.circle_outline,
+        Icons.circle_outlined,
         color: color,
         size: 16,
         weight: 3, // Thin weight

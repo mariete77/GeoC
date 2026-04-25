@@ -313,7 +313,7 @@ class HomeScreen extends ConsumerWidget {
               ),
               const SizedBox(height: 4),
               Text(
-                '\$elo',
+                '$elo',
                 style: GoogleFonts.plusJakartaSans(
                   fontSize: 56,
                   fontWeight: FontWeight.w900,

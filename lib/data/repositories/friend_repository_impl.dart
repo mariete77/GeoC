@@ -1,4 +1,5 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:dartz/dartz.dart';
 import '../../domain/repositories/friend_repository.dart';
 import '../../domain/entities/user.dart';
 import '../../core/errors/failures.dart';
@@ -18,7 +19,7 @@ class FriendRepositoryImpl implements FriendRepository {
       final friends = userDoc.get('friends') as List<dynamic>? ?? [];
       return Right(List<String>.from(friends.map((e) => e as String)));
     } catch (e) {
-      return Left(ServerFailure(message: e.toString()));
+      return Left(ServerFailure(e.toString()));
     }
   }
 
@@ -34,9 +35,9 @@ class FriendRepositoryImpl implements FriendRepository {
         'friends': FieldValue.arrayUnion([friendId]),
       });
       
-      return Right(null);
+      return const Right(unit);
     } catch (e) {
-      return Left(ServerFailure(message: e.toString()));
+      return Left(ServerFailure(e.toString()));
     }
   }
 
@@ -52,9 +53,9 @@ class FriendRepositoryImpl implements FriendRepository {
         'friends': FieldValue.arrayRemove([friendId]),
       });
       
-      return Right(null);
+      return const Right(unit);
     } catch (e) {
-      return Left(ServerFailure(message: e.toString()));
+      return Left(ServerFailure(e.toString()));
     }
   }
 
@@ -72,9 +73,9 @@ class FriendRepositoryImpl implements FriendRepository {
         'pending_requests': FieldValue.arrayUnion([requestingUserId]),
       });
       
-      return Right(null);
+      return const Right(unit);
     } catch (e) {
-      return Left(ServerFailure(message: e.toString()));
+      return Left(ServerFailure(e.toString()));
     }
   }
 
@@ -88,7 +89,7 @@ class FriendRepositoryImpl implements FriendRepository {
       final requests = userDoc.get('pending_requests') as List<dynamic>? ?? [];
       return Right(List<String>.from(requests.map((e) => e as String)));
     } catch (e) {
-      return Left(ServerFailure(message: e.toString()));
+      return Left(ServerFailure(e.toString()));
     }
   }
 
@@ -118,9 +119,9 @@ class FriendRepositoryImpl implements FriendRepository {
         'pending_requests': FieldValue.arrayRemove([requestFromUserId]),
       });
       
-      return Right(null);
+      return const Right(unit);
     } catch (e) {
-      return Left(ServerFailure(message: e.toString()));
+      return Left(ServerFailure(e.toString()));
     }
   }
 }

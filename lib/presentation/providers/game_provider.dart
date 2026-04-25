@@ -4,6 +4,7 @@ import 'dart:math';
 import 'package:riverpod_annotation/riverpod_annotation.dart';
 import 'package:freezed_annotation/freezed_annotation.dart';
 import '../../data/repositories/question_repository_impl.dart';
+import '../../data/repositories/quiz_attempt_repository_impl.dart';
 import '../../domain/entities/question.dart';
 import '../../domain/entities/match.dart';
 import '../../domain/repositories/question_repository.dart';
@@ -26,7 +27,7 @@ QuestionRepository questionRepository(QuestionRepositoryRef ref) {
 /// Quiz attempt repository provider
 @riverpod
 QuizAttemptRepository quizAttemptRepository(QuizAttemptRepositoryRef ref) {
-  return ref.watch(quizAttemptRepositoryProvider);
+  return QuizAttemptRepositoryImpl();
 }
 
 /// Game state
@@ -294,8 +295,8 @@ class GameNotifier extends _$GameNotifier {
 
       final attempt = QuizAttemptModel(
         questionId: question.id,
-        questionType: question.type,
-        questionDifficulty: question.difficulty,
+        questionType: question.type.name,
+        questionDifficulty: question.difficulty.name,
         correctAnswer: question.correctAnswer,
         userAnswer: selectedAnswer,
         isCorrect: isCorrect,
@@ -452,9 +453,27 @@ class GameNotifier extends _$GameNotifier {
 
   /// Convert some questions to type-answer mode by stripping options
   /// Roughly 30% of questions become type-answer
+  /// Comparison/selection question types are excluded because they need options to make sense
   List<Question> _convertToTypeAnswer(List<Question> questions) {
     final random = Random();
+
+    // Question types that should NEVER be converted to type-answer
+    // because they are comparison questions that need options to be meaningful
+    const neverConvertTypes = {
+      QuestionType.area,       // "¿Qué país es más extenso?" - needs country options
+      QuestionType.population, // "¿Qué país tiene más población?" - needs country options
+      QuestionType.border,     // "¿Qué países comparten frontera?" - needs options
+      QuestionType.river,      // "¿Por qué país pasa este río?" - needs options
+      QuestionType.region,     // "¿En qué región se encuentra?" - needs options
+      QuestionType.lake,       // "¿En qué país se encuentra este lago?" - needs options
+      QuestionType.mountain,   // "¿En qué país se encuentra esta montaña?" - needs options
+    };
+
     return questions.map((q) {
+      // Skip conversion for comparison/selection types
+      if (neverConvertTypes.contains(q.type)) {
+        return q;
+      }
       // 30% chance to convert to type-answer
       if (random.nextDouble() < 0.3) {
         return Question(

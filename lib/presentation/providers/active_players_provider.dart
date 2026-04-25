@@ -3,7 +3,9 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
-/// Provider that streams the count of active players (seen in the last hour)
+/// Provider that streams the count of active players (seen in the last hour).
+/// Uses distinct() + debounce to prevent rapid UI rebuilds caused by
+/// Firestore real-time snapshot churn.
 final activePlayersProvider = StreamProvider<int>((ref) {
   final oneHourAgo = Timestamp.fromDate(
     DateTime.now().subtract(const Duration(hours: 1)),
@@ -13,8 +15,29 @@ final activePlayersProvider = StreamProvider<int>((ref) {
       .collection('users')
       .where('lastLoginAt', isGreaterThanOrEqualTo: oneHourAgo)
       .snapshots()
-      .map((snapshot) => snapshot.docs.length);
+      .map((snapshot) => snapshot.docs.length)
+      .distinct()
+      .transform(_debounceTransformer(const Duration(seconds: 5)));
 });
+
+/// Simple debounce StreamTransformer — only emits the latest value after
+/// [duration] of silence, preventing rapid successive rebuilds.
+StreamTransformer<T, T> _debounceTransformer<T>(Duration duration) {
+  Timer? timer;
+  return StreamTransformer<T, T>.fromHandlers(
+    handleData: (data, sink) {
+      timer?.cancel();
+      timer = Timer(duration, () => sink.add(data));
+    },
+    handleDone: (sink) {
+      timer?.cancel();
+      sink.close();
+    },
+    handleError: (error, stackTrace, sink) {
+      sink.addError(error, stackTrace);
+    },
+  );
+}
 
 /// Updates the user's lastSeenAt timestamp periodically.
 /// Call this from the main app widget or home screen.
