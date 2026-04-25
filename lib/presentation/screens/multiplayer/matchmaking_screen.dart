@@ -145,7 +145,7 @@ class _MatchmakingScreenState extends ConsumerState<MatchmakingScreen>
       case MultiplayerStatus.found:
         return _buildOpponentFound(state);
       case MultiplayerStatus.error:
-        return _buildError(state.errorMessage ?? 'Unknown error');
+        return _buildError(state.errorMessage ?? 'Error desconocido');
       default:
         return _buildSearching();
     }

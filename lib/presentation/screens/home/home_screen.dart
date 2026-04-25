@@ -105,6 +105,13 @@ class HomeScreen extends ConsumerWidget {
                       index: 3,
                       child: _buildQuickActions(context),
                     ),
+                    const SizedBox(height: 24),
+
+                    // Historial de Partidas Card
+                    StaggeredItem(
+                      index: 4,
+                      child: _buildMatchHistoryCard(context),
+                    ),
                   ],
                 ),
               ),
@@ -112,7 +119,66 @@ class HomeScreen extends ConsumerWidget {
           ),
         ],
       ),
-      // ── Bottom Navigation Bar (mobile) ───────────────
+      // ── Historial de Partidas Card ──────────────────────────
+
+  Widget _buildMatchHistoryCard(BuildContext context) {
+    return Container(
+      decoration: BoxDecoration(
+        color: AppColors.surfaceContainerLowest,
+        borderRadius: BorderRadius.circular(16),
+        border: Border.all(color: AppColors.outlineVariant.withOpacity(0.15)),
+      ),
+      child: Material(
+        color: Colors.transparent,
+        child: InkWell(
+          borderRadius: BorderRadius.circular(16),
+          onTap: () => context.go('/history'),
+          child: Padding(
+            padding: const EdgeInsets.all(24),
+            child: Row(
+              children: [
+                Container(
+                  padding: const EdgeInsets.all(16),
+                  decoration: BoxDecoration(
+                    color: AppColors.secondaryContainer.withOpacity(0.5),
+                    borderRadius: BorderRadius.circular(12),
+                  ),
+                  child: Icon(Icons.history, size: 28, color: AppColors.secondary),
+                ),
+                const SizedBox(width: 20),
+                Expanded(
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Text(
+                        'Historial de Partidas',
+                        style: GoogleFonts.plusJakartaSans(
+                          fontSize: 22,
+                          fontWeight: FontWeight.w700,
+                          color: AppColors.onSurface,
+                        ),
+                      ),
+                      const SizedBox(height: 4),
+                      Text(
+                        'Revisa el resumen de tus batallas pasadas.',
+                        style: GoogleFonts.workSans(
+                          fontSize: 14,
+                          color: AppColors.onSurfaceVariant,
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+                Icon(Icons.arrow_forward, size: 32, color: AppColors.outlineVariant),
+              ],
+            ),
+          ),
+        ),
+      ),
+    );
+  }
+
+  // ── Bottom Navigation Bar (mobile) ───────────────
       bottomNavigationBar: MediaQuery.of(context).size.width < 640
           ? _buildBottomNavBar(context)
           : null,
@@ -252,7 +318,7 @@ class HomeScreen extends ConsumerWidget {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Text(
-                  'EXPLORER',
+                  'EXPLORADOR',
                   style: GoogleFonts.workSans(
                     fontSize: 12,
                     fontWeight: FontWeight.w600,
@@ -303,7 +369,7 @@ class HomeScreen extends ConsumerWidget {
             crossAxisAlignment: CrossAxisAlignment.end,
             children: [
               Text(
-                'GLOBAL RATING',
+                'CLASIFICACIÓN GLOBAL',
                 style: GoogleFonts.workSans(
                   fontSize: 12,
                   fontWeight: FontWeight.w600,
@@ -323,7 +389,7 @@ class HomeScreen extends ConsumerWidget {
               ),
               const SizedBox(height: 4),
               Text(
-                'ELO Score',
+                'Puntuación ELO',
                 style: GoogleFonts.workSans(
                   fontSize: 13,
                   color: AppColors.primaryContainer,
@@ -492,7 +558,7 @@ class HomeScreen extends ConsumerWidget {
                 ),
                 const SizedBox(height: 48),
                 Text(
-                  'Ranked',
+                  'Clasificatoria',
                   style: GoogleFonts.plusJakartaSans(
                     fontSize: 20,
                     fontWeight: FontWeight.w700,
@@ -725,7 +791,7 @@ class HomeScreen extends ConsumerWidget {
             const SizedBox(width: 12),
             Expanded(
               child:
-                  _buildActionChip(Icons.leaderboard, 'Leaderboard', () => context.go('/leaderboard')),
+                  _buildActionChip(Icons.leaderboard, 'Clasificación', () => context.go('/leaderboard')),
             ),
             const SizedBox(width: 12),
             Expanded(

@@ -97,7 +97,7 @@ class GameScreen extends ConsumerWidget {
             ),
             const SizedBox(height: 32),
             Text(
-              'Ready to Play?',
+              '¿Listo para jugar?',
               style: GoogleFonts.plusJakartaSans(
                 fontSize: 32,
                 fontWeight: FontWeight.w700,
@@ -137,7 +137,7 @@ class GameScreen extends ConsumerWidget {
                     onTap: () => ref.read(gameNotifierProvider.notifier).startGame(difficulty: difficulty),
                     child: Center(
                       child: Text(
-                        'START GAME',
+                        'INICIAR JUEGO',
                         style: GoogleFonts.plusJakartaSans(
                           fontSize: 18,
                           fontWeight: FontWeight.w700,
@@ -164,7 +164,7 @@ class GameScreen extends ConsumerWidget {
           const CircularProgressIndicator(color: AppColors.primary, strokeWidth: 3),
           const SizedBox(height: 24),
           Text(
-            'Loading questions...',
+            'Cargando preguntas...',
             style: GoogleFonts.workSans(fontSize: 18, color: AppColors.onSurfaceVariant),
           ),
         ],
@@ -193,7 +193,7 @@ class GameScreen extends ConsumerWidget {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Text(
-                    'QUESTION ${currentQuestionIndex + 1}/10',
+                    'PREGUNTA ${currentQuestionIndex + 1}/10',
                     style: GoogleFonts.plusJakartaSans(
                       fontSize: 13,
                       fontWeight: FontWeight.w600,
@@ -203,7 +203,7 @@ class GameScreen extends ConsumerWidget {
                   ),
                   const SizedBox(height: 4),
                   Text(
-                    difficulty.name == 'easy' ? 'World Tour' : difficulty.name == 'medium' ? 'Deep Dive' : 'Expert',
+                    difficulty.name == 'easy' ? 'World Tour' : difficulty.name == 'medium' ? 'Inmersión Profunda' : 'Experto',
                     style: GoogleFonts.plusJakartaSans(
                       fontSize: 22,
                       fontWeight: FontWeight.w700,
@@ -216,7 +216,7 @@ class GameScreen extends ConsumerWidget {
                 crossAxisAlignment: CrossAxisAlignment.end,
                 children: [
                   Text(
-                    'SCORE',
+                    'PUNTUACIÓN',
                     style: GoogleFonts.plusJakartaSans(
                       fontSize: 13,
                       fontWeight: FontWeight.w600,
@@ -335,7 +335,7 @@ class GameScreen extends ConsumerWidget {
             ElevatedButton(
               onPressed: () => context.go('/home'),
               style: ElevatedButton.styleFrom(backgroundColor: AppColors.primary, foregroundColor: AppColors.onPrimary),
-              child: const Text('Go Back'),
+              child: const Text('Volver'),
             ),
           ],
         ),
@@ -348,12 +348,12 @@ class GameScreen extends ConsumerWidget {
       context: context,
       builder: (dialogContext) => AlertDialog(
         backgroundColor: AppColors.surfaceContainerHigh,
-        title: Text('Exit Game?', style: GoogleFonts.plusJakartaSans(color: AppColors.onSurface, fontWeight: FontWeight.w700)),
-        content: Text('Your progress will be lost. Are you sure?', style: GoogleFonts.workSans(color: AppColors.onSurfaceVariant)),
+        title: Text('¿Salir del juego?', style: GoogleFonts.plusJakartaSans(color: AppColors.onSurface, fontWeight: FontWeight.w700)),
+        content: Text('Tu progreso se perderá. ¿Estás seguro?', style: GoogleFonts.workSans(color: AppColors.onSurfaceVariant)),
         actions: [
           TextButton(
             onPressed: () => Navigator.of(dialogContext).pop(),
-            child: Text('Cancel', style: TextStyle(color: AppColors.onSurfaceVariant)),
+            child: Text('Cancelar', style: TextStyle(color: AppColors.onSurfaceVariant)),
           ),
           TextButton(
             onPressed: () {
@@ -361,7 +361,7 @@ class GameScreen extends ConsumerWidget {
               ref.read(gameNotifierProvider.notifier).cancelGame();
               context.go('/home');
             },
-            child: const Text('Exit', style: TextStyle(color: AppColors.error)),
+            child: const Text('Salir', style: TextStyle(color: AppColors.error)),
           ),
         ],
       ),

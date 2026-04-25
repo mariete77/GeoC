@@ -299,7 +299,7 @@ class _LoginScreenState extends ConsumerState<LoginScreen> {
         ),
         const SizedBox(height: 8),
         Text(
-          'The Digital Cartographer',
+          'El Cartógrafo Digital',
           style: GoogleFonts.workSans(
             fontSize: 18,
             color: AppColors.onSurfaceVariant,
@@ -342,7 +342,7 @@ class _LoginScreenState extends ConsumerState<LoginScreen> {
                       child: const AnimatedCompass(size: 28),
                     )
                   : Text(
-                      _isSignUp ? 'Crear cuenta' : 'Begin Journey',
+                      _isSignUp ? 'Crear cuenta' : 'Comenzar Aventura',
                       style: GoogleFonts.plusJakartaSans(
                         fontSize: 18,
                         fontWeight: FontWeight.w700,

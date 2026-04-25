@@ -140,7 +140,7 @@ class _SplashScreenState extends ConsumerState<SplashScreen>
 
                         // Educational Subtitle
                         Text(
-                          'THE DIGITAL CARTOGRAPHER',
+                          'EL CARTÓGRAFO DIGITAL',
                           style: GoogleFonts.workSans(
                             fontSize: 12,
                             fontWeight: FontWeight.w600,
@@ -165,7 +165,7 @@ class _SplashScreenState extends ConsumerState<SplashScreen>
               mainAxisSize: MainAxisSize.min,
               children: [
                 Text(
-                  'CALIBRATING INSTRUMENTS',
+                  'CALIBRANDO INSTRUMENTOS',
                   style: GoogleFonts.workSans(
                     fontSize: 10,
                     fontWeight: FontWeight.w500,

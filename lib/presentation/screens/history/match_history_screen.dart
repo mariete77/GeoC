@@ -235,11 +235,11 @@ class MatchHistoryScreen extends ConsumerWidget {
           items: const [
             BottomNavigationBarItem(
               icon: Icon(Icons.explore),
-              label: 'HOME',
+              label: 'INICIO',
             ),
             BottomNavigationBarItem(
               icon: Icon(Icons.sports_martial_arts),
-              label: 'BATTLE',
+              label: 'BATALLA',
             ),
             BottomNavigationBarItem(
               icon: Icon(Icons.group),
@@ -247,11 +247,11 @@ class MatchHistoryScreen extends ConsumerWidget {
             ),
             BottomNavigationBarItem(
               icon: Icon(Icons.auto_stories),
-              label: 'JOURNAL',
+              label: 'HISTORIAL',
             ),
             BottomNavigationBarItem(
               icon: Icon(Icons.person),
-              label: 'PROFILE',
+              label: 'PERFIL',
             ),
           ],
         ),

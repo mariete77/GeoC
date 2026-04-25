@@ -110,7 +110,7 @@ class MultiplayerGameScreen extends ConsumerWidget {
           ),
           SizedBox(height: 24),
           Text(
-            'Loading...',
+            'Cargando...',
             style: TextStyle(color: Colors.white, fontSize: 18),
           ),
         ],
@@ -260,7 +260,7 @@ class MultiplayerGameScreen extends ConsumerWidget {
                 ),
                 const Spacer(),
                 Text(
-                  state.opponentName ?? 'Opponent',
+                  state.opponentName ?? 'Oponente',
                   style: const TextStyle(color: Colors.redAccent, fontSize: 14),
                 ),
                 const SizedBox(width: 8),
