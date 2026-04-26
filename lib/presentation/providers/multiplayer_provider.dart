@@ -148,7 +148,8 @@ class MultiplayerState {
 class MultiplayerNotifier extends StateNotifier<MultiplayerState> {
   final Ref _ref;
   Timer? _timer;
-  Timer? _matchmakingTimer;
+  Timer? _matchmakingTimer; // Overall timeout (60s)
+  Timer? _searchTimer; // Periodic re-query timer (3s)
   StreamSubscription? _matchSubscription;
   List<Question> _questions = [];
   String? _pendingMatchId; // Track match ID for cancellation
@@ -158,6 +159,7 @@ class MultiplayerNotifier extends StateNotifier<MultiplayerState> {
     _ref.onDispose(() {
       _timer?.cancel();
       _matchmakingTimer?.cancel();
+      _searchTimer?.cancel();
       _matchSubscription?.cancel();
     });
   }
@@ -417,14 +419,46 @@ class MultiplayerNotifier extends StateNotifier<MultiplayerState> {
       },
       (matchId) {
         _pendingMatchId = matchId;
-        // Watch the match for opponent joining
+        // Watch the match for opponent joining (via snapshot listener)
         _watchForOpponent(matchId);
 
-        // Set a timeout (15s) - fall back to ghost run if no opponent found
+        // Periodically re-query for OTHER waiting matches (fixes race condition)
+        // When both players start at the same time, neither finds the other's match.
+        // This timer re-searches every 3 seconds to discover newly created matches.
+        _searchTimer = Timer.periodic(
+          const Duration(seconds: 3),
+          (timer) async {
+            if (state.status != MultiplayerStatus.searching) {
+              timer.cancel();
+              return;
+            }
+
+            final findResult = await _ref.read(matchRepositoryProvider).findWaitingMatch(
+                  mode: state.mode.name,
+                  playerElo: _userElo,
+                  userId: _currentUserId!,
+                );
+
+            findResult.fold(
+              (_) {}, // ignore errors, keep waiting
+              (match) {
+                if (match != null && match.id != _pendingMatchId) {
+                  // Found another player's match — cancel ours and join theirs
+                  timer.cancel();
+                  _cancelMatchmaking(_pendingMatchId!);
+                  _joinExistingMatch(match);
+                }
+              },
+            );
+          },
+        );
+
+        // Overall timeout — fall back to ghost run after 60 seconds
         _matchmakingTimer = Timer(
-          const Duration(seconds: 15),
+          Duration(milliseconds: GameConstants.matchmakingTimeoutMs),
           () {
             if (state.status == MultiplayerStatus.searching) {
+              _searchTimer?.cancel();
               _cancelMatchmaking(matchId);
               // Fallback to ghost run mode for casual/ranked
               _fallbackToGhostRun();
@@ -480,12 +514,14 @@ class MultiplayerNotifier extends StateNotifier<MultiplayerState> {
     _startPlaying();
   }
 
-  /// Cancel matchmaking
+  /// Cancel matchmaking — only marks the match as cancelled if still 'waiting'
+  /// Uses a transaction so it won't corrupt a match that just got an opponent
   Future<void> _cancelMatchmaking(String matchId) async {
     _matchSubscription?.cancel();
     _matchmakingTimer?.cancel();
+    _searchTimer?.cancel();
 
-    await _ref.read(matchRepositoryProvider).finishMatch(matchId);
+    await _ref.read(matchRepositoryProvider).cancelIfWaiting(matchId);
   }
 
   /// Cancel matchmaking from UI
