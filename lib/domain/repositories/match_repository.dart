@@ -51,6 +51,10 @@ abstract class MatchRepository {
     required String userId,
   });
 
+  /// Cancel a match only if it is still in 'waiting' status.
+  /// Uses a Firestore transaction to avoid corrupting active/finished matches.
+  Future<Either<Failure, void>> cancelIfWaiting(String matchId);
+
   /// Save match result with ELO changes for both players
   Future<Either<Failure, void>> saveMatchResult({
     required String matchId,

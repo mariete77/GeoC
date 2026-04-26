@@ -340,6 +340,35 @@ class MatchRepositoryImpl implements MatchRepository {
   }
 
   @override
+  Future<Either<Failure, void>> cancelIfWaiting(String matchId) async {
+    try {
+      final docRef = _firestore
+          .collection(FirebaseConstants.matches)
+          .doc(matchId);
+
+      await _firestore.runTransaction((transaction) async {
+        final snapshot = await transaction.get(docRef);
+        if (!snapshot.exists) return;
+
+        final status = snapshot.data()?['status'] as String? ?? '';
+        if (status == 'waiting') {
+          transaction.update(docRef, {
+            FirebaseConstants.status: 'cancelled',
+            FirebaseConstants.finishedAt: FieldValue.serverTimestamp(),
+          });
+        }
+        // If not waiting (e.g. already active), do nothing — don't corrupt it
+      });
+
+      return const Right(null);
+    } on ServerException catch (e) {
+      return Left(ServerFailure(e.message));
+    } catch (e) {
+      return Left(UnknownFailure(e.toString()));
+    }
+  }
+
+  @override
   Future<Either<Failure, void>> saveMatchResult({
     required String matchId,
     required MatchResult result,
