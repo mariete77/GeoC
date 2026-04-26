@@ -49,7 +49,50 @@ class AnswerTimeline extends StatelessWidget {
     return LayoutBuilder(
       builder: (context, constraints) {
         final isWide = constraints.maxWidth > 600;
+        final hasOpponent = opponentAnswers != null && opponentName != null;
         
+        if (!isWide && hasOpponent) {
+          return Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              _buildPlayerHeader(
+                name: playerName,
+                answers: playerAnswers.length,
+                isPrimary: true,
+              ),
+              const SizedBox(height: 16),
+              Row(
+                children: [
+                  Container(
+                    padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
+                    decoration: BoxDecoration(
+                      color: AppColors.surfaceVariant.withOpacity(0.6),
+                      borderRadius: BorderRadius.circular(20),
+                    ),
+                    child: Text(
+                      'VS',
+                      style: GoogleFonts.plusJakartaSans(
+                        fontSize: 11,
+                        fontWeight: FontWeight.w800,
+                        color: AppColors.onSurface,
+                        letterSpacing: 2,
+                      ),
+                    ),
+                  ),
+                  const SizedBox(width: 16),
+                  _buildLegend(),
+                ],
+              ),
+              const SizedBox(height: 16),
+              _buildPlayerHeader(
+                name: opponentName!,
+                answers: opponentAnswers!.length,
+                isPrimary: false,
+              ),
+            ],
+          );
+        }
+
         return Row(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
@@ -63,17 +106,9 @@ class AnswerTimeline extends StatelessWidget {
               ),
             ),
 
-            // Negative space
-            const SizedBox(width: 32),
-
-            // Legend - Right aligned, offset vertically
-            if (!isWide) ...[
-              const Spacer(),
-              _buildLegend(),
-            ],
-
             // VS section - For multiplayer
-            if (opponentAnswers != null && opponentName != null) ...[
+            if (hasOpponent) ...[
+              const SizedBox(width: 16),
               // VS indicator - Glassmorphism
               Container(
                 margin: const EdgeInsets.only(top: 8),
@@ -81,13 +116,6 @@ class AnswerTimeline extends StatelessWidget {
                 decoration: BoxDecoration(
                   color: AppColors.surfaceVariant.withOpacity(0.6),
                   borderRadius: BorderRadius.circular(20),
-                  boxShadow: [
-                    BoxShadow(
-                      color: AppColors.onSurface.withOpacity(0.06),
-                      blurRadius: 32,
-                      offset: const Offset(0, 8),
-                    ),
-                  ],
                 ),
                 child: Text(
                   'VS',
@@ -99,8 +127,7 @@ class AnswerTimeline extends StatelessWidget {
                   ),
                 ),
               ),
-
-              const SizedBox(width: 32),
+              const SizedBox(width: 16),
 
               // Opponent section
               Expanded(
@@ -111,6 +138,9 @@ class AnswerTimeline extends StatelessWidget {
                   isPrimary: false,
                 ),
               ),
+            ] else ...[
+               const Spacer(),
+               _buildLegend(),
             ],
           ],
         );
@@ -247,54 +277,76 @@ class AnswerTimeline extends StatelessWidget {
     final playerColor = _getStatusColor(playerAnswer);
     final opponentColor = _getStatusColor(opponentAnswer);
 
-    return Container(
-      margin: const EdgeInsets.only(bottom: 16),
-      child: Row(
-        crossAxisAlignment: CrossAxisAlignment.start,
-        children: [
-          // Question number - Display typography, left aligned
-          SizedBox(
-            width: 56,
-            child: Text(
-              '#${questionIndex + 1}',
-              style: GoogleFonts.plusJakartaSans(
-                fontSize: 18,
-                fontWeight: FontWeight.w700,
-                color: AppColors.onSurfaceVariant,
-                height: 1.3,
+    return LayoutBuilder(
+      builder: (context, constraints) {
+        final isWide = constraints.maxWidth > 500;
+        
+        return Container(
+          margin: const EdgeInsets.only(bottom: 24),
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              // Question number - Display typography, left aligned
+              Text(
+                'PREGUNTA #${questionIndex + 1}',
+                style: GoogleFonts.workSans(
+                  fontSize: 10,
+                  fontWeight: FontWeight.w700,
+                  color: AppColors.onSurfaceVariant.withOpacity(0.5),
+                  letterSpacing: 2,
+                ),
               ),
-            ),
+              const SizedBox(height: 12),
+
+              if (isWide && opponentAnswers != null)
+                Row(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    // Player answer
+                    Expanded(
+                      child: _buildAnswerCard(
+                        answer: playerAnswer,
+                        color: playerColor,
+                        label: playerName,
+                        isPrimary: true,
+                      ),
+                    ),
+                    const SizedBox(width: 16),
+                    // Opponent answer
+                    Expanded(
+                      child: _buildAnswerCard(
+                        answer: opponentAnswer,
+                        color: opponentColor,
+                        label: opponentName ?? '',
+                        isPrimary: false,
+                      ),
+                    ),
+                  ],
+                )
+              else
+                Column(
+                  children: [
+                    _buildAnswerCard(
+                      answer: playerAnswer,
+                      color: playerColor,
+                      label: playerName,
+                      isPrimary: true,
+                    ),
+                    if (opponentAnswers != null) ...[
+                      const SizedBox(height: 12),
+                      _buildAnswerCard(
+                        answer: opponentAnswer,
+                        color: opponentColor,
+                        label: opponentName ?? '',
+                        isPrimary: false,
+                      ),
+                    ],
+                  ],
+                ),
+            ],
           ),
-
-          const SizedBox(width: 20),
-
-          // Player answer - Tonal layering
-          Expanded(
-            child: _buildAnswerCard(
-              answer: playerAnswer,
-              color: playerColor,
-              label: playerName,
-              isPrimary: true,
-            ),
-          ),
-
-          // Negative space instead of divider
-          if (opponentAnswers != null) ...[
-            const SizedBox(width: 24),
-          ],
-
-          // Opponent answer
-          if (opponentAnswers != null)
-            Expanded(
-              child: _buildAnswerCard(
-                answer: opponentAnswer,
-                color: opponentColor,
-                label: opponentName ?? '',
-                isPrimary: false,
-              ),
-            ),
-        ],
-      ),
+        );
+      },
     );
   }
 
@@ -374,7 +426,7 @@ class AnswerTimeline extends StatelessWidget {
             ],
             
             // Time taken - Subtle
-            if (answer.timeMs > 0) ...[
+            if (answer.timeMs > 0 && answer.timeMs.isFinite) ...[
               const SizedBox(height: 4),
               Text(
                 '${(answer.timeMs / 1000).toStringAsFixed(1)}s',

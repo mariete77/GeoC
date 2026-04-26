@@ -137,18 +137,38 @@ class MatchRepositoryImpl implements MatchRepository {
     MatchStatus? status,
   }) async {
     try {
-      Query query = _firestore
+      // Use simple query (only arrayContains) to avoid composite index requirement.
+      // Filter by status and sort client-side.
+      final snapshot = await _firestore
           .collection(FirebaseConstants.matches)
           .where(FirebaseConstants.players, arrayContains: userId)
-          .orderBy(FirebaseConstants.createdAt, descending: true)
-          .limit(limit);
+          .limit(50)
+          .get();
 
+      // Filter by status client-side
+      var docs = snapshot.docs;
       if (status != null) {
-        query = query.where(FirebaseConstants.status, isEqualTo: status.name);
+        docs = docs.where((doc) {
+          final data = doc.data();
+          return data[FirebaseConstants.status] == status.name;
+        }).toList();
       }
 
-      final snapshot = await query.get();
-      final matches = snapshot.docs
+      // Sort client-side by createdAt descending
+      docs.sort((a, b) {
+        final aMs = (a.data()[FirebaseConstants.createdAt] as Timestamp?)
+                ?.millisecondsSinceEpoch ??
+            0;
+        final bMs = (b.data()[FirebaseConstants.createdAt] as Timestamp?)
+                ?.millisecondsSinceEpoch ??
+            0;
+        return bMs.compareTo(aMs);
+      });
+
+      // Apply limit
+      docs = docs.take(limit).toList();
+
+      final matches = docs
           .map((doc) => MatchModel.fromFirestore(doc).toDomain())
           .toList();
 
@@ -187,49 +207,62 @@ class MatchRepositoryImpl implements MatchRepository {
     required String userId,
   }) async {
     try {
-      // Use simple query (only status filter) to avoid needing composite indexes.
-      // Filter by type and ELO client-side. No orderBy to avoid composite index requirement.
+      final logMsg = 'Searching for $mode match for user $userId (Elo: $playerElo)';
+      developer.log(logMsg, name: 'MatchRepo');
+      print('DEBUG: $logMsg');
+      
+      // Get any waiting match of correct type.
       final snapshot = await _firestore
           .collection(FirebaseConstants.matches)
           .where(FirebaseConstants.status, isEqualTo: 'waiting')
-          .limit(20)
+          .limit(40)
           .get();
 
-      // Filter client-side: exclude own matches, match type, prefer ELO range
-      final minElo = playerElo - GameConstants.matchmakingEloRange;
-      final maxElo = playerElo + GameConstants.matchmakingEloRange;
-
-      // First pass: find matches in ELO range and correct type
-      var matches = snapshot.docs.where((doc) {
-        final data = doc.data();
-        final players = List<String>.from(data['players'] ?? []);
-        final type = data['type'] as String? ?? '';
-        final creatorElo = data['creatorElo'] as int? ?? 1000;
-        return !players.contains(userId) &&
-            type == mode &&
-            creatorElo >= minElo &&
-            creatorElo <= maxElo;
-      }).toList();
-
-      // Fallback: any waiting match of correct type regardless of ELO
-      if (matches.isEmpty) {
-        matches = snapshot.docs.where((doc) {
-          final data = doc.data();
-          final players = List<String>.from(data['players'] ?? []);
-          final type = data['type'] as String? ?? '';
-          return !players.contains(userId) && type == mode;
-        }).toList();
-      }
-
-      if (matches.isEmpty) {
+      if (snapshot.docs.isEmpty) {
+        const msg = 'No waiting matches found in Firestore';
+        developer.log(msg, name: 'MatchRepo');
+        print('DEBUG: $msg');
         return const Right(null);
       }
 
+      // Filter client-side: exclude own matches, match type
+      final matches = snapshot.docs.where((doc) {
+        final data = doc.data();
+        final players = List<String>.from(data['players'] ?? []);
+        final matchType = data['type'] as String? ?? '';
+        
+        final isOwnMatch = players.contains(userId);
+        final isCorrectType = matchType == mode;
+        
+        return !isOwnMatch && isCorrectType;
+      }).toList();
+
+      if (matches.isEmpty) {
+        final msg = 'Found ${snapshot.docs.length} waiting matches, but none match criteria (mode=$mode, not own)';
+        developer.log(msg, name: 'MatchRepo');
+        print('DEBUG: $msg');
+        return const Right(null);
+      }
+
+      // If multiple, pick the one closest to player ELO
+      matches.sort((a, b) {
+        final eloA = (a.data()['creatorElo'] as int? ?? 1000);
+        final eloB = (b.data()['creatorElo'] as int? ?? 1000);
+        return (eloA - playerElo).abs().compareTo((eloB - playerElo).abs());
+      });
+
+      final foundId = matches.first.id;
+      developer.log('Match found! ID: $foundId', name: 'MatchRepo');
+      print('DEBUG: Match found! ID: $foundId');
+      
       final gameMatch = MatchModel.fromFirestore(matches.first).toDomain();
       return Right(gameMatch);
     } on ServerException catch (e) {
       return Left(ServerFailure(e.message));
     } catch (e) {
+      final errMsg = 'Error finding match: $e';
+      developer.log(errMsg, name: 'MatchRepo', error: e);
+      print('DEBUG: $errMsg');
       return Left(UnknownFailure(e.toString()));
     }
   }

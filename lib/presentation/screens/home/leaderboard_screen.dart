@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:go_router/go_router.dart';
 import '../../providers/user_provider.dart';
 import '../../providers/auth_provider.dart';
 import '../../../core/theme/app_colors.dart';
@@ -90,7 +91,7 @@ class LeaderboardScreen extends ConsumerWidget {
                 color: AppColors.primary.withOpacity(0.08),
               ),
               child: IconButton(
-                onPressed: () => Navigator.of(context).pop(),
+                onPressed: () => context.go('/home'),
                 icon: Icon(Icons.arrow_back, color: AppColors.primary),
               ),
             ),

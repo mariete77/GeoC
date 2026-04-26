@@ -1,0 +1,1972 @@
+[
+  {
+    "id": "volcano_63081",
+    "type": "volcano",
+    "difficulty": "easy",
+    "questionText": "¿En qué continente se encuentra el volcán Aso?",
+    "correctAnswer": "Asia",
+    "options": [
+      "África",
+      "la Antártida",
+      "Europa",
+      "Asia"
+    ],
+    "extraData": {
+      "volcanoName": "Aso",
+      "country": "Japón",
+      "heightMeters": 1592,
+      "status": "active",
+      "continent": "Asia"
+    }
+  },
+  {
+    "id": "volcano_63082",
+    "type": "volcano",
+    "difficulty": "easy",
+    "questionText": "¿En qué país se encuentra el volcán Sakurajima?",
+    "correctAnswer": "Japón",
+    "options": [
+      "Tanzania",
+      "Nicaragua",
+      "Etiopía",
+      "Japón"
+    ],
+    "extraData": {
+      "volcanoName": "Sakurajima",
+      "country": "Japón",
+      "heightMeters": 1117,
+      "status": "active",
+      "continent": "Asia"
+    }
+  },
+  {
+    "id": "volcano_63083",
+    "type": "volcano",
+    "difficulty": "medium",
+    "questionText": "¿Cuál es la altura aproximada del volcán Unzen?",
+    "correctAnswer": "1.483 m",
+    "options": [
+      "1.260 m",
+      "1.700 m",
+      "1.030 m",
+      "1.483 m"
+    ],
+    "extraData": {
+      "volcanoName": "Unzen",
+      "country": "Japón",
+      "heightMeters": 1483,
+      "status": "active",
+      "continent": "Asia"
+    }
+  },
+  {
+    "id": "volcano_63084",
+    "type": "volcano",
+    "difficulty": "easy",
+    "questionText": "¿Qué volcán se encuentra en Japón?",
+    "correctAnswer": "Kirishima",
+    "options": [
+      "Galeras",
+      "Kirishima",
+      "Pacaya",
+      "Ulawun"
+    ],
+    "extraData": {
+      "volcanoName": "Kirishima",
+      "country": "Japón",
+      "heightMeters": 1700,
+      "status": "active",
+      "continent": "Asia"
+    }
+  },
+  {
+    "id": "volcano_63085",
+    "type": "volcano",
+    "difficulty": "easy",
+    "questionText": "¿Cuál es el estado de actividad del volcán Pinatubo?",
+    "correctAnswer": "Activo",
+    "options": [
+      "Activo",
+      "Inactivo",
+      "Extinto",
+      "Fumarólico"
+    ],
+    "extraData": {
+      "volcanoName": "Pinatubo",
+      "country": "Filipinas",
+      "heightMeters": 1486,
+      "status": "active",
+      "continent": "Asia"
+    }
+  },
+  {
+    "id": "volcano_63086",
+    "type": "volcano",
+    "difficulty": "easy",
+    "questionText": "¿En qué continente se encuentra el volcán Mayon?",
+    "correctAnswer": "Asia",
+    "options": [
+      "Europa",
+      "América del Norte",
+      "América del Sur",
+      "Asia"
+    ],
+    "extraData": {
+      "volcanoName": "Mayon",
+      "country": "Filipinas",
+      "heightMeters": 2463,
+      "status": "active",
+      "continent": "Asia"
+    }
+  },
+  {
+    "id": "volcano_63087",
+    "type": "volcano",
+    "difficulty": "easy",
+    "questionText": "¿En qué país se encuentra el volcán Taal?",
+    "correctAnswer": "Filipinas",
+    "options": [
+      "Japón",
+      "Indonesia",
+      "Filipinas",
+      "Etiopía"
+    ],
+    "extraData": {
+      "volcanoName": "Taal",
+      "country": "Filipinas",
+      "heightMeters": 311,
+      "status": "active",
+      "continent": "Asia"
+    }
+  },
+  {
+    "id": "volcano_63088",
+    "type": "volcano",
+    "difficulty": "medium",
+    "questionText": "¿Cuál es la altura aproximada del volcán Krakatoa?",
+    "correctAnswer": "813 m",
+    "options": [
+      "930 m",
+      "560 m",
+      "813 m",
+      "690 m"
+    ],
+    "extraData": {
+      "volcanoName": "Krakatoa",
+      "country": "Indonesia",
+      "heightMeters": 813,
+      "status": "active",
+      "continent": "Asia"
+    }
+  },
+  {
+    "id": "volcano_63089",
+    "type": "volcano",
+    "difficulty": "easy",
+    "questionText": "¿Qué volcán se encuentra en Indonesia?",
+    "correctAnswer": "Merapi",
+    "options": [
+      "Sangeang Api",
+      "Tambora",
+      "Merapi",
+      "Aso"
+    ],
+    "extraData": {
+      "volcanoName": "Merapi",
+      "country": "Indonesia",
+      "heightMeters": 2930,
+      "status": "active",
+      "continent": "Asia"
+    }
+  },
+  {
+    "id": "volcano_63090",
+    "type": "volcano",
+    "difficulty": "easy",
+    "questionText": "¿Cuál es el estado de actividad del volcán Semeru?",
+    "correctAnswer": "Activo",
+    "options": [
+      "Activo",
+      "Inactivo",
+      "Extinto",
+      "Fumarólico"
+    ],
+    "extraData": {
+      "volcanoName": "Semeru",
+      "country": "Indonesia",
+      "heightMeters": 3676,
+      "status": "active",
+      "continent": "Asia"
+    }
+  },
+  {
+    "id": "volcano_63091",
+    "type": "volcano",
+    "difficulty": "easy",
+    "questionText": "¿En qué continente se encuentra el volcán Agung?",
+    "correctAnswer": "Asia",
+    "options": [
+      "África",
+      "América del Norte",
+      "Asia",
+      "América del Sur"
+    ],
+    "extraData": {
+      "volcanoName": "Agung",
+      "country": "Indonesia",
+      "heightMeters": 3031,
+      "status": "active",
+      "continent": "Asia"
+    }
+  },
+  {
+    "id": "volcano_63092",
+    "type": "volcano",
+    "difficulty": "easy",
+    "questionText": "¿En qué país se encuentra el volcán Rinjani?",
+    "correctAnswer": "Indonesia",
+    "options": [
+      "Indonesia",
+      "Tanzania",
+      "Estados Unidos",
+      "Camerún"
+    ],
+    "extraData": {
+      "volcanoName": "Rinjani",
+      "country": "Indonesia",
+      "heightMeters": 3726,
+      "status": "active",
+      "continent": "Asia"
+    }
+  },
+  {
+    "id": "volcano_63093",
+    "type": "volcano",
+    "difficulty": "medium",
+    "questionText": "¿Cuál es la altura aproximada del volcán Bromo?",
+    "correctAnswer": "2.329 m",
+    "options": [
+      "1.970 m",
+      "1.630 m",
+      "2.670 m",
+      "2.329 m"
+    ],
+    "extraData": {
+      "volcanoName": "Bromo",
+      "country": "Indonesia",
+      "heightMeters": 2329,
+      "status": "active",
+      "continent": "Asia"
+    }
+  },
+  {
+    "id": "volcano_63094",
+    "type": "volcano",
+    "difficulty": "easy",
+    "questionText": "¿Qué volcán se encuentra en Indonesia?",
+    "correctAnswer": "Tambora",
+    "options": [
+      "Kenia",
+      "Mauna Loa",
+      "Tambora",
+      "Hudson"
+    ],
+    "extraData": {
+      "volcanoName": "Tambora",
+      "country": "Indonesia",
+      "heightMeters": 2850,
+      "status": "active",
+      "continent": "Asia"
+    }
+  },
+  {
+    "id": "volcano_63095",
+    "type": "volcano",
+    "difficulty": "easy",
+    "questionText": "¿Cuál es el estado de actividad del volcán Kelimutu?",
+    "correctAnswer": "Activo",
+    "options": [
+      "Activo",
+      "Inactivo",
+      "Extinto",
+      "Fumarólico"
+    ],
+    "extraData": {
+      "volcanoName": "Kelimutu",
+      "country": "Indonesia",
+      "heightMeters": 1639,
+      "status": "active",
+      "continent": "Asia"
+    }
+  },
+  {
+    "id": "volcano_63096",
+    "type": "volcano",
+    "difficulty": "easy",
+    "questionText": "¿En qué continente se encuentra el volcán Kelud?",
+    "correctAnswer": "Asia",
+    "options": [
+      "Asia",
+      "América del Norte",
+      "la Antártida",
+      "América del Sur"
+    ],
+    "extraData": {
+      "volcanoName": "Kelud",
+      "country": "Indonesia",
+      "heightMeters": 1731,
+      "status": "active",
+      "continent": "Asia"
+    }
+  },
+  {
+    "id": "volcano_63097",
+    "type": "volcano",
+    "difficulty": "easy",
+    "questionText": "¿En qué país se encuentra el volcán Galunggung?",
+    "correctAnswer": "Indonesia",
+    "options": [
+      "Islandia",
+      "Ecuador",
+      "Indonesia",
+      "Colombia"
+    ],
+    "extraData": {
+      "volcanoName": "Galunggung",
+      "country": "Indonesia",
+      "heightMeters": 2168,
+      "status": "active",
+      "continent": "Asia"
+    }
+  },
+  {
+    "id": "volcano_63098",
+    "type": "volcano",
+    "difficulty": "medium",
+    "questionText": "¿Cuál es la altura aproximada del volcán Teide?",
+    "correctAnswer": "3.718 m",
+    "options": [
+      "2.600 m",
+      "3.160 m",
+      "4.270 m",
+      "3.718 m"
+    ],
+    "extraData": {
+      "volcanoName": "Teide",
+      "country": "España",
+      "heightMeters": 3718,
+      "status": "dormant",
+      "continent": "África"
+    }
+  },
+  {
+    "id": "volcano_63099",
+    "type": "volcano",
+    "difficulty": "easy",
+    "questionText": "¿Qué volcán se encuentra en Estados Unidos?",
+    "correctAnswer": "Kilauea",
+    "options": [
+      "Kilauea",
+      "Lewotobi",
+      "Erebus",
+      "Fuji"
+    ],
+    "extraData": {
+      "volcanoName": "Kilauea",
+      "country": "Estados Unidos",
+      "heightMeters": 1247,
+      "status": "active",
+      "continent": "América del Norte"
+    }
+  },
+  {
+    "id": "volcano_63100",
+    "type": "volcano",
+    "difficulty": "easy",
+    "questionText": "¿Cuál es el estado de actividad del volcán Mauna Loa?",
+    "correctAnswer": "Activo",
+    "options": [
+      "Activo",
+      "Inactivo",
+      "Extinto",
+      "Fumarólico"
+    ],
+    "extraData": {
+      "volcanoName": "Mauna Loa",
+      "country": "Estados Unidos",
+      "heightMeters": 4169,
+      "status": "active",
+      "continent": "América del Norte"
+    }
+  },
+  {
+    "id": "volcano_63101",
+    "type": "volcano",
+    "difficulty": "easy",
+    "questionText": "¿En qué continente se encuentra el volcán Santa Helena?",
+    "correctAnswer": "América del Norte",
+    "options": [
+      "Europa",
+      "Oceanía",
+      "América del Sur",
+      "América del Norte"
+    ],
+    "extraData": {
+      "volcanoName": "Santa Helena",
+      "country": "Estados Unidos",
+      "heightMeters": 2549,
+      "status": "active",
+      "continent": "América del Norte"
+    }
+  },
+  {
+    "id": "volcano_63102",
+    "type": "volcano",
+    "difficulty": "easy",
+    "questionText": "¿En qué país se encuentra el volcán Rainier?",
+    "correctAnswer": "Estados Unidos",
+    "options": [
+      "Guatemala",
+      "Nicaragua",
+      "San Vicente",
+      "Estados Unidos"
+    ],
+    "extraData": {
+      "volcanoName": "Rainier",
+      "country": "Estados Unidos",
+      "heightMeters": 4392,
+      "status": "dormant",
+      "continent": "América del Norte"
+    }
+  },
+  {
+    "id": "volcano_63103",
+    "type": "volcano",
+    "difficulty": "medium",
+    "questionText": "¿Cuál es la altura aproximada del volcán Redoubt?",
+    "correctAnswer": "3.108 m",
+    "options": [
+      "2.640 m",
+      "3.108 m",
+      "3.570 m",
+      "2.170 m"
+    ],
+    "extraData": {
+      "volcanoName": "Redoubt",
+      "country": "Estados Unidos",
+      "heightMeters": 3108,
+      "status": "active",
+      "continent": "América del Norte"
+    }
+  },
+  {
+    "id": "volcano_63104",
+    "type": "volcano",
+    "difficulty": "easy",
+    "questionText": "¿Qué volcán se encuentra en Estados Unidos?",
+    "correctAnswer": "Shasta",
+    "options": [
+      "Tambora",
+      "Hood",
+      "Erta Ale",
+      "Shasta"
+    ],
+    "extraData": {
+      "volcanoName": "Shasta",
+      "country": "Estados Unidos",
+      "heightMeters": 4322,
+      "status": "dormant",
+      "continent": "América del Norte"
+    }
+  },
+  {
+    "id": "volcano_63105",
+    "type": "volcano",
+    "difficulty": "easy",
+    "questionText": "¿Cuál es el estado de actividad del volcán Baker?",
+    "correctAnswer": "Activo",
+    "options": [
+      "Activo",
+      "Inactivo",
+      "Extinto",
+      "Fumarólico"
+    ],
+    "extraData": {
+      "volcanoName": "Baker",
+      "country": "Estados Unidos",
+      "heightMeters": 3286,
+      "status": "active",
+      "continent": "América del Norte"
+    }
+  },
+  {
+    "id": "volcano_63106",
+    "type": "volcano",
+    "difficulty": "easy",
+    "questionText": "¿En qué continente se encuentra el volcán Hood?",
+    "correctAnswer": "América del Norte",
+    "options": [
+      "Oceanía",
+      "América del Norte",
+      "Asia",
+      "la Antártida"
+    ],
+    "extraData": {
+      "volcanoName": "Hood",
+      "country": "Estados Unidos",
+      "heightMeters": 3426,
+      "status": "dormant",
+      "continent": "América del Norte"
+    }
+  },
+  {
+    "id": "volcano_63107",
+    "type": "volcano",
+    "difficulty": "easy",
+    "questionText": "¿En qué país se encuentra el volcán Popocatépetl?",
+    "correctAnswer": "México",
+    "options": [
+      "Martinica",
+      "Montserrat",
+      "España",
+      "México"
+    ],
+    "extraData": {
+      "volcanoName": "Popocatépetl",
+      "country": "México",
+      "heightMeters": 5426,
+      "status": "active",
+      "continent": "América del Norte"
+    }
+  },
+  {
+    "id": "volcano_63108",
+    "type": "volcano",
+    "difficulty": "medium",
+    "questionText": "¿Cuál es la altura aproximada del volcán Colima?",
+    "correctAnswer": "3.820 m",
+    "options": [
+      "2.670 m",
+      "3.240 m",
+      "3.820 m",
+      "4.390 m"
+    ],
+    "extraData": {
+      "volcanoName": "Colima",
+      "country": "México",
+      "heightMeters": 3820,
+      "status": "active",
+      "continent": "América del Norte"
+    }
+  },
+  {
+    "id": "volcano_63109",
+    "type": "volcano",
+    "difficulty": "easy",
+    "questionText": "¿Qué volcán se encuentra en México?",
+    "correctAnswer": "Pico de Orizaba",
+    "options": [
+      "Galeras",
+      "Turrialba",
+      "Rainier",
+      "Pico de Orizaba"
+    ],
+    "extraData": {
+      "volcanoName": "Pico de Orizaba",
+      "country": "México",
+      "heightMeters": 5636,
+      "status": "dormant",
+      "continent": "América del Norte"
+    }
+  },
+  {
+    "id": "volcano_63110",
+    "type": "volcano",
+    "difficulty": "easy",
+    "questionText": "¿Cuál es el estado de actividad del volcán Pacaya?",
+    "correctAnswer": "Activo",
+    "options": [
+      "Activo",
+      "Inactivo",
+      "Extinto",
+      "Fumarólico"
+    ],
+    "extraData": {
+      "volcanoName": "Pacaya",
+      "country": "Guatemala",
+      "heightMeters": 2552,
+      "status": "active",
+      "continent": "América del Norte"
+    }
+  },
+  {
+    "id": "volcano_63111",
+    "type": "volcano",
+    "difficulty": "easy",
+    "questionText": "¿En qué continente se encuentra el volcán Santa María?",
+    "correctAnswer": "América del Norte",
+    "options": [
+      "África",
+      "la Antártida",
+      "América del Norte",
+      "Europa"
+    ],
+    "extraData": {
+      "volcanoName": "Santa María",
+      "country": "Guatemala",
+      "heightMeters": 3772,
+      "status": "active",
+      "continent": "América del Norte"
+    }
+  },
+  {
+    "id": "volcano_63112",
+    "type": "volcano",
+    "difficulty": "easy",
+    "questionText": "¿En qué país se encuentra el volcán Turrialba?",
+    "correctAnswer": "Costa Rica",
+    "options": [
+      "Montserrat",
+      "República Democrática del Congo",
+      "Costa Rica",
+      "Francia"
+    ],
+    "extraData": {
+      "volcanoName": "Turrialba",
+      "country": "Costa Rica",
+      "heightMeters": 3340,
+      "status": "active",
+      "continent": "América del Norte"
+    }
+  },
+  {
+    "id": "volcano_63113",
+    "type": "volcano",
+    "difficulty": "medium",
+    "questionText": "¿Cuál es la altura aproximada del volcán Arenal?",
+    "correctAnswer": "1.670 m",
+    "options": [
+      "1.670 m",
+      "1.920 m",
+      "1.160 m",
+      "1.410 m"
+    ],
+    "extraData": {
+      "volcanoName": "Arenal",
+      "country": "Costa Rica",
+      "heightMeters": 1670,
+      "status": "dormant",
+      "continent": "América del Norte"
+    }
+  },
+  {
+    "id": "volcano_63114",
+    "type": "volcano",
+    "difficulty": "easy",
+    "questionText": "¿Qué volcán se encuentra en Nicaragua?",
+    "correctAnswer": "Masaya",
+    "options": [
+      "Elbrus",
+      "Ruapehu",
+      "Sarychev Peak",
+      "Masaya"
+    ],
+    "extraData": {
+      "volcanoName": "Masaya",
+      "country": "Nicaragua",
+      "heightMeters": 635,
+      "status": "active",
+      "continent": "América del Norte"
+    }
+  },
+  {
+    "id": "volcano_63115",
+    "type": "volcano",
+    "difficulty": "easy",
+    "questionText": "¿Cuál es el estado de actividad del volcán Cotopaxi?",
+    "correctAnswer": "Activo",
+    "options": [
+      "Activo",
+      "Inactivo",
+      "Extinto",
+      "Fumarólico"
+    ],
+    "extraData": {
+      "volcanoName": "Cotopaxi",
+      "country": "Ecuador",
+      "heightMeters": 5897,
+      "status": "active",
+      "continent": "América del Sur"
+    }
+  },
+  {
+    "id": "volcano_63116",
+    "type": "volcano",
+    "difficulty": "easy",
+    "questionText": "¿En qué continente se encuentra el volcán Tungurahua?",
+    "correctAnswer": "América del Sur",
+    "options": [
+      "la Antártida",
+      "América del Sur",
+      "América del Norte",
+      "Europa"
+    ],
+    "extraData": {
+      "volcanoName": "Tungurahua",
+      "country": "Ecuador",
+      "heightMeters": 5023,
+      "status": "active",
+      "continent": "América del Sur"
+    }
+  },
+  {
+    "id": "volcano_63117",
+    "type": "volcano",
+    "difficulty": "easy",
+    "questionText": "¿En qué país se encuentra el volcán Chimborazo?",
+    "correctAnswer": "Ecuador",
+    "options": [
+      "la Antártida",
+      "Chile",
+      "Rusia",
+      "Ecuador"
+    ],
+    "extraData": {
+      "volcanoName": "Chimborazo",
+      "country": "Ecuador",
+      "heightMeters": 6263,
+      "status": "dormant",
+      "continent": "América del Sur"
+    }
+  },
+  {
+    "id": "volcano_63118",
+    "type": "volcano",
+    "difficulty": "medium",
+    "questionText": "¿Cuál es la altura aproximada del volcán Nevado del Ruiz?",
+    "correctAnswer": "5.321 m",
+    "options": [
+      "4.520 m",
+      "6.110 m",
+      "3.720 m",
+      "5.321 m"
+    ],
+    "extraData": {
+      "volcanoName": "Nevado del Ruiz",
+      "country": "Colombia",
+      "heightMeters": 5321,
+      "status": "active",
+      "continent": "América del Sur"
+    }
+  },
+  {
+    "id": "volcano_63119",
+    "type": "volcano",
+    "difficulty": "easy",
+    "questionText": "¿Qué volcán se encuentra en Colombia?",
+    "correctAnswer": "Galeras",
+    "options": [
+      "Yasur",
+      "Rainier",
+      "Galeras",
+      "Popocatépetl"
+    ],
+    "extraData": {
+      "volcanoName": "Galeras",
+      "country": "Colombia",
+      "heightMeters": 4276,
+      "status": "active",
+      "continent": "América del Sur"
+    }
+  },
+  {
+    "id": "volcano_63120",
+    "type": "volcano",
+    "difficulty": "easy",
+    "questionText": "¿Cuál es el estado de actividad del volcán Ojos del Salado?",
+    "correctAnswer": "Inactivo",
+    "options": [
+      "Activo",
+      "Inactivo",
+      "Extinto",
+      "Fumarólico"
+    ],
+    "extraData": {
+      "volcanoName": "Ojos del Salado",
+      "country": "Chile y Argentina",
+      "heightMeters": 6893,
+      "status": "dormant",
+      "continent": "América del Sur"
+    }
+  },
+  {
+    "id": "volcano_63121",
+    "type": "volcano",
+    "difficulty": "easy",
+    "questionText": "¿En qué continente se encuentra el volcán Villarrica?",
+    "correctAnswer": "América del Sur",
+    "options": [
+      "América del Sur",
+      "Oceanía",
+      "África",
+      "la Antártida"
+    ],
+    "extraData": {
+      "volcanoName": "Villarrica",
+      "country": "Chile",
+      "heightMeters": 2860,
+      "status": "active",
+      "continent": "América del Sur"
+    }
+  },
+  {
+    "id": "volcano_63122",
+    "type": "volcano",
+    "difficulty": "easy",
+    "questionText": "¿En qué país se encuentra el volcán Llaima?",
+    "correctAnswer": "Chile",
+    "options": [
+      "Chile",
+      "Colombia",
+      "Ecuador",
+      "Filipinas"
+    ],
+    "extraData": {
+      "volcanoName": "Llaima",
+      "country": "Chile",
+      "heightMeters": 3125,
+      "status": "active",
+      "continent": "América del Sur"
+    }
+  },
+  {
+    "id": "volcano_63123",
+    "type": "volcano",
+    "difficulty": "medium",
+    "questionText": "¿Cuál es la altura aproximada del volcán Hudson?",
+    "correctAnswer": "1.905 m",
+    "options": [
+      "1.610 m",
+      "1.905 m",
+      "1.330 m",
+      "2.190 m"
+    ],
+    "extraData": {
+      "volcanoName": "Hudson",
+      "country": "Chile",
+      "heightMeters": 1905,
+      "status": "active",
+      "continent": "América del Sur"
+    }
+  },
+  {
+    "id": "volcano_63124",
+    "type": "volcano",
+    "difficulty": "easy",
+    "questionText": "¿Qué volcán se encuentra en Chile?",
+    "correctAnswer": "Lascar",
+    "options": [
+      "Kirishima",
+      "Hudson",
+      "Lascar",
+      "Askja"
+    ],
+    "extraData": {
+      "volcanoName": "Lascar",
+      "country": "Chile",
+      "heightMeters": 5592,
+      "status": "active",
+      "continent": "América del Sur"
+    }
+  },
+  {
+    "id": "volcano_63125",
+    "type": "volcano",
+    "difficulty": "easy",
+    "questionText": "¿Cuál es el estado de actividad del volcán Sangay?",
+    "correctAnswer": "Activo",
+    "options": [
+      "Activo",
+      "Inactivo",
+      "Extinto",
+      "Fumarólico"
+    ],
+    "extraData": {
+      "volcanoName": "Sangay",
+      "country": "Ecuador",
+      "heightMeters": 5286,
+      "status": "active",
+      "continent": "América del Sur"
+    }
+  },
+  {
+    "id": "volcano_63126",
+    "type": "volcano",
+    "difficulty": "easy",
+    "questionText": "¿En qué continente se encuentra el volcán Reventador?",
+    "correctAnswer": "América del Sur",
+    "options": [
+      "la Antártida",
+      "América del Sur",
+      "África",
+      "Asia"
+    ],
+    "extraData": {
+      "volcanoName": "Reventador",
+      "country": "Ecuador",
+      "heightMeters": 3562,
+      "status": "active",
+      "continent": "América del Sur"
+    }
+  },
+  {
+    "id": "volcano_63127",
+    "type": "volcano",
+    "difficulty": "easy",
+    "questionText": "¿En qué país se encuentra el volcán Erebus?",
+    "correctAnswer": "la Antártida",
+    "options": [
+      "Kenia",
+      "Etiopía",
+      "Francia",
+      "la Antártida"
+    ],
+    "extraData": {
+      "volcanoName": "Erebus",
+      "country": "la Antártida",
+      "heightMeters": 3794,
+      "status": "active",
+      "continent": "la Antártida"
+    }
+  },
+  {
+    "id": "volcano_63128",
+    "type": "volcano",
+    "difficulty": "medium",
+    "questionText": "¿Cuál es la altura aproximada del volcán Klyuchevskaya Sopka?",
+    "correctAnswer": "4.750 m",
+    "options": [
+      "3.320 m",
+      "5.460 m",
+      "4.030 m",
+      "4.750 m"
+    ],
+    "extraData": {
+      "volcanoName": "Klyuchevskaya Sopka",
+      "country": "Rusia",
+      "heightMeters": 4750,
+      "status": "active",
+      "continent": "Asia"
+    }
+  },
+  {
+    "id": "volcano_63129",
+    "type": "volcano",
+    "difficulty": "easy",
+    "questionText": "¿Qué volcán se encuentra en Rusia?",
+    "correctAnswer": "Elbrus",
+    "options": [
+      "Elbrus",
+      "Rainier",
+      "Unzen",
+      "Bromo"
+    ],
+    "extraData": {
+      "volcanoName": "Elbrus",
+      "country": "Rusia",
+      "heightMeters": 5642,
+      "status": "dormant",
+      "continent": "Europa"
+    }
+  },
+  {
+    "id": "volcano_63130",
+    "type": "volcano",
+    "difficulty": "easy",
+    "questionText": "¿Cuál es el estado de actividad del volcán Sarychev Peak?",
+    "correctAnswer": "Activo",
+    "options": [
+      "Activo",
+      "Inactivo",
+      "Extinto",
+      "Fumarólico"
+    ],
+    "extraData": {
+      "volcanoName": "Sarychev Peak",
+      "country": "Rusia",
+      "heightMeters": 1496,
+      "status": "active",
+      "continent": "Asia"
+    }
+  },
+  {
+    "id": "volcano_63131",
+    "type": "volcano",
+    "difficulty": "easy",
+    "questionText": "¿En qué continente se encuentra el volcán Nyiragongo?",
+    "correctAnswer": "África",
+    "options": [
+      "América del Sur",
+      "África",
+      "Europa",
+      "Asia"
+    ],
+    "extraData": {
+      "volcanoName": "Nyiragongo",
+      "country": "República Democrática del Congo",
+      "heightMeters": 3470,
+      "status": "active",
+      "continent": "África"
+    }
+  },
+  {
+    "id": "volcano_63132",
+    "type": "volcano",
+    "difficulty": "easy",
+    "questionText": "¿En qué país se encuentra el volcán Nyamuragira?",
+    "correctAnswer": "República Democrática del Congo",
+    "options": [
+      "República Democrática del Congo",
+      "Francia",
+      "Italia",
+      "Tanzania"
+    ],
+    "extraData": {
+      "volcanoName": "Nyamuragira",
+      "country": "República Democrática del Congo",
+      "heightMeters": 3058,
+      "status": "active",
+      "continent": "África"
+    }
+  },
+  {
+    "id": "volcano_63133",
+    "type": "volcano",
+    "difficulty": "medium",
+    "questionText": "¿Cuál es la altura aproximada del volcán Monte Camerún?",
+    "correctAnswer": "4.040 m",
+    "options": [
+      "2.820 m",
+      "3.430 m",
+      "4.040 m",
+      "4.640 m"
+    ],
+    "extraData": {
+      "volcanoName": "Monte Camerún",
+      "country": "Camerún",
+      "heightMeters": 4040,
+      "status": "active",
+      "continent": "África"
+    }
+  },
+  {
+    "id": "volcano_63134",
+    "type": "volcano",
+    "difficulty": "easy",
+    "questionText": "¿Qué volcán se encuentra en Tanzania?",
+    "correctAnswer": "Ol Doinyo Lengai",
+    "options": [
+      "Askja",
+      "Pico de Orizaba",
+      "Kilauea",
+      "Ol Doinyo Lengai"
+    ],
+    "extraData": {
+      "volcanoName": "Ol Doinyo Lengai",
+      "country": "Tanzania",
+      "heightMeters": 2962,
+      "status": "active",
+      "continent": "África"
+    }
+  },
+  {
+    "id": "volcano_63135",
+    "type": "volcano",
+    "difficulty": "easy",
+    "questionText": "¿Cuál es el estado de actividad del volcán Kilimanjaro?",
+    "correctAnswer": "Inactivo",
+    "options": [
+      "Activo",
+      "Inactivo",
+      "Extinto",
+      "Fumarólico"
+    ],
+    "extraData": {
+      "volcanoName": "Kilimanjaro",
+      "country": "Tanzania",
+      "heightMeters": 5895,
+      "status": "dormant",
+      "continent": "África"
+    }
+  },
+  {
+    "id": "volcano_63136",
+    "type": "volcano",
+    "difficulty": "easy",
+    "questionText": "¿En qué continente se encuentra el volcán Kenia?",
+    "correctAnswer": "África",
+    "options": [
+      "América del Sur",
+      "la Antártida",
+      "África",
+      "Europa"
+    ],
+    "extraData": {
+      "volcanoName": "Kenia",
+      "country": "Kenia",
+      "heightMeters": 5199,
+      "status": "dormant",
+      "continent": "África"
+    }
+  },
+  {
+    "id": "volcano_63137",
+    "type": "volcano",
+    "difficulty": "easy",
+    "questionText": "¿En qué país se encuentra el volcán Erta Ale?",
+    "correctAnswer": "Etiopía",
+    "options": [
+      "Vanuatu",
+      "Chile",
+      "Costa Rica",
+      "Etiopía"
+    ],
+    "extraData": {
+      "volcanoName": "Erta Ale",
+      "country": "Etiopía",
+      "heightMeters": 613,
+      "status": "active",
+      "continent": "África"
+    }
+  },
+  {
+    "id": "volcano_63138",
+    "type": "volcano",
+    "difficulty": "medium",
+    "questionText": "¿Cuál es la altura aproximada del volcán Yasur?",
+    "correctAnswer": "361 m",
+    "options": [
+      "250 m",
+      "300 m",
+      "361 m",
+      "410 m"
+    ],
+    "extraData": {
+      "volcanoName": "Yasur",
+      "country": "Vanuatu",
+      "heightMeters": 361,
+      "status": "active",
+      "continent": "Oceanía"
+    }
+  },
+  {
+    "id": "volcano_63139",
+    "type": "volcano",
+    "difficulty": "easy",
+    "questionText": "¿Qué volcán se encuentra en Nueva Zelanda?",
+    "correctAnswer": "Ruapehu",
+    "options": [
+      "Grímsvötn",
+      "Lewotobi",
+      "Piton de la Fournaise",
+      "Ruapehu"
+    ],
+    "extraData": {
+      "volcanoName": "Ruapehu",
+      "country": "Nueva Zelanda",
+      "heightMeters": 2797,
+      "status": "active",
+      "continent": "Oceanía"
+    }
+  },
+  {
+    "id": "volcano_63140",
+    "type": "volcano",
+    "difficulty": "easy",
+    "questionText": "¿Cuál es el estado de actividad del volcán Isla Blanca (Whakaari)?",
+    "correctAnswer": "Activo",
+    "options": [
+      "Activo",
+      "Inactivo",
+      "Extinto",
+      "Fumarólico"
+    ],
+    "extraData": {
+      "volcanoName": "Isla Blanca (Whakaari)",
+      "country": "Nueva Zelanda",
+      "heightMeters": 321,
+      "status": "active",
+      "continent": "Oceanía"
+    }
+  },
+  {
+    "id": "volcano_63141",
+    "type": "volcano",
+    "difficulty": "easy",
+    "questionText": "¿En qué continente se encuentra el volcán Ngauruhoe?",
+    "correctAnswer": "Oceanía",
+    "options": [
+      "Oceanía",
+      "Asia",
+      "la Antártida",
+      "América del Norte"
+    ],
+    "extraData": {
+      "volcanoName": "Ngauruhoe",
+      "country": "Nueva Zelanda",
+      "heightMeters": 2291,
+      "status": "active",
+      "continent": "Oceanía"
+    }
+  },
+  {
+    "id": "volcano_63142",
+    "type": "volcano",
+    "difficulty": "easy",
+    "questionText": "¿En qué país se encuentra el volcán Tavurvur?",
+    "correctAnswer": "Papúa Nueva Guinea",
+    "options": [
+      "Papúa Nueva Guinea",
+      "Nicaragua",
+      "Colombia",
+      "Filipinas"
+    ],
+    "extraData": {
+      "volcanoName": "Tavurvur",
+      "country": "Papúa Nueva Guinea",
+      "heightMeters": 688,
+      "status": "active",
+      "continent": "Oceanía"
+    }
+  },
+  {
+    "id": "volcano_63143",
+    "type": "volcano",
+    "difficulty": "medium",
+    "questionText": "¿Cuál es la altura aproximada del volcán Ulawun?",
+    "correctAnswer": "2.334 m",
+    "options": [
+      "1.980 m",
+      "1.630 m",
+      "2.680 m",
+      "2.334 m"
+    ],
+    "extraData": {
+      "volcanoName": "Ulawun",
+      "country": "Papúa Nueva Guinea",
+      "heightMeters": 2334,
+      "status": "active",
+      "continent": "Oceanía"
+    }
+  },
+  {
+    "id": "volcano_63144",
+    "type": "volcano",
+    "difficulty": "easy",
+    "questionText": "¿Qué volcán se encuentra en Martinica?",
+    "correctAnswer": "Pelée",
+    "options": [
+      "Pelée",
+      "Aso",
+      "Kirishima",
+      "Soufrière Hills"
+    ],
+    "extraData": {
+      "volcanoName": "Pelée",
+      "country": "Martinica",
+      "heightMeters": 1397,
+      "status": "dormant",
+      "continent": "América del Norte"
+    }
+  },
+  {
+    "id": "volcano_63145",
+    "type": "volcano",
+    "difficulty": "easy",
+    "questionText": "¿Cuál es el estado de actividad del volcán Soufrière Hills?",
+    "correctAnswer": "Activo",
+    "options": [
+      "Activo",
+      "Inactivo",
+      "Extinto",
+      "Fumarólico"
+    ],
+    "extraData": {
+      "volcanoName": "Soufrière Hills",
+      "country": "Montserrat",
+      "heightMeters": 915,
+      "status": "active",
+      "continent": "América del Norte"
+    }
+  },
+  {
+    "id": "volcano_63146",
+    "type": "volcano",
+    "difficulty": "easy",
+    "questionText": "¿En qué continente se encuentra el volcán La Soufrière?",
+    "correctAnswer": "América del Norte",
+    "options": [
+      "América del Norte",
+      "América del Sur",
+      "Europa",
+      "Asia"
+    ],
+    "extraData": {
+      "volcanoName": "La Soufrière",
+      "country": "San Vicente",
+      "heightMeters": 1234,
+      "status": "active",
+      "continent": "América del Norte"
+    }
+  },
+  {
+    "id": "volcano_63147",
+    "type": "volcano",
+    "difficulty": "easy",
+    "questionText": "¿En qué país se encuentra el volcán Piton de la Fournaise?",
+    "correctAnswer": "Francia",
+    "options": [
+      "Costa Rica",
+      "Francia",
+      "Estados Unidos",
+      "Kenia"
+    ],
+    "extraData": {
+      "volcanoName": "Piton de la Fournaise",
+      "country": "Francia",
+      "heightMeters": 2632,
+      "status": "active",
+      "continent": "África"
+    }
+  },
+  {
+    "id": "volcano_63148",
+    "type": "volcano",
+    "difficulty": "medium",
+    "questionText": "¿Cuál es la altura aproximada del volcán Awu?",
+    "correctAnswer": "1.320 m",
+    "options": [
+      "920 m",
+      "1.320 m",
+      "1.510 m",
+      "1.120 m"
+    ],
+    "extraData": {
+      "volcanoName": "Awu",
+      "country": "Indonesia",
+      "heightMeters": 1320,
+      "status": "active",
+      "continent": "Asia"
+    }
+  },
+  {
+    "id": "volcano_63149",
+    "type": "volcano",
+    "difficulty": "easy",
+    "questionText": "¿Qué volcán se encuentra en Indonesia?",
+    "correctAnswer": "Lewotobi",
+    "options": [
+      "Merapi",
+      "Mayon",
+      "Baker",
+      "Lewotobi"
+    ],
+    "extraData": {
+      "volcanoName": "Lewotobi",
+      "country": "Indonesia",
+      "heightMeters": 1703,
+      "status": "active",
+      "continent": "Asia"
+    }
+  },
+  {
+    "id": "volcano_63150",
+    "type": "volcano",
+    "difficulty": "easy",
+    "questionText": "¿Cuál es el estado de actividad del volcán Sangeang Api?",
+    "correctAnswer": "Activo",
+    "options": [
+      "Activo",
+      "Inactivo",
+      "Extinto",
+      "Fumarólico"
+    ],
+    "extraData": {
+      "volcanoName": "Sangeang Api",
+      "country": "Indonesia",
+      "heightMeters": 1949,
+      "status": "active",
+      "continent": "Asia"
+    }
+  },
+  {
+    "id": "desert_63151",
+    "type": "desert",
+    "difficulty": "easy",
+    "questionText": "¿En qué país se encuentra el Sahara?",
+    "correctAnswer": "Argelia, Chad, Egipto, Libia, Mali, Mauritania, Marruecos, Níger, Sudán, Túnez",
+    "options": [
+      "Egipto",
+      "Argelia, Chad, Egipto, Libia, Mali, Mauritania, Marruecos, Níger, Sudán, Túnez",
+      "Argelia, Túnez",
+      "China"
+    ],
+    "extraData": {
+      "desertName": "Sahara",
+      "countries": "Argelia, Chad, Egipto, Libia, Mali, Mauritania, Marruecos, Níger, Sudán, Túnez",
+      "areaKm2": 9200000,
+      "continent": "África"
+    }
+  },
+  {
+    "id": "desert_63152",
+    "type": "desert",
+    "difficulty": "hard",
+    "questionText": "¿Cuál es la superficie aproximada del Kalahari?",
+    "correctAnswer": "930.000 km²",
+    "options": [
+      "1.9 millones de km²",
+      "465.000 km²",
+      "279.000 km²",
+      "930.000 km²"
+    ],
+    "extraData": {
+      "desertName": "Kalahari",
+      "countries": "Botsuana, Namibia, Sudáfrica",
+      "areaKm2": 930000,
+      "continent": "África"
+    }
+  },
+  {
+    "id": "desert_63153",
+    "type": "desert",
+    "difficulty": "easy",
+    "questionText": "¿Qué desierto se encuentra principalmente en Namibia?",
+    "correctAnswer": "Namib",
+    "options": [
+      "Namib",
+      "Gran Erg Oriental",
+      "Dahana",
+      "Desierto de Tirari"
+    ],
+    "extraData": {
+      "desertName": "Namib",
+      "countries": "Namibia",
+      "areaKm2": 81000,
+      "continent": "África"
+    }
+  },
+  {
+    "id": "desert_63154",
+    "type": "desert",
+    "difficulty": "easy",
+    "questionText": "¿En qué continente se encuentra el Danakil?",
+    "correctAnswer": "África",
+    "options": [
+      "Asia",
+      "Oceanía",
+      "la Antártida",
+      "África"
+    ],
+    "extraData": {
+      "desertName": "Danakil",
+      "countries": "Etiopía, Eritrea",
+      "areaKm2": 136000,
+      "continent": "África"
+    }
+  },
+  {
+    "id": "desert_63155",
+    "type": "desert",
+    "difficulty": "medium",
+    "questionText": "¿Cuál de estos desiertos se encuentra en África?",
+    "correctAnswer": "Desierto de Libia",
+    "options": [
+      "Teneré",
+      "Desierto de Monegros",
+      "Desierto de Cabo de Gata",
+      "Desierto de Libia"
+    ],
+    "extraData": {
+      "desertName": "Desierto de Libia",
+      "countries": "Libia, Egipto, Sudán",
+      "areaKm2": 1100000,
+      "continent": "África"
+    }
+  },
+  {
+    "id": "desert_63156",
+    "type": "desert",
+    "difficulty": "easy",
+    "questionText": "¿En qué país se encuentra el Desierto de Nubia?",
+    "correctAnswer": "Sudán, Egipto",
+    "options": [
+      "China",
+      "Egipto",
+      "Sudán, Egipto",
+      "Kazajistán, Uzbekistán"
+    ],
+    "extraData": {
+      "desertName": "Desierto de Nubia",
+      "countries": "Sudán, Egipto",
+      "areaKm2": 400000,
+      "continent": "África"
+    }
+  },
+  {
+    "id": "desert_63157",
+    "type": "desert",
+    "difficulty": "hard",
+    "questionText": "¿Cuál es la superficie aproximada del Desierto Occidental?",
+    "correctAnswer": "680.000 km²",
+    "options": [
+      "680.000 km²",
+      "1.4 millones de km²",
+      "204.000 km²",
+      "340.000 km²"
+    ],
+    "extraData": {
+      "desertName": "Desierto Occidental",
+      "countries": "Egipto",
+      "areaKm2": 680000,
+      "continent": "África"
+    }
+  },
+  {
+    "id": "desert_63158",
+    "type": "desert",
+    "difficulty": "easy",
+    "questionText": "¿Qué desierto se encuentra principalmente en Argelia?",
+    "correctAnswer": "Gran Erg Oriental",
+    "options": [
+      "Gran Erg Oriental",
+      "Desierto de Libia",
+      "Desierto Negro",
+      "Desierto de Kharan"
+    ],
+    "extraData": {
+      "desertName": "Gran Erg Oriental",
+      "countries": "Argelia, Túnez",
+      "areaKm2": 192000,
+      "continent": "África"
+    }
+  },
+  {
+    "id": "desert_63159",
+    "type": "desert",
+    "difficulty": "easy",
+    "questionText": "¿En qué continente se encuentra el Gran Erg Occidental?",
+    "correctAnswer": "África",
+    "options": [
+      "América del Norte",
+      "Oceanía",
+      "Asia",
+      "África"
+    ],
+    "extraData": {
+      "desertName": "Gran Erg Occidental",
+      "countries": "Argelia",
+      "areaKm2": 78000,
+      "continent": "África"
+    }
+  },
+  {
+    "id": "desert_63160",
+    "type": "desert",
+    "difficulty": "medium",
+    "questionText": "¿Cuál de estos desiertos se encuentra en África?",
+    "correctAnswer": "Teneré",
+    "options": [
+      "Desierto de Cabo de Gata",
+      "Teneré",
+      "Desierto de Vizcaíno",
+      "Desierto de Cholistan"
+    ],
+    "extraData": {
+      "desertName": "Teneré",
+      "countries": "Níger",
+      "areaKm2": 400000,
+      "continent": "África"
+    }
+  },
+  {
+    "id": "desert_63161",
+    "type": "desert",
+    "difficulty": "easy",
+    "questionText": "¿En qué país se encuentra el Desierto Arábigo?",
+    "correctAnswer": "Arabia Saudita, Egipto, Irak, Jordania, Kuwait, Omán, Qatar, Siria, Emiratos Árabes Unidos, Yemen",
+    "options": [
+      "Pakistán",
+      "Estados Unidos",
+      "Arabia Saudita, Egipto, Irak, Jordania, Kuwait, Omán, Qatar, Siria, Emiratos Árabes Unidos, Yemen",
+      "China, Mongolia"
+    ],
+    "extraData": {
+      "desertName": "Desierto Arábigo",
+      "countries": "Arabia Saudita, Egipto, Irak, Jordania, Kuwait, Omán, Qatar, Siria, Emiratos Árabes Unidos, Yemen",
+      "areaKm2": 2330000,
+      "continent": "Asia"
+    }
+  },
+  {
+    "id": "desert_63162",
+    "type": "desert",
+    "difficulty": "hard",
+    "questionText": "¿Cuál es la superficie aproximada del Desierto de Gobi?",
+    "correctAnswer": "1.3 millones de km²",
+    "options": [
+      "1.3 millones de km²",
+      "388.500 km²",
+      "2.6 millones de km²",
+      "647.500 km²"
+    ],
+    "extraData": {
+      "desertName": "Desierto de Gobi",
+      "countries": "China, Mongolia",
+      "areaKm2": 1295000,
+      "continent": "Asia"
+    }
+  },
+  {
+    "id": "desert_63163",
+    "type": "desert",
+    "difficulty": "easy",
+    "questionText": "¿Qué desierto se encuentra principalmente en China?",
+    "correctAnswer": "Taklamakan",
+    "options": [
+      "Teneré",
+      "Desierto de Oleshky",
+      "Taklamakan",
+      "Desierto de Registán"
+    ],
+    "extraData": {
+      "desertName": "Taklamakan",
+      "countries": "China",
+      "areaKm2": 270000,
+      "continent": "Asia"
+    }
+  },
+  {
+    "id": "desert_63164",
+    "type": "desert",
+    "difficulty": "easy",
+    "questionText": "¿En qué continente se encuentra el Desierto de Karakum?",
+    "correctAnswer": "Asia",
+    "options": [
+      "Europa",
+      "América del Sur",
+      "Oceanía",
+      "Asia"
+    ],
+    "extraData": {
+      "desertName": "Desierto de Karakum",
+      "countries": "Turkmenistán",
+      "areaKm2": 350000,
+      "continent": "Asia"
+    }
+  },
+  {
+    "id": "desert_63165",
+    "type": "desert",
+    "difficulty": "medium",
+    "questionText": "¿Cuál de estos desiertos se encuentra en Asia?",
+    "correctAnswer": "Desierto de Kyzylkum",
+    "options": [
+      "Desierto de Katpana",
+      "Desierto de Ryn",
+      "Desierto de Vizcaíno",
+      "Desierto de Kyzylkum"
+    ],
+    "extraData": {
+      "desertName": "Desierto de Kyzylkum",
+      "countries": "Kazajistán, Uzbekistán",
+      "areaKm2": 298000,
+      "continent": "Asia"
+    }
+  },
+  {
+    "id": "desert_63166",
+    "type": "desert",
+    "difficulty": "easy",
+    "questionText": "¿En qué país se encuentra el Desierto de Thar?",
+    "correctAnswer": "India, Pakistán",
+    "options": [
+      "India",
+      "Argentina",
+      "India, Pakistán",
+      "Estados Unidos"
+    ],
+    "extraData": {
+      "desertName": "Desierto de Thar",
+      "countries": "India, Pakistán",
+      "areaKm2": 200000,
+      "continent": "Asia"
+    }
+  },
+  {
+    "id": "desert_63167",
+    "type": "desert",
+    "difficulty": "hard",
+    "questionText": "¿Cuál es la superficie aproximada del Desierto de Lut?",
+    "correctAnswer": "51.000 km²",
+    "options": [
+      "51.000 km²",
+      "25.500 km²",
+      "15.300 km²",
+      "102.000 km²"
+    ],
+    "extraData": {
+      "desertName": "Desierto de Lut",
+      "countries": "Irán",
+      "areaKm2": 51000,
+      "continent": "Asia"
+    }
+  },
+  {
+    "id": "desert_63168",
+    "type": "desert",
+    "difficulty": "easy",
+    "questionText": "¿Qué desierto se encuentra principalmente en Irán?",
+    "correctAnswer": "Dasht-e Kavir",
+    "options": [
+      "Desierto de Nubia",
+      "Kalahari",
+      "Dasht-e Kavir",
+      "Desierto de Judea"
+    ],
+    "extraData": {
+      "desertName": "Dasht-e Kavir",
+      "countries": "Irán",
+      "areaKm2": 77000,
+      "continent": "Asia"
+    }
+  },
+  {
+    "id": "desert_63169",
+    "type": "desert",
+    "difficulty": "easy",
+    "questionText": "¿En qué continente se encuentra el Desierto de Judea?",
+    "correctAnswer": "Asia",
+    "options": [
+      "Asia",
+      "América del Sur",
+      "la Antártida",
+      "Oceanía"
+    ],
+    "extraData": {
+      "desertName": "Desierto de Judea",
+      "countries": "Israel, Cisjordania",
+      "areaKm2": 1500,
+      "continent": "Asia"
+    }
+  },
+  {
+    "id": "desert_63170",
+    "type": "desert",
+    "difficulty": "medium",
+    "questionText": "¿Cuál de estos desiertos se encuentra en Asia?",
+    "correctAnswer": "Desierto de Siria",
+    "options": [
+      "Sahara",
+      "Desierto de Siria",
+      "Gran Erg Occidental",
+      "Desierto de Karakum"
+    ],
+    "extraData": {
+      "desertName": "Desierto de Siria",
+      "countries": "Siria, Jordania, Irak",
+      "areaKm2": 500000,
+      "continent": "Asia"
+    }
+  },
+  {
+    "id": "desert_63171",
+    "type": "desert",
+    "difficulty": "easy",
+    "questionText": "¿En qué país se encuentra el Rub al-Jali?",
+    "correctAnswer": "Arabia Saudita, Omán, Emiratos Árabes Unidos, Yemen",
+    "options": [
+      "China",
+      "Arabia Saudita, Egipto, Irak, Jordania, Kuwait, Omán, Qatar, Siria, Emiratos Árabes Unidos, Yemen",
+      "Arabia Saudita, Omán, Emiratos Árabes Unidos, Yemen",
+      "Botsuana, Namibia, Sudáfrica"
+    ],
+    "extraData": {
+      "desertName": "Rub al-Jali",
+      "countries": "Arabia Saudita, Omán, Emiratos Árabes Unidos, Yemen",
+      "areaKm2": 650000,
+      "continent": "Asia"
+    }
+  },
+  {
+    "id": "desert_63172",
+    "type": "desert",
+    "difficulty": "hard",
+    "questionText": "¿Cuál es la superficie aproximada del Dahana?",
+    "correctAnswer": "134.000 km²",
+    "options": [
+      "268.000 km²",
+      "67.000 km²",
+      "40.200 km²",
+      "134.000 km²"
+    ],
+    "extraData": {
+      "desertName": "Dahana",
+      "countries": "Arabia Saudita",
+      "areaKm2": 134000,
+      "continent": "Asia"
+    }
+  },
+  {
+    "id": "desert_63173",
+    "type": "desert",
+    "difficulty": "easy",
+    "questionText": "¿Qué desierto se encuentra principalmente en Israel?",
+    "correctAnswer": "Desierto del Negev",
+    "options": [
+      "Desierto del Negev",
+      "Desierto de Ypés",
+      "Desierto de Kharan",
+      "Desierto de Libia"
+    ],
+    "extraData": {
+      "desertName": "Desierto del Negev",
+      "countries": "Israel",
+      "areaKm2": 13000,
+      "continent": "Asia"
+    }
+  },
+  {
+    "id": "desert_63174",
+    "type": "desert",
+    "difficulty": "easy",
+    "questionText": "¿En qué continente se encuentra el Valle de la Muerte?",
+    "correctAnswer": "América del Norte",
+    "options": [
+      "Europa",
+      "África",
+      "Asia",
+      "América del Norte"
+    ],
+    "extraData": {
+      "desertName": "Valle de la Muerte",
+      "countries": "Estados Unidos",
+      "areaKm2": 7800,
+      "continent": "América del Norte"
+    }
+  },
+  {
+    "id": "desert_63175",
+    "type": "desert",
+    "difficulty": "medium",
+    "questionText": "¿Cuál de estos desiertos se encuentra en América del Norte?",
+    "correctAnswer": "Desierto de Mojave",
+    "options": [
+      "Desierto Arábigo",
+      "Desierto de Bardenas Reales",
+      "La Guajira",
+      "Desierto de Mojave"
+    ],
+    "extraData": {
+      "desertName": "Desierto de Mojave",
+      "countries": "Estados Unidos",
+      "areaKm2": 65000,
+      "continent": "América del Norte"
+    }
+  },
+  {
+    "id": "desert_63176",
+    "type": "desert",
+    "difficulty": "easy",
+    "questionText": "¿En qué país se encuentra el Desierto de Sonora?",
+    "correctAnswer": "Estados Unidos, México",
+    "options": [
+      "Estados Unidos, México",
+      "Israel, Cisjordania",
+      "México",
+      "Australia"
+    ],
+    "extraData": {
+      "desertName": "Desierto de Sonora",
+      "countries": "Estados Unidos, México",
+      "areaKm2": 310000,
+      "continent": "América del Norte"
+    }
+  },
+  {
+    "id": "desert_63177",
+    "type": "desert",
+    "difficulty": "hard",
+    "questionText": "¿Cuál es la superficie aproximada del Desierto de Chihuahua?",
+    "correctAnswer": "450.000 km²",
+    "options": [
+      "450.000 km²",
+      "900.000 km²",
+      "225.000 km²",
+      "135.000 km²"
+    ],
+    "extraData": {
+      "desertName": "Desierto de Chihuahua",
+      "countries": "México, Estados Unidos",
+      "areaKm2": 450000,
+      "continent": "América del Norte"
+    }
+  },
+  {
+    "id": "desert_63178",
+    "type": "desert",
+    "difficulty": "easy",
+    "questionText": "¿Qué desierto se encuentra principalmente en Chile?",
+    "correctAnswer": "Desierto de Atacama",
+    "options": [
+      "Desierto de Thar",
+      "Desierto de Atacama",
+      "Desierto de Rangipo",
+      "Dahana"
+    ],
+    "extraData": {
+      "desertName": "Desierto de Atacama",
+      "countries": "Chile, Perú",
+      "areaKm2": 105000,
+      "continent": "América del Sur"
+    }
+  },
+  {
+    "id": "desert_63179",
+    "type": "desert",
+    "difficulty": "easy",
+    "questionText": "¿En qué continente se encuentra el Desierto de Sechura?",
+    "correctAnswer": "América del Sur",
+    "options": [
+      "África",
+      "Asia",
+      "la Antártida",
+      "América del Sur"
+    ],
+    "extraData": {
+      "desertName": "Desierto de Sechura",
+      "countries": "Perú",
+      "areaKm2": 18000,
+      "continent": "América del Sur"
+    }
+  },
+  {
+    "id": "desert_63180",
+    "type": "desert",
+    "difficulty": "medium",
+    "questionText": "¿Cuál de estos desiertos se encuentra en América del Sur?",
+    "correctAnswer": "Patagonia",
+    "options": [
+      "Desierto de Simpson",
+      "Desierto de Kumtag",
+      "Desierto de Tengger",
+      "Patagonia"
+    ],
+    "extraData": {
+      "desertName": "Patagonia",
+      "countries": "Argentina",
+      "areaKm2": 673000,
+      "continent": "América del Sur"
+    }
+  }
+]

@@ -1,0 +1,1835 @@
+[
+  {
+    "id": "region_20846",
+    "type": "region",
+    "difficulty": "easy",
+    "questionText": "¿En qué región se encuentra Corea del Sur?",
+    "correctAnswer": "Asia",
+    "options": [
+      "Europa",
+      "América",
+      "Oceanía",
+      "Asia"
+    ],
+    "extraData": {
+      "countryCode": "kr",
+      "countryName": "Corea del Sur",
+      "region": "Asia",
+      "regionSpanish": "Asia"
+    }
+  },
+  {
+    "id": "region_20847",
+    "type": "region",
+    "difficulty": "medium",
+    "questionText": "¿En qué región se encuentra Bangladés?",
+    "correctAnswer": "Asia",
+    "options": [
+      "Oceanía",
+      "América",
+      "Asia",
+      "África"
+    ],
+    "extraData": {
+      "countryCode": "bd",
+      "countryName": "Bangladés",
+      "region": "Asia",
+      "regionSpanish": "Asia"
+    }
+  },
+  {
+    "id": "region_20848",
+    "type": "region",
+    "difficulty": "hard",
+    "questionText": "¿En qué región se encuentra Trinidad y Tobago?",
+    "correctAnswer": "América",
+    "options": [
+      "Europa",
+      "América",
+      "África",
+      "Asia"
+    ],
+    "extraData": {
+      "countryCode": "tt",
+      "countryName": "Trinidad y Tobago",
+      "region": "Americas",
+      "regionSpanish": "América"
+    }
+  },
+  {
+    "id": "region_20849",
+    "type": "region",
+    "difficulty": "easy",
+    "questionText": "¿En qué región se encuentra Alemania?",
+    "correctAnswer": "Europa",
+    "options": [
+      "América",
+      "Asia",
+      "Europa",
+      "África"
+    ],
+    "extraData": {
+      "countryCode": "de",
+      "countryName": "Alemania",
+      "region": "Europe",
+      "regionSpanish": "Europa"
+    }
+  },
+  {
+    "id": "region_20850",
+    "type": "region",
+    "difficulty": "medium",
+    "questionText": "¿En qué región se encuentra Zimbabue?",
+    "correctAnswer": "África",
+    "options": [
+      "Asia",
+      "América",
+      "África",
+      "Europa"
+    ],
+    "extraData": {
+      "countryCode": "zw",
+      "countryName": "Zimbabue",
+      "region": "Africa",
+      "regionSpanish": "África"
+    }
+  },
+  {
+    "id": "flag_20851",
+    "type": "flag",
+    "difficulty": "medium",
+    "questionText": "¿De qué país es esta bandera?",
+    "correctAnswer": "Armenia",
+    "options": [
+      "Colombia",
+      "Armenia",
+      "Letonia",
+      "Birmania"
+    ],
+    "imageUrl": "https://flagcdn.com/w320/am.png",
+    "extraData": {
+      "countryCode": "am",
+      "countryName": "Armenia"
+    }
+  },
+  {
+    "id": "flag_20852",
+    "type": "flag",
+    "difficulty": "hard",
+    "questionText": "¿De qué país es esta bandera?",
+    "correctAnswer": "Surinam",
+    "options": [
+      "Surinam",
+      "Guyana",
+      "Nígeria",
+      "Bangladés"
+    ],
+    "imageUrl": "https://flagcdn.com/w320/sr.png",
+    "extraData": {
+      "countryCode": "sr",
+      "countryName": "Surinam"
+    }
+  },
+  {
+    "id": "flag_20853",
+    "type": "flag",
+    "difficulty": "easy",
+    "questionText": "¿De qué país es esta bandera?",
+    "correctAnswer": "Japón",
+    "options": [
+      "Vietnam",
+      "Japón",
+      "China",
+      "Libia"
+    ],
+    "imageUrl": "https://flagcdn.com/w320/jp.png",
+    "extraData": {
+      "countryCode": "jp",
+      "countryName": "Japón"
+    }
+  },
+  {
+    "id": "flag_20854",
+    "type": "flag",
+    "difficulty": "hard",
+    "questionText": "¿De qué país es esta bandera?",
+    "correctAnswer": "Uzbekistán",
+    "options": [
+      "Kazajistán",
+      "Turkmenistán",
+      "Kirguistán",
+      "Uzbekistán"
+    ],
+    "imageUrl": "https://flagcdn.com/w320/uz.png",
+    "extraData": {
+      "countryCode": "uz",
+      "countryName": "Uzbekistán"
+    }
+  },
+  {
+    "id": "flag_20855",
+    "type": "flag",
+    "difficulty": "medium",
+    "questionText": "¿De qué país es esta bandera?",
+    "correctAnswer": "Zambia",
+    "options": [
+      "Zimbabue",
+      "Botsuana",
+      "Zambia",
+      "Mozambique"
+    ],
+    "imageUrl": "https://flagcdn.com/w320/zm.png",
+    "extraData": {
+      "countryCode": "zm",
+      "countryName": "Zambia"
+    }
+  },
+  {
+    "id": "flag_20856",
+    "type": "flag",
+    "difficulty": "hard",
+    "questionText": "¿De qué país es esta bandera?",
+    "correctAnswer": "Mozambique",
+    "options": [
+      "Tanzania",
+      "Angola",
+      "Zimbabue",
+      "Mozambique"
+    ],
+    "imageUrl": "https://flagcdn.com/w320/mz.png",
+    "extraData": {
+      "countryCode": "mz",
+      "countryName": "Mozambique"
+    }
+  },
+  {
+    "id": "flag_20857",
+    "type": "flag",
+    "difficulty": "medium",
+    "questionText": "¿De qué país es esta bandera?",
+    "correctAnswer": "Níger",
+    "options": [
+      "Nígeria",
+      "Chad",
+      "Níger",
+      "Malí"
+    ],
+    "imageUrl": "https://flagcdn.com/w320/ne.png",
+    "extraData": {
+      "countryCode": "ne",
+      "countryName": "Níger"
+    }
+  },
+  {
+    "id": "flag_20858",
+    "type": "flag",
+    "difficulty": "easy",
+    "questionText": "¿De qué país es esta bandera?",
+    "correctAnswer": "Brasil",
+    "options": [
+      "Argentina",
+      "Colombia",
+      "Brasil",
+      "México"
+    ],
+    "imageUrl": "https://flagcdn.com/w320/br.png",
+    "extraData": {
+      "countryCode": "br",
+      "countryName": "Brasil"
+    }
+  },
+  {
+    "id": "flag_20859",
+    "type": "flag",
+    "difficulty": "hard",
+    "questionText": "¿De qué país es esta bandera?",
+    "correctAnswer": "Costa Rica",
+    "options": [
+      "Costa Rica",
+      "Turkmenistán",
+      "India",
+      "Tailandia"
+    ],
+    "imageUrl": "https://flagcdn.com/w320/cr.png",
+    "extraData": {
+      "countryCode": "cr",
+      "countryName": "Costa Rica"
+    }
+  },
+  {
+    "id": "flag_20860",
+    "type": "flag",
+    "difficulty": "medium",
+    "questionText": "¿De qué país es esta bandera?",
+    "correctAnswer": "Uruguay",
+    "options": [
+      "Argentina",
+      "Brasil",
+      "Paraguay",
+      "Uruguay"
+    ],
+    "imageUrl": "https://flagcdn.com/w320/uy.png",
+    "extraData": {
+      "countryCode": "uy",
+      "countryName": "Uruguay"
+    }
+  },
+  {
+    "id": "capital_20861",
+    "type": "capital",
+    "difficulty": "easy",
+    "questionText": "¿Cuál es la capital de Italia?",
+    "correctAnswer": "Roma",
+    "options": [
+      "Roma",
+      "Milán",
+      "Florencia",
+      "Nápoles"
+    ],
+    "extraData": {
+      "countryCode": "it",
+      "countryName": "Italia"
+    }
+  },
+  {
+    "id": "capital_20862",
+    "type": "capital",
+    "difficulty": "hard",
+    "questionText": "¿Cuál es la capital de Afganistán?",
+    "correctAnswer": "Kabul",
+    "options": [
+      "Kabul",
+      "Herat",
+      "Mazar-i-Sharif",
+      "Kandahar"
+    ],
+    "extraData": {
+      "countryCode": "af",
+      "countryName": "Afganistán"
+    }
+  },
+  {
+    "id": "capital_20863",
+    "type": "capital",
+    "difficulty": "medium",
+    "questionText": "¿Cuál es la capital de Luxemburgo?",
+    "correctAnswer": "Luxemburgo",
+    "options": [
+      "Ankara",
+      "Differdange",
+      "Esch-sur-Alzette",
+      "Dudelange"
+    ],
+    "extraData": {
+      "countryCode": "lu",
+      "countryName": "Luxemburgo"
+    }
+  },
+  {
+    "id": "capital_20864",
+    "type": "capital",
+    "difficulty": "hard",
+    "questionText": "¿Cuál es la capital de Liberia?",
+    "correctAnswer": "Monrovia",
+    "options": [
+      "Monrovia",
+      "Gbarnga",
+      "Kakata",
+      "Buchanan"
+    ],
+    "extraData": {
+      "countryCode": "lr",
+      "countryName": "Liberia"
+    }
+  },
+  {
+    "id": "capital_20865",
+    "type": "capital",
+    "difficulty": "medium",
+    "questionText": "¿Cuál es la capital de Guatemala?",
+    "correctAnswer": "Ciudad de Guatemala",
+    "options": [
+      "Escuintla",
+      "Antigua",
+      "Quetzaltenango",
+      "Athens"
+    ],
+    "extraData": {
+      "countryCode": "gt",
+      "countryName": "Guatemala"
+    }
+  },
+  {
+    "id": "capital_20866",
+    "type": "capital",
+    "difficulty": "easy",
+    "questionText": "¿Cuál es la capital de Reino Unido?",
+    "correctAnswer": "Londres",
+    "options": [
+      "Londres",
+      "Edimburgo",
+      "Mánchester",
+      "Birmingham"
+    ],
+    "extraData": {
+      "countryCode": "gb",
+      "countryName": "Reino Unido"
+    }
+  },
+  {
+    "id": "capital_20867",
+    "type": "capital",
+    "difficulty": "hard",
+    "questionText": "¿Cuál es la capital de Yibuti?",
+    "correctAnswer": "Yibuti",
+    "options": [
+      "Tadjoura",
+      "Ali Sabieh",
+      "Obock",
+      "Palikir"
+    ],
+    "extraData": {
+      "countryCode": "dj",
+      "countryName": "Yibuti"
+    }
+  },
+  {
+    "id": "capital_20868",
+    "type": "capital",
+    "difficulty": "medium",
+    "questionText": "¿Cuál es la capital de Panamá?",
+    "correctAnswer": "Ciudad de Panamá",
+    "options": [
+      "David",
+      "Colón",
+      "Santiago",
+      "Flying Fish Cove"
+    ],
+    "extraData": {
+      "countryCode": "pa",
+      "countryName": "Panamá"
+    }
+  },
+  {
+    "id": "capital_20869",
+    "type": "capital",
+    "difficulty": "hard",
+    "questionText": "¿Cuál es la capital de Burkina Faso?",
+    "correctAnswer": "Uagadugú",
+    "options": [
+      "Bobo-Dioulasso",
+      "Uagadugú",
+      "Koudougou",
+      "Banfora"
+    ],
+    "extraData": {
+      "countryCode": "bf",
+      "countryName": "Burkina Faso"
+    }
+  },
+  {
+    "id": "capital_20870",
+    "type": "capital",
+    "difficulty": "medium",
+    "questionText": "¿Cuál es la capital de Paraguay?",
+    "correctAnswer": "Asunción",
+    "options": [
+      "Ciudad del Este",
+      "Asunción",
+      "Encarnación",
+      "Concepción"
+    ],
+    "extraData": {
+      "countryCode": "py",
+      "countryName": "Paraguay"
+    }
+  },
+  {
+    "id": "population_20871",
+    "type": "population",
+    "difficulty": "easy",
+    "questionText": "¿Qué país tiene más población?",
+    "correctAnswer": "Brasil",
+    "options": [
+      "Brasil",
+      "México"
+    ],
+    "extraData": {
+      "countries": [
+        "Brasil",
+        "México"
+      ],
+      "population1": 216422446,
+      "population2": 128455567,
+      "infoToShow": "216.4 millones habitantes"
+    }
+  },
+  {
+    "id": "population_20872",
+    "type": "population",
+    "difficulty": "medium",
+    "questionText": "¿Qué país tiene más población?",
+    "correctAnswer": "Irak",
+    "options": [
+      "Irak",
+      "España"
+    ],
+    "extraData": {
+      "countries": [
+        "Irak",
+        "España"
+      ],
+      "population1": 44496122,
+      "population2": 47519628
+    }
+  },
+  {
+    "id": "population_20873",
+    "type": "population",
+    "difficulty": "hard",
+    "questionText": "¿Qué país tiene más población?",
+    "correctAnswer": "Madagascar",
+    "options": [
+      "Madagascar",
+      "Australia"
+    ],
+    "extraData": {
+      "countries": [
+        "Madagascar",
+        "Australia"
+      ],
+      "population1": 30325732,
+      "population2": 26439111,
+      "infoToShow": "30.3 millones habitantes"
+    }
+  },
+  {
+    "id": "population_20874",
+    "type": "population",
+    "difficulty": "hard",
+    "questionText": "¿Qué país tiene más población?",
+    "correctAnswer": "Ghana",
+    "options": [
+      "Ghana",
+      "Australia"
+    ],
+    "extraData": {
+      "countries": [
+        "Ghana",
+        "Australia"
+      ],
+      "population1": 34121985,
+      "population2": 26439111,
+      "infoToShow": "34.1 millones habitantes"
+    }
+  },
+  {
+    "id": "population_20875",
+    "type": "population",
+    "difficulty": "medium",
+    "questionText": "¿Qué país tiene más población?",
+    "correctAnswer": "Vietnam",
+    "options": [
+      "Vietnam",
+      "Irán"
+    ],
+    "extraData": {
+      "countries": [
+        "Vietnam",
+        "Irán"
+      ],
+      "population1": 98858950,
+      "population2": 88536000,
+      "infoToShow": "98.9 millones habitantes"
+    }
+  },
+  {
+    "id": "area_20876",
+    "type": "area",
+    "difficulty": "medium",
+    "questionText": "¿Qué país es más extenso?",
+    "correctAnswer": "Etiopía",
+    "options": [
+      "Etiopía",
+      "Colombia"
+    ],
+    "extraData": {
+      "countries": [
+        "Etiopía",
+        "Colombia"
+      ],
+      "area1": 1104300,
+      "area2": 1141748
+    }
+  },
+  {
+    "id": "area_20877",
+    "type": "area",
+    "difficulty": "hard",
+    "questionText": "¿Qué país es más extenso?",
+    "correctAnswer": "Malí",
+    "options": [
+      "Malí",
+      "España"
+    ],
+    "extraData": {
+      "countries": [
+        "Malí",
+        "España"
+      ],
+      "area1": 1240192,
+      "area2": 505992,
+      "infoToShow": "1.2 millones de km²"
+    }
+  },
+  {
+    "id": "area_20878",
+    "type": "area",
+    "difficulty": "easy",
+    "questionText": "¿Qué país es más extenso?",
+    "correctAnswer": "Canadá",
+    "options": [
+      "Canadá",
+      "India"
+    ],
+    "extraData": {
+      "countries": [
+        "Canadá",
+        "India"
+      ],
+      "area1": 9984670,
+      "area2": 3287263,
+      "infoToShow": "10.0 millones de km²"
+    }
+  },
+  {
+    "id": "area_20879",
+    "type": "area",
+    "difficulty": "hard",
+    "questionText": "¿Qué país es más extenso?",
+    "correctAnswer": "Congo (RDC)",
+    "options": [
+      "Congo (RDC)",
+      "Argelia"
+    ],
+    "extraData": {
+      "countries": [
+        "Congo (RDC)",
+        "Argelia"
+      ],
+      "area1": 2344858,
+      "area2": 2381741
+    }
+  },
+  {
+    "id": "area_20880",
+    "type": "area",
+    "difficulty": "medium",
+    "questionText": "¿Qué país es más extenso?",
+    "correctAnswer": "Libia",
+    "options": [
+      "Libia",
+      "Irán"
+    ],
+    "extraData": {
+      "countries": [
+        "Libia",
+        "Irán"
+      ],
+      "area1": 1759540,
+      "area2": 1648195,
+      "infoToShow": "1.8 millones de km²"
+    }
+  },
+  {
+    "id": "language_20881",
+    "type": "language",
+    "difficulty": "medium",
+    "questionText": "¿Cuál es el idioma oficial de Kuwait?",
+    "correctAnswer": "Árabe",
+    "options": [
+      "Persa",
+      "Inglés",
+      "Árabe",
+      "urdu"
+    ],
+    "extraData": {
+      "countryCode": "kw",
+      "countryName": "Kuwait",
+      "languageCode": "ara"
+    }
+  },
+  {
+    "id": "language_20882",
+    "type": "language",
+    "difficulty": "hard",
+    "questionText": "¿Cuál es el idioma oficial de Timor Oriental?",
+    "correctAnswer": "Portugués",
+    "options": [
+      "Indonesio",
+      "Portugués",
+      "Inglés",
+      "Tetum"
+    ],
+    "extraData": {
+      "countryCode": "tl",
+      "countryName": "Timor Oriental",
+      "languageCode": "por"
+    }
+  },
+  {
+    "id": "language_20883",
+    "type": "language",
+    "difficulty": "hard",
+    "questionText": "¿Cuál es el idioma oficial de Bielorrusia?",
+    "correctAnswer": "Bielorruso",
+    "options": [
+      "Ruso",
+      "Ucraniano",
+      "Bielorruso",
+      "Polaco"
+    ],
+    "extraData": {
+      "countryCode": "by",
+      "countryName": "Bielorrusia",
+      "languageCode": "bel"
+    }
+  },
+  {
+    "id": "language_20884",
+    "type": "language",
+    "difficulty": "medium",
+    "questionText": "¿Cuál es el idioma oficial de Libia?",
+    "correctAnswer": "Árabe",
+    "options": [
+      "Francés",
+      "Inglés",
+      "Árabe",
+      "Bereber"
+    ],
+    "extraData": {
+      "countryCode": "ly",
+      "countryName": "Libia",
+      "languageCode": "ara"
+    }
+  },
+  {
+    "id": "language_20885",
+    "type": "language",
+    "difficulty": "easy",
+    "questionText": "¿Cuál es el idioma oficial de Brasil?",
+    "correctAnswer": "Portugués",
+    "options": [
+      "Español",
+      "Inglés",
+      "Portugués",
+      "Francés"
+    ],
+    "extraData": {
+      "countryCode": "br",
+      "countryName": "Brasil",
+      "languageCode": "por"
+    }
+  },
+  {
+    "id": "currency_20886",
+    "type": "currency",
+    "difficulty": "hard",
+    "questionText": "¿Cuál es la moneda de Libia?",
+    "correctAnswer": "Dinar libio",
+    "options": [
+      "Dinar argelino",
+      "Dinar tunecino",
+      "Libra egipcia",
+      "Dinar libio"
+    ],
+    "extraData": {
+      "countryCode": "ly",
+      "countryName": "Libia",
+      "currencyCode": "LYD"
+    }
+  },
+  {
+    "id": "currency_20887",
+    "type": "currency",
+    "difficulty": "medium",
+    "questionText": "¿Cuál es la moneda de Vietnam?",
+    "correctAnswer": "Dong vietnamita",
+    "options": [
+      "Dólar de Trinidad y Tobago",
+      "Kip laosiano",
+      "Baht tailandés",
+      "Rupia indonesia"
+    ],
+    "extraData": {
+      "countryCode": "vn",
+      "countryName": "Vietnam",
+      "currencyCode": "VND"
+    }
+  },
+  {
+    "id": "currency_20888",
+    "type": "currency",
+    "difficulty": "hard",
+    "questionText": "¿Cuál es la moneda de Rumanía?",
+    "correctAnswer": "Leu rumano",
+    "options": [
+      "Florín húngaro",
+      "Corona checa",
+      "Zloty polaco",
+      "Leu rumano"
+    ],
+    "extraData": {
+      "countryCode": "ro",
+      "countryName": "Rumanía",
+      "currencyCode": "RON"
+    }
+  },
+  {
+    "id": "currency_20889",
+    "type": "currency",
+    "difficulty": "medium",
+    "questionText": "¿Cuál es la moneda de Malasia?",
+    "correctAnswer": "Ringgit malayo",
+    "options": [
+      "Rupia indonesia",
+      "Baht tailandés",
+      "Dólar de Singapur",
+      "Ringgit malayo"
+    ],
+    "extraData": {
+      "countryCode": "my",
+      "countryName": "Malasia",
+      "currencyCode": "MYR"
+    }
+  },
+  {
+    "id": "currency_20890",
+    "type": "currency",
+    "difficulty": "easy",
+    "questionText": "¿Cuál es la moneda de España?",
+    "correctAnswer": "euro",
+    "options": [
+      "Libra esterlina",
+      "euro",
+      "Franco suizo",
+      "Dólar"
+    ],
+    "extraData": {
+      "countryCode": "es",
+      "countryName": "España",
+      "currencyCode": "EUR"
+    }
+  },
+  {
+    "id": "region_20891",
+    "type": "region",
+    "difficulty": "easy",
+    "questionText": "¿En qué región se encuentra Turquía?",
+    "correctAnswer": "Europa",
+    "options": [
+      "Asia",
+      "América",
+      "Europa",
+      "África"
+    ],
+    "extraData": {
+      "countryCode": "tr",
+      "countryName": "Turquía",
+      "region": "Europe",
+      "regionSpanish": "Europa"
+    }
+  },
+  {
+    "id": "region_20892",
+    "type": "region",
+    "difficulty": "medium",
+    "questionText": "¿En qué región se encuentra Namibia?",
+    "correctAnswer": "África",
+    "options": [
+      "América",
+      "Asia",
+      "África",
+      "Europa"
+    ],
+    "extraData": {
+      "countryCode": "na",
+      "countryName": "Namibia",
+      "region": "Africa",
+      "regionSpanish": "África"
+    }
+  },
+  {
+    "id": "region_20893",
+    "type": "region",
+    "difficulty": "hard",
+    "questionText": "¿En qué región se encuentra Gambia?",
+    "correctAnswer": "África",
+    "options": [
+      "América",
+      "Asia",
+      "África",
+      "Europa"
+    ],
+    "extraData": {
+      "countryCode": "gm",
+      "countryName": "Gambia",
+      "region": "Africa",
+      "regionSpanish": "África"
+    }
+  },
+  {
+    "id": "region_20894",
+    "type": "region",
+    "difficulty": "hard",
+    "questionText": "¿En qué región se encuentra Kiribati?",
+    "correctAnswer": "Oceanía",
+    "options": [
+      "Asia",
+      "América",
+      "Oceanía",
+      "África"
+    ],
+    "extraData": {
+      "countryCode": "ki",
+      "countryName": "Kiribati",
+      "region": "Oceania",
+      "regionSpanish": "Oceanía"
+    }
+  },
+  {
+    "id": "region_20895",
+    "type": "region",
+    "difficulty": "medium",
+    "questionText": "¿En qué región se encuentra Jordaniaia?",
+    "correctAnswer": "Asia",
+    "options": [
+      "África",
+      "Europa",
+      "Asia",
+      "América"
+    ],
+    "extraData": {
+      "countryCode": "jo",
+      "countryName": "Jordaniaia",
+      "region": "Asia",
+      "regionSpanish": "Asia"
+    }
+  },
+  {
+    "id": "region_20896",
+    "type": "region",
+    "difficulty": "easy",
+    "questionText": "¿En qué región se encuentra Estados Unidos?",
+    "correctAnswer": "América",
+    "options": [
+      "Europa",
+      "Asia",
+      "América",
+      "África"
+    ],
+    "extraData": {
+      "countryCode": "us",
+      "countryName": "Estados Unidos",
+      "region": "Americas",
+      "regionSpanish": "América"
+    }
+  },
+  {
+    "id": "region_20897",
+    "type": "region",
+    "difficulty": "medium",
+    "questionText": "¿En qué región se encuentra Mali?",
+    "correctAnswer": "África",
+    "options": [
+      "Asia",
+      "América",
+      "África",
+      "Europa"
+    ],
+    "extraData": {
+      "countryCode": "ml",
+      "countryName": "Malí",
+      "region": "Africa",
+      "regionSpanish": "África"
+    }
+  },
+  {
+    "id": "region_20898",
+    "type": "region",
+    "difficulty": "hard",
+    "questionText": "¿En qué región se encuentra Mónaco?",
+    "correctAnswer": "Europa",
+    "options": [
+      "América",
+      "Asia",
+      "Europa",
+      "África"
+    ],
+    "extraData": {
+      "countryCode": "mc",
+      "countryName": "Mónaco",
+      "region": "Europe",
+      "regionSpanish": "Europa"
+    }
+  },
+  {
+    "id": "region_20899",
+    "type": "region",
+    "difficulty": "easy",
+    "questionText": "¿En qué región se encuentra India?",
+    "correctAnswer": "Asia",
+    "options": [
+      "América",
+      "Europa",
+      "Asia",
+      "África"
+    ],
+    "extraData": {
+      "countryCode": "in",
+      "countryName": "India",
+      "region": "Asia",
+      "regionSpanish": "Asia"
+    }
+  },
+  {
+    "id": "region_20900",
+    "type": "region",
+    "difficulty": "medium",
+    "questionText": "¿En qué región se encuentra Eslovenia?",
+    "correctAnswer": "Europa",
+    "options": [
+      "América",
+      "Asia",
+      "Europa",
+      "África"
+    ],
+    "extraData": {
+      "countryCode": "si",
+      "countryName": "Eslovenia",
+      "region": "Europe",
+      "regionSpanish": "Europa"
+    }
+  },
+  {
+    "id": "flag_20901",
+    "type": "flag",
+    "difficulty": "hard",
+    "questionText": "¿De qué país es esta bandera?",
+    "correctAnswer": "Eslovenia",
+    "options": [
+      "Eslovaquia",
+      "Croacia",
+      "Serbia",
+      "Eslovenia"
+    ],
+    "imageUrl": "https://flagcdn.com/w320/si.png",
+    "extraData": {
+      "countryCode": "si",
+      "countryName": "Eslovenia"
+    }
+  },
+  {
+    "id": "flag_20902",
+    "type": "flag",
+    "difficulty": "medium",
+    "questionText": "¿De qué país es esta bandera?",
+    "correctAnswer": "Túnez",
+    "options": [
+      "Argelia",
+      "Libia",
+      "Marruecos",
+      "Túnez"
+    ],
+    "imageUrl": "https://flagcdn.com/w320/tn.png",
+    "extraData": {
+      "countryCode": "tn",
+      "countryName": "Túnez"
+    }
+  },
+  {
+    "id": "flag_20903",
+    "type": "flag",
+    "difficulty": "hard",
+    "questionText": "¿De qué país es esta bandera?",
+    "correctAnswer": "Kuwait",
+    "options": [
+      "Catar",
+      "Baréin",
+      "Kuwait",
+      "Emiratos Árabes"
+    ],
+    "imageUrl": "https://flagcdn.com/w320/kw.png",
+    "extraData": {
+      "countryCode": "kw",
+      "countryName": "Kuwait"
+    }
+  },
+  {
+    "id": "flag_20904",
+    "type": "flag",
+    "difficulty": "easy",
+    "questionText": "¿De qué país es esta bandera?",
+    "correctAnswer": "México",
+    "options": [
+      "Italia",
+      "España",
+      "México",
+      "Portugal"
+    ],
+    "imageUrl": "https://flagcdn.com/w320/mx.png",
+    "extraData": {
+      "countryCode": "mx",
+      "countryName": "México"
+    }
+  },
+  {
+    "id": "flag_20905",
+    "type": "flag",
+    "difficulty": "medium",
+    "questionText": "¿De qué país es esta bandera?",
+    "correctAnswer": "Argelia",
+    "options": [
+      "Túnez",
+      "Marruecos",
+      "Argelia",
+      "Libia"
+    ],
+    "imageUrl": "https://flagcdn.com/w320/dz.png",
+    "extraData": {
+      "countryCode": "dz",
+      "countryName": "Argelia"
+    }
+  },
+  {
+    "id": "flag_20906",
+    "type": "flag",
+    "difficulty": "hard",
+    "questionText": "¿De qué país es esta bandera?",
+    "correctAnswer": "Tayikistán",
+    "options": [
+      "Irán",
+      "Hungría",
+      "Italia",
+      "Tayikistán"
+    ],
+    "imageUrl": "https://flagcdn.com/w320/tj.png",
+    "extraData": {
+      "countryCode": "tj",
+      "countryName": "Tayikistán"
+    }
+  },
+  {
+    "id": "flag_20907",
+    "type": "flag",
+    "difficulty": "medium",
+    "questionText": "¿De qué país es esta bandera?",
+    "correctAnswer": "Hungría",
+    "options": [
+      "Italia",
+      "Irán",
+      "Bangladés",
+      "Hungría"
+    ],
+    "imageUrl": "https://flagcdn.com/w320/hu.png",
+    "extraData": {
+      "countryCode": "hu",
+      "countryName": "Hungría"
+    }
+  },
+  {
+    "id": "flag_20908",
+    "type": "flag",
+    "difficulty": "hard",
+    "questionText": "¿De qué país es esta bandera?",
+    "correctAnswer": "Fiyi",
+    "options": [
+      "Tuvalu",
+      "Samoa",
+      "Tonga",
+      "Fiyi"
+    ],
+    "imageUrl": "https://flagcdn.com/w320/fj.png",
+    "extraData": {
+      "countryCode": "fj",
+      "countryName": "Fiyi"
+    }
+  },
+  {
+    "id": "flag_20909",
+    "type": "flag",
+    "difficulty": "easy",
+    "questionText": "¿De qué país es esta bandera?",
+    "correctAnswer": "India",
+    "options": [
+      "Níger",
+      "San Martín",
+      "Irlanda",
+      "India"
+    ],
+    "imageUrl": "https://flagcdn.com/w320/in.png",
+    "extraData": {
+      "countryCode": "in",
+      "countryName": "India"
+    }
+  },
+  {
+    "id": "flag_20910",
+    "type": "flag",
+    "difficulty": "medium",
+    "questionText": "¿De qué país es esta bandera?",
+    "correctAnswer": "Chile",
+    "options": [
+      "Cuba",
+      "Texas",
+      "Panamá",
+      "Chile"
+    ],
+    "imageUrl": "https://flagcdn.com/w320/cl.png",
+    "extraData": {
+      "countryCode": "cl",
+      "countryName": "Chile"
+    }
+  },
+  {
+    "id": "capital_20911",
+    "type": "capital",
+    "difficulty": "easy",
+    "questionText": "¿Cuál es la capital de Argentina?",
+    "correctAnswer": "Buenos Aires",
+    "options": [
+      "Buenos Aires",
+      "Córdoba",
+      "Mendoza",
+      "Rosario"
+    ],
+    "extraData": {
+      "countryCode": "ar",
+      "countryName": "Argentina"
+    }
+  },
+  {
+    "id": "capital_20912",
+    "type": "capital",
+    "difficulty": "hard",
+    "questionText": "¿Cuál es la capital de Guinea?",
+    "correctAnswer": "Conakri",
+    "options": [
+      "Conakri",
+      "Kankan",
+      "Nzérékoré",
+      "Kindia"
+    ],
+    "extraData": {
+      "countryCode": "gn",
+      "countryName": "Guinea"
+    }
+  },
+  {
+    "id": "capital_20913",
+    "type": "capital",
+    "difficulty": "medium",
+    "questionText": "¿Cuál es la capital de Bangladés?",
+    "correctAnswer": "Daca",
+    "options": [
+      "Daca",
+      "Chittagong",
+      "Khulna",
+      "Sylhet"
+    ],
+    "extraData": {
+      "countryCode": "bd",
+      "countryName": "Bangladés"
+    }
+  },
+  {
+    "id": "capital_20914",
+    "type": "capital",
+    "difficulty": "hard",
+    "questionText": "¿Cuál es la capital de Malaui?",
+    "correctAnswer": "Lilongüe",
+    "options": [
+      "Blantyre",
+      "Lilongüe",
+      "Mzuzu",
+      "Zomba"
+    ],
+    "extraData": {
+      "countryCode": "mw",
+      "countryName": "Malaui"
+    }
+  },
+  {
+    "id": "capital_20915",
+    "type": "capital",
+    "difficulty": "medium",
+    "questionText": "¿Cuál es la capital de Mongolia?",
+    "correctAnswer": "Ulán Bator",
+    "options": [
+      "Ulán Bator",
+      "Erdenet",
+      "Darkhan",
+      "Choibalsan"
+    ],
+    "extraData": {
+      "countryCode": "mn",
+      "countryName": "Mongolia"
+    }
+  },
+  {
+    "id": "capital_20916",
+    "type": "capital",
+    "difficulty": "easy",
+    "questionText": "¿Cuál es la capital de Rusia?",
+    "correctAnswer": "Moscú",
+    "options": [
+      "Moscú",
+      "San Petersburgo",
+      "Kazán",
+      "Novosibirsk"
+    ],
+    "extraData": {
+      "countryCode": "ru",
+      "countryName": "Rusia"
+    }
+  },
+  {
+    "id": "capital_20917",
+    "type": "capital",
+    "difficulty": "hard",
+    "questionText": "¿Cuál es la capital de Gabón?",
+    "correctAnswer": "Libreville",
+    "options": [
+      "Port-Gentil",
+      "Libreville",
+      "Franciaville",
+      "Oyem"
+    ],
+    "extraData": {
+      "countryCode": "ga",
+      "countryName": "Gabón"
+    }
+  },
+  {
+    "id": "capital_20918",
+    "type": "capital",
+    "difficulty": "medium",
+    "questionText": "¿Cuál es la capital de Georgia?",
+    "correctAnswer": "Tiflis",
+    "options": [
+      "Tiflis",
+      "Kutaisi",
+      "Batumi",
+      "Sujumi"
+    ],
+    "extraData": {
+      "countryCode": "ge",
+      "countryName": "Georgia"
+    }
+  },
+  {
+    "id": "capital_20919",
+    "type": "capital",
+    "difficulty": "hard",
+    "questionText": "¿Cuál es la capital de Sudán del Sur?",
+    "correctAnswer": "Yuba",
+    "options": [
+      "Wau",
+      "Yuba",
+      "Malakal",
+      "Bentiu"
+    ],
+    "extraData": {
+      "countryCode": "ss",
+      "countryName": "Sudán del Sur"
+    }
+  },
+  {
+    "id": "capital_20920",
+    "type": "capital",
+    "difficulty": "medium",
+    "questionText": "¿Cuál es la capital de Yemen?",
+    "correctAnswer": "Saná",
+    "options": [
+      "Adén",
+      "Saná",
+      "Taiz",
+      "Al Hudaydah"
+    ],
+    "extraData": {
+      "countryCode": "ye",
+      "countryName": "Yemen"
+    }
+  },
+  {
+    "id": "population_20921",
+    "type": "population",
+    "difficulty": "easy",
+    "questionText": "¿Qué país tiene más población?",
+    "correctAnswer": "Francia",
+    "options": [
+      "Francia",
+      "Portugal"
+    ],
+    "extraData": {
+      "countries": [
+        "Francia",
+        "Portugal"
+      ],
+      "population1": 64756584,
+      "population2": 10247605,
+      "infoToShow": "64.8 millones habitantes"
+    }
+  },
+  {
+    "id": "population_20922",
+    "type": "population",
+    "difficulty": "medium",
+    "questionText": "¿Qué país tiene más población?",
+    "correctAnswer": "Filipinas",
+    "options": [
+      "Filipinas",
+      "Vietnam"
+    ],
+    "extraData": {
+      "countries": [
+        "Filipinas",
+        "Vietnam"
+      ],
+      "population1": 117337368,
+      "population2": 98858950,
+      "infoToShow": "117.3 millones habitantes"
+    }
+  },
+  {
+    "id": "population_20923",
+    "type": "population",
+    "difficulty": "hard",
+    "questionText": "¿Qué país tiene más población?",
+    "correctAnswer": "Angola",
+    "options": [
+      "Angola",
+      "Portugal"
+    ],
+    "extraData": {
+      "countries": [
+        "Angola",
+        "Portugal"
+      ],
+      "population1": 36684000,
+      "population2": 10247605,
+      "infoToShow": "36.7 millones habitantes"
+    }
+  },
+  {
+    "id": "population_20924",
+    "type": "population",
+    "difficulty": "hard",
+    "questionText": "¿Qué país tiene más población?",
+    "correctAnswer": "Cuba",
+    "options": [
+      "Cuba",
+      "Bélgica"
+    ],
+    "extraData": {
+      "countries": [
+        "Cuba",
+        "Bélgica"
+      ],
+      "population1": 11194449,
+      "population2": 11686140
+    }
+  },
+  {
+    "id": "population_20925",
+    "type": "population",
+    "difficulty": "medium",
+    "questionText": "¿Qué país tiene más población?",
+    "correctAnswer": "Etiopía",
+    "options": [
+      "Etiopía",
+      "Alemania"
+    ],
+    "extraData": {
+      "countries": [
+        "Etiopía",
+        "Alemania"
+      ],
+      "population1": 126527060,
+      "population2": 83294633,
+      "infoToShow": "126.5 millones habitantes"
+    }
+  },
+  {
+    "id": "area_20926",
+    "type": "area",
+    "difficulty": "medium",
+    "questionText": "¿Qué país es más extenso?",
+    "correctAnswer": "Venezuela",
+    "options": [
+      "Venezuela",
+      "Nígeria"
+    ],
+    "extraData": {
+      "countries": [
+        "Venezuela",
+        "Nigeria"
+      ],
+      "area1": 916445,
+      "area2": 923768
+    }
+  },
+  {
+    "id": "area_20927",
+    "type": "area",
+    "difficulty": "hard",
+    "questionText": "¿Qué país es más extenso?",
+    "correctAnswer": "Nepal",
+    "options": [
+      "Nepal",
+      "Bangladés"
+    ],
+    "extraData": {
+      "countries": [
+        "Nepal",
+        "Bangladés"
+      ],
+      "area1": 147516,
+      "area2": 148460
+    }
+  },
+  {
+    "id": "area_20928",
+    "type": "area",
+    "difficulty": "easy",
+    "questionText": "¿Qué país es más extenso?",
+    "correctAnswer": "China",
+    "options": [
+      "China",
+      "Brasil"
+    ],
+    "extraData": {
+      "countries": [
+        "China",
+        "Brasil"
+      ],
+      "area1": 9596961,
+      "area2": 8515767,
+      "infoToShow": "9.6 millones de km²"
+    }
+  },
+  {
+    "id": "area_20929",
+    "type": "area",
+    "difficulty": "hard",
+    "questionText": "¿Qué país es más extenso?",
+    "correctAnswer": "Azerbaiyán",
+    "options": [
+      "Azerbaiyán",
+      "Austria"
+    ],
+    "extraData": {
+      "countries": [
+        "Azerbaiyán",
+        "Austria"
+      ],
+      "area1": 86600,
+      "area2": 83879,
+      "infoToShow": "87 mil km²"
+    }
+  },
+  {
+    "id": "area_20930",
+    "type": "area",
+    "difficulty": "medium",
+    "questionText": "¿Qué país es más extenso?",
+    "correctAnswer": "Mozambique",
+    "options": [
+      "Mozambique",
+      "Sudáfrica"
+    ],
+    "extraData": {
+      "countries": [
+        "Mozambique",
+        "Sudáfrica"
+      ],
+      "area1": 801590,
+      "area2": 1221037
+    }
+  },
+  {
+    "id": "language_20931",
+    "type": "language",
+    "difficulty": "medium",
+    "questionText": "¿Cuál es el idioma oficial de Omán?",
+    "correctAnswer": "Árabe",
+    "options": [
+      "Inglés",
+      "Persa",
+      "Árabe",
+      "urdu"
+    ],
+    "extraData": {
+      "countryCode": "om",
+      "countryName": "Omán",
+      "languageCode": "ara"
+    }
+  },
+  {
+    "id": "language_20932",
+    "type": "language",
+    "difficulty": "hard",
+    "questionText": "¿Cuál es el idioma oficial de Mozambique?",
+    "correctAnswer": "Portugués",
+    "options": [
+      "Inglés",
+      "Suajili",
+      "Portugués",
+      "Español"
+    ],
+    "extraData": {
+      "countryCode": "mz",
+      "countryName": "Mozambique",
+      "languageCode": "por"
+    }
+  },
+  {
+    "id": "language_20933",
+    "type": "language",
+    "difficulty": "hard",
+    "questionText": "¿Cuál es el idioma oficial de Laos?",
+    "correctAnswer": "lao",
+    "options": [
+      "Tailandés",
+      "Vietnamita",
+      "lao",
+      "Camboyano"
+    ],
+    "extraData": {
+      "countryCode": "la",
+      "countryName": "Laos",
+      "languageCode": "lao"
+    }
+  },
+  {
+    "id": "language_20934",
+    "type": "language",
+    "difficulty": "medium",
+    "questionText": "¿Cuál es el idioma oficial de Somalia?",
+    "correctAnswer": "Somalí",
+    "options": [
+      "Árabe",
+      "Somalí",
+      "Amárico",
+      "Suajili"
+    ],
+    "extraData": {
+      "countryCode": "so",
+      "countryName": "Somalia",
+      "languageCode": "som"
+    }
+  },
+  {
+    "id": "language_20935",
+    "type": "language",
+    "difficulty": "easy",
+    "questionText": "¿Cuál es el idioma oficial de Portugal?",
+    "correctAnswer": "Portugués",
+    "options": [
+      "Español",
+      "Gallego",
+      "Portugués",
+      "Catalán"
+    ],
+    "extraData": {
+      "countryCode": "pt",
+      "countryName": "Portugal",
+      "languageCode": "por"
+    }
+  },
+  {
+    "id": "currency_20936",
+    "type": "currency",
+    "difficulty": "hard",
+    "questionText": "¿Cuál es la moneda de Nepal?",
+    "correctAnswer": "Rupia nepalí",
+    "options": [
+      "Rupia india",
+      "Gibraltar pound",
+      "Rupia pakistaní",
+      "Taka bangladesí"
+    ],
+    "extraData": {
+      "countryCode": "np",
+      "countryName": "Nepal",
+      "currencyCode": "NPR"
+    }
+  },
+  {
+    "id": "currency_20937",
+    "type": "currency",
+    "difficulty": "medium",
+    "questionText": "¿Cuál es la moneda de Hungría?",
+    "correctAnswer": "Florín húngaro",
+    "options": [
+      "Corona checa",
+      "Zloty polaco",
+      "Leu rumano",
+      "Florín húngaro"
+    ],
+    "extraData": {
+      "countryCode": "hu",
+      "countryName": "Hungría",
+      "currencyCode": "HUF"
+    }
+  },
+  {
+    "id": "currency_20938",
+    "type": "currency",
+    "difficulty": "hard",
+    "questionText": "¿Cuál es la moneda de Bangladés?",
+    "correctAnswer": "Taka bangladesí",
+    "options": [
+      "Rupia india",
+      "Rupia pakistaní",
+      "Kyat birmano",
+      "Taka bangladesí"
+    ],
+    "extraData": {
+      "countryCode": "bd",
+      "countryName": "Bangladés",
+      "currencyCode": "BDT"
+    }
+  },
+  {
+    "id": "currency_20939",
+    "type": "currency",
+    "difficulty": "medium",
+    "questionText": "¿Cuál es la moneda de Dinamarca?",
+    "correctAnswer": "Corona danesa",
+    "options": [
+      "Corona sueca",
+      "Corona noruega",
+      "euro",
+      "Corona danesa"
+    ],
+    "extraData": {
+      "countryCode": "dk",
+      "countryName": "Dinamarca",
+      "currencyCode": "DKK"
+    }
+  },
+  {
+    "id": "currency_20940",
+    "type": "currency",
+    "difficulty": "easy",
+    "questionText": "¿Cuál es la moneda de México?",
+    "correctAnswer": "Peso mexicano",
+    "options": [
+      "Dólar estadounidense",
+      "euro",
+      "Peso mexicano",
+      "Real brasileño"
+    ],
+    "extraData": {
+      "countryCode": "mx",
+      "countryName": "México",
+      "currencyCode": "MXN"
+    }
+  },
+  {
+    "id": "region_20941",
+    "type": "region",
+    "difficulty": "easy",
+    "questionText": "¿En qué región se encuentra España?",
+    "correctAnswer": "Europa",
+    "options": [
+      "América",
+      "Asia",
+      "Europa",
+      "África"
+    ],
+    "extraData": {
+      "countryCode": "es",
+      "countryName": "España",
+      "region": "Europe",
+      "regionSpanish": "Europa"
+    }
+  },
+  {
+    "id": "region_20942",
+    "type": "region",
+    "difficulty": "medium",
+    "questionText": "¿En qué región se encuentra Serbia?",
+    "correctAnswer": "Europa",
+    "options": [
+      "América",
+      "Asia",
+      "Europa",
+      "África"
+    ],
+    "extraData": {
+      "countryCode": "rs",
+      "countryName": "Serbia",
+      "region": "Europe",
+      "regionSpanish": "Europa"
+    }
+  },
+  {
+    "id": "region_20943",
+    "type": "region",
+    "difficulty": "hard",
+    "questionText": "¿En qué región se encuentra Comoras?",
+    "correctAnswer": "África",
+    "options": [
+      "Asia",
+      "América",
+      "África",
+      "Oceanía"
+    ],
+    "extraData": {
+      "countryCode": "km",
+      "countryName": "Comoras",
+      "region": "Africa",
+      "regionSpanish": "África"
+    }
+  },
+  {
+    "id": "region_20944",
+    "type": "region",
+    "difficulty": "hard",
+    "questionText": "¿En qué región se encuentra Palaos?",
+    "correctAnswer": "Oceanía",
+    "options": [
+      "Asia",
+      "América",
+      "Oceanía",
+      "África"
+    ],
+    "extraData": {
+      "countryCode": "pw",
+      "countryName": "Palaos",
+      "region": "Oceania",
+      "regionSpanish": "Oceanía"
+    }
+  },
+  {
+    "id": "region_20945",
+    "type": "region",
+    "difficulty": "medium",
+    "questionText": "¿En qué región se encuentra Etiopía?",
+    "correctAnswer": "África",
+    "options": [
+      "Asia",
+      "América",
+      "África",
+      "Europa"
+    ],
+    "extraData": {
+      "countryCode": "et",
+      "countryName": "Etiopía",
+      "region": "Africa",
+      "regionSpanish": "África"
+    }
+  }
+]

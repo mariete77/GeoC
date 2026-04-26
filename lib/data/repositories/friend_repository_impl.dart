@@ -16,7 +16,10 @@ class FriendRepositoryImpl implements FriendRepository {
       final userDoc = await _firestore.collection('users').doc(userId).get();
       if (!userDoc.exists) return Left(UserNotFoundFailure('User not found'));
       
-      final friends = userDoc.get('friends') as List<dynamic>? ?? [];
+      final data = userDoc.data();
+      if (data == null || !data.containsKey('friends')) return const Right([]);
+      
+      final friends = data['friends'] as List<dynamic>? ?? [];
       return Right(List<String>.from(friends.map((e) => e as String)));
     } catch (e) {
       return Left(ServerFailure(e.toString()));
@@ -184,14 +187,14 @@ class FriendRepositoryImpl implements FriendRepository {
         return const Right([]);
       }
 
-      final lowerQuery = query.toLowerCase().trim();
-      final endQuery = '$lowerQuery\uf8ff'; // Firestore range query for prefix matching
+      final searchTerm = query.trim();
+      final endQuery = '$searchTerm\uf8ff';
 
-      // Query users whose displayName starts with the query
+      // Query users whose displayName starts with the query (case-sensitive literal)
       final snapshot = await _firestore
           .collection('users')
           .where('displayName',
-              isGreaterThanOrEqualTo: lowerQuery,
+              isGreaterThanOrEqualTo: searchTerm,
               isLessThan: endQuery)
           .limit(20)
           .get();

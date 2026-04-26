@@ -357,24 +357,55 @@ class _GameResultWidgetState extends State<GameResultWidget>
                         const SizedBox(height: 16),
 
                         // Accuracy & Time
-                        Row(
-                          children: [
-                            _buildMiniStat(
-                              icon: Icons.percent,
-                              value:
-                                  '${accuracy.toStringAsFixed(0)}%',
-                              label: 'Precisión',
-                              color: AppColors.secondary,
-                            ),
-                            const SizedBox(width: 16),
-                            _buildMiniStat(
-                              icon: Icons.timer_outlined,
-                              value:
-                                  '${(widget.averageTime / 1000).toStringAsFixed(1)}s',
-                              label: 'Tiempo medio',
-                              color: AppColors.tertiary,
-                            ),
-                          ],
+                        LayoutBuilder(
+                          builder: (context, constraints) {
+                            final isWide = constraints.maxWidth > 300;
+                            
+                            // Safe time calculation with NaN/Infinity checks
+                            final avgTimeSeconds = widget.averageTime.isFinite 
+                                ? (widget.averageTime / 1000).toStringAsFixed(1) 
+                                : '0.0';
+                            
+                            if (isWide) {
+                              return Row(
+                                children: [
+                                  _buildMiniStat(
+                                    icon: Icons.percent,
+                                    value: '${accuracy.toStringAsFixed(0)}%',
+                                    label: 'Precisión',
+                                    color: AppColors.secondary,
+                                  ),
+                                  const SizedBox(width: 12),
+                                  _buildMiniStat(
+                                    icon: Icons.timer_outlined,
+                                    value: '${avgTimeSeconds}s',
+                                    label: 'Tiempo medio',
+                                    color: AppColors.tertiary,
+                                  ),
+                                ],
+                              );
+                            }
+                            
+                            return Column(
+                              children: [
+                                _buildMiniStat(
+                                  icon: Icons.percent,
+                                  value: '${accuracy.toStringAsFixed(0)}%',
+                                  label: 'Precisión',
+                                  color: AppColors.secondary,
+                                  fullWidth: true,
+                                ),
+                                const SizedBox(height: 12),
+                                _buildMiniStat(
+                                  icon: Icons.timer_outlined,
+                                  value: '${avgTimeSeconds}s',
+                                  label: 'Tiempo medio',
+                                  color: AppColors.tertiary,
+                                  fullWidth: true,
+                                ),
+                              ],
+                            );
+                          },
                         ),
                       ],
                     ),
@@ -860,66 +891,92 @@ class _GameResultWidgetState extends State<GameResultWidget>
   // ═══════════════════════════════════════════════════════════
 
   Widget _buildActionButtons() {
-    return Row(
-      children: [
-        // Volver al Inicio (outline)
-        Expanded(
-          child: SizedBox(
-            height: 56,
-            child: OutlinedButton(
-              onPressed: widget.onGoHome,
-              style: OutlinedButton.styleFrom(
-                foregroundColor: AppColors.primary,
-                side: BorderSide(
-                  color: AppColors.outlineVariant.withOpacity(0.4),
-                ),
-                shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(9999),
-                ),
-              ),
+    return LayoutBuilder(
+      builder: (context, constraints) {
+        final isWide = constraints.maxWidth > 350;
+
+        if (isWide) {
+          return Row(
+            children: [
+              Expanded(child: _buildHomeButton()),
+              const SizedBox(width: 12),
+              Expanded(child: _buildPlayAgainButton()),
+            ],
+          );
+        }
+
+        return Column(
+          children: [
+            _buildPlayAgainButton(isFullWidth: true),
+            const SizedBox(height: 12),
+            _buildHomeButton(isFullWidth: true),
+          ],
+        );
+      },
+    );
+  }
+
+  Widget _buildHomeButton({bool isFullWidth = false}) {
+    return SizedBox(
+      height: 56,
+      width: isFullWidth ? double.infinity : null,
+      child: OutlinedButton(
+        onPressed: widget.onGoHome,
+        style: OutlinedButton.styleFrom(
+          foregroundColor: AppColors.primary,
+          side: BorderSide(
+            color: AppColors.outlineVariant.withOpacity(0.4),
+          ),
+          shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(9999),
+          ),
+        ),
+        child: Text(
+          'Volver al Inicio',
+          style: GoogleFonts.plusJakartaSans(
+            fontWeight: FontWeight.w700,
+            fontSize: 15,
+          ),
+          maxLines: 1,
+          overflow: TextOverflow.ellipsis,
+        ),
+      ),
+    );
+  }
+
+  Widget _buildPlayAgainButton({bool isFullWidth = false}) {
+    return SizedBox(
+      height: 56,
+      width: isFullWidth ? double.infinity : null,
+      child: ElevatedButton(
+        onPressed: widget.onPlayAgain,
+        style: ElevatedButton.styleFrom(
+          backgroundColor: AppColors.tertiaryContainer,
+          foregroundColor: AppColors.onTertiaryContainer,
+          elevation: 0,
+          shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(9999),
+          ),
+        ),
+        child: Row(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            const Icon(Icons.replay, size: 20),
+            const SizedBox(width: 8),
+            Flexible(
               child: Text(
-                'Volver al Inicio',
+                widget.opponentName != null ? 'Revancha' : 'Jugar de Nuevo',
                 style: GoogleFonts.plusJakartaSans(
                   fontWeight: FontWeight.w700,
                   fontSize: 15,
                 ),
+                maxLines: 1,
+                overflow: TextOverflow.ellipsis,
               ),
             ),
-          ),
+          ],
         ),
-        const SizedBox(width: 12),
-        // Revancha / Jugar de nuevo (filled)
-        Expanded(
-          child: SizedBox(
-            height: 56,
-            child: ElevatedButton(
-              onPressed: widget.onPlayAgain,
-              style: ElevatedButton.styleFrom(
-                backgroundColor: AppColors.tertiaryContainer,
-                foregroundColor: AppColors.onTertiaryContainer,
-                elevation: 0,
-                shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(9999),
-                ),
-              ),
-              child: Row(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [
-                  const Icon(Icons.replay, size: 20),
-                  const SizedBox(width: 8),
-                  Text(
-                    widget.opponentName != null ? 'Revancha' : 'Jugar de Nuevo',
-                    style: GoogleFonts.plusJakartaSans(
-                      fontWeight: FontWeight.w700,
-                      fontSize: 15,
-                    ),
-                  ),
-                ],
-              ),
-            ),
-          ),
-        ),
-      ],
+      ),
     );
   }
 
@@ -968,38 +1025,41 @@ class _GameResultWidgetState extends State<GameResultWidget>
     required String value,
     required String label,
     required Color color,
+    bool fullWidth = false,
   }) {
-    return Expanded(
-      child: Container(
-        padding: const EdgeInsets.all(12),
-        decoration: BoxDecoration(
-          color: color.withOpacity(0.08),
-          borderRadius: BorderRadius.circular(12),
-        ),
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            Icon(icon, color: color, size: 20),
-            const SizedBox(height: 6),
-            Text(
-              value,
-              style: GoogleFonts.plusJakartaSans(
-                fontWeight: FontWeight.w800,
-                fontSize: 16,
-                color: AppColors.onSurface,
-              ),
+    final content = Container(
+      width: fullWidth ? double.infinity : null,
+      padding: const EdgeInsets.all(12),
+      decoration: BoxDecoration(
+        color: color.withOpacity(0.08),
+        borderRadius: BorderRadius.circular(12),
+      ),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Icon(icon, color: color, size: 20),
+          const SizedBox(height: 6),
+          Text(
+            value,
+            style: GoogleFonts.plusJakartaSans(
+              fontWeight: FontWeight.w800,
+              fontSize: 16,
+              color: AppColors.onSurface,
             ),
-            Text(
-              label,
-              style: GoogleFonts.workSans(
-                fontSize: 10,
-                color: AppColors.onSurfaceVariant,
-              ),
+          ),
+          Text(
+            label,
+            style: GoogleFonts.workSans(
+              fontSize: 10,
+              color: AppColors.onSurfaceVariant,
             ),
-          ],
-        ),
+          ),
+        ],
       ),
     );
+
+    if (fullWidth) return content;
+    return Expanded(child: content);
   }
 
   String _getRank() {

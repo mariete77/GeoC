@@ -1,0 +1,862 @@
+[
+  {
+    "id": "monument_city_89",
+    "type": "monument_city",
+    "difficulty": "medium",
+    "questionText": "¿Muro de Berlín se encuentra en qué ciudad?",
+    "correctAnswer": "Berlín",
+    "options": [
+      "Granada",
+      "Bagan",
+      "Berlín",
+      "Toronto"
+    ],
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Berlin_Wall_remains_from_1975_near_Helmstedt.jpg/320px-Berlin_Wall_remains_from_1975_near_Helmstedt.jpg",
+    "extraData": {
+      "monumentName": "Muro de Berlín",
+      "city": "Berlín",
+      "country": "Alemania",
+      "monumentType": "muro"
+    }
+  },
+  {
+    "id": "monument_country_85",
+    "type": "monument_country",
+    "difficulty": "easy",
+    "questionText": "¿En qué país se encuentra Puente de la Torre?",
+    "correctAnswer": "Reino Unido",
+    "options": [
+      "México",
+      "Sudán",
+      "Reino Unido",
+      "Argentina"
+    ],
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/Tower_Bridge_London_Feb_2006.jpg/320px-Tower_Bridge_London_Feb_2006.jpg",
+    "extraData": {
+      "monumentName": "Puente de la Torre",
+      "city": "Londres",
+      "country": "Reino Unido",
+      "monumentType": "puente"
+    }
+  },
+  {
+    "id": "monument_city_90",
+    "type": "monument_city",
+    "difficulty": "medium",
+    "questionText": "¿Cuál es la ciudad de Puente Carlos?",
+    "correctAnswer": "Praga",
+    "options": [
+      "Praga",
+      "Río de Janeiro",
+      "Viena",
+      "Bagan"
+    ],
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/71/Karluv_most_prague.jpg/320px-Karluv_most_prague.jpg",
+    "extraData": {
+      "monumentName": "Puente Carlos",
+      "city": "Praga",
+      "country": "República Checa",
+      "monumentType": "puente"
+    }
+  },
+  {
+    "id": "monument_country_86",
+    "type": "monument_country",
+    "difficulty": "easy",
+    "questionText": "¿En qué país se encuentra Muro de Berlín?",
+    "correctAnswer": "Alemania",
+    "options": [
+      "Argentina",
+      "Birmania",
+      "Jordania",
+      "Alemania"
+    ],
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Berlin_Wall_remains_from_1975_near_Helmstedt.jpg/320px-Berlin_Wall_remains_from_1975_near_Helmstedt.jpg",
+    "extraData": {
+      "monumentName": "Muro de Berlín",
+      "city": "Berlín",
+      "country": "Alemania",
+      "monumentType": "muro"
+    }
+  },
+  {
+    "id": "monument_country_87",
+    "type": "monument_country",
+    "difficulty": "easy",
+    "questionText": "¿Coliseo se encuentra en qué país?",
+    "correctAnswer": "Italia",
+    "options": [
+      "Grecia",
+      "Estados Unidos",
+      "Italia",
+      "Turquía"
+    ],
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/Colosseo_2020.jpg/320px-Colosseo_2020.jpg",
+    "extraData": {
+      "monumentName": "Coliseo",
+      "city": "Roma",
+      "country": "Italia",
+      "monumentType": "anfiteatro"
+    }
+  },
+  {
+    "id": "monument_country_88",
+    "type": "monument_country",
+    "difficulty": "easy",
+    "questionText": "¿De qué país es Pirámides de Meroe?",
+    "correctAnswer": "Sudán",
+    "options": [
+      "Sudáfrica",
+      "Argentina",
+      "Egipto",
+      "Sudán"
+    ],
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/Meroe_Pyramids_03.jpg/320px-Meroe_Pyramids_03.jpg",
+    "extraData": {
+      "monumentName": "Pirámides de Meroe",
+      "city": "Meroe",
+      "country": "Sudán",
+      "monumentType": "pirámide"
+    }
+  },
+  {
+    "id": "monument_country_89",
+    "type": "monument_country",
+    "difficulty": "easy",
+    "questionText": "¿En qué país se encuentra Fuente de Trevi?",
+    "correctAnswer": "Italia",
+    "options": [
+      "Camboya",
+      "Italia",
+      "China",
+      "Reino Unido"
+    ],
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/Trevi_Fountain_%28Rome%29.jpg/320px-Trevi_Fountain_%28Rome%29.jpg",
+    "extraData": {
+      "monumentName": "Fuente de Trevi",
+      "city": "Roma",
+      "country": "Italia",
+      "monumentType": "fuente"
+    }
+  },
+  {
+    "id": "monument_city_91",
+    "type": "monument_city",
+    "difficulty": "medium",
+    "questionText": "¿Muro de China se encuentra en qué ciudad?",
+    "correctAnswer": "Pekín",
+    "options": [
+      "Colonia",
+      "Niagara Falls",
+      "Pekín",
+      "Meroe"
+    ],
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/23/The_Great_Wall_of_China_at_Jinshanling-edit.jpg/320px-The_Great_Wall_of_China_at_Jinshanling-edit.jpg",
+    "extraData": {
+      "monumentName": "Muro de China",
+      "city": "Pekín",
+      "country": "China",
+      "monumentType": "muro"
+    }
+  },
+  {
+    "id": "monument_city_92",
+    "type": "monument_city",
+    "difficulty": "medium",
+    "questionText": "¿Puente de Bosphorus se encuentra en qué ciudad?",
+    "correctAnswer": "Estambul",
+    "options": [
+      "Estambul",
+      "Pekín",
+      "Füssen",
+      "París"
+    ],
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Bosporus_Bridge.jpg/320px-Bosporus_Bridge.jpg",
+    "extraData": {
+      "monumentName": "Puente de Bosphorus",
+      "city": "Estambul",
+      "country": "Turquía",
+      "monumentType": "puente"
+    }
+  },
+  {
+    "id": "monument_country_90",
+    "type": "monument_country",
+    "difficulty": "easy",
+    "questionText": "¿En qué país se encuentra Capitolio de EE.UU.?",
+    "correctAnswer": "Estados Unidos",
+    "options": [
+      "Perú",
+      "Sudán",
+      "Estados Unidos",
+      "Alemania"
+    ],
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/US_Capitol_north_side.jpg/320px-US_Capitol_north_side.jpg",
+    "extraData": {
+      "monumentName": "Capitolio de EE.UU.",
+      "city": "Washington D.C.",
+      "country": "Estados Unidos",
+      "monumentType": "edificio"
+    }
+  },
+  {
+    "id": "monument_country_91",
+    "type": "monument_country",
+    "difficulty": "easy",
+    "questionText": "¿De qué país es Ayers Rock?",
+    "correctAnswer": "Australia",
+    "options": [
+      "Australia",
+      "República Checa",
+      "Perú",
+      "Uruguay"
+    ],
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/Uluru_Sunset.jpg/320px-Uluru_Sunset.jpg",
+    "extraData": {
+      "monumentName": "Ayers Rock",
+      "city": "Yulara",
+      "country": "Australia",
+      "monumentType": "monolito"
+    }
+  },
+  {
+    "id": "monument_country_92",
+    "type": "monument_country",
+    "difficulty": "easy",
+    "questionText": "¿En qué país se encuentra Acueducto de Segovia?",
+    "correctAnswer": "España",
+    "options": [
+      "Italia",
+      "Perú",
+      "España",
+      "Uruguay"
+    ],
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Acueducto_de_Segovia_01.jpg/320px-Acueducto_de_Segovia_01.jpg",
+    "extraData": {
+      "monumentName": "Acueducto de Segovia",
+      "city": "Segovia",
+      "country": "España",
+      "monumentType": "acueducto"
+    }
+  },
+  {
+    "id": "monument_country_93",
+    "type": "monument_country",
+    "difficulty": "easy",
+    "questionText": "¿Partenón está ubicado en qué país?",
+    "correctAnswer": "Grecia",
+    "options": [
+      "Grecia",
+      "Sudáfrica",
+      "Estados Unidos",
+      "Emiratos Árabes Unidos"
+    ],
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/Parthenon_from_west.jpg/320px-Parthenon_from_west.jpg",
+    "extraData": {
+      "monumentName": "Partenón",
+      "city": "Atenas",
+      "country": "Grecia",
+      "monumentType": "templo"
+    }
+  },
+  {
+    "id": "monument_city_93",
+    "type": "monument_city",
+    "difficulty": "medium",
+    "questionText": "¿Pirámides de Meroe se encuentra en qué ciudad?",
+    "correctAnswer": "Meroe",
+    "options": [
+      "Meroe",
+      "Barcelona",
+      "Washington D.C.",
+      "Sídney"
+    ],
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/Meroe_Pyramids_03.jpg/320px-Meroe_Pyramids_03.jpg",
+    "extraData": {
+      "monumentName": "Pirámides de Meroe",
+      "city": "Meroe",
+      "country": "Sudán",
+      "monumentType": "pirámide"
+    }
+  },
+  {
+    "id": "monument_country_94",
+    "type": "monument_country",
+    "difficulty": "easy",
+    "questionText": "¿En qué país se encuentra Catedral de San Basilio?",
+    "correctAnswer": "Rusia",
+    "options": [
+      "Camboya",
+      "Rusia",
+      "Austria",
+      "Egipto"
+    ],
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/St_Basils_Cathedral_-_2008.jpg/320px-St_Basils_Cathedral_-_2008.jpg",
+    "extraData": {
+      "monumentName": "Catedral de San Basilio",
+      "city": "Moscú",
+      "country": "Rusia",
+      "monumentType": "catedral"
+    }
+  },
+  {
+    "id": "monument_country_95",
+    "type": "monument_country",
+    "difficulty": "easy",
+    "questionText": "¿Casa Blanca está ubicado en qué país?",
+    "correctAnswer": "Estados Unidos",
+    "options": [
+      "Sudáfrica",
+      "Estados Unidos",
+      "Turquía",
+      "Portugal"
+    ],
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/White_House_north_2018.jpg/320px-White_House_north_2018.jpg",
+    "extraData": {
+      "monumentName": "Casa Blanca",
+      "city": "Washington D.C.",
+      "country": "Estados Unidos",
+      "monumentType": "palacio"
+    }
+  },
+  {
+    "id": "monument_city_94",
+    "type": "monument_city",
+    "difficulty": "medium",
+    "questionText": "¿Templo de Borobudur se encuentra en qué ciudad?",
+    "correctAnswer": "Yogyakarta",
+    "options": [
+      "Río de Janeiro",
+      "Yogyakarta",
+      "Colonia",
+      "Estado de México"
+    ],
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Borobudur-Temple-02.jpg/320px-Borobudur-Temple-02.jpg",
+    "extraData": {
+      "monumentName": "Templo de Borobudur",
+      "city": "Yogyakarta",
+      "country": "Indonesia",
+      "monumentType": "templo"
+    }
+  },
+  {
+    "id": "monument_city_95",
+    "type": "monument_city",
+    "difficulty": "medium",
+    "questionText": "¿En qué ciudad se encuentra Angkor Wat?",
+    "correctAnswer": "Siem Reap",
+    "options": [
+      "Viena",
+      "Moscú",
+      "Agra",
+      "Siem Reap"
+    ],
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/Angkor_Wat.jpg/320px-Angkor_Wat.jpg",
+    "extraData": {
+      "monumentName": "Angkor Wat",
+      "city": "Siem Reap",
+      "country": "Camboya",
+      "monumentType": "templo"
+    }
+  },
+  {
+    "id": "monument_country_96",
+    "type": "monument_country",
+    "difficulty": "easy",
+    "questionText": "¿En qué país se encuentra Castillo de Praga?",
+    "correctAnswer": "República Checa",
+    "options": [
+      "Reino Unido",
+      "India",
+      "República Checa",
+      "Emiratos Árabes Unidos"
+    ],
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Prague_Panorama.jpg/320px-Prague_Panorama.jpg",
+    "extraData": {
+      "monumentName": "Castillo de Praga",
+      "city": "Praga",
+      "country": "República Checa",
+      "monumentType": "castillo"
+    }
+  },
+  {
+    "id": "monument_country_97",
+    "type": "monument_country",
+    "difficulty": "easy",
+    "questionText": "¿En qué país se encuentra Machu Picchu?",
+    "correctAnswer": "Perú",
+    "options": [
+      "Rusia",
+      "Brasil",
+      "Perú",
+      "Uruguay"
+    ],
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/Machu_Picchu%2C_Peru.jpg/320px-Machu_Picchu%2C_Peru.jpg",
+    "extraData": {
+      "monumentName": "Machu Picchu",
+      "city": "Cuzco",
+      "country": "Perú",
+      "monumentType": "ruinas"
+    }
+  },
+  {
+    "id": "monument_country_98",
+    "type": "monument_country",
+    "difficulty": "easy",
+    "questionText": "¿De qué país es Templo Dorado?",
+    "correctAnswer": "Japón",
+    "options": [
+      "China",
+      "Portugal",
+      "Japón",
+      "Uruguay"
+    ],
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/Kinkaku-ji_2014.jpg/320px-Kinkaku-ji_2014.jpg",
+    "extraData": {
+      "monumentName": "Templo Dorado",
+      "city": "Kioto",
+      "country": "Japón",
+      "monumentType": "templo"
+    }
+  },
+  {
+    "id": "monument_country_99",
+    "type": "monument_country",
+    "difficulty": "easy",
+    "questionText": "¿En qué país se encuentra London Eye?",
+    "correctAnswer": "Reino Unido",
+    "options": [
+      "Reino Unido",
+      "Turquía",
+      "Birmania",
+      "Perú"
+    ],
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/London_Eye_%28aerial%29.jpg/320px-London_Eye_%28aerial%29.jpg",
+    "extraData": {
+      "monumentName": "London Eye",
+      "city": "Londres",
+      "country": "Reino Unido",
+      "monumentType": "rueda"
+    }
+  },
+  {
+    "id": "monument_city_96",
+    "type": "monument_city",
+    "difficulty": "medium",
+    "questionText": "¿Torre Burj Khalifa se encuentra en qué ciudad?",
+    "correctAnswer": "Dubái",
+    "options": [
+      "Yogyakarta",
+      "Meroe",
+      "Bagan",
+      "Dubái"
+    ],
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/Burj_Khalifa_2014_Dec.jpg/320px-Burj_Khalifa_2014_Dec.jpg",
+    "extraData": {
+      "monumentName": "Torre Burj Khalifa",
+      "city": "Dubái",
+      "country": "Emiratos Árabes Unidos",
+      "monumentType": "rascacielos"
+    }
+  },
+  {
+    "id": "monument_country_100",
+    "type": "monument_country",
+    "difficulty": "easy",
+    "questionText": "¿En qué país se encuentra Puente de Brooklyn?",
+    "correctAnswer": "Estados Unidos",
+    "options": [
+      "Birmania",
+      "Portugal",
+      "China",
+      "Estados Unidos"
+    ],
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Brooklyn_Bridge.jpg/320px-Brooklyn_Bridge.jpg",
+    "extraData": {
+      "monumentName": "Puente de Brooklyn",
+      "city": "Nueva York",
+      "country": "Estados Unidos",
+      "monumentType": "puente"
+    }
+  },
+  {
+    "id": "monument_city_97",
+    "type": "monument_city",
+    "difficulty": "medium",
+    "questionText": "¿Cuál es la ciudad de Ópera de Sídney?",
+    "correctAnswer": "Sídney",
+    "options": [
+      "Shanghái",
+      "Ciudad del Cabo",
+      "Honshu",
+      "Sídney"
+    ],
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/40/Sydney_Opera_House_Sails.jpg/320px-Sydney_Opera_House_Sails.jpg",
+    "extraData": {
+      "monumentName": "Ópera de Sídney",
+      "city": "Sídney",
+      "country": "Australia",
+      "monumentType": "teatro"
+    }
+  },
+  {
+    "id": "monument_country_101",
+    "type": "monument_country",
+    "difficulty": "medium",
+    "questionText": "¿En qué país se encuentra Puentes de Viena?",
+    "correctAnswer": "Austria",
+    "options": [
+      "Rusia",
+      "Austria",
+      "Jordania",
+      "Turquía"
+    ],
+    "imageUrl": null,
+    "extraData": {
+      "monumentName": "Puentes de Viena",
+      "city": "Viena",
+      "country": "Austria",
+      "monumentType": "puente"
+    }
+  },
+  {
+    "id": "monument_city_98",
+    "type": "monument_city",
+    "difficulty": "medium",
+    "questionText": "¿En qué ciudad se encuentra Torre del Ángel?",
+    "correctAnswer": "Ciudad de México",
+    "options": [
+      "Montevideo",
+      "Toronto",
+      "Vaticano",
+      "Ciudad de México"
+    ],
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Torre_Latinoamericana_2019.jpg/320px-Torre_Latinoamericana_2019.jpg",
+    "extraData": {
+      "monumentName": "Torre del Ángel",
+      "city": "Ciudad de México",
+      "country": "México",
+      "monumentType": "torre"
+    }
+  },
+  {
+    "id": "monument_country_102",
+    "type": "monument_country",
+    "difficulty": "easy",
+    "questionText": "¿En qué país se encuentra Puente Carlos?",
+    "correctAnswer": "República Checa",
+    "options": [
+      "República Checa",
+      "Jordania",
+      "Portugal",
+      "Sudáfrica"
+    ],
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/71/Karluv_most_prague.jpg/320px-Karluv_most_prague.jpg",
+    "extraData": {
+      "monumentName": "Puente Carlos",
+      "city": "Praga",
+      "country": "República Checa",
+      "monumentType": "puente"
+    }
+  },
+  {
+    "id": "monument_city_99",
+    "type": "monument_city",
+    "difficulty": "medium",
+    "questionText": "¿Cuál es la ciudad de Palacio Taj?",
+    "correctAnswer": "Agra",
+    "options": [
+      "Agra",
+      "Queensland",
+      "Segovia",
+      "Füssen"
+    ],
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Taj_Mahal_Agra.jpg/320px-Taj_Mahal_Agra.jpg",
+    "extraData": {
+      "monumentName": "Palacio Taj",
+      "city": "Agra",
+      "country": "India",
+      "monumentType": "palacio"
+    }
+  },
+  {
+    "id": "monument_country_103",
+    "type": "monument_country",
+    "difficulty": "easy",
+    "questionText": "¿En qué país se encuentra Alhambra?",
+    "correctAnswer": "España",
+    "options": [
+      "España",
+      "Perú",
+      "Indonesia",
+      "Portugal"
+    ],
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Alhambra_-_Granada%2C_Espa%C3%B1a.jpg/320px-Alhambra_-_Granada%2C_Espa%C3%B1a.jpg",
+    "extraData": {
+      "monumentName": "Alhambra",
+      "city": "Granada",
+      "country": "España",
+      "monumentType": "palacio"
+    }
+  },
+  {
+    "id": "monument_country_104",
+    "type": "monument_country",
+    "difficulty": "easy",
+    "questionText": "¿De qué país es Big Ben?",
+    "correctAnswer": "Reino Unido",
+    "options": [
+      "Japón",
+      "Reino Unido",
+      "Perú",
+      "Camboya"
+    ],
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/London_-_Big_Ben_and_the_Houses_of_Parliament.jpg/320px-London_-_Big_Ben_and_the_Houses_of_Parliament.jpg",
+    "extraData": {
+      "monumentName": "Big Ben",
+      "city": "Londres",
+      "country": "Reino Unido",
+      "monumentType": "reloj"
+    }
+  },
+  {
+    "id": "monument_city_100",
+    "type": "monument_city",
+    "difficulty": "medium",
+    "questionText": "¿En qué ciudad se encuentra Catedral de San Basilio?",
+    "correctAnswer": "Moscú",
+    "options": [
+      "El Cairo",
+      "Moscú",
+      "Tokio",
+      "Siem Reap"
+    ],
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/St_Basils_Cathedral_-_2008.jpg/320px-St_Basils_Cathedral_-_2008.jpg",
+    "extraData": {
+      "monumentName": "Catedral de San Basilio",
+      "city": "Moscú",
+      "country": "Rusia",
+      "monumentType": "catedral"
+    }
+  },
+  {
+    "id": "monument_country_105",
+    "type": "monument_country",
+    "difficulty": "easy",
+    "questionText": "¿De qué país es Esfinge de Giza?",
+    "correctAnswer": "Egipto",
+    "options": [
+      "Portugal",
+      "Uruguay",
+      "Egipto",
+      "China"
+    ],
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Sphinx_Giza_Egypt.jpg/320px-Sphinx_Giza_Egypt.jpg",
+    "extraData": {
+      "monumentName": "Esfinge de Giza",
+      "city": "El Cairo",
+      "country": "Egipto",
+      "monumentType": "estatua"
+    }
+  },
+  {
+    "id": "monument_country_106",
+    "type": "monument_country",
+    "difficulty": "easy",
+    "questionText": "¿Hagia Sophia se encuentra en qué país?",
+    "correctAnswer": "Turquía",
+    "options": [
+      "Birmania",
+      "Turquía",
+      "China",
+      "Japón"
+    ],
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/Hagia_Sophia_Mars_2013.jpg/320px-Hagia_Sophia_Mars_2013.jpg",
+    "extraData": {
+      "monumentName": "Hagia Sophia",
+      "city": "Estambul",
+      "country": "Turquía",
+      "monumentType": "iglesia"
+    }
+  },
+  {
+    "id": "monument_city_101",
+    "type": "monument_city",
+    "difficulty": "medium",
+    "questionText": "¿Big Ben se encuentra en qué ciudad?",
+    "correctAnswer": "Londres",
+    "options": [
+      "Londres",
+      "Viena",
+      "Praga",
+      "Granada"
+    ],
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/London_-_Big_Ben_and_the_Houses_of_Parliament.jpg/320px-London_-_Big_Ben_and_the_Houses_of_Parliament.jpg",
+    "extraData": {
+      "monumentName": "Big Ben",
+      "city": "Londres",
+      "country": "Reino Unido",
+      "monumentType": "reloj"
+    }
+  },
+  {
+    "id": "monument_city_102",
+    "type": "monument_city",
+    "difficulty": "medium",
+    "questionText": "¿En qué ciudad se encuentra Golden Gate Bridge?",
+    "correctAnswer": "San Francisco",
+    "options": [
+      "Yucatán",
+      "San Francisco",
+      "Segovia",
+      "Estambul"
+    ],
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/GoldenGateBridge-001.jpg/320px-GoldenGateBridge-001.jpg",
+    "extraData": {
+      "monumentName": "Golden Gate Bridge",
+      "city": "San Francisco",
+      "country": "Estados Unidos",
+      "monumentType": "puente"
+    }
+  },
+  {
+    "id": "monument_city_103",
+    "type": "monument_city",
+    "difficulty": "medium",
+    "questionText": "¿En qué ciudad se encuentra Fuente de Trevi?",
+    "correctAnswer": "Roma",
+    "options": [
+      "Roma",
+      "Estado de México",
+      "Granada",
+      "Nueva York"
+    ],
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/Trevi_Fountain_%28Rome%29.jpg/320px-Trevi_Fountain_%28Rome%29.jpg",
+    "extraData": {
+      "monumentName": "Fuente de Trevi",
+      "city": "Roma",
+      "country": "Italia",
+      "monumentType": "fuente"
+    }
+  },
+  {
+    "id": "monument_city_104",
+    "type": "monument_city",
+    "difficulty": "medium",
+    "questionText": "¿Templo del Gran Buda se encuentra en qué ciudad?",
+    "correctAnswer": "Kamakura",
+    "options": [
+      "Buenos Aires",
+      "Kamakura",
+      "Queensland",
+      "San Francisco"
+    ],
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/Kamakura_Budda_Daibutsu_front_1885.jpg/320px-Kamakura_Budda_Daibutsu_front_1885.jpg",
+    "extraData": {
+      "monumentName": "Templo del Gran Buda",
+      "city": "Kamakura",
+      "country": "Japón",
+      "monumentType": "templo"
+    }
+  },
+  {
+    "id": "monument_city_105",
+    "type": "monument_city",
+    "difficulty": "medium",
+    "questionText": "¿CN Tower está ubicado en qué ciudad?",
+    "correctAnswer": "Toronto",
+    "options": [
+      "Bagan",
+      "Barcelona",
+      "Toronto",
+      "Füssen"
+    ],
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Toronto_-_CN_Tower_%282007%29.jpg/320px-Toronto_-_CN_Tower_%282007%29.jpg",
+    "extraData": {
+      "monumentName": "CN Tower",
+      "city": "Toronto",
+      "country": "Canadá",
+      "monumentType": "torre"
+    }
+  },
+  {
+    "id": "monument_country_107",
+    "type": "monument_country",
+    "difficulty": "easy",
+    "questionText": "¿En qué país se encuentra Templo de Borobudur?",
+    "correctAnswer": "Indonesia",
+    "options": [
+      "Indonesia",
+      "Perú",
+      "Vaticano",
+      "Argentina"
+    ],
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Borobudur-Temple-02.jpg/320px-Borobudur-Temple-02.jpg",
+    "extraData": {
+      "monumentName": "Templo de Borobudur",
+      "city": "Yogyakarta",
+      "country": "Indonesia",
+      "monumentType": "templo"
+    }
+  },
+  {
+    "id": "monument_country_108",
+    "type": "monument_country",
+    "difficulty": "easy",
+    "questionText": "¿Torre de Pisa se encuentra en qué país?",
+    "correctAnswer": "Italia",
+    "options": [
+      "Estados Unidos",
+      "España",
+      "Italia",
+      "Turquía"
+    ],
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Tower_of_Pisa_%28cropped%29.jpg/320px-Tower_of_Pisa_%28cropped%29.jpg",
+    "extraData": {
+      "monumentName": "Torre de Pisa",
+      "city": "Pisa",
+      "country": "Italia",
+      "monumentType": "torre"
+    }
+  },
+  {
+    "id": "monument_city_106",
+    "type": "monument_city",
+    "difficulty": "medium",
+    "questionText": "¿En qué ciudad se encuentra Pirámides de Giza?",
+    "correctAnswer": "El Cairo",
+    "options": [
+      "San Petersburgo",
+      "San Francisco",
+      "El Cairo",
+      "Moscú"
+    ],
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Kheops-Pyramid.jpg/320px-Kheops-Pyramid.jpg",
+    "extraData": {
+      "monumentName": "Pirámides de Giza",
+      "city": "El Cairo",
+      "country": "Egipto",
+      "monumentType": "pirámide"
+    }
+  },
+  {
+    "id": "monument_country_109",
+    "type": "monument_country",
+    "difficulty": "easy",
+    "questionText": "¿Torre de Londres se encuentra en qué país?",
+    "correctAnswer": "Reino Unido",
+    "options": [
+      "Rusia",
+      "Reino Unido",
+      "China",
+      "Birmania"
+    ],
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/32/Tower_of_London_from_the_Shard.jpg/320px-Tower_of_London_from_the_Shard.jpg",
+    "extraData": {
+      "monumentName": "Torre de Londres",
+      "city": "Londres",
+      "country": "Reino Unido",
+      "monumentType": "torre"
+    }
+  }
+]

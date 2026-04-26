@@ -1,0 +1,155 @@
+{
+  "@@locale": "en",
+
+  "appTitle": "GeoQuiz Battle",
+
+  "loading": "Loading...",
+
+  "retry": "Retry",
+
+  "goHome": "Go Home",
+
+  "pageNotFound": "Page not found",
+
+  "explorer": "EXPLORER",
+
+  "streak": "Streak: {count}",
+
+  "globalRanking": "GLOBAL RANKING",
+
+  "eloScore": "ELO Score",
+
+  "quickPlay": "Quick Play",
+
+  "quickPlayDesc": "Jump into an instant casual match.",
+
+  "ranked": "Ranked",
+
+  "rankedDesc": "Compete for ELO and climb the global ranking.",
+
+  "multiplayer": "Multiplayer",
+
+  "multiplayerDesc": "Challenge other players in real-time.",
+
+  "ghostRun": "Ghost Run",
+
+  "ghostRunDesc": "Practice against the best past matches.",
+
+  "leaderboard": "Leaderboard",
+
+  "leaderboardDesc": "See your position compared to other players.",
+
+  "leaderboardLoading": "Loading leaderboard...",
+
+  "leaderboardError": "Error loading leaderboard",
+
+  "noPlayers": "No players yet",
+
+  "yourPosition": "YOUR POSITION",
+
+  "elo": "ELO",
+
+  "you": "You",
+
+  "history": "History",
+
+  "matchHistory": "Match History",
+
+  "matchHistoryDesc": "Review your past battles.",
+
+  "seeAll": "See all",
+
+  "noMatchesYet": "No matches yet",
+
+  "noMatchesHint": "Play your first match to see your history.",
+
+  "victories": "Victories",
+
+  "defeats": "Defeats",
+
+  "winRate": "Win Rate",
+
+  "eloChange": "ELO",
+
+  "victory": "Victory!",
+
+  "defeat": "Defeat",
+
+  "draw": "Draw",
+
+  "matchHistoryTitle": "Match History",
+
+  "all": "All",
+
+  "casual": "Casual",
+
+  "rankedFilter": "Ranked",
+
+  "youVs": "You vs",
+
+  "eloChangeLabel": "ELO",
+
+  "noMatchesFilter": "No matches with this filter",
+
+  "quickActions": "Quick Actions",
+
+  "matchmakingTitle": "Finding match...",
+
+  "matchmakingSearching": "Searching for opponent...",
+
+  "matchmakingCancel": "Cancel",
+
+  "matchmakingFound": "Opponent found!",
+
+  "loginWelcome": "Welcome to GeoC",
+
+  "loginSubtitle": "Show off your geography knowledge",
+
+  "loginGoogle": "Sign in with Google",
+
+  "loginApple": "Sign in with Apple",
+
+  "loginAnonymous": "Continue without account",
+
+  "gameNext": "Next",
+
+  "gameFinish": "Finish",
+
+  "gameResults": "Results",
+
+  "gamePoints": "{points} points",
+
+  "gameCorrect": "Correct!",
+
+  "gameIncorrect": "Incorrect",
+
+  "gameTimeLeft": "{seconds}s",
+
+  "typeYourAnswer": "Type your answer...",
+
+  "submitAnswer": "Submit",
+
+  "reportQuestion": "Report question",
+
+  "reportReason": "Report reason",
+
+  "reportSubmitted": "Report submitted. Thanks!",
+
+  "friends": "Friends",
+
+  "addFriend": "Add friend",
+
+  "noFriends": "You don't have friends yet",
+
+  "noFriendsHint": "Add friends to compete against them.",
+
+  "online": "Online",
+
+  "offline": "Offline",
+
+  "today": "Today",
+
+  "yesterday": "Yesterday",
+
+  "daysAgo": "{days} days ago"
+}

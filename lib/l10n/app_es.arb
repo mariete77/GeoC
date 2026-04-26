@@ -1,0 +1,243 @@
+{
+  "@@locale": "es",
+
+  "appTitle": "GeoQuiz Battle",
+  "@appTitle": { "description": "App name" },
+
+  "loading": "Cargando...",
+  "@loading": { "description": "Generic loading text" },
+
+  "retry": "Reintentar",
+  "@retry": { "description": "Retry button" },
+
+  "goHome": "Ir al Inicio",
+  "@goHome": { "description": "Go home button" },
+
+  "pageNotFound": "Página no encontrada",
+  "@pageNotFound": { "description": "404 error text" },
+
+  "explorer": "EXPLORADOR",
+  "@explorer": { "description": "Explorer label above player name" },
+
+  "streak": "Streak: {count}",
+  "@streak": {
+    "description": "Win streak badge",
+    "placeholders": { "count": { "type": "int" } }
+  },
+
+  "globalRanking": "CLASIFICACIÓN GLOBAL",
+  "@globalRanking": { "description": "Global ranking label" },
+
+  "eloScore": "Puntuación ELO",
+  "@eloScore": { "description": "ELO score subtitle" },
+
+  "quickPlay": "Partida Rápida",
+  "@quickPlay": { "description": "Quick Play game mode" },
+
+  "quickPlayDesc": "Salta a una partida casual instantánea.",
+  "@quickPlayDesc": { "description": "Quick Play description" },
+
+  "ranked": "Clasificatoria",
+  "@ranked": { "description": "Ranked game mode" },
+
+  "rankedDesc": "Compite por ELO y sube en el ranking global.",
+  "@rankedDesc": { "description": "Ranked description" },
+
+  "multiplayer": "Multijugador",
+  "@multiplayer": { "description": "Multiplayer game mode" },
+
+  "multiplayerDesc": "Enfréntate a otros jugadores en tiempo real.",
+  "@multiplayerDesc": { "description": "Multiplayer description" },
+
+  "ghostRun": "Fantasma",
+  "@ghostRun": { "description": "Ghost Run game mode" },
+
+  "ghostRunDesc": "Practica contra las mejores partidas pasadas.",
+  "@ghostRunDesc": { "description": "Ghost Run description" },
+
+  "leaderboard": "Clasificación",
+  "@leaderboard": { "description": "Leaderboard section title" },
+
+  "leaderboardDesc": "Mira tu posición respecto a los demás jugadores.",
+  "@leaderboardDesc": { "description": "Leaderboard card description" },
+
+  "leaderboardLoading": "Cargando clasificación...",
+  "@leaderboardLoading": { "description": "Loading leaderboard text" },
+
+  "leaderboardError": "Error al cargar clasificación",
+  "@leaderboardError": { "description": "Error loading leaderboard" },
+
+  "noPlayers": "No hay jugadores todavía",
+  "@noPlayers": { "description": "Empty leaderboard text" },
+
+  "yourPosition": "TU POSICIÓN",
+  "@yourPosition": { "description": "Your position label in leaderboard banner" },
+
+  "elo": "ELO",
+  "@elo": { "description": "ELO abbreviation" },
+
+  "you": "Tú",
+  "@you": { "description": "Refers to current user in leaderboard" },
+
+  "history": "Historial",
+  "@history": { "description": "History section title" },
+
+  "matchHistory": "Historial de Partidas",
+  "@matchHistory": { "description": "Match history card title" },
+
+  "matchHistoryDesc": "Revisa el resumen de tus batallas pasadas.",
+  "@matchHistoryDesc": { "description": "Match history card description" },
+
+  "seeAll": "Ver todo",
+  "@seeAll": { "description": "See all button" },
+
+  "noMatchesYet": "Sin partidas aún",
+  "@noMatchesYet": { "description": "No matches played yet" },
+
+  "noMatchesHint": "Juega tu primera partida para ver tu historial.",
+  "@noMatchesHint": { "description": "Hint when no matches" },
+
+  "victories": "Victorias",
+  "@victories": { "description": "Wins label" },
+
+  "defeats": "Derrotas",
+  "@defeats": { "description": "Losses label" },
+
+  "winRate": "Win Rate",
+  "@winRate": { "description": "Win rate label" },
+
+  "eloChange": "ELO",
+  "@eloChange": { "description": "ELO change label" },
+
+  "victory": "¡Victoria!",
+  "@victory": { "description": "Victory result" },
+
+  "defeat": "Derrota",
+  "@defeat": { "description": "Defeat result" },
+
+  "draw": "Empate",
+  "@draw": { "description": "Draw result" },
+
+  "matchHistoryTitle": "Historial de Partidas",
+  "@matchHistoryTitle": { "description": "Match history screen title" },
+
+  "all": "Todos",
+  "@all": { "description": "Filter: all matches" },
+
+  "casual": "Casual",
+  "@casual": { "description": "Filter: casual matches" },
+
+  "rankedFilter": "Clasificatoria",
+  "@rankedFilter": { "description": "Filter: ranked matches" },
+
+  "youVs": "Tú vs",
+  "@youVs": { "description": "You vs opponent label" },
+
+  "eloChangeLabel": "ELO",
+  "@eloChangeLabel": { "description": "ELO change in match tile" },
+
+  "noMatchesFilter": "No hay partidas con este filtro",
+  "@noMatchesFilter": { "description": "No matches for selected filter" },
+
+  "quickActions": "Acciones rápidas",
+  "@quickActions": { "description": "Quick actions section title" },
+
+  "matchmakingTitle": "Buscando partida...",
+  "@matchmakingTitle": { "description": "Matchmaking screen title" },
+
+  "matchmakingSearching": "Buscando oponente...",
+  "@matchmakingSearching": { "description": "Searching for opponent" },
+
+  "matchmakingCancel": "Cancelar",
+  "@matchmakingCancel": { "description": "Cancel matchmaking" },
+
+  "matchmakingFound": "¡Oponente encontrado!",
+  "@matchmakingFound": { "description": "Opponent found" },
+
+  "loginWelcome": "Bienvenido a GeoC",
+  "@loginWelcome": { "description": "Login screen welcome" },
+
+  "loginSubtitle": "Demuestra tus conocimientos de geografía",
+  "@loginSubtitle": { "description": "Login screen subtitle" },
+
+  "loginGoogle": "Iniciar sesión con Google",
+  "@loginGoogle": { "description": "Google sign in button" },
+
+  "loginApple": "Iniciar sesión con Apple",
+  "@loginApple": { "description": "Apple sign in button" },
+
+  "loginAnonymous": "Continuar sin cuenta",
+  "@loginAnonymous": { "description": "Anonymous login button" },
+
+  "gameNext": "Siguiente",
+  "@gameNext": { "description": "Next question button" },
+
+  "gameFinish": "Finalizar",
+  "@gameFinish": { "description": "Finish game button" },
+
+  "gameResults": "Resultados",
+  "@gameResults": { "description": "Game results title" },
+
+  "gamePoints": "{points} puntos",
+  "@gamePoints": {
+    "description": "Points scored",
+    "placeholders": { "points": { "type": "int" } }
+  },
+
+  "gameCorrect": "¡Correcto!",
+  "@gameCorrect": { "description": "Correct answer feedback" },
+
+  "gameIncorrect": "Incorrecto",
+  "@gameIncorrect": { "description": "Incorrect answer feedback" },
+
+  "gameTimeLeft": "{seconds}s",
+  "@gameTimeLeft": {
+    "description": "Seconds left",
+    "placeholders": { "seconds": { "type": "int" } }
+  },
+
+  "typeYourAnswer": "Escribe tu respuesta...",
+  "@typeYourAnswer": { "description": "Type answer hint" },
+
+  "submitAnswer": "Enviar",
+  "@submitAnswer": { "description": "Submit answer button" },
+
+  "reportQuestion": "Reportar pregunta",
+  "@reportQuestion": { "description": "Report question button" },
+
+  "reportReason": "Motivo del reporte",
+  "@reportReason": { "description": "Report reason label" },
+
+  "reportSubmitted": "Reporte enviado. ¡Gracias!",
+  "@reportSubmitted": { "description": "Report submitted confirmation" },
+
+  "friends": "Amigos",
+  "@friends": { "description": "Friends screen title" },
+
+  "addFriend": "Añadir amigo",
+  "@addFriend": { "description": "Add friend button" },
+
+  "noFriends": "No tienes amigos aún",
+  "@noFriends": { "description": "No friends message" },
+
+  "noFriendsHint": "Añade amigos para competir contra ellos.",
+  "@noFriendsHint": { "description": "No friends hint" },
+
+  "online": "En línea",
+  "@online": { "description": "Online status" },
+
+  "offline": "Desconectado",
+  "@offline": { "description": "Offline status" },
+
+  "today": "Hoy",
+  "@today": { "description": "Today label" },
+
+  "yesterday": "Ayer",
+  "@yesterday": { "description": "Yesterday label" },
+
+  "daysAgo": "hace {days} días",
+  "@daysAgo": {
+    "description": "Days ago",
+    "placeholders": { "days": { "type": "int" } }
+  }
+}

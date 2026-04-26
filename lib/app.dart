@@ -15,6 +15,7 @@ import 'package:geoquiz_battle/presentation/providers/multiplayer_provider.dart'
 import 'package:geoquiz_battle/domain/entities/question.dart';
 import 'package:geoquiz_battle/core/theme/app_theme.dart';
 import 'package:geoquiz_battle/presentation/widgets/common/geoc_page_transitions.dart';
+import 'package:geoquiz_battle/l10n/generated/app_localizations.dart';
 
 final routerProvider = Provider<GoRouter>((ref) {
   final authStreamState = ref.watch(authStateChangesProvider);
@@ -148,6 +149,9 @@ class GeoQuizBattleApp extends ConsumerWidget {
       theme: AppTheme.lightTheme,
       darkTheme: AppTheme.darkTheme,
       themeMode: ThemeMode.light,
+      localizationsDelegates: AppLocalizations.localizationsDelegates,
+      supportedLocales: AppLocalizations.supportedLocales,
+      locale: const Locale('es'),
       routerDelegate: router.routerDelegate,
       routeInformationProvider: router.routeInformationProvider,
       routeInformationParser: router.routeInformationParser,

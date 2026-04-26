@@ -1,0 +1,1759 @@
+[
+  {
+    "id": "lake_62040",
+    "type": "lake",
+    "difficulty": "medium",
+    "questionText": "¿Qué lago es el más grande de México?",
+    "correctAnswer": "Lago de Cuitzeo",
+    "options": [
+      "Lago Todos los Santos",
+      "Lago de Cuitzeo",
+      "Lago Ness",
+      "Lago Gairdner"
+    ],
+    "extraData": {
+      "country": "México",
+      "lakeName": "Lago de Cuitzeo"
+    }
+  },
+  {
+    "id": "mountain_61049",
+    "type": "mountain",
+    "difficulty": "medium",
+    "questionText": "¿Cuál es el punto más alto de México?",
+    "correctAnswer": "Popocatépetl",
+    "options": [
+      "Monte Bianco",
+      "Iztaccíhuatl",
+      "Monte Kosciuszko",
+      "Popocatépetl"
+    ],
+    "extraData": {
+      "country": "México",
+      "mountainName": "Popocatépetl"
+    }
+  },
+  {
+    "id": "mountain_61051",
+    "type": "mountain",
+    "difficulty": "medium",
+    "questionText": "¿Cuál es el punto más alto de Nepal?",
+    "correctAnswer": "Everest",
+    "options": [
+      "Everest",
+      "Ritacuba Blanco",
+      "Wildspitze",
+      "Makalu"
+    ],
+    "extraData": {
+      "country": "Nepal",
+      "mountainName": "Everest"
+    }
+  },
+  {
+    "id": "mountain_61040",
+    "type": "mountain",
+    "difficulty": "medium",
+    "questionText": "¿La montaña más alta de Italia es...?",
+    "correctAnswer": "Monte Bianco",
+    "options": [
+      "Sajama",
+      "Monte Rainier",
+      "Bonete",
+      "Monte Bianco"
+    ],
+    "extraData": {
+      "country": "Italia",
+      "mountainName": "Monte Bianco"
+    }
+  },
+  {
+    "id": "city_63037",
+    "type": "city",
+    "difficulty": "easy",
+    "questionText": "¿Qué ciudad está ubicada en India?",
+    "correctAnswer": "Delhi",
+    "options": [
+      "Arequipa",
+      "Sevilla",
+      "Moscú",
+      "Delhi"
+    ],
+    "extraData": {
+      "cityName": "Delhi",
+      "country": "India"
+    }
+  },
+  {
+    "id": "lake_62038",
+    "type": "lake",
+    "difficulty": "medium",
+    "questionText": "¿Qué lago es el más grande de México?",
+    "correctAnswer": "Lago de Chapala",
+    "options": [
+      "Lago Todos los Santos",
+      "Lago Junín",
+      "Lago de Annecy",
+      "Lago de Chapala"
+    ],
+    "extraData": {
+      "country": "México",
+      "lakeName": "Lago de Chapala"
+    }
+  },
+  {
+    "id": "city_63045",
+    "type": "city",
+    "difficulty": "easy",
+    "questionText": "¿Cuál de estas ciudades pertenece a Kenia?",
+    "correctAnswer": "Mombasa",
+    "options": [
+      "Mombasa",
+      "Nantes",
+      "Shenzhen",
+      "Ciudad Juárez"
+    ],
+    "extraData": {
+      "cityName": "Mombasa",
+      "country": "Kenia"
+    }
+  },
+  {
+    "id": "lake_62041",
+    "type": "lake",
+    "difficulty": "medium",
+    "questionText": "¿Cuál es el lago más grande de Perú?",
+    "correctAnswer": "Lago Titicaca",
+    "options": [
+      "Lago Titicaca",
+      "Lago Baikal",
+      "Lago Poyang",
+      "Lago Chilka"
+    ],
+    "extraData": {
+      "country": "Perú",
+      "lakeName": "Lago Titicaca"
+    }
+  },
+  {
+    "id": "city_63043",
+    "type": "city",
+    "difficulty": "easy",
+    "questionText": "¿Qué ciudad está ubicada en Japón?",
+    "correctAnswer": "Osaka",
+    "options": [
+      "Trujillo",
+      "Chicago",
+      "Alejandría",
+      "Osaka"
+    ],
+    "extraData": {
+      "cityName": "Osaka",
+      "country": "Japón"
+    }
+  },
+  {
+    "id": "river_60046",
+    "type": "river",
+    "difficulty": "medium",
+    "questionText": "¿Cuál es el principal río de Perú?",
+    "correctAnswer": "Amazonas",
+    "options": [
+      "Tone",
+      "Colorado",
+      "Tajo",
+      "Amazonas"
+    ],
+    "extraData": {
+      "country": "Perú",
+      "riverName": "Amazonas"
+    }
+  },
+  {
+    "id": "river_60037",
+    "type": "river",
+    "difficulty": "medium",
+    "questionText": "¿Cuál es el río más largo de Italia?",
+    "correctAnswer": "Po",
+    "options": [
+      "Adigio",
+      "Murray",
+      "Po",
+      "Yangtsé"
+    ],
+    "extraData": {
+      "country": "Italia",
+      "riverName": "Po"
+    }
+  },
+  {
+    "id": "mountain_61044",
+    "type": "mountain",
+    "difficulty": "medium",
+    "questionText": "¿Cuál es la montaña más alta de Japón?",
+    "correctAnswer": "Monte Kita",
+    "options": [
+      "Lhotse",
+      "Monte Rainier",
+      "Monte Bianco",
+      "Monte Kita"
+    ],
+    "extraData": {
+      "country": "Japón",
+      "mountainName": "Monte Kita"
+    }
+  },
+  {
+    "id": "mountain_61042",
+    "type": "mountain",
+    "difficulty": "medium",
+    "questionText": "¿Qué pico es el más alto de Italia?",
+    "correctAnswer": "Grossglockner",
+    "options": [
+      "Grossglockner",
+      "Monte Bianco",
+      "Pico 31 de Março",
+      "Schneekoppe"
+    ],
+    "extraData": {
+      "country": "Italia",
+      "mountainName": "Grossglockner"
+    }
+  },
+  {
+    "id": "river_60042",
+    "type": "river",
+    "difficulty": "medium",
+    "questionText": "¿Cuál es el principal río de Japón?",
+    "correctAnswer": "Ishikari",
+    "options": [
+      "Tíber",
+      "Ishikari",
+      "Elba",
+      "Tajo"
+    ],
+    "extraData": {
+      "country": "Japón",
+      "riverName": "Ishikari"
+    }
+  },
+  {
+    "id": "mountain_61054",
+    "type": "mountain",
+    "difficulty": "medium",
+    "questionText": "¿Cuál es el punto más alto de Perú?",
+    "correctAnswer": "Huascarán",
+    "options": [
+      "Twins Spire",
+      "Monte Lucania",
+      "Pico Whitney",
+      "Huascarán"
+    ],
+    "extraData": {
+      "country": "Perú",
+      "mountainName": "Huascarán"
+    }
+  },
+  {
+    "id": "lake_62034",
+    "type": "lake",
+    "difficulty": "medium",
+    "questionText": "¿Cuál es el principal lago de India?",
+    "correctAnswer": "Lago Kolleru",
+    "options": [
+      "Lago de Itaipu",
+      "Lago Huron",
+      "Lago Kolleru",
+      "Lago General Carrera"
+    ],
+    "extraData": {
+      "country": "India",
+      "lakeName": "Lago Kolleru"
+    }
+  },
+  {
+    "id": "lake_62043",
+    "type": "lake",
+    "difficulty": "medium",
+    "questionText": "¿Cuál es el principal lago de Perú?",
+    "correctAnswer": "Lago Parón",
+    "options": [
+      "Lago Parón",
+      "Lago Müritz",
+      "Lago de Cuitzeo",
+      "Lago Ness"
+    ],
+    "extraData": {
+      "country": "Perú",
+      "lakeName": "Lago Parón"
+    }
+  },
+  {
+    "id": "city_63048",
+    "type": "city",
+    "difficulty": "easy",
+    "questionText": "¿Guadalajara es una ciudad de qué país?",
+    "correctAnswer": "México",
+    "options": [
+      "Kenia",
+      "Brasil",
+      "Estados Unidos",
+      "México"
+    ],
+    "extraData": {
+      "cityName": "Guadalajara",
+      "country": "México"
+    }
+  },
+  {
+    "id": "lake_62039",
+    "type": "lake",
+    "difficulty": "medium",
+    "questionText": "¿Cuál es el lago más grande de México?",
+    "correctAnswer": "Lago de Pátzcuaro",
+    "options": [
+      "Lago Como",
+      "Lago Dongting",
+      "Lago de Ginebra",
+      "Lago de Pátzcuaro"
+    ],
+    "extraData": {
+      "country": "México",
+      "lakeName": "Lago de Pátzcuaro"
+    }
+  },
+  {
+    "id": "city_63044",
+    "type": "city",
+    "difficulty": "easy",
+    "questionText": "¿La ciudad de Kioto está en qué país?",
+    "correctAnswer": "Japón",
+    "options": [
+      "Canadá",
+      "Austria",
+      "Italia",
+      "Japón"
+    ],
+    "extraData": {
+      "cityName": "Kioto",
+      "country": "Japón"
+    }
+  },
+  {
+    "id": "lake_62046",
+    "type": "lake",
+    "difficulty": "medium",
+    "questionText": "¿Qué lago es el más grande de Perú?",
+    "correctAnswer": "Lago Parón",
+    "options": [
+      "Lago Junín",
+      "Lago Parón",
+      "Gran Lago del Esclavo",
+      "Lago de Pátzcuaro"
+    ],
+    "extraData": {
+      "country": "Perú",
+      "lakeName": "Lago Parón"
+    }
+  },
+  {
+    "id": "city_63057",
+    "type": "city",
+    "difficulty": "easy",
+    "questionText": "¿Qué ciudad está ubicada en Japón?",
+    "correctAnswer": "Osaka",
+    "options": [
+      "Osaka",
+      "Bilbao",
+      "Frankfurt",
+      "Phoenix"
+    ],
+    "extraData": {
+      "cityName": "Osaka",
+      "country": "Japón"
+    }
+  },
+  {
+    "id": "city_63068",
+    "type": "city",
+    "difficulty": "easy",
+    "questionText": "¿La ciudad de Arequipa está en qué país?",
+    "correctAnswer": "Perú",
+    "options": [
+      "Chile",
+      "México",
+      "Colombia",
+      "Perú"
+    ],
+    "extraData": {
+      "cityName": "Arequipa",
+      "country": "Perú"
+    }
+  },
+  {
+    "id": "mountain_61059",
+    "type": "mountain",
+    "difficulty": "medium",
+    "questionText": "¿Cuál es el punto más alto de Perú?",
+    "correctAnswer": "Sajama",
+    "options": [
+      "Denali",
+      "Monte Elgon",
+      "Sajama",
+      "Popocatépetl"
+    ],
+    "extraData": {
+      "country": "Perú",
+      "mountainName": "Sajama"
+    }
+  },
+  {
+    "id": "river_60049",
+    "type": "river",
+    "difficulty": "medium",
+    "questionText": "¿Cuál es el río más largo de Italia?",
+    "correctAnswer": "Adigio",
+    "options": [
+      "Lena",
+      "Churchill",
+      "Adigio",
+      "Balsas"
+    ],
+    "extraData": {
+      "country": "Italia",
+      "riverName": "Adigio"
+    }
+  },
+  {
+    "id": "city_63065",
+    "type": "city",
+    "difficulty": "easy",
+    "questionText": "¿Qué ciudad está ubicada en México?",
+    "correctAnswer": "Monterrey",
+    "options": [
+      "Monterrey",
+      "Córdoba",
+      "Barranquilla",
+      "Pretoria"
+    ],
+    "extraData": {
+      "cityName": "Monterrey",
+      "country": "México"
+    }
+  },
+  {
+    "id": "city_63071",
+    "type": "city",
+    "difficulty": "easy",
+    "questionText": "¿Piura es una ciudad de qué país?",
+    "correctAnswer": "Perú",
+    "options": [
+      "Egipto",
+      "India",
+      "Perú",
+      "Kenia"
+    ],
+    "extraData": {
+      "cityName": "Piura",
+      "country": "Perú"
+    }
+  },
+  {
+    "id": "city_63054",
+    "type": "city",
+    "difficulty": "easy",
+    "questionText": "¿Turín es una ciudad de qué país?",
+    "correctAnswer": "Italia",
+    "options": [
+      "Colombia",
+      "Italia",
+      "Argentina",
+      "México"
+    ],
+    "extraData": {
+      "cityName": "Turín",
+      "country": "Italia"
+    }
+  },
+  {
+    "id": "city_63066",
+    "type": "city",
+    "difficulty": "easy",
+    "questionText": "¿Qué ciudad está ubicada en México?",
+    "correctAnswer": "Puebla",
+    "options": [
+      "Puebla",
+      "Nakuru",
+      "San Petersburgo",
+      "Birmingham"
+    ],
+    "extraData": {
+      "cityName": "Puebla",
+      "country": "México"
+    }
+  },
+  {
+    "id": "river_60057",
+    "type": "river",
+    "difficulty": "medium",
+    "questionText": "¿Cuál es el principal río de Perú?",
+    "correctAnswer": "Amazonas",
+    "options": [
+      "Amazonas",
+      "Guadiana",
+      "Indo",
+      "Duero"
+    ],
+    "extraData": {
+      "country": "Perú",
+      "riverName": "Amazonas"
+    }
+  },
+  {
+    "id": "river_60059",
+    "type": "river",
+    "difficulty": "medium",
+    "questionText": "¿Qué río es el más largo de Perú?",
+    "correctAnswer": "Ucayali",
+    "options": [
+      "Amur",
+      "Ucayali",
+      "Uruguay",
+      "Douro"
+    ],
+    "extraData": {
+      "country": "Perú",
+      "riverName": "Ucayali"
+    }
+  },
+  {
+    "id": "river_60056",
+    "type": "river",
+    "difficulty": "medium",
+    "questionText": "¿Cuál es el río más largo de México?",
+    "correctAnswer": "Balsas",
+    "options": [
+      "Balsas",
+      "Mackenzie",
+      "San Lorenzo",
+      "Támesis"
+    ],
+    "extraData": {
+      "country": "México",
+      "riverName": "Balsas"
+    }
+  },
+  {
+    "id": "city_63060",
+    "type": "city",
+    "difficulty": "easy",
+    "questionText": "¿La ciudad de Mombasa está en qué país?",
+    "correctAnswer": "Kenia",
+    "options": [
+      "Kenia",
+      "Egipto",
+      "Chile",
+      "Italia"
+    ],
+    "extraData": {
+      "cityName": "Mombasa",
+      "country": "Kenia"
+    }
+  },
+  {
+    "id": "city_63058",
+    "type": "city",
+    "difficulty": "easy",
+    "questionText": "¿Kioto es una ciudad de qué país?",
+    "correctAnswer": "Japón",
+    "options": [
+      "Japón",
+      "Kenia",
+      "Chile",
+      "Estados Unidos"
+    ],
+    "extraData": {
+      "cityName": "Kioto",
+      "country": "Japón"
+    }
+  },
+  {
+    "id": "city_63061",
+    "type": "city",
+    "difficulty": "easy",
+    "questionText": "¿Qué ciudad está ubicada en Kenia?",
+    "correctAnswer": "Kisumu",
+    "options": [
+      "Kisumu",
+      "Osaka",
+      "Giza",
+      "Londres"
+    ],
+    "extraData": {
+      "cityName": "Kisumu",
+      "country": "Kenia"
+    }
+  },
+  {
+    "id": "river_60055",
+    "type": "river",
+    "difficulty": "medium",
+    "questionText": "¿Qué río es el más largo de México?",
+    "correctAnswer": "Pánuco",
+    "options": [
+      "Colorado",
+      "Nilo",
+      "Pánuco",
+      "Godavari"
+    ],
+    "extraData": {
+      "country": "México",
+      "riverName": "Pánuco"
+    }
+  },
+  {
+    "id": "city_63056",
+    "type": "city",
+    "difficulty": "easy",
+    "questionText": "¿Qué ciudad está ubicada en Japón?",
+    "correctAnswer": "Tokio",
+    "options": [
+      "Munich",
+      "Shenzhen",
+      "Tokio",
+      "Cúcuta"
+    ],
+    "extraData": {
+      "cityName": "Tokio",
+      "country": "Japón"
+    }
+  },
+  {
+    "id": "city_63064",
+    "type": "city",
+    "difficulty": "easy",
+    "questionText": "¿La ciudad de Guadalajara está en qué país?",
+    "correctAnswer": "México",
+    "options": [
+      "Australia",
+      "Francia",
+      "México",
+      "Alemania"
+    ],
+    "extraData": {
+      "cityName": "Guadalajara",
+      "country": "México"
+    }
+  },
+  {
+    "id": "city_63067",
+    "type": "city",
+    "difficulty": "easy",
+    "questionText": "¿Cuál de estas ciudades pertenece a México?",
+    "correctAnswer": "Ciudad Juárez",
+    "options": [
+      "Manchester",
+      "Salvador",
+      "Ciudad Juárez",
+      "Kioto"
+    ],
+    "extraData": {
+      "cityName": "Ciudad Juárez",
+      "country": "México"
+    }
+  },
+  {
+    "id": "mountain_61058",
+    "type": "mountain",
+    "difficulty": "medium",
+    "questionText": "¿La montaña más alta de Perú es...?",
+    "correctAnswer": "Coropuna",
+    "options": [
+      "Ritacuba Blanco",
+      "Monte Kosciuszko",
+      "Coropuna",
+      "Ortles"
+    ],
+    "extraData": {
+      "country": "Perú",
+      "mountainName": "Coropuna"
+    }
+  },
+  {
+    "id": "city_63059",
+    "type": "city",
+    "difficulty": "easy",
+    "questionText": "¿La ciudad de Yokohama está en qué país?",
+    "correctAnswer": "Japón",
+    "options": [
+      "Francia",
+      "Egipto",
+      "India",
+      "Japón"
+    ],
+    "extraData": {
+      "cityName": "Yokohama",
+      "country": "Japón"
+    }
+  },
+  {
+    "id": "city_63070",
+    "type": "city",
+    "difficulty": "easy",
+    "questionText": "¿Qué ciudad está ubicada en Perú?",
+    "correctAnswer": "Chiclayo",
+    "options": [
+      "Chiclayo",
+      "Mombasa",
+      "Houston",
+      "Nakuru"
+    ],
+    "extraData": {
+      "cityName": "Chiclayo",
+      "country": "Perú"
+    }
+  },
+  {
+    "id": "river_60050",
+    "type": "river",
+    "difficulty": "medium",
+    "questionText": "¿El río más largo de Japón se llama...?",
+    "correctAnswer": "Shinano",
+    "options": [
+      "Tíber",
+      "Magdalena",
+      "Danubio",
+      "Shinano"
+    ],
+    "extraData": {
+      "country": "Japón",
+      "riverName": "Shinano"
+    }
+  },
+  {
+    "id": "city_63063",
+    "type": "city",
+    "difficulty": "easy",
+    "questionText": "¿Eldoret es una ciudad de qué país?",
+    "correctAnswer": "Kenia",
+    "options": [
+      "Francia",
+      "Colombia",
+      "Australia",
+      "Kenia"
+    ],
+    "extraData": {
+      "cityName": "Eldoret",
+      "country": "Kenia"
+    }
+  },
+  {
+    "id": "river_60053",
+    "type": "river",
+    "difficulty": "medium",
+    "questionText": "¿Cuál es el principal río de México?",
+    "correctAnswer": "Río Bravo",
+    "options": [
+      "Colorado",
+      "Balsas",
+      "Río Bravo",
+      "Nelson"
+    ],
+    "extraData": {
+      "country": "México",
+      "riverName": "Río Bravo"
+    }
+  },
+  {
+    "id": "lake_62044",
+    "type": "lake",
+    "difficulty": "medium",
+    "questionText": "¿Qué lago es el más grande de Perú?",
+    "correctAnswer": "Lago Titicaca",
+    "options": [
+      "Lago Titicaca",
+      "Lago Superior",
+      "Lago General Carrera",
+      "Lago de Pátzcuaro"
+    ],
+    "extraData": {
+      "country": "Perú",
+      "lakeName": "Lago Titicaca"
+    }
+  },
+  {
+    "id": "river_60058",
+    "type": "river",
+    "difficulty": "medium",
+    "questionText": "¿Qué río es el más largo de Perú?",
+    "correctAnswer": "Marañón",
+    "options": [
+      "Biobío",
+      "Orange",
+      "Marañón",
+      "Cauca"
+    ],
+    "extraData": {
+      "country": "Perú",
+      "riverName": "Marañón"
+    }
+  },
+  {
+    "id": "city_63069",
+    "type": "city",
+    "difficulty": "easy",
+    "questionText": "¿Trujillo es una ciudad de qué país?",
+    "correctAnswer": "Perú",
+    "options": [
+      "India",
+      "Perú",
+      "Nepal",
+      "Canadá"
+    ],
+    "extraData": {
+      "cityName": "Trujillo",
+      "country": "Perú"
+    }
+  },
+  {
+    "id": "mountain_61057",
+    "type": "mountain",
+    "difficulty": "medium",
+    "questionText": "¿Cuál es la montaña más alta de Perú?",
+    "correctAnswer": "Huascarán",
+    "options": [
+      "Aconcagua",
+      "Schneekoppe",
+      "Snowdon",
+      "Huascarán"
+    ],
+    "extraData": {
+      "country": "Perú",
+      "mountainName": "Huascarán"
+    }
+  },
+  {
+    "id": "city_63062",
+    "type": "city",
+    "difficulty": "easy",
+    "questionText": "¿Nakuru es una ciudad de qué país?",
+    "correctAnswer": "Kenia",
+    "options": [
+      "Francia",
+      "Kenia",
+      "Austria",
+      "Estados Unidos"
+    ],
+    "extraData": {
+      "cityName": "Nakuru",
+      "country": "Kenia"
+    }
+  },
+  {
+    "id": "city_63055",
+    "type": "city",
+    "difficulty": "easy",
+    "questionText": "¿Qué ciudad está ubicada en Italia?",
+    "correctAnswer": "Palermo",
+    "options": [
+      "Melbourne",
+      "Giza",
+      "Palermo",
+      "Monterrey"
+    ],
+    "extraData": {
+      "cityName": "Palermo",
+      "country": "Italia"
+    }
+  },
+  {
+    "id": "river_60051",
+    "type": "river",
+    "difficulty": "medium",
+    "questionText": "¿Cuál es el río más largo de Japón?",
+    "correctAnswer": "Tone",
+    "options": [
+      "Guadiana",
+      "Tone",
+      "Paraná",
+      "Baker"
+    ],
+    "extraData": {
+      "country": "Japón",
+      "riverName": "Tone"
+    }
+  },
+  {
+    "id": "lake_62045",
+    "type": "lake",
+    "difficulty": "medium",
+    "questionText": "¿Cuál es el principal lago de Perú?",
+    "correctAnswer": "Lago Junín",
+    "options": [
+      "Lago Toshka",
+      "Lago Junín",
+      "Lago Superior",
+      "Lago Qinghai"
+    ],
+    "extraData": {
+      "country": "Perú",
+      "lakeName": "Lago Junín"
+    }
+  },
+  {
+    "id": "river_60054",
+    "type": "river",
+    "difficulty": "medium",
+    "questionText": "¿El río más largo de México se llama...?",
+    "correctAnswer": "Lerma",
+    "options": [
+      "Douro",
+      "Lerma",
+      "Murray",
+      "Paraná"
+    ],
+    "extraData": {
+      "country": "México",
+      "riverName": "Lerma"
+    }
+  },
+  {
+    "id": "river_60052",
+    "type": "river",
+    "difficulty": "medium",
+    "questionText": "¿Cuál es el río más largo de Japón?",
+    "correctAnswer": "Ishikari",
+    "options": [
+      "Cauca",
+      "Churchill",
+      "Ishikari",
+      "Ródano"
+    ],
+    "extraData": {
+      "country": "Japón",
+      "riverName": "Ishikari"
+    }
+  },
+  {
+    "id": "flag_20001",
+    "type": "flag",
+    "difficulty": "easy",
+    "questionText": "¿De qué país es esta bandera?",
+    "correctAnswer": "Italia",
+    "options": [
+      "México",
+      "Italia",
+      "Hungría",
+      "Irán"
+    ],
+    "imageUrl": "https://flagcdn.com/w320/it.png",
+    "extraData": {
+      "countryCode": "it",
+      "countryName": "Italia"
+    }
+  },
+  {
+    "id": "flag_20002",
+    "type": "flag",
+    "difficulty": "easy",
+    "questionText": "¿De qué país es esta bandera?",
+    "correctAnswer": "Alemania",
+    "options": [
+      "Alemania",
+      "Polonia",
+      "Bélgica",
+      "Irak"
+    ],
+    "imageUrl": "https://flagcdn.com/w320/de.png",
+    "extraData": {
+      "countryCode": "de",
+      "countryName": "Alemania"
+    }
+  },
+  {
+    "id": "flag_20003",
+    "type": "flag",
+    "difficulty": "easy",
+    "questionText": "¿De qué país es esta bandera?",
+    "correctAnswer": "Francia",
+    "options": [
+      "Eslovaquia",
+      "Rusia",
+      "Francia",
+      "Alemania"
+    ],
+    "imageUrl": "https://flagcdn.com/w320/fr.png",
+    "extraData": {
+      "countryCode": "fr",
+      "countryName": "Francia"
+    }
+  },
+  {
+    "id": "flag_20004",
+    "type": "flag",
+    "difficulty": "easy",
+    "questionText": "¿De qué país es esta bandera?",
+    "correctAnswer": "Brasil",
+    "options": [
+      "Brasil",
+      "Colombia",
+      "Argentina",
+      "Venezuela"
+    ],
+    "imageUrl": "https://flagcdn.com/w320/br.png",
+    "extraData": {
+      "countryCode": "br",
+      "countryName": "Brasil"
+    }
+  },
+  {
+    "id": "flag_20005",
+    "type": "flag",
+    "difficulty": "easy",
+    "questionText": "¿De qué país es esta bandera?",
+    "correctAnswer": "Reino Unido",
+    "options": [
+      "Reino Unido",
+      "Australia",
+      "Nueva Zelanda",
+      "Islas Feroe"
+    ],
+    "imageUrl": "https://flagcdn.com/w320/gb.png",
+    "extraData": {
+      "countryCode": "gb",
+      "countryName": "Reino Unido"
+    }
+  },
+  {
+    "id": "flag_20006",
+    "type": "flag",
+    "difficulty": "easy",
+    "questionText": "¿De qué país es esta bandera?",
+    "correctAnswer": "Canadá",
+    "options": [
+      "Rusia",
+      "Canadá",
+      "Cuba",
+      "Jamaica"
+    ],
+    "imageUrl": "https://flagcdn.com/w320/ca.png",
+    "extraData": {
+      "countryCode": "ca",
+      "countryName": "Canadá"
+    }
+  },
+  {
+    "id": "flag_20007",
+    "type": "flag",
+    "difficulty": "medium",
+    "questionText": "¿De qué país es esta bandera?",
+    "correctAnswer": "Suecia",
+    "options": [
+      "Noruega",
+      "Suecia",
+      "Finlandiaia",
+      "Dinamarca"
+    ],
+    "imageUrl": "https://flagcdn.com/w320/se.png",
+    "extraData": {
+      "countryCode": "se",
+      "countryName": "Suecia"
+    }
+  },
+  {
+    "id": "flag_20008",
+    "type": "flag",
+    "difficulty": "medium",
+    "questionText": "¿De qué país es esta bandera?",
+    "correctAnswer": "Tailandia",
+    "options": [
+      "Costa Rica",
+      "Tailandia",
+      "India",
+      "Camboya"
+    ],
+    "imageUrl": "https://flagcdn.com/w320/th.png",
+    "extraData": {
+      "countryCode": "th",
+      "countryName": "Tailandia"
+    }
+  },
+  {
+    "id": "flag_20009",
+    "type": "flag",
+    "difficulty": "medium",
+    "questionText": "¿De qué país es esta bandera?",
+    "correctAnswer": "Sudáfrica",
+    "options": [
+      "Sudáfrica",
+      "Zimbabue",
+      "Zambia",
+      "Kenia"
+    ],
+    "imageUrl": "https://flagcdn.com/w320/za.png",
+    "extraData": {
+      "countryCode": "za",
+      "countryName": "Sudáfrica"
+    }
+  },
+  {
+    "id": "flag_20010",
+    "type": "flag",
+    "difficulty": "medium",
+    "questionText": "¿De qué país es esta bandera?",
+    "correctAnswer": "Egipto",
+    "options": [
+      "Irak",
+      "Egipto",
+      "Siria",
+      "Yemen"
+    ],
+    "imageUrl": "https://flagcdn.com/w320/eg.png",
+    "extraData": {
+      "countryCode": "eg",
+      "countryName": "Egipto"
+    }
+  },
+  {
+    "id": "flag_20011",
+    "type": "flag",
+    "difficulty": "hard",
+    "questionText": "¿De qué país es esta bandera?",
+    "correctAnswer": "Botsuana",
+    "options": [
+      "Botsuana",
+      "Argentina",
+      "El Salvador",
+      "Nicaragua"
+    ],
+    "imageUrl": "https://flagcdn.com/w320/bw.png",
+    "extraData": {
+      "countryCode": "bw",
+      "countryName": "Botsuana"
+    }
+  },
+  {
+    "id": "flag_20012",
+    "type": "flag",
+    "difficulty": "hard",
+    "questionText": "¿De qué país es esta bandera?",
+    "correctAnswer": "Letonia",
+    "options": [
+      "Austria",
+      "Perú",
+      "Letonia",
+      "Marruecos"
+    ],
+    "imageUrl": "https://flagcdn.com/w320/lv.png",
+    "extraData": {
+      "countryCode": "lv",
+      "countryName": "Letonia"
+    }
+  },
+  {
+    "id": "capital_20013",
+    "type": "capital",
+    "difficulty": "easy",
+    "questionText": "¿Cuál es la capital de España?",
+    "correctAnswer": "Madrid",
+    "options": [
+      "Barcelona",
+      "Madrid",
+      "Lisboa",
+      "Roma"
+    ],
+    "extraData": {
+      "countryCode": "es",
+      "countryName": "España"
+    }
+  },
+  {
+    "id": "capital_20014",
+    "type": "capital",
+    "difficulty": "easy",
+    "questionText": "¿Cuál es la capital de Italia?",
+    "correctAnswer": "Roma",
+    "options": [
+      "Milán",
+      "Roma",
+      "Venecia",
+      "Nápoles"
+    ],
+    "extraData": {
+      "countryCode": "it",
+      "countryName": "Italia"
+    }
+  },
+  {
+    "id": "capital_20015",
+    "type": "capital",
+    "difficulty": "easy",
+    "questionText": "¿Cuál es la capital de Japón?",
+    "correctAnswer": "Tokio",
+    "options": [
+      "Kioto",
+      "Tokio",
+      "Osaka",
+      "Hiroshima"
+    ],
+    "extraData": {
+      "countryCode": "jp",
+      "countryName": "Japón"
+    }
+  },
+  {
+    "id": "capital_20016",
+    "type": "capital",
+    "difficulty": "easy",
+    "questionText": "¿Cuál es la capital de Alemania?",
+    "correctAnswer": "Berlín",
+    "options": [
+      "Múnich",
+      "Berlín",
+      "Hamburgo",
+      "Fráncfort"
+    ],
+    "extraData": {
+      "countryCode": "de",
+      "countryName": "Alemania"
+    }
+  },
+  {
+    "id": "capital_20017",
+    "type": "capital",
+    "difficulty": "medium",
+    "questionText": "¿Cuál es la capital de Canadá?",
+    "correctAnswer": "Ottawa",
+    "options": [
+      "Toronto",
+      "Ottawa",
+      "Vancouver",
+      "Montreal"
+    ],
+    "extraData": {
+      "countryCode": "ca",
+      "countryName": "Canadá"
+    }
+  },
+  {
+    "id": "capital_20018",
+    "type": "capital",
+    "difficulty": "medium",
+    "questionText": "¿Cuál es la capital de Brasil?",
+    "correctAnswer": "Brasilia",
+    "options": [
+      "Río de Janeiro",
+      "São Paulo",
+      "Salvador",
+      "Bratislava"
+    ],
+    "extraData": {
+      "countryCode": "br",
+      "countryName": "Brasil"
+    }
+  },
+  {
+    "id": "capital_20019",
+    "type": "capital",
+    "difficulty": "medium",
+    "questionText": "¿Cuál es la capital de Australia?",
+    "correctAnswer": "Canberra",
+    "options": [
+      "Sídney",
+      "Melbourne",
+      "Canberra",
+      "Brisbane"
+    ],
+    "extraData": {
+      "countryCode": "au",
+      "countryName": "Australia"
+    }
+  },
+  {
+    "id": "capital_20020",
+    "type": "capital",
+    "difficulty": "medium",
+    "questionText": "¿Cuál es la capital de Nígeria?",
+    "correctAnswer": "Abuya",
+    "options": [
+      "Lagos",
+      "Abuya",
+      "Kano",
+      "Ibadán"
+    ],
+    "extraData": {
+      "countryCode": "ng",
+      "countryName": "Nígeria"
+    }
+  },
+  {
+    "id": "capital_20021",
+    "type": "capital",
+    "difficulty": "hard",
+    "questionText": "¿Cuál es la capital de Birmania?",
+    "correctAnswer": "Naypyidó",
+    "options": [
+      "Rangún",
+      "Naypyidó",
+      "Mandalay",
+      "Bago"
+    ],
+    "extraData": {
+      "countryCode": "mm",
+      "countryName": "Birmania"
+    }
+  },
+  {
+    "id": "capital_20022",
+    "type": "capital",
+    "difficulty": "hard",
+    "questionText": "¿Cuál es la capital de Kazajistán?",
+    "correctAnswer": "Astana",
+    "options": [
+      "Almaty",
+      "Astana",
+      "Shimkent",
+      "Karagandá"
+    ],
+    "extraData": {
+      "countryCode": "kz",
+      "countryName": "Kazajistán"
+    }
+  },
+  {
+    "id": "capital_20023",
+    "type": "capital",
+    "difficulty": "hard",
+    "questionText": "¿Cuál es la capital de Sri Lanka?",
+    "correctAnswer": "Sri Jayawardenepura Kotte",
+    "options": [
+      "Colombo",
+      "Sri Jayawardenepura Kotte",
+      "Kandy",
+      "Galle"
+    ],
+    "extraData": {
+      "countryCode": "lk",
+      "countryName": "Sri Lanka"
+    }
+  },
+  {
+    "id": "capital_20024",
+    "type": "capital",
+    "difficulty": "hard",
+    "questionText": "¿Cuál es la capital de Burkina Faso?",
+    "correctAnswer": "Uagadugú",
+    "options": [
+      "Uagadugú",
+      "Bobo-Dioulasso",
+      "Koudougou",
+      "Ouahigouya"
+    ],
+    "extraData": {
+      "countryCode": "bf",
+      "countryName": "Burkina Faso"
+    }
+  },
+  {
+    "id": "population_20025",
+    "type": "population",
+    "difficulty": "easy",
+    "questionText": "¿Qué país tiene más población?",
+    "correctAnswer": "India",
+    "options": [
+      "India",
+      "Estados Unidos"
+    ],
+    "extraData": {
+      "countries": [
+        "India",
+        "Estados Unidos"
+      ],
+      "population1": 1428627663,
+      "population2": 339996563,
+      "infoToShow": "1.4 mil millones habitantes"
+    }
+  },
+  {
+    "id": "population_20026",
+    "type": "population",
+    "difficulty": "easy",
+    "questionText": "¿Qué país tiene más población?",
+    "correctAnswer": "Brasil",
+    "options": [
+      "Brasil",
+      "Argentina"
+    ],
+    "extraData": {
+      "countries": [
+        "Brasil",
+        "Argentina"
+      ],
+      "population1": 216422446,
+      "population2": 45773884,
+      "infoToShow": "216.4 millones habitantes"
+    }
+  },
+  {
+    "id": "population_20027",
+    "type": "population",
+    "difficulty": "medium",
+    "questionText": "¿Qué país tiene más población?",
+    "correctAnswer": "México",
+    "options": [
+      "México",
+      "Alemania"
+    ],
+    "extraData": {
+      "countries": [
+        "México",
+        "Alemania"
+      ],
+      "population1": 128455567,
+      "population2": 83294633,
+      "infoToShow": "128.5 millones habitantes"
+    }
+  },
+  {
+    "id": "population_20028",
+    "type": "population",
+    "difficulty": "medium",
+    "questionText": "¿Qué país tiene más población?",
+    "correctAnswer": "Etiopía",
+    "options": [
+      "Egipto",
+      "Etiopía"
+    ],
+    "extraData": {
+      "countries": [
+        "Egipto",
+        "Etiopía"
+      ],
+      "population1": 112716598,
+      "population2": 126527060,
+      "infoToShow": "126.5 millones habitantes"
+    }
+  },
+  {
+    "id": "population_20029",
+    "type": "population",
+    "difficulty": "hard",
+    "questionText": "¿Qué país tiene más población?",
+    "correctAnswer": "Níger",
+    "options": [
+      "Níger",
+      "República Checa"
+    ],
+    "extraData": {
+      "countries": [
+        "Níger",
+        "República Checa"
+      ],
+      "population1": 27202843,
+      "population2": 10827529,
+      "infoToShow": "27.2 millones habitantes"
+    }
+  },
+  {
+    "id": "population_20030",
+    "type": "population",
+    "difficulty": "hard",
+    "questionText": "¿Qué país tiene más población?",
+    "correctAnswer": "Guatemala",
+    "options": [
+      "Guatemala",
+      "Grecia"
+    ],
+    "extraData": {
+      "countries": [
+        "Guatemala",
+        "Grecia"
+      ],
+      "population1": 18092026,
+      "population2": 10341277,
+      "infoToShow": "18.1 millones habitantes"
+    }
+  },
+  {
+    "id": "area_20031",
+    "type": "area",
+    "difficulty": "easy",
+    "questionText": "¿Qué país es más extenso?",
+    "correctAnswer": "China",
+    "options": [
+      "China",
+      "India"
+    ],
+    "extraData": {
+      "countries": [
+        "China",
+        "India"
+      ],
+      "area1": 9596961,
+      "area2": 3287263,
+      "infoToShow": "9.6 millones de km²"
+    }
+  },
+  {
+    "id": "area_20032",
+    "type": "area",
+    "difficulty": "easy",
+    "questionText": "¿Qué país es más extenso?",
+    "correctAnswer": "Estados Unidos",
+    "options": [
+      "Estados Unidos",
+      "Brasil"
+    ],
+    "extraData": {
+      "countries": [
+        "Estados Unidos",
+        "Brasil"
+      ],
+      "area1": 9833517,
+      "area2": 8515767,
+      "infoToShow": "9.8 millones de km²"
+    }
+  },
+  {
+    "id": "area_20033",
+    "type": "area",
+    "difficulty": "medium",
+    "questionText": "¿Qué país es más extenso?",
+    "correctAnswer": "Mongolia",
+    "options": [
+      "Mongolia",
+      "España"
+    ],
+    "extraData": {
+      "countries": [
+        "Mongolia",
+        "España"
+      ],
+      "area1": 1564116,
+      "area2": 505992,
+      "infoToShow": "1.6 millones de km²"
+    }
+  },
+  {
+    "id": "area_20034",
+    "type": "area",
+    "difficulty": "medium",
+    "questionText": "¿Qué país es más extenso?",
+    "correctAnswer": "Nígeria",
+    "options": [
+      "Nígeria",
+      "Francia"
+    ],
+    "extraData": {
+      "countries": [
+        "Nigeria",
+        "Francia"
+      ],
+      "area1": 923768,
+      "area2": 551695,
+      "infoToShow": "924 mil km²"
+    }
+  },
+  {
+    "id": "area_20035",
+    "type": "area",
+    "difficulty": "hard",
+    "questionText": "¿Qué país es más extenso?",
+    "correctAnswer": "Madagascar",
+    "options": [
+      "Madagascar",
+      "Kenia"
+    ],
+    "extraData": {
+      "countries": [
+        "Madagascar",
+        "Kenia"
+      ],
+      "area1": 587041,
+      "area2": 580367,
+      "infoToShow": "587 mil km²"
+    }
+  },
+  {
+    "id": "area_20036",
+    "type": "area",
+    "difficulty": "hard",
+    "questionText": "¿Qué país es más extenso?",
+    "correctAnswer": "Botsuana",
+    "options": [
+      "Botsuana",
+      "Irak"
+    ],
+    "extraData": {
+      "countries": [
+        "Botsuana",
+        "Iraq"
+      ],
+      "area1": 581730,
+      "area2": 438317,
+      "infoToShow": "582 mil km²"
+    }
+  },
+  {
+    "id": "language_20037",
+    "type": "language",
+    "difficulty": "easy",
+    "questionText": "¿Cuál es el idioma oficial de Francia?",
+    "correctAnswer": "Francés",
+    "options": [
+      "Español",
+      "Francés",
+      "Alemán",
+      "Italiano"
+    ],
+    "extraData": {
+      "countryCode": "fr",
+      "countryName": "Francia",
+      "languageCode": "fra"
+    }
+  },
+  {
+    "id": "language_20038",
+    "type": "language",
+    "difficulty": "easy",
+    "questionText": "¿Cuál es el idioma oficial de Alemania?",
+    "correctAnswer": "Alemán",
+    "options": [
+      "Neerlandés",
+      "Alemán",
+      "Danés",
+      "Inglés"
+    ],
+    "extraData": {
+      "countryCode": "de",
+      "countryName": "Alemania",
+      "languageCode": "deu"
+    }
+  },
+  {
+    "id": "language_20039",
+    "type": "language",
+    "difficulty": "medium",
+    "questionText": "¿Cuál es el idioma oficial de Suecia?",
+    "correctAnswer": "Sueco",
+    "options": [
+      "Noruego",
+      "Finlandés",
+      "Sueco",
+      "Danés"
+    ],
+    "extraData": {
+      "countryCode": "se",
+      "countryName": "Suecia",
+      "languageCode": "swe"
+    }
+  },
+  {
+    "id": "language_20040",
+    "type": "language",
+    "difficulty": "medium",
+    "questionText": "¿Cuál es el idioma oficial de Corea del Sur?",
+    "correctAnswer": "Coreano",
+    "options": [
+      "Japonés",
+      "Coreano",
+      "Chino mandarín",
+      "Vietnamita"
+    ],
+    "extraData": {
+      "countryCode": "kr",
+      "countryName": "Corea del Sur",
+      "languageCode": "kor"
+    }
+  },
+  {
+    "id": "language_20041",
+    "type": "language",
+    "difficulty": "hard",
+    "questionText": "¿Cuál es el idioma oficial de Hungría?",
+    "correctAnswer": "Húngaro",
+    "options": [
+      "Checo",
+      "Rumano",
+      "Húngaro",
+      "Eslovaco"
+    ],
+    "extraData": {
+      "countryCode": "hu",
+      "countryName": "Hungría",
+      "languageCode": "hun"
+    }
+  },
+  {
+    "id": "language_20042",
+    "type": "language",
+    "difficulty": "hard",
+    "questionText": "¿Cuál es el idioma oficial de Finlandiaia?",
+    "correctAnswer": "Finlandés",
+    "options": [
+      "Sueco",
+      "Estonio",
+      "Noruego",
+      "Finlandés"
+    ],
+    "extraData": {
+      "countryCode": "fi",
+      "countryName": "Finlandiaia",
+      "languageCode": "fin"
+    }
+  },
+  {
+    "id": "currency_20043",
+    "type": "currency",
+    "difficulty": "easy",
+    "questionText": "¿Cuál es la moneda de Japón?",
+    "correctAnswer": "Yen japonés",
+    "options": [
+      "Yen japonés",
+      "Yuan chino",
+      "Won surcoreano",
+      "Dólar"
+    ],
+    "extraData": {
+      "countryCode": "jp",
+      "countryName": "Japón",
+      "currencyCode": "JPY"
+    }
+  },
+  {
+    "id": "currency_20044",
+    "type": "currency",
+    "difficulty": "easy",
+    "questionText": "¿Cuál es la moneda del Reino Unido?",
+    "correctAnswer": "Libra esterlina",
+    "options": [
+      "euro",
+      "Dólar",
+      "Libra esterlina",
+      "Franco"
+    ],
+    "extraData": {
+      "countryCode": "gb",
+      "countryName": "Reino Unido",
+      "currencyCode": "GBP"
+    }
+  },
+  {
+    "id": "currency_20045",
+    "type": "currency",
+    "difficulty": "medium",
+    "questionText": "¿Cuál es la moneda de México?",
+    "correctAnswer": "Peso mexicano",
+    "options": [
+      "Peso mexicano",
+      "Dólar canadiense",
+      "Real brasileño",
+      "Peso argentino"
+    ],
+    "extraData": {
+      "countryCode": "mx",
+      "countryName": "México",
+      "currencyCode": "MXN"
+    }
+  }
+]

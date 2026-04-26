@@ -64,7 +64,18 @@ Traditional shadows and borders feel "default." We define hierarchy through phys
 
 ---
 
-## 6. Do's and Don'ts
+## 7. Responsiveness & Layout Robustness
+To prevent `RenderFlex overflow` and ensure a premium experience on all devices, follow these rules:
+
+*   **The 350px Rule:** Always test layouts on a minimum width of 350px. If a `Row` contains text and icons that might exceed this, use `LayoutBuilder` to switch to a `Column`.
+*   **Flexible Text:** Never place raw `Text` inside a `Row` without wrapping it in `Flexible` or `Expanded`. Use `maxLines` and `TextOverflow.ellipsis` for dynamic content (like player names).
+*   **Adaptive Button Groups:** For action bars at the bottom of screens, prioritize vertical stacking on mobile (`Column`) to allow full-width, legible buttons.
+*   **Bento Grid Flexibility:** Statistical cards and bento grids must use `Wrap` or conditional logic to stack their "mini-stats" vertically if horizontal space is constrained.
+*   **Scroll Safety:** Always wrap vertical layouts in `SingleChildScrollView` if they contain dynamic lists or expanded cards, ensuring accessibility on small devices.
+
+---
+
+## 8. Do's and Don'ts
 
 ### Do:
 *   **Embrace Negative Space:** If a screen feels crowded, remove a container before you shrink the text.

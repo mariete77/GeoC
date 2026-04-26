@@ -284,6 +284,8 @@ class _MatchmakingScreenState extends ConsumerState<MatchmakingScreen>
         return 'Partida Ranked';
       case MultiplayerMode.ghostRun:
         return 'Ghost Run';
+      case MultiplayerMode.friendChallenge:
+        return 'Reto de Amigo';
     }
   }
 }

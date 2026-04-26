@@ -1,4 +1,7 @@
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import '../../domain/entities/match.dart';
+import 'auth_provider.dart';
+import 'match_history_provider.dart';
 
 /// State for ELO history (sparkline data)
 class EloHistoryState {
@@ -25,33 +28,50 @@ class EloHistoryState {
   }
 }
 
-/// Notifier for ELO history data
-class EloHistoryNotifier extends StateNotifier<EloHistoryState> {
-  EloHistoryNotifier() : super(const EloHistoryState());
+/// Provider for ELO history data — derived from match history
+/// Extracts ELO values from finished matches to build the sparkline
+final eloHistoryProvider = Provider<EloHistoryState>((ref) {
+  final currentUserId = ref.watch(currentUserProvider)?.userId;
+  final matchHistory = ref.watch(matchHistoryProvider);
 
-  /// Update ELO history with new values
-  void updateEloHistory(List<int> values, int currentElo, int delta) {
-    state = EloHistoryState(
-      eloValues: values,
-      currentElo: currentElo,
-      eloDelta: delta,
-    );
+  if (currentUserId == null || matchHistory.matches.isEmpty) {
+    return const EloHistoryState();
   }
 
-  /// Add a new ELO value
-  void addEloValue(int newElo) {
-    final values = [...state.eloValues, newElo];
-    final delta = values.length >= 2 ? newElo - state.currentElo : 0;
-    state = EloHistoryState(
-      eloValues: values,
-      currentElo: newElo,
-      eloDelta: delta,
-    );
-  }
-}
+  // Extract ELO values from finished matches (sorted oldest → newest)
+  final finishedMatches = matchHistory.matches
+      .where((m) =>
+          m.status == MatchStatus.finished &&
+          m.result != null &&
+          m.finishedAt != null)
+      .toList()
+    ..sort((a, b) => a.finishedAt!.compareTo(b.finishedAt!));
 
-/// Provider for ELO history data
-final eloHistoryProvider =
-    StateNotifierProvider<EloHistoryNotifier, EloHistoryState>(
-  (ref) => EloHistoryNotifier(),
-);
+  final eloValues = <int>[];
+  int? latestElo;
+  int delta = 0;
+
+  for (final match in finishedMatches) {
+    final newElo = match.result?.newElo[currentUserId];
+    if (newElo != null) {
+      eloValues.add(newElo);
+      latestElo = newElo;
+    }
+  }
+
+  // Calculate delta: last match ELO change, or diff between last two values
+  if (eloValues.length >= 2) {
+    delta = eloValues.last - eloValues[eloValues.length - 2];
+  }
+
+  // Take last 20 values for the sparkline
+  final displayValues = eloValues.length > 20
+      ? eloValues.sublist(eloValues.length - 20)
+      : eloValues;
+
+  return EloHistoryState(
+    eloValues: displayValues,
+    currentElo: latestElo ?? 1000,
+    eloDelta: delta,
+  );
+});

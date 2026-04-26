@@ -1,0 +1,1917 @@
+[
+  {
+    "id": "region_20396",
+    "type": "region",
+    "difficulty": "easy",
+    "questionText": "¿En qué región se encuentra China?",
+    "correctAnswer": "Asia",
+    "options": [
+      "Europa",
+      "América",
+      "Asia",
+      "Oceanía"
+    ],
+    "extraData": {
+      "countryCode": "cn",
+      "countryName": "China",
+      "region": "Asia",
+      "regionSpanish": "Asia"
+    }
+  },
+  {
+    "id": "region_20397",
+    "type": "region",
+    "difficulty": "medium",
+    "questionText": "¿En qué región se encuentra Angola?",
+    "correctAnswer": "África",
+    "options": [
+      "América",
+      "Asia",
+      "África",
+      "Europa"
+    ],
+    "extraData": {
+      "countryCode": "ao",
+      "countryName": "Angola",
+      "region": "Africa",
+      "regionSpanish": "África"
+    }
+  },
+  {
+    "id": "region_20398",
+    "type": "region",
+    "difficulty": "hard",
+    "questionText": "¿En qué región se encuentra Seychelles?",
+    "correctAnswer": "África",
+    "options": [
+      "Asia",
+      "Oceanía",
+      "África",
+      "América"
+    ],
+    "extraData": {
+      "countryCode": "sc",
+      "countryName": "Seychelles",
+      "region": "Africa",
+      "regionSpanish": "África"
+    }
+  },
+  {
+    "id": "region_20399",
+    "type": "region",
+    "difficulty": "easy",
+    "questionText": "¿En qué región se encuentra Australia?",
+    "correctAnswer": "Oceanía",
+    "options": [
+      "Asia",
+      "Oceanía",
+      "América",
+      "Europa"
+    ],
+    "extraData": {
+      "countryCode": "au",
+      "countryName": "Australia",
+      "region": "Oceania",
+      "regionSpanish": "Oceanía"
+    }
+  },
+  {
+    "id": "region_20400",
+    "type": "region",
+    "difficulty": "medium",
+    "questionText": "¿En qué región se encuentra Kazajistán?",
+    "correctAnswer": "Asia",
+    "options": [
+      "Europa",
+      "Asia",
+      "América",
+      "África"
+    ],
+    "extraData": {
+      "countryCode": "kz",
+      "countryName": "Kazajistán",
+      "region": "Asia",
+      "regionSpanish": "Asia"
+    }
+  },
+  {
+    "id": "flag_20401",
+    "type": "flag",
+    "difficulty": "hard",
+    "questionText": "¿De qué país es esta bandera?",
+    "correctAnswer": "Luxemburgo",
+    "options": [
+      "Burundi",
+      "Bélgica",
+      "Luxemburgo",
+      "Francia"
+    ],
+    "imageUrl": "https://flagcdn.com/w320/lu.png",
+    "extraData": {
+      "countryCode": "lu",
+      "countryName": "Luxemburgo"
+    }
+  },
+  {
+    "id": "flag_20402",
+    "type": "flag",
+    "difficulty": "medium",
+    "questionText": "¿De qué país es esta bandera?",
+    "correctAnswer": "Ecuador",
+    "options": [
+      "Colombia",
+      "Venezuela",
+      "Ecuador",
+      "Perú"
+    ],
+    "imageUrl": "https://flagcdn.com/w320/ec.png",
+    "extraData": {
+      "countryCode": "ec",
+      "countryName": "Ecuador"
+    }
+  },
+  {
+    "id": "flag_20403",
+    "type": "flag",
+    "difficulty": "hard",
+    "questionText": "¿De qué país es esta bandera?",
+    "correctAnswer": "Tanzania",
+    "options": [
+      "Tanzania",
+      "Ghana",
+      "Kenia",
+      "Uganda"
+    ],
+    "imageUrl": "https://flagcdn.com/w320/tz.png",
+    "extraData": {
+      "countryCode": "tz",
+      "countryName": "Tanzania"
+    }
+  },
+  {
+    "id": "flag_20404",
+    "type": "flag",
+    "difficulty": "medium",
+    "questionText": "¿De qué país es esta bandera?",
+    "correctAnswer": "Islandia",
+    "options": [
+      "Noruega",
+      "Finlandiaia",
+      "Islandia",
+      "Dinamarca"
+    ],
+    "imageUrl": "https://flagcdn.com/w320/is.png",
+    "extraData": {
+      "countryCode": "is",
+      "countryName": "Islandia"
+    }
+  },
+  {
+    "id": "flag_20405",
+    "type": "flag",
+    "difficulty": "hard",
+    "questionText": "¿De qué país es esta bandera?",
+    "correctAnswer": "Gabón",
+    "options": [
+      "Gabón",
+      "Camerún",
+      "Congo",
+      "Guinea Ecuatorial"
+    ],
+    "imageUrl": "https://flagcdn.com/w320/ga.png",
+    "extraData": {
+      "countryCode": "ga",
+      "countryName": "Gabón"
+    }
+  },
+  {
+    "id": "flag_20406",
+    "type": "flag",
+    "difficulty": "medium",
+    "questionText": "¿De qué país es esta bandera?",
+    "correctAnswer": "Uruguay",
+    "options": [
+      "Argentina",
+      "Uruguay",
+      "Paraguay",
+      "Brasil"
+    ],
+    "imageUrl": "https://flagcdn.com/w320/uy.png",
+    "extraData": {
+      "countryCode": "uy",
+      "countryName": "Uruguay"
+    }
+  },
+  {
+    "id": "flag_20407",
+    "type": "flag",
+    "difficulty": "hard",
+    "questionText": "¿De qué país es esta bandera?",
+    "correctAnswer": "Laos",
+    "options": [
+      "Camboya",
+      "Laos",
+      "Bangladés",
+      "Tailandia"
+    ],
+    "imageUrl": "https://flagcdn.com/w320/la.png",
+    "extraData": {
+      "countryCode": "la",
+      "countryName": "Laos"
+    }
+  },
+  {
+    "id": "flag_20408",
+    "type": "flag",
+    "difficulty": "hard",
+    "questionText": "¿De qué país es esta bandera?",
+    "correctAnswer": "Sri Lanka",
+    "options": [
+      "Bangladés",
+      "Sri Lanka",
+      "Nepal",
+      "Bután"
+    ],
+    "imageUrl": "https://flagcdn.com/w320/lk.png",
+    "extraData": {
+      "countryCode": "lk",
+      "countryName": "Sri Lanka"
+    }
+  },
+  {
+    "id": "flag_20409",
+    "type": "flag",
+    "difficulty": "medium",
+    "questionText": "¿De qué país es esta bandera?",
+    "correctAnswer": "Panamá",
+    "options": [
+      "Costa Rica",
+      "Nicaragua",
+      "Panamá",
+      "Honduras"
+    ],
+    "imageUrl": "https://flagcdn.com/w320/pa.png",
+    "extraData": {
+      "countryCode": "pa",
+      "countryName": "Panamá"
+    }
+  },
+  {
+    "id": "flag_20410",
+    "type": "flag",
+    "difficulty": "hard",
+    "questionText": "¿De qué país es esta bandera?",
+    "correctAnswer": "Nepal",
+    "options": [
+      "Nepal",
+      "Japón",
+      "Bután",
+      "Bangladés"
+    ],
+    "imageUrl": "https://flagcdn.com/w320/np.png",
+    "extraData": {
+      "countryCode": "np",
+      "countryName": "Nepal"
+    }
+  },
+  {
+    "id": "capital_20411",
+    "type": "capital",
+    "difficulty": "easy",
+    "questionText": "¿Cuál es la capital de Francia?",
+    "correctAnswer": "París",
+    "options": [
+      "París",
+      "Lyon",
+      "Marsella",
+      "Toulouse"
+    ],
+    "extraData": {
+      "countryCode": "fr",
+      "countryName": "Francia"
+    }
+  },
+  {
+    "id": "capital_20412",
+    "type": "capital",
+    "difficulty": "medium",
+    "questionText": "¿Cuál es la capital de Bangladés?",
+    "correctAnswer": "Daca",
+    "options": [
+      "Chittagong",
+      "Daca",
+      "Khulna",
+      "Rajshahi"
+    ],
+    "extraData": {
+      "countryCode": "bd",
+      "countryName": "Bangladés"
+    }
+  },
+  {
+    "id": "capital_20413",
+    "type": "capital",
+    "difficulty": "hard",
+    "questionText": "¿Cuál es la capital de Lesoto?",
+    "correctAnswer": "Maseru",
+    "options": [
+      "Maseru",
+      "Teyateyaneng",
+      "Mafeteng",
+      "Hlotse"
+    ],
+    "extraData": {
+      "countryCode": "ls",
+      "countryName": "Lesoto"
+    }
+  },
+  {
+    "id": "capital_20414",
+    "type": "capital",
+    "difficulty": "medium",
+    "questionText": "¿Cuál es la capital de Portugal?",
+    "correctAnswer": "Lisboa",
+    "options": [
+      "Lisboa",
+      "Oporto",
+      "Faro",
+      "Coímbra"
+    ],
+    "extraData": {
+      "countryCode": "pt",
+      "countryName": "Portugal"
+    }
+  },
+  {
+    "id": "capital_20415",
+    "type": "capital",
+    "difficulty": "hard",
+    "questionText": "¿Cuál es la capital de Yibuti?",
+    "correctAnswer": "Yibuti",
+    "options": [
+      "Dikhil",
+      "Ali Sabieh",
+      "Tadjoura",
+      "Freetown"
+    ],
+    "extraData": {
+      "countryCode": "dj",
+      "countryName": "Yibuti"
+    }
+  },
+  {
+    "id": "capital_20416",
+    "type": "capital",
+    "difficulty": "easy",
+    "questionText": "¿Cuál es la capital de Brasil?",
+    "correctAnswer": "Brasilia",
+    "options": [
+      "Salvador",
+      "São Paulo",
+      "Asunción",
+      "Río de Janeiro"
+    ],
+    "extraData": {
+      "countryCode": "br",
+      "countryName": "Brasil"
+    }
+  },
+  {
+    "id": "capital_20417",
+    "type": "capital",
+    "difficulty": "hard",
+    "questionText": "¿Cuál es la capital de Níger?",
+    "correctAnswer": "Niamey",
+    "options": [
+      "Niamey",
+      "Zinder",
+      "Maradi",
+      "Agadez"
+    ],
+    "extraData": {
+      "countryCode": "ne",
+      "countryName": "Níger"
+    }
+  },
+  {
+    "id": "capital_20418",
+    "type": "capital",
+    "difficulty": "medium",
+    "questionText": "¿Cuál es la capital de Irlanda?",
+    "correctAnswer": "Dublín",
+    "options": [
+      "Cork",
+      "Dublín",
+      "Limerick",
+      "Galway"
+    ],
+    "extraData": {
+      "countryCode": "ie",
+      "countryName": "Irlanda"
+    }
+  },
+  {
+    "id": "capital_20419",
+    "type": "capital",
+    "difficulty": "hard",
+    "questionText": "¿Cuál es la capital de Mongolia?",
+    "correctAnswer": "Ulán Bator",
+    "options": [
+      "Ulán Bator",
+      "Erdenet",
+      "Darkhan",
+      "Choibalsan"
+    ],
+    "extraData": {
+      "countryCode": "mn",
+      "countryName": "Mongolia"
+    }
+  },
+  {
+    "id": "capital_20420",
+    "type": "capital",
+    "difficulty": "medium",
+    "questionText": "¿Cuál es la capital de Venezuela?",
+    "correctAnswer": "Caracas",
+    "options": [
+      "Maracaibo",
+      "Caracas",
+      "Valencia",
+      "Barquisimeto"
+    ],
+    "extraData": {
+      "countryCode": "ve",
+      "countryName": "Venezuela"
+    }
+  },
+  {
+    "id": "population_20421",
+    "type": "population",
+    "difficulty": "easy",
+    "questionText": "¿Qué país tiene más población?",
+    "correctAnswer": "España",
+    "options": [
+      "Portugal",
+      "España"
+    ],
+    "extraData": {
+      "countries": [
+        "Portugal",
+        "España"
+      ],
+      "population1": 10247605,
+      "population2": 47519628,
+      "infoToShow": "47.5 millones habitantes"
+    }
+  },
+  {
+    "id": "population_20422",
+    "type": "population",
+    "difficulty": "medium",
+    "questionText": "¿Qué país tiene más población?",
+    "correctAnswer": "Uzbekistán",
+    "options": [
+      "Uzbekistán",
+      "Perú"
+    ],
+    "extraData": {
+      "countries": [
+        "Uzbekistán",
+        "Perú"
+      ],
+      "population1": 35163944,
+      "population2": 34352719,
+      "infoToShow": "35.2 millones habitantes"
+    }
+  },
+  {
+    "id": "population_20423",
+    "type": "population",
+    "difficulty": "hard",
+    "questionText": "¿Qué país tiene más población?",
+    "correctAnswer": "Costa de Marfil",
+    "options": [
+      "Costa de Marfil",
+      "Bélgica"
+    ],
+    "extraData": {
+      "countries": [
+        "Costa de Marfil",
+        "Bélgica"
+      ],
+      "population1": 28160542,
+      "population2": 11686140,
+      "infoToShow": "28.2 millones habitantes"
+    }
+  },
+  {
+    "id": "population_20424",
+    "type": "population",
+    "difficulty": "hard",
+    "questionText": "¿Qué país tiene más población?",
+    "correctAnswer": "Camerún",
+    "options": [
+      "Camerún",
+      "Países Bajos"
+    ],
+    "extraData": {
+      "countries": [
+        "Camerún",
+        "Países Bajos"
+      ],
+      "population1": 28647293,
+      "population2": 17618299,
+      "infoToShow": "28.6 millones habitantes"
+    }
+  },
+  {
+    "id": "population_20425",
+    "type": "population",
+    "difficulty": "medium",
+    "questionText": "¿Qué país tiene más población?",
+    "correctAnswer": "Sudáfrica",
+    "options": [
+      "Sudáfrica",
+      "Colombia"
+    ],
+    "extraData": {
+      "countries": [
+        "Sudáfrica",
+        "Colombia"
+      ],
+      "population1": 60414495,
+      "population2": 52085168,
+      "infoToShow": "60.4 millones habitantes"
+    }
+  },
+  {
+    "id": "area_20426",
+    "type": "area",
+    "difficulty": "medium",
+    "questionText": "¿Qué país es más extenso?",
+    "correctAnswer": "Mali",
+    "options": [
+      "Mali",
+      "Egipto"
+    ],
+    "extraData": {
+      "countries": [
+        "Mali",
+        "Egipto"
+      ],
+      "area1": 1240192,
+      "area2": 1002450,
+      "infoToShow": "1.2 millones de km²"
+    }
+  },
+  {
+    "id": "area_20427",
+    "type": "area",
+    "difficulty": "hard",
+    "questionText": "¿Qué país es más extenso?",
+    "correctAnswer": "Costa de Marfil",
+    "options": [
+      "Costa de Marfil",
+      "Polonia"
+    ],
+    "extraData": {
+      "countries": [
+        "Costa de Marfil",
+        "Polonia"
+      ],
+      "area1": 322463,
+      "area2": 312696,
+      "infoToShow": "322 mil km²"
+    }
+  },
+  {
+    "id": "area_20428",
+    "type": "area",
+    "difficulty": "easy",
+    "questionText": "¿Qué país es más extenso?",
+    "correctAnswer": "India",
+    "options": [
+      "India",
+      "México"
+    ],
+    "extraData": {
+      "countries": [
+        "India",
+        "México"
+      ],
+      "area1": 3287263,
+      "area2": 1964375,
+      "infoToShow": "3.3 millones de km²"
+    }
+  },
+  {
+    "id": "area_20429",
+    "type": "area",
+    "difficulty": "hard",
+    "questionText": "¿Qué país es más extenso?",
+    "correctAnswer": "Omán",
+    "options": [
+      "Omán",
+      "Reino Unido"
+    ],
+    "extraData": {
+      "countries": [
+        "Omán",
+        "Reino Unido"
+      ],
+      "area1": 309500,
+      "area2": 242495,
+      "infoToShow": "310 mil km²"
+    }
+  },
+  {
+    "id": "area_20430",
+    "type": "area",
+    "difficulty": "medium",
+    "questionText": "¿Qué país es más extenso?",
+    "correctAnswer": "Bolivia",
+    "options": [
+      "Bolivia",
+      "Egipto"
+    ],
+    "extraData": {
+      "countries": [
+        "Bolivia",
+        "Egipto"
+      ],
+      "area1": 1098581,
+      "area2": 1002450,
+      "infoToShow": "1.1 millones de km²"
+    }
+  },
+  {
+    "id": "language_20431",
+    "type": "language",
+    "difficulty": "medium",
+    "questionText": "¿Cuál es el idioma oficial de Argelia?",
+    "correctAnswer": "Árabe",
+    "options": [
+      "Francés",
+      "Árabe",
+      "Bereber",
+      "Español"
+    ],
+    "extraData": {
+      "countryCode": "dz",
+      "countryName": "Argelia",
+      "languageCode": "ara"
+    }
+  },
+  {
+    "id": "language_20432",
+    "type": "language",
+    "difficulty": "hard",
+    "questionText": "¿Cuál es el idioma oficial de Camboya?",
+    "correctAnswer": "Jemer",
+    "options": [
+      "Vietnamita",
+      "lao",
+      "Jemer",
+      "Tailandés"
+    ],
+    "extraData": {
+      "countryCode": "kh",
+      "countryName": "Camboya",
+      "languageCode": "khm"
+    }
+  },
+  {
+    "id": "language_20433",
+    "type": "language",
+    "difficulty": "hard",
+    "questionText": "¿Cuál es el idioma oficial de Senegal?",
+    "correctAnswer": "Francés",
+    "options": [
+      "Wólof",
+      "Árabe",
+      "Francés",
+      "Inglés"
+    ],
+    "extraData": {
+      "countryCode": "sn",
+      "countryName": "Senegal",
+      "languageCode": "fra"
+    }
+  },
+  {
+    "id": "language_20434",
+    "type": "language",
+    "difficulty": "medium",
+    "questionText": "¿Cuál es el idioma oficial de Cuba?",
+    "correctAnswer": "Español",
+    "options": [
+      "Inglés",
+      "Español",
+      "Francés",
+      "Portugués"
+    ],
+    "extraData": {
+      "countryCode": "cu",
+      "countryName": "Cuba",
+      "languageCode": "spa"
+    }
+  },
+  {
+    "id": "language_20435",
+    "type": "language",
+    "difficulty": "easy",
+    "questionText": "¿Cuál es el idioma oficial de Reino Unido?",
+    "correctAnswer": "Inglés",
+    "options": [
+      "Galés",
+      "Inglés",
+      "Escocés",
+      "Irlandés"
+    ],
+    "extraData": {
+      "countryCode": "gb",
+      "countryName": "Reino Unido",
+      "languageCode": "eng"
+    }
+  },
+  {
+    "id": "currency_20436",
+    "type": "currency",
+    "difficulty": "hard",
+    "questionText": "¿Cuál es la moneda de Senegal?",
+    "correctAnswer": "Franco CFA",
+    "options": [
+      "Naira nigeriana",
+      "Cedi ghanés",
+      "Franco CFA",
+      "Rand sudafricano"
+    ],
+    "extraData": {
+      "countryCode": "sn",
+      "countryName": "Senegal",
+      "currencyCode": "XOF"
+    }
+  },
+  {
+    "id": "currency_20437",
+    "type": "currency",
+    "difficulty": "medium",
+    "questionText": "¿Cuál es la moneda de Argentina?",
+    "correctAnswer": "Peso argentino",
+    "options": [
+      "Peso mexicano",
+      "Real brasileño",
+      "Peso argentino",
+      "Peso colombiano"
+    ],
+    "extraData": {
+      "countryCode": "ar",
+      "countryName": "Argentina",
+      "currencyCode": "ARS"
+    }
+  },
+  {
+    "id": "currency_20438",
+    "type": "currency",
+    "difficulty": "hard",
+    "questionText": "¿Cuál es la moneda de Azerbaiyán?",
+    "correctAnswer": "Manat azerbaiyano",
+    "options": [
+      "Rublo ruso",
+      "Lira turca",
+      "Dram armenio",
+      "Manat azerbaiyano"
+    ],
+    "extraData": {
+      "countryCode": "az",
+      "countryName": "Azerbaiyán",
+      "currencyCode": "AZN"
+    }
+  },
+  {
+    "id": "currency_20439",
+    "type": "currency",
+    "difficulty": "medium",
+    "questionText": "¿Cuál es la moneda de Tailandia?",
+    "correctAnswer": "Baht tailandés",
+    "options": [
+      "Dong vietnamita",
+      "Rupia indonesia",
+      "Baht tailandés",
+      "Peso filipino"
+    ],
+    "extraData": {
+      "countryCode": "th",
+      "countryName": "Tailandia",
+      "currencyCode": "THB"
+    }
+  },
+  {
+    "id": "currency_20440",
+    "type": "currency",
+    "difficulty": "easy",
+    "questionText": "¿Cuál es la moneda de Suiza?",
+    "correctAnswer": "Franco suizo",
+    "options": [
+      "euro",
+      "Franco suizo",
+      "Corona sueca",
+      "Libra esterlina"
+    ],
+    "extraData": {
+      "countryCode": "ch",
+      "countryName": "Suiza",
+      "currencyCode": "CHF"
+    }
+  },
+  {
+    "id": "region_20441",
+    "type": "region",
+    "difficulty": "easy",
+    "questionText": "¿En qué región se encuentra España?",
+    "correctAnswer": "Europa",
+    "options": [
+      "América",
+      "Europa",
+      "África",
+      "Asia"
+    ],
+    "extraData": {
+      "countryCode": "es",
+      "countryName": "España",
+      "region": "Europe",
+      "regionSpanish": "Europa"
+    }
+  },
+  {
+    "id": "region_20442",
+    "type": "region",
+    "difficulty": "medium",
+    "questionText": "¿En qué región se encuentra Tayikistán?",
+    "correctAnswer": "Asia",
+    "options": [
+      "Europa",
+      "Asia",
+      "América",
+      "África"
+    ],
+    "extraData": {
+      "countryCode": "tj",
+      "countryName": "Tayikistán",
+      "region": "Asia",
+      "regionSpanish": "Asia"
+    }
+  },
+  {
+    "id": "region_20443",
+    "type": "region",
+    "difficulty": "hard",
+    "questionText": "¿En qué región se encuentra Yibuti?",
+    "correctAnswer": "África",
+    "options": [
+      "Asia",
+      "África",
+      "Europa",
+      "América"
+    ],
+    "extraData": {
+      "countryCode": "dj",
+      "countryName": "Yibuti",
+      "region": "Africa",
+      "regionSpanish": "África"
+    }
+  },
+  {
+    "id": "region_20444",
+    "type": "region",
+    "difficulty": "hard",
+    "questionText": "¿En qué región se encuentra Islas Marshall?",
+    "correctAnswer": "Oceanía",
+    "options": [
+      "Asia",
+      "América",
+      "Oceanía",
+      "África"
+    ],
+    "extraData": {
+      "countryCode": "mh",
+      "countryName": "Islas Marshall",
+      "region": "Oceania",
+      "regionSpanish": "Oceanía"
+    }
+  },
+  {
+    "id": "region_20445",
+    "type": "region",
+    "difficulty": "medium",
+    "questionText": "¿En qué región se encuentra Dinamarca?",
+    "correctAnswer": "Europa",
+    "options": [
+      "América",
+      "Asia",
+      "Europa",
+      "África"
+    ],
+    "extraData": {
+      "countryCode": "dk",
+      "countryName": "Dinamarca",
+      "region": "Europe",
+      "regionSpanish": "Europa"
+    }
+  },
+  {
+    "id": "region_20446",
+    "type": "region",
+    "difficulty": "easy",
+    "questionText": "¿En qué región se encuentra Corea del Sur?",
+    "correctAnswer": "Asia",
+    "options": [
+      "América",
+      "Oceanía",
+      "Asia",
+      "Europa"
+    ],
+    "extraData": {
+      "countryCode": "kr",
+      "countryName": "Corea del Sur",
+      "region": "Asia",
+      "regionSpanish": "Asia"
+    }
+  },
+  {
+    "id": "region_20447",
+    "type": "region",
+    "difficulty": "medium",
+    "questionText": "¿En qué región se encuentra Mozambique?",
+    "correctAnswer": "África",
+    "options": [
+      "Asia",
+      "África",
+      "América",
+      "Europa"
+    ],
+    "extraData": {
+      "countryCode": "mz",
+      "countryName": "Mozambique",
+      "region": "Africa",
+      "regionSpanish": "África"
+    }
+  },
+  {
+    "id": "region_20448",
+    "type": "region",
+    "difficulty": "hard",
+    "questionText": "¿En qué región se encuentra Mauricio?",
+    "correctAnswer": "África",
+    "options": [
+      "Asia",
+      "América",
+      "Oceanía",
+      "África"
+    ],
+    "extraData": {
+      "countryCode": "mu",
+      "countryName": "Mauricio",
+      "region": "Africa",
+      "regionSpanish": "África"
+    }
+  },
+  {
+    "id": "region_20449",
+    "type": "region",
+    "difficulty": "easy",
+    "questionText": "¿En qué región se encuentra México?",
+    "correctAnswer": "América",
+    "options": [
+      "Europa",
+      "América",
+      "Asia",
+      "África"
+    ],
+    "extraData": {
+      "countryCode": "mx",
+      "countryName": "México",
+      "region": "Americas",
+      "regionSpanish": "América"
+    }
+  },
+  {
+    "id": "region_20450",
+    "type": "region",
+    "difficulty": "medium",
+    "questionText": "¿En qué región se encuentra Azerbaiyán?",
+    "correctAnswer": "Asia",
+    "options": [
+      "Europa",
+      "Asia",
+      "América",
+      "África"
+    ],
+    "extraData": {
+      "countryCode": "az",
+      "countryName": "Azerbaiyán",
+      "region": "Asia",
+      "regionSpanish": "Asia"
+    }
+  },
+  {
+    "id": "monument_70046",
+    "type": "monument_country",
+    "difficulty": "medium",
+    "questionText": "¿De qué país es Angkor Wat?",
+    "correctAnswer": "Camboya",
+    "options": [
+      "Canadá",
+      "Vaticano",
+      "Camboya",
+      "Portugal"
+    ],
+    "imageUrl": null,
+    "extraData": {
+      "monumentName": "Angkor Wat",
+      "city": "Siem Reap",
+      "country": "Camboya",
+      "monumentType": "templo"
+    }
+  },
+  {
+    "id": "monument_70018",
+    "type": "monument_city",
+    "difficulty": "hard",
+    "questionText": "¿Puente Carlos está ubicado en qué ciudad?",
+    "correctAnswer": "Praga",
+    "options": [
+      "Pekín",
+      "El Cairo",
+      "Praga",
+      "Toronto"
+    ],
+    "imageUrl": null,
+    "extraData": {
+      "monumentName": "Puente Carlos",
+      "city": "Praga",
+      "country": "República Checa",
+      "monumentType": "puente"
+    }
+  },
+  {
+    "id": "monument_70024",
+    "type": "monument_city",
+    "difficulty": "medium",
+    "questionText": "¿Estatua de la Libertad se encuentra en qué ciudad?",
+    "correctAnswer": "Nueva York",
+    "options": [
+      "Sídney",
+      "Wadi Musa",
+      "Nueva York",
+      "Vaticano"
+    ],
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/Statue_of_Liberty_7.jpg/320px-Statue_of_Liberty_7.jpg",
+    "extraData": {
+      "monumentName": "Estatua de la Libertad",
+      "city": "Nueva York",
+      "country": "Estados Unidos",
+      "monumentType": "estatua"
+    }
+  },
+  {
+    "id": "monument_image_71008",
+    "type": "monument_image",
+    "difficulty": "medium",
+    "questionText": "¿Qué monumento o edificio es este?",
+    "correctAnswer": "Petra",
+    "options": [
+      "Muro de China",
+      "Golden Gate Bridge",
+      "Petra",
+      "Machu Picchu"
+    ],
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/The_Treasury_Petra_Jordan.jpg/320px-The_Treasury_Petra_Jordan.jpg",
+    "extraData": {
+      "monumentName": "Petra",
+      "city": "Wadi Musa",
+      "country": "Jordania",
+      "monumentType": "ruinas"
+    }
+  },
+  {
+    "id": "monument_70037",
+    "type": "monument_country",
+    "difficulty": "medium",
+    "questionText": "¿En qué país se encuentra Teotihuacán?",
+    "correctAnswer": "México",
+    "options": [
+      "México",
+      "China",
+      "Camboya",
+      "Australia"
+    ],
+    "imageUrl": null,
+    "extraData": {
+      "monumentName": "Teotihuacán",
+      "city": "Estado de México",
+      "country": "México",
+      "monumentType": "ruinas"
+    }
+  },
+  {
+    "id": "monument_70011",
+    "type": "monument_city",
+    "difficulty": "hard",
+    "questionText": "¿Puente de la Torre se encuentra en qué ciudad?",
+    "correctAnswer": "Londres",
+    "options": [
+      "Londres",
+      "Segovia",
+      "Pisa",
+      "Sídney"
+    ],
+    "imageUrl": null,
+    "extraData": {
+      "monumentName": "Puente de la Torre",
+      "city": "Londres",
+      "country": "Reino Unido",
+      "monumentType": "puente"
+    }
+  },
+  {
+    "id": "monument_70026",
+    "type": "monument_city",
+    "difficulty": "hard",
+    "questionText": "¿Cuál es la ciudad de One World Trade Center?",
+    "correctAnswer": "Nueva York",
+    "options": [
+      "Nueva York",
+      "Río de Janeiro",
+      "Segovia",
+      "Tokio"
+    ],
+    "imageUrl": null,
+    "extraData": {
+      "monumentName": "One World Trade Center",
+      "city": "Nueva York",
+      "country": "Estados Unidos",
+      "monumentType": "rascacielos"
+    }
+  },
+  {
+    "id": "monument_70019",
+    "type": "monument_city",
+    "difficulty": "hard",
+    "questionText": "¿Museo del Louvre se encuentra en qué ciudad?",
+    "correctAnswer": "París",
+    "options": [
+      "Berlín",
+      "Buenos Aires",
+      "París",
+      "Londres"
+    ],
+    "imageUrl": null,
+    "extraData": {
+      "monumentName": "Museo del Louvre",
+      "city": "París",
+      "country": "Francia",
+      "monumentType": "museo"
+    }
+  },
+  {
+    "id": "monument_70025",
+    "type": "monument_city",
+    "difficulty": "medium",
+    "questionText": "¿En qué ciudad se encuentra Empire State Building?",
+    "correctAnswer": "Nueva York",
+    "options": [
+      "Barcelona",
+      "Nueva York",
+      "Honshu",
+      "Pekín"
+    ],
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/Empire_State_Building_%28aerial_view%29.jpg/320px-Empire_State_Building_%28aerial_view%29.jpg",
+    "extraData": {
+      "monumentName": "Empire State Building",
+      "city": "Nueva York",
+      "country": "Estados Unidos",
+      "monumentType": "rascacielos"
+    }
+  },
+  {
+    "id": "monument_image_71006",
+    "type": "monument_image",
+    "difficulty": "medium",
+    "questionText": "¿Qué monumento o edificio es este?",
+    "correctAnswer": "Golden Gate Bridge",
+    "options": [
+      "Golden Gate Bridge",
+      "Muro de China",
+      "Machu Picchu",
+      "Torre Eiffel"
+    ],
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/GoldenGateBridge-001.jpg/320px-GoldenGateBridge-001.jpg",
+    "extraData": {
+      "monumentName": "Golden Gate Bridge",
+      "city": "San Francisco",
+      "country": "Estados Unidos",
+      "monumentType": "puente"
+    }
+  },
+  {
+    "id": "monument_70048",
+    "type": "monument_country",
+    "difficulty": "medium",
+    "questionText": "¿Monte Fuji se encuentra en qué país?",
+    "correctAnswer": "Japón",
+    "options": [
+      "Italia",
+      "España",
+      "Japón",
+      "Estados Unidos"
+    ],
+    "imageUrl": null,
+    "extraData": {
+      "monumentName": "Monte Fuji",
+      "city": "Honshu",
+      "country": "Japón",
+      "monumentType": "volcán"
+    }
+  },
+  {
+    "id": "monument_70000",
+    "type": "monument_city",
+    "difficulty": "medium",
+    "questionText": "¿En qué ciudad se encuentra Torre Eiffel?",
+    "correctAnswer": "París",
+    "options": [
+      "Segovia",
+      "Granada",
+      "París",
+      "Siem Reap"
+    ],
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Tour_Eiffel_Wikimedia_Commons_%28cropped%29.jpg/320px-Tour_Eiffel_Wikimedia_Commons_%28cropped%29.jpg",
+    "extraData": {
+      "monumentName": "Torre Eiffel",
+      "city": "París",
+      "country": "Francia",
+      "monumentType": "torre"
+    }
+  },
+  {
+    "id": "monument_70003",
+    "type": "monument_city",
+    "difficulty": "hard",
+    "questionText": "¿Torre Belém se encuentra en qué ciudad?",
+    "correctAnswer": "Lisboa",
+    "options": [
+      "Lisboa",
+      "Colonia",
+      "Granada",
+      "Yulara"
+    ],
+    "imageUrl": null,
+    "extraData": {
+      "monumentName": "Torre Belém",
+      "city": "Lisboa",
+      "country": "Portugal",
+      "monumentType": "torre"
+    }
+  },
+  {
+    "id": "monument_70006",
+    "type": "monument_city",
+    "difficulty": "hard",
+    "questionText": "¿Acueducto de Segovia se encuentra en qué ciudad?",
+    "correctAnswer": "Segovia",
+    "options": [
+      "Praga",
+      "Segovia",
+      "Pisa",
+      "Tokio"
+    ],
+    "imageUrl": null,
+    "extraData": {
+      "monumentName": "Acueducto de Segovia",
+      "city": "Segovia",
+      "country": "España",
+      "monumentType": "acueducto"
+    }
+  },
+  {
+    "id": "monument_70041",
+    "type": "monument_country",
+    "difficulty": "easy",
+    "questionText": "¿Muro de China está ubicado en qué país?",
+    "correctAnswer": "China",
+    "options": [
+      "Francia",
+      "Austria",
+      "China",
+      "Italia"
+    ],
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/23/The_Great_Wall_of_China_at_Jinshanling-edit.jpg/320px-The_Great_Wall_of_China_at_Jinshanling-edit.jpg",
+    "extraData": {
+      "monumentName": "Muro de China",
+      "city": "Pekín",
+      "country": "China",
+      "monumentType": "muro"
+    }
+  },
+  {
+    "id": "monument_70004",
+    "type": "monument_country",
+    "difficulty": "medium",
+    "questionText": "¿De qué país es Partenón?",
+    "correctAnswer": "Grecia",
+    "options": [
+      "Grecia",
+      "Portugal",
+      "Australia",
+      "Perú"
+    ],
+    "imageUrl": null,
+    "extraData": {
+      "monumentName": "Partenón",
+      "city": "Atenas",
+      "country": "Grecia",
+      "monumentType": "templo"
+    }
+  },
+  {
+    "id": "monument_70028",
+    "type": "monument_city",
+    "difficulty": "medium",
+    "questionText": "¿Machu Picchu está ubicado en qué ciudad?",
+    "correctAnswer": "Cuzco",
+    "options": [
+      "Cuzco",
+      "Praga",
+      "Tokio",
+      "Colonia"
+    ],
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/Machu_Picchu%2C_Peru.jpg/320px-Machu_Picchu%2C_Peru.jpg",
+    "extraData": {
+      "monumentName": "Machu Picchu",
+      "city": "Cuzco",
+      "country": "Perú",
+      "monumentType": "ruinas"
+    }
+  },
+  {
+    "id": "monument_70047",
+    "type": "monument_country",
+    "difficulty": "medium",
+    "questionText": "¿Torre de Tokio está ubicado en qué país?",
+    "correctAnswer": "Japón",
+    "options": [
+      "Argentina",
+      "Brasil",
+      "Uruguay",
+      "Japón"
+    ],
+    "imageUrl": null,
+    "extraData": {
+      "monumentName": "Torre de Tokio",
+      "city": "Tokio",
+      "country": "Japón",
+      "monumentType": "torre"
+    }
+  },
+  {
+    "id": "monument_70040",
+    "type": "monument_country",
+    "difficulty": "medium",
+    "questionText": "¿De qué país es Teatro Colón?",
+    "correctAnswer": "Argentina",
+    "options": [
+      "India",
+      "Argentina",
+      "Perú",
+      "Canadá"
+    ],
+    "imageUrl": null,
+    "extraData": {
+      "monumentName": "Teatro Colón",
+      "city": "Buenos Aires",
+      "country": "Argentina",
+      "monumentType": "teatro"
+    }
+  },
+  {
+    "id": "monument_70007",
+    "type": "monument_city",
+    "difficulty": "hard",
+    "questionText": "¿En qué ciudad se encuentra Alhambra?",
+    "correctAnswer": "Granada",
+    "options": [
+      "Granada",
+      "Toronto",
+      "Buenos Aires",
+      "París"
+    ],
+    "imageUrl": null,
+    "extraData": {
+      "monumentName": "Alhambra",
+      "city": "Granada",
+      "country": "España",
+      "monumentType": "palacio"
+    }
+  },
+  {
+    "id": "monument_70044",
+    "type": "monument_city",
+    "difficulty": "medium",
+    "questionText": "¿Petra se encuentra en qué ciudad?",
+    "correctAnswer": "Wadi Musa",
+    "options": [
+      "Wadi Musa",
+      "Viena",
+      "Agra",
+      "El Cairo"
+    ],
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/The_Treasury_Petra_Jordan.jpg/320px-The_Treasury_Petra_Jordan.jpg",
+    "extraData": {
+      "monumentName": "Petra",
+      "city": "Wadi Musa",
+      "country": "Jordania",
+      "monumentType": "ruinas"
+    }
+  },
+  {
+    "id": "monument_image_71001",
+    "type": "monument_image",
+    "difficulty": "medium",
+    "questionText": "¿Qué monumento o edificio es este?",
+    "correctAnswer": "Estatua de la Libertad",
+    "options": [
+      "Cristo Redentor",
+      "Machu Picchu",
+      "Estatua de la Libertad",
+      "Torre Eiffel"
+    ],
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/Statue_of_Liberty_7.jpg/320px-Statue_of_Liberty_7.jpg",
+    "extraData": {
+      "monumentName": "Estatua de la Libertad",
+      "city": "Nueva York",
+      "country": "Estados Unidos",
+      "monumentType": "estatua"
+    }
+  },
+  {
+    "id": "monument_70033",
+    "type": "monument_city",
+    "difficulty": "medium",
+    "questionText": "¿Golden Gate Bridge se encuentra en qué ciudad?",
+    "correctAnswer": "San Francisco",
+    "options": [
+      "San Francisco",
+      "Granada",
+      "Estado de México",
+      "El Cairo"
+    ],
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/GoldenGateBridge-001.jpg/320px-GoldenGateBridge-001.jpg",
+    "extraData": {
+      "monumentName": "Golden Gate Bridge",
+      "city": "San Francisco",
+      "country": "Estados Unidos",
+      "monumentType": "puente"
+    }
+  },
+  {
+    "id": "monument_image_71003",
+    "type": "monument_image",
+    "difficulty": "medium",
+    "questionText": "¿Qué monumento o edificio es este?",
+    "correctAnswer": "Cristo Redentor",
+    "options": [
+      "Empire State Building",
+      "Cristo Redentor",
+      "Petra",
+      "Muro de China"
+    ],
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/Christ_the_Redeemer_-_Rio_de_Janeiro%2C_Brazil.jpg/320px-Christ_the_Redeemer_-_Rio_de_Janeiro%2C_Brazil.jpg",
+    "extraData": {
+      "monumentName": "Cristo Redentor",
+      "city": "Río de Janeiro",
+      "country": "Brasil",
+      "monumentType": "estatua"
+    }
+  },
+  {
+    "id": "monument_70032",
+    "type": "monument_country",
+    "difficulty": "medium",
+    "questionText": "¿Monte Rushmore está ubicado en qué país?",
+    "correctAnswer": "Estados Unidos",
+    "options": [
+      "Jordania",
+      "Alemania",
+      "Argentina",
+      "Estados Unidos"
+    ],
+    "imageUrl": null,
+    "extraData": {
+      "monumentName": "Monte Rushmore",
+      "city": "Dakota del Sur",
+      "country": "Estados Unidos",
+      "monumentType": "escultura"
+    }
+  },
+  {
+    "id": "monument_image_71000",
+    "type": "monument_image",
+    "difficulty": "medium",
+    "questionText": "¿Qué monumento o edificio es este?",
+    "correctAnswer": "Torre Eiffel",
+    "options": [
+      "Muro de China",
+      "Cristo Redentor",
+      "Torre Eiffel",
+      "Pirámides de Giza"
+    ],
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Tour_Eiffel_Wikimedia_Commons_%28cropped%29.jpg/320px-Tour_Eiffel_Wikimedia_Commons_%28cropped%29.jpg",
+    "extraData": {
+      "monumentName": "Torre Eiffel",
+      "city": "París",
+      "country": "Francia",
+      "monumentType": "torre"
+    }
+  },
+  {
+    "id": "monument_70039",
+    "type": "monument_country",
+    "difficulty": "medium",
+    "questionText": "¿Montevideo está ubicado en qué país?",
+    "correctAnswer": "Uruguay",
+    "options": [
+      "Uruguay",
+      "Estados Unidos",
+      "Canadá",
+      "Reino Unido"
+    ],
+    "imageUrl": null,
+    "extraData": {
+      "monumentName": "Montevideo",
+      "city": "Montevideo",
+      "country": "Uruguay",
+      "monumentType": "teatro"
+    }
+  },
+  {
+    "id": "monument_70021",
+    "type": "monument_city",
+    "difficulty": "hard",
+    "questionText": "¿Panteón está ubicado en qué ciudad?",
+    "correctAnswer": "Roma",
+    "options": [
+      "Berlín",
+      "Roma",
+      "San Francisco",
+      "Segovia"
+    ],
+    "imageUrl": null,
+    "extraData": {
+      "monumentName": "Panteón",
+      "city": "Roma",
+      "country": "Italia",
+      "monumentType": "templo"
+    }
+  },
+  {
+    "id": "monument_70049",
+    "type": "monument_city",
+    "difficulty": "hard",
+    "questionText": "¿En qué ciudad se encuentra Templo Dorado?",
+    "correctAnswer": "Kioto",
+    "options": [
+      "Kioto",
+      "Roma",
+      "Estado de México",
+      "Atenas"
+    ],
+    "imageUrl": null,
+    "extraData": {
+      "monumentName": "Templo Dorado",
+      "city": "Kioto",
+      "country": "Japón",
+      "monumentType": "templo"
+    }
+  },
+  {
+    "id": "monument_70038",
+    "type": "monument_city",
+    "difficulty": "hard",
+    "questionText": "¿En qué ciudad se encuentra Cataratas del Iguazú?",
+    "correctAnswer": "Foz do Iguaçu",
+    "options": [
+      "Foz do Iguaçu",
+      "Füssen",
+      "Siem Reap",
+      "Buenos Aires"
+    ],
+    "imageUrl": null,
+    "extraData": {
+      "monumentName": "Cataratas del Iguazú",
+      "city": "Foz do Iguaçu",
+      "country": "Brasil",
+      "monumentType": "cataratas"
+    }
+  },
+  {
+    "id": "monument_70015",
+    "type": "monument_country",
+    "difficulty": "medium",
+    "questionText": "¿Muro de Berlín se encuentra en qué país?",
+    "correctAnswer": "Alemania",
+    "options": [
+      "Brasil",
+      "Reino Unido",
+      "Alemania",
+      "Austria"
+    ],
+    "imageUrl": null,
+    "extraData": {
+      "monumentName": "Muro de Berlín",
+      "city": "Berlín",
+      "country": "Alemania",
+      "monumentType": "muro"
+    }
+  },
+  {
+    "id": "monument_image_71005",
+    "type": "monument_image",
+    "difficulty": "medium",
+    "questionText": "¿Qué monumento o edificio es este?",
+    "correctAnswer": "Pirámides de Giza",
+    "options": [
+      "Pirámides de Giza",
+      "Estatua de la Libertad",
+      "Machu Picchu",
+      "Ópera de Sídney"
+    ],
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Kheops-Pyramid.jpg/320px-Kheops-Pyramid.jpg",
+    "extraData": {
+      "monumentName": "Pirámides de Giza",
+      "city": "El Cairo",
+      "country": "Egipto",
+      "monumentType": "pirámide"
+    }
+  },
+  {
+    "id": "monument_70020",
+    "type": "monument_city",
+    "difficulty": "hard",
+    "questionText": "¿Cuál es la ciudad de Castillo de Neuschwanstein?",
+    "correctAnswer": "Füssen",
+    "options": [
+      "Füssen",
+      "Viena",
+      "Ciudad del Cabo",
+      "Shanghái"
+    ],
+    "imageUrl": null,
+    "extraData": {
+      "monumentName": "Castillo de Neuschwanstein",
+      "city": "Füssen",
+      "country": "Alemania",
+      "monumentType": "castillo"
+    }
+  },
+  {
+    "id": "monument_image_71009",
+    "type": "monument_image",
+    "difficulty": "medium",
+    "questionText": "¿Qué monumento o edificio es este?",
+    "correctAnswer": "Taj Mahal",
+    "options": [
+      "Taj Mahal",
+      "Pirámides de Giza",
+      "Estatua de la Libertad",
+      "Golden Gate Bridge"
+    ],
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bd/Taj_Mahal%2C_Agra%2C_India_edit3.jpg/320px-Taj_Mahal%2C_Agra%2C_India_edit3.jpg",
+    "extraData": {
+      "monumentName": "Taj Mahal",
+      "city": "Agra",
+      "country": "India",
+      "monumentType": "mausoleo"
+    }
+  },
+  {
+    "id": "monument_70005",
+    "type": "monument_city",
+    "difficulty": "hard",
+    "questionText": "¿Cuál es la ciudad de Coliseo?",
+    "correctAnswer": "Roma",
+    "options": [
+      "San Francisco",
+      "Yucatán",
+      "Granada",
+      "Roma"
+    ],
+    "imageUrl": null,
+    "extraData": {
+      "monumentName": "Coliseo",
+      "city": "Roma",
+      "country": "Italia",
+      "monumentType": "anfiteatro"
+    }
+  },
+  {
+    "id": "monument_70012",
+    "type": "monument_country",
+    "difficulty": "medium",
+    "questionText": "¿Catedral de Colonia se encuentra en qué país?",
+    "correctAnswer": "Alemania",
+    "options": [
+      "Alemania",
+      "México",
+      "China",
+      "Brasil"
+    ],
+    "imageUrl": null,
+    "extraData": {
+      "monumentName": "Catedral de Colonia",
+      "city": "Colonia",
+      "country": "Alemania",
+      "monumentType": "catedral"
+    }
+  },
+  {
+    "id": "monument_70016",
+    "type": "monument_city",
+    "difficulty": "hard",
+    "questionText": "¿Puentes de Viena está ubicado en qué ciudad?",
+    "correctAnswer": "Viena",
+    "options": [
+      "Pisa",
+      "Yulara",
+      "Praga",
+      "Viena"
+    ],
+    "imageUrl": null,
+    "extraData": {
+      "monumentName": "Puentes de Viena",
+      "city": "Viena",
+      "country": "Austria",
+      "monumentType": "puente"
+    }
+  },
+  {
+    "id": "monument_image_71010",
+    "type": "monument_image",
+    "difficulty": "medium",
+    "questionText": "¿Qué monumento o edificio es este?",
+    "correctAnswer": "Ópera de Sídney",
+    "options": [
+      "Muro de China",
+      "Empire State Building",
+      "Pirámides de Giza",
+      "Ópera de Sídney"
+    ],
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/40/Sydney_Opera_House_Sails.jpg/320px-Sydney_Opera_House_Sails.jpg",
+    "extraData": {
+      "monumentName": "Ópera de Sídney",
+      "city": "Sídney",
+      "country": "Australia",
+      "monumentType": "teatro"
+    }
+  },
+  {
+    "id": "monument_image_71007",
+    "type": "monument_image",
+    "difficulty": "medium",
+    "questionText": "¿Qué monumento o edificio es este?",
+    "correctAnswer": "Muro de China",
+    "options": [
+      "Muro de China",
+      "Estatua de la Libertad",
+      "Golden Gate Bridge",
+      "Cristo Redentor"
+    ],
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/23/The_Great_Wall_of_China_at_Jinshanling-edit.jpg/320px-The_Great_Wall_of_China_at_Jinshanling-edit.jpg",
+    "extraData": {
+      "monumentName": "Muro de China",
+      "city": "Pekín",
+      "country": "China",
+      "monumentType": "muro"
+    }
+  },
+  {
+    "id": "monument_image_71002",
+    "type": "monument_image",
+    "difficulty": "medium",
+    "questionText": "¿Qué monumento o edificio es este?",
+    "correctAnswer": "Empire State Building",
+    "options": [
+      "Empire State Building",
+      "Pirámides de Giza",
+      "Machu Picchu",
+      "Petra"
+    ],
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/Empire_State_Building_%28aerial_view%29.jpg/320px-Empire_State_Building_%28aerial_view%29.jpg",
+    "extraData": {
+      "monumentName": "Empire State Building",
+      "city": "Nueva York",
+      "country": "Estados Unidos",
+      "monumentType": "rascacielos"
+    }
+  },
+  {
+    "id": "monument_70029",
+    "type": "monument_country",
+    "difficulty": "medium",
+    "questionText": "¿Chichén Itzá está ubicado en qué país?",
+    "correctAnswer": "México",
+    "options": [
+      "Canadá",
+      "Japón",
+      "México",
+      "Camboya"
+    ],
+    "imageUrl": null,
+    "extraData": {
+      "monumentName": "Chichén Itzá",
+      "city": "Yucatán",
+      "country": "México",
+      "monumentType": "ruinas"
+    }
+  },
+  {
+    "id": "monument_70023",
+    "type": "monument_country",
+    "difficulty": "medium",
+    "questionText": "¿Basílica de San Pedro está ubicado en qué país?",
+    "correctAnswer": "Vaticano",
+    "options": [
+      "Italia",
+      "Brasil",
+      "Estados Unidos",
+      "Vaticano"
+    ],
+    "imageUrl": null,
+    "extraData": {
+      "monumentName": "Basílica de San Pedro",
+      "city": "Vaticano",
+      "country": "Vaticano",
+      "monumentType": "basílica"
+    }
+  },
+  {
+    "id": "monument_image_71004",
+    "type": "monument_image",
+    "difficulty": "medium",
+    "questionText": "¿Qué monumento o edificio es este?",
+    "correctAnswer": "Machu Picchu",
+    "options": [
+      "Muro de China",
+      "Empire State Building",
+      "Machu Picchu",
+      "Cristo Redentor"
+    ],
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/Machu_Picchu%2C_Peru.jpg/320px-Machu_Picchu%2C_Peru.jpg",
+    "extraData": {
+      "monumentName": "Machu Picchu",
+      "city": "Cuzco",
+      "country": "Perú",
+      "monumentType": "ruinas"
+    }
+  },
+  {
+    "id": "monument_70010",
+    "type": "monument_city",
+    "difficulty": "hard",
+    "questionText": "¿London Eye está ubicado en qué ciudad?",
+    "correctAnswer": "Londres",
+    "options": [
+      "Londres",
+      "Dakota del Sur",
+      "Wadi Musa",
+      "Ciudad de México"
+    ],
+    "imageUrl": null,
+    "extraData": {
+      "monumentName": "London Eye",
+      "city": "Londres",
+      "country": "Reino Unido",
+      "monumentType": "rueda"
+    }
+  },
+  {
+    "id": "monument_70042",
+    "type": "monument_country",
+    "difficulty": "medium",
+    "questionText": "¿Ciudad Prohibida está ubicado en qué país?",
+    "correctAnswer": "China",
+    "options": [
+      "China",
+      "Argentina",
+      "Portugal",
+      "Austria"
+    ],
+    "imageUrl": null,
+    "extraData": {
+      "monumentName": "Ciudad Prohibida",
+      "city": "Pekín",
+      "country": "China",
+      "monumentType": "palacio"
+    }
+  }
+]

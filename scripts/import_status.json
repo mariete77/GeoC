@@ -1,0 +1,35 @@
+{
+  "total_questions": 3116,
+  "imported_questions": 0,
+  "failed_batches": [
+    {
+      "batch": 1,
+      "error": "maximum recursion depth exceeded"
+    },
+    {
+      "batch": 2,
+      "error": "maximum recursion depth exceeded"
+    },
+    {
+      "batch": 3,
+      "error": "maximum recursion depth exceeded"
+    },
+    {
+      "batch": 4,
+      "error": "maximum recursion depth exceeded"
+    },
+    {
+      "batch": 5,
+      "error": "maximum recursion depth exceeded"
+    },
+    {
+      "batch": 6,
+      "error": "maximum recursion depth exceeded"
+    },
+    {
+      "batch": 7,
+      "error": "maximum recursion depth exceeded"
+    }
+  ],
+  "last_batch": 0
+}

@@ -97,6 +97,35 @@ class MultiplayerState {
     this.invitedFriendId,
   });
 
+  double calculatePerformanceScore() {
+    double totalPerformance = 0.0;
+    for (final answer in playerAnswers) {
+      if (answer.isCorrect) {
+        totalPerformance += 1.0;
+        if (answer.timeMs < 2000) {
+          totalPerformance += 0.5;
+        } else if (answer.timeMs < 5000) {
+          totalPerformance += 0.2;
+        }
+      }
+    }
+    return totalPerformance;
+  }
+
+  double? get opponentPerformanceScore {
+    if (opponentAnswers == null) return null;
+    
+    double totalPerformance = 0.0;
+    for (final answer in opponentAnswers!) {
+      if (answer.isCorrect) {
+        totalPerformance += 1.0;
+        if (answer.timeMs < 2000) totalPerformance += 0.5;
+        else if (answer.timeMs < 5000) totalPerformance += 0.2;
+      }
+    }
+    return totalPerformance;
+  }
+
   MultiplayerState copyWith({
     MultiplayerStatus? status,
     MultiplayerMode? mode,
@@ -284,30 +313,71 @@ class MultiplayerNotifier extends StateNotifier<MultiplayerState> {
     );
   }
 
-  /// Start a PvP match (try to find waiting match first, then create new)
+  /// Start a PvP match with expanding ELO range
   Future<void> _startPvPMatch(MultiplayerMode mode) async {
     final matchType = mode == MultiplayerMode.ranked ? MatchType.ranked : MatchType.casual;
-    final userElo = _userElo;
+    int baseElo = _userElo;
+    
+    // We will use a matchmaking loop that expands the range
+    int searchRange = 100; // Start strict
+    int timeElapsed = 0;
 
-    // Step 1: Try to find an existing waiting match
-    final findResult = await _ref.read(matchRepositoryProvider).findWaitingMatch(
-          mode: mode.name,
-          playerElo: userElo,
-          userId: _currentUserId!,
-        );
+    // Reset/clear any existing search timer
+    _matchmakingTimer?.cancel();
 
-    await findResult.fold(
-      (failure) async => _createAndWaitForOpponent(matchType, userElo),
-      (existingMatch) async {
-        if (existingMatch != null) {
-          // Found a waiting match - join it!
-          await _joinExistingMatch(existingMatch);
-        } else {
-          // No waiting match - create a new one
-          await _createAndWaitForOpponent(matchType, userElo);
+    // Define the search function
+    Future<void> searchAttempt() async {
+      final findResult = await _ref.read(matchRepositoryProvider).findWaitingMatch(
+            mode: mode.name,
+            playerElo: baseElo,
+            userId: _currentUserId!,
+          );
+
+      await findResult.fold(
+        (failure) {
+          // If search fails or times out, try next interval
+        },
+        (existingMatch) async {
+          if (existingMatch != null) {
+            _matchmakingTimer?.cancel();
+            await _joinExistingMatch(existingMatch);
+          }
+        },
+      );
+    }
+
+    // Start expanding search loop
+    _matchmakingTimer = Timer.periodic(const Duration(seconds: 2), (timer) async {
+      if (state.status != MultiplayerStatus.searching) {
+        timer.cancel();
+        return;
+      }
+
+      timeElapsed += 2;
+
+      // Expand range based on time - More aggressive expansion
+      if (timeElapsed >= 10) {
+        searchRange = 2000; // Basically everyone
+      } else if (timeElapsed >= 4) {
+        searchRange = 500;
+      } else {
+        searchRange = 200;
+      }
+
+      await searchAttempt();
+
+      // Timeout after 30s
+      if (timeElapsed >= 30) {
+        timer.cancel();
+        if (state.status == MultiplayerStatus.searching) {
+          _cancelMatchmaking(_pendingMatchId ?? '');
+          _fallbackToGhostRun();
         }
-      },
-    );
+      }
+    });
+
+    // Initial search
+    await searchAttempt();
   }
 
   /// Pre-generate random questions for a new match
@@ -420,9 +490,9 @@ class MultiplayerNotifier extends StateNotifier<MultiplayerState> {
         // Watch the match for opponent joining
         _watchForOpponent(matchId);
 
-        // Set a timeout (15s) - fall back to ghost run if no opponent found
+        // Set a timeout (30s) - fall back to ghost run if no opponent found
         _matchmakingTimer = Timer(
-          const Duration(seconds: 15),
+          const Duration(seconds: 30),
           () {
             if (state.status == MultiplayerStatus.searching) {
               _cancelMatchmaking(matchId);
@@ -991,11 +1061,17 @@ class MultiplayerNotifier extends StateNotifier<MultiplayerState> {
       final opponentElo = state.opponentElo ?? GameConstants.initialElo;
 
       // Calculate score: based on win/loss/draw
-      // 1.0 = win, 0.0 = loss, 0.5 = draw
+      // Now incorporating speed bonus logic
       double score;
-      if (state.playerScore > state.opponentScore) {
+      
+      // Calculate player performance: correct answers + speed bonus
+      // We assume the provider already tracks response times per question
+      final playerPerformance = state.calculatePerformanceScore(); 
+      final opponentPerformance = state.opponentPerformanceScore ?? 0.0;
+
+      if (playerPerformance > opponentPerformance) {
         score = 1.0; // Win
-      } else if (state.playerScore < state.opponentScore) {
+      } else if (playerPerformance < opponentPerformance) {
         score = 0.0; // Loss
       } else {
         score = 0.5; // Draw

@@ -1,5 +1,6 @@
+import 'package:flutter/foundation.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:firebase_auth/firebase_auth.dart';
+import 'package:firebase_auth/firebase_auth.dart' hide User;
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:dartz/dartz.dart' hide State;
 
@@ -69,10 +70,6 @@ class FriendsNotifier extends StateNotifier<FriendsState> {
 
   Future<void> fetchFriends() async {
     if (_currentUserId == null) {
-      state = state.copyWith(
-        errorMessage: 'User not logged in',
-        clearError: false,
-      );
       return;
     }
 
@@ -81,11 +78,13 @@ class FriendsNotifier extends StateNotifier<FriendsState> {
     try {
       final result = await _friendRepository.getFriends(_currentUserId!);
 
-      result.fold(
-        (failure) => state = state.copyWith(
-          isLoading: false,
-          errorMessage: failure.message,
-        ),
+      await result.fold(
+        (failure) async {
+          state = state.copyWith(
+            isLoading: false,
+            errorMessage: failure.message,
+          );
+        },
         (friendIds) async {
           // Fetch each friend's full User document from Firestore
           final List<User> friendsList = [];
@@ -98,8 +97,8 @@ class FriendsNotifier extends StateNotifier<FriendsState> {
               if (doc.exists) {
                 friendsList.add(UserModel.fromFirestore(doc).toDomain());
               }
-            } catch (_) {
-              // Skip individual failures so one bad doc doesn't break the list
+            } catch (e) {
+              debugPrint('Error fetching friend $friendId: $e');
             }
           }
           state = state.copyWith(isLoading: false, friends: friendsList);
@@ -127,6 +126,7 @@ class FriendsNotifier extends StateNotifier<FriendsState> {
         (requests) => state = state.copyWith(pendingRequests: requests),
       );
     } catch (e) {
+      debugPrint('Error fetching pending requests: $e');
       state = state.copyWith(errorMessage: e.toString());
     }
   }

@@ -1,0 +1,1843 @@
+[
+  {
+    "id": "region_30056",
+    "type": "region",
+    "difficulty": "medium",
+    "questionText": "¿En qué región se encuentra Pakistán?",
+    "correctAnswer": "Asia",
+    "options": [
+      "Europa",
+      "África",
+      "Asia",
+      "América"
+    ],
+    "extraData": {
+      "countryCode": "pk",
+      "countryName": "Pakistán",
+      "region": "Asia",
+      "regionSpanish": "Asia"
+    }
+  },
+  {
+    "id": "region_30061",
+    "type": "region",
+    "difficulty": "hard",
+    "questionText": "¿Isla Bouvet es un país de qué región?",
+    "correctAnswer": "Antártida",
+    "options": [
+      "Oceanía",
+      "Antártida",
+      "Asia",
+      "Europa"
+    ],
+    "extraData": {
+      "countryCode": "bv",
+      "countryName": "Isla Bouvet",
+      "region": "Antarctic",
+      "regionSpanish": "Antártida"
+    }
+  },
+  {
+    "id": "area_30083",
+    "type": "area",
+    "difficulty": "hard",
+    "questionText": "¿Entre Finlandia y Isla de Man, cuál tiene mayor superficie?",
+    "correctAnswer": "Finlandia",
+    "options": [
+      "Finlandia",
+      "Isla de Man"
+    ],
+    "extraData": {
+      "countries": [
+        "Finland",
+        "Isle of Man"
+      ],
+      "area1": 338455.0,
+      "area2": 572.0,
+      "infoToShow": "338 mil km²"
+    }
+  },
+  {
+    "id": "area_30090",
+    "type": "area",
+    "difficulty": "medium",
+    "questionText": "¿Entre Catar y Japón, cuál tiene mayor superficie?",
+    "correctAnswer": "Japón",
+    "options": [
+      "Japón",
+      "Catar"
+    ],
+    "extraData": {
+      "countries": [
+        "Japan",
+        "Qatar"
+      ],
+      "area1": 377930.0,
+      "area2": 11586.0,
+      "infoToShow": "378 mil km²"
+    }
+  },
+  {
+    "id": "region_30055",
+    "type": "region",
+    "difficulty": "hard",
+    "questionText": "¿Polinesia Franciasa está ubicado en qué región?",
+    "correctAnswer": "Oceanía",
+    "options": [
+      "América",
+      "Oceanía",
+      "Europa",
+      "África"
+    ],
+    "extraData": {
+      "countryCode": "pf",
+      "countryName": "Polinesia Franciasa",
+      "region": "Oceania",
+      "regionSpanish": "Oceanía"
+    }
+  },
+  {
+    "id": "region_30062",
+    "type": "region",
+    "difficulty": "hard",
+    "questionText": "¿Islas Åland es un país de qué región?",
+    "correctAnswer": "Europa",
+    "options": [
+      "América",
+      "Antártida",
+      "Europa",
+      "Asia"
+    ],
+    "extraData": {
+      "countryCode": "ax",
+      "countryName": "Islas Åland",
+      "region": "Europe",
+      "regionSpanish": "Europa"
+    }
+  },
+  {
+    "id": "population_30075",
+    "type": "population",
+    "difficulty": "medium",
+    "questionText": "¿Qué país tiene más población, Guinea-Bisáu o España?",
+    "correctAnswer": "España",
+    "options": [
+      "España",
+      "Guinea-Bisáu"
+    ],
+    "extraData": {
+      "countries": [
+        "Spain",
+        "Guinea-Bissau"
+      ],
+      "population1": 49315949,
+      "population2": 1781308,
+      "infoToShow": "49.3 millones habitantes"
+    }
+  },
+  {
+    "id": "area_30086",
+    "type": "area",
+    "difficulty": "medium",
+    "questionText": "¿Qué nación es más grande en extensión, Tailandia o Seychelles?",
+    "correctAnswer": "Tailandia",
+    "options": [
+      "Tailandia",
+      "Seychelles"
+    ],
+    "extraData": {
+      "countries": [
+        "Thailand",
+        "Seychelles"
+      ],
+      "area1": 513120.0,
+      "area2": 452.0,
+      "infoToShow": "513 mil km²"
+    }
+  },
+  {
+    "id": "population_30074",
+    "type": "population",
+    "difficulty": "medium",
+    "questionText": "¿Qué país tiene más población, Ghana o Mongolia?",
+    "correctAnswer": "Ghana",
+    "options": [
+      "Ghana",
+      "Mongolia"
+    ],
+    "extraData": {
+      "countries": [
+        "Ghana",
+        "Mongolia"
+      ],
+      "population1": 33742380,
+      "population2": 3544835,
+      "infoToShow": "33.7 millones habitantes"
+    }
+  },
+  {
+    "id": "region_30051",
+    "type": "region",
+    "difficulty": "hard",
+    "questionText": "¿En qué parte del mundo está Panamá?",
+    "correctAnswer": "América",
+    "options": [
+      "Europa",
+      "América",
+      "Asia",
+      "África"
+    ],
+    "extraData": {
+      "countryCode": "pa",
+      "countryName": "Panamá",
+      "region": "Americas",
+      "regionSpanish": "América"
+    }
+  },
+  {
+    "id": "region_30058",
+    "type": "region",
+    "difficulty": "hard",
+    "questionText": "¿Bolivia está ubicado en qué región?",
+    "correctAnswer": "América",
+    "options": [
+      "África",
+      "Asia",
+      "América",
+      "Oceanía"
+    ],
+    "extraData": {
+      "countryCode": "bo",
+      "countryName": "Bolivia",
+      "region": "Americas",
+      "regionSpanish": "América"
+    }
+  },
+  {
+    "id": "area_30088",
+    "type": "area",
+    "difficulty": "medium",
+    "questionText": "¿Qué nación es más grande en extensión, Botsuana o Guinea Ecuatorial?",
+    "correctAnswer": "Botsuana",
+    "options": [
+      "Botsuana",
+      "Guinea Ecuatorial"
+    ],
+    "extraData": {
+      "countries": [
+        "Botswana",
+        "Equatorial Guinea"
+      ],
+      "area1": 582000.0,
+      "area2": 28051.0,
+      "infoToShow": "582 mil km²"
+    }
+  },
+  {
+    "id": "population_30065",
+    "type": "population",
+    "difficulty": "medium",
+    "questionText": "¿Qué país tiene más población, Wallis y Futuna o Argentina?",
+    "correctAnswer": "Argentina",
+    "options": [
+      "Argentina",
+      "Wallis y Futuna"
+    ],
+    "extraData": {
+      "countries": [
+        "Argentina",
+        "Wallis and Futuna"
+      ],
+      "population1": 46735004,
+      "population2": 11620,
+      "infoToShow": "46.7 millones habitantes"
+    }
+  },
+  {
+    "id": "population_30073",
+    "type": "population",
+    "difficulty": "medium",
+    "questionText": "¿Cuál de estos países es más poblado: Islas Vírgenes Británicas o Guinea?",
+    "correctAnswer": "Guinea",
+    "options": [
+      "Guinea",
+      "Islas Vírgenes Británicas"
+    ],
+    "extraData": {
+      "countries": [
+        "Guinea",
+        "British Virgin Islands"
+      ],
+      "population1": 14363931,
+      "population2": 39471,
+      "infoToShow": "14.4 millones habitantes"
+    }
+  },
+  {
+    "id": "population_30078",
+    "type": "population",
+    "difficulty": "medium",
+    "questionText": "¿Qué nación tiene mayor población, Niue o Sudán?",
+    "correctAnswer": "Sudán",
+    "options": [
+      "Sudán",
+      "Niue"
+    ],
+    "extraData": {
+      "countries": [
+        "Sudan",
+        "Niue"
+      ],
+      "population1": 51662000,
+      "population2": 1681,
+      "infoToShow": "51.7 millones habitantes"
+    }
+  },
+  {
+    "id": "population_30070",
+    "type": "population",
+    "difficulty": "hard",
+    "questionText": "¿Qué país tiene más población, Honduras o Islas Marianas del Norte?",
+    "correctAnswer": "Honduras",
+    "options": [
+      "Honduras",
+      "Islas Marianas del Norte"
+    ],
+    "extraData": {
+      "countries": [
+        "Honduras",
+        "Northern Mariana Islands"
+      ],
+      "population1": 9892632,
+      "population2": 47329,
+      "infoToShow": "9.9 millones habitantes"
+    }
+  },
+  {
+    "id": "area_30085",
+    "type": "area",
+    "difficulty": "medium",
+    "questionText": "¿Qué nación es más grande en extensión, Tayikistán o San Cristóbal y Nieves?",
+    "correctAnswer": "Tayikistán",
+    "options": [
+      "Tayikistán",
+      "San Cristóbal y Nieves"
+    ],
+    "extraData": {
+      "countries": [
+        "Tajikistan",
+        "Saint Kitts and Nevis"
+      ],
+      "area1": 143100.0,
+      "area2": 261.0,
+      "infoToShow": "143 mil km²"
+    }
+  },
+  {
+    "id": "area_30093",
+    "type": "area",
+    "difficulty": "hard",
+    "questionText": "¿Qué país es más extenso, Panamá o Tuvalu?",
+    "correctAnswer": "Panamá",
+    "options": [
+      "Panamá",
+      "Tuvalu"
+    ],
+    "extraData": {
+      "countries": [
+        "Panama",
+        "Tuvalu"
+      ],
+      "area1": 75417.0,
+      "area2": 26.0,
+      "infoToShow": "75 mil km²"
+    }
+  },
+  {
+    "id": "language_30034",
+    "type": "language",
+    "difficulty": "medium",
+    "questionText": "¿El idioma principal de Martinica es...?",
+    "correctAnswer": "francés",
+    "options": [
+      "armenio",
+      "francés",
+      "nepalí",
+      "sueco"
+    ],
+    "extraData": {
+      "countryCode": "mq",
+      "countryName": "Martinica",
+      "languageCode": "fra"
+    }
+  },
+  {
+    "id": "area_30091",
+    "type": "area",
+    "difficulty": "hard",
+    "questionText": "¿Qué país es más extenso, Montenegro o Austria?",
+    "correctAnswer": "Austria",
+    "options": [
+      "Austria",
+      "Montenegro"
+    ],
+    "extraData": {
+      "countries": [
+        "Austria",
+        "Montenegro"
+      ],
+      "area1": 83871.0,
+      "area2": 13812.0,
+      "infoToShow": "84 mil km²"
+    }
+  },
+  {
+    "id": "language_30035",
+    "type": "language",
+    "difficulty": "medium",
+    "questionText": "¿Los habitantes de Curazao hablan principalmente...?",
+    "correctAnswer": "inglés",
+    "options": [
+      "italiano",
+      "inglés",
+      "Norwegian Nynorsk",
+      "francés"
+    ],
+    "extraData": {
+      "countryCode": "cw",
+      "countryName": "Curazao",
+      "languageCode": "eng"
+    }
+  },
+  {
+    "id": "language_30037",
+    "type": "language",
+    "difficulty": "hard",
+    "questionText": "¿Los habitantes de Liberia hablan principalmente...?",
+    "correctAnswer": "inglés",
+    "options": [
+      "italiano",
+      "inglés",
+      "francés",
+      "afrikáans"
+    ],
+    "extraData": {
+      "countryCode": "lr",
+      "countryName": "Liberia",
+      "languageCode": "eng"
+    }
+  },
+  {
+    "id": "language_30033",
+    "type": "language",
+    "difficulty": "medium",
+    "questionText": "¿Qué idioma se habla en Antigua y Barbuda?",
+    "correctAnswer": "inglés",
+    "options": [
+      "japonés",
+      "árabe",
+      "ucraniano",
+      "inglés"
+    ],
+    "extraData": {
+      "countryCode": "ag",
+      "countryName": "Antigua y Barbuda",
+      "languageCode": "eng"
+    }
+  },
+  {
+    "id": "region_30054",
+    "type": "region",
+    "difficulty": "hard",
+    "questionText": "¿En qué continente está Corea del Norte?",
+    "correctAnswer": "Asia",
+    "options": [
+      "América",
+      "Asia",
+      "Oceanía",
+      "Antártida"
+    ],
+    "extraData": {
+      "countryCode": "kp",
+      "countryName": "Corea del Norte",
+      "region": "Asia",
+      "regionSpanish": "Asia"
+    }
+  },
+  {
+    "id": "population_30079",
+    "type": "population",
+    "difficulty": "medium",
+    "questionText": "¿Qué país tiene más población, Dominica o Burundi?",
+    "correctAnswer": "Burundi",
+    "options": [
+      "Burundi",
+      "Dominica"
+    ],
+    "extraData": {
+      "countries": [
+        "Burundi",
+        "Dominica"
+      ],
+      "population1": 12332788,
+      "population2": 67408,
+      "infoToShow": "12.3 millones habitantes"
+    }
+  },
+  {
+    "id": "region_30059",
+    "type": "region",
+    "difficulty": "hard",
+    "questionText": "¿A qué región pertenece Kiribati?",
+    "correctAnswer": "Oceanía",
+    "options": [
+      "América",
+      "África",
+      "Asia",
+      "Oceanía"
+    ],
+    "extraData": {
+      "countryCode": "ki",
+      "countryName": "Kiribati",
+      "region": "Oceania",
+      "regionSpanish": "Oceanía"
+    }
+  },
+  {
+    "id": "language_30036",
+    "type": "language",
+    "difficulty": "hard",
+    "questionText": "¿Cuál es la lengua oficial de Samoa?",
+    "correctAnswer": "inglés",
+    "options": [
+      "francés",
+      "neerlandés",
+      "inglés",
+      "bosnio"
+    ],
+    "extraData": {
+      "countryCode": "ws",
+      "countryName": "Samoa",
+      "languageCode": "eng"
+    }
+  },
+  {
+    "id": "currency_30019",
+    "type": "currency",
+    "difficulty": "medium",
+    "questionText": "¿Cuál es la divisa de Colombia?",
+    "correctAnswer": "Peso colombiano",
+    "options": [
+      "Dólar estadounidense",
+      "rublo bielorruso",
+      "Rupia indonesia",
+      "Franco CFP"
+    ],
+    "extraData": {
+      "countryCode": "co",
+      "countryName": "Colombia",
+      "currencyCode": "COP"
+    }
+  },
+  {
+    "id": "population_30064",
+    "type": "population",
+    "difficulty": "hard",
+    "questionText": "¿Entre Bahamas y Omán, cuál tiene más habitantes?",
+    "correctAnswer": "Omán",
+    "options": [
+      "Omán",
+      "Bahamas"
+    ],
+    "extraData": {
+      "countries": [
+        "Oman",
+        "Bahamas"
+      ],
+      "population1": 5343630,
+      "population2": 398165,
+      "infoToShow": "5.3 millones habitantes"
+    }
+  },
+  {
+    "id": "region_30063",
+    "type": "region",
+    "difficulty": "hard",
+    "questionText": "¿En qué región se encuentra Eslovaquia?",
+    "correctAnswer": "Europa",
+    "options": [
+      "Antártida",
+      "África",
+      "Oceanía",
+      "Europa"
+    ],
+    "extraData": {
+      "countryCode": "sk",
+      "countryName": "Eslovaquia",
+      "region": "Europe",
+      "regionSpanish": "Europa"
+    }
+  },
+  {
+    "id": "population_30077",
+    "type": "population",
+    "difficulty": "medium",
+    "questionText": "¿Qué nación tiene mayor población, Jamaica o Portugal?",
+    "correctAnswer": "Portugal",
+    "options": [
+      "Portugal",
+      "Jamaica"
+    ],
+    "extraData": {
+      "countries": [
+        "Portugal",
+        "Jamaica"
+      ],
+      "population1": 10749635,
+      "population2": 2825544,
+      "infoToShow": "10.7 millones habitantes"
+    }
+  },
+  {
+    "id": "flag_30024",
+    "type": "flag",
+    "difficulty": "easy",
+    "questionText": "¿De qué país es esta bandera?",
+    "correctAnswer": "Italia",
+    "options": [
+      "Santa Elena, Ascensión and Tristán de Acuña",
+      "Italia",
+      "Francia",
+      "Argelia"
+    ],
+    "imageUrl": "https://flagcdn.com/w320/it.png",
+    "extraData": {
+      "countryCode": "it",
+      "countryName": "Italia"
+    }
+  },
+  {
+    "id": "flag_30041",
+    "type": "flag",
+    "difficulty": "hard",
+    "questionText": "¿De qué país es esta bandera?",
+    "correctAnswer": "Puerto Rico",
+    "options": [
+      "Santa Lucía",
+      "Puerto Rico",
+      "Guinea-Bisáu",
+      "Martinica"
+    ],
+    "imageUrl": "https://flagcdn.com/w320/pr.png",
+    "extraData": {
+      "countryCode": "pr",
+      "countryName": "Puerto Rico"
+    }
+  },
+  {
+    "id": "flag_30032",
+    "type": "flag",
+    "difficulty": "easy",
+    "questionText": "¿De qué país es esta bandera?",
+    "correctAnswer": "Portugal",
+    "options": [
+      "Portugal",
+      "Kuwait",
+      "Bermudas",
+      "Svalbard y Jan Mayen"
+    ],
+    "imageUrl": "https://flagcdn.com/w320/pt.png",
+    "extraData": {
+      "countryCode": "pt",
+      "countryName": "Portugal"
+    }
+  },
+  {
+    "id": "flag_30031",
+    "type": "flag",
+    "difficulty": "easy",
+    "questionText": "¿De qué país es esta bandera?",
+    "correctAnswer": "Canadá",
+    "options": [
+      "Panamá",
+      "Canadá",
+      "Kosovo",
+      "Trinidad y Tobago"
+    ],
+    "imageUrl": "https://flagcdn.com/w320/ca.png",
+    "extraData": {
+      "countryCode": "ca",
+      "countryName": "Canadá"
+    }
+  },
+  {
+    "id": "flag_30028",
+    "type": "flag",
+    "difficulty": "medium",
+    "questionText": "¿De qué país es esta bandera?",
+    "correctAnswer": "Níger",
+    "options": [
+      "Níger",
+      "Isla Heard e Islas McDonald",
+      "Andorra",
+      "Egipto"
+    ],
+    "imageUrl": "https://flagcdn.com/w320/ne.png",
+    "extraData": {
+      "countryCode": "ne",
+      "countryName": "Níger"
+    }
+  },
+  {
+    "id": "flag_30012",
+    "type": "flag",
+    "difficulty": "medium",
+    "questionText": "¿De qué país es esta bandera?",
+    "correctAnswer": "Colombia",
+    "options": [
+      "Tayikistán",
+      "Mauricio",
+      "Colombia",
+      "Namibia"
+    ],
+    "imageUrl": "https://flagcdn.com/w320/co.png",
+    "extraData": {
+      "countryCode": "co",
+      "countryName": "Colombia"
+    }
+  },
+  {
+    "id": "flag_30011",
+    "type": "flag",
+    "difficulty": "hard",
+    "questionText": "¿De qué país es esta bandera?",
+    "correctAnswer": "Islas Feroe",
+    "options": [
+      "Bielorrusia",
+      "Reunión",
+      "Islas Feroe",
+      "Lituania"
+    ],
+    "imageUrl": "https://flagcdn.com/w320/fo.png",
+    "extraData": {
+      "countryCode": "fo",
+      "countryName": "Islas Feroe"
+    }
+  },
+  {
+    "id": "flag_30026",
+    "type": "flag",
+    "difficulty": "medium",
+    "questionText": "¿De qué país es esta bandera?",
+    "correctAnswer": "Mozambique",
+    "options": [
+      "Malasia",
+      "Mozambique",
+      "Honduras",
+      "Argentina"
+    ],
+    "imageUrl": "https://flagcdn.com/w320/mz.png",
+    "extraData": {
+      "countryCode": "mz",
+      "countryName": "Mozambique"
+    }
+  },
+  {
+    "id": "flag_30036",
+    "type": "flag",
+    "difficulty": "hard",
+    "questionText": "¿De qué país es esta bandera?",
+    "correctAnswer": "Macao",
+    "options": [
+      "Macao",
+      "El Salvador",
+      "Islandia",
+      "Isla de Navidad"
+    ],
+    "imageUrl": "https://flagcdn.com/w320/mo.png",
+    "extraData": {
+      "countryCode": "mo",
+      "countryName": "Macao"
+    }
+  },
+  {
+    "id": "flag_30025",
+    "type": "flag",
+    "difficulty": "hard",
+    "questionText": "¿De qué país es esta bandera?",
+    "correctAnswer": "Finlandia",
+    "options": [
+      "Estonia",
+      "Malaui",
+      "Islas Åland",
+      "Finlandia"
+    ],
+    "imageUrl": "https://flagcdn.com/w320/fi.png",
+    "extraData": {
+      "countryCode": "fi",
+      "countryName": "Finlandia"
+    }
+  },
+  {
+    "id": "flag_30043",
+    "type": "flag",
+    "difficulty": "medium",
+    "questionText": "¿De qué país es esta bandera?",
+    "correctAnswer": "Malaui",
+    "options": [
+      "Aruba",
+      "Malaui",
+      "Venezuela",
+      "Hungría"
+    ],
+    "imageUrl": "https://flagcdn.com/w320/mw.png",
+    "extraData": {
+      "countryCode": "mw",
+      "countryName": "Malaui"
+    }
+  },
+  {
+    "id": "flag_30049",
+    "type": "flag",
+    "difficulty": "medium",
+    "questionText": "¿De qué país es esta bandera?",
+    "correctAnswer": "Senegal",
+    "options": [
+      "Togo",
+      "Papúa Nueva Guinea",
+      "Senegal",
+      "Azerbaiyán"
+    ],
+    "imageUrl": "https://flagcdn.com/w320/sn.png",
+    "extraData": {
+      "countryCode": "sn",
+      "countryName": "Senegal"
+    }
+  },
+  {
+    "id": "flag_30044",
+    "type": "flag",
+    "difficulty": "medium",
+    "questionText": "¿De qué país es esta bandera?",
+    "correctAnswer": "Irak",
+    "options": [
+      "Irak",
+      "Filipinas",
+      "Tailandia",
+      "Macedonia del Norte"
+    ],
+    "imageUrl": "https://flagcdn.com/w320/iq.png",
+    "extraData": {
+      "countryCode": "iq",
+      "countryName": "Irak"
+    }
+  },
+  {
+    "id": "flag_30023",
+    "type": "flag",
+    "difficulty": "hard",
+    "questionText": "¿De qué país es esta bandera?",
+    "correctAnswer": "San Martín",
+    "options": [
+      "Grecia",
+      "Albania",
+      "Palaos",
+      "San Martín"
+    ],
+    "imageUrl": "https://flagcdn.com/w320/sx.png",
+    "extraData": {
+      "countryCode": "sx",
+      "countryName": "San Martín"
+    }
+  },
+  {
+    "id": "flag_30040",
+    "type": "flag",
+    "difficulty": "medium",
+    "questionText": "¿De qué país es esta bandera?",
+    "correctAnswer": "Sudán del Sur",
+    "options": [
+      "Surinam",
+      "Taiwán",
+      "India",
+      "Sudán del Sur"
+    ],
+    "imageUrl": "https://flagcdn.com/w320/ss.png",
+    "extraData": {
+      "countryCode": "ss",
+      "countryName": "Sudán del Sur"
+    }
+  },
+  {
+    "id": "flag_30019",
+    "type": "flag",
+    "difficulty": "medium",
+    "questionText": "¿De qué país es esta bandera?",
+    "correctAnswer": "Perú",
+    "options": [
+      "Perú",
+      "Nauru",
+      "Caribe Neerlandés",
+      "Líbano"
+    ],
+    "imageUrl": "https://flagcdn.com/w320/pe.png",
+    "extraData": {
+      "countryCode": "pe",
+      "countryName": "Perú"
+    }
+  },
+  {
+    "id": "flag_30015",
+    "type": "flag",
+    "difficulty": "hard",
+    "questionText": "¿De qué país es esta bandera?",
+    "correctAnswer": "Ciudad del Vaticano",
+    "options": [
+      "Ciudad del Vaticano",
+      "Níger",
+      "Tokelau",
+      "Hong Kong"
+    ],
+    "imageUrl": "https://flagcdn.com/w320/va.png",
+    "extraData": {
+      "countryCode": "va",
+      "countryName": "Ciudad del Vaticano"
+    }
+  },
+  {
+    "id": "flag_30022",
+    "type": "flag",
+    "difficulty": "medium",
+    "questionText": "¿De qué país es esta bandera?",
+    "correctAnswer": "Uzbekistán",
+    "options": [
+      "Benín",
+      "Polinesia Franciasa",
+      "Uzbekistán",
+      "Gibraltar"
+    ],
+    "imageUrl": "https://flagcdn.com/w320/uz.png",
+    "extraData": {
+      "countryCode": "uz",
+      "countryName": "Uzbekistán"
+    }
+  },
+  {
+    "id": "flag_30029",
+    "type": "flag",
+    "difficulty": "hard",
+    "questionText": "¿De qué país es esta bandera?",
+    "correctAnswer": "Estonia",
+    "options": [
+      "RD Congo",
+      "Paraguay",
+      "San Bartolomé",
+      "Estonia"
+    ],
+    "imageUrl": "https://flagcdn.com/w320/ee.png",
+    "extraData": {
+      "countryCode": "ee",
+      "countryName": "Estonia"
+    }
+  },
+  {
+    "id": "flag_30048",
+    "type": "flag",
+    "difficulty": "hard",
+    "questionText": "¿De qué país es esta bandera?",
+    "correctAnswer": "Macedonia del Norte",
+    "options": [
+      "Macedonia del Norte",
+      "Falkland Islands",
+      "Sri Lanka",
+      "Nígeria"
+    ],
+    "imageUrl": "https://flagcdn.com/w320/mk.png",
+    "extraData": {
+      "countryCode": "mk",
+      "countryName": "Macedonia del Norte"
+    }
+  },
+  {
+    "id": "flag_30046",
+    "type": "flag",
+    "difficulty": "hard",
+    "questionText": "¿De qué país es esta bandera?",
+    "correctAnswer": "Panamá",
+    "options": [
+      "Burundi",
+      "Islas Vírgenes Británicas",
+      "Panamá",
+      "São Tomé and Príncipe"
+    ],
+    "imageUrl": "https://flagcdn.com/w320/pa.png",
+    "extraData": {
+      "countryCode": "pa",
+      "countryName": "Panamá"
+    }
+  },
+  {
+    "id": "flag_30016",
+    "type": "flag",
+    "difficulty": "easy",
+    "questionText": "¿De qué país es esta bandera?",
+    "correctAnswer": "Reino Unido",
+    "options": [
+      "Corea del Norte",
+      "Territorio Británico del Océano Índico",
+      "Reino Unido",
+      "Brunéi"
+    ],
+    "imageUrl": "https://flagcdn.com/w320/gb.png",
+    "extraData": {
+      "countryCode": "gb",
+      "countryName": "Reino Unido"
+    }
+  },
+  {
+    "id": "flag_30034",
+    "type": "flag",
+    "difficulty": "hard",
+    "questionText": "¿De qué país es esta bandera?",
+    "correctAnswer": "Malta",
+    "options": [
+      "Malta",
+      "Siria",
+      "San Pedro y Miquelón",
+      "España"
+    ],
+    "imageUrl": "https://flagcdn.com/w320/mt.png",
+    "extraData": {
+      "countryCode": "mt",
+      "countryName": "Malta"
+    }
+  },
+  {
+    "id": "flag_30017",
+    "type": "flag",
+    "difficulty": "hard",
+    "questionText": "¿De qué país es esta bandera?",
+    "correctAnswer": "Moldavia",
+    "options": [
+      "Bután",
+      "Micronesia",
+      "Moldavia",
+      "Granada"
+    ],
+    "imageUrl": "https://flagcdn.com/w320/md.png",
+    "extraData": {
+      "countryCode": "md",
+      "countryName": "Moldavia"
+    }
+  },
+  {
+    "id": "flag_30013",
+    "type": "flag",
+    "difficulty": "easy",
+    "questionText": "¿De qué país es esta bandera?",
+    "correctAnswer": "Suiza",
+    "options": [
+      "Suiza",
+      "Liberia",
+      "Guyana",
+      "Afganistán"
+    ],
+    "imageUrl": "https://flagcdn.com/w320/ch.png",
+    "extraData": {
+      "countryCode": "ch",
+      "countryName": "Suiza"
+    }
+  },
+  {
+    "id": "flag_30018",
+    "type": "flag",
+    "difficulty": "medium",
+    "questionText": "¿De qué país es esta bandera?",
+    "correctAnswer": "Chequia",
+    "options": [
+      "Irán",
+      "Chequia",
+      "Kazajistán",
+      "Wallis y Futuna"
+    ],
+    "imageUrl": "https://flagcdn.com/w320/cz.png",
+    "extraData": {
+      "countryCode": "cz",
+      "countryName": "Chequia"
+    }
+  },
+  {
+    "id": "flag_30042",
+    "type": "flag",
+    "difficulty": "hard",
+    "questionText": "¿De qué país es esta bandera?",
+    "correctAnswer": "Islas Marianas del Norte",
+    "options": [
+      "Islas Marianas del Norte",
+      "Curazao",
+      "Nicaragua",
+      "San Marino"
+    ],
+    "imageUrl": "https://flagcdn.com/w320/mp.png",
+    "extraData": {
+      "countryCode": "mp",
+      "countryName": "Islas Marianas del Norte"
+    }
+  },
+  {
+    "id": "flag_30020",
+    "type": "flag",
+    "difficulty": "hard",
+    "questionText": "¿De qué país es esta bandera?",
+    "correctAnswer": "Montserrat",
+    "options": [
+      "Uganda",
+      "Botsuana",
+      "Montserrat",
+      "Gabón"
+    ],
+    "imageUrl": "https://flagcdn.com/w320/ms.png",
+    "extraData": {
+      "countryCode": "ms",
+      "countryName": "Montserrat"
+    }
+  },
+  {
+    "id": "flag_30035",
+    "type": "flag",
+    "difficulty": "medium",
+    "questionText": "¿De qué país es esta bandera?",
+    "correctAnswer": "Madagascar",
+    "options": [
+      "Chipre",
+      "Luxemburgo",
+      "Madagascar",
+      "Nepal"
+    ],
+    "imageUrl": "https://flagcdn.com/w320/mg.png",
+    "extraData": {
+      "countryCode": "mg",
+      "countryName": "Madagascar"
+    }
+  },
+  {
+    "id": "flag_30033",
+    "type": "flag",
+    "difficulty": "hard",
+    "questionText": "¿De qué país es esta bandera?",
+    "correctAnswer": "Honduras",
+    "options": [
+      "Marruecos",
+      "Burkina Faso",
+      "Honduras",
+      "Maldivas"
+    ],
+    "imageUrl": "https://flagcdn.com/w320/hn.png",
+    "extraData": {
+      "countryCode": "hn",
+      "countryName": "Honduras"
+    }
+  },
+  {
+    "id": "flag_30010",
+    "type": "flag",
+    "difficulty": "medium",
+    "questionText": "¿De qué país es esta bandera?",
+    "correctAnswer": "Etiopía",
+    "options": [
+      "Etiopía",
+      "Nueva Zelanda",
+      "San Martín",
+      "Gambia"
+    ],
+    "imageUrl": "https://flagcdn.com/w320/et.png",
+    "extraData": {
+      "countryCode": "et",
+      "countryName": "Etiopía"
+    }
+  },
+  {
+    "id": "flag_30037",
+    "type": "flag",
+    "difficulty": "easy",
+    "questionText": "¿De qué país es esta bandera?",
+    "correctAnswer": "Bélgica",
+    "options": [
+      "Bélgica",
+      "Australia",
+      "Turkmenistán",
+      "Guam"
+    ],
+    "imageUrl": "https://flagcdn.com/w320/be.png",
+    "extraData": {
+      "countryCode": "be",
+      "countryName": "Bélgica"
+    }
+  },
+  {
+    "id": "flag_30027",
+    "type": "flag",
+    "difficulty": "medium",
+    "questionText": "¿De qué país es esta bandera?",
+    "correctAnswer": "Bolivia",
+    "options": [
+      "Bolivia",
+      "French Guiana",
+      "Malta",
+      "Islas Marianas del Norte"
+    ],
+    "imageUrl": "https://flagcdn.com/w320/bo.png",
+    "extraData": {
+      "countryCode": "bo",
+      "countryName": "Bolivia"
+    }
+  },
+  {
+    "id": "flag_30021",
+    "type": "flag",
+    "difficulty": "medium",
+    "questionText": "¿De qué país es esta bandera?",
+    "correctAnswer": "Corea del Norte",
+    "options": [
+      "Canadá",
+      "Jamaica",
+      "Corea del Norte",
+      "Ghana"
+    ],
+    "imageUrl": "https://flagcdn.com/w320/kp.png",
+    "extraData": {
+      "countryCode": "kp",
+      "countryName": "Corea del Norte"
+    }
+  },
+  {
+    "id": "flag_30038",
+    "type": "flag",
+    "difficulty": "medium",
+    "questionText": "¿De qué país es esta bandera?",
+    "correctAnswer": "Siria",
+    "options": [
+      "Haití",
+      "Bulgaria",
+      "Laos",
+      "Siria"
+    ],
+    "imageUrl": "https://flagcdn.com/w320/sy.png",
+    "extraData": {
+      "countryCode": "sy",
+      "countryName": "Siria"
+    }
+  },
+  {
+    "id": "flag_30045",
+    "type": "flag",
+    "difficulty": "hard",
+    "questionText": "¿De qué país es esta bandera?",
+    "correctAnswer": "San Cristóbal y Nieves",
+    "options": [
+      "Corea del Sur",
+      "Islas Vírgenes de los Estados Unidos",
+      "Sudán",
+      "San Cristóbal y Nieves"
+    ],
+    "imageUrl": "https://flagcdn.com/w320/kn.png",
+    "extraData": {
+      "countryCode": "kn",
+      "countryName": "San Cristóbal y Nieves"
+    }
+  },
+  {
+    "id": "flag_30014",
+    "type": "flag",
+    "difficulty": "easy",
+    "questionText": "¿De qué país es esta bandera?",
+    "correctAnswer": "Japón",
+    "options": [
+      "Tanzania",
+      "Rusia",
+      "República Dominicana",
+      "Japón"
+    ],
+    "imageUrl": "https://flagcdn.com/w320/jp.png",
+    "extraData": {
+      "countryCode": "jp",
+      "countryName": "Japón"
+    }
+  },
+  {
+    "id": "flag_30030",
+    "type": "flag",
+    "difficulty": "hard",
+    "questionText": "¿De qué país es esta bandera?",
+    "correctAnswer": "Western Sahara",
+    "options": [
+      "Western Sahara",
+      "Antártida",
+      "Samoa",
+      "Surinam"
+    ],
+    "imageUrl": "https://flagcdn.com/w320/eh.png",
+    "extraData": {
+      "countryCode": "eh",
+      "countryName": "Western Sahara"
+    }
+  },
+  {
+    "id": "flag_30039",
+    "type": "flag",
+    "difficulty": "hard",
+    "questionText": "¿De qué país es esta bandera?",
+    "correctAnswer": "Montenegro",
+    "options": [
+      "Montenegro",
+      "Guinea",
+      "Niue",
+      "Cuba"
+    ],
+    "imageUrl": "https://flagcdn.com/w320/me.png",
+    "extraData": {
+      "countryCode": "me",
+      "countryName": "Montenegro"
+    }
+  },
+  {
+    "id": "flag_30047",
+    "type": "flag",
+    "difficulty": "hard",
+    "questionText": "¿De qué país es esta bandera?",
+    "correctAnswer": "Estados Unidos Minor Outlying Islands",
+    "options": [
+      "Noruega",
+      "Estados Unidos Minor Outlying Islands",
+      "Serbia",
+      "Sierra Leona"
+    ],
+    "imageUrl": "https://flagcdn.com/w320/um.png",
+    "extraData": {
+      "countryCode": "um",
+      "countryName": "Estados Unidos Minor Outlying Islands"
+    }
+  },
+  {
+    "id": "flag_40000_0",
+    "type": "flag",
+    "difficulty": "medium",
+    "questionText": "¿De qué país es esta bandera?",
+    "correctAnswer": "Kazajistán",
+    "options": [
+      "Kazajistán",
+      "Guyana",
+      "Surinam",
+      "Islas Salomón"
+    ],
+    "imageUrl": "https://flagcdn.com/w320/kz.png",
+    "extraData": {
+      "countryCode": "kz",
+      "countryName": "Kazajistán"
+    }
+  },
+  {
+    "id": "flag_40000_1",
+    "type": "flag",
+    "difficulty": "medium",
+    "questionText": "¿De qué país es esta bandera?",
+    "correctAnswer": "Bangladés",
+    "options": [
+      "Singapur",
+      "Yibuti",
+      "Indonesia",
+      "Bangladés"
+    ],
+    "imageUrl": "https://flagcdn.com/w320/bd.png",
+    "extraData": {
+      "countryCode": "bd",
+      "countryName": "Bangladés"
+    }
+  },
+  {
+    "id": "flag_40000_2",
+    "type": "flag",
+    "difficulty": "medium",
+    "questionText": "¿De qué país es esta bandera?",
+    "correctAnswer": "Palestina",
+    "options": [
+      "Kosovo",
+      "Azerbaiyán",
+      "Palestina",
+      "Falkland Islands"
+    ],
+    "imageUrl": "https://flagcdn.com/w320/ps.png",
+    "extraData": {
+      "countryCode": "ps",
+      "countryName": "Palestina"
+    }
+  },
+  {
+    "id": "flag_40000_3",
+    "type": "flag",
+    "difficulty": "medium",
+    "questionText": "¿De qué país es esta bandera?",
+    "correctAnswer": "Islas Cook",
+    "options": [
+      "Níger",
+      "Micronesia",
+      "Timor-Leste",
+      "Islas Cook"
+    ],
+    "imageUrl": "https://flagcdn.com/w320/ck.png",
+    "extraData": {
+      "countryCode": "ck",
+      "countryName": "Islas Cook"
+    }
+  },
+  {
+    "id": "flag_40000_4",
+    "type": "flag",
+    "difficulty": "medium",
+    "questionText": "¿De qué país es esta bandera?",
+    "correctAnswer": "Curazao",
+    "options": [
+      "Isla de Navidad",
+      "Mauricio",
+      "Surinam",
+      "Curazao"
+    ],
+    "imageUrl": "https://flagcdn.com/w320/cw.png",
+    "extraData": {
+      "countryCode": "cw",
+      "countryName": "Curazao"
+    }
+  },
+  {
+    "id": "flag_40000_5",
+    "type": "flag",
+    "difficulty": "medium",
+    "questionText": "¿De qué país es esta bandera?",
+    "correctAnswer": "Bután",
+    "options": [
+      "República Dominicana",
+      "Eslovenia",
+      "Palaos",
+      "Bután"
+    ],
+    "imageUrl": "https://flagcdn.com/w320/bt.png",
+    "extraData": {
+      "countryCode": "bt",
+      "countryName": "Bután"
+    }
+  },
+  {
+    "id": "flag_40000_6",
+    "type": "flag",
+    "difficulty": "medium",
+    "questionText": "¿De qué país es esta bandera?",
+    "correctAnswer": "Costa de Marfil",
+    "options": [
+      "Vietnam",
+      "Estados Unidos Minor Outlying Islands",
+      "Costa de Marfil",
+      "Dominica"
+    ],
+    "imageUrl": "https://flagcdn.com/w320/ci.png",
+    "extraData": {
+      "countryCode": "ci",
+      "countryName": "Costa de Marfil"
+    }
+  },
+  {
+    "id": "flag_40000_7",
+    "type": "flag",
+    "difficulty": "medium",
+    "questionText": "¿De qué país es esta bandera?",
+    "correctAnswer": "Fiyi",
+    "options": [
+      "Puerto Rico",
+      "Isla de Man",
+      "Fiyi",
+      "Yibuti"
+    ],
+    "imageUrl": "https://flagcdn.com/w320/fj.png",
+    "extraData": {
+      "countryCode": "fj",
+      "countryName": "Fiyi"
+    }
+  },
+  {
+    "id": "flag_40000_8",
+    "type": "flag",
+    "difficulty": "medium",
+    "questionText": "¿De qué país es esta bandera?",
+    "correctAnswer": "Svalbard y Jan Mayen",
+    "options": [
+      "Kenia",
+      "Isla de Man",
+      "Argentina",
+      "Svalbard y Jan Mayen"
+    ],
+    "imageUrl": "https://flagcdn.com/w320/sj.png",
+    "extraData": {
+      "countryCode": "sj",
+      "countryName": "Svalbard y Jan Mayen"
+    }
+  },
+  {
+    "id": "flag_40000_9",
+    "type": "flag",
+    "difficulty": "medium",
+    "questionText": "¿De qué país es esta bandera?",
+    "correctAnswer": "Dominica",
+    "options": [
+      "Líbano",
+      "Dominica",
+      "Moldavia",
+      "Francia"
+    ],
+    "imageUrl": "https://flagcdn.com/w320/dm.png",
+    "extraData": {
+      "countryCode": "dm",
+      "countryName": "Dominica"
+    }
+  },
+  {
+    "id": "flag_40000_10",
+    "type": "flag",
+    "difficulty": "medium",
+    "questionText": "¿De qué país es esta bandera?",
+    "correctAnswer": "Barbados",
+    "options": [
+      "Islas Caimán",
+      "Barbados",
+      "Belice",
+      "Guinea-Bisáu"
+    ],
+    "imageUrl": "https://flagcdn.com/w320/bb.png",
+    "extraData": {
+      "countryCode": "bb",
+      "countryName": "Barbados"
+    }
+  },
+  {
+    "id": "flag_40000_11",
+    "type": "flag",
+    "difficulty": "medium",
+    "questionText": "¿De qué país es esta bandera?",
+    "correctAnswer": "Anguila",
+    "options": [
+      "Suiza",
+      "Irán",
+      "Anguila",
+      "Islas Cook"
+    ],
+    "imageUrl": "https://flagcdn.com/w320/ai.png",
+    "extraData": {
+      "countryCode": "ai",
+      "countryName": "Anguila"
+    }
+  },
+  {
+    "id": "flag_40000_12",
+    "type": "flag",
+    "difficulty": "medium",
+    "questionText": "¿De qué país es esta bandera?",
+    "correctAnswer": "Granada",
+    "options": [
+      "China",
+      "Granada",
+      "Singapur",
+      "Gabón"
+    ],
+    "imageUrl": "https://flagcdn.com/w320/gd.png",
+    "extraData": {
+      "countryCode": "gd",
+      "countryName": "Granada"
+    }
+  },
+  {
+    "id": "flag_40000_13",
+    "type": "flag",
+    "difficulty": "medium",
+    "questionText": "¿De qué país es esta bandera?",
+    "correctAnswer": "Ciudad del Vaticano",
+    "options": [
+      "Vietnam",
+      "Guyana",
+      "Ciudad del Vaticano",
+      "Isla Bouvet"
+    ],
+    "imageUrl": "https://flagcdn.com/w320/va.png",
+    "extraData": {
+      "countryCode": "va",
+      "countryName": "Ciudad del Vaticano"
+    }
+  },
+  {
+    "id": "flag_40000_14",
+    "type": "flag",
+    "difficulty": "medium",
+    "questionText": "¿De qué país es esta bandera?",
+    "correctAnswer": "Italia",
+    "options": [
+      "Colombia",
+      "Islas Pitcairn",
+      "Groenlandia",
+      "Italia"
+    ],
+    "imageUrl": "https://flagcdn.com/w320/it.png",
+    "extraData": {
+      "countryCode": "it",
+      "countryName": "Italia"
+    }
+  },
+  {
+    "id": "flag_40000_15",
+    "type": "flag",
+    "difficulty": "medium",
+    "questionText": "¿De qué país es esta bandera?",
+    "correctAnswer": "Zambia",
+    "options": [
+      "Mongolia",
+      "Yemen",
+      "Aruba",
+      "Zambia"
+    ],
+    "imageUrl": "https://flagcdn.com/w320/zm.png",
+    "extraData": {
+      "countryCode": "zm",
+      "countryName": "Zambia"
+    }
+  },
+  {
+    "id": "flag_40000_16",
+    "type": "flag",
+    "difficulty": "medium",
+    "questionText": "¿De qué país es esta bandera?",
+    "correctAnswer": "Grecia",
+    "options": [
+      "Mongolia",
+      "Grecia",
+      "Samoa Americana",
+      "Birmania"
+    ],
+    "imageUrl": "https://flagcdn.com/w320/gr.png",
+    "extraData": {
+      "countryCode": "gr",
+      "countryName": "Grecia"
+    }
+  },
+  {
+    "id": "flag_40000_17",
+    "type": "flag",
+    "difficulty": "medium",
+    "questionText": "¿De qué país es esta bandera?",
+    "correctAnswer": "Panamá",
+    "options": [
+      "Panamá",
+      "Nicaragua",
+      "Samoa Americana",
+      "Líbano"
+    ],
+    "imageUrl": "https://flagcdn.com/w320/pa.png",
+    "extraData": {
+      "countryCode": "pa",
+      "countryName": "Panamá"
+    }
+  },
+  {
+    "id": "flag_40000_18",
+    "type": "flag",
+    "difficulty": "medium",
+    "questionText": "¿De qué país es esta bandera?",
+    "correctAnswer": "Islandia",
+    "options": [
+      "Andorra",
+      "Islandia",
+      "Camerún",
+      "Caribe Neerlandés"
+    ],
+    "imageUrl": "https://flagcdn.com/w320/is.png",
+    "extraData": {
+      "countryCode": "is",
+      "countryName": "Islandia"
+    }
+  },
+  {
+    "id": "flag_40000_19",
+    "type": "flag",
+    "difficulty": "medium",
+    "questionText": "¿De qué país es esta bandera?",
+    "correctAnswer": "Islas Vírgenes de los Estados Unidos",
+    "options": [
+      "Islas Vírgenes de los Estados Unidos",
+      "Irán",
+      "Bolivia",
+      "Etiopía"
+    ],
+    "imageUrl": "https://flagcdn.com/w320/vi.png",
+    "extraData": {
+      "countryCode": "vi",
+      "countryName": "Islas Vírgenes de los Estados Unidos"
+    }
+  },
+  {
+    "id": "flag_40000_20",
+    "type": "flag",
+    "difficulty": "medium",
+    "questionText": "¿De qué país es esta bandera?",
+    "correctAnswer": "Mauritania",
+    "options": [
+      "Mauritania",
+      "Sudán del Sur",
+      "Namibia",
+      "Taiwán"
+    ],
+    "imageUrl": "https://flagcdn.com/w320/mr.png",
+    "extraData": {
+      "countryCode": "mr",
+      "countryName": "Mauritania"
+    }
+  },
+  {
+    "id": "flag_40000_21",
+    "type": "flag",
+    "difficulty": "medium",
+    "questionText": "¿De qué país es esta bandera?",
+    "correctAnswer": "Georgia",
+    "options": [
+      "Georgia",
+      "Letonia",
+      "Sudán del Sur",
+      "Kosovo"
+    ],
+    "imageUrl": "https://flagcdn.com/w320/ge.png",
+    "extraData": {
+      "countryCode": "ge",
+      "countryName": "Georgia"
+    }
+  },
+  {
+    "id": "flag_40000_22",
+    "type": "flag",
+    "difficulty": "medium",
+    "questionText": "¿De qué país es esta bandera?",
+    "correctAnswer": "Senegal",
+    "options": [
+      "Ruanda",
+      "Jamaica",
+      "Senegal",
+      "Turkmenistán"
+    ],
+    "imageUrl": "https://flagcdn.com/w320/sn.png",
+    "extraData": {
+      "countryCode": "sn",
+      "countryName": "Senegal"
+    }
+  },
+  {
+    "id": "flag_40000_23",
+    "type": "flag",
+    "difficulty": "medium",
+    "questionText": "¿De qué país es esta bandera?",
+    "correctAnswer": "Suiza",
+    "options": [
+      "Suiza",
+      "Mónaco",
+      "Brasil",
+      "Antigua y Barbuda"
+    ],
+    "imageUrl": "https://flagcdn.com/w320/ch.png",
+    "extraData": {
+      "countryCode": "ch",
+      "countryName": "Suiza"
+    }
+  },
+  {
+    "id": "flag_40000_24",
+    "type": "flag",
+    "difficulty": "medium",
+    "questionText": "¿De qué país es esta bandera?",
+    "correctAnswer": "Islas Åland",
+    "options": [
+      "Kosovo",
+      "Aruba",
+      "Islas Åland",
+      "Gambia"
+    ],
+    "imageUrl": "https://flagcdn.com/w320/ax.png",
+    "extraData": {
+      "countryCode": "ax",
+      "countryName": "Islas Åland"
+    }
+  },
+  {
+    "id": "flag_40000_25",
+    "type": "flag",
+    "difficulty": "medium",
+    "questionText": "¿De qué país es esta bandera?",
+    "correctAnswer": "Irlanda",
+    "options": [
+      "Irlanda",
+      "Kosovo",
+      "Libia",
+      "Laos"
+    ],
+    "imageUrl": "https://flagcdn.com/w320/ie.png",
+    "extraData": {
+      "countryCode": "ie",
+      "countryName": "Irlanda"
+    }
+  },
+  {
+    "id": "flag_40000_26",
+    "type": "flag",
+    "difficulty": "medium",
+    "questionText": "¿De qué país es esta bandera?",
+    "correctAnswer": "Suecia",
+    "options": [
+      "Chequia",
+      "Antigua y Barbuda",
+      "Suecia",
+      "Islas Feroe"
+    ],
+    "imageUrl": "https://flagcdn.com/w320/se.png",
+    "extraData": {
+      "countryCode": "se",
+      "countryName": "Suecia"
+    }
+  },
+  {
+    "id": "flag_40000_27",
+    "type": "flag",
+    "difficulty": "medium",
+    "questionText": "¿De qué país es esta bandera?",
+    "correctAnswer": "Zimbabue",
+    "options": [
+      "Islas Vírgenes Británicas",
+      "El Salvador",
+      "Zimbabue",
+      "San Martín"
+    ],
+    "imageUrl": "https://flagcdn.com/w320/zw.png",
+    "extraData": {
+      "countryCode": "zw",
+      "countryName": "Zimbabue"
+    }
+  },
+  {
+    "id": "flag_40000_28",
+    "type": "flag",
+    "difficulty": "medium",
+    "questionText": "¿De qué país es esta bandera?",
+    "correctAnswer": "Lituania",
+    "options": [
+      "Lituania",
+      "Mozambique",
+      "Siria",
+      "Ruanda"
+    ],
+    "imageUrl": "https://flagcdn.com/w320/lt.png",
+    "extraData": {
+      "countryCode": "lt",
+      "countryName": "Lituania"
+    }
+  }
+]

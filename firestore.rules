@@ -46,10 +46,17 @@ service cloud.firestore {
       allow delete: if false;
     }
 
-    // Question reports collection
-    match /questionReports/{reportId} {
-      allow create: if isAuth();
-      allow read, update, delete: if false; // Admin only
+    // Friends & Requests
+    match /friends/{friendDocId} {
+      // Los documentos aquí serán IDs combinados, ej: "userId1_userId2"
+      // Solo permiten acceso si el usuario es uno de los dos amigos involucrados.
+      allow read, write: if isAuth() && (friendDocId.contains(request.auth.uid));
+    }
+
+    match /friendRequests/{requestId} {
+      allow read: if isAuth() && (request.auth.uid == resource.data.from || request.auth.uid == resource.data.to);
+      allow create: if isAuth() && request.auth.uid == request.resource.data.from;
+      allow delete: if isAuth() && (request.auth.uid == resource.data.from || request.auth.uid == resource.data.to);
     }
   }
 }

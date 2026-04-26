@@ -1,0 +1,1804 @@
+[
+  {
+    "id": "flag_50000_29",
+    "type": "flag",
+    "difficulty": "medium",
+    "questionText": "¿De qué país es esta bandera?",
+    "correctAnswer": "Timor-Leste",
+    "options": [
+      "Eritrea",
+      "Timor-Leste",
+      "Corea del Sur",
+      "Lesoto"
+    ],
+    "imageUrl": "https://flagcdn.com/w320/tl.png",
+    "extraData": {
+      "countryCode": "tl",
+      "countryName": "Timor-Leste"
+    }
+  },
+  {
+    "id": "flag_50000_30",
+    "type": "flag",
+    "difficulty": "medium",
+    "questionText": "¿De qué país es esta bandera?",
+    "correctAnswer": "Libia",
+    "options": [
+      "Libia",
+      "Lituania",
+      "Guyana",
+      "Albania"
+    ],
+    "imageUrl": "https://flagcdn.com/w320/ly.png",
+    "extraData": {
+      "countryCode": "ly",
+      "countryName": "Libia"
+    }
+  },
+  {
+    "id": "flag_50000_31",
+    "type": "flag",
+    "difficulty": "medium",
+    "questionText": "¿De qué país es esta bandera?",
+    "correctAnswer": "Baréin",
+    "options": [
+      "Tuvalu",
+      "Baréin",
+      "Egipto",
+      "Reino Unido"
+    ],
+    "imageUrl": "https://flagcdn.com/w320/bh.png",
+    "extraData": {
+      "countryCode": "bh",
+      "countryName": "Baréin"
+    }
+  },
+  {
+    "id": "flag_50000_32",
+    "type": "flag",
+    "difficulty": "medium",
+    "questionText": "¿De qué país es esta bandera?",
+    "correctAnswer": "San Martín",
+    "options": [
+      "Egipto",
+      "San Martín",
+      "Angola",
+      "Turquía"
+    ],
+    "imageUrl": "https://flagcdn.com/w320/mf.png",
+    "extraData": {
+      "countryCode": "mf",
+      "countryName": "San Martín"
+    }
+  },
+  {
+    "id": "flag_50000_33",
+    "type": "flag",
+    "difficulty": "medium",
+    "questionText": "¿De qué país es esta bandera?",
+    "correctAnswer": "Países Bajos",
+    "options": [
+      "Países Bajos",
+      "Samoa Americana",
+      "Lesoto",
+      "Jamaica"
+    ],
+    "imageUrl": "https://flagcdn.com/w320/nl.png",
+    "extraData": {
+      "countryCode": "nl",
+      "countryName": "Países Bajos"
+    }
+  },
+  {
+    "id": "flag_50000_34",
+    "type": "flag",
+    "difficulty": "medium",
+    "questionText": "¿De qué país es esta bandera?",
+    "correctAnswer": "Kenia",
+    "options": [
+      "Camboya",
+      "Kenia",
+      "Gabón",
+      "Bután"
+    ],
+    "imageUrl": "https://flagcdn.com/w320/ke.png",
+    "extraData": {
+      "countryCode": "ke",
+      "countryName": "Kenia"
+    }
+  },
+  {
+    "id": "flag_50000_35",
+    "type": "flag",
+    "difficulty": "medium",
+    "questionText": "¿De qué país es esta bandera?",
+    "correctAnswer": "Kuwait",
+    "options": [
+      "Italia",
+      "Estados Unidos",
+      "Uruguay",
+      "Kuwait"
+    ],
+    "imageUrl": "https://flagcdn.com/w320/kw.png",
+    "extraData": {
+      "countryCode": "kw",
+      "countryName": "Kuwait"
+    }
+  },
+  {
+    "id": "flag_50000_36",
+    "type": "flag",
+    "difficulty": "medium",
+    "questionText": "¿De qué país es esta bandera?",
+    "correctAnswer": "Malasia",
+    "options": [
+      "Malasia",
+      "Portugal",
+      "Afganistán",
+      "Isla de Navidad"
+    ],
+    "imageUrl": "https://flagcdn.com/w320/my.png",
+    "extraData": {
+      "countryCode": "my",
+      "countryName": "Malasia"
+    }
+  },
+  {
+    "id": "flag_50000_37",
+    "type": "flag",
+    "difficulty": "medium",
+    "questionText": "¿De qué país es esta bandera?",
+    "correctAnswer": "Angola",
+    "options": [
+      "Islas Marianas del Norte",
+      "Costa de Marfil",
+      "Senegal",
+      "Angola"
+    ],
+    "imageUrl": "https://flagcdn.com/w320/ao.png",
+    "extraData": {
+      "countryCode": "ao",
+      "countryName": "Angola"
+    }
+  },
+  {
+    "id": "flag_50000_38",
+    "type": "flag",
+    "difficulty": "medium",
+    "questionText": "¿De qué país es esta bandera?",
+    "correctAnswer": "Liechtenstein",
+    "options": [
+      "Taiwán",
+      "Andorra",
+      "Liechtenstein",
+      "Baréin"
+    ],
+    "imageUrl": "https://flagcdn.com/w320/li.png",
+    "extraData": {
+      "countryCode": "li",
+      "countryName": "Liechtenstein"
+    }
+  },
+  {
+    "id": "flag_50000_39",
+    "type": "flag",
+    "difficulty": "medium",
+    "questionText": "¿De qué país es esta bandera?",
+    "correctAnswer": "Argentina",
+    "options": [
+      "Esuatini",
+      "Argentina",
+      "Paraguay",
+      "El Salvador"
+    ],
+    "imageUrl": "https://flagcdn.com/w320/ar.png",
+    "extraData": {
+      "countryCode": "ar",
+      "countryName": "Argentina"
+    }
+  },
+  {
+    "id": "flag_50000_40",
+    "type": "flag",
+    "difficulty": "medium",
+    "questionText": "¿De qué país es esta bandera?",
+    "correctAnswer": "Polinesia Franciasa",
+    "options": [
+      "Italia",
+      "Polinesia Franciasa",
+      "Rumanía",
+      "Etiopía"
+    ],
+    "imageUrl": "https://flagcdn.com/w320/pf.png",
+    "extraData": {
+      "countryCode": "pf",
+      "countryName": "Polinesia Franciasa"
+    }
+  },
+  {
+    "id": "flag_50000_41",
+    "type": "flag",
+    "difficulty": "medium",
+    "questionText": "¿De qué país es esta bandera?",
+    "correctAnswer": "Croacia",
+    "options": [
+      "Zambia",
+      "Caribe Neerlandés",
+      "Croacia",
+      "Turkmenistán"
+    ],
+    "imageUrl": "https://flagcdn.com/w320/hr.png",
+    "extraData": {
+      "countryCode": "hr",
+      "countryName": "Croacia"
+    }
+  },
+  {
+    "id": "flag_50000_42",
+    "type": "flag",
+    "difficulty": "medium",
+    "questionText": "¿De qué país es esta bandera?",
+    "correctAnswer": "Rumanía",
+    "options": [
+      "Rumanía",
+      "Líbano",
+      "Estados Unidos Minor Outlying Islands",
+      "Alemania"
+    ],
+    "imageUrl": "https://flagcdn.com/w320/ro.png",
+    "extraData": {
+      "countryCode": "ro",
+      "countryName": "Rumanía"
+    }
+  },
+  {
+    "id": "flag_50000_43",
+    "type": "flag",
+    "difficulty": "medium",
+    "questionText": "¿De qué país es esta bandera?",
+    "correctAnswer": "Aruba",
+    "options": [
+      "Aruba",
+      "Reunión",
+      "Lesoto",
+      "Perú"
+    ],
+    "imageUrl": "https://flagcdn.com/w320/aw.png",
+    "extraData": {
+      "countryCode": "aw",
+      "countryName": "Aruba"
+    }
+  },
+  {
+    "id": "flag_50000_44",
+    "type": "flag",
+    "difficulty": "medium",
+    "questionText": "¿De qué país es esta bandera?",
+    "correctAnswer": "Marruecos",
+    "options": [
+      "Corea del Sur",
+      "Hungría",
+      "Marruecos",
+      "Túnez"
+    ],
+    "imageUrl": "https://flagcdn.com/w320/ma.png",
+    "extraData": {
+      "countryCode": "ma",
+      "countryName": "Marruecos"
+    }
+  },
+  {
+    "id": "flag_50000_45",
+    "type": "flag",
+    "difficulty": "medium",
+    "questionText": "¿De qué país es esta bandera?",
+    "correctAnswer": "Serbia",
+    "options": [
+      "Serbia",
+      "Western Sahara",
+      "RD Congo",
+      "Paraguay"
+    ],
+    "imageUrl": "https://flagcdn.com/w320/rs.png",
+    "extraData": {
+      "countryCode": "rs",
+      "countryName": "Serbia"
+    }
+  },
+  {
+    "id": "flag_50000_46",
+    "type": "flag",
+    "difficulty": "medium",
+    "questionText": "¿De qué país es esta bandera?",
+    "correctAnswer": "Tayikistán",
+    "options": [
+      "Irak",
+      "Belice",
+      "Tayikistán",
+      "Bielorrusia"
+    ],
+    "imageUrl": "https://flagcdn.com/w320/tj.png",
+    "extraData": {
+      "countryCode": "tj",
+      "countryName": "Tayikistán"
+    }
+  },
+  {
+    "id": "flag_50000_47",
+    "type": "flag",
+    "difficulty": "medium",
+    "questionText": "¿De qué país es esta bandera?",
+    "correctAnswer": "Nueva Caledonia",
+    "options": [
+      "Palaos",
+      "Mongolia",
+      "Nueva Caledonia",
+      "Islas Feroe"
+    ],
+    "imageUrl": "https://flagcdn.com/w320/nc.png",
+    "extraData": {
+      "countryCode": "nc",
+      "countryName": "Nueva Caledonia"
+    }
+  },
+  {
+    "id": "flag_50000_48",
+    "type": "flag",
+    "difficulty": "medium",
+    "questionText": "¿De qué país es esta bandera?",
+    "correctAnswer": "Belice",
+    "options": [
+      "Belice",
+      "Esuatini",
+      "Taiwán",
+      "Mauricio"
+    ],
+    "imageUrl": "https://flagcdn.com/w320/bz.png",
+    "extraData": {
+      "countryCode": "bz",
+      "countryName": "Belice"
+    }
+  },
+  {
+    "id": "flag_50000_49",
+    "type": "flag",
+    "difficulty": "medium",
+    "questionText": "¿De qué país es esta bandera?",
+    "correctAnswer": "Jordania",
+    "options": [
+      "Jordania",
+      "Groenlandia",
+      "Bélgica",
+      "Isla de Navidad"
+    ],
+    "imageUrl": "https://flagcdn.com/w320/jo.png",
+    "extraData": {
+      "countryCode": "jo",
+      "countryName": "Jordania"
+    }
+  },
+  {
+    "id": "flag_50000_50",
+    "type": "flag",
+    "difficulty": "medium",
+    "questionText": "¿De qué país es esta bandera?",
+    "correctAnswer": "Esuatini",
+    "options": [
+      "Sudáfrica",
+      "Guinea Ecuatorial",
+      "Esuatini",
+      "Hong Kong"
+    ],
+    "imageUrl": "https://flagcdn.com/w320/sz.png",
+    "extraData": {
+      "countryCode": "sz",
+      "countryName": "Esuatini"
+    }
+  },
+  {
+    "id": "flag_50000_51",
+    "type": "flag",
+    "difficulty": "medium",
+    "questionText": "¿De qué país es esta bandera?",
+    "correctAnswer": "Albania",
+    "options": [
+      "Belice",
+      "Costa de Marfil",
+      "Perú",
+      "Albania"
+    ],
+    "imageUrl": "https://flagcdn.com/w320/al.png",
+    "extraData": {
+      "countryCode": "al",
+      "countryName": "Albania"
+    }
+  },
+  {
+    "id": "flag_50000_52",
+    "type": "flag",
+    "difficulty": "medium",
+    "questionText": "¿De qué país es esta bandera?",
+    "correctAnswer": "Bermudas",
+    "options": [
+      "Bermudas",
+      "Nígeria",
+      "Samoa",
+      "Omán"
+    ],
+    "imageUrl": "https://flagcdn.com/w320/bm.png",
+    "extraData": {
+      "countryCode": "bm",
+      "countryName": "Bermudas"
+    }
+  },
+  {
+    "id": "flag_50000_53",
+    "type": "flag",
+    "difficulty": "medium",
+    "questionText": "¿De qué país es esta bandera?",
+    "correctAnswer": "Guinea Ecuatorial",
+    "options": [
+      "Eslovenia",
+      "Ciudad del Vaticano",
+      "Guinea Ecuatorial",
+      "Gambia"
+    ],
+    "imageUrl": "https://flagcdn.com/w320/gq.png",
+    "extraData": {
+      "countryCode": "gq",
+      "countryName": "Guinea Ecuatorial"
+    }
+  },
+  {
+    "id": "flag_50000_54",
+    "type": "flag",
+    "difficulty": "medium",
+    "questionText": "¿De qué país es esta bandera?",
+    "correctAnswer": "Vanuatu",
+    "options": [
+      "Vanuatu",
+      "Taiwán",
+      "Israel",
+      "Bélgica"
+    ],
+    "imageUrl": "https://flagcdn.com/w320/vu.png",
+    "extraData": {
+      "countryCode": "vu",
+      "countryName": "Vanuatu"
+    }
+  },
+  {
+    "id": "flag_50000_55",
+    "type": "flag",
+    "difficulty": "medium",
+    "questionText": "¿De qué país es esta bandera?",
+    "correctAnswer": "French Guiana",
+    "options": [
+      "French Guiana",
+      "Túnez",
+      "Paraguay",
+      "San Marino"
+    ],
+    "imageUrl": "https://flagcdn.com/w320/gf.png",
+    "extraData": {
+      "countryCode": "gf",
+      "countryName": "French Guiana"
+    }
+  },
+  {
+    "id": "flag_50000_56",
+    "type": "flag",
+    "difficulty": "medium",
+    "questionText": "¿De qué país es esta bandera?",
+    "correctAnswer": "Jamaica",
+    "options": [
+      "Mozambique",
+      "Sierra Leona",
+      "Jamaica",
+      "Esuatini"
+    ],
+    "imageUrl": "https://flagcdn.com/w320/jm.png",
+    "extraData": {
+      "countryCode": "jm",
+      "countryName": "Jamaica"
+    }
+  },
+  {
+    "id": "flag_50000_57",
+    "type": "flag",
+    "difficulty": "medium",
+    "questionText": "¿De qué país es esta bandera?",
+    "correctAnswer": "Comoras",
+    "options": [
+      "Nígeria",
+      "Malasia",
+      "Comoras",
+      "España"
+    ],
+    "imageUrl": "https://flagcdn.com/w320/km.png",
+    "extraData": {
+      "countryCode": "km",
+      "countryName": "Comoras"
+    }
+  },
+  {
+    "id": "flag_50000_58",
+    "type": "flag",
+    "difficulty": "medium",
+    "questionText": "¿De qué país es esta bandera?",
+    "correctAnswer": "Taiwán",
+    "options": [
+      "Gabón",
+      "Guernsey",
+      "Taiwán",
+      "Ciudad del Vaticano"
+    ],
+    "imageUrl": "https://flagcdn.com/w320/tw.png",
+    "extraData": {
+      "countryCode": "tw",
+      "countryName": "Taiwán"
+    }
+  },
+  {
+    "id": "flag_50000_59",
+    "type": "flag",
+    "difficulty": "medium",
+    "questionText": "¿De qué país es esta bandera?",
+    "correctAnswer": "Gambia",
+    "options": [
+      "Reino Unido",
+      "Gambia",
+      "Siria",
+      "Bolivia"
+    ],
+    "imageUrl": "https://flagcdn.com/w320/gm.png",
+    "extraData": {
+      "countryCode": "gm",
+      "countryName": "Gambia"
+    }
+  },
+  {
+    "id": "flag_50000_60",
+    "type": "flag",
+    "difficulty": "medium",
+    "questionText": "¿De qué país es esta bandera?",
+    "correctAnswer": "Bielorrusia",
+    "options": [
+      "Jordania",
+      "Honduras",
+      "Montenegro",
+      "Bielorrusia"
+    ],
+    "imageUrl": "https://flagcdn.com/w320/by.png",
+    "extraData": {
+      "countryCode": "by",
+      "countryName": "Bielorrusia"
+    }
+  },
+  {
+    "id": "flag_50000_61",
+    "type": "flag",
+    "difficulty": "medium",
+    "questionText": "¿De qué país es esta bandera?",
+    "correctAnswer": "Isla Norfolk",
+    "options": [
+      "Liechtenstein",
+      "Uzbekistán",
+      "Georgia",
+      "Isla Norfolk"
+    ],
+    "imageUrl": "https://flagcdn.com/w320/nf.png",
+    "extraData": {
+      "countryCode": "nf",
+      "countryName": "Isla Norfolk"
+    }
+  },
+  {
+    "id": "flag_50000_62",
+    "type": "flag",
+    "difficulty": "medium",
+    "questionText": "¿De qué país es esta bandera?",
+    "correctAnswer": "Isla de Navidad",
+    "options": [
+      "Singapur",
+      "India",
+      "Malta",
+      "Isla de Navidad"
+    ],
+    "imageUrl": "https://flagcdn.com/w320/cx.png",
+    "extraData": {
+      "countryCode": "cx",
+      "countryName": "Isla de Navidad"
+    }
+  },
+  {
+    "id": "flag_50000_63",
+    "type": "flag",
+    "difficulty": "medium",
+    "questionText": "¿De qué país es esta bandera?",
+    "correctAnswer": "San Marino",
+    "options": [
+      "Argelia",
+      "Ucrania",
+      "San Marino",
+      "São Tomé and Príncipe"
+    ],
+    "imageUrl": "https://flagcdn.com/w320/sm.png",
+    "extraData": {
+      "countryCode": "sm",
+      "countryName": "San Marino"
+    }
+  },
+  {
+    "id": "flag_50000_64",
+    "type": "flag",
+    "difficulty": "medium",
+    "questionText": "¿De qué país es esta bandera?",
+    "correctAnswer": "Micronesia",
+    "options": [
+      "Camboya",
+      "Laos",
+      "Micronesia",
+      "Baréin"
+    ],
+    "imageUrl": "https://flagcdn.com/w320/fm.png",
+    "extraData": {
+      "countryCode": "fm",
+      "countryName": "Micronesia"
+    }
+  },
+  {
+    "id": "flag_50000_65",
+    "type": "flag",
+    "difficulty": "medium",
+    "questionText": "¿De qué país es esta bandera?",
+    "correctAnswer": "Costa Rica",
+    "options": [
+      "España",
+      "Mauricio",
+      "Costa Rica",
+      "Malaui"
+    ],
+    "imageUrl": "https://flagcdn.com/w320/cr.png",
+    "extraData": {
+      "countryCode": "cr",
+      "countryName": "Costa Rica"
+    }
+  },
+  {
+    "id": "flag_50000_66",
+    "type": "flag",
+    "difficulty": "medium",
+    "questionText": "¿De qué país es esta bandera?",
+    "correctAnswer": "Samoa",
+    "options": [
+      "Barbados",
+      "Corea del Sur",
+      "Arabia Saudí",
+      "Samoa"
+    ],
+    "imageUrl": "https://flagcdn.com/w320/ws.png",
+    "extraData": {
+      "countryCode": "ws",
+      "countryName": "Samoa"
+    }
+  },
+  {
+    "id": "flag_50000_67",
+    "type": "flag",
+    "difficulty": "medium",
+    "questionText": "¿De qué país es esta bandera?",
+    "correctAnswer": "Hungría",
+    "options": [
+      "Jamaica",
+      "Fiyi",
+      "Hungría",
+      "Malta"
+    ],
+    "imageUrl": "https://flagcdn.com/w320/hu.png",
+    "extraData": {
+      "countryCode": "hu",
+      "countryName": "Hungría"
+    }
+  },
+  {
+    "id": "flag_50000_68",
+    "type": "flag",
+    "difficulty": "medium",
+    "questionText": "¿De qué país es esta bandera?",
+    "correctAnswer": "Santa Lucía",
+    "options": [
+      "Caribe Neerlandés",
+      "Seychelles",
+      "Santa Lucía",
+      "Ruanda"
+    ],
+    "imageUrl": "https://flagcdn.com/w320/lc.png",
+    "extraData": {
+      "countryCode": "lc",
+      "countryName": "Santa Lucía"
+    }
+  },
+  {
+    "id": "flag_50000_69",
+    "type": "flag",
+    "difficulty": "medium",
+    "questionText": "¿De qué país es esta bandera?",
+    "correctAnswer": "Hong Kong",
+    "options": [
+      "República Centroafricana",
+      "Hong Kong",
+      "Bulgaria",
+      "Esuatini"
+    ],
+    "imageUrl": "https://flagcdn.com/w320/hk.png",
+    "extraData": {
+      "countryCode": "hk",
+      "countryName": "Hong Kong"
+    }
+  },
+  {
+    "id": "flag_50000_70",
+    "type": "flag",
+    "difficulty": "medium",
+    "questionText": "¿De qué país es esta bandera?",
+    "correctAnswer": "Polonia",
+    "options": [
+      "Camerún",
+      "Barbados",
+      "Polonia",
+      "Ucrania"
+    ],
+    "imageUrl": "https://flagcdn.com/w320/pl.png",
+    "extraData": {
+      "countryCode": "pl",
+      "countryName": "Polonia"
+    }
+  },
+  {
+    "id": "flag_50000_71",
+    "type": "flag",
+    "difficulty": "medium",
+    "questionText": "¿De qué país es esta bandera?",
+    "correctAnswer": "Egipto",
+    "options": [
+      "Islas Cook",
+      "Sri Lanka",
+      "Egipto",
+      "Territorio Británico del Océano Índico"
+    ],
+    "imageUrl": "https://flagcdn.com/w320/eg.png",
+    "extraData": {
+      "countryCode": "eg",
+      "countryName": "Egipto"
+    }
+  },
+  {
+    "id": "flag_50000_72",
+    "type": "flag",
+    "difficulty": "medium",
+    "questionText": "¿De qué país es esta bandera?",
+    "correctAnswer": "Birmania",
+    "options": [
+      "Sudáfrica",
+      "Birmania",
+      "Falkland Islands",
+      "Esuatini"
+    ],
+    "imageUrl": "https://flagcdn.com/w320/mm.png",
+    "extraData": {
+      "countryCode": "mm",
+      "countryName": "Birmania"
+    }
+  },
+  {
+    "id": "flag_50000_73",
+    "type": "flag",
+    "difficulty": "medium",
+    "questionText": "¿De qué país es esta bandera?",
+    "correctAnswer": "São Tomé and Príncipe",
+    "options": [
+      "Madagascar",
+      "Chile",
+      "Niue",
+      "São Tomé and Príncipe"
+    ],
+    "imageUrl": "https://flagcdn.com/w320/st.png",
+    "extraData": {
+      "countryCode": "st",
+      "countryName": "São Tomé and Príncipe"
+    }
+  },
+  {
+    "id": "flag_50000_74",
+    "type": "flag",
+    "difficulty": "medium",
+    "questionText": "¿De qué país es esta bandera?",
+    "correctAnswer": "Uruguay",
+    "options": [
+      "Uruguay",
+      "Islas Vírgenes de los Estados Unidos",
+      "Islas Cook",
+      "Nueva Caledonia"
+    ],
+    "imageUrl": "https://flagcdn.com/w320/uy.png",
+    "extraData": {
+      "countryCode": "uy",
+      "countryName": "Uruguay"
+    }
+  },
+  {
+    "id": "flag_50000_75",
+    "type": "flag",
+    "difficulty": "medium",
+    "questionText": "¿De qué país es esta bandera?",
+    "correctAnswer": "Seychelles",
+    "options": [
+      "Omán",
+      "Jordaniaia",
+      "Isla de Man",
+      "Seychelles"
+    ],
+    "imageUrl": "https://flagcdn.com/w320/sc.png",
+    "extraData": {
+      "countryCode": "sc",
+      "countryName": "Seychelles"
+    }
+  },
+  {
+    "id": "flag_50000_76",
+    "type": "flag",
+    "difficulty": "medium",
+    "questionText": "¿De qué país es esta bandera?",
+    "correctAnswer": "Tonga",
+    "options": [
+      "Tonga",
+      "Vietnam",
+      "Moldavia",
+      "Guam"
+    ],
+    "imageUrl": "https://flagcdn.com/w320/to.png",
+    "extraData": {
+      "countryCode": "to",
+      "countryName": "Tonga"
+    }
+  },
+  {
+    "id": "flag_50000_77",
+    "type": "flag",
+    "difficulty": "medium",
+    "questionText": "¿De qué país es esta bandera?",
+    "correctAnswer": "Groenlandia",
+    "options": [
+      "Túnez",
+      "Kirguistán",
+      "Kiribati",
+      "Groenlandia"
+    ],
+    "imageUrl": "https://flagcdn.com/w320/gl.png",
+    "extraData": {
+      "countryCode": "gl",
+      "countryName": "Groenlandia"
+    }
+  },
+  {
+    "id": "flag_50000_78",
+    "type": "flag",
+    "difficulty": "medium",
+    "questionText": "¿De qué país es esta bandera?",
+    "correctAnswer": "Brunéi",
+    "options": [
+      "Puerto Rico",
+      "Timor-Leste",
+      "Liberia",
+      "Brunéi"
+    ],
+    "imageUrl": "https://flagcdn.com/w320/bn.png",
+    "extraData": {
+      "countryCode": "bn",
+      "countryName": "Brunéi"
+    }
+  },
+  {
+    "id": "flag_50000_79",
+    "type": "flag",
+    "difficulty": "medium",
+    "questionText": "¿De qué país es esta bandera?",
+    "correctAnswer": "Jersey",
+    "options": [
+      "Jersey",
+      "Gambia",
+      "Francia",
+      "Islas Turcas y Caicos"
+    ],
+    "imageUrl": "https://flagcdn.com/w320/je.png",
+    "extraData": {
+      "countryCode": "je",
+      "countryName": "Jersey"
+    }
+  },
+  {
+    "id": "flag_50000_80",
+    "type": "flag",
+    "difficulty": "medium",
+    "questionText": "¿De qué país es esta bandera?",
+    "correctAnswer": "Benín",
+    "options": [
+      "Marruecos",
+      "Tayikistán",
+      "San Martín",
+      "Benín"
+    ],
+    "imageUrl": "https://flagcdn.com/w320/bj.png",
+    "extraData": {
+      "countryCode": "bj",
+      "countryName": "Benín"
+    }
+  },
+  {
+    "id": "flag_50000_81",
+    "type": "flag",
+    "difficulty": "medium",
+    "questionText": "¿De qué país es esta bandera?",
+    "correctAnswer": "Filipinas",
+    "options": [
+      "Estonia",
+      "Yibuti",
+      "España",
+      "Filipinas"
+    ],
+    "imageUrl": "https://flagcdn.com/w320/ph.png",
+    "extraData": {
+      "countryCode": "ph",
+      "countryName": "Filipinas"
+    }
+  },
+  {
+    "id": "flag_50000_82",
+    "type": "flag",
+    "difficulty": "medium",
+    "questionText": "¿De qué país es esta bandera?",
+    "correctAnswer": "Argelia",
+    "options": [
+      "Mayotte",
+      "Argelia",
+      "Nueva Zelanda",
+      "Costa de Marfil"
+    ],
+    "imageUrl": "https://flagcdn.com/w320/dz.png",
+    "extraData": {
+      "countryCode": "dz",
+      "countryName": "Argelia"
+    }
+  },
+  {
+    "id": "flag_50000_83",
+    "type": "flag",
+    "difficulty": "medium",
+    "questionText": "¿De qué país es esta bandera?",
+    "correctAnswer": "Gibraltar",
+    "options": [
+      "Italia",
+      "Kazajistán",
+      "San Cristóbal y Nieves",
+      "Gibraltar"
+    ],
+    "imageUrl": "https://flagcdn.com/w320/gi.png",
+    "extraData": {
+      "countryCode": "gi",
+      "countryName": "Gibraltar"
+    }
+  },
+  {
+    "id": "flag_50000_84",
+    "type": "flag",
+    "difficulty": "medium",
+    "questionText": "¿De qué país es esta bandera?",
+    "correctAnswer": "Falkland Islands",
+    "options": [
+      "Falkland Islands",
+      "Gabón",
+      "Filipinas",
+      "Nueva Zelanda"
+    ],
+    "imageUrl": "https://flagcdn.com/w320/fk.png",
+    "extraData": {
+      "countryCode": "fk",
+      "countryName": "Falkland Islands"
+    }
+  },
+  {
+    "id": "flag_50000_85",
+    "type": "flag",
+    "difficulty": "medium",
+    "questionText": "¿De qué país es esta bandera?",
+    "correctAnswer": "Botsuana",
+    "options": [
+      "Palestina",
+      "Marruecos",
+      "Botsuana",
+      "Islas Salomón"
+    ],
+    "imageUrl": "https://flagcdn.com/w320/bw.png",
+    "extraData": {
+      "countryCode": "bw",
+      "countryName": "Botsuana"
+    }
+  },
+  {
+    "id": "flag_50000_86",
+    "type": "flag",
+    "difficulty": "medium",
+    "questionText": "¿De qué país es esta bandera?",
+    "correctAnswer": "Arabia Saudí",
+    "options": [
+      "Seychelles",
+      "Sudáfrica",
+      "Moldavia",
+      "Arabia Saudí"
+    ],
+    "imageUrl": "https://flagcdn.com/w320/sa.png",
+    "extraData": {
+      "countryCode": "sa",
+      "countryName": "Arabia Saudí"
+    }
+  },
+  {
+    "id": "flag_50000_87",
+    "type": "flag",
+    "difficulty": "medium",
+    "questionText": "¿De qué país es esta bandera?",
+    "correctAnswer": "RD Congo",
+    "options": [
+      "Canadá",
+      "RD Congo",
+      "Surinam",
+      "Kazajistán"
+    ],
+    "imageUrl": "https://flagcdn.com/w320/cd.png",
+    "extraData": {
+      "countryCode": "cd",
+      "countryName": "RD Congo"
+    }
+  },
+  {
+    "id": "flag_50000_88",
+    "type": "flag",
+    "difficulty": "medium",
+    "questionText": "¿De qué país es esta bandera?",
+    "correctAnswer": "Nauru",
+    "options": [
+      "Haití",
+      "Nauru",
+      "Irán",
+      "Italia"
+    ],
+    "imageUrl": "https://flagcdn.com/w320/nr.png",
+    "extraData": {
+      "countryCode": "nr",
+      "countryName": "Nauru"
+    }
+  },
+  {
+    "id": "flag_50000_89",
+    "type": "flag",
+    "difficulty": "medium",
+    "questionText": "¿De qué país es esta bandera?",
+    "correctAnswer": "Eslovaquia",
+    "options": [
+      "Nauru",
+      "Eslovaquia",
+      "Islas Pitcairn",
+      "Arabia Saudí"
+    ],
+    "imageUrl": "https://flagcdn.com/w320/sk.png",
+    "extraData": {
+      "countryCode": "sk",
+      "countryName": "Eslovaquia"
+    }
+  },
+  {
+    "id": "flag_50000_90",
+    "type": "flag",
+    "difficulty": "medium",
+    "questionText": "¿De qué país es esta bandera?",
+    "correctAnswer": "México",
+    "options": [
+      "Hungría",
+      "México",
+      "Irak",
+      "Zimbabue"
+    ],
+    "imageUrl": "https://flagcdn.com/w320/mx.png",
+    "extraData": {
+      "countryCode": "mx",
+      "countryName": "México"
+    }
+  },
+  {
+    "id": "flag_50000_91",
+    "type": "flag",
+    "difficulty": "medium",
+    "questionText": "¿De qué país es esta bandera?",
+    "correctAnswer": "España",
+    "options": [
+      "España",
+      "Nueva Caledonia",
+      "Reunión",
+      "Sierra Leona"
+    ],
+    "imageUrl": "https://flagcdn.com/w320/es.png",
+    "extraData": {
+      "countryCode": "es",
+      "countryName": "España"
+    }
+  },
+  {
+    "id": "flag_50000_92",
+    "type": "flag",
+    "difficulty": "medium",
+    "questionText": "¿De qué país es esta bandera?",
+    "correctAnswer": "Azerbaiyán",
+    "options": [
+      "Mongolia",
+      "San Bartolomé",
+      "Azerbaiyán",
+      "Micronesia"
+    ],
+    "imageUrl": "https://flagcdn.com/w320/az.png",
+    "extraData": {
+      "countryCode": "az",
+      "countryName": "Azerbaiyán"
+    }
+  },
+  {
+    "id": "flag_50000_93",
+    "type": "flag",
+    "difficulty": "medium",
+    "questionText": "¿De qué país es esta bandera?",
+    "correctAnswer": "Noruega",
+    "options": [
+      "Eslovenia",
+      "Arabia Saudí",
+      "Noruega",
+      "Guam"
+    ],
+    "imageUrl": "https://flagcdn.com/w320/no.png",
+    "extraData": {
+      "countryCode": "no",
+      "countryName": "Noruega"
+    }
+  },
+  {
+    "id": "flag_50000_94",
+    "type": "flag",
+    "difficulty": "medium",
+    "questionText": "¿De qué país es esta bandera?",
+    "correctAnswer": "Georgia del Sur",
+    "options": [
+      "Islas Vírgenes Británicas",
+      "Camboya",
+      "Georgia del Sur",
+      "Islas Åland"
+    ],
+    "imageUrl": "https://flagcdn.com/w320/gs.png",
+    "extraData": {
+      "countryCode": "gs",
+      "countryName": "Georgia del Sur"
+    }
+  },
+  {
+    "id": "flag_50000_95",
+    "type": "flag",
+    "difficulty": "medium",
+    "questionText": "¿De qué país es esta bandera?",
+    "correctAnswer": "Eritrea",
+    "options": [
+      "Uganda",
+      "Suiza",
+      "Alemania",
+      "Eritrea"
+    ],
+    "imageUrl": "https://flagcdn.com/w320/er.png",
+    "extraData": {
+      "countryCode": "er",
+      "countryName": "Eritrea"
+    }
+  },
+  {
+    "id": "flag_50000_96",
+    "type": "flag",
+    "difficulty": "medium",
+    "questionText": "¿De qué país es esta bandera?",
+    "correctAnswer": "Mali",
+    "options": [
+      "Afganistán",
+      "Mali",
+      "Nueva Zelanda",
+      "Honduras"
+    ],
+    "imageUrl": "https://flagcdn.com/w320/ml.png",
+    "extraData": {
+      "countryCode": "ml",
+      "countryName": "Mali"
+    }
+  },
+  {
+    "id": "flag_50000_97",
+    "type": "flag",
+    "difficulty": "medium",
+    "questionText": "¿De qué país es esta bandera?",
+    "correctAnswer": "Singapur",
+    "options": [
+      "Singapur",
+      "Siria",
+      "Eslovaquia",
+      "Tokelau"
+    ],
+    "imageUrl": "https://flagcdn.com/w320/sg.png",
+    "extraData": {
+      "countryCode": "sg",
+      "countryName": "Singapur"
+    }
+  },
+  {
+    "id": "flag_50000_98",
+    "type": "flag",
+    "difficulty": "medium",
+    "questionText": "¿De qué país es esta bandera?",
+    "correctAnswer": "China",
+    "options": [
+      "República Centroafricana",
+      "Montserrat",
+      "China",
+      "Bélgica"
+    ],
+    "imageUrl": "https://flagcdn.com/w320/cn.png",
+    "extraData": {
+      "countryCode": "cn",
+      "countryName": "China"
+    }
+  },
+  {
+    "id": "flag_50000_99",
+    "type": "flag",
+    "difficulty": "medium",
+    "questionText": "¿De qué país es esta bandera?",
+    "correctAnswer": "Martinica",
+    "options": [
+      "Guinea Ecuatorial",
+      "Martinica",
+      "Yibuti",
+      "Islas Turcas y Caicos"
+    ],
+    "imageUrl": "https://flagcdn.com/w320/mq.png",
+    "extraData": {
+      "countryCode": "mq",
+      "countryName": "Martinica"
+    }
+  },
+  {
+    "id": "flag_60000_0",
+    "type": "flag",
+    "difficulty": "medium",
+    "questionText": "¿De qué país es esta bandera?",
+    "correctAnswer": "Eslovenia",
+    "options": [
+      "Eslovenia",
+      "Santa Lucía",
+      "Sudán",
+      "Montenegro"
+    ],
+    "imageUrl": "https://flagcdn.com/w320/si.png",
+    "extraData": {
+      "countryCode": "si",
+      "countryName": "Eslovenia"
+    }
+  },
+  {
+    "id": "flag_60000_1",
+    "type": "flag",
+    "difficulty": "medium",
+    "questionText": "¿De qué país es esta bandera?",
+    "correctAnswer": "Guinea-Bisáu",
+    "options": [
+      "Líbano",
+      "Níger",
+      "Guinea-Bisáu",
+      "Aruba"
+    ],
+    "imageUrl": "https://flagcdn.com/w320/gw.png",
+    "extraData": {
+      "countryCode": "gw",
+      "countryName": "Guinea-Bisáu"
+    }
+  },
+  {
+    "id": "flag_60000_2",
+    "type": "flag",
+    "difficulty": "medium",
+    "questionText": "¿De qué país es esta bandera?",
+    "correctAnswer": "Alemania",
+    "options": [
+      "Alemania",
+      "Liberia",
+      "Serbia",
+      "Islandia"
+    ],
+    "imageUrl": "https://flagcdn.com/w320/de.png",
+    "extraData": {
+      "countryCode": "de",
+      "countryName": "Alemania"
+    }
+  },
+  {
+    "id": "flag_60000_3",
+    "type": "flag",
+    "difficulty": "medium",
+    "questionText": "¿De qué país es esta bandera?",
+    "correctAnswer": "San Pedro y Miquelón",
+    "options": [
+      "French Guiana",
+      "San Cristóbal y Nieves",
+      "Argelia",
+      "San Pedro y Miquelón"
+    ],
+    "imageUrl": "https://flagcdn.com/w320/pm.png",
+    "extraData": {
+      "countryCode": "pm",
+      "countryName": "San Pedro y Miquelón"
+    }
+  },
+  {
+    "id": "flag_60000_4",
+    "type": "flag",
+    "difficulty": "medium",
+    "questionText": "¿De qué país es esta bandera?",
+    "correctAnswer": "Chile",
+    "options": [
+      "Chile",
+      "Vietnam",
+      "Isla de Navidad",
+      "Islandia"
+    ],
+    "imageUrl": "https://flagcdn.com/w320/cl.png",
+    "extraData": {
+      "countryCode": "cl",
+      "countryName": "Chile"
+    }
+  },
+  {
+    "id": "flag_60000_5",
+    "type": "flag",
+    "difficulty": "medium",
+    "questionText": "¿De qué país es esta bandera?",
+    "correctAnswer": "San Bartolomé",
+    "options": [
+      "Ucrania",
+      "Uzbekistán",
+      "Marruecos",
+      "San Bartolomé"
+    ],
+    "imageUrl": "https://flagcdn.com/w320/bl.png",
+    "extraData": {
+      "countryCode": "bl",
+      "countryName": "San Bartolomé"
+    }
+  },
+  {
+    "id": "flag_60000_6",
+    "type": "flag",
+    "difficulty": "medium",
+    "questionText": "¿De qué país es esta bandera?",
+    "correctAnswer": "Tailandia",
+    "options": [
+      "Zambia",
+      "Emiratos Árabes Unidos",
+      "Argelia",
+      "Tailandia"
+    ],
+    "imageUrl": "https://flagcdn.com/w320/th.png",
+    "extraData": {
+      "countryCode": "th",
+      "countryName": "Tailandia"
+    }
+  },
+  {
+    "id": "flag_60000_7",
+    "type": "flag",
+    "difficulty": "medium",
+    "questionText": "¿De qué país es esta bandera?",
+    "correctAnswer": "Mongolia",
+    "options": [
+      "Isla de Navidad",
+      "Falkland Islands",
+      "Montenegro",
+      "Mongolia"
+    ],
+    "imageUrl": "https://flagcdn.com/w320/mn.png",
+    "extraData": {
+      "countryCode": "mn",
+      "countryName": "Mongolia"
+    }
+  },
+  {
+    "id": "flag_60000_8",
+    "type": "flag",
+    "difficulty": "medium",
+    "questionText": "¿De qué país es esta bandera?",
+    "correctAnswer": "Bahamas",
+    "options": [
+      "Burundi",
+      "Seychelles",
+      "Bahamas",
+      "Bután"
+    ],
+    "imageUrl": "https://flagcdn.com/w320/bs.png",
+    "extraData": {
+      "countryCode": "bs",
+      "countryName": "Bahamas"
+    }
+  },
+  {
+    "id": "flag_60000_9",
+    "type": "flag",
+    "difficulty": "medium",
+    "questionText": "¿De qué país es esta bandera?",
+    "correctAnswer": "Tuvalu",
+    "options": [
+      "Camerún",
+      "Sierra Leona",
+      "Bolivia",
+      "Tuvalu"
+    ],
+    "imageUrl": "https://flagcdn.com/w320/tv.png",
+    "extraData": {
+      "countryCode": "tv",
+      "countryName": "Tuvalu"
+    }
+  },
+  {
+    "id": "flag_60000_10",
+    "type": "flag",
+    "difficulty": "medium",
+    "questionText": "¿De qué país es esta bandera?",
+    "correctAnswer": "Togo",
+    "options": [
+      "Portugal",
+      "Jordania",
+      "Marruecos",
+      "Togo"
+    ],
+    "imageUrl": "https://flagcdn.com/w320/tg.png",
+    "extraData": {
+      "countryCode": "tg",
+      "countryName": "Togo"
+    }
+  },
+  {
+    "id": "flag_60000_11",
+    "type": "flag",
+    "difficulty": "medium",
+    "questionText": "¿De qué país es esta bandera?",
+    "correctAnswer": "Israel",
+    "options": [
+      "Micronesia",
+      "Nueva Caledonia",
+      "Guyana",
+      "Israel"
+    ],
+    "imageUrl": "https://flagcdn.com/w320/il.png",
+    "extraData": {
+      "countryCode": "il",
+      "countryName": "Israel"
+    }
+  },
+  {
+    "id": "flag_60000_12",
+    "type": "flag",
+    "difficulty": "medium",
+    "questionText": "¿De qué país es esta bandera?",
+    "correctAnswer": "Guyana",
+    "options": [
+      "Falkland Islands",
+      "Anguila",
+      "Groenlandia",
+      "Guyana"
+    ],
+    "imageUrl": "https://flagcdn.com/w320/gy.png",
+    "extraData": {
+      "countryCode": "gy",
+      "countryName": "Guyana"
+    }
+  },
+  {
+    "id": "flag_60000_13",
+    "type": "flag",
+    "difficulty": "medium",
+    "questionText": "¿De qué país es esta bandera?",
+    "correctAnswer": "Niue",
+    "options": [
+      "Sudáfrica",
+      "Birmania",
+      "Niue",
+      "Jersey"
+    ],
+    "imageUrl": "https://flagcdn.com/w320/nu.png",
+    "extraData": {
+      "countryCode": "nu",
+      "countryName": "Niue"
+    }
+  },
+  {
+    "id": "flag_60000_14",
+    "type": "flag",
+    "difficulty": "medium",
+    "questionText": "¿De qué país es esta bandera?",
+    "correctAnswer": "Armenia",
+    "options": [
+      "Nepal",
+      "Burkina Faso",
+      "Armenia",
+      "Namibia"
+    ],
+    "imageUrl": "https://flagcdn.com/w320/am.png",
+    "extraData": {
+      "countryCode": "am",
+      "countryName": "Armenia"
+    }
+  },
+  {
+    "id": "flag_60000_15",
+    "type": "flag",
+    "difficulty": "medium",
+    "questionText": "¿De qué país es esta bandera?",
+    "correctAnswer": "Islas Vírgenes Británicas",
+    "options": [
+      "Bután",
+      "Islas Vírgenes Británicas",
+      "Islas Åland",
+      "Lituania"
+    ],
+    "imageUrl": "https://flagcdn.com/w320/vg.png",
+    "extraData": {
+      "countryCode": "vg",
+      "countryName": "Islas Vírgenes Británicas"
+    }
+  },
+  {
+    "id": "flag_60000_16",
+    "type": "flag",
+    "difficulty": "medium",
+    "questionText": "¿De qué país es esta bandera?",
+    "correctAnswer": "Brasil",
+    "options": [
+      "Brasil",
+      "Sudán del Sur",
+      "Liberia",
+      "San Marino"
+    ],
+    "imageUrl": "https://flagcdn.com/w320/br.png",
+    "extraData": {
+      "countryCode": "br",
+      "countryName": "Brasil"
+    }
+  },
+  {
+    "id": "flag_60000_17",
+    "type": "flag",
+    "difficulty": "medium",
+    "questionText": "¿De qué país es esta bandera?",
+    "correctAnswer": "Chad",
+    "options": [
+      "Chile",
+      "Suiza",
+      "Chad",
+      "Kosovo"
+    ],
+    "imageUrl": "https://flagcdn.com/w320/td.png",
+    "extraData": {
+      "countryCode": "td",
+      "countryName": "Chad"
+    }
+  },
+  {
+    "id": "flag_60000_18",
+    "type": "flag",
+    "difficulty": "medium",
+    "questionText": "¿De qué país es esta bandera?",
+    "correctAnswer": "Guatemala",
+    "options": [
+      "Jordania",
+      "Guatemala",
+      "Reunión",
+      "Niue"
+    ],
+    "imageUrl": "https://flagcdn.com/w320/gt.png",
+    "extraData": {
+      "countryCode": "gt",
+      "countryName": "Guatemala"
+    }
+  },
+  {
+    "id": "flag_60000_20",
+    "type": "flag",
+    "difficulty": "medium",
+    "questionText": "¿De qué país es esta bandera?",
+    "correctAnswer": "Afganistán",
+    "options": [
+      "Turkmenistán",
+      "Afganistán",
+      "Dominica",
+      "Santa Lucía"
+    ],
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Flag_of_the_Taliban.svg/320px-Flag_of_the_Taliban.svg.png",
+    "extraData": {
+      "countryCode": "af",
+      "countryName": "Afganistán"
+    }
+  },
+  {
+    "id": "mountain_51001",
+    "type": "mountain",
+    "difficulty": "medium",
+    "questionText": "¿La montaña más alta de Italia es...?",
+    "correctAnswer": "Gran Premio de la montaña en el Giro de Italia",
+    "options": [
+      "Gran Premio de la montaña en el Giro de Italia",
+      "Gran Premio de la montaña en el Tour de Francia"
+    ],
+    "extraData": {
+      "country": "Italia",
+      "mountainName": "Gran Premio de la montaña en el Giro de Italia",
+      "pageid": 7787529
+    }
+  },
+  {
+    "id": "river_50000",
+    "type": "river",
+    "difficulty": "medium",
+    "questionText": "¿Qué río es el más largo de España?",
+    "correctAnswer": "Piedras (España)",
+    "options": [
+      "Severn (Reino Unido)",
+      "Piedras (España)",
+      "Ríos de Italia"
+    ],
+    "extraData": {
+      "country": "España",
+      "riverName": "Piedras (España)",
+      "pageid": 465454
+    }
+  },
+  {
+    "id": "river_50001",
+    "type": "river",
+    "difficulty": "medium",
+    "questionText": "¿Qué río es el más largo de Italia?",
+    "correctAnswer": "Ríos de Italia",
+    "options": [
+      "Ríos de Italia",
+      "Severn (Reino Unido)",
+      "Piedras (España)"
+    ],
+    "extraData": {
+      "country": "Italia",
+      "riverName": "Ríos de Italia",
+      "pageid": 1259757
+    }
+  },
+  {
+    "id": "lake_52000",
+    "type": "lake",
+    "difficulty": "medium",
+    "questionText": "¿El lago más grande de España se llama...?",
+    "correctAnswer": "Lagos de España",
+    "options": [
+      "Taklamakan",
+      "Lagos de España",
+      "Rabat",
+      "Wellington"
+    ],
+    "extraData": {
+      "country": "España",
+      "lakeName": "Lagos de España",
+      "pageid": 2129385
+    }
+  },
+  {
+    "id": "river_50002",
+    "type": "river",
+    "difficulty": "medium",
+    "questionText": "¿El río más largo de Reino Unido se llama...?",
+    "correctAnswer": "Severn (Reino Unido)",
+    "options": [
+      "Piedras (España)",
+      "Ríos de Italia",
+      "Severn (Reino Unido)"
+    ],
+    "extraData": {
+      "country": "Reino Unido",
+      "riverName": "Severn (Reino Unido)",
+      "pageid": 650478
+    }
+  },
+  {
+    "id": "mountain_51000",
+    "type": "mountain",
+    "difficulty": "medium",
+    "questionText": "¿La montaña más alta de Francia es...?",
+    "correctAnswer": "Gran Premio de la montaña en el Tour de Francia",
+    "options": [
+      "Gran Premio de la montaña en el Tour de Francia",
+      "Gran Premio de la montaña en el Giro de Italia"
+    ],
+    "extraData": {
+      "country": "Francia",
+      "mountainName": "Gran Premio de la montaña en el Tour de Francia",
+      "pageid": 7781984
+    }
+  },
+  {
+    "id": "silhouette_id",
+    "type": "silhouette",
+    "difficulty": "medium",
+    "questionText": "¿Qué país es esta silueta?",
+    "correctAnswer": "Indonesia",
+    "options": [
+      "Angkor Wat",
+      "Luanda",
+      "Indonesia",
+      "Torre Belém"
+    ],
+    "imageUrl": "assets/silhouettes/id.png",
+    "extraData": {
+      "countryCode": "id",
+      "countryName": "Indonesia",
+      "acceptedAnswers": [
+        "indonesia"
+      ]
+    }
+  },
+  {
+    "id": "silhouette_my",
+    "type": "silhouette",
+    "difficulty": "medium",
+    "questionText": "¿Qué país es esta silueta?",
+    "correctAnswer": "Malasia",
+    "options": [
+      "El Cairo",
+      "Desierto de Tabernas",
+      "Malasia",
+      "Togo"
+    ],
+    "imageUrl": "assets/silhouettes/my.png",
+    "extraData": {
+      "countryCode": "my",
+      "countryName": "Malasia",
+      "acceptedAnswers": [
+        "malasia"
+      ]
+    }
+  },
+  {
+    "id": "silhouette_cl",
+    "type": "silhouette",
+    "difficulty": "medium",
+    "questionText": "¿Qué país es esta silueta?",
+    "correctAnswer": "Chile",
+    "options": [
+      "Chile",
+      "Casa Blanca",
+      "Puerto Rico",
+      "Sudán, Egipto"
+    ],
+    "imageUrl": "assets/silhouettes/cl.png",
+    "extraData": {
+      "countryCode": "cl",
+      "countryName": "Chile",
+      "acceptedAnswers": [
+        "chile"
+      ]
+    }
+  }
+]

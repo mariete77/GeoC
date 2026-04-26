@@ -1,0 +1,2104 @@
+[
+  {
+    "id": "silhouette_ht",
+    "type": "silhouette",
+    "difficulty": "medium",
+    "questionText": "¿Qué país es esta silueta?",
+    "correctAnswer": "Haití",
+    "options": [
+      "Teneré",
+      "Haití",
+      "Armenio",
+      "Túnez"
+    ],
+    "imageUrl": "assets/silhouettes/ht.png",
+    "extraData": {
+      "countryCode": "ht",
+      "countryName": "Haití",
+      "acceptedAnswers": [
+        "haití"
+      ]
+    }
+  },
+  {
+    "id": "silhouette_do",
+    "type": "silhouette",
+    "difficulty": "medium",
+    "questionText": "¿Qué país es esta silueta?",
+    "correctAnswer": "Rep Dominicana",
+    "options": [
+      "Lago de Garda",
+      "Rep Dominicana",
+      "Nueva Delhi",
+      "Dhivehi"
+    ],
+    "imageUrl": "assets/silhouettes/do.png",
+    "extraData": {
+      "countryCode": "do",
+      "countryName": "Rep Dominicana",
+      "acceptedAnswers": [
+        "rep dominicana"
+      ]
+    }
+  },
+  {
+    "id": "silhouette_td",
+    "type": "silhouette",
+    "difficulty": "medium",
+    "questionText": "¿Qué país es esta silueta?",
+    "correctAnswer": "Chad",
+    "options": [
+      "Gilbertés",
+      "Lago de Sobradinho",
+      "Chad",
+      "Lerma"
+    ],
+    "imageUrl": "assets/silhouettes/td.png",
+    "extraData": {
+      "countryCode": "td",
+      "countryName": "Chad",
+      "acceptedAnswers": [
+        "chad"
+      ]
+    }
+  },
+  {
+    "id": "silhouette_kw",
+    "type": "silhouette",
+    "difficulty": "medium",
+    "questionText": "¿Qué país es esta silueta?",
+    "correctAnswer": "Kuwait",
+    "options": [
+      "Angola",
+      "Kuwait",
+      "Niagara Falls",
+      "Lhotse"
+    ],
+    "imageUrl": "assets/silhouettes/kw.png",
+    "extraData": {
+      "countryCode": "kw",
+      "countryName": "Kuwait",
+      "acceptedAnswers": [
+        "kuwait"
+      ]
+    }
+  },
+  {
+    "id": "silhouette_sv",
+    "type": "silhouette",
+    "difficulty": "medium",
+    "questionText": "¿Qué país es esta silueta?",
+    "correctAnswer": "El Salvador",
+    "options": [
+      "Fuente de Trevi",
+      "El Salvador",
+      "Dinamarca",
+      "Islas Vírgenes Británicas"
+    ],
+    "imageUrl": "assets/silhouettes/sv.png",
+    "extraData": {
+      "countryCode": "sv",
+      "countryName": "El Salvador",
+      "acceptedAnswers": [
+        "el salvador"
+      ]
+    }
+  },
+  {
+    "id": "silhouette_gt",
+    "type": "silhouette",
+    "difficulty": "medium",
+    "questionText": "¿Qué país es esta silueta?",
+    "correctAnswer": "Guatemala",
+    "options": [
+      "Guatemala",
+      "Berna",
+      "Ganges",
+      "Tayikistán"
+    ],
+    "imageUrl": "assets/silhouettes/gt.png",
+    "extraData": {
+      "countryCode": "gt",
+      "countryName": "Guatemala",
+      "acceptedAnswers": [
+        "guatemala"
+      ]
+    }
+  },
+  {
+    "id": "silhouette_tl",
+    "type": "silhouette",
+    "difficulty": "medium",
+    "questionText": "¿Qué país es esta silueta?",
+    "correctAnswer": "Timor Oriental",
+    "options": [
+      "Sri Lanka",
+      "Yaren",
+      "Timor Oriental",
+      "Berna"
+    ],
+    "imageUrl": "assets/silhouettes/tl.png",
+    "extraData": {
+      "countryCode": "tl",
+      "countryName": "Timor Oriental",
+      "acceptedAnswers": [
+        "timor oriental"
+      ]
+    }
+  },
+  {
+    "id": "silhouette_bn",
+    "type": "silhouette",
+    "difficulty": "medium",
+    "questionText": "¿Qué país es esta silueta?",
+    "correctAnswer": "Brunéi",
+    "options": [
+      "Santa Elena, Ascensión and Tristán de Acuña",
+      "3.820 m",
+      "Brunéi",
+      "Loira"
+    ],
+    "imageUrl": "assets/silhouettes/bn.png",
+    "extraData": {
+      "countryCode": "bn",
+      "countryName": "Brunéi",
+      "acceptedAnswers": [
+        "brunéi"
+      ]
+    }
+  },
+  {
+    "id": "silhouette_mc",
+    "type": "silhouette",
+    "difficulty": "medium",
+    "questionText": "¿Qué país es esta silueta?",
+    "correctAnswer": "Mónaco",
+    "options": [
+      "Lago Argentino",
+      "Mónaco",
+      "Dirham marroquí",
+      "Dinar kuwaití"
+    ],
+    "imageUrl": "assets/silhouettes/mc.png",
+    "extraData": {
+      "countryCode": "mc",
+      "countryName": "Mónaco",
+      "acceptedAnswers": [
+        "mónaco"
+      ]
+    }
+  },
+  {
+    "id": "silhouette_dz",
+    "type": "silhouette",
+    "difficulty": "medium",
+    "questionText": "¿Qué país es esta silueta?",
+    "correctAnswer": "Argelia",
+    "options": [
+      "Rublo ruso",
+      "Argelia",
+      "Balsas",
+      "Mónaco"
+    ],
+    "imageUrl": "assets/silhouettes/dz.png",
+    "extraData": {
+      "countryCode": "dz",
+      "countryName": "Argelia",
+      "acceptedAnswers": [
+        "argelia"
+      ]
+    }
+  },
+  {
+    "id": "silhouette_mz",
+    "type": "silhouette",
+    "difficulty": "medium",
+    "questionText": "¿Qué país es esta silueta?",
+    "correctAnswer": "Mozambique",
+    "options": [
+      "Mozambique",
+      "Monte Kenia",
+      "Sajama",
+      "Serbia"
+    ],
+    "imageUrl": "assets/silhouettes/mz.png",
+    "extraData": {
+      "countryCode": "mz",
+      "countryName": "Mozambique",
+      "acceptedAnswers": [
+        "mozambique"
+      ]
+    }
+  },
+  {
+    "id": "silhouette_sz",
+    "type": "silhouette",
+    "difficulty": "medium",
+    "questionText": "¿Qué país es esta silueta?",
+    "correctAnswer": "Esuatini",
+    "options": [
+      "Indonesia",
+      "chibarwe",
+      "Chelín ugandés",
+      "Esuatini"
+    ],
+    "imageUrl": "assets/silhouettes/sz.png",
+    "extraData": {
+      "countryCode": "sz",
+      "countryName": "Esuatini",
+      "acceptedAnswers": [
+        "esuatini",
+        "swazilandia",
+        "suazilandia"
+      ]
+    }
+  },
+  {
+    "id": "silhouette_bi",
+    "type": "silhouette",
+    "difficulty": "medium",
+    "questionText": "¿Qué país es esta silueta?",
+    "correctAnswer": "Burundi",
+    "options": [
+      "República del Congo",
+      "Portugal",
+      "Ciudad de Kuwait",
+      "Burundi"
+    ],
+    "imageUrl": "assets/silhouettes/bi.png",
+    "extraData": {
+      "countryCode": "bi",
+      "countryName": "Burundi",
+      "acceptedAnswers": [
+        "burundi"
+      ]
+    }
+  },
+  {
+    "id": "silhouette_rw",
+    "type": "silhouette",
+    "difficulty": "medium",
+    "questionText": "¿Qué país es esta silueta?",
+    "correctAnswer": "Ruanda",
+    "options": [
+      "Lago Poyang",
+      "Chiclayo",
+      "Arabia Saudita",
+      "Ruanda"
+    ],
+    "imageUrl": "assets/silhouettes/rw.png",
+    "extraData": {
+      "countryCode": "rw",
+      "countryName": "Ruanda",
+      "acceptedAnswers": [
+        "ruanda"
+      ]
+    }
+  },
+  {
+    "id": "silhouette_mm",
+    "type": "silhouette",
+    "difficulty": "medium",
+    "questionText": "¿Qué país es esta silueta?",
+    "correctAnswer": "Birmania",
+    "options": [
+      "Bermudas",
+      "Apia",
+      "Kioto",
+      "Birmania"
+    ],
+    "imageUrl": "assets/silhouettes/mm.png",
+    "extraData": {
+      "countryCode": "mm",
+      "countryName": "Birmania",
+      "acceptedAnswers": [
+        "birmania",
+        "myanmar",
+        "birmania/myanmar"
+      ]
+    }
+  },
+  {
+    "id": "silhouette_bd",
+    "type": "silhouette",
+    "difficulty": "medium",
+    "questionText": "¿Qué país es esta silueta?",
+    "correctAnswer": "Bangladés",
+    "options": [
+      "Gebel Shayeb",
+      "Bangladés",
+      "Patagonia",
+      "Nueva York"
+    ],
+    "imageUrl": "assets/silhouettes/bd.png",
+    "extraData": {
+      "countryCode": "bd",
+      "countryName": "Bangladés",
+      "acceptedAnswers": [
+        "bangladés"
+      ]
+    }
+  },
+  {
+    "id": "silhouette_ad",
+    "type": "silhouette",
+    "difficulty": "medium",
+    "questionText": "¿Qué país es esta silueta?",
+    "correctAnswer": "Andorra",
+    "options": [
+      "Niagara Falls",
+      "Banjul",
+      "Ebro",
+      "Andorra"
+    ],
+    "imageUrl": "assets/silhouettes/ad.png",
+    "extraData": {
+      "countryCode": "ad",
+      "countryName": "Andorra",
+      "acceptedAnswers": [
+        "andorra"
+      ]
+    }
+  },
+  {
+    "id": "silhouette_af",
+    "type": "silhouette",
+    "difficulty": "medium",
+    "questionText": "¿Qué país es esta silueta?",
+    "correctAnswer": "Afganistán",
+    "options": [
+      "Afganistán",
+      "Filipinas",
+      "Lari georgiano",
+      "Ucraniano"
+    ],
+    "imageUrl": "assets/silhouettes/af.png",
+    "extraData": {
+      "countryCode": "af",
+      "countryName": "Afganistán",
+      "acceptedAnswers": [
+        "afganistán"
+      ]
+    }
+  },
+  {
+    "id": "silhouette_me",
+    "type": "silhouette",
+    "difficulty": "medium",
+    "questionText": "¿Qué país es esta silueta?",
+    "correctAnswer": "Montenegro",
+    "options": [
+      "Montenegro",
+      "Elbrus",
+      "Taklamakan",
+      "Afganistán"
+    ],
+    "imageUrl": "assets/silhouettes/me.png",
+    "extraData": {
+      "countryCode": "me",
+      "countryName": "Montenegro",
+      "acceptedAnswers": [
+        "montenegro"
+      ]
+    }
+  },
+  {
+    "id": "silhouette_ba",
+    "type": "silhouette",
+    "difficulty": "medium",
+    "questionText": "¿Qué país es esta silueta?",
+    "correctAnswer": "Bosnia y Herzegovina",
+    "options": [
+      "Teotihuacán",
+      "Ringgit malayo",
+      "Bosnia y Herzegovina",
+      "Bélgica"
+    ],
+    "imageUrl": "assets/silhouettes/ba.png",
+    "extraData": {
+      "countryCode": "ba",
+      "countryName": "Bosnia y Herzegovina",
+      "acceptedAnswers": [
+        "bosnia y herzegovina"
+      ]
+    }
+  },
+  {
+    "id": "silhouette_ug",
+    "type": "silhouette",
+    "difficulty": "medium",
+    "questionText": "¿Qué país es esta silueta?",
+    "correctAnswer": "Uganda",
+    "options": [
+      "Laos",
+      "Taklamakan",
+      "Uganda",
+      "Malta"
+    ],
+    "imageUrl": "assets/silhouettes/ug.png",
+    "extraData": {
+      "countryCode": "ug",
+      "countryName": "Uganda",
+      "acceptedAnswers": [
+        "uganda"
+      ]
+    }
+  },
+  {
+    "id": "silhouette_cu",
+    "type": "silhouette",
+    "difficulty": "medium",
+    "questionText": "¿Qué país es esta silueta?",
+    "correctAnswer": "Cuba",
+    "options": [
+      "Pisa",
+      "Japonés",
+      "Libreville",
+      "Cuba"
+    ],
+    "imageUrl": "assets/silhouettes/cu.png",
+    "extraData": {
+      "countryCode": "cu",
+      "countryName": "Cuba",
+      "acceptedAnswers": [
+        "cuba"
+      ]
+    }
+  },
+  {
+    "id": "silhouette_hn",
+    "type": "silhouette",
+    "difficulty": "medium",
+    "questionText": "¿Qué país es esta silueta?",
+    "correctAnswer": "Honduras",
+    "options": [
+      "Honduras",
+      "Uzbekistán",
+      "Jordaniaia",
+      "Cuzco"
+    ],
+    "imageUrl": "assets/silhouettes/hn.png",
+    "extraData": {
+      "countryCode": "hn",
+      "countryName": "Honduras",
+      "acceptedAnswers": [
+        "honduras"
+      ]
+    }
+  },
+  {
+    "id": "silhouette_ec",
+    "type": "silhouette",
+    "difficulty": "medium",
+    "questionText": "¿Qué país es esta silueta?",
+    "correctAnswer": "Ecuador",
+    "options": [
+      "Dólar australiano",
+      "Ecuador",
+      "Islas Vírgenes de los Estados Unidos",
+      "Svalbard y Jan Mayen"
+    ],
+    "imageUrl": "assets/silhouettes/ec.png",
+    "extraData": {
+      "countryCode": "ec",
+      "countryName": "Ecuador",
+      "acceptedAnswers": [
+        "ecuador"
+      ]
+    }
+  },
+  {
+    "id": "silhouette_co",
+    "type": "silhouette",
+    "difficulty": "medium",
+    "questionText": "¿Qué país es esta silueta?",
+    "correctAnswer": "Colombia",
+    "options": [
+      "Manila",
+      "Georgia",
+      "Colombia",
+      "República Dominicana"
+    ],
+    "imageUrl": "assets/silhouettes/co.png",
+    "extraData": {
+      "countryCode": "co",
+      "countryName": "Colombia",
+      "acceptedAnswers": [
+        "colombia"
+      ]
+    }
+  },
+  {
+    "id": "silhouette_py",
+    "type": "silhouette",
+    "difficulty": "medium",
+    "questionText": "¿Qué país es esta silueta?",
+    "correctAnswer": "Paraguay",
+    "options": [
+      "Malta",
+      "Paraguay",
+      "Chelín ugandés",
+      "Lago Mayor"
+    ],
+    "imageUrl": "assets/silhouettes/py.png",
+    "extraData": {
+      "countryCode": "py",
+      "countryName": "Paraguay",
+      "acceptedAnswers": [
+        "paraguay"
+      ]
+    }
+  },
+  {
+    "id": "silhouette_pt",
+    "type": "silhouette",
+    "difficulty": "medium",
+    "questionText": "¿Qué país es esta silueta?",
+    "correctAnswer": "Portugal",
+    "options": [
+      "Armenio",
+      "Samoa Americana",
+      "Portugal",
+      "Rupia india"
+    ],
+    "imageUrl": "assets/silhouettes/pt.png",
+    "extraData": {
+      "countryCode": "pt",
+      "countryName": "Portugal",
+      "acceptedAnswers": [
+        "portugal"
+      ]
+    }
+  },
+  {
+    "id": "silhouette_md",
+    "type": "silhouette",
+    "difficulty": "medium",
+    "questionText": "¿Qué país es esta silueta?",
+    "correctAnswer": "Moldavia",
+    "options": [
+      "Ucraniano",
+      "Moldavia",
+      "Marseille",
+      "Inactivo"
+    ],
+    "imageUrl": "assets/silhouettes/md.png",
+    "extraData": {
+      "countryCode": "md",
+      "countryName": "Moldavia",
+      "acceptedAnswers": [
+        "moldavia"
+      ]
+    }
+  },
+  {
+    "id": "silhouette_tm",
+    "type": "silhouette",
+    "difficulty": "medium",
+    "questionText": "¿Qué país es esta silueta?",
+    "correctAnswer": "Turkmenistán",
+    "options": [
+      "Turkmenistán",
+      "Darling",
+      "Nanda Devi",
+      "Monte Saint Elias"
+    ],
+    "imageUrl": "assets/silhouettes/tm.png",
+    "extraData": {
+      "countryCode": "tm",
+      "countryName": "Turkmenistán",
+      "acceptedAnswers": [
+        "turkmenistán"
+      ]
+    }
+  },
+  {
+    "id": "silhouette_jo",
+    "type": "silhouette",
+    "difficulty": "medium",
+    "questionText": "¿Qué país es esta silueta?",
+    "correctAnswer": "Jordania",
+    "options": [
+      "Maldivas",
+      "Gran Desierto de Arena",
+      "Uganda",
+      "Jordania"
+    ],
+    "imageUrl": "assets/silhouettes/jo.png",
+    "extraData": {
+      "countryCode": "jo",
+      "countryName": "Jordaniaia",
+      "acceptedAnswers": [
+        "jordania"
+      ]
+    }
+  },
+  {
+    "id": "silhouette_np",
+    "type": "silhouette",
+    "difficulty": "medium",
+    "questionText": "¿Qué país es esta silueta?",
+    "correctAnswer": "Nepal",
+    "options": [
+      "Nepal",
+      "Ciudad del Cabo",
+      "Buenos Aires",
+      "Real brasileño"
+    ],
+    "imageUrl": "assets/silhouettes/np.png",
+    "extraData": {
+      "countryCode": "np",
+      "countryName": "Nepal",
+      "acceptedAnswers": [
+        "nepal"
+      ]
+    }
+  },
+  {
+    "id": "silhouette_ls",
+    "type": "silhouette",
+    "difficulty": "medium",
+    "questionText": "¿Qué país es esta silueta?",
+    "correctAnswer": "Lesoto",
+    "options": [
+      "Lesoto",
+      "Arabia Saudita, Egipto, Irak, Jordania, Kuwait, Omán, Qatar, Siria, Emiratos Árabes Unidos, Yemen",
+      "Burundi",
+      "Kosovo"
+    ],
+    "imageUrl": "assets/silhouettes/ls.png",
+    "extraData": {
+      "countryCode": "ls",
+      "countryName": "Lesoto",
+      "acceptedAnswers": [
+        "lesoto"
+      ]
+    }
+  },
+  {
+    "id": "silhouette_cm",
+    "type": "silhouette",
+    "difficulty": "medium",
+    "questionText": "¿Qué país es esta silueta?",
+    "correctAnswer": "Camerún",
+    "options": [
+      "Kioto",
+      "Camerún",
+      "Francés",
+      "RD Congo"
+    ],
+    "imageUrl": "assets/silhouettes/cm.png",
+    "extraData": {
+      "countryCode": "cm",
+      "countryName": "Camerún",
+      "acceptedAnswers": [
+        "camerún"
+      ]
+    }
+  },
+  {
+    "id": "silhouette_ga",
+    "type": "silhouette",
+    "difficulty": "medium",
+    "questionText": "¿Qué país es esta silueta?",
+    "correctAnswer": "Gabón",
+    "options": [
+      "Paramaribo",
+      "Dirham de EAU",
+      "Dinar kuwaití",
+      "Gabón"
+    ],
+    "imageUrl": "assets/silhouettes/ga.png",
+    "extraData": {
+      "countryCode": "ga",
+      "countryName": "Gabón",
+      "acceptedAnswers": [
+        "gabón"
+      ]
+    }
+  },
+  {
+    "id": "silhouette_ne",
+    "type": "silhouette",
+    "difficulty": "medium",
+    "questionText": "¿Qué país es esta silueta?",
+    "correctAnswer": "Níger",
+    "options": [
+      "Ópera de Sídney",
+      "Gitega",
+      "Rand sudafricano",
+      "Níger"
+    ],
+    "imageUrl": "assets/silhouettes/ne.png",
+    "extraData": {
+      "countryCode": "ne",
+      "countryName": "Níger",
+      "acceptedAnswers": [
+        "níger"
+      ]
+    }
+  },
+  {
+    "id": "silhouette_bf",
+    "type": "silhouette",
+    "difficulty": "medium",
+    "questionText": "¿Qué país es esta silueta?",
+    "correctAnswer": "Burkina Faso",
+    "options": [
+      "Burkina Faso",
+      "Dubái",
+      "Moroni",
+      "Maputo"
+    ],
+    "imageUrl": "assets/silhouettes/bf.png",
+    "extraData": {
+      "countryCode": "bf",
+      "countryName": "Burkina Faso",
+      "acceptedAnswers": [
+        "burkina faso"
+      ]
+    }
+  },
+  {
+    "id": "silhouette_tg",
+    "type": "silhouette",
+    "difficulty": "medium",
+    "questionText": "¿Qué país es esta silueta?",
+    "correctAnswer": "Togo",
+    "options": [
+      "Togo",
+      "Islandia",
+      "Malgache",
+      "Mogadiscio"
+    ],
+    "imageUrl": "assets/silhouettes/tg.png",
+    "extraData": {
+      "countryCode": "tg",
+      "countryName": "Togo",
+      "acceptedAnswers": [
+        "togo"
+      ]
+    }
+  },
+  {
+    "id": "silhouette_gh",
+    "type": "silhouette",
+    "difficulty": "medium",
+    "questionText": "¿Qué país es esta silueta?",
+    "correctAnswer": "Ghana",
+    "options": [
+      "Ucrania",
+      "Bratislava",
+      "Ghana",
+      "Cascadas del Niágara"
+    ],
+    "imageUrl": "assets/silhouettes/gh.png",
+    "extraData": {
+      "countryCode": "gh",
+      "countryName": "Ghana",
+      "acceptedAnswers": [
+        "ghana"
+      ]
+    }
+  },
+  {
+    "id": "silhouette_gw",
+    "type": "silhouette",
+    "difficulty": "medium",
+    "questionText": "¿Qué país es esta silueta?",
+    "correctAnswer": "Guinea-Bisáu",
+    "options": [
+      "Meroe",
+      "Bruselas",
+      "Monte Bianco",
+      "Guinea-Bisáu"
+    ],
+    "imageUrl": "assets/silhouettes/gw.png",
+    "extraData": {
+      "countryCode": "gw",
+      "countryName": "Guinea-Bisáu",
+      "acceptedAnswers": [
+        "guinea-bisáu"
+      ]
+    }
+  },
+  {
+    "id": "silhouette_us",
+    "type": "silhouette",
+    "difficulty": "medium",
+    "questionText": "¿Qué país es esta silueta?",
+    "correctAnswer": "Estados Unidos",
+    "options": [
+      "Estados Unidos",
+      "Osaka",
+      "Leu rumano",
+      "Acueducto de Segovia"
+    ],
+    "imageUrl": "assets/silhouettes/us.png",
+    "extraData": {
+      "countryCode": "us",
+      "countryName": "Estados Unidos",
+      "acceptedAnswers": [
+        "estados unidos",
+        "usa",
+        "ee uu",
+        "ee.uu.",
+        "estados unidos de américa",
+        "united states"
+      ]
+    }
+  },
+  {
+    "id": "silhouette_ca",
+    "type": "silhouette",
+    "difficulty": "medium",
+    "questionText": "¿Qué país es esta silueta?",
+    "correctAnswer": "Canadá",
+    "options": [
+      "Canadá",
+      "Torre de Tokio",
+      "Cuba",
+      "RD Congo"
+    ],
+    "imageUrl": "assets/silhouettes/ca.png",
+    "extraData": {
+      "countryCode": "ca",
+      "countryName": "Canadá",
+      "acceptedAnswers": [
+        "canadá"
+      ]
+    }
+  },
+  {
+    "id": "silhouette_mx",
+    "type": "silhouette",
+    "difficulty": "medium",
+    "questionText": "¿Qué país es esta silueta?",
+    "correctAnswer": "México",
+    "options": [
+      "Cristóbal Colón",
+      "284.000 km²",
+      "México",
+      "Vientián"
+    ],
+    "imageUrl": "assets/silhouettes/mx.png",
+    "extraData": {
+      "countryCode": "mx",
+      "countryName": "México",
+      "acceptedAnswers": [
+        "méxico"
+      ]
+    }
+  },
+  {
+    "id": "silhouette_bz",
+    "type": "silhouette",
+    "difficulty": "medium",
+    "questionText": "¿Qué país es esta silueta?",
+    "correctAnswer": "Belice",
+    "options": [
+      "Ucayali",
+      "Gabón",
+      "Tailandés",
+      "Belice"
+    ],
+    "imageUrl": "assets/silhouettes/bz.png",
+    "extraData": {
+      "countryCode": "bz",
+      "countryName": "Belice",
+      "acceptedAnswers": [
+        "belice"
+      ]
+    }
+  },
+  {
+    "id": "silhouette_pa",
+    "type": "silhouette",
+    "difficulty": "medium",
+    "questionText": "¿Qué país es esta silueta?",
+    "correctAnswer": "Panamá",
+    "options": [
+      "Budapest",
+      "Panamá",
+      "Kabul",
+      "Polonia"
+    ],
+    "imageUrl": "assets/silhouettes/pa.png",
+    "extraData": {
+      "countryCode": "pa",
+      "countryName": "Panamá",
+      "acceptedAnswers": [
+        "panamá"
+      ]
+    }
+  },
+  {
+    "id": "silhouette_ve",
+    "type": "silhouette",
+    "difficulty": "medium",
+    "questionText": "¿Qué país es esta silueta?",
+    "correctAnswer": "Venezuela",
+    "options": [
+      "Venezuela",
+      "Pirámides de Giza",
+      "Beirut",
+      "Argelia"
+    ],
+    "imageUrl": "assets/silhouettes/ve.png",
+    "extraData": {
+      "countryCode": "ve",
+      "countryName": "Venezuela",
+      "acceptedAnswers": [
+        "venezuela"
+      ]
+    }
+  },
+  {
+    "id": "silhouette_pg",
+    "type": "silhouette",
+    "difficulty": "medium",
+    "questionText": "¿Qué país es esta silueta?",
+    "correctAnswer": "Papúa Nueva Guinea",
+    "options": [
+      "Plaza Roja",
+      "Papúa Nueva Guinea",
+      "Argelia, Chad, Egipto, Libia, Mali, Mauritania, Marruecos, Níger, Sudán, Túnez",
+      "Serbia"
+    ],
+    "imageUrl": "assets/silhouettes/pg.png",
+    "extraData": {
+      "countryCode": "pg",
+      "countryName": "Papúa Nueva Guinea",
+      "acceptedAnswers": [
+        "papúa nueva guinea"
+      ]
+    }
+  },
+  {
+    "id": "silhouette_eg",
+    "type": "silhouette",
+    "difficulty": "medium",
+    "questionText": "¿Qué país es esta silueta?",
+    "correctAnswer": "Egipto",
+    "options": [
+      "Islas Pitcairn",
+      "Kisumu",
+      "Egipto",
+      "156.000 km²"
+    ],
+    "imageUrl": "assets/silhouettes/eg.png",
+    "extraData": {
+      "countryCode": "eg",
+      "countryName": "Egipto",
+      "acceptedAnswers": [
+        "egipto"
+      ]
+    }
+  },
+  {
+    "id": "silhouette_ye",
+    "type": "silhouette",
+    "difficulty": "medium",
+    "questionText": "¿Qué país es esta silueta?",
+    "correctAnswer": "Yemen",
+    "options": [
+      "Wadi Musa",
+      "Coreano",
+      "Yemen",
+      "Teatro Solís"
+    ],
+    "imageUrl": "assets/silhouettes/ye.png",
+    "extraData": {
+      "countryCode": "ye",
+      "countryName": "Yemen",
+      "acceptedAnswers": [
+        "yemen"
+      ]
+    }
+  },
+  {
+    "id": "silhouette_mr",
+    "type": "silhouette",
+    "difficulty": "medium",
+    "questionText": "¿Qué país es esta silueta?",
+    "correctAnswer": "Mauritania",
+    "options": [
+      "Vaticano",
+      "Cauca",
+      "2.600 km²",
+      "Mauritania"
+    ],
+    "imageUrl": "assets/silhouettes/mr.png",
+    "extraData": {
+      "countryCode": "mr",
+      "countryName": "Mauritania",
+      "acceptedAnswers": [
+        "mauritania"
+      ]
+    }
+  },
+  {
+    "id": "silhouette_gq",
+    "type": "silhouette",
+    "difficulty": "medium",
+    "questionText": "¿Qué país es esta silueta?",
+    "correctAnswer": "Guinea Ecuatorial",
+    "options": [
+      "Islas Cocos",
+      "Ópera de Sídney",
+      "Torre de Shanghái",
+      "Guinea Ecuatorial"
+    ],
+    "imageUrl": "assets/silhouettes/gq.png",
+    "extraData": {
+      "countryCode": "gq",
+      "countryName": "Guinea Ecuatorial",
+      "acceptedAnswers": [
+        "guinea ecuatorial"
+      ]
+    }
+  },
+  {
+    "id": "silhouette_gm",
+    "type": "silhouette",
+    "difficulty": "medium",
+    "questionText": "¿Qué país es esta silueta?",
+    "correctAnswer": "Gambia",
+    "options": [
+      "Lyon",
+      "Suiza",
+      "Lesoto",
+      "Gambia"
+    ],
+    "imageUrl": "assets/silhouettes/gm.png",
+    "extraData": {
+      "countryCode": "gm",
+      "countryName": "Gambia",
+      "acceptedAnswers": [
+        "gambia"
+      ]
+    }
+  },
+  {
+    "id": "silhouette_va",
+    "type": "silhouette",
+    "difficulty": "medium",
+    "questionText": "¿Qué país es esta silueta?",
+    "correctAnswer": "Ciudad del Vaticano",
+    "options": [
+      "Luxemburgo",
+      "Ciudad del Vaticano",
+      "Polinesia Francesa",
+      "Pirámides de Meroe"
+    ],
+    "imageUrl": "assets/silhouettes/va.png",
+    "extraData": {
+      "countryCode": "va",
+      "countryName": "Ciudad del Vaticano",
+      "acceptedAnswers": [
+        "ciudad del vaticano"
+      ]
+    }
+  },
+  {
+    "id": "silhouette_au",
+    "type": "silhouette",
+    "difficulty": "medium",
+    "questionText": "¿Qué país es esta silueta?",
+    "correctAnswer": "Australia",
+    "options": [
+      "Madagascar",
+      "Desierto de Qaidam",
+      "Republic of the Congo",
+      "Australia"
+    ],
+    "imageUrl": "assets/silhouettes/au.png",
+    "extraData": {
+      "countryCode": "au",
+      "countryName": "Australia",
+      "acceptedAnswers": [
+        "australia"
+      ]
+    }
+  },
+  {
+    "id": "silhouette_fj",
+    "type": "silhouette",
+    "difficulty": "medium",
+    "questionText": "¿Qué país es esta silueta?",
+    "correctAnswer": "Fiyi",
+    "options": [
+      "Uagadugú",
+      "Rupia indonesia",
+      "Fiyi",
+      "Finlandés"
+    ],
+    "imageUrl": "assets/silhouettes/fj.png",
+    "extraData": {
+      "countryCode": "fj",
+      "countryName": "Fiyi",
+      "acceptedAnswers": [
+        "fiyi"
+      ]
+    }
+  },
+  {
+    "id": "silhouette_nz",
+    "type": "silhouette",
+    "difficulty": "medium",
+    "questionText": "¿Qué país es esta silueta?",
+    "correctAnswer": "Nueva Zelanda",
+    "options": [
+      "Isla Heard e Islas McDonald",
+      "Luanda",
+      "Nueva Zelanda",
+      "Desierto de Pedirka"
+    ],
+    "imageUrl": "assets/silhouettes/nz.png",
+    "extraData": {
+      "countryCode": "nz",
+      "countryName": "Nueva Zelanda",
+      "acceptedAnswers": [
+        "nueva zelanda"
+      ]
+    }
+  },
+  {
+    "id": "silhouette_mg",
+    "type": "silhouette",
+    "difficulty": "medium",
+    "questionText": "¿Qué país es esta silueta?",
+    "correctAnswer": "Madagascar",
+    "options": [
+      "Ayers Rock",
+      "Porto-Novo",
+      "Lisboa",
+      "Madagascar"
+    ],
+    "imageUrl": "assets/silhouettes/mg.png",
+    "extraData": {
+      "countryCode": "mg",
+      "countryName": "Madagascar",
+      "acceptedAnswers": [
+        "madagascar"
+      ]
+    }
+  },
+  {
+    "id": "silhouette_ph",
+    "type": "silhouette",
+    "difficulty": "medium",
+    "questionText": "¿Qué país es esta silueta?",
+    "correctAnswer": "Filipinas",
+    "options": [
+      "Filipinas",
+      "Los Ángeles",
+      "Malé",
+      "Cristóbal Colón"
+    ],
+    "imageUrl": "assets/silhouettes/ph.png",
+    "extraData": {
+      "countryCode": "ph",
+      "countryName": "Filipinas",
+      "acceptedAnswers": [
+        "filipinas"
+      ]
+    }
+  },
+  {
+    "id": "silhouette_lk",
+    "type": "silhouette",
+    "difficulty": "medium",
+    "questionText": "¿Qué país es esta silueta?",
+    "correctAnswer": "Sri Lanka",
+    "options": [
+      "Nueva Zelanda",
+      "Desierto Negro",
+      "Santo Tomé y Príncipe",
+      "Sri Lanka"
+    ],
+    "imageUrl": "assets/silhouettes/lk.png",
+    "extraData": {
+      "countryCode": "lk",
+      "countryName": "Sri Lanka",
+      "acceptedAnswers": [
+        "sri lanka"
+      ]
+    }
+  },
+  {
+    "id": "silhouette_bs",
+    "type": "silhouette",
+    "difficulty": "medium",
+    "questionText": "¿Qué país es esta silueta?",
+    "correctAnswer": "Bahamas",
+    "options": [
+      "Bahamas",
+      "Martinica",
+      "Gran Erg Oriental",
+      "Ródano"
+    ],
+    "imageUrl": "assets/silhouettes/bs.png",
+    "extraData": {
+      "countryCode": "bs",
+      "countryName": "Bahamas",
+      "acceptedAnswers": [
+        "bahamas"
+      ]
+    }
+  },
+  {
+    "id": "silhouette_tc",
+    "type": "silhouette",
+    "difficulty": "medium",
+    "questionText": "¿Qué país es esta silueta?",
+    "correctAnswer": "Islas Turcas y Caicos",
+    "options": [
+      "Etiopía",
+      "Lago Chilka",
+      "Dakota del Sur",
+      "Islas Turcas y Caicos"
+    ],
+    "imageUrl": "assets/silhouettes/tc.png",
+    "extraData": {
+      "countryCode": "tc",
+      "countryName": "Islas Turcas y Caicos",
+      "acceptedAnswers": [
+        "islas turcas y caicos"
+      ]
+    }
+  },
+  {
+    "id": "silhouette_jp",
+    "type": "silhouette",
+    "difficulty": "medium",
+    "questionText": "¿Qué país es esta silueta?",
+    "correctAnswer": "Japón",
+    "options": [
+      "Naira nigeriana",
+      "Japón",
+      "Benín",
+      "Katmandú"
+    ],
+    "imageUrl": "assets/silhouettes/jp.png",
+    "extraData": {
+      "countryCode": "jp",
+      "countryName": "Japón",
+      "acceptedAnswers": [
+        "japón"
+      ]
+    }
+  },
+  {
+    "id": "silhouette_is",
+    "type": "silhouette",
+    "difficulty": "medium",
+    "questionText": "¿Qué país es esta silueta?",
+    "correctAnswer": "Islandia",
+    "options": [
+      "Islandia",
+      "Askja",
+      "1.320 m",
+      "Muro de China"
+    ],
+    "imageUrl": "assets/silhouettes/is.png",
+    "extraData": {
+      "countryCode": "is",
+      "countryName": "Islandia",
+      "acceptedAnswers": [
+        "islandia"
+      ]
+    }
+  },
+  {
+    "id": "silhouette_pf",
+    "type": "silhouette",
+    "difficulty": "medium",
+    "questionText": "¿Qué país es esta silueta?",
+    "correctAnswer": "Polinesia Francesa",
+    "options": [
+      "Dirham marroquí",
+      "Polinesia Francesa",
+      "Corona sueca",
+      "Lago Kolleru"
+    ],
+    "imageUrl": "assets/silhouettes/pf.png",
+    "extraData": {
+      "countryCode": "pf",
+      "countryName": "Polinesia Franciasa",
+      "acceptedAnswers": [
+        "polinesia francesa"
+      ]
+    }
+  },
+  {
+    "id": "silhouette_tf",
+    "type": "silhouette",
+    "difficulty": "medium",
+    "questionText": "¿Qué país es esta silueta?",
+    "correctAnswer": "Tierras Australes Francesas",
+    "options": [
+      "Georgiano",
+      "Libra egipcia",
+      "Darling",
+      "Tierras Australes Francesas"
+    ],
+    "imageUrl": "assets/silhouettes/tf.png",
+    "extraData": {
+      "countryCode": "tf",
+      "countryName": "Tierras Australes Franciasas",
+      "acceptedAnswers": [
+        "tierras australes francesas"
+      ]
+    }
+  },
+  {
+    "id": "silhouette_sc",
+    "type": "silhouette",
+    "difficulty": "medium",
+    "questionText": "¿Qué país es esta silueta?",
+    "correctAnswer": "Seychelles",
+    "options": [
+      "Shinano",
+      "1.670 m",
+      "Dhivehi",
+      "Seychelles"
+    ],
+    "imageUrl": "assets/silhouettes/sc.png",
+    "extraData": {
+      "countryCode": "sc",
+      "countryName": "Seychelles",
+      "acceptedAnswers": [
+        "seychelles"
+      ]
+    }
+  },
+  {
+    "id": "silhouette_ki",
+    "type": "silhouette",
+    "difficulty": "medium",
+    "questionText": "¿Qué país es esta silueta?",
+    "correctAnswer": "Kiribati",
+    "options": [
+      "Kiribati",
+      "Suazi",
+      "Birmania",
+      "Jordaniaia"
+    ],
+    "imageUrl": "assets/silhouettes/ki.png",
+    "extraData": {
+      "countryCode": "ki",
+      "countryName": "Kiribati",
+      "acceptedAnswers": [
+        "kiribati"
+      ]
+    }
+  },
+  {
+    "id": "silhouette_mh",
+    "type": "silhouette",
+    "difficulty": "medium",
+    "questionText": "¿Qué país es esta silueta?",
+    "correctAnswer": "Islas Marshall",
+    "options": [
+      "Lago Kolleru",
+      "Túnez",
+      "Canberra",
+      "Islas Marshall"
+    ],
+    "imageUrl": "assets/silhouettes/mh.png",
+    "extraData": {
+      "countryCode": "mh",
+      "countryName": "Islas Marshall",
+      "acceptedAnswers": [
+        "islas marshall"
+      ]
+    }
+  },
+  {
+    "id": "silhouette_tt",
+    "type": "silhouette",
+    "difficulty": "medium",
+    "questionText": "¿Qué país es esta silueta?",
+    "correctAnswer": "Trinidad y Tobago",
+    "options": [
+      "Trinidad y Tobago",
+      "Francia",
+      "Toronto",
+      "Macao"
+    ],
+    "imageUrl": "assets/silhouettes/tt.png",
+    "extraData": {
+      "countryCode": "tt",
+      "countryName": "Trinidad y Tobago",
+      "acceptedAnswers": [
+        "trinidad y tobago"
+      ]
+    }
+  },
+  {
+    "id": "silhouette_gd",
+    "type": "silhouette",
+    "difficulty": "medium",
+    "questionText": "¿Qué país es esta silueta?",
+    "correctAnswer": "Granada",
+    "options": [
+      "Rublo ruso",
+      "Yangtsé",
+      "Granada",
+      "Cristo Redentor"
+    ],
+    "imageUrl": "assets/silhouettes/gd.png",
+    "extraData": {
+      "countryCode": "gd",
+      "countryName": "Granada",
+      "acceptedAnswers": [
+        "granada"
+      ]
+    }
+  },
+  {
+    "id": "silhouette_vc",
+    "type": "silhouette",
+    "difficulty": "medium",
+    "questionText": "¿Qué país es esta silueta?",
+    "correctAnswer": "San Vicente y las Granadinas",
+    "options": [
+      "El Salvador",
+      "San Vicente y las Granadinas",
+      "Ruanda",
+      "Shanghái"
+    ],
+    "imageUrl": "assets/silhouettes/vc.png",
+    "extraData": {
+      "countryCode": "vc",
+      "countryName": "San Vicente y las Granadinas",
+      "acceptedAnswers": [
+        "san vicente y las granadinas"
+      ]
+    }
+  },
+  {
+    "id": "silhouette_bb",
+    "type": "silhouette",
+    "difficulty": "medium",
+    "questionText": "¿Qué país es esta silueta?",
+    "correctAnswer": "Barbados",
+    "options": [
+      "Dirham de EAU",
+      "Barbados",
+      "2.600 km²",
+      "Lesoto"
+    ],
+    "imageUrl": "assets/silhouettes/bb.png",
+    "extraData": {
+      "countryCode": "bb",
+      "countryName": "Barbados",
+      "acceptedAnswers": [
+        "barbados"
+      ]
+    }
+  },
+  {
+    "id": "silhouette_lc",
+    "type": "silhouette",
+    "difficulty": "medium",
+    "questionText": "¿Qué país es esta silueta?",
+    "correctAnswer": "Santa Lucía",
+    "options": [
+      "Santa Elena, Ascensión and Tristán de Acuña",
+      "Kiev",
+      "1.905 m",
+      "Santa Lucía"
+    ],
+    "imageUrl": "assets/silhouettes/lc.png",
+    "extraData": {
+      "countryCode": "lc",
+      "countryName": "Santa Lucía",
+      "acceptedAnswers": [
+        "santa lucía"
+      ]
+    }
+  },
+  {
+    "id": "silhouette_dm",
+    "type": "silhouette",
+    "difficulty": "medium",
+    "questionText": "¿Qué país es esta silueta?",
+    "correctAnswer": "Dominica",
+    "options": [
+      "Dominica",
+      "Pico Townsend",
+      "Partenón",
+      "Torre del Ángel"
+    ],
+    "imageUrl": "assets/silhouettes/dm.png",
+    "extraData": {
+      "countryCode": "dm",
+      "countryName": "Dominica",
+      "acceptedAnswers": [
+        "dominica"
+      ]
+    }
+  },
+  {
+    "id": "silhouette_ag",
+    "type": "silhouette",
+    "difficulty": "medium",
+    "questionText": "¿Qué país es esta silueta?",
+    "correctAnswer": "Antigua y Barbuda",
+    "options": [
+      "Coliseo",
+      "Antigua y Barbuda",
+      "Checo",
+      "Nuakchott"
+    ],
+    "imageUrl": "assets/silhouettes/ag.png",
+    "extraData": {
+      "countryCode": "ag",
+      "countryName": "Antigua y Barbuda",
+      "acceptedAnswers": [
+        "antigua y barbuda"
+      ]
+    }
+  },
+  {
+    "id": "silhouette_kn",
+    "type": "silhouette",
+    "difficulty": "medium",
+    "questionText": "¿Qué país es esta silueta?",
+    "correctAnswer": "San Cristóbal y Nieves",
+    "options": [
+      "Castillo de Praga",
+      "Arno",
+      "Budapest",
+      "San Cristóbal y Nieves"
+    ],
+    "imageUrl": "assets/silhouettes/kn.png",
+    "extraData": {
+      "countryCode": "kn",
+      "countryName": "San Cristóbal y Nieves",
+      "acceptedAnswers": [
+        "san cristóbal y nieves"
+      ]
+    }
+  },
+  {
+    "id": "silhouette_jm",
+    "type": "silhouette",
+    "difficulty": "medium",
+    "questionText": "¿Qué país es esta silueta?",
+    "correctAnswer": "Jamaica",
+    "options": [
+      "Jamaica",
+      "Armenio",
+      "Tenge kazajo",
+      "Embalse de Almansa"
+    ],
+    "imageUrl": "assets/silhouettes/jm.png",
+    "extraData": {
+      "countryCode": "jm",
+      "countryName": "Jamaica",
+      "acceptedAnswers": [
+        "jamaica"
+      ]
+    }
+  },
+  {
+    "id": "silhouette_sh",
+    "type": "silhouette",
+    "difficulty": "medium",
+    "questionText": "¿Qué país es esta silueta?",
+    "correctAnswer": "Santa Elena",
+    "options": [
+      "Birr etíope",
+      "Irak",
+      "Jemer",
+      "Santa Elena"
+    ],
+    "imageUrl": "assets/silhouettes/sh.png",
+    "extraData": {
+      "countryCode": "sh",
+      "countryName": "Santa Elena",
+      "acceptedAnswers": [
+        "santa elena"
+      ]
+    }
+  },
+  {
+    "id": "silhouette_mu",
+    "type": "silhouette",
+    "difficulty": "medium",
+    "questionText": "¿Qué país es esta silueta?",
+    "correctAnswer": "Mauricio",
+    "options": [
+      "Mauricio",
+      "Rublo ruso",
+      "Samoa",
+      "361 m"
+    ],
+    "imageUrl": "assets/silhouettes/mu.png",
+    "extraData": {
+      "countryCode": "mu",
+      "countryName": "Mauricio",
+      "acceptedAnswers": [
+        "mauricio"
+      ]
+    }
+  },
+  {
+    "id": "silhouette_km",
+    "type": "silhouette",
+    "difficulty": "medium",
+    "questionText": "¿Qué país es esta silueta?",
+    "correctAnswer": "Comoras",
+    "options": [
+      "Islas Feroe",
+      "Comoras",
+      "Finlandia",
+      "Conakri"
+    ],
+    "imageUrl": "assets/silhouettes/km.png",
+    "extraData": {
+      "countryCode": "km",
+      "countryName": "Comoras",
+      "acceptedAnswers": [
+        "comoras"
+      ]
+    }
+  },
+  {
+    "id": "silhouette_st",
+    "type": "silhouette",
+    "difficulty": "medium",
+    "questionText": "¿Qué país es esta silueta?",
+    "correctAnswer": "Santo Tomé y Príncipe",
+    "options": [
+      "Tigriña",
+      "Santo Tomé y Príncipe",
+      "Yakarta",
+      "Manila"
+    ],
+    "imageUrl": "assets/silhouettes/st.png",
+    "extraData": {
+      "countryCode": "st",
+      "countryName": "Santo Tomé y Príncipe",
+      "acceptedAnswers": [
+        "santo tomé y príncipe"
+      ]
+    }
+  },
+  {
+    "id": "silhouette_cv",
+    "type": "silhouette",
+    "difficulty": "medium",
+    "questionText": "¿Qué país es esta silueta?",
+    "correctAnswer": "Cabo Verde",
+    "options": [
+      "Ulán Bator",
+      "Andorra la Vieja",
+      "Cabo Verde",
+      "Franco CFA de África Central"
+    ],
+    "imageUrl": "assets/silhouettes/cv.png",
+    "extraData": {
+      "countryCode": "cv",
+      "countryName": "Cabo Verde",
+      "acceptedAnswers": [
+        "cabo verde",
+        "cabo verde",
+        "cabo verde"
+      ]
+    }
+  },
+  {
+    "id": "silhouette_mt",
+    "type": "silhouette",
+    "difficulty": "medium",
+    "questionText": "¿Qué país es esta silueta?",
+    "correctAnswer": "Malta",
+    "options": [
+      "Gebel Shayeb",
+      "Dhivehi",
+      "Copenhague",
+      "Malta"
+    ],
+    "imageUrl": "assets/silhouettes/mt.png",
+    "extraData": {
+      "countryCode": "mt",
+      "countryName": "Malta",
+      "acceptedAnswers": [
+        "malta"
+      ]
+    }
+  },
+  {
+    "id": "silhouette_sg",
+    "type": "silhouette",
+    "difficulty": "medium",
+    "questionText": "¿Qué país es esta silueta?",
+    "correctAnswer": "Singapur",
+    "options": [
+      "Filipinas",
+      "Colombia",
+      "Mackenzie",
+      "Singapur"
+    ],
+    "imageUrl": "assets/silhouettes/sg.png",
+    "extraData": {
+      "countryCode": "sg",
+      "countryName": "Singapur",
+      "acceptedAnswers": [
+        "singapur"
+      ]
+    }
+  },
+  {
+    "id": "silhouette_to",
+    "type": "silhouette",
+    "difficulty": "medium",
+    "questionText": "¿Qué país es esta silueta?",
+    "correctAnswer": "Tonga",
+    "options": [
+      "Tonga",
+      "Chiclayo",
+      "Suecia",
+      "Antananarivo"
+    ],
+    "imageUrl": "assets/silhouettes/to.png",
+    "extraData": {
+      "countryCode": "to",
+      "countryName": "Tonga",
+      "acceptedAnswers": [
+        "tonga"
+      ]
+    }
+  },
+  {
+    "id": "silhouette_ws",
+    "type": "silhouette",
+    "difficulty": "medium",
+    "questionText": "¿Qué país es esta silueta?",
+    "correctAnswer": "Samoa",
+    "options": [
+      "Daca",
+      "Tokio",
+      "Argentina",
+      "Samoa"
+    ],
+    "imageUrl": "assets/silhouettes/ws.png",
+    "extraData": {
+      "countryCode": "ws",
+      "countryName": "Samoa",
+      "acceptedAnswers": [
+        "samoa"
+      ]
+    }
+  },
+  {
+    "id": "silhouette_sb",
+    "type": "silhouette",
+    "difficulty": "medium",
+    "questionText": "¿Qué país es esta silueta?",
+    "correctAnswer": "Islas Salomón",
+    "options": [
+      "Yibuti",
+      "Islas Turcas y Caicos",
+      "Ródano",
+      "Islas Salomón"
+    ],
+    "imageUrl": "assets/silhouettes/sb.png",
+    "extraData": {
+      "countryCode": "sb",
+      "countryName": "Islas Salomón",
+      "acceptedAnswers": [
+        "islas salomón"
+      ]
+    }
+  },
+  {
+    "id": "silhouette_tv",
+    "type": "silhouette",
+    "difficulty": "medium",
+    "questionText": "¿Qué país es esta silueta?",
+    "correctAnswer": "Tuvalu",
+    "options": [
+      "Reunión",
+      "Monrovia",
+      "Tuvalu",
+      "Paraná"
+    ],
+    "imageUrl": "assets/silhouettes/tv.png",
+    "extraData": {
+      "countryCode": "tv",
+      "countryName": "Tuvalu",
+      "acceptedAnswers": [
+        "tuvalu"
+      ]
+    }
+  },
+  {
+    "id": "silhouette_mv",
+    "type": "silhouette",
+    "difficulty": "medium",
+    "questionText": "¿Qué país es esta silueta?",
+    "correctAnswer": "Maldivas",
+    "options": [
+      "Tíber",
+      "Maldivas",
+      "Pelée",
+      "Angola"
+    ],
+    "imageUrl": "assets/silhouettes/mv.png",
+    "extraData": {
+      "countryCode": "mv",
+      "countryName": "Maldivas",
+      "acceptedAnswers": [
+        "maldivas"
+      ]
+    }
+  },
+  {
+    "id": "silhouette_nr",
+    "type": "silhouette",
+    "difficulty": "medium",
+    "questionText": "¿Qué país es esta silueta?",
+    "correctAnswer": "Nauru",
+    "options": [
+      "Taka bangladesí",
+      "Lago Wular",
+      "Nauru",
+      "Marruecos"
+    ],
+    "imageUrl": "assets/silhouettes/nr.png",
+    "extraData": {
+      "countryCode": "nr",
+      "countryName": "Nauru",
+      "acceptedAnswers": [
+        "nauru"
+      ]
+    }
+  },
+  {
+    "id": "silhouette_fm",
+    "type": "silhouette",
+    "difficulty": "medium",
+    "questionText": "¿Qué país es esta silueta?",
+    "correctAnswer": "Micronesia",
+    "options": [
+      "Esuatini",
+      "Cervino",
+      "Laos",
+      "Micronesia"
+    ],
+    "imageUrl": "assets/silhouettes/fm.png",
+    "extraData": {
+      "countryCode": "fm",
+      "countryName": "Micronesia",
+      "acceptedAnswers": [
+        "micronesia"
+      ]
+    }
+  },
+  {
+    "id": "silhouette_vu",
+    "type": "silhouette",
+    "difficulty": "medium",
+    "questionText": "¿Qué país es esta silueta?",
+    "correctAnswer": "Vanuatu",
+    "options": [
+      "Wellington",
+      "Río Bravo",
+      "Vanuatu",
+      "Naira nigeriana"
+    ],
+    "imageUrl": "assets/silhouettes/vu.png",
+    "extraData": {
+      "countryCode": "vu",
+      "countryName": "Vanuatu",
+      "acceptedAnswers": [
+        "vanuatu"
+      ]
+    }
+  },
+  {
+    "id": "volcano_63072",
+    "type": "volcano",
+    "difficulty": "easy",
+    "questionText": "¿En qué país se encuentra el volcán Etna?",
+    "correctAnswer": "Italia",
+    "options": [
+      "Papúa Nueva Guinea",
+      "la Antártida",
+      "Italia",
+      "Chile y Argentina"
+    ],
+    "extraData": {
+      "volcanoName": "Etna",
+      "country": "Italia",
+      "heightMeters": 3357,
+      "status": "active",
+      "continent": "Europa"
+    }
+  },
+  {
+    "id": "volcano_63073",
+    "type": "volcano",
+    "difficulty": "medium",
+    "questionText": "¿Cuál es la altura aproximada del volcán Vesubio?",
+    "correctAnswer": "1.281 m",
+    "options": [
+      "1.470 m",
+      "1.281 m",
+      "1.080 m",
+      "890 m"
+    ],
+    "extraData": {
+      "volcanoName": "Vesubio",
+      "country": "Italia",
+      "heightMeters": 1281,
+      "status": "active",
+      "continent": "Europa"
+    }
+  },
+  {
+    "id": "volcano_63074",
+    "type": "volcano",
+    "difficulty": "easy",
+    "questionText": "¿Qué volcán se encuentra en Italia?",
+    "correctAnswer": "Estromboli",
+    "options": [
+      "Tavurvur",
+      "Kirishima",
+      "Estromboli",
+      "Awu"
+    ],
+    "extraData": {
+      "volcanoName": "Estromboli",
+      "country": "Italia",
+      "heightMeters": 924,
+      "status": "active",
+      "continent": "Europa"
+    }
+  },
+  {
+    "id": "volcano_63075",
+    "type": "volcano",
+    "difficulty": "easy",
+    "questionText": "¿Cuál es el estado de actividad del volcán Eyjafjallajökull?",
+    "correctAnswer": "Activo",
+    "options": [
+      "Activo",
+      "Inactivo",
+      "Extinto",
+      "Fumarólico"
+    ],
+    "extraData": {
+      "volcanoName": "Eyjafjallajökull",
+      "country": "Islandia",
+      "heightMeters": 1651,
+      "status": "active",
+      "continent": "Europa"
+    }
+  },
+  {
+    "id": "volcano_63076",
+    "type": "volcano",
+    "difficulty": "easy",
+    "questionText": "¿En qué continente se encuentra el volcán Hekla?",
+    "correctAnswer": "Europa",
+    "options": [
+      "Asia",
+      "Oceanía",
+      "América del Norte",
+      "Europa"
+    ],
+    "extraData": {
+      "volcanoName": "Hekla",
+      "country": "Islandia",
+      "heightMeters": 1491,
+      "status": "active",
+      "continent": "Europa"
+    }
+  },
+  {
+    "id": "volcano_63077",
+    "type": "volcano",
+    "difficulty": "easy",
+    "questionText": "¿En qué país se encuentra el volcán Grímsvötn?",
+    "correctAnswer": "Islandia",
+    "options": [
+      "Papúa Nueva Guinea",
+      "Rusia",
+      "Islandia",
+      "Montserrat"
+    ],
+    "extraData": {
+      "volcanoName": "Grímsvötn",
+      "country": "Islandia",
+      "heightMeters": 1725,
+      "status": "active",
+      "continent": "Europa"
+    }
+  },
+  {
+    "id": "volcano_63078",
+    "type": "volcano",
+    "difficulty": "medium",
+    "questionText": "¿Cuál es la altura aproximada del volcán Katla?",
+    "correctAnswer": "1.512 m",
+    "options": [
+      "1.050 m",
+      "1.730 m",
+      "1.512 m",
+      "1.280 m"
+    ],
+    "extraData": {
+      "volcanoName": "Katla",
+      "country": "Islandia",
+      "heightMeters": 1512,
+      "status": "active",
+      "continent": "Europa"
+    }
+  },
+  {
+    "id": "volcano_63079",
+    "type": "volcano",
+    "difficulty": "easy",
+    "questionText": "¿Qué volcán se encuentra en Islandia?",
+    "correctAnswer": "Askja",
+    "options": [
+      "Tungurahua",
+      "Colima",
+      "Askja",
+      "Erebus"
+    ],
+    "extraData": {
+      "volcanoName": "Askja",
+      "country": "Islandia",
+      "heightMeters": 1510,
+      "status": "dormant",
+      "continent": "Europa"
+    }
+  },
+  {
+    "id": "volcano_63080",
+    "type": "volcano",
+    "difficulty": "easy",
+    "questionText": "¿Cuál es el estado de actividad del volcán Fuji?",
+    "correctAnswer": "Inactivo",
+    "options": [
+      "Activo",
+      "Inactivo",
+      "Extinto",
+      "Fumarólico"
+    ],
+    "extraData": {
+      "volcanoName": "Fuji",
+      "country": "Japón",
+      "heightMeters": 3776,
+      "status": "dormant",
+      "continent": "Asia"
+    }
+  }
+]

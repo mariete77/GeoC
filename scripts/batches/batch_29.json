@@ -1,0 +1,1934 @@
+[
+  {
+    "id": "desert_63181",
+    "type": "desert",
+    "difficulty": "easy",
+    "questionText": "¿En qué país se encuentra el Desierto de Monte?",
+    "correctAnswer": "Argentina",
+    "options": [
+      "Venezuela",
+      "Argentina",
+      "Brasil",
+      "Nueva Zelanda"
+    ],
+    "extraData": {
+      "desertName": "Desierto de Monte",
+      "countries": "Argentina",
+      "areaKm2": 125000,
+      "continent": "América del Sur"
+    }
+  },
+  {
+    "id": "desert_63182",
+    "type": "desert",
+    "difficulty": "hard",
+    "questionText": "¿Cuál es la superficie aproximada del La Guajira?",
+    "correctAnswer": "11.000 km²",
+    "options": [
+      "22.000 km²",
+      "3.300 km²",
+      "11.000 km²",
+      "5.500 km²"
+    ],
+    "extraData": {
+      "desertName": "La Guajira",
+      "countries": "Colombia, Venezuela",
+      "areaKm2": 11000,
+      "continent": "América del Sur"
+    }
+  },
+  {
+    "id": "desert_63183",
+    "type": "desert",
+    "difficulty": "easy",
+    "questionText": "¿Qué desierto se encuentra principalmente en Estados Unidos?",
+    "correctAnswer": "Desierto de Great Basin",
+    "options": [
+      "Desierto Blanco",
+      "Desierto de Katpana",
+      "Desierto de Great Basin",
+      "Desierto de Gobi"
+    ],
+    "extraData": {
+      "desertName": "Desierto de Great Basin",
+      "countries": "Estados Unidos",
+      "areaKm2": 492000,
+      "continent": "América del Norte"
+    }
+  },
+  {
+    "id": "desert_63184",
+    "type": "desert",
+    "difficulty": "easy",
+    "questionText": "¿En qué continente se encuentra el Desierto de Painted?",
+    "correctAnswer": "América del Norte",
+    "options": [
+      "América del Sur",
+      "África",
+      "Europa",
+      "América del Norte"
+    ],
+    "extraData": {
+      "desertName": "Desierto de Painted",
+      "countries": "Estados Unidos",
+      "areaKm2": 19500,
+      "continent": "América del Norte"
+    }
+  },
+  {
+    "id": "desert_63185",
+    "type": "desert",
+    "difficulty": "medium",
+    "questionText": "¿Cuál de estos desiertos se encuentra en África?",
+    "correctAnswer": "Desierto Negro",
+    "options": [
+      "Desierto de Mojave",
+      "Desierto Blanco",
+      "Desierto Negro",
+      "Namib"
+    ],
+    "extraData": {
+      "desertName": "Desierto Negro",
+      "countries": "Egipto",
+      "areaKm2": 40000,
+      "continent": "África"
+    }
+  },
+  {
+    "id": "desert_63186",
+    "type": "desert",
+    "difficulty": "easy",
+    "questionText": "¿En qué país se encuentra el Desierto Blanco?",
+    "correctAnswer": "Egipto",
+    "options": [
+      "Estados Unidos",
+      "Egipto",
+      "Australia",
+      "Arabia Saudita, Egipto, Irak, Jordania, Kuwait, Omán, Qatar, Siria, Emiratos Árabes Unidos, Yemen"
+    ],
+    "extraData": {
+      "desertName": "Desierto Blanco",
+      "countries": "Egipto",
+      "areaKm2": 3010,
+      "continent": "África"
+    }
+  },
+  {
+    "id": "desert_63187",
+    "type": "desert",
+    "difficulty": "hard",
+    "questionText": "¿Cuál es la superficie aproximada del Desierto de Gibson?",
+    "correctAnswer": "156.000 km²",
+    "options": [
+      "156.000 km²",
+      "78.000 km²",
+      "46.800 km²",
+      "312.000 km²"
+    ],
+    "extraData": {
+      "desertName": "Desierto de Gibson",
+      "countries": "Australia",
+      "areaKm2": 156000,
+      "continent": "Oceanía"
+    }
+  },
+  {
+    "id": "desert_63188",
+    "type": "desert",
+    "difficulty": "easy",
+    "questionText": "¿Qué desierto se encuentra principalmente en Australia?",
+    "correctAnswer": "Gran Desierto de Arena",
+    "options": [
+      "Gran Desierto de Arena",
+      "Desierto de Great Basin",
+      "Danakil",
+      "Desierto de Salta"
+    ],
+    "extraData": {
+      "desertName": "Gran Desierto de Arena",
+      "countries": "Australia",
+      "areaKm2": 360000,
+      "continent": "Oceanía"
+    }
+  },
+  {
+    "id": "desert_63189",
+    "type": "desert",
+    "difficulty": "easy",
+    "questionText": "¿En qué continente se encuentra el Gran Desierto Victoria?",
+    "correctAnswer": "Oceanía",
+    "options": [
+      "la Antártida",
+      "Asia",
+      "África",
+      "Oceanía"
+    ],
+    "extraData": {
+      "desertName": "Gran Desierto Victoria",
+      "countries": "Australia",
+      "areaKm2": 424000,
+      "continent": "Oceanía"
+    }
+  },
+  {
+    "id": "desert_63190",
+    "type": "desert",
+    "difficulty": "medium",
+    "questionText": "¿Cuál de estos desiertos se encuentra en Oceanía?",
+    "correctAnswer": "Desierto de Simpson",
+    "options": [
+      "Desierto de Thar",
+      "Desierto de Altar",
+      "Desierto de Tirari",
+      "Desierto de Simpson"
+    ],
+    "extraData": {
+      "desertName": "Desierto de Simpson",
+      "countries": "Australia",
+      "areaKm2": 176500,
+      "continent": "Oceanía"
+    }
+  },
+  {
+    "id": "desert_63191",
+    "type": "desert",
+    "difficulty": "easy",
+    "questionText": "¿En qué país se encuentra el Desierto de Tanami?",
+    "correctAnswer": "Australia",
+    "options": [
+      "Australia",
+      "España",
+      "Australia",
+      "China"
+    ],
+    "extraData": {
+      "desertName": "Desierto de Tanami",
+      "countries": "Australia",
+      "areaKm2": 292000,
+      "continent": "Oceanía"
+    }
+  },
+  {
+    "id": "desert_63192",
+    "type": "desert",
+    "difficulty": "hard",
+    "questionText": "¿Cuál es la superficie aproximada del Desierto de Great Sandy?",
+    "correctAnswer": "284.000 km²",
+    "options": [
+      "85.200 km²",
+      "568.000 km²",
+      "284.000 km²",
+      "142.000 km²"
+    ],
+    "extraData": {
+      "desertName": "Desierto de Great Sandy",
+      "countries": "Australia",
+      "areaKm2": 284000,
+      "continent": "Oceanía"
+    }
+  },
+  {
+    "id": "desert_63193",
+    "type": "desert",
+    "difficulty": "easy",
+    "questionText": "¿Qué desierto se encuentra principalmente en Australia?",
+    "correctAnswer": "Desierto de Pedirka",
+    "options": [
+      "Desierto de Pedirka",
+      "Desierto de Monegros",
+      "Gran Erg Oriental",
+      "Desierto de Badain Jaran"
+    ],
+    "extraData": {
+      "desertName": "Desierto de Pedirka",
+      "countries": "Australia",
+      "areaKm2": 15000,
+      "continent": "Oceanía"
+    }
+  },
+  {
+    "id": "desert_63194",
+    "type": "desert",
+    "difficulty": "easy",
+    "questionText": "¿En qué continente se encuentra el Desierto de Strzelecki?",
+    "correctAnswer": "Oceanía",
+    "options": [
+      "América del Sur",
+      "Asia",
+      "Oceanía",
+      "África"
+    ],
+    "extraData": {
+      "desertName": "Desierto de Strzelecki",
+      "countries": "Australia",
+      "areaKm2": 80250,
+      "continent": "Oceanía"
+    }
+  },
+  {
+    "id": "desert_63195",
+    "type": "desert",
+    "difficulty": "medium",
+    "questionText": "¿Cuál de estos desiertos se encuentra en Oceanía?",
+    "correctAnswer": "Desierto de Tirari",
+    "options": [
+      "Desierto de Katpana",
+      "Desierto de Thar",
+      "Desierto de Tirari",
+      "Desierto de Painted"
+    ],
+    "extraData": {
+      "desertName": "Desierto de Tirari",
+      "countries": "Australia",
+      "areaKm2": 1480,
+      "continent": "Oceanía"
+    }
+  },
+  {
+    "id": "desert_63196",
+    "type": "desert",
+    "difficulty": "easy",
+    "questionText": "¿En qué país se encuentra el Pequeño Desierto de Arena?",
+    "correctAnswer": "Australia",
+    "options": [
+      "Ucrania",
+      "Egipto",
+      "Australia",
+      "Estados Unidos"
+    ],
+    "extraData": {
+      "desertName": "Pequeño Desierto de Arena",
+      "countries": "Australia",
+      "areaKm2": 111500,
+      "continent": "Oceanía"
+    }
+  },
+  {
+    "id": "desert_63197",
+    "type": "desert",
+    "difficulty": "hard",
+    "questionText": "¿Cuál es la superficie aproximada del Nullarbor?",
+    "correctAnswer": "200.000 km²",
+    "options": [
+      "400.000 km²",
+      "60.000 km²",
+      "200.000 km²",
+      "100.000 km²"
+    ],
+    "extraData": {
+      "desertName": "Nullarbor",
+      "countries": "Australia",
+      "areaKm2": 200000,
+      "continent": "Oceanía"
+    }
+  },
+  {
+    "id": "desert_63198",
+    "type": "desert",
+    "difficulty": "easy",
+    "questionText": "¿Qué desierto se encuentra principalmente en España?",
+    "correctAnswer": "Desierto de Tabernas",
+    "options": [
+      "Desierto de Río Negro",
+      "Desierto Negro",
+      "Desierto de Tabernas",
+      "Desierto de Qaidam"
+    ],
+    "extraData": {
+      "desertName": "Desierto de Tabernas",
+      "countries": "España",
+      "areaKm2": 280,
+      "continent": "Europa"
+    }
+  },
+  {
+    "id": "desert_63199",
+    "type": "desert",
+    "difficulty": "easy",
+    "questionText": "¿En qué continente se encuentra el Desierto de Bardenas Reales?",
+    "correctAnswer": "Europa",
+    "options": [
+      "Oceanía",
+      "América del Sur",
+      "Europa",
+      "la Antártida"
+    ],
+    "extraData": {
+      "desertName": "Desierto de Bardenas Reales",
+      "countries": "España",
+      "areaKm2": 420,
+      "continent": "Europa"
+    }
+  },
+  {
+    "id": "desert_63200",
+    "type": "desert",
+    "difficulty": "medium",
+    "questionText": "¿Cuál de estos desiertos se encuentra en Europa?",
+    "correctAnswer": "Desierto de Monegros",
+    "options": [
+      "Desierto de Thar",
+      "Desierto de Monegros",
+      "Namib",
+      "Desierto de Tengger"
+    ],
+    "extraData": {
+      "desertName": "Desierto de Monegros",
+      "countries": "España",
+      "areaKm2": 276,
+      "continent": "Europa"
+    }
+  },
+  {
+    "id": "desert_63201",
+    "type": "desert",
+    "difficulty": "easy",
+    "questionText": "¿En qué país se encuentra el Desierto de Oleshky?",
+    "correctAnswer": "Ucrania",
+    "options": [
+      "Pakistán",
+      "Ucrania",
+      "México",
+      "Sudán, Egipto"
+    ],
+    "extraData": {
+      "desertName": "Desierto de Oleshky",
+      "countries": "Ucrania",
+      "areaKm2": 1610,
+      "continent": "Europa"
+    }
+  },
+  {
+    "id": "desert_63202",
+    "type": "desert",
+    "difficulty": "hard",
+    "questionText": "¿Cuál es la superficie aproximada del Desierto de Aral Kum?",
+    "correctAnswer": "45.000 km²",
+    "options": [
+      "90.000 km²",
+      "45.000 km²",
+      "13.500 km²",
+      "22.500 km²"
+    ],
+    "extraData": {
+      "desertName": "Desierto de Aral Kum",
+      "countries": "Kazajistán, Uzbekistán",
+      "areaKm2": 45000,
+      "continent": "Asia"
+    }
+  },
+  {
+    "id": "desert_63203",
+    "type": "desert",
+    "difficulty": "easy",
+    "questionText": "¿Qué desierto se encuentra principalmente en Kazajistán?",
+    "correctAnswer": "Desierto de Ryn",
+    "options": [
+      "Desierto de Cabo de Gata",
+      "Desierto de Ryn",
+      "Desierto de Dasht-i-Margo",
+      "Desierto de Libia"
+    ],
+    "extraData": {
+      "desertName": "Desierto de Ryn",
+      "countries": "Kazajistán, Rusia",
+      "areaKm2": 40000,
+      "continent": "Asia"
+    }
+  },
+  {
+    "id": "desert_63204",
+    "type": "desert",
+    "difficulty": "easy",
+    "questionText": "¿En qué continente se encuentra el Desierto de Ustyurt?",
+    "correctAnswer": "Asia",
+    "options": [
+      "América del Norte",
+      "África",
+      "América del Sur",
+      "Asia"
+    ],
+    "extraData": {
+      "desertName": "Desierto de Ustyurt",
+      "countries": "Kazajistán, Turkmenistán, Uzbekistán",
+      "areaKm2": 200000,
+      "continent": "Asia"
+    }
+  },
+  {
+    "id": "desert_63205",
+    "type": "desert",
+    "difficulty": "medium",
+    "questionText": "¿Cuál de estos desiertos se encuentra en Asia?",
+    "correctAnswer": "Desierto de Badain Jaran",
+    "options": [
+      "Dahana",
+      "Desierto de Ustyurt",
+      "Desierto de Badain Jaran",
+      "Pequeño Desierto de Arena"
+    ],
+    "extraData": {
+      "desertName": "Desierto de Badain Jaran",
+      "countries": "China",
+      "areaKm2": 49000,
+      "continent": "Asia"
+    }
+  },
+  {
+    "id": "desert_63206",
+    "type": "desert",
+    "difficulty": "easy",
+    "questionText": "¿En qué país se encuentra el Desierto de Tengger?",
+    "correctAnswer": "China",
+    "options": [
+      "Arabia Saudita",
+      "Estados Unidos, México",
+      "India",
+      "China"
+    ],
+    "extraData": {
+      "desertName": "Desierto de Tengger",
+      "countries": "China",
+      "areaKm2": 36700,
+      "continent": "Asia"
+    }
+  },
+  {
+    "id": "desert_63207",
+    "type": "desert",
+    "difficulty": "hard",
+    "questionText": "¿Cuál es la superficie aproximada del Desierto de Ordos?",
+    "correctAnswer": "90.000 km²",
+    "options": [
+      "90.000 km²",
+      "45.000 km²",
+      "180.000 km²",
+      "27.000 km²"
+    ],
+    "extraData": {
+      "desertName": "Desierto de Ordos",
+      "countries": "China",
+      "areaKm2": 90000,
+      "continent": "Asia"
+    }
+  },
+  {
+    "id": "desert_63208",
+    "type": "desert",
+    "difficulty": "easy",
+    "questionText": "¿Qué desierto se encuentra principalmente en China?",
+    "correctAnswer": "Desierto de Qaidam",
+    "options": [
+      "Desierto de Sechura",
+      "Desierto de Dasht-i-Margo",
+      "Desierto de Gibson",
+      "Desierto de Qaidam"
+    ],
+    "extraData": {
+      "desertName": "Desierto de Qaidam",
+      "countries": "China",
+      "areaKm2": 230000,
+      "continent": "Asia"
+    }
+  },
+  {
+    "id": "desert_63209",
+    "type": "desert",
+    "difficulty": "easy",
+    "questionText": "¿En qué continente se encuentra el Desierto de Kumtag?",
+    "correctAnswer": "Asia",
+    "options": [
+      "América del Sur",
+      "Asia",
+      "la Antártida",
+      "Oceanía"
+    ],
+    "extraData": {
+      "desertName": "Desierto de Kumtag",
+      "countries": "China",
+      "areaKm2": 22000,
+      "continent": "Asia"
+    }
+  },
+  {
+    "id": "desert_63210",
+    "type": "desert",
+    "difficulty": "medium",
+    "questionText": "¿Cuál de estos desiertos se encuentra en Asia?",
+    "correctAnswer": "Desierto de Registán",
+    "options": [
+      "Desierto de Ryn",
+      "Desierto de Oleshky",
+      "Desierto de Qaidam",
+      "Desierto de Registán"
+    ],
+    "extraData": {
+      "desertName": "Desierto de Registán",
+      "countries": "Afganistán",
+      "areaKm2": 15000,
+      "continent": "Asia"
+    }
+  },
+  {
+    "id": "desert_63211",
+    "type": "desert",
+    "difficulty": "easy",
+    "questionText": "¿En qué país se encuentra el Desierto de Dasht-i-Margo?",
+    "correctAnswer": "Afganistán",
+    "options": [
+      "Nueva Zelanda",
+      "Afganistán",
+      "Australia",
+      "China"
+    ],
+    "extraData": {
+      "desertName": "Desierto de Dasht-i-Margo",
+      "countries": "Afganistán",
+      "areaKm2": 150000,
+      "continent": "Asia"
+    }
+  },
+  {
+    "id": "desert_63212",
+    "type": "desert",
+    "difficulty": "hard",
+    "questionText": "¿Cuál es la superficie aproximada del Desierto de Kharan?",
+    "correctAnswer": "23.000 km²",
+    "options": [
+      "46.000 km²",
+      "11.500 km²",
+      "23.000 km²",
+      "6.900 km²"
+    ],
+    "extraData": {
+      "desertName": "Desierto de Kharan",
+      "countries": "Pakistán",
+      "areaKm2": 23000,
+      "continent": "Asia"
+    }
+  },
+  {
+    "id": "desert_63213",
+    "type": "desert",
+    "difficulty": "easy",
+    "questionText": "¿Qué desierto se encuentra principalmente en Pakistán?",
+    "correctAnswer": "Desierto de Thal",
+    "options": [
+      "La Guajira",
+      "Desierto de Chihuahua",
+      "Desierto de Libia",
+      "Desierto de Thal"
+    ],
+    "extraData": {
+      "desertName": "Desierto de Thal",
+      "countries": "Pakistán",
+      "areaKm2": 20000,
+      "continent": "Asia"
+    }
+  },
+  {
+    "id": "desert_63214",
+    "type": "desert",
+    "difficulty": "easy",
+    "questionText": "¿En qué continente se encuentra el Desierto de Cholistan?",
+    "correctAnswer": "Asia",
+    "options": [
+      "Europa",
+      "África",
+      "América del Sur",
+      "Asia"
+    ],
+    "extraData": {
+      "desertName": "Desierto de Cholistan",
+      "countries": "Pakistán",
+      "areaKm2": 26000,
+      "continent": "Asia"
+    }
+  },
+  {
+    "id": "desert_63215",
+    "type": "desert",
+    "difficulty": "medium",
+    "questionText": "¿Cuál de estos desiertos se encuentra en Asia?",
+    "correctAnswer": "Desierto de Spiti",
+    "options": [
+      "Valle de la Muerte",
+      "Desierto de Tengger",
+      "Desierto de Spiti",
+      "Gran Desierto de Arena"
+    ],
+    "extraData": {
+      "desertName": "Desierto de Spiti",
+      "countries": "India",
+      "areaKm2": 7400,
+      "continent": "Asia"
+    }
+  },
+  {
+    "id": "desert_63216",
+    "type": "desert",
+    "difficulty": "easy",
+    "questionText": "¿En qué país se encuentra el Desierto de Katpana?",
+    "correctAnswer": "Pakistán",
+    "options": [
+      "Venezuela",
+      "Australia",
+      "Chile, Perú",
+      "Pakistán"
+    ],
+    "extraData": {
+      "desertName": "Desierto de Katpana",
+      "countries": "Pakistán",
+      "areaKm2": 3200,
+      "continent": "Asia"
+    }
+  },
+  {
+    "id": "desert_63217",
+    "type": "desert",
+    "difficulty": "hard",
+    "questionText": "¿Cuál es la superficie aproximada del Desierto de los Médanos?",
+    "correctAnswer": "910 km²",
+    "options": [
+      "455 km²",
+      "910 km²",
+      "1.820 km²",
+      "273 km²"
+    ],
+    "extraData": {
+      "desertName": "Desierto de los Médanos",
+      "countries": "Venezuela",
+      "areaKm2": 910,
+      "continent": "América del Sur"
+    }
+  },
+  {
+    "id": "desert_63218",
+    "type": "desert",
+    "difficulty": "easy",
+    "questionText": "¿Qué desierto se encuentra principalmente en Nueva Zelanda?",
+    "correctAnswer": "Desierto de Rangipo",
+    "options": [
+      "Desierto de Sechura",
+      "Desierto de Rangipo",
+      "Desierto de Ustyurt",
+      "Desierto de Katpana"
+    ],
+    "extraData": {
+      "desertName": "Desierto de Rangipo",
+      "countries": "Nueva Zelanda",
+      "areaKm2": 330,
+      "continent": "Oceanía"
+    }
+  },
+  {
+    "id": "desert_63219",
+    "type": "desert",
+    "difficulty": "easy",
+    "questionText": "¿En qué continente se encuentra el Desierto de Mapimí?",
+    "correctAnswer": "América del Norte",
+    "options": [
+      "Europa",
+      "la Antártida",
+      "África",
+      "América del Norte"
+    ],
+    "extraData": {
+      "desertName": "Desierto de Mapimí",
+      "countries": "México",
+      "areaKm2": 12500,
+      "continent": "América del Norte"
+    }
+  },
+  {
+    "id": "desert_63220",
+    "type": "desert",
+    "difficulty": "medium",
+    "questionText": "¿Cuál de estos desiertos se encuentra en América del Norte?",
+    "correctAnswer": "Desierto de Vizcaíno",
+    "options": [
+      "Desierto de Lut",
+      "Desierto de Karakum",
+      "Desierto de Dasht-i-Margo",
+      "Desierto de Vizcaíno"
+    ],
+    "extraData": {
+      "desertName": "Desierto de Vizcaíno",
+      "countries": "México",
+      "areaKm2": 14400,
+      "continent": "América del Norte"
+    }
+  },
+  {
+    "id": "desert_63221",
+    "type": "desert",
+    "difficulty": "easy",
+    "questionText": "¿En qué país se encuentra el Desierto de Owyhee?",
+    "correctAnswer": "Estados Unidos",
+    "options": [
+      "Estados Unidos",
+      "Estados Unidos",
+      "Rumania",
+      "Namibia"
+    ],
+    "extraData": {
+      "desertName": "Desierto de Owyhee",
+      "countries": "Estados Unidos",
+      "areaKm2": 26400,
+      "continent": "América del Norte"
+    }
+  },
+  {
+    "id": "desert_63222",
+    "type": "desert",
+    "difficulty": "hard",
+    "questionText": "¿Cuál es la superficie aproximada del Desierto de Black Rock?",
+    "correctAnswer": "2.600 km²",
+    "options": [
+      "5.200 km²",
+      "2.600 km²",
+      "780 km²",
+      "1.300 km²"
+    ],
+    "extraData": {
+      "desertName": "Desierto de Black Rock",
+      "countries": "Estados Unidos",
+      "areaKm2": 2600,
+      "continent": "América del Norte"
+    }
+  },
+  {
+    "id": "desert_63223",
+    "type": "desert",
+    "difficulty": "easy",
+    "questionText": "¿Qué desierto se encuentra principalmente en Brasil?",
+    "correctAnswer": "Desierto de Ypés",
+    "options": [
+      "Desierto de Karakum",
+      "Desierto de Monegros",
+      "Desierto Occidental",
+      "Desierto de Ypés"
+    ],
+    "extraData": {
+      "desertName": "Desierto de Ypés",
+      "countries": "Brasil",
+      "areaKm2": 31000,
+      "continent": "América del Sur"
+    }
+  },
+  {
+    "id": "desert_63224",
+    "type": "desert",
+    "difficulty": "easy",
+    "questionText": "¿En qué continente se encuentra el Desierto de Río Negro?",
+    "correctAnswer": "América del Sur",
+    "options": [
+      "Europa",
+      "la Antártida",
+      "América del Sur",
+      "Asia"
+    ],
+    "extraData": {
+      "desertName": "Desierto de Río Negro",
+      "countries": "Argentina",
+      "areaKm2": 35000,
+      "continent": "América del Sur"
+    }
+  },
+  {
+    "id": "desert_63225",
+    "type": "desert",
+    "difficulty": "medium",
+    "questionText": "¿Cuál de estos desiertos se encuentra en América del Sur?",
+    "correctAnswer": "Desierto de Salta",
+    "options": [
+      "Desierto de Lut",
+      "Desierto de Dasht-i-Margo",
+      "Dasht-e Kavir",
+      "Desierto de Salta"
+    ],
+    "extraData": {
+      "desertName": "Desierto de Salta",
+      "countries": "Argentina",
+      "areaKm2": 22000,
+      "continent": "América del Sur"
+    }
+  },
+  {
+    "id": "desert_63226",
+    "type": "desert",
+    "difficulty": "easy",
+    "questionText": "¿En qué país se encuentra el Desierto de Altar?",
+    "correctAnswer": "México",
+    "options": [
+      "Libia, Egipto, Sudán",
+      "China",
+      "México",
+      "Australia"
+    ],
+    "extraData": {
+      "desertName": "Desierto de Altar",
+      "countries": "México",
+      "areaKm2": 5300,
+      "continent": "América del Norte"
+    }
+  },
+  {
+    "id": "desert_63227",
+    "type": "desert",
+    "difficulty": "hard",
+    "questionText": "¿Cuál es la superficie aproximada del Desierto de Amargosa?",
+    "correctAnswer": "3.800 km²",
+    "options": [
+      "1.900 km²",
+      "1.140 km²",
+      "3.800 km²",
+      "7.600 km²"
+    ],
+    "extraData": {
+      "desertName": "Desierto de Amargosa",
+      "countries": "Estados Unidos",
+      "areaKm2": 3800,
+      "continent": "América del Norte"
+    }
+  },
+  {
+    "id": "desert_63228",
+    "type": "desert",
+    "difficulty": "easy",
+    "questionText": "¿Qué desierto se encuentra principalmente en España?",
+    "correctAnswer": "Desierto de Cabo de Gata",
+    "options": [
+      "Gran Erg Oriental",
+      "Desierto de Cabo de Gata",
+      "Desierto de Siria",
+      "Desierto de Kyzylkum"
+    ],
+    "extraData": {
+      "desertName": "Desierto de Cabo de Gata",
+      "countries": "España",
+      "areaKm2": 380,
+      "continent": "Europa"
+    }
+  },
+  {
+    "id": "desert_63229",
+    "type": "desert",
+    "difficulty": "easy",
+    "questionText": "¿En qué continente se encuentra el Desierto de Deliblato?",
+    "correctAnswer": "Europa",
+    "options": [
+      "América del Norte",
+      "Asia",
+      "Europa",
+      "América del Sur"
+    ],
+    "extraData": {
+      "desertName": "Desierto de Deliblato",
+      "countries": "Serbia",
+      "areaKm2": 300,
+      "continent": "Europa"
+    }
+  },
+  {
+    "id": "desert_63230",
+    "type": "desert",
+    "difficulty": "medium",
+    "questionText": "¿Cuál de estos desiertos se encuentra en Europa?",
+    "correctAnswer": "Desierto de Oltenia",
+    "options": [
+      "Desierto de Strzelecki",
+      "Desierto de Tengger",
+      "Desierto de Oltenia",
+      "Desierto de Monte"
+    ],
+    "extraData": {
+      "desertName": "Desierto de Oltenia",
+      "countries": "Rumania",
+      "areaKm2": 800,
+      "continent": "Europa"
+    }
+  },
+  {
+    "id": "historic_building_30000",
+    "type": "historic_building",
+    "difficulty": "easy",
+    "questionText": "¿En qué ciudad se encuentra la Torre Eiffel?",
+    "correctAnswer": "París",
+    "options": [
+      "Londres",
+      "Roma",
+      "París",
+      "Berlín"
+    ],
+    "imageUrl": null,
+    "extraData": {
+      "city": "París",
+      "country": "Francia"
+    }
+  },
+  {
+    "id": "historic_building_30001",
+    "type": "historic_building",
+    "difficulty": "easy",
+    "questionText": "¿Qué antigua civilización construyó las Pirámides de Giza?",
+    "correctAnswer": "Egipcios",
+    "options": [
+      "Romanos",
+      "Griegos",
+      "Egipcios",
+      "Mayas"
+    ],
+    "imageUrl": null,
+    "extraData": {
+      "civilization": "Egipcia",
+      "location": "Egipto"
+    }
+  },
+  {
+    "id": "historic_building_30002",
+    "type": "historic_building",
+    "difficulty": "easy",
+    "questionText": "¿Dónde se ubica el Coliseo Romano?",
+    "correctAnswer": "Roma",
+    "options": [
+      "Atenas",
+      "Estambul",
+      "Roma",
+      "Madrid"
+    ],
+    "imageUrl": null,
+    "extraData": {
+      "city": "Roma",
+      "country": "Italia"
+    }
+  },
+  {
+    "id": "historic_building_30003",
+    "type": "historic_building",
+    "difficulty": "medium",
+    "questionText": "¿Cuál es el famoso monumento de la India que es un mausoleo de mármol blanco?",
+    "correctAnswer": "Taj Mahal",
+    "options": [
+      "Gran Muralla China",
+      "Petra",
+      "Taj Mahal",
+      "Machu Picchu"
+    ],
+    "imageUrl": null,
+    "extraData": {
+      "country": "India"
+    }
+  },
+  {
+    "id": "historic_building_1",
+    "type": "historic_building",
+    "difficulty": "easy",
+    "questionText": "¿En qué ciudad se encuentra la Torre Eiffel?",
+    "correctAnswer": "París",
+    "options": [
+      "Londres",
+      "Roma",
+      "París",
+      "Berlín"
+    ],
+    "imageUrl": null,
+    "extraData": {
+      "city": "París",
+      "country": "Francia"
+    }
+  },
+  {
+    "id": "historic_building_2",
+    "type": "historic_building",
+    "difficulty": "easy",
+    "questionText": "¿Qué antigua civilización construyó las Pirámides de Giza?",
+    "correctAnswer": "Egipcios",
+    "options": [
+      "Romanos",
+      "Griegos",
+      "Egipcios",
+      "Mayas"
+    ],
+    "imageUrl": null,
+    "extraData": {
+      "civilization": "Egipcia",
+      "location": "Egipto"
+    }
+  },
+  {
+    "id": "historic_building_3",
+    "type": "historic_building",
+    "difficulty": "easy",
+    "questionText": "¿Dónde se ubica el Coliseo Romano?",
+    "correctAnswer": "Roma",
+    "options": [
+      "Atenas",
+      "Estambul",
+      "Roma",
+      "Madrid"
+    ],
+    "imageUrl": null,
+    "extraData": {
+      "city": "Roma",
+      "country": "Italia"
+    }
+  },
+  {
+    "id": "historic_building_4",
+    "type": "historic_building",
+    "difficulty": "medium",
+    "questionText": "¿Cuál es el famoso monumento de la India que es un mausoleo de mármol blanco?",
+    "correctAnswer": "Taj Mahal",
+    "options": [
+      "Gran Muralla China",
+      "Petra",
+      "Taj Mahal",
+      "Machu Picchu"
+    ],
+    "imageUrl": null,
+    "extraData": {
+      "country": "India"
+    }
+  },
+  {
+    "id": "monument_country_1",
+    "type": "monument_country",
+    "difficulty": "medium",
+    "questionText": "¿De qué país es Angkor Wat?",
+    "correctAnswer": "Camboya",
+    "options": [
+      "Canadá",
+      "Vaticano",
+      "Camboya",
+      "Portugal"
+    ],
+    "imageUrl": null,
+    "extraData": {
+      "monumentName": "Angkor Wat",
+      "city": "Siem Reap",
+      "country": "Camboya",
+      "monumentType": "templo"
+    }
+  },
+  {
+    "id": "monument_city_1",
+    "type": "monument_city",
+    "difficulty": "hard",
+    "questionText": "¿Puente Carlos está ubicado en qué ciudad?",
+    "correctAnswer": "Praga",
+    "options": [
+      "Pekín",
+      "El Cairo",
+      "Praga",
+      "Toronto"
+    ],
+    "imageUrl": null,
+    "extraData": {
+      "monumentName": "Puente Carlos",
+      "city": "Praga",
+      "country": "República Checa",
+      "monumentType": "puente"
+    }
+  },
+  {
+    "id": "monument_city_2",
+    "type": "monument_city",
+    "difficulty": "medium",
+    "questionText": "¿Estatua de la Libertad se encuentra en qué ciudad?",
+    "correctAnswer": "Nueva York",
+    "options": [
+      "Sídney",
+      "Wadi Musa",
+      "Nueva York",
+      "Vaticano"
+    ],
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/Statue_of_Liberty_7.jpg/320px-Statue_of_Liberty_7.jpg",
+    "extraData": {
+      "monumentName": "Estatua de la Libertad",
+      "city": "Nueva York",
+      "country": "Estados Unidos",
+      "monumentType": "estatua"
+    }
+  },
+  {
+    "id": "monument_image_1",
+    "type": "monument_image",
+    "difficulty": "medium",
+    "questionText": "¿Qué monumento o edificio es este?",
+    "correctAnswer": "Petra",
+    "options": [
+      "Muro de China",
+      "Golden Gate Bridge",
+      "Petra",
+      "Machu Picchu"
+    ],
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/The_Treasury_Petra_Jordan.jpg/320px-The_Treasury_Petra_Jordan.jpg",
+    "extraData": {
+      "monumentName": "Petra",
+      "city": "Wadi Musa",
+      "country": "Jordania",
+      "monumentType": "ruinas"
+    }
+  },
+  {
+    "id": "monument_country_2",
+    "type": "monument_country",
+    "difficulty": "medium",
+    "questionText": "¿En qué país se encuentra Teotihuacán?",
+    "correctAnswer": "México",
+    "options": [
+      "México",
+      "China",
+      "Camboya",
+      "Australia"
+    ],
+    "imageUrl": null,
+    "extraData": {
+      "monumentName": "Teotihuacán",
+      "city": "Estado de México",
+      "country": "México",
+      "monumentType": "ruinas"
+    }
+  },
+  {
+    "id": "monument_city_3",
+    "type": "monument_city",
+    "difficulty": "hard",
+    "questionText": "¿Puente de la Torre se encuentra en qué ciudad?",
+    "correctAnswer": "Londres",
+    "options": [
+      "Londres",
+      "Segovia",
+      "Pisa",
+      "Sídney"
+    ],
+    "imageUrl": null,
+    "extraData": {
+      "monumentName": "Puente de la Torre",
+      "city": "Londres",
+      "country": "Reino Unido",
+      "monumentType": "puente"
+    }
+  },
+  {
+    "id": "monument_city_4",
+    "type": "monument_city",
+    "difficulty": "hard",
+    "questionText": "¿Cuál es la ciudad de One World Trade Center?",
+    "correctAnswer": "Nueva York",
+    "options": [
+      "Nueva York",
+      "Río de Janeiro",
+      "Segovia",
+      "Tokio"
+    ],
+    "imageUrl": null,
+    "extraData": {
+      "monumentName": "One World Trade Center",
+      "city": "Nueva York",
+      "country": "Estados Unidos",
+      "monumentType": "rascacielos"
+    }
+  },
+  {
+    "id": "monument_city_5",
+    "type": "monument_city",
+    "difficulty": "hard",
+    "questionText": "¿Museo del Louvre se encuentra en qué ciudad?",
+    "correctAnswer": "París",
+    "options": [
+      "Berlín",
+      "Buenos Aires",
+      "París",
+      "Londres"
+    ],
+    "imageUrl": null,
+    "extraData": {
+      "monumentName": "Museo del Louvre",
+      "city": "París",
+      "country": "Francia",
+      "monumentType": "museo"
+    }
+  },
+  {
+    "id": "monument_city_6",
+    "type": "monument_city",
+    "difficulty": "medium",
+    "questionText": "¿En qué ciudad se encuentra Empire State Building?",
+    "correctAnswer": "Nueva York",
+    "options": [
+      "Barcelona",
+      "Nueva York",
+      "Honshu",
+      "Pekín"
+    ],
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/Empire_State_Building_%28aerial_view%29.jpg/320px-Empire_State_Building_%28aerial_view%29.jpg",
+    "extraData": {
+      "monumentName": "Empire State Building",
+      "city": "Nueva York",
+      "country": "Estados Unidos",
+      "monumentType": "rascacielos"
+    }
+  },
+  {
+    "id": "monument_image_2",
+    "type": "monument_image",
+    "difficulty": "medium",
+    "questionText": "¿Qué monumento o edificio es este?",
+    "correctAnswer": "Golden Gate Bridge",
+    "options": [
+      "Golden Gate Bridge",
+      "Muro de China",
+      "Machu Picchu",
+      "Torre Eiffel"
+    ],
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/GoldenGateBridge-001.jpg/320px-GoldenGateBridge-001.jpg",
+    "extraData": {
+      "monumentName": "Golden Gate Bridge",
+      "city": "San Francisco",
+      "country": "Estados Unidos",
+      "monumentType": "puente"
+    }
+  },
+  {
+    "id": "monument_country_3",
+    "type": "monument_country",
+    "difficulty": "medium",
+    "questionText": "¿Monte Fuji se encuentra en qué país?",
+    "correctAnswer": "Japón",
+    "options": [
+      "Italia",
+      "España",
+      "Japón",
+      "Estados Unidos"
+    ],
+    "imageUrl": null,
+    "extraData": {
+      "monumentName": "Monte Fuji",
+      "city": "Honshu",
+      "country": "Japón",
+      "monumentType": "volcán"
+    }
+  },
+  {
+    "id": "monument_city_7",
+    "type": "monument_city",
+    "difficulty": "medium",
+    "questionText": "¿En qué ciudad se encuentra Torre Eiffel?",
+    "correctAnswer": "París",
+    "options": [
+      "Segovia",
+      "Granada",
+      "París",
+      "Siem Reap"
+    ],
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Tour_Eiffel_Wikimedia_Commons_%28cropped%29.jpg/320px-Tour_Eiffel_Wikimedia_Commons_%28cropped%29.jpg",
+    "extraData": {
+      "monumentName": "Torre Eiffel",
+      "city": "París",
+      "country": "Francia",
+      "monumentType": "torre"
+    }
+  },
+  {
+    "id": "monument_city_8",
+    "type": "monument_city",
+    "difficulty": "hard",
+    "questionText": "¿Torre Belém se encuentra en qué ciudad?",
+    "correctAnswer": "Lisboa",
+    "options": [
+      "Lisboa",
+      "Colonia",
+      "Granada",
+      "Yulara"
+    ],
+    "imageUrl": null,
+    "extraData": {
+      "monumentName": "Torre Belém",
+      "city": "Lisboa",
+      "country": "Portugal",
+      "monumentType": "torre"
+    }
+  },
+  {
+    "id": "monument_city_9",
+    "type": "monument_city",
+    "difficulty": "hard",
+    "questionText": "¿Acueducto de Segovia se encuentra en qué ciudad?",
+    "correctAnswer": "Segovia",
+    "options": [
+      "Praga",
+      "Segovia",
+      "Pisa",
+      "Tokio"
+    ],
+    "imageUrl": null,
+    "extraData": {
+      "monumentName": "Acueducto de Segovia",
+      "city": "Segovia",
+      "country": "España",
+      "monumentType": "acueducto"
+    }
+  },
+  {
+    "id": "monument_country_4",
+    "type": "monument_country",
+    "difficulty": "easy",
+    "questionText": "¿Muro de China está ubicado en qué país?",
+    "correctAnswer": "China",
+    "options": [
+      "Francia",
+      "Austria",
+      "China",
+      "Italia"
+    ],
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/23/The_Great_Wall_of_China_at_Jinshanling-edit.jpg/320px-The_Great_Wall_of_China_at_Jinshanling-edit.jpg",
+    "extraData": {
+      "monumentName": "Muro de China",
+      "city": "Pekín",
+      "country": "China",
+      "monumentType": "muro"
+    }
+  },
+  {
+    "id": "monument_country_5",
+    "type": "monument_country",
+    "difficulty": "medium",
+    "questionText": "¿De qué país es Partenón?",
+    "correctAnswer": "Grecia",
+    "options": [
+      "Grecia",
+      "Portugal",
+      "Australia",
+      "Perú"
+    ],
+    "imageUrl": null,
+    "extraData": {
+      "monumentName": "Partenón",
+      "city": "Atenas",
+      "country": "Grecia",
+      "monumentType": "templo"
+    }
+  },
+  {
+    "id": "monument_city_10",
+    "type": "monument_city",
+    "difficulty": "medium",
+    "questionText": "¿Machu Picchu está ubicado en qué ciudad?",
+    "correctAnswer": "Cuzco",
+    "options": [
+      "Cuzco",
+      "Praga",
+      "Tokio",
+      "Colonia"
+    ],
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/Machu_Picchu%2C_Peru.jpg/320px-Machu_Picchu%2C_Peru.jpg",
+    "extraData": {
+      "monumentName": "Machu Picchu",
+      "city": "Cuzco",
+      "country": "Perú",
+      "monumentType": "ruinas"
+    }
+  },
+  {
+    "id": "monument_country_6",
+    "type": "monument_country",
+    "difficulty": "medium",
+    "questionText": "¿Torre de Tokio está ubicado en qué país?",
+    "correctAnswer": "Japón",
+    "options": [
+      "Argentina",
+      "Brasil",
+      "Uruguay",
+      "Japón"
+    ],
+    "imageUrl": null,
+    "extraData": {
+      "monumentName": "Torre de Tokio",
+      "city": "Tokio",
+      "country": "Japón",
+      "monumentType": "torre"
+    }
+  },
+  {
+    "id": "monument_country_7",
+    "type": "monument_country",
+    "difficulty": "medium",
+    "questionText": "¿De qué país es Teatro Colón?",
+    "correctAnswer": "Argentina",
+    "options": [
+      "India",
+      "Argentina",
+      "Perú",
+      "Canadá"
+    ],
+    "imageUrl": null,
+    "extraData": {
+      "monumentName": "Teatro Colón",
+      "city": "Buenos Aires",
+      "country": "Argentina",
+      "monumentType": "teatro"
+    }
+  },
+  {
+    "id": "monument_city_11",
+    "type": "monument_city",
+    "difficulty": "hard",
+    "questionText": "¿En qué ciudad se encuentra Alhambra?",
+    "correctAnswer": "Granada",
+    "options": [
+      "Granada",
+      "Toronto",
+      "Buenos Aires",
+      "París"
+    ],
+    "imageUrl": null,
+    "extraData": {
+      "monumentName": "Alhambra",
+      "city": "Granada",
+      "country": "España",
+      "monumentType": "palacio"
+    }
+  },
+  {
+    "id": "monument_city_12",
+    "type": "monument_city",
+    "difficulty": "medium",
+    "questionText": "¿Petra se encuentra en qué ciudad?",
+    "correctAnswer": "Wadi Musa",
+    "options": [
+      "Wadi Musa",
+      "Viena",
+      "Agra",
+      "El Cairo"
+    ],
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/The_Treasury_Petra_Jordan.jpg/320px-The_Treasury_Petra_Jordan.jpg",
+    "extraData": {
+      "monumentName": "Petra",
+      "city": "Wadi Musa",
+      "country": "Jordania",
+      "monumentType": "ruinas"
+    }
+  },
+  {
+    "id": "monument_image_3",
+    "type": "monument_image",
+    "difficulty": "medium",
+    "questionText": "¿Qué monumento o edificio es este?",
+    "correctAnswer": "Estatua de la Libertad",
+    "options": [
+      "Cristo Redentor",
+      "Machu Picchu",
+      "Estatua de la Libertad",
+      "Torre Eiffel"
+    ],
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/Statue_of_Liberty_7.jpg/320px-Statue_of_Liberty_7.jpg",
+    "extraData": {
+      "monumentName": "Estatua de la Libertad",
+      "city": "Nueva York",
+      "country": "Estados Unidos",
+      "monumentType": "estatua"
+    }
+  },
+  {
+    "id": "monument_city_13",
+    "type": "monument_city",
+    "difficulty": "hard",
+    "questionText": "¿Partenón se encuentra en qué ciudad?",
+    "correctAnswer": "Atenas",
+    "options": [
+      "Wadi Musa",
+      "Honshu",
+      "Atenas",
+      "Praga"
+    ],
+    "imageUrl": null,
+    "extraData": {
+      "monumentName": "Partenón",
+      "city": "Atenas",
+      "country": "Grecia",
+      "monumentType": "templo"
+    }
+  },
+  {
+    "id": "monument_city_14",
+    "type": "monument_city",
+    "difficulty": "medium",
+    "questionText": "¿Golden Gate Bridge se encuentra en qué ciudad?",
+    "correctAnswer": "San Francisco",
+    "options": [
+      "San Francisco",
+      "Granada",
+      "Estado de México",
+      "El Cairo"
+    ],
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/GoldenGateBridge-001.jpg/320px-GoldenGateBridge-001.jpg",
+    "extraData": {
+      "monumentName": "Golden Gate Bridge",
+      "city": "San Francisco",
+      "country": "Estados Unidos",
+      "monumentType": "puente"
+    }
+  },
+  {
+    "id": "monument_image_4",
+    "type": "monument_image",
+    "difficulty": "medium",
+    "questionText": "¿Qué monumento o edificio es este?",
+    "correctAnswer": "Cristo Redentor",
+    "options": [
+      "Empire State Building",
+      "Cristo Redentor",
+      "Petra",
+      "Muro de China"
+    ],
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/Christ_the_Redeemer_-_Rio_de_Janeiro%2C_Brazil.jpg/320px-Christ_the_Redeemer_-_Rio_de_Janeiro%2C_Brazil.jpg",
+    "extraData": {
+      "monumentName": "Cristo Redentor",
+      "city": "Río de Janeiro",
+      "country": "Brasil",
+      "monumentType": "estatua"
+    }
+  },
+  {
+    "id": "monument_country_8",
+    "type": "monument_country",
+    "difficulty": "medium",
+    "questionText": "¿Monte Rushmore está ubicado en qué país?",
+    "correctAnswer": "Estados Unidos",
+    "options": [
+      "Jordania",
+      "Alemania",
+      "Argentina",
+      "Estados Unidos"
+    ],
+    "imageUrl": null,
+    "extraData": {
+      "monumentName": "Monte Rushmore",
+      "city": "Dakota del Sur",
+      "country": "Estados Unidos",
+      "monumentType": "escultura"
+    }
+  },
+  {
+    "id": "monument_country_9",
+    "type": "monument_country",
+    "difficulty": "medium",
+    "questionText": "¿Torre Belém se encuentra en qué país?",
+    "correctAnswer": "Portugal",
+    "options": [
+      "India",
+      "Jordania",
+      "Portugal",
+      "Japón"
+    ],
+    "imageUrl": null,
+    "extraData": {
+      "monumentName": "Torre Belém",
+      "city": "Lisboa",
+      "country": "Portugal",
+      "monumentType": "torre"
+    }
+  },
+  {
+    "id": "monument_image_5",
+    "type": "monument_image",
+    "difficulty": "medium",
+    "questionText": "¿Qué monumento o edificio es este?",
+    "correctAnswer": "Torre Eiffel",
+    "options": [
+      "Muro de China",
+      "Cristo Redentor",
+      "Torre Eiffel",
+      "Pirámides de Giza"
+    ],
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Tour_Eiffel_Wikimedia_Commons_%28cropped%29.jpg/320px-Tour_Eiffel_Wikimedia_Commons_%28cropped%29.jpg",
+    "extraData": {
+      "monumentName": "Torre Eiffel",
+      "city": "París",
+      "country": "Francia",
+      "monumentType": "torre"
+    }
+  },
+  {
+    "id": "monument_country_10",
+    "type": "monument_country",
+    "difficulty": "easy",
+    "questionText": "¿Golden Gate Bridge se encuentra en qué país?",
+    "correctAnswer": "Estados Unidos",
+    "options": [
+      "Brasil",
+      "Canadá",
+      "Vaticano",
+      "Estados Unidos"
+    ],
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/GoldenGateBridge-001.jpg/320px-GoldenGateBridge-001.jpg",
+    "extraData": {
+      "monumentName": "Golden Gate Bridge",
+      "city": "San Francisco",
+      "country": "Estados Unidos",
+      "monumentType": "puente"
+    }
+  },
+  {
+    "id": "monument_country_11",
+    "type": "monument_country",
+    "difficulty": "medium",
+    "questionText": "¿Montevideo está ubicado en qué país?",
+    "correctAnswer": "Uruguay",
+    "options": [
+      "Uruguay",
+      "Estados Unidos",
+      "Canadá",
+      "Reino Unido"
+    ],
+    "imageUrl": null,
+    "extraData": {
+      "monumentName": "Montevideo",
+      "city": "Montevideo",
+      "country": "Uruguay",
+      "monumentType": "teatro"
+    }
+  },
+  {
+    "id": "monument_city_15",
+    "type": "monument_city",
+    "difficulty": "hard",
+    "questionText": "¿Panteón está ubicado en qué ciudad?",
+    "correctAnswer": "Roma",
+    "options": [
+      "Berlín",
+      "Roma",
+      "San Francisco",
+      "Segovia"
+    ],
+    "imageUrl": null,
+    "extraData": {
+      "monumentName": "Panteón",
+      "city": "Roma",
+      "country": "Italia",
+      "monumentType": "templo"
+    }
+  },
+  {
+    "id": "monument_city_16",
+    "type": "monument_city",
+    "difficulty": "hard",
+    "questionText": "¿En qué ciudad se encuentra Templo Dorado?",
+    "correctAnswer": "Kioto",
+    "options": [
+      "Kioto",
+      "Roma",
+      "Estado de México",
+      "Atenas"
+    ],
+    "imageUrl": null,
+    "extraData": {
+      "monumentName": "Templo Dorado",
+      "city": "Kioto",
+      "country": "Japón",
+      "monumentType": "templo"
+    }
+  },
+  {
+    "id": "monument_city_17",
+    "type": "monument_city",
+    "difficulty": "hard",
+    "questionText": "¿En qué ciudad se encuentra Cataratas del Iguazú?",
+    "correctAnswer": "Foz do Iguaçu",
+    "options": [
+      "Foz do Iguaçu",
+      "Füssen",
+      "Siem Reap",
+      "Buenos Aires"
+    ],
+    "imageUrl": null,
+    "extraData": {
+      "monumentName": "Cataratas del Iguazú",
+      "city": "Foz do Iguaçu",
+      "country": "Brasil",
+      "monumentType": "cataratas"
+    }
+  },
+  {
+    "id": "monument_country_12",
+    "type": "monument_country",
+    "difficulty": "medium",
+    "questionText": "¿Muro de Berlín se encuentra en qué país?",
+    "correctAnswer": "Alemania",
+    "options": [
+      "Brasil",
+      "Reino Unido",
+      "Alemania",
+      "Austria"
+    ],
+    "imageUrl": null,
+    "extraData": {
+      "monumentName": "Muro de Berlín",
+      "city": "Berlín",
+      "country": "Alemania",
+      "monumentType": "muro"
+    }
+  },
+  {
+    "id": "monument_image_6",
+    "type": "monument_image",
+    "difficulty": "medium",
+    "questionText": "¿Qué monumento o edificio es este?",
+    "correctAnswer": "Pirámides de Giza",
+    "options": [
+      "Pirámides de Giza",
+      "Estatua de la Libertad",
+      "Machu Picchu",
+      "Ópera de Sídney"
+    ],
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Kheops-Pyramid.jpg/320px-Kheops-Pyramid.jpg",
+    "extraData": {
+      "monumentName": "Pirámides de Giza",
+      "city": "El Cairo",
+      "country": "Egipto",
+      "monumentType": "pirámide"
+    }
+  },
+  {
+    "id": "monument_country_13",
+    "type": "monument_country",
+    "difficulty": "medium",
+    "questionText": "¿Templo Dorado está ubicado en qué país?",
+    "correctAnswer": "Japón",
+    "options": [
+      "Japón",
+      "Alemania",
+      "Reino Unido",
+      "Brasil"
+    ],
+    "imageUrl": null,
+    "extraData": {
+      "monumentName": "Templo Dorado",
+      "city": "Kioto",
+      "country": "Japón",
+      "monumentType": "templo"
+    }
+  },
+  {
+    "id": "monument_city_18",
+    "type": "monument_city",
+    "difficulty": "hard",
+    "questionText": "¿Cuál es la ciudad de Castillo de Neuschwanstein?",
+    "correctAnswer": "Füssen",
+    "options": [
+      "Füssen",
+      "Viena",
+      "Ciudad del Cabo",
+      "Shanghái"
+    ],
+    "imageUrl": null,
+    "extraData": {
+      "monumentName": "Castillo de Neuschwanstein",
+      "city": "Füssen",
+      "country": "Alemania",
+      "monumentType": "castillo"
+    }
+  },
+  {
+    "id": "monument_city_19",
+    "type": "monument_city",
+    "difficulty": "hard",
+    "questionText": "¿Cuál es la ciudad de Teatro Colón?",
+    "correctAnswer": "Buenos Aires",
+    "options": [
+      "Buenos Aires",
+      "Montevideo",
+      "Füssen",
+      "Viena"
+    ],
+    "imageUrl": null,
+    "extraData": {
+      "monumentName": "Teatro Colón",
+      "city": "Buenos Aires",
+      "country": "Argentina",
+      "monumentType": "teatro"
+    }
+  },
+  {
+    "id": "monument_image_7",
+    "type": "monument_image",
+    "difficulty": "medium",
+    "questionText": "¿Qué monumento o edificio es este?",
+    "correctAnswer": "Taj Mahal",
+    "options": [
+      "Taj Mahal",
+      "Pirámides de Giza",
+      "Estatua de la Libertad",
+      "Golden Gate Bridge"
+    ],
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bd/Taj_Mahal%2C_Agra%2C_India_edit3.jpg/320px-Taj_Mahal%2C_Agra%2C_India_edit3.jpg",
+    "extraData": {
+      "monumentName": "Taj Mahal",
+      "city": "Agra",
+      "country": "India",
+      "monumentType": "mausoleo"
+    }
+  },
+  {
+    "id": "monument_country_14",
+    "type": "monument_country",
+    "difficulty": "easy",
+    "questionText": "¿De qué país es Empire State Building?",
+    "correctAnswer": "Estados Unidos",
+    "options": [
+      "Canadá",
+      "Estados Unidos",
+      "Egipto",
+      "Brasil"
+    ],
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/Empire_State_Building_%28aerial_view%29.jpg/320px-Empire_State_Building_%28aerial_view%29.jpg",
+    "extraData": {
+      "monumentName": "Empire State Building",
+      "city": "Nueva York",
+      "country": "Estados Unidos",
+      "monumentType": "rascacielos"
+    }
+  },
+  {
+    "id": "monument_country_15",
+    "type": "monument_country",
+    "difficulty": "medium",
+    "questionText": "¿De qué país es Puente de la Torre?",
+    "correctAnswer": "Reino Unido",
+    "options": [
+      "China",
+      "Australia",
+      "Reino Unido",
+      "Camboya"
+    ],
+    "imageUrl": null,
+    "extraData": {
+      "monumentName": "Puente de la Torre",
+      "city": "Londres",
+      "country": "Reino Unido",
+      "monumentType": "puente"
+    }
+  },
+  {
+    "id": "monument_city_20",
+    "type": "monument_city",
+    "difficulty": "hard",
+    "questionText": "¿Cuál es la ciudad de Coliseo?",
+    "correctAnswer": "Roma",
+    "options": [
+      "San Francisco",
+      "Yucatán",
+      "Granada",
+      "Roma"
+    ],
+    "imageUrl": null,
+    "extraData": {
+      "monumentName": "Coliseo",
+      "city": "Roma",
+      "country": "Italia",
+      "monumentType": "anfiteatro"
+    }
+  }
+]
