@@ -276,12 +276,24 @@ class MultiplayerGameScreen extends ConsumerWidget {
   Widget _buildFinished(BuildContext context, WidgetRef ref, MultiplayerState state) {
     final won = state.playerScore > state.opponentScore;
     final totalQuestions = state.questions.length;
+    
+    // Safe calculation of average time with NaN/Infinity checks
     final avgTime = state.playerAnswers.isEmpty
         ? 0.0
-        : state.playerAnswers
-                .map((a) => a.timeMs / 1000.0)
-                .reduce((a, b) => a + b) /
-            state.playerAnswers.length;
+        : (() {
+            try {
+              final totalMs = state.playerAnswers
+                  .map((a) => a.timeMs)
+                  .where((ms) => ms.isFinite && ms > 0)
+                  .fold<double>(0.0, (sum, ms) => sum + ms);
+              final count = state.playerAnswers
+                  .where((a) => a.timeMs.isFinite && a.timeMs > 0)
+                  .length;
+              return count > 0 ? totalMs / count : 0.0;
+            } catch (e) {
+              return 0.0;
+            }
+          })();
 
     // Convert ghost answers to Answer for display in timeline
     List<Answer>? opponentAnswersForTimeline;
@@ -297,9 +309,22 @@ class MultiplayerGameScreen extends ConsumerWidget {
       opponentAnswersForTimeline = state.opponentAnswers;
     }
 
-    // Calculate opponent average time
+    // Calculate opponent average time with safety checks
     final oppAvgTime = state.opponentAnswers != null && state.opponentAnswers!.isNotEmpty
-        ? state.opponentAnswers!.map((a) => a.timeMs / 1000.0).reduce((a, b) => a + b) / state.opponentAnswers!.length
+        ? (() {
+            try {
+              final totalMs = state.opponentAnswers!
+                  .map((a) => a.timeMs)
+                  .where((ms) => ms.isFinite && ms > 0)
+                  .fold<double>(0.0, (sum, ms) => sum + ms);
+              final count = state.opponentAnswers!
+                  .where((a) => a.timeMs.isFinite && a.timeMs > 0)
+                  .length;
+              return count > 0 ? totalMs / count : null;
+            } catch (e) {
+              return null;
+            }
+          })()
         : null;
 
     return GameResultWidget(

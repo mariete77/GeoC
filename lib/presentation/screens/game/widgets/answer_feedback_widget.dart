@@ -337,13 +337,13 @@ class _AnswerFeedbackWidgetState extends State<AnswerFeedbackWidget>
                               icon: Icon(
                                 Icons.flag_outlined,
                                 size: 16,
-                                color: AppColors.onSurfaceVariant.withOpacity(0.6),
+                                color: AppColors.error,
                               ),
                               label: Text(
                                 'Reportar',
                                 style: GoogleFonts.workSans(
                                   fontSize: 12,
-                                  color: AppColors.onSurfaceVariant.withOpacity(0.6),
+                                  color: AppColors.error,
                                 ),
                               ),
                               style: TextButton.styleFrom(

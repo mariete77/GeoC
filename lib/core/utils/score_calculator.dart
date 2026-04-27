@@ -99,12 +99,25 @@ double calculateAccuracy(int correctAnswers, int totalQuestions) {
 /// [totalTimeMs] - Total time spent on all answers (milliseconds)
 /// [totalAnswers] - Number of answers provided
 ///
-/// Returns average time in milliseconds, or 0.0 if no answers.
+/// Returns average time in milliseconds, or 0.0 if no answers or invalid data.
 double calculateAverageTime(int totalTimeMs, int totalAnswers) {
   if (totalAnswers == 0) {
     return 0.0;
   }
-  return totalTimeMs / totalAnswers;
+  
+  // Check for invalid values (negative or suspiciously large)
+  if (totalTimeMs < 0 || totalTimeMs > 1000000) { // > 16.6 minutes total is suspicious
+    return 0.0;
+  }
+  
+  final avgTime = totalTimeMs / totalAnswers;
+  
+  // Ensure result is finite and reasonable
+  if (!avgTime.isFinite || avgTime < 0 || avgTime > 60000) { // > 60 seconds per answer is suspicious
+    return 0.0;
+  }
+  
+  return avgTime;
 }
 
 /// Validates that the given difficulty string is valid.

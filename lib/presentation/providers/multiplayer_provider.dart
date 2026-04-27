@@ -327,59 +327,24 @@ class MultiplayerNotifier extends StateNotifier<MultiplayerState> {
     // Reset/clear any existing search timer
     _matchmakingTimer?.cancel();
 
-    // Define the search function
-    Future<void> searchAttempt() async {
-      final findResult = await _ref.read(matchRepositoryProvider).findWaitingMatch(
-            mode: mode.name,
-            playerElo: baseElo,
-            userId: _currentUserId!,
-          );
-
-      await findResult.fold(
-        (failure) {
-          // If search fails or times out, try next interval
-        },
-        (existingMatch) async {
-          if (existingMatch != null) {
-            _matchmakingTimer?.cancel();
-            await _joinExistingMatch(existingMatch);
-          }
-        },
-      );
-    }
-
-    // Start expanding search loop
-    _matchmakingTimer = Timer.periodic(const Duration(seconds: 2), (timer) async {
-      if (state.status != MultiplayerStatus.searching) {
-        timer.cancel();
-        return;
-      }
-
-      timeElapsed += 2;
-
-      // Expand range based on time - More aggressive expansion
-      if (timeElapsed >= 10) {
-        searchRange = 2000; // Basically everyone
-      } else if (timeElapsed >= 4) {
-        searchRange = 500;
-      } else {
-        searchRange = 200;
-      }
-
-      await searchAttempt();
-
-      // Timeout after 30s
-      if (timeElapsed >= 30) {
-        timer.cancel();
-        if (state.status == MultiplayerStatus.searching) {
-          _cancelMatchmaking(_pendingMatchId ?? '');
-          _fallbackToGhostRun();
-        }
-      }
-    });
-
     // Initial search
-    await searchAttempt();
+    final findResult = await _ref.read(matchRepositoryProvider).findWaitingMatch(
+          mode: mode.name,
+          playerElo: baseElo,
+          userId: _currentUserId!,
+        );
+
+    final foundMatch = await findResult.fold(
+      (failure) async => null,
+      (match) async => match,
+    );
+
+    if (foundMatch != null) {
+      await _joinExistingMatch(foundMatch);
+    } else {
+      // No existing match found - create our own
+      _createAndWaitForOpponent(matchType, baseElo);
+    }
   }
 
   /// Pre-generate random questions for a new match
