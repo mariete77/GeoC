@@ -216,22 +216,39 @@ class QuestionRepositoryImpl implements QuestionRepository {
 
   /// Enrich a question's options to have at least 4 choices.
   /// For questions with 0-3 options, adds random distractors from other questions.
+  /// Silhouette and image-based types always get multiple choice with country distractors.
   Question _enrichOptions(Question question, List<Question> allQuestions) {
-    // Skip if already has enough options
-    if (question.options.length >= 4) return question;
+    // Skip if already has enough valid options
+    if (question.options.length >= 4 && !_hasPlaceholderOptions(question.options)) {
+      return question;
+    }
 
-    // Types that should always be multiple choice (comparison questions)
-    final comparisonTypes = {
+    // Types that should always be multiple choice (comparison + image-based questions)
+    final multipleChoiceTypes = {
       QuestionType.population,
       QuestionType.area,
       QuestionType.border,
       QuestionType.region,
+      // Image-based: always generate real country distractors
+      QuestionType.silhouette,
+      QuestionType.flag,
+      QuestionType.cityPhoto,
+      QuestionType.monumentImage,
+      QuestionType.monumentCountry,
+      QuestionType.monumentCity,
+      QuestionType.historicBuilding,
     };
 
-    // If it's not a comparison type and has no options, leave as type-answer
-    if (question.options.isEmpty && !comparisonTypes.contains(question.type)) {
+    // If it's not a multiple-choice type and has no options, leave as type-answer
+    if (question.options.isEmpty && !multipleChoiceTypes.contains(question.type)) {
       return question;
     }
+
+    // For types that should always have options but have placeholder data,
+    // start with an empty list (correctAnswer will be added later)
+    final enrichedOptions = _hasPlaceholderOptions(question.options)
+        ? <String>[]
+        : List<String>.from(question.options);
 
     // Collect all possible distractors from other questions' correct answers
     final allAnswers = allQuestions
@@ -239,9 +256,6 @@ class QuestionRepositoryImpl implements QuestionRepository {
         .where((a) => a.isNotEmpty && a != question.correctAnswer)
         .toSet()
         .toList();
-
-    // Start with existing options
-    final enrichedOptions = List<String>.from(question.options);
 
     // Remove correct answer from distractor pool if present
     allAnswers.removeWhere((a) => enrichedOptions.contains(a));
@@ -278,5 +292,17 @@ class QuestionRepositoryImpl implements QuestionRepository {
       questionText: question.questionText,
       extraData: question.extraData,
     );
+  }
+
+  /// Check if options contain placeholder text (e.g. "Opción Incorrecta A")
+  static bool _hasPlaceholderOptions(List<String> options) {
+    const placeholders = {
+      'opción incorrecta a', 'opción incorrecta b', 'opción incorrecta c',
+      'option a', 'option b', 'option c',
+      'opción 1', 'opción 2', 'opción 3',
+      'option 1', 'option 2', 'option 3',
+    };
+    // If any option matches a placeholder, consider all options tainted
+    return options.any((o) => placeholders.contains(o.toLowerCase().trim()));
   }
 }
