@@ -109,13 +109,13 @@ class MatchModel {
     MatchResult? domainResult;
     if (result != null) {
       final scores = (result!['scores'] as Map<String, dynamic>?)
-              ?.map((k, v) => MapEntry(k, v as int)) ??
+              ?.map((k, v) => MapEntry(k, (v as num).toInt())) ??
           {};
       final eloChanges = (result!['eloChanges'] as Map<String, dynamic>?)
-              ?.map((k, v) => MapEntry(k, v as int)) ??
+              ?.map((k, v) => MapEntry(k, (v as num).toInt())) ??
           {};
       final newElo = (result!['newElo'] as Map<String, dynamic>?)
-              ?.map((k, v) => MapEntry(k, v as int)) ??
+              ?.map((k, v) => MapEntry(k, (v as num).toInt())) ??
           {};
       domainResult = MatchResult(
         winnerId: result!['winnerId'] as String?,

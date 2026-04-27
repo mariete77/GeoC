@@ -613,21 +613,22 @@ class _GameResultWidgetState extends State<GameResultWidget>
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
                               Text(
-                                widget.opponentName ?? '',
+                                widget.opponentName ?? 'Oponente',
                                 style: GoogleFonts.plusJakartaSans(
                                   fontWeight: FontWeight.w700,
                                   fontSize: 16,
                                   color: AppColors.onSurface,
                                 ),
+                                maxLines: 1,
+                                overflow: TextOverflow.ellipsis,
                               ),
-                              if (widget.eloChange != null)
-                                Text(
-                                  'ELO: ${widget.eloChange! > 0 ? "+" : ""}${widget.eloChange}',
-                                  style: GoogleFonts.workSans(
-                                    fontSize: 13,
-                                    color: AppColors.onSurfaceVariant,
-                                  ),
+                              Text(
+                                'Duelo finalizado',
+                                style: GoogleFonts.workSans(
+                                  fontSize: 12,
+                                  color: AppColors.onSurfaceVariant,
                                 ),
+                              ),
                             ],
                           ),
                         ),
@@ -649,9 +650,12 @@ class _GameResultWidgetState extends State<GameResultWidget>
 
   Widget _buildScoreComparison() {
     final playerScore = widget.score.toDouble();
-    final oppScore = widget.opponentScore!.toDouble();
-    final maxScore = (playerScore > oppScore ? playerScore : oppScore) * 1.1;
-    if (maxScore == 0) return const SizedBox.shrink();
+    final oppScore = (widget.opponentScore ?? 0).toDouble();
+    
+    // Safety check for maxScore
+    double maxScore = (playerScore > oppScore ? playerScore : oppScore);
+    if (maxScore <= 0) maxScore = 1.0; 
+    maxScore *= 1.1;
 
     final playerAccuracy =
         widget.totalQuestions > 0
@@ -664,8 +668,10 @@ class _GameResultWidgetState extends State<GameResultWidget>
                 100
             : 0.0;
 
-    final playerTime = widget.averageTime;
-    final oppTime = widget.opponentAverageTime ?? 0.0;
+    final playerTime = widget.averageTime.isFinite ? widget.averageTime : 0.0;
+    final oppTime = (widget.opponentAverageTime != null && widget.opponentAverageTime!.isFinite) 
+        ? widget.opponentAverageTime! 
+        : 0.0;
 
     return AnimatedBuilder(
       animation: _barAnimation,
@@ -718,16 +724,16 @@ class _GameResultWidgetState extends State<GameResultWidget>
                   label: '${widget.score} pts',
                   fraction: (playerScore / maxScore) * _barAnimation.value,
                   color: AppColors.primary,
-                  isWinner: widget.isVictory,
+                  isWinner: widget.score >= (widget.opponentScore ?? 0),
                 ),
                 const SizedBox(height: 8),
 
                 // Opponent bar
                 _buildComparisonBar(
-                  label: '${widget.opponentScore} pts',
+                  label: '${widget.opponentScore ?? 0} pts',
                   fraction: (oppScore / maxScore) * _barAnimation.value,
                   color: AppColors.tertiary,
-                  isWinner: !widget.isVictory,
+                  isWinner: (widget.opponentScore ?? 0) > widget.score,
                 ),
                 const SizedBox(height: 20),
 
@@ -748,10 +754,14 @@ class _GameResultWidgetState extends State<GameResultWidget>
                     const SizedBox(width: 8),
                     _buildComparisonStat(
                       label: 'Tiempo',
-                      playerValue: '${playerTime.toStringAsFixed(1)}s',
+                      playerValue: playerTime > 1000 
+                          ? '${(playerTime / 1000).toStringAsFixed(1)}s' 
+                          : '${playerTime.toStringAsFixed(0)}ms',
                       opponentValue:
                           widget.opponentAverageTime != null
-                              ? '${oppTime.toStringAsFixed(1)}s'
+                              ? (oppTime > 1000 
+                                  ? '${(oppTime / 1000).toStringAsFixed(1)}s' 
+                                  : '${oppTime.toStringAsFixed(0)}ms')
                               : '-',
                     ),
                   ],

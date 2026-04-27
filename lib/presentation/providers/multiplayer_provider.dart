@@ -982,203 +982,199 @@ class MultiplayerNotifier extends StateNotifier<MultiplayerState> {
 
   /// Finish the match
   Future<void> _finishMatch() async {
-    _timer?.cancel();
-    _matchSubscription?.cancel();
+    try {
+      _timer?.cancel();
+      _matchSubscription?.cancel();
 
-    // Save ghost run from all multiplayer games (so there is always a pool for others)
-    if (_currentUserId != null && state.playerAnswers.isNotEmpty) {
-      await _ref.read(ghostRunRepositoryProvider).saveGhostRun(
-            userId: _currentUserId!,
-            elo: _userElo,
-            questionIds: _questions.map((q) => q.id).toList(),
-            answers: state.playerAnswers,
-          );
-    }
+      final currentMatch = state.currentMatch;
+      final currentUserId = _currentUserId;
 
-    // Submit answers to match if PvP
-    if (state.currentMatch != null && _currentUserId != null) {
-      for (final answer in state.playerAnswers) {
-        await _ref.read(matchRepositoryProvider).submitAnswer(
-              state.currentMatch!.id,
-              answer,
-            );
-      }
+      // ── 1. Submit local answers and save ghost ────────────────
+      if (currentUserId != null && state.playerAnswers.isNotEmpty) {
+        // Save ghost run asynchronously
+        _ref.read(ghostRunRepositoryProvider).saveGhostRun(
+              userId: currentUserId,
+              elo: _userElo,
+              questionIds: _questions.map((q) => q.id).toList(),
+              answers: state.playerAnswers,
+            ).catchError((e) => print('Error saving ghost: $e'));
 
-      // Fetch opponent's real answers and calculate their score
-      final opponentId = state.currentMatch!.getOpponentId(_currentUserId!);
-      if (opponentId != null && opponentId.isNotEmpty) {
-        final answersResult = await _ref.read(matchRepositoryProvider).getPlayerAnswers(
-              matchId: state.currentMatch!.id,
-              userId: opponentId,
-            );
-
-        answersResult.fold(
-          (failure) => null, // Keep current opponentScore (0)
-          (opponentAnswers) {
-            int calculatedOpponentScore = 0;
-            int calculatedOpponentCorrect = 0;
-            final convertedAnswers = <Answer>[];
-            for (final ans in opponentAnswers) {
-              if (ans.isCorrect) {
-                calculatedOpponentCorrect++;
-              }
-              if (ans.isCorrect && ans.questionIndex < _questions.length) {
-                final q = _questions[ans.questionIndex];
-                final maxTime = q.options.isEmpty
-                    ? GameConstants.secondsPerTypeQuestion
-                    : GameConstants.secondsPerQuestion;
-                calculatedOpponentScore += calculateQuestionScore(
-                  isCorrect: true,
-                  timeRemaining: maxTime - (ans.timeMs ~/ 1000),
-                  streak: 0,
-                  isTimeout: false,
+        // Submit each answer to Firestore match collection
+        if (currentMatch != null) {
+          for (final answer in state.playerAnswers) {
+            await _ref.read(matchRepositoryProvider).submitAnswer(
+                  currentMatch.id,
+                  answer,
                 );
+          }
+        }
+      }
+
+      // ── 2. Fetch opponent answers and calculate scores ────────
+      List<Answer>? opponentAnswers;
+      int calculatedOpponentScore = 0;
+      int calculatedOpponentCorrect = 0;
+
+      if (currentMatch != null && currentUserId != null) {
+        final opponentId = currentMatch.getOpponentId(currentUserId);
+        if (opponentId != null && opponentId.isNotEmpty) {
+          final answersResult = await _ref.read(matchRepositoryProvider).getPlayerAnswers(
+                matchId: currentMatch.id,
+                userId: opponentId,
+              );
+
+          answersResult.fold(
+            (failure) => null, // Continue with 0 points for opponent
+            (answers) {
+              opponentAnswers = answers;
+              for (final ans in answers) {
+                if (ans.isCorrect) {
+                  calculatedOpponentCorrect++;
+                  if (ans.questionIndex < _questions.length) {
+                    final q = _questions[ans.questionIndex];
+                    final maxTime = q.options.isEmpty
+                        ? GameConstants.secondsPerTypeQuestion
+                        : GameConstants.secondsPerQuestion;
+                    calculatedOpponentScore += calculateQuestionScore(
+                      isCorrect: true,
+                      timeRemaining: maxTime - (ans.timeMs ~/ 1000),
+                      streak: 0,
+                      isTimeout: false,
+                    );
+                  }
+                }
               }
-              convertedAnswers.add(ans);
-            }
-            state = state.copyWith(
-              opponentScore: calculatedOpponentScore,
-              opponentCorrectAnswers: calculatedOpponentCorrect,
-              opponentAnswers: convertedAnswers,
-            );
-          },
-        );
-      }
-    }
-
-    // ── Calculate and update Elo (multiplayer only) ──────────────
-    int? eloChange;
-    int? newElo;
-    MatchResult? matchResult;
-
-    if (_currentUserId != null) {
-      final userState = _ref.read(userNotifierProvider);
-      final currentUser = userState.valueOrNull;
-      final playerElo = currentUser?.elo ?? GameConstants.initialElo;
-      final gamesPlayed = currentUser?.stats.totalGames ?? 0;
-
-      // Determine opponent Elo for calculation
-      final opponentId = state.currentMatch?.getOpponentId(_currentUserId!) ?? '';
-      final opponentElo = state.opponentElo ?? GameConstants.initialElo;
-
-      // Calculate score: based on win/loss/draw
-      // Now incorporating speed bonus logic
-      double score;
-      
-      // Calculate player performance: correct answers + speed bonus
-      // We assume the provider already tracks response times per question
-      final playerPerformance = state.calculatePerformanceScore(); 
-      final opponentPerformance = state.opponentPerformanceScore ?? 0.0;
-
-      if (playerPerformance > opponentPerformance) {
-        score = 1.0; // Win
-      } else if (playerPerformance < opponentPerformance) {
-        score = 0.0; // Loss
-      } else {
-        score = 0.5; // Draw
+            },
+          );
+        }
       }
 
-      final eloCalc = EloCalculator();
-      eloChange = eloCalc.calculateChange(
-        playerElo: playerElo,
-        opponentElo: opponentElo,
-        score: score,
-        gamesPlayed: gamesPlayed,
-      );
-      newElo = eloCalc.calculateNewElo(
-        playerElo: playerElo,
-        opponentElo: opponentElo,
-        score: score,
-        gamesPlayed: gamesPlayed,
-      );
-
-      // Calculate opponent's ELO change (inverse of player's)
-      final opponentScore = 1.0 - score; // 0.0 if win, 1.0 if loss, 0.5 if draw
-      // Get opponent games (estimated for now - stored in match in future)
-      final opponentGamesPlayed = gamesPlayed; // Simplified: same games count
-
-      final opponentEloChange = eloCalc.calculateChange(
-        playerElo: opponentElo,
-        opponentElo: playerElo,
-        score: opponentScore,
-        gamesPlayed: opponentGamesPlayed,
-      );
-      final opponentNewElo = eloCalc.calculateNewElo(
-        playerElo: opponentElo,
-        opponentElo: playerElo,
-        score: opponentScore,
-        gamesPlayed: opponentGamesPlayed,
-      );
-
-      // Create MatchResult with both players' ELO changes
-      if (opponentId.isNotEmpty && state.currentMatch != null) {
-        matchResult = MatchResult(
-          winnerId: score == 1.0 ? _currentUserId : (score == 0.0 ? null : opponentId),
-          scores: {
-            _currentUserId!: state.playerScore,
-            if (opponentId.isNotEmpty) opponentId: state.opponentScore,
-          },
-          eloChanges: {
-            _currentUserId!: eloChange!,
-            if (opponentId.isNotEmpty) opponentId: opponentEloChange,
-          },
-          newElo: {
-            _currentUserId!: newElo!,
-            if (opponentId.isNotEmpty) opponentId: opponentNewElo,
-          },
-        );
-      }
-
-      // Save match result to Firestore
-      if (state.currentMatch != null && matchResult != null) {
-        await _ref.read(matchRepositoryProvider).saveMatchResult(
-              matchId: state.currentMatch!.id,
-              result: matchResult!,
-            );
-      }
-
-      // Update user Elo and stats in Firestore (only our player)
-      if (currentUser != null) {
-        final isWin = score == 1.0;
-        final isDraw = score == 0.5;
-        final newStreak = isWin
-            ? currentUser.stats.currentWinStreak + 1
-            : 0;
-        final bestStreak = newStreak > currentUser.stats.bestWinStreak
-            ? newStreak
-            : currentUser.stats.bestWinStreak;
-
-        final updatedUser = User(
-          userId: currentUser.userId,
-          displayName: currentUser.displayName,
-          email: currentUser.email,
-          photoUrl: currentUser.photoUrl,
-          elo: newElo,
-          stats: UserStats(
-            totalGames: currentUser.stats.totalGames + 1,
-            wins: currentUser.stats.wins + (isWin ? 1 : 0),
-            losses: currentUser.stats.losses + (!isWin && !isDraw ? 1 : 0),
-            draws: currentUser.stats.draws + (isDraw ? 1 : 0),
-            totalCorrectAnswers:
-                currentUser.stats.totalCorrectAnswers + state.correctAnswers,
-            currentWinStreak: newStreak,
-            bestWinStreak: bestStreak,
-          ),
-          subscription: currentUser.subscription,
-          dailyGames: currentUser.dailyGames,
-          createdAt: currentUser.createdAt,
-          lastLoginAt: currentUser.lastLoginAt,
-        );
-
-        await _ref.read(userNotifierProvider.notifier).updateUserProfile(updatedUser);
-      }
-
-      // Update state with opponent's new ELO for display and finish status
+      // Update state with opponent info BEFORE final ELO calculation
       state = state.copyWith(
-        opponentElo: opponentId.isNotEmpty ? opponentNewElo : null,
-        status: MultiplayerStatus.finished,
-        eloChange: eloChange,
-        newElo: newElo,
+        opponentScore: calculatedOpponentScore,
+        opponentCorrectAnswers: calculatedOpponentCorrect,
+        opponentAnswers: opponentAnswers,
+      );
+
+      // ── 3. ELO and Results calculation ────────────────────────
+      int? eloChange;
+      int? newElo;
+      MatchResult? matchResult;
+
+      if (currentUserId != null) {
+        final userState = _ref.read(userNotifierProvider);
+        final currentUser = userState.valueOrNull;
+        final playerElo = currentUser?.elo ?? GameConstants.initialElo;
+        final gamesPlayed = currentUser?.stats.totalGames ?? 0;
+
+        final opponentElo = state.opponentElo ?? GameConstants.initialElo;
+
+        // Calculate performance score (score + speed)
+        final playerPerf = state.calculatePerformanceScore();
+        final oppPerf = state.opponentPerformanceScore ?? 0.0;
+
+        double score;
+        if (playerPerf > oppPerf) score = 1.0;
+        else if (playerPerf < oppPerf) score = 0.0;
+        else score = 0.5;
+
+        final eloCalc = EloCalculator();
+        eloChange = eloCalc.calculateChange(
+          playerElo: playerElo,
+          opponentElo: opponentElo,
+          score: score,
+          gamesPlayed: gamesPlayed,
+        );
+        newElo = eloCalc.calculateNewElo(
+          playerElo: playerElo,
+          opponentElo: opponentElo,
+          score: score,
+          gamesPlayed: gamesPlayed,
+        );
+
+        // Calculate opponent's ELO change
+        final opponentScore = 1.0 - score;
+        final oppEloChange = eloCalc.calculateChange(
+          playerElo: opponentElo,
+          opponentElo: playerElo,
+          score: opponentScore,
+          gamesPlayed: gamesPlayed, // Estimate using same games count
+        );
+        final oppNewElo = eloCalc.calculateNewElo(
+          playerElo: opponentElo,
+          opponentElo: playerElo,
+          score: opponentScore,
+          gamesPlayed: gamesPlayed,
+        );
+
+        // Prepare MatchResult
+        final opponentId = currentMatch?.getOpponentId(currentUserId);
+        if (currentMatch != null && opponentId != null && opponentId.isNotEmpty) {
+          matchResult = MatchResult(
+            winnerId: score == 1.0 ? currentUserId : (score == 0.0 ? opponentId : null),
+            scores: {
+              currentUserId: state.playerScore,
+              opponentId: state.opponentScore,
+            },
+            eloChanges: {
+              currentUserId: eloChange,
+              opponentId: oppEloChange,
+            },
+            newElo: {
+              currentUserId: newElo,
+              opponentId: oppNewElo,
+            },
+          );
+
+          // Save results to Firestore
+          await _ref.read(matchRepositoryProvider).saveMatchResult(
+                matchId: currentMatch.id,
+                result: matchResult,
+              ).catchError((e) => print('Error saving match result: $e'));
+        }
+
+        // Update local user profile
+        if (currentUser != null) {
+          final isWin = score == 1.0;
+          final isDraw = score == 0.5;
+          final newStreak = isWin ? currentUser.stats.currentWinStreak + 1 : 0;
+          final bestStreak = newStreak > currentUser.stats.bestWinStreak ? newStreak : currentUser.stats.bestWinStreak;
+
+          final updatedUser = currentUser.copyWith(
+            elo: newElo,
+            stats: currentUser.stats.copyWith(
+              totalGames: currentUser.stats.totalGames + 1,
+              wins: currentUser.stats.wins + (isWin ? 1 : 0),
+              losses: currentUser.stats.losses + (!isWin && !isDraw ? 1 : 0),
+              draws: currentUser.stats.draws + (isDraw ? 1 : 0),
+              totalCorrectAnswers: currentUser.stats.totalCorrectAnswers + state.correctAnswers,
+              currentWinStreak: newStreak,
+              bestWinStreak: bestStreak,
+            ),
+          );
+
+          await _ref.read(userNotifierProvider.notifier).updateUserProfile(updatedUser)
+              .catchError((e) => print('Error updating user profile: $e'));
+        }
+
+        // Final state transition
+        state = state.copyWith(
+          status: MultiplayerStatus.finished,
+          eloChange: eloChange,
+          newElo: newElo,
+          opponentElo: (matchResult != null && opponentId != null) 
+              ? matchResult.newElo[opponentId] 
+              : state.opponentElo,
+        );
+      } else {
+        // Fallback if no user
+        state = state.copyWith(status: MultiplayerStatus.finished);
+      }
+    } catch (e, stack) {
+      print('CRITICAL ERROR in _finishMatch: $e\n$stack');
+      state = state.copyWith(
+        status: MultiplayerStatus.error,
+        errorMessage: 'Error al finalizar la partida: $e',
       );
     }
   }
