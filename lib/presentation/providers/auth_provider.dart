@@ -4,6 +4,7 @@ import '../../data/repositories/auth_repository_impl.dart';
 import '../../domain/entities/user.dart';
 import '../../domain/repositories/auth_repository.dart';
 import '../../core/errors/failures.dart';
+import '../../services/subscription_service.dart';
 
 part 'auth_provider.g.dart';
 
@@ -21,7 +22,15 @@ class AuthNotifier extends _$AuthNotifier {
     // Listen to auth state changes
     ref.listen(authStateChangesProvider, (previous, next) {
       if (next.hasValue) {
-        state = AsyncValue.data(next.value);
+        final user = next.value;
+        state = AsyncValue.data(user);
+        
+        // RevenueCat Login/Logout
+        if (user != null) {
+          SubscriptionService().logIn(user.userId);
+        } else {
+          SubscriptionService().logOut();
+        }
       }
     });
 

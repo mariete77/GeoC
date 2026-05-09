@@ -39,6 +39,36 @@ class GameMatch extends Equatable {
     this.creatorElo = 1000,
   });
 
+  GameMatch copyWith({
+    String? id,
+    List<String>? players,
+    MatchMode? mode,
+    MatchType? type,
+    MatchStatus? status,
+    List<String>? questionIds,
+    Map<String, List<Answer>>? answers,
+    MatchResult? result,
+    DateTime? createdAt,
+    DateTime? startedAt,
+    DateTime? finishedAt,
+    int? creatorElo,
+  }) {
+    return GameMatch(
+      id: id ?? this.id,
+      players: players ?? this.players,
+      mode: mode ?? this.mode,
+      type: type ?? this.type,
+      status: status ?? this.status,
+      questionIds: questionIds ?? this.questionIds,
+      answers: answers ?? this.answers,
+      result: result ?? this.result,
+      createdAt: createdAt ?? this.createdAt,
+      startedAt: startedAt ?? this.startedAt,
+      finishedAt: finishedAt ?? this.finishedAt,
+      creatorElo: creatorElo ?? this.creatorElo,
+    );
+  }
+
   /// Check if user is a player in this match
   bool isPlayer(String userId) => players.contains(userId);
 
@@ -70,6 +100,7 @@ class Answer extends Equatable {
   final bool isCorrect;
   final int timeMs;
   final DateTime answeredAt;
+  final double? similarity;
 
   const Answer({
     required this.questionIndex,
@@ -77,6 +108,7 @@ class Answer extends Equatable {
     required this.isCorrect,
     required this.timeMs,
     required this.answeredAt,
+    this.similarity,
   });
 
   @override
@@ -86,6 +118,7 @@ class Answer extends Equatable {
         isCorrect,
         timeMs,
         answeredAt,
+        similarity,
       ];
 }
 

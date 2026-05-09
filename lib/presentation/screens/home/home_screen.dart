@@ -12,6 +12,7 @@ import '../../../domain/entities/user.dart';
 import '../../../domain/entities/match.dart';
 import 'widgets/elo_sparkline.dart';
 import 'widgets/subscription_modal.dart';
+import 'widgets/how_to_play_modal.dart';
 import '../../widgets/common/geoc_page_transitions.dart';
 import 'package:intl/intl.dart';
 
@@ -229,6 +230,18 @@ class HomeScreen extends ConsumerWidget {
                     ),
                   ),
                 const SizedBox(width: 8),
+                // How to Play
+                Container(
+                  decoration: BoxDecoration(
+                    shape: BoxShape.circle,
+                    color: AppColors.secondary.withOpacity(0.08),
+                  ),
+                  child: IconButton(
+                    onPressed: () => HowToPlayModal.show(context),
+                    icon: Icon(Icons.info_outline, color: AppColors.secondary, weight: 300),
+                  ),
+                ),
+                const SizedBox(width: 4),
                 // Settings
                 Container(
                   decoration: BoxDecoration(
@@ -239,7 +252,7 @@ class HomeScreen extends ConsumerWidget {
                     onPressed: () {
                       // TODO: Navigate to settings
                     },
-                    icon: Icon(Icons.settings_outlined, color: AppColors.primary),
+                    icon: Icon(Icons.settings_outlined, color: AppColors.primary, weight: 300),
                   ),
                 ),
               ],
@@ -419,7 +432,9 @@ class HomeScreen extends ConsumerWidget {
         color: Colors.transparent,
         child: InkWell(
           borderRadius: BorderRadius.circular(16),
-          onTap: dailyGames.canPlayCasual ? () => context.go('/game/easy') : null,
+          onTap: dailyGames.canPlayCasual 
+              ? () => context.go('/game/easy') 
+              : () => SubscriptionModal.show(context),
           child: Padding(
             padding: const EdgeInsets.all(32),
             child: Column(
@@ -479,8 +494,9 @@ class HomeScreen extends ConsumerWidget {
         color: Colors.transparent,
         child: InkWell(
           borderRadius: BorderRadius.circular(16),
-          onTap:
-              dailyGames.canPlayRanked ? () => context.go('/matchmaking/ranked') : null,
+          onTap: dailyGames.canPlayRanked 
+              ? () => context.go('/matchmaking/ranked') 
+              : () => SubscriptionModal.show(context),
           child: Padding(
             padding: const EdgeInsets.all(24),
             child: Column(

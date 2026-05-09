@@ -197,17 +197,18 @@ firebase deploy --only storage
   - Ríos (25)
 - 📄 [Instrucciones detalladas](docs/FASE3_INSTRUCCIONES.md)
 
-### ⏳ FASE 4: Core del Juego (Pendiente)
-- ⏳ GameProvider
-- ⏳ GameScreen
-- ⏳ Question widgets (silueta, bandera, capital, etc.)
-- ⏳ Timer circular
-- ⏳ ResultScreen
+### ✅ FASE 4: Core del Juego (Completada)
+- ✅ GameProvider
+- ✅ GameScreen
+- ✅ Question widgets (silueta, bandera, capital, etc.)
+- ✅ Timer circular
+- ✅ ResultScreen
 
-### ⏳ FASE 5: Matchmaking Multiplayer (Pendiente)
-- ⏳ MatchmakingService
-- ⏳ MatchmakingScreen
-- ⏳ Cloud Functions (matchmaking, ELO, daily reset)
+### ✅ FASE 5: Matchmaking Multiplayer (Completada)
+- ✅ MatchmakingService
+- ✅ MatchmakingScreen
+- ✅ Cloud Functions (matchmaking, ELO, daily reset)
+- ✅ Sistema de Amigos (Añadir, eliminar, invitar a jugar)
 
 ### ⏳ FASE 6: Ghost Runs (Async) (Pendiente)
 - ⏳ AsyncMatchService

@@ -5,15 +5,18 @@ import 'package:riverpod_annotation/riverpod_annotation.dart';
 import 'package:freezed_annotation/freezed_annotation.dart';
 import '../../data/repositories/question_repository_impl.dart';
 import '../../data/repositories/quiz_attempt_repository_impl.dart';
+import '../../data/repositories/ghost_run_repository_impl.dart';
 import '../../domain/entities/question.dart';
 import '../../domain/entities/match.dart';
 import '../../domain/repositories/question_repository.dart';
 import '../../domain/repositories/quiz_attempt_repository.dart';
+import '../../domain/repositories/ghost_run_repository.dart';
 import '../../data/models/quiz_attempt_model.dart';
 import '../../core/constants/game_constants.dart';
 import '../../core/utils/score_calculator.dart';
 import '../../core/utils/fuzzy_matcher.dart';
 import 'package:firebase_auth/firebase_auth.dart';
+import 'user_provider.dart';
 
 part 'game_provider.freezed.dart';
 part 'game_provider.g.dart';
@@ -28,6 +31,12 @@ QuestionRepository questionRepository(QuestionRepositoryRef ref) {
 @riverpod
 QuizAttemptRepository quizAttemptRepository(QuizAttemptRepositoryRef ref) {
   return QuizAttemptRepositoryImpl();
+}
+
+/// Ghost run repository provider (for solo game saves)
+@riverpod
+GhostRunRepository ghostRunRepository(GhostRunRepositoryRef ref) {
+  return GhostRunRepositoryImpl();
 }
 
 /// Game state
@@ -49,6 +58,7 @@ class GameState with _$GameState {
     required String correctAnswer,
     required String selectedAnswer,
     required int score,
+    double? similarity,
   }) = _Answered;
   const factory GameState.finished({
     required int score,
@@ -182,7 +192,7 @@ class GameNotifier extends _$GameNotifier {
 
     final question = currentState.questions[currentState.currentQuestionIndex];
     final similarity = answerSimilarity(typedAnswer, question.correctAnswer);
-    final isCorrect = similarity >= 0.85; // 85%+ counts as correct
+    final isCorrect = similarity >= 0.85;
 
     final maxTime = _getTimeForQuestion(question);
 
@@ -199,6 +209,7 @@ class GameNotifier extends _$GameNotifier {
       isCorrect: isCorrect,
       timeMs: (maxTime - currentState.timeRemaining) * 1000,
       answeredAt: DateTime.now(),
+      similarity: similarity,
     );
 
     final updatedAnswers = [...currentState.userAnswers, answer];
@@ -215,6 +226,7 @@ class GameNotifier extends _$GameNotifier {
       updatedAnswers: updatedAnswers,
       newCorrectAnswers: newCorrectAnswers,
       newStreak: newStreak,
+      similarity: similarity,
     );
   }
 
@@ -334,6 +346,7 @@ class GameNotifier extends _$GameNotifier {
     required List<Answer> updatedAnswers,
     required int newCorrectAnswers,
     required int newStreak,
+    double? similarity,
   }) {
     final displayAnswer = isTimeout ? "Time's up!" : selectedAnswer;
 
@@ -348,6 +361,7 @@ class GameNotifier extends _$GameNotifier {
       correctAnswer: question.correctAnswer,
       selectedAnswer: displayAnswer,
       score: newScore,
+      similarity: similarity,
     );
 
     // Determine delay based on result
@@ -416,6 +430,8 @@ class GameNotifier extends _$GameNotifier {
   }) {
     _timer?.cancel();
 
+    _saveGhostRun(userAnswers);
+
     final totalTimeMs = userAnswers.fold<int>(
       0,
       (sum, answer) => sum + answer.timeMs,
@@ -429,6 +445,25 @@ class GameNotifier extends _$GameNotifier {
       userAnswers: userAnswers,
       averageTime: averageTime,
     );
+  }
+
+  /// Save solo game as ghost run (fire-and-forget, never blocks gameplay)
+  void _saveGhostRun(List<Answer> answers) {
+    try {
+      final userId = FirebaseAuth.instance.currentUser?.uid;
+      if (userId == null || answers.isEmpty || _questions.isEmpty) return;
+
+      final userElo =
+          ref.read(userNotifierProvider).valueOrNull?.elo ?? GameConstants.initialElo;
+      final questionIds = _questions.map((q) => q.id).toList();
+
+      ref.read(ghostRunRepositoryProvider).saveGhostRun(
+            userId: userId,
+            elo: userElo,
+            questionIds: questionIds,
+            answers: answers,
+          );
+    } catch (_) {}
   }
 
   /// Cancel game

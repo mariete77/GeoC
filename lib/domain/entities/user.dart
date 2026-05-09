@@ -59,6 +59,37 @@ class User extends Equatable {
     return 'Bronze';
   }
 
+  /// Create a copy of User with specified fields replaced
+  User copyWith({
+    String? userId,
+    String? displayName,
+    String? email,
+    String? photoUrl,
+    int? elo,
+    UserStats? stats,
+    Subscription? subscription,
+    DailyGames? dailyGames,
+    DateTime? createdAt,
+    DateTime? lastLoginAt,
+    List<String>? friends,
+    List<String>? pendingFriendRequests,
+  }) {
+    return User(
+      userId: userId ?? this.userId,
+      displayName: displayName ?? this.displayName,
+      email: email ?? this.email,
+      photoUrl: photoUrl ?? this.photoUrl,
+      elo: elo ?? this.elo,
+      stats: stats ?? this.stats,
+      subscription: subscription ?? this.subscription,
+      dailyGames: dailyGames ?? this.dailyGames,
+      createdAt: createdAt ?? this.createdAt,
+      lastLoginAt: lastLoginAt ?? this.lastLoginAt,
+      friends: friends ?? this.friends,
+      pendingFriendRequests: pendingFriendRequests ?? this.pendingFriendRequests,
+    );
+  }
+
   /// Get win rate
   double get winRate {
     if (stats.totalGames == 0) return 0.0;
@@ -102,6 +133,26 @@ class UserStats extends Equatable {
     this.bestWinStreak = 0,
   });
 
+  UserStats copyWith({
+    int? totalGames,
+    int? wins,
+    int? losses,
+    int? draws,
+    int? totalCorrectAnswers,
+    int? currentWinStreak,
+    int? bestWinStreak,
+  }) {
+    return UserStats(
+      totalGames: totalGames ?? this.totalGames,
+      wins: wins ?? this.wins,
+      losses: losses ?? this.losses,
+      draws: draws ?? this.draws,
+      totalCorrectAnswers: totalCorrectAnswers ?? this.totalCorrectAnswers,
+      currentWinStreak: currentWinStreak ?? this.currentWinStreak,
+      bestWinStreak: bestWinStreak ?? this.bestWinStreak,
+    );
+  }
+
   @override
   List<Object?> get props => [
         totalGames,
@@ -126,6 +177,18 @@ class Subscription extends Equatable {
     this.isActive = false,
   });
 
+  Subscription copyWith({
+    String? type,
+    DateTime? expiresAt,
+    bool? isActive,
+  }) {
+    return Subscription(
+      type: type ?? this.type,
+      expiresAt: expiresAt ?? this.expiresAt,
+      isActive: isActive ?? this.isActive,
+    );
+  }
+
   @override
   List<Object?> get props => [type, expiresAt, isActive];
 }
@@ -145,6 +208,18 @@ class DailyGames extends Equatable {
   factory DailyGames.today() => DailyGames(
         date: DateTime.now(),
       );
+
+  DailyGames copyWith({
+    int? casualPlayed,
+    int? rankedPlayed,
+    DateTime? date,
+  }) {
+    return DailyGames(
+      casualPlayed: casualPlayed ?? this.casualPlayed,
+      rankedPlayed: rankedPlayed ?? this.rankedPlayed,
+      date: date ?? this.date,
+    );
+  }
 
   /// Check if is from today
   bool get isToday {

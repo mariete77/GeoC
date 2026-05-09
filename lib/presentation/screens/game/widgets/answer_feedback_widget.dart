@@ -11,6 +11,7 @@ class AnswerFeedbackWidget extends StatefulWidget {
   final String selectedAnswer;
   final int score;
   final Question? question;
+  final double? similarity;
   final VoidCallback? onNextQuestion;
 
   const AnswerFeedbackWidget({
@@ -20,6 +21,7 @@ class AnswerFeedbackWidget extends StatefulWidget {
     required this.selectedAnswer,
     required this.score,
     this.question,
+    this.similarity,
     this.onNextQuestion,
   });
 
@@ -58,21 +60,57 @@ class _AnswerFeedbackWidgetState extends State<AnswerFeedbackWidget>
     super.dispose();
   }
 
+  String _accuracyLabel(double similarity) {
+    if (similarity >= 1.0) return '¡Perfecto!';
+    if (similarity >= 0.85) return '¡Casi!';
+    if (similarity >= 0.7) return 'Cerca';
+    if (similarity >= 0.5) return 'Aprobable';
+    return 'Incorrecto';
+  }
+
   @override
   Widget build(BuildContext context) {
-    // Extract educational info from extraData
     final infoToShow = widget.question?.extraData?['infoToShow'] as String?;
     final hasInfo = infoToShow != null && infoToShow.isNotEmpty;
 
-    // Banner colors
-    final bannerColor = widget.isCorrect
-        ? AppColors.primaryContainer
-        : AppColors.errorContainer;
-    final bannerFg = widget.isCorrect
-        ? AppColors.onPrimaryContainer
-        : AppColors.onErrorContainer;
-    final icon = widget.isCorrect ? Icons.check_circle : Icons.cancel;
-    final title = widget.isCorrect ? 'Correcto' : 'Incorrecto';
+    final sim = widget.similarity;
+    final hasPartial = sim != null && sim < 1.0 && sim >= 0.5;
+
+    Color bannerColor;
+    Color bannerFg;
+    IconData icon;
+    String title;
+
+    if (sim != null && sim >= 1.0) {
+      bannerColor = AppColors.primaryContainer;
+      bannerFg = AppColors.onPrimaryContainer;
+      icon = Icons.check_circle;
+      title = '¡Perfecto!';
+    } else if (sim != null && sim >= 0.85) {
+      bannerColor = AppColors.secondaryContainer;
+      bannerFg = AppColors.onSecondaryContainer;
+      icon = Icons.check_circle_outline;
+      title = '¡Casi!';
+    } else if (sim != null && sim >= 0.7) {
+      bannerColor = AppColors.tertiaryContainer;
+      bannerFg = AppColors.onTertiaryContainer;
+      icon = Icons.touch_app;
+      title = 'Cerca';
+    } else if (sim != null && sim >= 0.5) {
+      bannerColor = AppColors.errorContainer.withValues(alpha: 0.6);
+      bannerFg = AppColors.onErrorContainer;
+      icon = Icons.pending_outlined;
+      title = 'Aprobable';
+    } else {
+      bannerColor = widget.isCorrect
+          ? AppColors.primaryContainer
+          : AppColors.errorContainer;
+      bannerFg = widget.isCorrect
+          ? AppColors.onPrimaryContainer
+          : AppColors.onErrorContainer;
+      icon = widget.isCorrect ? Icons.check_circle : Icons.cancel;
+      title = widget.isCorrect ? 'Correcto' : 'Incorrecto';
+    }
 
     return Container(
       color: AppColors.onBackground.withOpacity(0.20),
@@ -255,7 +293,7 @@ class _AnswerFeedbackWidgetState extends State<AnswerFeedbackWidget>
                                     : Column(
                                         children: [
                                           Text(
-                                            'TU RESPUESTA',
+                                            hasPartial ? 'PRECISIÓN' : 'TU RESPUESTA',
                                             style: GoogleFonts.workSans(
                                               fontSize: 10,
                                               fontWeight: FontWeight.w600,
@@ -265,15 +303,19 @@ class _AnswerFeedbackWidgetState extends State<AnswerFeedbackWidget>
                                           ),
                                           const SizedBox(height: 4),
                                           Text(
-                                            widget.isCorrect
-                                                ? '✓'
-                                                : widget.selectedAnswer,
+                                            hasPartial
+                                                ? '${(sim! * 100).toStringAsFixed(0)}%'
+                                                : (widget.isCorrect
+                                                    ? '✓'
+                                                    : (widget.selectedAnswer)),
                                             style: GoogleFonts.plusJakartaSans(
                                               fontSize: 20,
                                               fontWeight: FontWeight.w800,
-                                              color: widget.isCorrect
-                                                  ? AppColors.primary
-                                                  : AppColors.error,
+                                              color: hasPartial
+                                                  ? AppColors.tertiary
+                                                  : (widget.isCorrect
+                                                      ? AppColors.primary
+                                                      : AppColors.error),
                                             ),
                                             textAlign: TextAlign.center,
                                           ),
@@ -284,8 +326,8 @@ class _AnswerFeedbackWidgetState extends State<AnswerFeedbackWidget>
                           ],
                         ),
 
-                        // ── Wrong answer indicator
-                        if (!widget.isCorrect && hasInfo) ...[
+                        // ── Partial/wrong answer indicator
+                        if ((!widget.isCorrect || hasPartial) && hasInfo) ...[
                           const SizedBox(height: 12),
                           Container(
                             padding: const EdgeInsets.symmetric(
@@ -361,15 +403,19 @@ class _AnswerFeedbackWidgetState extends State<AnswerFeedbackWidget>
                             decoration: BoxDecoration(
                               borderRadius: BorderRadius.circular(9999),
                               gradient: LinearGradient(
-                                colors: widget.isCorrect
-                                    ? [AppColors.primary, AppColors.primaryContainer]
-                                    : [AppColors.error, AppColors.errorContainer],
+                                colors: hasPartial
+                                    ? [AppColors.tertiaryContainer, AppColors.tertiary]
+                                    : (widget.isCorrect
+                                        ? [AppColors.primary, AppColors.primaryContainer]
+                                        : [AppColors.error, AppColors.errorContainer]),
                               ),
                               boxShadow: [
                                 BoxShadow(
-                                  color: (widget.isCorrect
-                                          ? AppColors.primary
-                                          : AppColors.error)
+                                  color: (hasPartial
+                                          ? AppColors.tertiary
+                                          : (widget.isCorrect
+                                              ? AppColors.primary
+                                              : AppColors.error))
                                       .withOpacity(0.3),
                                   blurRadius: 24,
                                   offset: const Offset(0, 8),

@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(dart analyze *)",
+      "Bash(grep -E \"^  error - lib\\\\\\\\\")",
+      "Bash(findstr /C:\"error - lib\")",
+      "Bash(dart run *)"
+    ]
+  }
+}

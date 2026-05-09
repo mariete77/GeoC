@@ -215,11 +215,8 @@ class _LoadingGaugeState extends State<_LoadingGauge>
       }
     });
 
-    // Repeat animation cycle
-    Future.delayed(const Duration(milliseconds: 800), () {
-      if (mounted) _animController.forward(from: 0);
-    });
-    _animController.forward(from: 0);
+    // Repeat animation cycle continuously
+    _animController.repeat();
   }
 
   @override

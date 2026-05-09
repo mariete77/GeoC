@@ -1,40 +1,15 @@
-import * as functions from 'firebase-functions';
+import * as functionsV1 from 'firebase-functions/v1';
 import * as admin from 'firebase-admin';
 
-// Inicializar Firebase Admin
 admin.initializeApp();
 
 const db = admin.firestore();
 
-/**
- * Cloud Function: onUpdateMatchResult
- *
- * Se activa cuando el campo 'result' de un match es creado o actualizado.
- *
- * Esta función actualiza el ELO de ambos jugadores en sus documentos de usuario
- * en la colección /users/{userId}/elo, usando los valores calculados en el cliente.
- *
- * También actualiza las estadísticas (wins/losses/draws) basado en el resultado.
- *
- * Firestore structure:
- *   /matches/{matchId}/result = {
- *     winnerId: string | null,
- *     scores: { [userId]: number },
- *     eloChanges: { [userId]: number },
- *     newElo: { [userId]: number }
- *   }
- *
- *   /users/{userId} = {
- *     elo: number,
- *     stats: { wins, losses, draws, totalGames, ... }
- *   }
- */
-export const onUpdateMatchResult = functions.firestore
+export const onUpdateMatchResult = functionsV1.firestore
   .document('matches/{matchId}')
   .onWrite(async (change, context) => {
     const { matchId } = context.params;
 
-    // Solo procesar si existe el campo 'result' en el nuevo documento
     const newData = change.after.data();
     if (!newData || !newData.result) {
       return null;
@@ -43,7 +18,6 @@ export const onUpdateMatchResult = functions.firestore
     const result = newData.result;
     const players = newData.players as string[];
 
-    // Verificar que tenemos los datos necesarios
     if (!result.newElo || !result.eloChanges || !result.scores) {
       console.log(`Match ${matchId}: Estructura de 'result' incompleta`);
       return null;
@@ -53,17 +27,14 @@ export const onUpdateMatchResult = functions.firestore
     const newElo = result.newElo as { [userId: string]: number };
     const eloChanges = result.eloChanges as { [userId: string]: number };
 
-    // Batch write para actualizar ambos jugadores atómicamente
     const batch = db.batch();
 
     for (const userId of players) {
       const userRef = db.collection('users').doc(userId);
 
-      // Actualizar ELO con el valor calculado en el cliente
       batch.update(userRef, { elo: newElo[userId] });
 
-      // Actualizar estadísticas basado en el resultado
-      const statsUpdate: { [key: string]: admin.firestore.FieldValue } = {
+      const statsUpdate: Record<string, any> = {
         'stats.totalGames': admin.firestore.FieldValue.increment(1),
       };
 
@@ -77,7 +48,6 @@ export const onUpdateMatchResult = functions.firestore
           statsUpdate['stats.currentWinStreak'] = 0;
         }
       } else {
-        // Empate
         statsUpdate['stats.draws'] = admin.firestore.FieldValue.increment(1);
       }
 
@@ -89,7 +59,6 @@ export const onUpdateMatchResult = functions.firestore
       );
     }
 
-    // Ejecutar el batch
     await batch.commit();
 
     console.log(`Match ${matchId}: ELOs y estadísticas actualizados correctamente`);
@@ -97,19 +66,12 @@ export const onUpdateMatchResult = functions.firestore
     return null;
   });
 
-/**
- * Cloud Function opcional: onCreateUser
- *
- * Se activa cuando un nuevo documento de usuario es creado.
- * Inicializa los valores por defecto si no están presentes.
- */
-export const onCreateUser = functions.firestore
+export const onCreateUser = functionsV1.firestore
   .document('users/{userId}')
   .onCreate(async (snap, context) => {
     const { userId } = context.params;
     const data = snap.data();
 
-    // Verificar si necesita inicialización
     const needsInit = data.elo === undefined || data.stats === undefined;
 
     if (needsInit) {

@@ -15,6 +15,7 @@ import 'package:geoquiz_battle/presentation/providers/multiplayer_provider.dart'
 import 'package:geoquiz_battle/domain/entities/question.dart';
 import 'package:geoquiz_battle/core/theme/app_theme.dart';
 import 'package:geoquiz_battle/presentation/widgets/common/geoc_page_transitions.dart';
+import 'package:geoquiz_battle/presentation/widgets/invite_listener.dart';
 import 'package:geoquiz_battle/l10n/generated/app_localizations.dart';
 
 final routerProvider = Provider<GoRouter>((ref) {
@@ -55,62 +56,67 @@ final routerProvider = Provider<GoRouter>((ref) {
           child: const LoginScreen(),
         ),
       ),
-      GoRoute(
-        path: '/home',
-        pageBuilder: (context, state) => GeoCTransitions.enterFadeScale(
-          duration: const Duration(milliseconds: 450),
-          child: const HomeScreen(),
-        ),
-      ),
-      GoRoute(
-        path: '/game/:difficulty',
-        pageBuilder: (context, state) {
-          final difficultyStr = state.pathParameters['difficulty'] ?? 'medium';
-          final difficulty = Difficulty.values.firstWhere(
-            (d) => d.name.toLowerCase() == difficultyStr.toLowerCase(),
-            orElse: () => Difficulty.medium,
-          );
-          return GeoCTransitions.slideInFromRight(
-            child: GameScreen(difficulty: difficulty),
-          );
-        },
-      ),
-      GoRoute(
-        path: '/matchmaking/:mode',
-        pageBuilder: (context, state) {
-          final modeStr = state.pathParameters['mode'] ?? 'casual';
-          final mode = MultiplayerMode.values.firstWhere(
-            (m) => m.name.toLowerCase() == modeStr.toLowerCase(),
-            orElse: () => MultiplayerMode.casual,
-          );
-          return GeoCTransitions.slideInFromBottom(
-            child: MatchmakingScreen(mode: mode),
-          );
-        },
-      ),
-      GoRoute(
-        path: '/leaderboard',
-        pageBuilder: (context, state) => GeoCTransitions.slideInFromRight(
-          child: const LeaderboardScreen(),
-        ),
-      ),
-      GoRoute(
-        path: '/multiplayer-game',
-        pageBuilder: (context, state) => GeoCTransitions.slideInFromBottom(
-          child: const MultiplayerGameScreen(),
-        ),
-      ),
-      GoRoute(
-        path: '/history',
-        pageBuilder: (context, state) => GeoCTransitions.slideInFromRight(
-          child: const MatchHistoryScreen(),
-        ),
-      ),
-      GoRoute(
-        path: '/friends',
-        pageBuilder: (context, state) => GeoCTransitions.slideInFromRight(
-          child: const FriendsScreen(),
-        ),
+      ShellRoute(
+        builder: (context, state, child) => InviteShell(child: child),
+        routes: [
+          GoRoute(
+            path: '/home',
+            pageBuilder: (context, state) => GeoCTransitions.enterFadeScale(
+              duration: const Duration(milliseconds: 450),
+              child: const HomeScreen(),
+            ),
+          ),
+          GoRoute(
+            path: '/game/:difficulty',
+            pageBuilder: (context, state) {
+              final difficultyStr = state.pathParameters['difficulty'] ?? 'medium';
+              final difficulty = Difficulty.values.firstWhere(
+                (d) => d.name.toLowerCase() == difficultyStr.toLowerCase(),
+                orElse: () => Difficulty.medium,
+              );
+              return GeoCTransitions.slideInFromRight(
+                child: GameScreen(difficulty: difficulty),
+              );
+            },
+          ),
+          GoRoute(
+            path: '/matchmaking/:mode',
+            pageBuilder: (context, state) {
+              final modeStr = state.pathParameters['mode'] ?? 'casual';
+              final mode = MultiplayerMode.values.firstWhere(
+                (m) => m.name.toLowerCase() == modeStr.toLowerCase(),
+                orElse: () => MultiplayerMode.casual,
+              );
+              return GeoCTransitions.slideInFromBottom(
+                child: MatchmakingScreen(mode: mode),
+              );
+            },
+          ),
+          GoRoute(
+            path: '/leaderboard',
+            pageBuilder: (context, state) => GeoCTransitions.slideInFromRight(
+              child: const LeaderboardScreen(),
+            ),
+          ),
+          GoRoute(
+            path: '/multiplayer-game',
+            pageBuilder: (context, state) => GeoCTransitions.slideInFromBottom(
+              child: const MultiplayerGameScreen(),
+            ),
+          ),
+          GoRoute(
+            path: '/history',
+            pageBuilder: (context, state) => GeoCTransitions.slideInFromRight(
+              child: const MatchHistoryScreen(),
+            ),
+          ),
+          GoRoute(
+            path: '/friends',
+            pageBuilder: (context, state) => GeoCTransitions.slideInFromRight(
+              child: const FriendsScreen(),
+            ),
+          ),
+        ],
       ),
     ],
     errorBuilder: (context, state) => Scaffold(

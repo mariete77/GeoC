@@ -32,7 +32,7 @@ class AnswerTimeline extends StatelessWidget {
     return Container(
       padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 28),
       child: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
+        crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
           // Header - Asymmetric layout
           _buildHeader(),
@@ -254,202 +254,135 @@ class AnswerTimeline extends StatelessWidget {
 
   Widget _buildTimeline() {
     return Column(
-      children: List.generate(
-        totalQuestions,
-        (index) => _buildQuestionRow(index),
+      crossAxisAlignment: CrossAxisAlignment.stretch,
+      children: [
+        // Horizontal scrollable answer pills
+        SizedBox(
+          height: 108,
+          child: ListView.separated(
+            scrollDirection: Axis.horizontal,
+            itemCount: totalQuestions,
+            separatorBuilder: (_, __) => const SizedBox(width: 10),
+            itemBuilder: (context, index) => _buildAnswerPill(index),
+          ),
+        ),
+
+        // Opponent vs player side-by-side for multiplayer
+        if (opponentAnswers != null && opponentName != null) ...[
+          const SizedBox(height: 20),
+          Row(
+            children: [
+              Expanded(child: _buildScoreChip(playerName, playerAnswers)),
+              const SizedBox(width: 12),
+              Expanded(child: _buildScoreChip(opponentName!, opponentAnswers!)),
+            ],
+          ),
+        ],
+      ],
+    );
+  }
+
+  Widget _buildScoreChip(String name, List<Answer> answers) {
+    final correct = answers.where((a) => a.isCorrect).length;
+    final total = answers.length;
+    return Container(
+      padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
+      decoration: BoxDecoration(
+        color: AppColors.surfaceContainerLow,
+        borderRadius: BorderRadius.circular(16),
+      ),
+      child: Row(
+        children: [
+          Expanded(
+            child: Text(
+              name,
+              style: GoogleFonts.workSans(
+                fontSize: 13,
+                fontWeight: FontWeight.w600,
+                color: AppColors.onSurface,
+              ),
+              maxLines: 1,
+              overflow: TextOverflow.ellipsis,
+            ),
+          ),
+          Text(
+            '$correct/$total',
+            style: GoogleFonts.plusJakartaSans(
+              fontSize: 20,
+              fontWeight: FontWeight.w800,
+              color: AppColors.primary,
+            ),
+          ),
+        ],
       ),
     );
   }
 
-  Widget _buildQuestionRow(int questionIndex) {
-    // Find answers for this question index
+  Widget _buildAnswerPill(int questionIndex) {
     final playerAnswer = playerAnswers.cast<Answer?>().firstWhere(
       (a) => a?.questionIndex == questionIndex,
       orElse: () => null,
     );
 
-    final opponentAnswer = opponentAnswers?.cast<Answer?>().firstWhere(
-      (a) => a?.questionIndex == questionIndex,
-      orElse: () => null,
-    );
+    final similarity = playerAnswer?.similarity;
+    final hasPartial = similarity != null && similarity < 1.0 && similarity >= 0.5;
+    final color = _getStatusColor(playerAnswer);
+    final bgColor = hasPartial
+        ? AppColors.tertiaryContainer.withValues(alpha: 0.2)
+        : color.withOpacity(0.12);
+    final icon = _getStatusIcon(playerAnswer, color);
+    final label = _getStatusLabel(playerAnswer);
 
-    // Determine status colors
-    final playerColor = _getStatusColor(playerAnswer);
-    final opponentColor = _getStatusColor(opponentAnswer);
-
-    return LayoutBuilder(
-      builder: (context, constraints) {
-        final isWide = constraints.maxWidth > 500;
-        
-        return Container(
-          margin: const EdgeInsets.only(bottom: 24),
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              // Question number - Display typography, left aligned
-              Text(
-                'PREGUNTA #${questionIndex + 1}',
-                style: GoogleFonts.workSans(
-                  fontSize: 10,
-                  fontWeight: FontWeight.w700,
-                  color: AppColors.onSurfaceVariant.withOpacity(0.5),
-                  letterSpacing: 2,
-                ),
-              ),
-              const SizedBox(height: 12),
-
-              if (isWide && opponentAnswers != null)
-                Row(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    // Player answer
-                    Expanded(
-                      child: _buildAnswerCard(
-                        answer: playerAnswer,
-                        color: playerColor,
-                        label: playerName,
-                        isPrimary: true,
-                      ),
-                    ),
-                    const SizedBox(width: 16),
-                    // Opponent answer
-                    Expanded(
-                      child: _buildAnswerCard(
-                        answer: opponentAnswer,
-                        color: opponentColor,
-                        label: opponentName ?? '',
-                        isPrimary: false,
-                      ),
-                    ),
-                  ],
-                )
-              else
-                Column(
-                  children: [
-                    _buildAnswerCard(
-                      answer: playerAnswer,
-                      color: playerColor,
-                      label: playerName,
-                      isPrimary: true,
-                    ),
-                    if (opponentAnswers != null) ...[
-                      const SizedBox(height: 12),
-                      _buildAnswerCard(
-                        answer: opponentAnswer,
-                        color: opponentColor,
-                        label: opponentName ?? '',
-                        isPrimary: false,
-                      ),
-                    ],
-                  ],
-                ),
-            ],
-          ),
-        );
-      },
-    );
-  }
-
-  Widget _buildAnswerCard({
-    required Answer? answer,
-    required Color color,
-    required String label,
-    required bool isPrimary,
-  }) {
-    final backgroundColor = color.withOpacity(0.08);
-    
     return Container(
-      padding: const EdgeInsets.all(16),
+      width: 90,
+      padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 10),
       decoration: BoxDecoration(
-        color: backgroundColor,
+        color: bgColor,
         borderRadius: BorderRadius.circular(16),
-        // No border - Tonal layering instead
       ),
       child: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
+        mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          // Status header
-          Row(
-            children: [
-              // Status indicator - Glassmorphism
-              Container(
-                width: 28,
-                height: 28,
-                decoration: BoxDecoration(
-                  color: color,
-                  borderRadius: BorderRadius.circular(8),
-                  boxShadow: [
-                    BoxShadow(
-                      color: color.withOpacity(0.3),
-                      blurRadius: 16,
-                      offset: const Offset(0, 4),
-                    ),
-                  ],
-                ),
-                child: Center(
-                  child: _getStatusIcon(answer, color),
-                ),
-              ),
-
-              const SizedBox(width: 12),
-
-              // Status label - Display typography
-              Expanded(
-                child: Text(
-                  _getStatusLabel(answer),
-                  style: GoogleFonts.plusJakartaSans(
-                    fontSize: 15,
-                    fontWeight: FontWeight.w700,
-                    color: color,
-                    height: 1.2,
-                  ),
-                ),
-              ),
-            ],
+          // Question number
+          Text(
+            '#${questionIndex + 1}',
+            style: GoogleFonts.plusJakartaSans(
+              fontSize: 11,
+              fontWeight: FontWeight.w700,
+              color: color,
+            ),
           ),
-
-          // Answer details - Body typography
-          if (answer != null) ...[
-            const SizedBox(height: 8),
-            if (answer.selectedAnswer.isNotEmpty) ...[
-              Text(
-                answer.selectedAnswer,
-                style: GoogleFonts.workSans(
-                  fontSize: 13,
-                  color: AppColors.onSurface,
-                  fontWeight: FontWeight.w500,
-                  height: 1.4,
-                ),
-                maxLines: 2,
-                overflow: TextOverflow.ellipsis,
+          const SizedBox(height: 6),
+          // Icon
+          SizedBox(width: 22, height: 22, child: icon),
+          const SizedBox(height: 4),
+          // Accuracy or time
+          if (hasPartial)
+            Text(
+              '${(similarity! * 100).toStringAsFixed(0)}%',
+              style: GoogleFonts.plusJakartaSans(
+                fontSize: 11,
+                fontWeight: FontWeight.w700,
+                color: AppColors.tertiary,
               ),
-            ],
-            
-            // Time taken - Subtle
-            if (answer.timeMs > 0 && answer.timeMs.isFinite) ...[
-              const SizedBox(height: 4),
-              Text(
-                '${(answer.timeMs / 1000).toStringAsFixed(1)}s',
-                style: GoogleFonts.workSans(
-                  fontSize: 11,
-                  color: AppColors.onSurfaceVariant,
-                  fontWeight: FontWeight.w400,
-                ),
+            )
+          else if (playerAnswer != null && playerAnswer.timeMs > 0 && playerAnswer.timeMs.isFinite)
+            Text(
+              '${(playerAnswer.timeMs / 1000).toStringAsFixed(1)}s',
+              style: GoogleFonts.workSans(
+                fontSize: 10,
+                color: AppColors.onSurfaceVariant,
               ),
-            ],
-          ] else
-            // Not answered - Subtle, italic
-            Padding(
-              padding: const EdgeInsets.only(top: 8),
-              child: Text(
-                'Sin respuesta',
-                style: GoogleFonts.workSans(
-                  fontSize: 13,
-                  color: AppColors.onSurfaceVariant.withOpacity(0.7),
-                  fontStyle: FontStyle.italic,
-                  fontWeight: FontWeight.w400,
-                ),
+            )
+          else
+            Text(
+              label,
+              style: GoogleFonts.workSans(
+                fontSize: 10,
+                color: AppColors.onSurfaceVariant,
               ),
+              maxLines: 1,
+              overflow: TextOverflow.ellipsis,
             ),
         ],
       ),
@@ -457,54 +390,32 @@ class AnswerTimeline extends StatelessWidget {
   }
 
   Color _getStatusColor(Answer? answer) {
-    if (answer == null) {
-      return AppColors.tertiary; // Gray for not answered
-    }
-
-    if (answer.timeMs == 0) {
-      // Assuming timeMs == 0 means timeout
-      return AppColors.tertiary;
-    }
-
+    if (answer == null) return AppColors.tertiary;
+    if (answer.timeMs == 0) return AppColors.tertiary;
+    final sim = answer.similarity;
+    if (sim != null && sim >= 0.5 && sim < 0.85) return AppColors.tertiary;
     return answer.isCorrect ? AppColors.primary : AppColors.error;
   }
 
   String _getStatusLabel(Answer? answer) {
-    if (answer == null) {
-      return '—';
-    }
-
-    if (answer.timeMs == 0) {
-      return '⏱ Tiempo agotado';
-    }
-
-    return answer.isCorrect ? '✓ Correcta' : '✗ Incorrecta';
+    if (answer == null || answer.timeMs == 0) return '—';
+    final sim = answer.similarity;
+    if (sim != null && sim >= 0.5 && sim < 0.85) return '~';
+    return answer.isCorrect ? '✓' : '✗';
   }
 
   Widget _getStatusIcon(Answer? answer, Color color) {
-    if (answer == null) {
-      return Icon(
-        Icons.circle_outlined,
-        color: color,
-        size: 16,
-        weight: 3, // Thin weight
-      );
+    if (answer == null || answer.timeMs == 0) {
+      return Icon(Icons.timer_outlined, color: color, size: 16);
     }
-
-    if (answer.timeMs == 0) {
-      return Icon(
-        Icons.timer_outlined,
-        color: color,
-        size: 16,
-        weight: 3, // Thin weight
-      );
+    final sim = answer.similarity;
+    if (sim != null && sim >= 0.5 && sim < 0.85) {
+      return Icon(Icons.touch_app, color: AppColors.tertiary, size: 20);
     }
-
     return Icon(
-      answer.isCorrect ? Icons.check : Icons.close,
+      answer.isCorrect ? Icons.check_circle : Icons.cancel,
       color: color,
-      size: 18,
-      weight: 3, // Thin weight
+      size: 22,
     );
   }
 }

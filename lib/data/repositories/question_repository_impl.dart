@@ -216,11 +216,10 @@ class QuestionRepositoryImpl implements QuestionRepository {
 
   /// Enrich a question's options to have at least 4 choices.
   /// For questions with 0-3 options, adds random distractors from other questions.
+  /// Filters distractors by type to avoid mixing currencies, languages, etc.
   Question _enrichOptions(Question question, List<Question> allQuestions) {
-    // Skip if already has enough options
     if (question.options.length >= 4) return question;
 
-    // Types that should always be multiple choice (comparison questions)
     final comparisonTypes = {
       QuestionType.population,
       QuestionType.area,
@@ -228,44 +227,63 @@ class QuestionRepositoryImpl implements QuestionRepository {
       QuestionType.region,
     };
 
-    // If it's not a comparison type and has no options, leave as type-answer
     if (question.options.isEmpty && !comparisonTypes.contains(question.type)) {
       return question;
     }
 
-    // Collect all possible distractors from other questions' correct answers
-    final allAnswers = allQuestions
+    final enrichedOptions = List<String>.from(question.options);
+
+    // Collect answers from the SAME question type only for type-specific enrichment
+    final sameTypeAnswers = allQuestions
+        .where((q) => q.type == question.type)
         .map((q) => q.correctAnswer)
         .where((a) => a.isNotEmpty && a != question.correctAnswer)
+        .where((a) => !enrichedOptions.contains(a))
         .toSet()
         .toList();
 
-    // Start with existing options
-    final enrichedOptions = List<String>.from(question.options);
-
-    // Remove correct answer from distractor pool if present
-    allAnswers.removeWhere((a) => enrichedOptions.contains(a));
-
-    // Shuffle distractors for randomness
-    allAnswers.shuffle(_random);
-
-    // Add distractors until we have 4 options
-    for (final distractor in allAnswers) {
+    sameTypeAnswers.shuffle(_random);
+    for (final distractor in sameTypeAnswers) {
       if (enrichedOptions.length >= 4) break;
-      if (!enrichedOptions.contains(distractor)) {
+      enrichedOptions.add(distractor);
+    }
+
+    // Fallback: if still not enough, use any answer but prefer countries for geo types
+    if (enrichedOptions.length < 4) {
+      final geoTypes = {QuestionType.population, QuestionType.area, QuestionType.flag, QuestionType.silhouette};
+      final isGeoType = geoTypes.contains(question.type);
+
+      final fallbackAnswers = allQuestions
+          .map((q) => q.correctAnswer)
+          .where((a) => a.isNotEmpty && a != question.correctAnswer)
+          .where((a) => !enrichedOptions.contains(a))
+          .toSet()
+          .toList();
+
+      fallbackAnswers.shuffle(_random);
+
+      if (isGeoType) {
+        final countryAnswers = allQuestions
+            .where((q) => geoTypes.contains(q.type))
+            .map((q) => q.correctAnswer)
+            .where((a) => a.isNotEmpty && a != question.correctAnswer)
+            .where((a) => !enrichedOptions.contains(a))
+            .toSet()
+            .toList();
+        countryAnswers.shuffle(_random);
+        fallbackAnswers.insertAll(0, countryAnswers);
+      }
+
+      for (final distractor in fallbackAnswers) {
+        if (enrichedOptions.length >= 4) break;
         enrichedOptions.add(distractor);
       }
     }
 
-    // If we still don't have 4, that's OK — return what we have
     if (enrichedOptions.length < 2) return question;
-
-    // Ensure correct answer is in the options
     if (!enrichedOptions.contains(question.correctAnswer)) {
       enrichedOptions.add(question.correctAnswer);
     }
-
-    // Shuffle final options
     enrichedOptions.shuffle(_random);
 
     return Question(

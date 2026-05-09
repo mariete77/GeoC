@@ -3,6 +3,31 @@
 /// Measures how many single-character edits (insert, delete, replace)
 /// are needed to transform one string into another.
 
+const _accentMap = {
+  'à': 'a', 'á': 'a', 'â': 'a', 'ã': 'a', 'ä': 'a', 'å': 'a',
+  'è': 'e', 'é': 'e', 'ê': 'e', 'ë': 'e',
+  'ì': 'i', 'í': 'i', 'î': 'i', 'ï': 'i',
+  'ò': 'o', 'ó': 'o', 'ô': 'o', 'õ': 'o', 'ö': 'o',
+  'ù': 'u', 'ú': 'u', 'û': 'u', 'ü': 'u',
+  'ñ': 'n', 'ç': 'c', 'ý': 'y', 'ÿ': 'y',
+  'À': 'A', 'Á': 'A', 'Â': 'A', 'Ã': 'A', 'Ä': 'A', 'Å': 'A',
+  'È': 'E', 'É': 'E', 'Ê': 'E', 'Ë': 'E',
+  'Ì': 'I', 'Í': 'I', 'Î': 'I', 'Ï': 'I',
+  'Ò': 'O', 'Ó': 'O', 'Ô': 'O', 'Õ': 'O', 'Ö': 'O',
+  'Ù': 'U', 'Ú': 'U', 'Û': 'U', 'Ü': 'U',
+  'Ñ': 'N', 'Ç': 'C', 'Ý': 'Y',
+};
+
+/// Remove accents/diacritics from a string.
+String removeAccents(String s) {
+  return s.split('').map((c) => _accentMap[c] ?? c).join();
+}
+
+/// Normalize an answer for comparison: lowercase, trim, remove accents.
+String normalizeAnswer(String s) {
+  return removeAccents(s.toLowerCase().trim());
+}
+
 /// Calculates the Levenshtein distance between two strings.
 int levenshteinDistance(String s1, String s2) {
   if (s1 == s2) return 0;
@@ -33,9 +58,10 @@ int levenshteinDistance(String s1, String s2) {
 /// Returns a similarity score between 0.0 and 1.0.
 ///
 /// 1.0 = perfect match, 0.0 = completely different.
+/// Accents and case are normalized before comparison.
 double answerSimilarity(String userAnswer, String correctAnswer) {
-  final s1 = userAnswer.toLowerCase().trim();
-  final s2 = correctAnswer.toLowerCase().trim();
+  final s1 = normalizeAnswer(userAnswer);
+  final s2 = normalizeAnswer(correctAnswer);
 
   if (s1.isEmpty) return 0.0;
   if (s1 == s2) return 1.0;

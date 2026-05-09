@@ -23,45 +23,47 @@ class GhostRunRepositoryImpl implements GhostRunRepository {
     required int playerElo,
   }) async {
     try {
-      // Search for ghost runs in similar ELO range
       final minElo = playerElo - GameConstants.ghostRunEloRange;
       final maxElo = playerElo + GameConstants.ghostRunEloRange;
 
+      // Fetch by ELO range only — filter out own runs in Dart to avoid
+      // compound != index requirement which needs manual Firestore index setup.
       final snapshot = await _firestore
           .collection(FirebaseConstants.ghostRuns)
           .where(FirebaseConstants.elo, isGreaterThanOrEqualTo: minElo)
           .where(FirebaseConstants.elo, isLessThanOrEqualTo: maxElo)
-          .where(FirebaseConstants.ghostUserId, isNotEqualTo: userId)
           .orderBy(FirebaseConstants.elo)
           .orderBy(FirebaseConstants.createdAt, descending: true)
-          .limit(10)
+          .limit(20)
           .get();
 
-      if (snapshot.docs.isEmpty) {
-        // If no ghost runs in range, search for any
-        final fallbackSnapshot = await _firestore
-            .collection(FirebaseConstants.ghostRuns)
-            .where(FirebaseConstants.ghostUserId, isNotEqualTo: userId)
-            .orderBy(FirebaseConstants.ghostUserId)
-            .orderBy(FirebaseConstants.createdAt, descending: true)
-            .limit(10)
-            .get();
+      final inRange = snapshot.docs
+          .where((doc) => (doc.data()! as Map<String, dynamic>)['userId'] != userId)
+          .toList();
 
-        if (fallbackSnapshot.docs.isEmpty) {
-          return const Right(null);
-        }
-
-        final randomIndex = _random.nextInt(fallbackSnapshot.docs.length);
+      if (inRange.isNotEmpty) {
         final ghostRun =
-            GhostRunModel.fromFirestore(fallbackSnapshot.docs[randomIndex])
+            GhostRunModel.fromFirestore(inRange[_random.nextInt(inRange.length)])
                 .toDomain();
         return Right(ghostRun);
       }
 
-      // Select random ghost run from range
-      final randomIndex = _random.nextInt(snapshot.docs.length);
+      // Fallback: any ghost run from any ELO
+      final fallbackSnapshot = await _firestore
+          .collection(FirebaseConstants.ghostRuns)
+          .orderBy(FirebaseConstants.createdAt, descending: true)
+          .limit(20)
+          .get();
+
+      final fallback = fallbackSnapshot.docs
+          .where((doc) => (doc.data()! as Map<String, dynamic>)['userId'] != userId)
+          .toList();
+
+      if (fallback.isEmpty) return const Right(null);
+
       final ghostRun =
-          GhostRunModel.fromFirestore(snapshot.docs[randomIndex]).toDomain();
+          GhostRunModel.fromFirestore(fallback[_random.nextInt(fallback.length)])
+              .toDomain();
       return Right(ghostRun);
     } on ServerException catch (e) {
       return Left(ServerFailure(e.message));

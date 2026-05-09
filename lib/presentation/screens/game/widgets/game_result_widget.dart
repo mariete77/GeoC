@@ -190,8 +190,8 @@ class _GameResultWidgetState extends State<GameResultWidget>
             : AppColors.error;
     final bgText = widget.isVictory ? 'VICTORIA' : 'DERROTA';
 
-    return SizedBox(
-      height: 100,
+    return ConstrainedBox(
+      constraints: BoxConstraints(minHeight: 100),
       child: Stack(
         clipBehavior: Clip.none,
         children: [
@@ -253,6 +253,8 @@ class _GameResultWidgetState extends State<GameResultWidget>
                   if (widget.opponentName != null)
                     Text(
                       'vs. ${widget.opponentName}',
+                      maxLines: 1,
+                      overflow: TextOverflow.ellipsis,
                       style: GoogleFonts.workSans(
                         fontSize: 13,
                         color: AppColors.inversePrimary,
@@ -272,226 +274,204 @@ class _GameResultWidgetState extends State<GameResultWidget>
   // ═══════════════════════════════════════════════════════════
 
   Widget _buildBentoRow(double accuracy) {
-    return IntrinsicHeight(
-      child: Row(
-        crossAxisAlignment: CrossAxisAlignment.stretch,
-        children: [
-          // ── Left: Key Stats Card ─────────────────────
-          Expanded(
-            flex: 5,
-            child: _buildAmbientCard(
-              color: AppColors.surfaceContainerLowest,
-              child: Stack(
+    return Column(
+      children: [
+        // ── Top: ELO Card (full width) ────────────────
+        if (widget.opponentName != null) ...[
+          _buildAmbientCard(
+            color: AppColors.surfaceContainerLow,
+            child: Padding(
+              padding: const EdgeInsets.all(24),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.stretch,
                 children: [
-                  // Decorative corner
-                  Positioned(
-                    top: 0,
-                    right: 0,
-                    child: Container(
-                      width: 80,
-                      height: 80,
-                      decoration: BoxDecoration(
-                        color: AppColors.highlight.withOpacity(0.1),
-                        borderRadius: const BorderRadius.only(
-                          bottomLeft: Radius.circular(80),
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+                      Expanded(
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            Text(
+                              'Progresión ELO',
+                              style: GoogleFonts.plusJakartaSans(
+                                fontSize: 18,
+                                fontWeight: FontWeight.w700,
+                                color: AppColors.onSurface,
+                              ),
+                            ),
+                            const SizedBox(height: 2),
+                            Text(
+                              'Rango: ${_getRank()}',
+                              style: GoogleFonts.workSans(
+                                fontSize: 13,
+                                color: AppColors.onSurfaceVariant,
+                              ),
+                            ),
+                          ],
                         ),
                       ),
-                    ),
-                  ),
-                  // Content
-                  Padding(
-                    padding: const EdgeInsets.all(24),
-                    child: Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
-                        Text(
-                          'Resumen del Duelo',
-                          style: GoogleFonts.plusJakartaSans(
-                            fontSize: 18,
-                            fontWeight: FontWeight.w700,
-                            color: AppColors.onSurface,
+                      if (widget.eloChange != null)
+                        Container(
+                          padding: const EdgeInsets.symmetric(
+                            horizontal: 12,
+                            vertical: 6,
                           ),
-                        ),
-                        const SizedBox(height: 20),
-
-                        // Correct answers
-                        _buildStatBlock(
-                          label: 'Preguntas Correctas',
-                          value: RichText(
-                            text: TextSpan(
-                              children: [
-                                TextSpan(
-                                  text: '${widget.correctAnswers}',
-                                  style: GoogleFonts.plusJakartaSans(
-                                    fontSize: 28,
-                                    fontWeight: FontWeight.w900,
-                                    color: AppColors.primary,
-                                  ),
-                                ),
-                                TextSpan(
-                                  text: '/${widget.totalQuestions}',
-                                  style: GoogleFonts.plusJakartaSans(
-                                    fontSize: 16,
-                                    fontWeight: FontWeight.w500,
-                                    color: AppColors.outline,
-                                  ),
-                                ),
-                              ],
-                            ),
+                          decoration: BoxDecoration(
+                            color: AppColors.secondaryContainer,
+                            borderRadius: BorderRadius.circular(9999),
                           ),
-                        ),
-                        const SizedBox(height: 16),
-
-                        // Points
-                        _buildStatBlock(
-                          label: 'Puntos Obtenidos',
-                          value: Text(
-                            '+${widget.score}',
+                          child: Text(
+                            '${widget.eloChange! > 0 ? "+" : ""}${widget.eloChange} ELO',
                             style: GoogleFonts.plusJakartaSans(
-                              fontSize: 32,
-                              fontWeight: FontWeight.w900,
-                              color: AppColors.tertiaryContainer,
+                              fontWeight: FontWeight.w700,
+                              color: AppColors.onSecondaryContainer,
+                              fontSize: 13,
                             ),
                           ),
                         ),
-                        const SizedBox(height: 16),
-
-                        // Accuracy & Time
-                        LayoutBuilder(
-                          builder: (context, constraints) {
-                            final isWide = constraints.maxWidth > 300;
-                            
-                            // Safe time calculation with NaN/Infinity checks
-                            final avgTimeSeconds = widget.averageTime.isFinite 
-                                ? (widget.averageTime / 1000).toStringAsFixed(1) 
-                                : '0.0';
-                            
-                            if (isWide) {
-                              return Row(
-                                children: [
-                                  _buildMiniStat(
-                                    icon: Icons.percent,
-                                    value: '${accuracy.toStringAsFixed(0)}%',
-                                    label: 'Precisión',
-                                    color: AppColors.secondary,
-                                  ),
-                                  const SizedBox(width: 12),
-                                  _buildMiniStat(
-                                    icon: Icons.timer_outlined,
-                                    value: '${avgTimeSeconds}s',
-                                    label: 'Tiempo medio',
-                                    color: AppColors.tertiary,
-                                  ),
-                                ],
-                              );
-                            }
-                            
-                            return Column(
-                              children: [
-                                _buildMiniStat(
-                                  icon: Icons.percent,
-                                  value: '${accuracy.toStringAsFixed(0)}%',
-                                  label: 'Precisión',
-                                  color: AppColors.secondary,
-                                  fullWidth: true,
-                                ),
-                                const SizedBox(height: 12),
-                                _buildMiniStat(
-                                  icon: Icons.timer_outlined,
-                                  value: '${avgTimeSeconds}s',
-                                  label: 'Tiempo medio',
-                                  color: AppColors.tertiary,
-                                  fullWidth: true,
-                                ),
-                              ],
-                            );
-                          },
-                        ),
-                      ],
+                    ],
+                  ),
+                  const SizedBox(height: 24),
+                  SizedBox(
+                    height: 120,
+                    child: LayoutBuilder(
+                      builder: (context, constraints) {
+                        return _buildEloGraph(constraints);
+                      },
                     ),
                   ),
                 ],
               ),
             ),
           ),
-          const SizedBox(width: 12),
+          const SizedBox(height: 16),
+        ],
 
-          // ── Right: ELO Card ──────────────────────────
-          Expanded(
-            flex: 7,
-            child: _buildAmbientCard(
-              color: AppColors.surfaceContainerLow,
-              child: Padding(
+        // ── Bottom: Resumen del Duelo (full width) ────
+        _buildAmbientCard(
+          color: AppColors.surfaceContainerLowest,
+          child: Stack(
+            children: [
+              Positioned(
+                top: 0,
+                right: 0,
+                child: Container(
+                  width: 80,
+                  height: 80,
+                  decoration: BoxDecoration(
+                    color: AppColors.highlight.withOpacity(0.1),
+                    borderRadius: const BorderRadius.only(
+                      bottomLeft: Radius.circular(80),
+                    ),
+                  ),
+                ),
+              ),
+              Padding(
                 padding: const EdgeInsets.all(24),
                 child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
+                  crossAxisAlignment: CrossAxisAlignment.stretch,
                   children: [
-                    // Header row
-                    Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                      children: [
-                        Expanded(
-                          child: Column(
-                            crossAxisAlignment: CrossAxisAlignment.start,
-                            children: [
-                              Text(
-                                'Progresión ELO',
-                                style: GoogleFonts.plusJakartaSans(
-                                  fontSize: 18,
-                                  fontWeight: FontWeight.w700,
-                                  color: AppColors.onSurface,
-                                ),
+                    Text(
+                      'Resumen del Duelo',
+                      style: GoogleFonts.plusJakartaSans(
+                        fontSize: 18,
+                        fontWeight: FontWeight.w700,
+                        color: AppColors.onSurface,
+                      ),
+                    ),
+                    const SizedBox(height: 20),
+                    _buildStatBlock(
+                      label: 'Preguntas Correctas',
+                      value: RichText(
+                        text: TextSpan(
+                          children: [
+                            TextSpan(
+                              text: '${widget.correctAnswers}',
+                              style: GoogleFonts.plusJakartaSans(
+                                fontSize: 28,
+                                fontWeight: FontWeight.w900,
+                                color: AppColors.primary,
                               ),
-                              const SizedBox(height: 2),
-                              Text(
-                                'Rango: ${_getRank()}',
-                                style: GoogleFonts.workSans(
-                                  fontSize: 13,
-                                  color: AppColors.onSurfaceVariant,
-                                ),
+                            ),
+                            TextSpan(
+                              text: '/${widget.totalQuestions}',
+                              style: GoogleFonts.plusJakartaSans(
+                                fontSize: 16,
+                                fontWeight: FontWeight.w500,
+                                color: AppColors.outline,
+                              ),
+                            ),
+                          ],
+                        ),
+                      ),
+                    ),
+                    const SizedBox(height: 16),
+                    _buildStatBlock(
+                      label: 'Puntos Obtenidos',
+                      value: Text(
+                        '+${widget.score}',
+                        style: GoogleFonts.plusJakartaSans(
+                          fontSize: 32,
+                          fontWeight: FontWeight.w900,
+                          color: AppColors.tertiaryContainer,
+                        ),
+                      ),
+                    ),
+                    const SizedBox(height: 16),
+                    LayoutBuilder(
+                      builder: (context, constraints) {
+                        final isWide = constraints.maxWidth > 300;
+                        final avgTimeSeconds = widget.averageTime.isFinite
+                            ? (widget.averageTime / 1000).toStringAsFixed(1)
+                            : '0.0';
+                        if (isWide) {
+                          return Row(
+                            children: [
+                              _buildMiniStat(
+                                icon: Icons.percent,
+                                value: '${accuracy.toStringAsFixed(0)}%',
+                                label: 'Precisión',
+                                color: AppColors.secondary,
+                              ),
+                              const SizedBox(width: 12),
+                              _buildMiniStat(
+                                icon: Icons.timer_outlined,
+                                value: '${avgTimeSeconds}s',
+                                label: 'Tiempo medio',
+                                color: AppColors.tertiary,
                               ),
                             ],
-                          ),
-                        ),
-                        if (widget.eloChange != null)
-                          Container(
-                            padding: const EdgeInsets.symmetric(
-                              horizontal: 12,
-                              vertical: 6,
+                          );
+                        }
+                        return Column(
+                          children: [
+                            _buildMiniStat(
+                              icon: Icons.percent,
+                              value: '${accuracy.toStringAsFixed(0)}%',
+                              label: 'Precisión',
+                              color: AppColors.secondary,
+                              fullWidth: true,
                             ),
-                            decoration: BoxDecoration(
-                              color: AppColors.secondaryContainer,
-                              borderRadius: BorderRadius.circular(9999),
+                            const SizedBox(height: 12),
+                            _buildMiniStat(
+                              icon: Icons.timer_outlined,
+                              value: '${avgTimeSeconds}s',
+                              label: 'Tiempo medio',
+                              color: AppColors.tertiary,
+                              fullWidth: true,
                             ),
-                            child: Text(
-                              '${widget.eloChange! > 0 ? "+" : ""}${widget.eloChange} ELO',
-                              style: GoogleFonts.plusJakartaSans(
-                                fontWeight: FontWeight.w700,
-                                color: AppColors.onSecondaryContainer,
-                                fontSize: 13,
-                              ),
-                            ),
-                          ),
-                      ],
-                    ),
-                    const SizedBox(height: 24),
-
-                    // ELO Graph (fixed height to avoid IntrinsicHeight + Expanded conflict)
-                    SizedBox(
-                      height: 120,
-                      child: LayoutBuilder(
-                        builder: (context, constraints) {
-                          return _buildEloGraph(constraints);
-                        },
-                      ),
+                          ],
+                        );
+                      },
                     ),
                   ],
                 ),
               ),
-            ),
+            ],
           ),
-        ],
-      ),
+        ),
+      ],
     );
   }
 
@@ -507,68 +487,29 @@ class _GameResultWidgetState extends State<GameResultWidget>
   // ═══════════════════════════════════════════════════════════
 
   Widget _buildDetailCards() {
-    return IntrinsicHeight(
-      child: Row(
-        children: [
+    return Row(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: [
           // Best Answer Card
           Expanded(
             child: Container(
-              height: 180,
               decoration: BoxDecoration(
                 color: AppColors.surfaceContainerHighest,
                 borderRadius: BorderRadius.circular(16),
               ),
-              child: Stack(
-                children: [
-                  // Gradient overlay
-                  Container(
-                    decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(16),
-                      gradient: LinearGradient(
-                        begin: Alignment.topCenter,
-                        end: Alignment.bottomCenter,
-                        colors: [
-                          Colors.transparent,
-                          AppColors.surfaceContainerHighest,
-                        ],
-                      ),
-                    ),
-                  ),
-                  // Content
-                  Padding(
-                    padding: const EdgeInsets.all(16),
-                    child: Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      mainAxisAlignment: MainAxisAlignment.end,
-                      children: [
-                        Text(
-                          'MEJOR ACIERTO',
-                          style: GoogleFonts.workSans(
-                            fontSize: 10,
-                            fontWeight: FontWeight.w600,
-                            color: AppColors.onSurfaceVariant,
-                            letterSpacing: 2,
-                          ),
-                        ),
-                        const SizedBox(height: 4),
-                        Icon(
-                          Icons.location_on,
-                          color: AppColors.primary,
-                          size: 32,
-                        ),
-                        const SizedBox(height: 4),
-                        Text(
-                          '¡Sigue jugando!',
-                          style: GoogleFonts.plusJakartaSans(
-                            fontWeight: FontWeight.w700,
-                            fontSize: 16,
-                            color: AppColors.onSurface,
-                          ),
-                        ),
-                      ],
-                    ),
-                  ),
-                ],
+              child: Padding(
+                padding: const EdgeInsets.all(14),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  mainAxisAlignment: MainAxisAlignment.end,
+                  children: [
+                    Text('MEJOR ACIERTO', style: GoogleFonts.workSans(fontSize: 10, fontWeight: FontWeight.w600, color: AppColors.onSurfaceVariant, letterSpacing: 2)),
+                    const SizedBox(height: 4),
+                    Icon(Icons.location_on, color: AppColors.primary, size: 28),
+                    const SizedBox(height: 2),
+                    Text('¡Sigue jugando!', style: GoogleFonts.plusJakartaSans(fontWeight: FontWeight.w700, fontSize: 14, color: AppColors.onSurface)),
+                  ],
+                ),
               ),
             ),
           ),
@@ -579,56 +520,27 @@ class _GameResultWidgetState extends State<GameResultWidget>
             child: _buildAmbientCard(
               color: AppColors.surfaceContainerLowest,
               child: Padding(
-                padding: const EdgeInsets.all(16),
+                padding: const EdgeInsets.all(14),
                 child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  crossAxisAlignment: CrossAxisAlignment.stretch,
+                  mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                    Text(
-                      'OPONENTE',
-                      style: GoogleFonts.workSans(
-                        fontSize: 10,
-                        fontWeight: FontWeight.w600,
-                        color: AppColors.onSurfaceVariant,
-                        letterSpacing: 2,
-                      ),
-                    ),
+                    Text('OPONENTE', style: GoogleFonts.workSans(fontSize: 10, fontWeight: FontWeight.w600, color: AppColors.onSurfaceVariant, letterSpacing: 2)),
+                    const SizedBox(height: 8),
                     Row(
                       children: [
                         Container(
-                          width: 44,
-                          height: 44,
-                          decoration: BoxDecoration(
-                            color: AppColors.surfaceVariant,
-                            shape: BoxShape.circle,
-                          ),
-                          child: Icon(
-                            Icons.person,
-                            color: AppColors.onSurfaceVariant,
-                          ),
+                          width: 36, height: 36,
+                          decoration: BoxDecoration(color: AppColors.surfaceVariant, shape: BoxShape.circle),
+                          child: Icon(Icons.person, color: AppColors.onSurfaceVariant, size: 20),
                         ),
-                        const SizedBox(width: 12),
+                        const SizedBox(width: 10),
                         Expanded(
                           child: Column(
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
-                              Text(
-                                widget.opponentName ?? 'Oponente',
-                                style: GoogleFonts.plusJakartaSans(
-                                  fontWeight: FontWeight.w700,
-                                  fontSize: 16,
-                                  color: AppColors.onSurface,
-                                ),
-                                maxLines: 1,
-                                overflow: TextOverflow.ellipsis,
-                              ),
-                              Text(
-                                'Duelo finalizado',
-                                style: GoogleFonts.workSans(
-                                  fontSize: 12,
-                                  color: AppColors.onSurfaceVariant,
-                                ),
-                              ),
+                              Text(widget.opponentName ?? 'Oponente', style: GoogleFonts.plusJakartaSans(fontWeight: FontWeight.w700, fontSize: 14, color: AppColors.onSurface), maxLines: 1, overflow: TextOverflow.ellipsis),
+                              Text('Duelo finalizado', style: GoogleFonts.workSans(fontSize: 11, color: AppColors.onSurfaceVariant)),
                             ],
                           ),
                         ),
@@ -640,7 +552,6 @@ class _GameResultWidgetState extends State<GameResultWidget>
             ),
           ),
         ],
-      ),
     );
   }
 
@@ -683,7 +594,6 @@ class _GameResultWidgetState extends State<GameResultWidget>
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.stretch,
               children: [
-                // Header
                 Text(
                   'COMPARATIVA',
                   style: GoogleFonts.workSans(
@@ -694,78 +604,38 @@ class _GameResultWidgetState extends State<GameResultWidget>
                   ),
                 ),
                 const SizedBox(height: 16),
-
-                // Player vs Opponent labels
                 Row(
                   children: [
-                    Text(
-                      'Tú',
-                      style: GoogleFonts.plusJakartaSans(
-                        fontWeight: FontWeight.w700,
-                        fontSize: 13,
-                        color: AppColors.onSurface,
-                      ),
-                    ),
+                    Flexible(child: Text('Tú', style: GoogleFonts.plusJakartaSans(fontWeight: FontWeight.w700, fontSize: 13, color: AppColors.onSurface))),
                     const Spacer(),
-                    Text(
-                      widget.opponentName ?? 'Oponente',
-                      style: GoogleFonts.plusJakartaSans(
-                        fontWeight: FontWeight.w700,
-                        fontSize: 13,
-                        color: AppColors.onSurface,
-                      ),
-                    ),
+                    Flexible(child: Text(widget.opponentName ?? 'Oponente', style: GoogleFonts.plusJakartaSans(fontWeight: FontWeight.w700, fontSize: 13, color: AppColors.onSurface), overflow: TextOverflow.ellipsis)),
                   ],
                 ),
                 const SizedBox(height: 8),
-
-                // Player bar
-                _buildComparisonBar(
-                  label: '${widget.score} pts',
-                  fraction: (playerScore / maxScore) * _barAnimation.value,
-                  color: AppColors.primary,
-                  isWinner: widget.score >= (widget.opponentScore ?? 0),
-                ),
+                _buildComparisonBar(label: '${widget.score} pts', fraction: (playerScore / maxScore) * _barAnimation.value, color: AppColors.primary, isWinner: widget.score >= (widget.opponentScore ?? 0)),
                 const SizedBox(height: 8),
-
-                // Opponent bar
-                _buildComparisonBar(
-                  label: '${widget.opponentScore ?? 0} pts',
-                  fraction: (oppScore / maxScore) * _barAnimation.value,
-                  color: AppColors.tertiary,
-                  isWinner: (widget.opponentScore ?? 0) > widget.score,
-                ),
+                _buildComparisonBar(label: '${widget.opponentScore ?? 0} pts', fraction: (oppScore / maxScore) * _barAnimation.value, color: AppColors.tertiary, isWinner: (widget.opponentScore ?? 0) > widget.score),
                 const SizedBox(height: 20),
-
-                // Stats row
-                Row(
-                  children: [
-                    _buildComparisonStat(
-                      label: 'Aciertos',
-                      playerValue: '${widget.correctAnswers}/${widget.totalQuestions}',
-                      opponentValue: '${widget.opponentCorrectAnswers ?? 0}/${widget.totalQuestions}',
-                    ),
+                LayoutBuilder(builder: (context, constraints) {
+                  if (constraints.maxWidth < 360) {
+                    return Column(children: [
+                      _buildComparisonStat(label: 'Aciertos', playerValue: '${widget.correctAnswers}/${widget.totalQuestions}', opponentValue: '${widget.opponentCorrectAnswers ?? 0}/${widget.totalQuestions}'),
+                      const SizedBox(height: 8),
+                      Row(children: [
+                        Expanded(child: _buildComparisonStat(label: 'Precisión', playerValue: '${playerAccuracy.toStringAsFixed(0)}%', opponentValue: '${oppAccuracy.toStringAsFixed(0)}%')),
+                        const SizedBox(width: 8),
+                        Expanded(child: _buildComparisonStat(label: 'Tiempo', playerValue: playerTime > 1000 ? '${(playerTime / 1000).toStringAsFixed(1)}s' : '${playerTime.toStringAsFixed(0)}ms', opponentValue: widget.opponentAverageTime != null ? (oppTime > 1000 ? '${(oppTime / 1000).toStringAsFixed(1)}s' : '${oppTime.toStringAsFixed(0)}ms') : '-')),
+                      ]),
+                    ]);
+                  }
+                  return Row(children: [
+                    Expanded(child: _buildComparisonStat(label: 'Aciertos', playerValue: '${widget.correctAnswers}/${widget.totalQuestions}', opponentValue: '${widget.opponentCorrectAnswers ?? 0}/${widget.totalQuestions}')),
                     const SizedBox(width: 8),
-                    _buildComparisonStat(
-                      label: 'Precisión',
-                      playerValue: '${playerAccuracy.toStringAsFixed(0)}%',
-                      opponentValue: '${oppAccuracy.toStringAsFixed(0)}%',
-                    ),
+                    Expanded(child: _buildComparisonStat(label: 'Precisión', playerValue: '${playerAccuracy.toStringAsFixed(0)}%', opponentValue: '${oppAccuracy.toStringAsFixed(0)}%')),
                     const SizedBox(width: 8),
-                    _buildComparisonStat(
-                      label: 'Tiempo',
-                      playerValue: playerTime > 1000 
-                          ? '${(playerTime / 1000).toStringAsFixed(1)}s' 
-                          : '${playerTime.toStringAsFixed(0)}ms',
-                      opponentValue:
-                          widget.opponentAverageTime != null
-                              ? (oppTime > 1000 
-                                  ? '${(oppTime / 1000).toStringAsFixed(1)}s' 
-                                  : '${oppTime.toStringAsFixed(0)}ms')
-                              : '-',
-                    ),
-                  ],
-                ),
+                    Expanded(child: _buildComparisonStat(label: 'Tiempo', playerValue: playerTime > 1000 ? '${(playerTime / 1000).toStringAsFixed(1)}s' : '${playerTime.toStringAsFixed(0)}ms', opponentValue: widget.opponentAverageTime != null ? (oppTime > 1000 ? '${(oppTime / 1000).toStringAsFixed(1)}s' : '${oppTime.toStringAsFixed(0)}ms') : '-')),
+                  ]);
+                }),
               ],
             ),
           ),

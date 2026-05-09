@@ -51,7 +51,7 @@ class GameScreen extends ConsumerWidget {
                 Text(
                   gameState.maybeWhen(
                     playing: (_, __, ___, score, _____, ______, _______) => '$score',
-                    answered: (_, __, ___, score) => '$score',
+                    answered: (_, __, ___, score, ____) => '$score',
                     finished: (score, ___, _____, _______, ______) => '$score',
                     orElse: () => '0',
                   ),
@@ -71,8 +71,8 @@ class GameScreen extends ConsumerWidget {
         loading: () => _buildLoading(),
         playing: (_, currentQuestionIndex, ___, score, _____, correctAnswers, ________) =>
             _buildPlaying(context, ref, currentQuestion, currentQuestionIndex, progress, timerProgress, score, correctAnswers),
-        answered: (isCorrect, correctAnswer, selectedAnswer, score) =>
-            _buildAnswered(context, ref, isCorrect, correctAnswer, selectedAnswer, score, currentQuestion),
+        answered: (isCorrect, correctAnswer, selectedAnswer, score, similarity) =>
+            _buildAnswered(context, ref, isCorrect, correctAnswer, selectedAnswer, score, currentQuestion, similarity),
         finished: (score, totalQuestions, correctAnswers, userAnswers, averageTime) =>
             _buildFinished(context, ref, score, totalQuestions, correctAnswers, userAnswers, averageTime),
         error: (message) => _buildError(context, message, ref),
@@ -293,6 +293,7 @@ class GameScreen extends ConsumerWidget {
 
   Widget _buildAnswered(BuildContext context, WidgetRef ref, bool isCorrect,
     String correctAnswer, String selectedAnswer, int score, dynamic currentQuestion,
+    double? similarity,
   ) {
     return AnswerFeedbackWidget(
       isCorrect: isCorrect,
@@ -300,6 +301,7 @@ class GameScreen extends ConsumerWidget {
       selectedAnswer: selectedAnswer,
       score: score,
       question: currentQuestion,
+      similarity: similarity,
       onNextQuestion: () => ref.read(gameNotifierProvider.notifier).nextQuestion(),
     );
   }

@@ -1,13 +1,13 @@
 import 'dart:async';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:firebase_auth/firebase_auth.dart' hide User;
+import 'package:firebase_database/firebase_database.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import '../../data/repositories/match_repository_impl.dart';
 import '../../data/repositories/ghost_run_repository_impl.dart';
 import '../../data/repositories/question_repository_impl.dart';
 import '../../domain/entities/match.dart';
 import '../../domain/entities/question.dart';
-import '../../domain/entities/user.dart';
 import '../../domain/repositories/match_repository.dart';
 import '../../domain/repositories/ghost_run_repository.dart';
 import '../../domain/repositories/question_repository.dart';
@@ -18,6 +18,9 @@ import '../../core/constants/game_constants.dart';
 import '../../core/utils/score_calculator.dart';
 import '../../core/utils/fuzzy_matcher.dart';
 import '../../core/utils/elo_calculator.dart';
+import '../../services/realtime_matchmaking_service.dart';
+import 'match_history_provider.dart';
+import 'invite_provider.dart';
 import 'user_provider.dart';
 
 /// Repository providers
@@ -36,6 +39,10 @@ final questionRepositoryMultiProvider = Provider<QuestionRepository>((ref) {
 /// Quiz attempt repository provider for multiplayer
 final quizAttemptRepositoryMultiProvider = Provider<QuizAttemptRepository>((ref) {
   return QuizAttemptRepositoryImpl();
+});
+
+final realtimeMatchmakingServiceProvider = Provider<RealtimeMatchmakingService>((ref) {
+  return RealtimeMatchmakingService();
 });
 
 /// Multiplayer game mode
@@ -177,19 +184,28 @@ class MultiplayerState {
 class MultiplayerNotifier extends StateNotifier<MultiplayerState> {
   final Ref _ref;
   Timer? _timer;
-  Timer? _matchmakingTimer; // Overall timeout (60s)
-  Timer? _searchTimer; // Periodic re-query timer (3s)
+  Timer? _matchmakingTimer;
+  Timer? _queuePollTimer;
   StreamSubscription? _matchSubscription;
+  StreamSubscription? _rtdbMatchSubscription;
+  StreamSubscription? _queueSubscription;
+  StreamSubscription? _opponentStateSubscription;
+  StreamSubscription? _inviteStatusSubscription;
   List<Question> _questions = [];
-  String? _pendingMatchId; // Track match ID for cancellation
+  String? _pendingRtdbMatchId;
+  String? _pendingInviteId;
+  String? _pendingInviteFriendId;
 
   MultiplayerNotifier(this._ref) : super(const MultiplayerState()) {
-    // Cleanup on dispose
     _ref.onDispose(() {
       _timer?.cancel();
       _matchmakingTimer?.cancel();
-      _searchTimer?.cancel();
+      _queuePollTimer?.cancel();
       _matchSubscription?.cancel();
+      _rtdbMatchSubscription?.cancel();
+      _queueSubscription?.cancel();
+      _opponentStateSubscription?.cancel();
+      _inviteStatusSubscription?.cancel();
     });
   }
 
@@ -262,8 +278,34 @@ class MultiplayerNotifier extends StateNotifier<MultiplayerState> {
             }
 
             _questions = questions;
+            
+            // Create a GameMatch to persist the async game in history
+            final matchType = state.mode == MultiplayerMode.ranked ? MatchType.ranked : MatchType.casual;
+            final fsMatch = GameMatch(
+              id: '',
+              players: [_currentUserId!, ghostRun.userId],
+              mode: MatchMode.async,
+              type: matchType,
+              status: MatchStatus.active,
+              questionIds: _questions.map((q) => q.id).toList(),
+              answers: {},
+              createdAt: DateTime.now(),
+              startedAt: DateTime.now(),
+              creatorElo: userElo,
+            );
+
+            GameMatch? createdMatch;
+            final fsResult = await _ref.read(matchRepositoryProvider).createMatch(fsMatch);
+            fsResult.fold(
+              (_) {},
+              (matchId) {
+                createdMatch = fsMatch.copyWith(id: matchId);
+              },
+            );
+
             state = state.copyWith(
               status: MultiplayerStatus.found,
+              currentMatch: createdMatch,
               ghostRun: ghostRun,
               opponentName: 'Ghost Runner',
               opponentElo: ghostRun.elo,
@@ -291,10 +333,36 @@ class MultiplayerNotifier extends StateNotifier<MultiplayerState> {
           errorMessage: 'Failed to load questions',
         );
       },
-      (questions) {
+      (questions) async {
         _questions = questions;
+        
+        // Create a GameMatch to persist the solo game in history
+        final matchType = state.mode == MultiplayerMode.ranked ? MatchType.ranked : MatchType.casual;
+        final fsMatch = GameMatch(
+          id: '',
+          players: [_currentUserId!],
+          mode: MatchMode.async,
+          type: matchType,
+          status: MatchStatus.active,
+          questionIds: _questions.map((q) => q.id).toList(),
+          answers: {},
+          createdAt: DateTime.now(),
+          startedAt: DateTime.now(),
+          creatorElo: _userElo,
+        );
+
+        GameMatch? createdMatch;
+        final fsResult = await _ref.read(matchRepositoryProvider).createMatch(fsMatch);
+        fsResult.fold(
+          (_) {},
+          (matchId) {
+            createdMatch = fsMatch.copyWith(id: matchId);
+          },
+        );
+
         state = state.copyWith(
           status: MultiplayerStatus.found,
+          currentMatch: createdMatch,
           opponentName: 'Solo Practice',
         );
 
@@ -315,36 +383,217 @@ class MultiplayerNotifier extends StateNotifier<MultiplayerState> {
     );
   }
 
-  /// Start a PvP match with expanding ELO range
+  /// Start a PvP match using Firebase Realtime Database for matchmaking.
+  /// Uses `rtdb_matches` directly as the queue — no separate queue collection.
   Future<void> _startPvPMatch(MultiplayerMode mode) async {
-    final matchType = mode == MultiplayerMode.ranked ? MatchType.ranked : MatchType.casual;
-    int baseElo = _userElo;
-    
-    // We will use a matchmaking loop that expands the range
-    int searchRange = 100; // Start strict
-    int timeElapsed = 0;
+    final modeStr = mode == MultiplayerMode.ranked ? 'ranked' : 'casual';
+    final userId = _currentUserId!;
+    final elo = _userElo;
+    final rtdb = _ref.read(realtimeMatchmakingServiceProvider);
 
-    // Reset/clear any existing search timer
-    _matchmakingTimer?.cancel();
+    final questions = await _generateQuestions();
+    if (questions == null) {
+      state = state.copyWith(
+        status: MultiplayerStatus.error,
+        errorMessage: 'No se pudieron cargar las preguntas',
+      );
+      return;
+    }
+    _questions = questions;
 
-    // Initial search
-    final findResult = await _ref.read(matchRepositoryProvider).findWaitingMatch(
-          mode: mode.name,
-          playerElo: baseElo,
-          userId: _currentUserId!,
+    final displayName =
+        FirebaseAuth.instance.currentUser?.displayName ?? 'Jugador';
+
+    // ── 1. Try to join an existing waiting match ─────
+    print('[MM] Searching for waiting match (mode=$modeStr, user=$userId, elo=$elo)');
+    final existing = await rtdb.findWaitingMatch(mode: modeStr, excludeUserId: userId, elo: elo);
+    print('[MM] findWaitingMatch result: ${existing != null ? 'found ${existing.matchId}' : 'none'}');
+    if (existing != null) {
+      print('[MM] Attempting to join match ${existing.matchId}...');
+      final joined = await rtdb.joinRtdbMatch(matchId: existing.matchId, userId: userId, displayName: displayName);
+      print('[MM] joinRtdbMatch result: $joined');
+      if (joined) {
+        await _loadQuestionsFromRtdbMatch(existing.matchId);
+        await _startGameWithOpponent(
+          rtdbMatchId: existing.matchId,
+          opponentId: existing.creatorId,
+          opponentName: existing.creatorName ?? 'Oponente',
+          opponentElo: existing.creatorElo,
         );
+        return;
+      }
+    }
 
-    final foundMatch = await findResult.fold(
-      (failure) async => null,
-      (match) async => match,
+    // ── 2. Create own match ──────────────────────────
+    final rtdbMatchId = await rtdb.createRtdbMatch(
+      creatorId: userId,
+      questionIds: questions.map((q) => q.id).toList(),
+      mode: modeStr,
+      creatorElo: elo,
+      displayName: displayName,
+    );
+    print('[MM] Created own match: $rtdbMatchId');
+    _pendingRtdbMatchId = rtdbMatchId;
+
+    // ── 3. Watch own match for opponent joining ──────
+    _rtdbMatchSubscription?.cancel();
+    _rtdbMatchSubscription =
+        rtdb.watchRtdbMatch(rtdbMatchId).listen((matchData) {
+      print('[MM] Match update: status=${matchData?['status']}, player2=${matchData?['player2']}');
+      if (matchData == null || state.status != MultiplayerStatus.searching) return;
+      if (matchData['status'] == 'active' && matchData['player2'] != null) {
+        final opponentId = matchData['player2'] as String;
+        print('[MM] Opponent joined! id=$opponentId');
+        _rtdbMatchSubscription?.cancel();
+        _queuePollTimer?.cancel();
+        _matchmakingTimer?.cancel();
+        final opponentDisplayName = matchData['player2DisplayName'] as String? ?? 'Oponente';
+        _startGameWithOpponent(
+          rtdbMatchId: rtdbMatchId,
+          opponentId: opponentId,
+          opponentName: opponentDisplayName,
+          opponentElo: null,
+        );
+      }
+    });
+
+    // ── 4. Poll rtdb_matches for other waiting matches ──
+    _queuePollTimer?.cancel();
+    _queuePollTimer = Timer.periodic(const Duration(seconds: 2), (_) async {
+      if (state.status != MultiplayerStatus.searching) return;
+      try {
+        final match = await rtdb.findWaitingMatch(mode: modeStr, excludeUserId: userId, elo: elo);
+        if (match == null || match.matchId == rtdbMatchId) {
+          if (match != null) print('[MM] Poll: skipped own match');
+          else print('[MM] Poll: no waiting match found');
+          return;
+        }
+        print('[MM] Poll: found match ${match.matchId} from ${match.creatorId}');
+        final joined = await rtdb.joinRtdbMatch(
+          matchId: match.matchId,
+          userId: userId,
+          displayName: displayName,
+        );
+        print('[MM] Poll: join result=$joined');
+        if (!joined) return;
+        _queuePollTimer?.cancel();
+        _rtdbMatchSubscription?.cancel();
+        _matchmakingTimer?.cancel();
+        await rtdb.cancelRtdbMatch(rtdbMatchId);
+        await _loadQuestionsFromRtdbMatch(match.matchId);
+        await _startGameWithOpponent(
+          rtdbMatchId: match.matchId,
+          opponentId: match.creatorId,
+          opponentName: match.creatorName ?? 'Oponente',
+          opponentElo: match.creatorElo,
+        );
+      } catch (e) {
+        print('[MM] Poll error: $e');
+      }
+    });
+
+    // ── 5. Timeout → ghost run fallback ──────────────
+    _matchmakingTimer = Timer(
+      Duration(milliseconds: GameConstants.matchmakingTimeoutMs),
+      () {
+        if (state.status != MultiplayerStatus.searching) return;
+        _rtdbMatchSubscription?.cancel();
+        _queuePollTimer?.cancel();
+        rtdb.cancelRtdbMatch(rtdbMatchId);
+        _pendingRtdbMatchId = null;
+        _fallbackToGhostRun();
+      },
+    );
+  }
+
+  /// Loads the question IDs stored in an RTDB match and fetches them from Firestore.
+  /// Overwrites _questions so both players share the creator's question set.
+  Future<void> _loadQuestionsFromRtdbMatch(String rtdbMatchId) async {
+    final snapshot =
+        await FirebaseDatabase.instance.ref('rtdb_matches/$rtdbMatchId').get();
+    if (!snapshot.exists || snapshot.value == null) return;
+
+    final data = Map<String, dynamic>.from(snapshot.value as Map);
+    final ids = List<String>.from(data['questionIds'] ?? []);
+    if (ids.isEmpty) return;
+
+    final loaded = await _loadQuestionsByIds(ids);
+    if (loaded != null && loaded.isNotEmpty) _questions = loaded;
+  }
+
+  /// Creates a Firestore match record (for persistence + ELO history),
+  /// then transitions state to 'found' and starts the game after a short delay.
+  Future<void> _startGameWithOpponent({
+    required String rtdbMatchId,
+    required String opponentId,
+    required String opponentName,
+    required int? opponentElo,
+  }) async {
+    _pendingRtdbMatchId = rtdbMatchId;
+
+    // Create Firestore match for persistence (ghost runs, history, ELO Cloud Fn)
+    final matchType =
+        state.mode == MultiplayerMode.ranked ? MatchType.ranked : MatchType.casual;
+    final fsMatch = GameMatch(
+      id: '',
+      players: [_currentUserId!, opponentId],
+      mode: MatchMode.async,
+      type: matchType,
+      status: MatchStatus.active,
+      questionIds: _questions.map((q) => q.id).toList(),
+      answers: {},
+      createdAt: DateTime.now(),
+      startedAt: DateTime.now(),
+      creatorElo: _userElo,
     );
 
-    if (foundMatch != null) {
-      await _joinExistingMatch(foundMatch);
-    } else {
-      // No existing match found - create our own
-      _createAndWaitForOpponent(matchType, baseElo);
-    }
+    GameMatch? createdMatch;
+    final fsResult = await _ref.read(matchRepositoryProvider).createMatch(fsMatch);
+    fsResult.fold(
+      (_) {},
+      (matchId) {
+        createdMatch = GameMatch(
+          id: matchId,
+          players: fsMatch.players,
+          mode: fsMatch.mode,
+          type: fsMatch.type,
+          status: fsMatch.status,
+          questionIds: fsMatch.questionIds,
+          answers: fsMatch.answers,
+          createdAt: fsMatch.createdAt,
+          startedAt: fsMatch.startedAt,
+          creatorElo: fsMatch.creatorElo,
+        );
+      },
+    );
+
+    state = state.copyWith(
+      status: MultiplayerStatus.found,
+      currentMatch: createdMatch,
+      opponentName: opponentName,
+      opponentElo: opponentElo,
+    );
+
+    await Future.delayed(const Duration(seconds: 2));
+    if (state.status != MultiplayerStatus.found) return;
+
+    _startPlaying();
+    _watchOpponentRtdbState(rtdbMatchId, opponentId);
+  }
+
+  /// Streams the opponent's live score from RTDB and updates state in real-time.
+  void _watchOpponentRtdbState(String matchId, String opponentId) {
+    _opponentStateSubscription?.cancel();
+    _opponentStateSubscription = _ref
+        .read(realtimeMatchmakingServiceProvider)
+        .watchOpponentState(matchId: matchId, opponentId: opponentId)
+        .listen((data) {
+      if (data == null || state.status != MultiplayerStatus.playing) return;
+      final score = data['score'] as int? ?? 0;
+      if (score != state.opponentScore) {
+        state = state.copyWith(opponentScore: score);
+      }
+    });
   }
 
   /// Pre-generate random questions for a new match
@@ -359,7 +608,7 @@ class MultiplayerNotifier extends StateNotifier<MultiplayerState> {
     );
   }
 
-  /// Load questions by IDs from the match (so both players get same questions)
+  /// Load questions by IDs (so both players share the same question set)
   Future<List<Question>?> _loadQuestionsByIds(List<String> questionIds) async {
     if (questionIds.isEmpty) return null;
 
@@ -373,293 +622,161 @@ class MultiplayerNotifier extends StateNotifier<MultiplayerState> {
     );
   }
 
-  /// Join an existing waiting match
-  Future<void> _joinExistingMatch(GameMatch existingMatch) async {
-    final joinResult = await _ref.read(matchRepositoryProvider).joinMatch(
-          matchId: existingMatch.id,
-          userId: _currentUserId!,
-        );
-
-    joinResult.fold(
-      (failure) {
-        // Join failed (someone else joined first) - create new match
-        _createAndWaitForOpponent(existingMatch.type, _userElo);
-      },
-      (joinedMatch) async {
-        // Load the SAME questions that the creator stored in the match
-        final questions = await _loadQuestionsByIds(joinedMatch.questionIds);
-
-        if (questions == null) {
-          // Fallback: couldn't load shared questions, generate random (not ideal)
-          final fallbackQuestions = await _generateQuestions();
-          if (fallbackQuestions == null) {
-            state = state.copyWith(
-              status: MultiplayerStatus.error,
-              errorMessage: 'Failed to load questions',
-            );
-            return;
-          }
-          _questions = fallbackQuestions;
-        } else {
-          _questions = questions;
-        }
-
-        state = state.copyWith(
-          status: MultiplayerStatus.found,
-          currentMatch: joinedMatch,
-          opponentName: 'Opponent',
-        );
-
-        Future.delayed(const Duration(seconds: 2), () {
-          _startPlaying();
-        });
-      },
-    );
-  }
-
-  /// Create a new match and wait for opponent
-  Future<void> _createAndWaitForOpponent(MatchType matchType, int creatorElo) async {
-    // Pre-generate questions so both players get the same set
-    final questions = await _generateQuestions();
-    if (questions == null) {
-      state = state.copyWith(
-        status: MultiplayerStatus.error,
-        errorMessage: 'Failed to generate questions',
-      );
-      return;
-    }
-    _questions = questions;
-
-    // Create match with pre-generated question IDs
-    final newMatch = GameMatch(
-      id: '',
-      players: [_currentUserId!],
-      mode: MatchMode.async,
-      type: matchType,
-      status: MatchStatus.waiting,
-      questionIds: questions.map((q) => q.id).toList(),
-      answers: {},
-      createdAt: DateTime.now(),
-      creatorElo: creatorElo,
-    );
-
-    final result = await _ref.read(matchRepositoryProvider).createMatch(newMatch);
-
-    result.fold(
-      (failure) {
-        state = state.copyWith(
-          status: MultiplayerStatus.error,
-          errorMessage: 'Failed to create match: ${failure.message}',
-        );
-      },
-      (matchId) {
-        _pendingMatchId = matchId;
-        // Watch the match for opponent joining (via snapshot listener)
-        _watchForOpponent(matchId);
-
-        // Periodically re-query for OTHER waiting matches (fixes race condition)
-        // When both players start at the same time, neither finds the other's match.
-        // This timer re-searches every 3 seconds to discover newly created matches.
-        _searchTimer = Timer.periodic(
-          const Duration(seconds: 3),
-          (timer) async {
-            if (state.status != MultiplayerStatus.searching) {
-              timer.cancel();
-              return;
-            }
-
-            final findResult = await _ref.read(matchRepositoryProvider).findWaitingMatch(
-                  mode: state.mode.name,
-                  playerElo: _userElo,
-                  userId: _currentUserId!,
-                );
-
-            findResult.fold(
-              (_) {}, // ignore errors, keep waiting
-              (match) {
-                if (match != null && match.id != _pendingMatchId) {
-                  // Found another player's match — cancel ours and join theirs
-                  timer.cancel();
-                  _cancelMatchmaking(_pendingMatchId!);
-                  _joinExistingMatch(match);
-                }
-              },
-            );
-          },
-        );
-
-        // Overall timeout — fall back to ghost run after 60 seconds
-        _matchmakingTimer = Timer(
-          Duration(milliseconds: GameConstants.matchmakingTimeoutMs),
-          () {
-            if (state.status == MultiplayerStatus.searching) {
-              _searchTimer?.cancel();
-              _cancelMatchmaking(matchId);
-              // Fallback to ghost run mode for casual/ranked
-              _fallbackToGhostRun();
-            }
-          },
-        );
-      },
-    );
-  }
-
-  /// Watch match for opponent
-  void _watchForOpponent(String matchId) {
-    _matchSubscription?.cancel();
-    _matchSubscription = _ref
-        .read(matchRepositoryProvider)
-        .watchMatch(matchId)
-        .listen((gameMatch) {
-      if (gameMatch.players.length >= 2 && state.status == MultiplayerStatus.searching) {
-        _matchmakingTimer?.cancel();
-        _onOpponentFound(gameMatch);
-      }
-    });
-  }
-
-  /// Called when opponent is found (creator side - questions already generated)
-  Future<void> _onOpponentFound(GameMatch match) async {
-    // Questions already set from _createAndWaitForOpponent
-    // Just update match status to active
-    final updatedMatch = GameMatch(
-      id: match.id,
-      players: match.players,
-      mode: match.mode,
-      type: match.type,
-      status: MatchStatus.active,
-      questionIds: match.questionIds.isNotEmpty
-          ? match.questionIds
-          : _questions.map((q) => q.id).toList(),
-      answers: match.answers,
-      createdAt: match.createdAt,
-      startedAt: DateTime.now(),
-    );
-
-    await _ref.read(matchRepositoryProvider).updateMatch(match.id, updatedMatch);
-
-    state = state.copyWith(
-      status: MultiplayerStatus.found,
-      currentMatch: updatedMatch,
-      opponentName: 'Opponent',
-    );
-
-    // Auto-start after short delay
-    await Future.delayed(const Duration(seconds: 2));
-    _startPlaying();
-  }
-
-  /// Cancel matchmaking — only marks the match as cancelled if still 'waiting'
-  /// Uses a transaction so it won't corrupt a match that just got an opponent
-  Future<void> _cancelMatchmaking(String matchId) async {
-    _matchSubscription?.cancel();
-    _matchmakingTimer?.cancel();
-    _searchTimer?.cancel();
-
-    await _ref.read(matchRepositoryProvider).cancelIfWaiting(matchId);
-  }
-
-  /// Cancel matchmaking from UI
+  /// Cancel matchmaking and clean up RTDB state.
   Future<void> cancelSearch() async {
-    if (_pendingMatchId != null) {
-      await _cancelMatchmaking(_pendingMatchId!);
-      _pendingMatchId = null;
+    final rtdb = _ref.read(realtimeMatchmakingServiceProvider);
+    final userId = _currentUserId;
+    final modeStr = state.mode == MultiplayerMode.ranked ? 'ranked' : 'casual';
+
+    _rtdbMatchSubscription?.cancel();
+    _queueSubscription?.cancel();
+    _matchmakingTimer?.cancel();
+    _inviteStatusSubscription?.cancel();
+
+    if (userId != null) {
+      rtdb.leaveQueue(mode: modeStr, userId: userId).catchError((_) {});
+    }
+    if (_pendingRtdbMatchId != null) {
+      rtdb.cancelRtdbMatch(_pendingRtdbMatchId!).catchError((_) {});
+      _pendingRtdbMatchId = null;
+    }
+    if (_pendingInviteId != null && _pendingInviteFriendId != null) {
+      rtdb.cancelInvite(_pendingInviteFriendId!, _pendingInviteId!).catchError((_) {});
+      _pendingInviteId = null;
+      _pendingInviteFriendId = null;
     }
     _reset();
   }
 
   /// Challenge a specific friend to a match
   /// Uses the friend's most recent ghost run if available, otherwise generates random questions
+  /// Sends a real-time invite to a friend and waits for them to accept.
   Future<void> challengeFriend(
     String friendId, {
     String? friendName,
     int? friendElo,
   }) async {
-    if (_currentUserId == null) {
-      state = state.copyWith(
-        status: MultiplayerStatus.error,
-        errorMessage: 'Not authenticated',
-      );
-      return;
-    }
-    if (friendId == _currentUserId) {
-      state = state.copyWith(
-        status: MultiplayerStatus.error,
-        errorMessage: 'Cannot challenge yourself',
-      );
-      return;
-    }
+    if (_currentUserId == null || friendId == _currentUserId) return;
+
+    final userId = _currentUserId!;
+    final displayName =
+        FirebaseAuth.instance.currentUser?.displayName ?? 'Jugador';
+    final rtdb = _ref.read(realtimeMatchmakingServiceProvider);
 
     state = state.copyWith(
       status: MultiplayerStatus.searching,
       mode: MultiplayerMode.friendChallenge,
+      opponentName: friendName ?? 'Amigo',
+      opponentElo: friendElo,
       errorMessage: null,
     );
 
     try {
-      // Fetch friend info from Firestore if not provided
+      // Resolve friend info if not provided
       String name = friendName ?? 'Amigo';
-      int elo = friendElo ?? 1000;
+      int opponentEloValue = friendElo ?? 1000;
       if (friendName == null || friendElo == null) {
-        final friendDoc = await FirebaseFirestore.instance
+        final doc = await FirebaseFirestore.instance
             .collection('users')
             .doc(friendId)
             .get();
-        if (friendDoc.exists) {
-          final data = friendDoc.data()!;
-          name = data['displayName'] ?? name;
-          elo = data['elo'] ?? elo;
+        if (doc.exists) {
+          name = doc.data()!['displayName'] as String? ?? name;
+          opponentEloValue = doc.data()!['elo'] as int? ?? opponentEloValue;
         }
       }
 
-      // Try to find friend's most recent ghost run to play against
-      final ghostResult = await _ref
-          .read(ghostRunRepositoryProvider)
-          .getUserGhostRuns(friendId);
+      // Generate questions for the match
+      final questions = await _generateQuestions();
+      if (questions == null) {
+        state = state.copyWith(
+          status: MultiplayerStatus.error,
+          errorMessage: 'No se pudieron cargar las preguntas',
+        );
+        return;
+      }
+      _questions = questions;
 
-      await ghostResult.fold(
-        (failure) async {
-          // Couldn't fetch ghost runs — play with random questions
-          await _startFriendChallengeSolo(name, elo, friendId);
-        },
-        (ghostRuns) async {
-          if (ghostRuns.isEmpty) {
-            await _startFriendChallengeSolo(name, elo, friendId);
-            return;
-          }
-
-          // Use friend's most recent ghost run
-          final friendGhostRun = ghostRuns.first;
-          final questionsResult = await _ref
-              .read(questionRepositoryMultiProvider)
-              .getQuestionsByIds(friendGhostRun.questionIds);
-
-          await questionsResult.fold(
-            (failure) async {
-              await _startFriendChallengeSolo(name, elo, friendId);
-            },
-            (questions) async {
-              if (questions.isEmpty) {
-                await _startFriendChallengeSolo(name, elo, friendId);
-                return;
-              }
-
-              _questions = questions;
-              state = state.copyWith(
-                status: MultiplayerStatus.found,
-                ghostRun: friendGhostRun,
-                opponentName: name,
-                opponentElo: elo,
-                invitedFriendId: friendId,
-              );
-
-              // Auto-start after short delay
-              await Future.delayed(const Duration(seconds: 2));
-              _startPlaying();
-            },
-          );
-        },
+      // Create RTDB match (creator side)
+      final rtdbMatchId = await rtdb.createRtdbMatch(
+        creatorId: userId,
+        questionIds: questions.map((q) => q.id).toList(),
+        mode: 'friendChallenge',
       );
+      _pendingRtdbMatchId = rtdbMatchId;
+
+      // Send RTDB invite to friend
+      final inviteId = await rtdb.sendInvite(
+        toUserId: friendId,
+        fromUserId: userId,
+        fromDisplayName: displayName,
+        fromElo: _userElo,
+        rtdbMatchId: rtdbMatchId,
+        questionIds: questions.map((q) => q.id).toList(),
+      );
+      _pendingInviteId = inviteId;
+      _pendingInviteFriendId = friendId;
+
+      // Watch RTDB match: fires when friend accepts and joins
+      _rtdbMatchSubscription?.cancel();
+      _rtdbMatchSubscription =
+          rtdb.watchRtdbMatch(rtdbMatchId).listen((matchData) {
+        if (matchData == null ||
+            state.status != MultiplayerStatus.searching) return;
+        if (matchData['status'] == 'active' &&
+            matchData['player2'] != null) {
+          _rtdbMatchSubscription?.cancel();
+          _inviteStatusSubscription?.cancel();
+          _matchmakingTimer?.cancel();
+          _pendingInviteId = null;
+          _pendingInviteFriendId = null;
+          _startGameWithOpponent(
+            rtdbMatchId: rtdbMatchId,
+            opponentId: friendId,
+            opponentName: name,
+            opponentElo: opponentEloValue,
+          );
+        }
+      });
+
+      // Watch invite status: fires if friend rejects or invite expires
+      _inviteStatusSubscription?.cancel();
+      _inviteStatusSubscription =
+          rtdb.watchInviteStatus(friendId, inviteId).listen((status) {
+        if (status == null ||
+            state.status != MultiplayerStatus.searching) return;
+        if (status == 'rejected' || status == 'expired') {
+          _rtdbMatchSubscription?.cancel();
+          _inviteStatusSubscription?.cancel();
+          _matchmakingTimer?.cancel();
+          rtdb.cancelRtdbMatch(rtdbMatchId);
+          _pendingRtdbMatchId = null;
+          _pendingInviteId = null;
+          _pendingInviteFriendId = null;
+          state = state.copyWith(
+            status: MultiplayerStatus.error,
+            errorMessage: status == 'rejected'
+                ? '$name rechazó el reto'
+                : '$name no respondió al reto',
+          );
+        }
+      });
+
+      // Timeout after 60 s
+      _matchmakingTimer = Timer(const Duration(seconds: 60), () {
+        if (state.status != MultiplayerStatus.searching) return;
+        _rtdbMatchSubscription?.cancel();
+        _inviteStatusSubscription?.cancel();
+        rtdb.cancelInvite(friendId, inviteId);
+        rtdb.cancelRtdbMatch(rtdbMatchId);
+        _pendingRtdbMatchId = null;
+        _pendingInviteId = null;
+        _pendingInviteFriendId = null;
+        state = state.copyWith(
+          status: MultiplayerStatus.error,
+          errorMessage: '$name no respondió al reto',
+        );
+      });
     } catch (e) {
       state = state.copyWith(
         status: MultiplayerStatus.error,
@@ -668,36 +785,31 @@ class MultiplayerNotifier extends StateNotifier<MultiplayerState> {
     }
   }
 
-  /// Start friend challenge with random questions (no ghost run available)
-  Future<void> _startFriendChallengeSolo(
-    String friendName,
-    int friendElo,
-    String friendId,
-  ) async {
-    final questionsResult = await _ref
-        .read(questionRepositoryMultiProvider)
-        .getRandomQuestions(count: GameConstants.questionsPerMatch);
+  /// Called when the local user accepts an incoming friend invite.
+  Future<void> joinFromInvite(InviteData invite) async {
+    state = state.copyWith(
+      status: MultiplayerStatus.searching,
+      mode: MultiplayerMode.friendChallenge,
+      opponentName: invite.fromDisplayName,
+      opponentElo: invite.fromElo,
+      errorMessage: null,
+    );
 
-    questionsResult.fold(
-      (failure) {
-        state = state.copyWith(
-          status: MultiplayerStatus.error,
-          errorMessage: 'Failed to load questions',
-        );
-      },
-      (questions) {
-        _questions = questions;
-        state = state.copyWith(
-          status: MultiplayerStatus.found,
-          opponentName: friendName,
-          opponentElo: friendElo,
-          invitedFriendId: friendId,
-        );
+    await _loadQuestionsFromRtdbMatch(invite.rtdbMatchId);
 
-        Future.delayed(const Duration(seconds: 2), () {
-          _startPlaying();
-        });
-      },
+    if (_questions.isEmpty) {
+      state = state.copyWith(
+        status: MultiplayerStatus.error,
+        errorMessage: 'No se pudieron cargar las preguntas del reto',
+      );
+      return;
+    }
+
+    await _startGameWithOpponent(
+      rtdbMatchId: invite.rtdbMatchId,
+      opponentId: invite.fromUserId,
+      opponentName: invite.fromDisplayName,
+      opponentElo: invite.fromElo,
     );
   }
 
@@ -824,6 +936,26 @@ class MultiplayerNotifier extends StateNotifier<MultiplayerState> {
       correctAnswers: newCorrect,
       streak: newStreak,
     );
+
+    // Push live score to RTDB and submit answer to Firestore (PvP only)
+    if (_pendingRtdbMatchId != null &&
+        _currentUserId != null &&
+        state.ghostRun == null) {
+      _ref.read(realtimeMatchmakingServiceProvider).updateGameState(
+        matchId: _pendingRtdbMatchId!,
+        userId: _currentUserId!,
+        score: newScore,
+        currentQuestion: nextIndex,
+        finished: nextIndex >= _questions.length,
+      ).catchError((Object _) {});
+      // Fire-and-forget: submit answer to Firestore so opponent can see it
+      if (state.currentMatch != null) {
+        _ref.read(matchRepositoryProvider).submitAnswer(
+          state.currentMatch!.id,
+          answer,
+        );
+      }
+    }
 
     // Transition after delay
     final delayMs = isTimeout
@@ -958,6 +1090,20 @@ class MultiplayerNotifier extends StateNotifier<MultiplayerState> {
     );
 
     final nextIndex = currentIndex + 1;
+
+    // Push live score to RTDB (PvP only, fire-and-forget)
+    if (_pendingRtdbMatchId != null &&
+        _currentUserId != null &&
+        state.ghostRun == null) {
+      _ref.read(realtimeMatchmakingServiceProvider).updateGameState(
+        matchId: _pendingRtdbMatchId!,
+        userId: _currentUserId!,
+        score: newScore,
+        currentQuestion: nextIndex,
+        finished: nextIndex >= _questions.length,
+      ).catchError((_) {});
+    }
+
     final delayMs = isCorrect
         ? GameConstants.answeredDelayCorrectMs
         : GameConstants.answeredDelayIncorrectMs;
@@ -984,22 +1130,19 @@ class MultiplayerNotifier extends StateNotifier<MultiplayerState> {
   Future<void> _finishMatch() async {
     try {
       _timer?.cancel();
-      _matchSubscription?.cancel();
 
       final currentMatch = state.currentMatch;
       final currentUserId = _currentUserId;
 
       // ── 1. Submit local answers and save ghost ────────────────
       if (currentUserId != null && state.playerAnswers.isNotEmpty) {
-        // Save ghost run asynchronously
         _ref.read(ghostRunRepositoryProvider).saveGhostRun(
               userId: currentUserId,
               elo: _userElo,
               questionIds: _questions.map((q) => q.id).toList(),
               answers: state.playerAnswers,
-            ).catchError((e) => print('Error saving ghost: $e'));
+            ).then((_) {});
 
-        // Submit each answer to Firestore match collection
         if (currentMatch != null) {
           for (final answer in state.playerAnswers) {
             await _ref.read(matchRepositoryProvider).submitAnswer(
@@ -1010,7 +1153,38 @@ class MultiplayerNotifier extends StateNotifier<MultiplayerState> {
         }
       }
 
-      // ── 2. Fetch opponent answers and calculate scores ────────
+      // ── 2. Signal finished in RTDB and WAIT for opponent ──────
+      if (_pendingRtdbMatchId != null && currentUserId != null && state.ghostRun == null) {
+        await _ref.read(realtimeMatchmakingServiceProvider).updateGameState(
+          matchId: _pendingRtdbMatchId!,
+          userId: currentUserId!,
+          score: state.playerScore,
+          currentQuestion: _questions.length,
+          finished: true,
+        );
+
+        // Wait for opponent to finish (up to 90s)
+        final opponentId = currentMatch?.getOpponentId(currentUserId);
+        if (opponentId != null && opponentId.isNotEmpty) {
+          bool opponentDone = false;
+          for (int retry = 0; retry < 180; retry++) {
+            final oppState = await _ref.read(realtimeMatchmakingServiceProvider)
+                .watchOpponentState(matchId: _pendingRtdbMatchId!, opponentId: opponentId)
+                .first;
+            if (oppState != null && oppState['finished'] == true && oppState['score'] != null) {
+              state = state.copyWith(opponentScore: oppState['score'] as int? ?? 0);
+              opponentDone = true;
+              break;
+            }
+            await Future.delayed(const Duration(milliseconds: 500));
+          }
+          if (!opponentDone) {
+            print('[finishMatch] opponent did not finish in time, proceeding with partial data');
+          }
+        }
+      }
+
+      // ── 3. Fetch opponent answers ─────────────────────────────
       List<Answer>? opponentAnswers;
       int calculatedOpponentScore = 0;
       int calculatedOpponentCorrect = 0;
@@ -1018,16 +1192,15 @@ class MultiplayerNotifier extends StateNotifier<MultiplayerState> {
       if (currentMatch != null && currentUserId != null) {
         final opponentId = currentMatch.getOpponentId(currentUserId);
         if (opponentId != null && opponentId.isNotEmpty) {
-          final answersResult = await _ref.read(matchRepositoryProvider).getPlayerAnswers(
-                matchId: currentMatch.id,
-                userId: opponentId,
-              );
-
-          answersResult.fold(
-            (failure) => null, // Continue with 0 points for opponent
-            (answers) {
-              opponentAnswers = answers;
-              for (final ans in answers) {
+          for (int retry = 0; retry < 10; retry++) {
+            final answersResult = await _ref.read(matchRepositoryProvider).getPlayerAnswers(
+                  matchId: currentMatch.id,
+                  userId: opponentId,
+                );
+            final got = answersResult.fold((_) => <Answer>[], (answers) => answers);
+            if (got.isNotEmpty || retry >= 9) {
+              opponentAnswers = got;
+              for (final ans in got) {
                 if (ans.isCorrect) {
                   calculatedOpponentCorrect++;
                   if (ans.questionIndex < _questions.length) {
@@ -1044,32 +1217,32 @@ class MultiplayerNotifier extends StateNotifier<MultiplayerState> {
                   }
                 }
               }
-            },
-          );
+              break;
+            }
+            await Future.delayed(const Duration(milliseconds: 500));
+          }
         }
       }
 
-      // Update state with opponent info BEFORE final ELO calculation
+      // ── 4. Update state with opponent data ────────────────────
       state = state.copyWith(
-        opponentScore: calculatedOpponentScore,
+        opponentScore: calculatedOpponentScore > 0 ? calculatedOpponentScore : state.opponentScore,
         opponentCorrectAnswers: calculatedOpponentCorrect,
         opponentAnswers: opponentAnswers,
       );
 
-      // ── 3. ELO and Results calculation ────────────────────────
+      // ── 5. ELO calculation (only when we have OPPONENT data) ──
       int? eloChange;
       int? newElo;
       MatchResult? matchResult;
 
-      if (currentUserId != null) {
+      if (currentUserId != null && opponentAnswers != null && opponentAnswers!.isNotEmpty) {
         final userState = _ref.read(userNotifierProvider);
         final currentUser = userState.valueOrNull;
         final playerElo = currentUser?.elo ?? GameConstants.initialElo;
         final gamesPlayed = currentUser?.stats.totalGames ?? 0;
-
         final opponentElo = state.opponentElo ?? GameConstants.initialElo;
 
-        // Calculate performance score (score + speed)
         final playerPerf = state.calculatePerformanceScore();
         final oppPerf = state.opponentPerformanceScore ?? 0.0;
 
@@ -1079,67 +1252,31 @@ class MultiplayerNotifier extends StateNotifier<MultiplayerState> {
         else score = 0.5;
 
         final eloCalc = EloCalculator();
-        eloChange = eloCalc.calculateChange(
-          playerElo: playerElo,
-          opponentElo: opponentElo,
-          score: score,
-          gamesPlayed: gamesPlayed,
-        );
-        newElo = eloCalc.calculateNewElo(
-          playerElo: playerElo,
-          opponentElo: opponentElo,
-          score: score,
-          gamesPlayed: gamesPlayed,
-        );
+        eloChange = eloCalc.calculateChange(playerElo: playerElo, opponentElo: opponentElo, score: score, gamesPlayed: gamesPlayed);
+        newElo = eloCalc.calculateNewElo(playerElo: playerElo, opponentElo: opponentElo, score: score, gamesPlayed: gamesPlayed);
 
-        // Calculate opponent's ELO change
         final opponentScore = 1.0 - score;
-        final oppEloChange = eloCalc.calculateChange(
-          playerElo: opponentElo,
-          opponentElo: playerElo,
-          score: opponentScore,
-          gamesPlayed: gamesPlayed, // Estimate using same games count
-        );
-        final oppNewElo = eloCalc.calculateNewElo(
-          playerElo: opponentElo,
-          opponentElo: playerElo,
-          score: opponentScore,
-          gamesPlayed: gamesPlayed,
-        );
+        final oppEloChange = eloCalc.calculateChange(playerElo: opponentElo, opponentElo: playerElo, score: opponentScore, gamesPlayed: gamesPlayed);
+        final oppNewElo = eloCalc.calculateNewElo(playerElo: opponentElo, opponentElo: playerElo, score: opponentScore, gamesPlayed: gamesPlayed);
 
-        // Prepare MatchResult
         final opponentId = currentMatch?.getOpponentId(currentUserId);
         if (currentMatch != null && opponentId != null && opponentId.isNotEmpty) {
           matchResult = MatchResult(
             winnerId: score == 1.0 ? currentUserId : (score == 0.0 ? opponentId : null),
-            scores: {
-              currentUserId: state.playerScore,
-              opponentId: state.opponentScore,
-            },
-            eloChanges: {
-              currentUserId: eloChange,
-              opponentId: oppEloChange,
-            },
-            newElo: {
-              currentUserId: newElo,
-              opponentId: oppNewElo,
-            },
+            scores: {currentUserId: state.playerScore, opponentId: state.opponentScore},
+            eloChanges: {currentUserId: eloChange, opponentId: oppEloChange},
+            newElo: {currentUserId: newElo, opponentId: oppNewElo},
           );
-
-          // Save results to Firestore
           await _ref.read(matchRepositoryProvider).saveMatchResult(
-                matchId: currentMatch.id,
-                result: matchResult,
-              ).catchError((e) => print('Error saving match result: $e'));
+            matchId: currentMatch.id, result: matchResult,
+          ).then((_) {});
         }
 
-        // Update local user profile
         if (currentUser != null) {
           final isWin = score == 1.0;
           final isDraw = score == 0.5;
           final newStreak = isWin ? currentUser.stats.currentWinStreak + 1 : 0;
           final bestStreak = newStreak > currentUser.stats.bestWinStreak ? newStreak : currentUser.stats.bestWinStreak;
-
           final updatedUser = currentUser.copyWith(
             elo: newElo,
             stats: currentUser.stats.copyWith(
@@ -1152,22 +1289,50 @@ class MultiplayerNotifier extends StateNotifier<MultiplayerState> {
               bestWinStreak: bestStreak,
             ),
           );
-
           await _ref.read(userNotifierProvider.notifier).updateUserProfile(updatedUser)
-              .catchError((e) => print('Error updating user profile: $e'));
+              .catchError((Object e) => print('Error updating user profile: $e'));
         }
 
-        // Final state transition
         state = state.copyWith(
           status: MultiplayerStatus.finished,
           eloChange: eloChange,
           newElo: newElo,
-          opponentElo: (matchResult != null && opponentId != null) 
-              ? matchResult.newElo[opponentId] 
+          opponentElo: (matchResult != null && opponentId != null)
+              ? matchResult.newElo[opponentId]
               : state.opponentElo,
         );
+      } else if (state.ghostRun != null && currentUserId != null) {
+        // Ghost run: update user stats without touching ELO
+        final userState = _ref.read(userNotifierProvider);
+        final currentUser = userState.valueOrNull;
+        if (currentUser != null) {
+          final won = state.playerScore > state.opponentScore;
+          final isDraw = state.playerScore == state.opponentScore;
+          final newStreak = won ? currentUser.stats.currentWinStreak + 1 : 0;
+          final bestStreak = newStreak > currentUser.stats.bestWinStreak
+              ? newStreak
+              : currentUser.stats.bestWinStreak;
+
+          final updatedUser = currentUser.copyWith(
+            stats: currentUser.stats.copyWith(
+              totalGames: currentUser.stats.totalGames + 1,
+              wins: currentUser.stats.wins + (won ? 1 : 0),
+              losses: currentUser.stats.losses + (!won && !isDraw ? 1 : 0),
+              draws: currentUser.stats.draws + (isDraw ? 1 : 0),
+              totalCorrectAnswers:
+                  currentUser.stats.totalCorrectAnswers + state.correctAnswers,
+              currentWinStreak: newStreak,
+              bestWinStreak: bestStreak,
+            ),
+          );
+          await _ref
+              .read(userNotifierProvider.notifier)
+              .updateUserProfile(updatedUser)
+              .catchError((Object e) => print('Error updating ghost run stats: $e'));
+        }
+        state = state.copyWith(status: MultiplayerStatus.finished);
       } else {
-        // Fallback if no user
+        // No opponent data — show results without ELO
         state = state.copyWith(status: MultiplayerStatus.finished);
       }
     } catch (e, stack) {
@@ -1181,7 +1346,6 @@ class MultiplayerNotifier extends StateNotifier<MultiplayerState> {
 
   /// Fallback to ghost run when no opponent found
   Future<void> _fallbackToGhostRun() async {
-    // Switch to ghost run mode and start match
     state = state.copyWith(
       mode: MultiplayerMode.ghostRun,
       currentMatch: null,
@@ -1194,6 +1358,13 @@ class MultiplayerNotifier extends StateNotifier<MultiplayerState> {
     _timer?.cancel();
     _matchmakingTimer?.cancel();
     _matchSubscription?.cancel();
+    _rtdbMatchSubscription?.cancel();
+    _queueSubscription?.cancel();
+    _opponentStateSubscription?.cancel();
+    _inviteStatusSubscription?.cancel();
+    _pendingRtdbMatchId = null;
+    _pendingInviteId = null;
+    _pendingInviteFriendId = null;
     _questions = [];
     state = const MultiplayerState();
   }

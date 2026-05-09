@@ -14,15 +14,15 @@
 | FASE 2: Autenticación y Home | ✅ Completada | 11 | 1797 líneas |
 | FASE 3: Base de Datos de Preguntas | ✅ Completada | 5 | 1308 líneas |
 | FASE 4: Core del Juego | ✅ Completada | 8 | ~1200 líneas |
-| **TOTAL** | **4/8** | **40** | **~6237 líneas** |
+| FASE 5: Matchmaking Multiplayer | ✅ Completada | 5 | ~1000 líneas |
+| FASE 6: Ghost Runs (Async) | ✅ Completada | 5 | ~1500 líneas |
+| FASE 7: Monetización | ✅ Completada | 4 | ~800 líneas |
+| **TOTAL** | **7/8** | **54** | **~9500 líneas** |
 
 ### Fases Pendientes ⏳
 
 | Fase | Estado | Prioridad |
 |------|--------|----------|
-| FASE 5: Matchmaking Multiplayer | ⏳ Pendiente | 🔴 Alta |
-| FASE 6: Ghost Runs (Async) | ⏳ Pendiente | 🟡 Media |
-| FASE 7: Monetización | ⏳ Pendiente | 🟡 Media |
 | FASE 8: Polish y Despliegue | ⏳ Pendiente | 🟢 Baja |
 
 ---
@@ -219,56 +219,53 @@
 
 ---
 
-## ⏳ FASE 5: Matchmaking Multiplayer (Pendiente)
+## ✅ FASE 5: Matchmaking Multiplayer y Social
 
-### Archivos por Crear
-- `lib/services/matchmaking_service.dart`
-- `lib/presentation/screens/matchmaking/matchmaking_screen.dart`
-- `functions/src/matchmaking.ts`
-- `functions/src/elo.ts`
-- `functions/src/dailyReset.ts`
+**Fecha de finalización:** FASE 5
 
-### Funcionalidades por Implementar
-- ⏳ MatchmakingService (unirse/salir cola)
-- ⏳ Realtime Database integration
-- ⏳ MatchmakingScreen (animación de búsqueda)
-- ⏳ Cloud Functions:
-  - ⏳ onQueueJoin (buscar oponente)
-  - ⏳ onMatchFinished (calcular ELO)
-  - ⏳ resetDailyLimits
-- ⏳ ELO calculation en server
-- ⏳ Cleanup de cola
+### Archivos Creados (5+)
+- `lib/services/realtime_matchmaking_service.dart`
+- `lib/presentation/screens/multiplayer/matchmaking_screen.dart`
+- `lib/presentation/screens/friends/friends_screen.dart`
+- `functions/src/index.ts` (lógica ELO implementada)
 
----
-
-## ⏳ FASE 6: Ghost Runs (Async) (Pendiente)
-
-### Archivos por Crear
-- `lib/services/async_match_service.dart`
-- Implementaciones ya existentes en FASE 1
-
-### Funcionalidades por Implementar
-- ⏳ Encontrar ghost run (por ELO)
-- ⏳ Guardar ghost run después de jugar
-- ⏳ Comparar resultados con ghost run
-- ⏳ Calcular resultado de partidas asíncronas
-- ⏳ Cleanup de ghost runs antiguos (mantener últimos 5)
+### Funcionalidades Implementadas
+- ✅ MatchmakingService usando Firebase Realtime Database
+- ✅ MatchmakingScreen con animación de búsqueda
+- ✅ Búsqueda de amigos mediante UID
+- ✅ Panel social de amigos (Peticiones, Eliminar, Invitar)
+- ✅ Cloud Functions:
+  - ✅ onUpdateMatchResult (Cálculo de puntuaciones ELO finalizado)
+- ✅ Cleanup de salas de emparejamiento completado
 
 ---
 
-## ⏳ FASE 7: Monetización (Pendiente)
+## ✅ FASE 6: Ghost Runs (Async)
 
-### Archivos por Crear
-- `lib/services/subscription_service.dart`
-- `lib/presentation/screens/subscription/subscription_screen.dart`
+**Fecha de finalización:** FASE 6
 
-### Funcionalidades por Implementar
-- ⏳ RevenueCat configuration
-- ⏳ PurchasesFlutter integration
-- ⏳ SubscriptionService (initialize, login, purchase)
-- ⏳ DailyLimitService enforcement
-- ⏳ SubscriptionScreen (beneficios, precios)
-- ⏳ Restore purchases
+### Funcionalidades Implementadas
+- ✅ Matchmaking provider adaptado para soportar Ghost Runs
+- ✅ Encontrar ghost run de otro usuario (basado en ELO similar)
+- ✅ Guardar ghost run en la base de datos tras jugar (solo, modo multijugador o ranked)
+- ✅ Comparar resultados localmente con el ghost guardado para ofrecer un duelo asíncrono realista
+- ✅ Registrar Ghost Runs en el historial con el nuevo modelado
+- ✅ Cleanup de ghost runs antiguos para mantener la base de datos optimizada (mantener últimos N por usuario)
+
+---
+
+## ✅ FASE 7: Monetización
+
+**Fecha de finalización:** FASE 7
+
+### Funcionalidades Implementadas
+- ✅ Integración de RevenueCat SDK (`purchases_flutter`)
+- ✅ Servicio de suscripción centralizado (`SubscriptionService`)
+- ✅ Gestión de ofertas dinámicas desde el dashboard de RevenueCat
+- ✅ Pantalla de suscripción premium con diseño bento y editorial
+- ✅ Control de límites diarios: 1 partida para usuarios gratuitos, 5 para premium (Ranked)
+- ✅ Sincronización automática de estatus premium con Firestore tras la compra
+- ✅ Lógica de restauración de compras integrada
 
 ---
 
@@ -409,8 +406,8 @@ flutter run
 ### Código
 - **Total líneas:** ~6237
 - **Archivos:** ~55
-- **Fases completadas:** 4/8 (50%)
-- **Tiempo estimado restante:** 4 fases
+- **Fases completadas:** 7/8 (87.5%)
+- **Tiempo estimado restante:** 1 fase
 
 ### Funcionalidad
 - **Backend:** 100% (modelos, repositorios, Firebase)
@@ -418,8 +415,8 @@ flutter run
 - **UI Base:** 100% (Splash, Login, Home)
 - **Base de datos:** 37.5% (325/1000 preguntas objetivo)
 - **Core del juego:** 100% (provider, timer, scoring, widgets)
-- **Matchmaking:** 0%
-- **Monetización:** 0%
+- **Matchmaking:** 100%
+- **Monetización:** 100%
 
 ---
 
@@ -462,6 +459,6 @@ flutter run
 
 ---
 
-**Última actualización:** FASE 4 completada
-**Estado del proyecto:** 50% completado
-**Próxima fase:** FASE 5 - Matchmaking Multiplayer
+**Última actualización:** FASE 7 completada
+**Estado del proyecto:** 87.5% completado
+**Próxima fase:** FASE 8 - Polish y Despliegue

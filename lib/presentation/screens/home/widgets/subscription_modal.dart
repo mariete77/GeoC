@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:google_fonts/google_fonts.dart';
 import '../../../../core/theme/app_colors.dart';
+import '../../../providers/subscription_provider.dart';
 
-class SubscriptionModal extends StatelessWidget {
+class SubscriptionModal extends ConsumerWidget {
   const SubscriptionModal({super.key});
 
   static Future<void> show(BuildContext context) {
@@ -15,7 +17,14 @@ class SubscriptionModal extends StatelessWidget {
   }
 
   @override
-  Widget build(BuildContext context) {
+  Widget build(BuildContext context, WidgetRef ref) {
+    final offeringState = ref.watch(offeringsProvider);
+    final subscriptionActions = ref.read(subscriptionActionsProvider);
+
+    // Get the first available package (usually monthly)
+    final package = offeringState.packages.isNotEmpty ? offeringState.packages.first : null;
+    final price = package?.storeProduct.priceString ?? '1.99€';
+
     return Container(
       height: MediaQuery.of(context).size.height * 0.85,
       decoration: const BoxDecoration(
@@ -154,7 +163,7 @@ class SubscriptionModal extends StatelessWidget {
                             ),
                             const SizedBox(height: 4),
                             Text(
-                              '1.99€',
+                              price,
                               style: GoogleFonts.plusJakartaSans(
                                 fontSize: 36,
                                 fontWeight: FontWeight.w800,
@@ -186,7 +195,9 @@ class SubscriptionModal extends StatelessWidget {
                     SizedBox(
                       width: double.infinity,
                       height: 64,
-                      child: Container(
+                      child: offeringState.isLoading 
+                        ? const Center(child: CircularProgressIndicator())
+                        : Container(
                         decoration: BoxDecoration(
                           gradient: AppColors.primaryGradient,
                           borderRadius: BorderRadius.circular(9999),
@@ -202,9 +213,14 @@ class SubscriptionModal extends StatelessWidget {
                           color: Colors.transparent,
                           child: InkWell(
                             borderRadius: BorderRadius.circular(9999),
-                            onTap: () {
-                              // TODO: Process subscription
-                              Navigator.pop(context);
+                            onTap: package == null ? null : () async {
+                              final success = await subscriptionActions.purchasePackage(package);
+                              if (success && context.mounted) {
+                                Navigator.pop(context);
+                                ScaffoldMessenger.of(context).showSnackBar(
+                                  const SnackBar(content: Text('¡Bienvenido a Explorador Elite!')),
+                                );
+                              }
                             },
                             child: Center(
                               child: Text(

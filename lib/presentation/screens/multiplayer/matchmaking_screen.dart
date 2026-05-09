@@ -141,14 +141,45 @@ class _MatchmakingScreenState extends ConsumerState<MatchmakingScreen>
   Widget _buildContent(MultiplayerState state) {
     switch (state.status) {
       case MultiplayerStatus.searching:
-        return _buildSearching();
+        return widget.mode == MultiplayerMode.ghostRun
+            ? _buildGhostLoading()
+            : _buildSearching();
       case MultiplayerStatus.found:
         return _buildOpponentFound(state);
       case MultiplayerStatus.error:
         return _buildError(state.errorMessage ?? 'Error desconocido');
       default:
-        return _buildSearching();
+        return widget.mode == MultiplayerMode.ghostRun
+            ? _buildGhostLoading()
+            : _buildSearching();
     }
+  }
+
+  Widget _buildGhostLoading() {
+    return Column(
+      children: [
+        AnimatedBuilder(
+          animation: _pulseController,
+          builder: (context, child) {
+            return Opacity(
+              opacity: 0.4 + (_pulseController.value * 0.6),
+              child: const Icon(Icons.history_edu, size: 100, color: Colors.white70),
+            );
+          },
+        ),
+        const SizedBox(height: 40),
+        Text(
+          'Buscando fantasma...',
+          style: AppTextStyles.h2.copyWith(color: Colors.white),
+        ),
+        const SizedBox(height: 12),
+        Text(
+          'Cargando una partida pasada de tu nivel',
+          style: AppTextStyles.bodyMedium.copyWith(color: Colors.white70),
+          textAlign: TextAlign.center,
+        ),
+      ],
+    );
   }
 
   Widget _buildSearching() {
@@ -159,7 +190,7 @@ class _MatchmakingScreenState extends ConsumerState<MatchmakingScreen>
           animation: _spinController,
           builder: (context, child) {
             return Transform.rotate(
-              angle: _spinController.value * 6.28, // Full rotation
+              angle: _spinController.value * 6.28,
               child: Container(
                 width: 200,
                 height: 200,

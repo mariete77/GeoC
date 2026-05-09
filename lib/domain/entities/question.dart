@@ -1,4 +1,5 @@
 import 'package:equatable/equatable.dart';
+import '../../core/utils/fuzzy_matcher.dart';
 
 /// Question types
 enum QuestionType {
@@ -59,8 +60,8 @@ class Question extends Equatable {
         extraData,
       ];
 
-  /// Check if answer is correct
+  /// Check if answer is correct (normalizes accents and case)
   bool isCorrect(String answer) {
-    return answer.toLowerCase().trim() == correctAnswer.toLowerCase().trim();
+    return normalizeAnswer(answer) == normalizeAnswer(correctAnswer);
   }
 }

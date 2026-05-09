@@ -264,7 +264,11 @@ class MultiplayerGameScreen extends ConsumerWidget {
                   style: const TextStyle(color: Colors.redAccent, fontSize: 14),
                 ),
                 const SizedBox(width: 8),
-                const Icon(Icons.person_outline, color: Colors.redAccent, size: 20),
+                Icon(
+                  state.ghostRun != null ? Icons.history_edu : Icons.person_outline,
+                  color: Colors.redAccent,
+                  size: 20,
+                ),
               ],
             ),
           ),
